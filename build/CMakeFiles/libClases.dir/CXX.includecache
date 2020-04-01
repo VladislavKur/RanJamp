@@ -1,0 +1,156 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Motor/Motor.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp
+Animacion.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+SFML/Graphics.hpp
+-
+Motor.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp
+bullet.h
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+SFML/Graphics.hpp
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp
+centinela.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp
+murcielago.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp
+reptante.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
+Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
+../Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+../Bullet/bullet.h
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+../Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
+mapa.h
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+SFML/Graphics.hpp
+-
+iostream
+-
+SFML/System.hpp
+-
+tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
+Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp
+Objeto.h
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+SFML/Graphics.hpp
+-
+../Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
+
+/home/andres/Escritorio/FV JUNTO/Player/Player.cpp
+Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
+SFML/Graphics.hpp
+-
+../Animacion/Animacion.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+
