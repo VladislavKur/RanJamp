@@ -49,6 +49,7 @@ public:
     void perderPU_Velocidad();
     void perderPU_Slowhits();
 
+    void setJumpSpeed(float);
     void setSaltos();
     void setVelocidad();
     void setArma(int);

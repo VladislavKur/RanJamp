@@ -46,8 +46,13 @@ void Juego::colisionPlayerMundo(){// ESTO LO HACE VERMIAAA !!!!! -> interseccion
     RectangleShape ** objetos = mundo->getObjetos();
     int i = 0;
     while (objetos){
-      if(jugador.getBody().getGlobalBounds().intersects(objetos[i])){
+      if(jugador.coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         
+
+      jugador.setSaltos(PU_saltoDoble ? 2 : 1);
+      jugador.setJumpSpeed(0);
+  
+
       }
       i++;
     }

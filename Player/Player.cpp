@@ -144,3 +144,7 @@ void Player::obtenerPU_SaltoDoble(){
 void Player::setArma(int p_arma){
   arma = p_arma;
 }
+
+void Player::setJumpSpeed(float p_speed){
+  jumpSpeed=p_speed;
+}

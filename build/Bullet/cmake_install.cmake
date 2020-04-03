@@ -1,4 +1,4 @@
-# Install script for directory: /home/andres/Escritorio/FV JUNTO/Bullet
+# Install script for directory: /home/vermia/RanJamp/Bullet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

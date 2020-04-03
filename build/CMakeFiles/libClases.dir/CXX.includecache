@@ -12,101 +12,101 @@ SFML/Graphics.hpp
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp
+/home/vermia/RanJamp/Animacion/Animacion.cpp
 Animacion.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 Motor.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Motor.h
+/home/vermia/RanJamp/Animacion/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp
+/home/vermia/RanJamp/Bullet/bullet.cpp
 bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp
+/home/vermia/RanJamp/Enemigos/centinela.cpp
 centinela.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
+/home/vermia/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp
+/home/vermia/RanJamp/Enemigos/murcielago.cpp
 murcielago.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/vermia/RanJamp/Enemigos/murcielago.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/vermia/RanJamp/Enemigos/murcielago.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp
+/home/vermia/RanJamp/Enemigos/reptante.cpp
 reptante.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+/home/vermia/RanJamp/Enemigos/reptante.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+/home/vermia/RanJamp/Enemigos/reptante.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
+/home/vermia/RanJamp/Juego/Juego.cpp
 Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 ../Mapa/mapa.h
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/vermia/RanJamp/Mapa/mapa.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
+/home/vermia/RanJamp/Mapa/mapa.cpp
 mapa.h
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/vermia/RanJamp/Mapa/mapa.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/vermia/RanJamp/Mapa/mapa.h
 SFML/Graphics.hpp
 -
 iostream
@@ -114,43 +114,43 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/vermia/RanJamp/Mapa/tinyxml.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
+/home/vermia/RanJamp/Motor/Motor.cpp
 Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp
+/home/vermia/RanJamp/Objeto/Objeto.cpp
 Objeto.h
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 
-/home/andres/Escritorio/FV JUNTO/Player/Player.cpp
+/home/vermia/RanJamp/Player/Player.cpp
 Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 
