@@ -18,7 +18,7 @@ int main() {
 
     float elapsus;
     float delta;
-
+    
     Juego* instancia = Juego::instance();
 
     //funcion inicializar juego de juego VERY WIP SUCH WOW

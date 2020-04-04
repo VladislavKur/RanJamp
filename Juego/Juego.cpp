@@ -6,6 +6,8 @@ Juego* Juego::pinstance = 0;
 
 Juego::Juego(){
 
+    mapa * mundo = mapa::instance(); 
+    mundo->cargarmapa("MapaFinal.txt");
 }
 
 Juego* Juego::instance(){
