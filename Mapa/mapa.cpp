@@ -270,9 +270,9 @@ Vector2f mapa::cargarPosicionPlayer_Puerta(int i){
     }
     return pos;
 }
-void mapa::render(RenderWindow * ventana){
+void mapa::render(){
 
-
+  Motor * motor = Motor::instance();
   for(int l=0; l<_numLayers; l++){
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){
@@ -289,7 +289,7 @@ void mapa::render(RenderWindow * ventana){
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
             }else if(gid > 0){
-              ventana->draw(*_tilemapSprite[l][y][x]);
+              motor->dibujo(*_tilemapSprite[l][y][x]);
               pintada = true;
             }else{
               _tilemapSprite[l][y][x] = NULL;
@@ -304,7 +304,7 @@ void mapa::render(RenderWindow * ventana){
   
    
   for(int i=0; i < _numObjects; i++){
-    ventana->draw(*objetos[i]);
+    motor->dibujo(*objetos[i]);
   }
 }
 

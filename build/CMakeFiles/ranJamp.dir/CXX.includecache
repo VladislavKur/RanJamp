@@ -57,6 +57,8 @@ SFML/System.hpp
 -
 tinyxml.h
 /home/vermia/RanJamp/Mapa/tinyxml.h
+../Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
 /home/vermia/RanJamp/Mapa/tinystr.h
 assert.h

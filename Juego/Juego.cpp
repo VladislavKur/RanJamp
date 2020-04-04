@@ -6,7 +6,11 @@ Juego* Juego::pinstance = 0;
 Juego::Juego(){
     mapa * mundo = mapa::instance(); 
     mundo->cargarmapa("MapaFinal.tmx");
+    mundo->crearSprites();
+    mundo->cargarObjectGroups();
+    mundo->crearObjetos();
     jugador = new Player();
+    if(jugador == nullptr) printf("asdasd");
 }
 
 Juego* Juego::instance(){
@@ -71,6 +75,7 @@ void Juego::render(float porcentaje){ //wip
     Motor* motor=Motor::instance();
 
 
+
     for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
       bulletPlayer[i].render();
@@ -90,7 +95,8 @@ void Juego::render(float porcentaje){ //wip
 
     }
     // render Mapa  
-
+    mapa * mundo = mapa::instance();
+    mundo->render();
 }
 
 

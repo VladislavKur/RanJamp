@@ -45,6 +45,7 @@ CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.cpp
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.h
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinystr.h
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinyxml.h
+CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Motor/Motor.h
 
 CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.cpp
 CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.h
