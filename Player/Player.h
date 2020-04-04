@@ -51,6 +51,8 @@ public:
 
     void setJumpSpeed(float);
     void setSaltos();
+    void setSaltos(int);
+
     void setVelocidad();
     void setArma(int);
 

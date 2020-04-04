@@ -36,11 +36,15 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/vermia/RanJamp/Juego/Juego.cpp
  /home/vermia/RanJamp/Juego/Juego.h
  /home/vermia/RanJamp/Mapa/mapa.h
+ /home/vermia/RanJamp/Mapa/tinystr.h
+ /home/vermia/RanJamp/Mapa/tinyxml.h
  /home/vermia/RanJamp/Motor/Motor.h
  /home/vermia/RanJamp/Player/Player.h
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
  /home/vermia/RanJamp/Mapa/mapa.cpp
  /home/vermia/RanJamp/Mapa/mapa.h
+ /home/vermia/RanJamp/Mapa/tinystr.h
+ /home/vermia/RanJamp/Mapa/tinyxml.h
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o
  /home/vermia/RanJamp/Motor/Motor.cpp
  /home/vermia/RanJamp/Motor/Motor.h

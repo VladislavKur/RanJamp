@@ -35,11 +35,15 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/mapa.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/tinystr.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/tinyxml.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.cpp
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.h
+CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinystr.h
+CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinyxml.h
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.h

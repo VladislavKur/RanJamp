@@ -148,3 +148,7 @@ void Player::setArma(int p_arma){
 void Player::setJumpSpeed(float p_speed){
   jumpSpeed=p_speed;
 }
+
+void Player::setSaltos(int p_saltos){
+  saltos=p_saltos;
+}

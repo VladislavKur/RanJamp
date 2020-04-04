@@ -1,5 +1,6 @@
 #include "Motor.h"
 
+Motor* Motor::pinstance=NULL;
 
 Motor::Motor(){
 
@@ -44,6 +45,21 @@ Motor* Motor::instance(){
 
 
 bool Motor::dibujo(sf::RectangleShape entrada){
+
+    bool devolver = false;
+
+    if(instanced){
+
+        ventana->draw(entrada);
+
+        devolver = true;
+
+    }
+    
+    return(devolver);
+}
+
+bool Motor::dibujo(sf::CircleShape entrada){
 
     bool devolver = false;
 

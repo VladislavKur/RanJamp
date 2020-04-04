@@ -49,7 +49,7 @@ void Juego::colisionPlayerMundo(){// ESTO LO HACE VERMIAAA !!!!! -> interseccion
       if(jugador.coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         
 
-      jugador.setSaltos(PU_saltoDoble ? 2 : 1);
+      jugador.setSaltos( jugador.getPU_SaltoDoble() ? 2 : 1);
       jugador.setJumpSpeed(0);
   
 
