@@ -15,13 +15,14 @@ Player::Player()
             sf::Vector2f(100.0f,100.0f),
             sf::Vector2f(75.0,75.0)
             ){
-    sf::Texture text;
 
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
 
-    if(!text.loadFromFile("../resources/sprites.png")) cout << "sadasds";
+    if(!text.loadFromFile("Resources/sprites1.png")){
+     std::cout<< "sadasds";
+    }
     sprite.setTexture(text);
     sprite.setScale(1,1);
     sprite.setPosition(100, 100);

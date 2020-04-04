@@ -10,7 +10,12 @@ int main() {
   /////////////
   ////START////
   /////////////
-
+  // sf::Texture t; 
+  // sf::Sprite s; 
+  // if(!t.loadFromFile("Resources/sprites.png")){
+  //   std::cout<<"mierda"<<endl;
+  // }
+  // s.setTexture(t);
   const float UPDATE_TICK_TIME = 15.0;
   Motor * m = Motor::instance();
   //Creamos una ventana
@@ -18,7 +23,6 @@ int main() {
 
     float elapsus;
     float delta;
-    
     Juego* instancia = Juego::instance();
 
     //funcion inicializar juego de juego VERY WIP SUCH WOW

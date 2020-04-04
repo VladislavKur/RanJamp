@@ -90,103 +90,103 @@ SFML/Graphics.hpp
 ../Animacion/Animacion.h
 ../Animacion/Animacion.h
 
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp
 Animacion.h
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 Motor.h
-/home/magiic/Escritorio/RanJamp/Animacion/Motor.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp
 bullet.h
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp
 centinela.h
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp
 murcielago.h
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/reptante.cpp
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp
 reptante.h
-/home/magiic/Escritorio/RanJamp/Enemigos/reptante.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/reptante.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Juego/Juego.cpp
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
 Juego.h
-/home/magiic/Escritorio/RanJamp/Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
-/home/magiic/Escritorio/RanJamp/Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 ../Enemigos/enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 ../Mapa/mapa.h
-/home/magiic/Escritorio/RanJamp/Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
 ../Objeto/Objeto.h
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/mapa.cpp
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
 mapa.h
-/home/magiic/Escritorio/RanJamp/Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
 SFML/Graphics.hpp
 -
 iostream
@@ -194,19 +194,19 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/tinystr.cpp
+/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp
 tinystr.h
-/home/magiic/Escritorio/RanJamp/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxml.cpp
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp
 ctype.h
 -
 sstream
@@ -214,9 +214,9 @@ sstream
 iostream
 -
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -234,59 +234,59 @@ iostream
 sstream
 -
 tinystr.h
-/home/magiic/Escritorio/RanJamp/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxmlerror.cpp
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
 
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxmlparser.cpp
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp
 ctype.h
 -
 stddef.h
 -
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
 windows.h
 -
 
-/home/magiic/Escritorio/RanJamp/Motor/Motor.cpp
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
 Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp
 Objeto.h
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 
-/home/magiic/Escritorio/RanJamp/Player/Player.cpp
+/home/andres/Escritorio/FV JUNTO/Player/Player.cpp
 Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 SFML/Graphics.hpp
 -
 iostream
 -
 Juego.h
-/home/magiic/Escritorio/RanJamp/Player/Juego.h
+/home/andres/Escritorio/FV JUNTO/Player/Juego.h
 
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
 

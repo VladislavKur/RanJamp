@@ -69,6 +69,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
 
 void Juego::render(float porcentaje){ //wip
 
+
     for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
       bulletPlayer[i].render();
@@ -88,7 +89,8 @@ void Juego::render(float porcentaje){ //wip
 
     }
     // render Mapa  
-
+    mapa * mundo = mapa::instance();
+    mundo->render();
 }
 
 
