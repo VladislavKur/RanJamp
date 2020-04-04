@@ -26,7 +26,7 @@
             static Juego *instance();
             void update(float deltaTime);
             void render(float porcentaje);            
-            void colisionPlayerMundo();
+            void colisionPlayerMundo(float deltaTime);
             void crearObjetos();
     };
 
