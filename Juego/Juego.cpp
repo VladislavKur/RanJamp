@@ -6,6 +6,7 @@ Juego* Juego::pinstance = 0;
 Juego::Juego(){
     mapa * mundo = mapa::instance(); 
     mundo->cargarmapa("MapaFinal.tmx");
+    jugador = new Player();
 }
 
 Juego* Juego::instance(){
@@ -32,8 +33,8 @@ void Juego::update(float deltaTime){ //wip
        bulletEnemies[i].update(deltaTime);
 
     }
-    jugador.update(deltaTime);
-    RectangleShape rec = jugador.getBody();
+    jugador->update(deltaTime);
+    RectangleShape rec = jugador->getBody();
     for(int i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
       enemies[i].update(rec, deltaTime);
@@ -48,18 +49,18 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     RectangleShape ** objetos = mundo->getObjetos();
     int i = 0;
     while (objetos){
-      if(jugador.coliAbajo.intersects(objetos[i]->getGlobalBounds())){
+      if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         
-      jugador.setSaltos( jugador.getPU_SaltoDoble() ? 2 : 1);
-      jugador.setJumpSpeed(0);
+      jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+      jugador->setJumpSpeed(0);
   
 
       } else{
-        jugador.setJumpSpeed(9.81f*deltaTime);
+        jugador->setJumpSpeed(9.81f*deltaTime);
       }
 
-      if(jugador.coliArriba.intersects(objetos[i]->getGlobalBounds())){
-        jugador.setJumpSpeed(10);
+      if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
+        jugador->setJumpSpeed(10);
       }
       i++;
     }
@@ -79,7 +80,7 @@ void Juego::render(float porcentaje){ //wip
 
     }
 
-    jugador.render();
+    jugador->render();
     
     for(int i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 

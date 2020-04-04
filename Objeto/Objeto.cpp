@@ -34,19 +34,19 @@
             
                 case 1:
                     otherBody.setArma(1);
-                    text->loadFromFile("../Resources/powerup1");
+                    text->loadFromFile("../resources/Imagenes/powerup1.png");
                     body.setTexture(text);
                     break;
 
                 case 2:
                     otherBody.obtenerPU_SaltoDoble();
-                    text->loadFromFile("../Resources/powerup2");
+                    text->loadFromFile("../resources/Imagenes/powerup2.png");
                     body.setTexture(text);
                     break;
 
                 case 3:
                     otherBody.obtenerPU_Velocidad();
-                    text->loadFromFile("../Resources/powerup3");
+                    text->loadFromFile("../resources/Imagenes/powerup3.png");
                     body.setTexture(text);
                     break;
             

@@ -13,7 +13,7 @@
     class Juego{
 
         private:
-            Player jugador;
+            Player *jugador;
             Enemigo* enemies = NULL;
             Bullet* bulletPlayer = NULL;
             Bullet* bulletEnemies = NULL;
