@@ -21,26 +21,33 @@
 
     //t --> tipo
     void Objeto::update(Player &otherBody){
+        sf::Texture *text = new sf::Texture ;
         //std::cout<<"Tipo : "<< tipo <<std::endl;
         if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && body.getGlobalBounds().intersects(otherBody.getBody().getGlobalBounds())){
 
             body.setSize(sf::Vector2f(0,0));
             body.setPosition(-500,-500); //lejos de la accion  
-            std::cout << tipo << std:: endl;
+           
             
 
             switch (tipo){
             
                 case 1:
                     otherBody.setArma(1);
+                    text->loadFromFile("../Resources/powerup1");
+                    body.setTexture(text);
                     break;
 
                 case 2:
                     otherBody.obtenerPU_SaltoDoble();
+                    text->loadFromFile("../Resources/powerup2");
+                    body.setTexture(text);
                     break;
 
                 case 3:
                     otherBody.obtenerPU_Velocidad();
+                    text->loadFromFile("../Resources/powerup3");
+                    body.setTexture(text);
                     break;
             
             default:
@@ -49,6 +56,7 @@
             } 
 
         }
+        delete text; text = nullptr;
 
     }
 

@@ -165,10 +165,6 @@ enemigo.h
 /home/magiic/Escritorio/RanJamp/Juego/Juego.cpp
 Juego.h
 /home/magiic/Escritorio/RanJamp/Juego/Juego.h
-stdlib.h
--
-time.h
--
 
 /home/magiic/Escritorio/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp

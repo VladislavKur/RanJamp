@@ -1,11 +1,11 @@
 #include "Juego.h"
-#include <stdlib.h>     /* srand, rand */
-#include <time.h>  
+
 
 Juego* Juego::pinstance = 0;
 
 Juego::Juego(){
-
+    mapa * mundo = mapa::instance(); 
+    mundo->cargarmapa("MapaFinal.tmx");
 }
 
 Juego* Juego::instance(){
@@ -94,19 +94,19 @@ void Juego::render(float porcentaje){ //wip
 void Juego::crearObjetos(){ /// VlaDIS 
   mapa * mundo = mapa::instance();
   int tipo = 1;
-  
+  sf::Vector2f pos;
  
-  vector<Vector2f>  posicionPowerUp1 = mundo->cargarPosicionEnemigos_PowerUps(3);
-
-
-  std::string tipoPowerUP = "10";//mundo->cargarPosicionEnemigos_PowerUps(3);
-    int aux = std::stoi(tipoPowerUP);
+  vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
 
 
 
-  for(int i = 0; i > posicionPowerUp1.size();i++){
+
+  for(int i = 0; i > posicion.size();i++){
+
+    pos.x =posicion[i][0];
+    pos.y = posicion[i][1];
     
-    Objeto objeto1 ( posicionPowerUp1[i] ,aux);
+    Objeto objeto1 ( pos ,posicion[i][2]);
   }
   
   
