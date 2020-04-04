@@ -38,6 +38,7 @@
             void mostrar();
             bool getOpen();
             char readEventTeclado();
+            sf::RenderWindow* getVentana(){return ventana;}
 
     };
 

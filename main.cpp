@@ -33,6 +33,10 @@ int main() {
       }
 
       elapsus = m->getRelojM();
+
+      RenderWindow* window = m->getVentana();
+
+      window->clear();
       
       if(elapsus >= UPDATE_TICK_TIME){
         instancia->render(1.0);
@@ -41,6 +45,8 @@ int main() {
       else{
         instancia->render(elapsus/UPDATE_TICK_TIME);
       }
+
+      window->display();
     }
   //}
 

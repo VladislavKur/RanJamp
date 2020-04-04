@@ -68,6 +68,8 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
 }
 
 void Juego::render(float porcentaje){ //wip
+    Motor* motor=Motor::instance();
+
 
     for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
