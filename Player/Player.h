@@ -9,7 +9,6 @@ class Player
 private:
     sf::Vector2u textura;
     sf::RectangleShape body;
-    sf::Sprite sprite;
     
     float velocidad;
     int saltos;
