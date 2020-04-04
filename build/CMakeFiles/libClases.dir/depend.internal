@@ -45,6 +45,21 @@ CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
  /home/vermia/RanJamp/Mapa/mapa.h
  /home/vermia/RanJamp/Mapa/tinystr.h
  /home/vermia/RanJamp/Mapa/tinyxml.h
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
+ /home/vermia/RanJamp/Mapa/tinystr.cpp
+ /home/vermia/RanJamp/Mapa/tinystr.h
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
+ /home/vermia/RanJamp/Mapa/tinystr.h
+ /home/vermia/RanJamp/Mapa/tinyxml.cpp
+ /home/vermia/RanJamp/Mapa/tinyxml.h
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
+ /home/vermia/RanJamp/Mapa/tinystr.h
+ /home/vermia/RanJamp/Mapa/tinyxml.h
+ /home/vermia/RanJamp/Mapa/tinyxmlerror.cpp
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
+ /home/vermia/RanJamp/Mapa/tinystr.h
+ /home/vermia/RanJamp/Mapa/tinyxml.h
+ /home/vermia/RanJamp/Mapa/tinyxmlparser.cpp
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o
  /home/vermia/RanJamp/Motor/Motor.cpp
  /home/vermia/RanJamp/Motor/Motor.h

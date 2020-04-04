@@ -352,6 +352,114 @@ Mapa/mapa.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/mapa.cpp.s
 .PHONY : Mapa/mapa.cpp.s
 
+Mapa/tinystr.o: Mapa/tinystr.cpp.o
+
+.PHONY : Mapa/tinystr.o
+
+# target to build an object file
+Mapa/tinystr.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
+.PHONY : Mapa/tinystr.cpp.o
+
+Mapa/tinystr.i: Mapa/tinystr.cpp.i
+
+.PHONY : Mapa/tinystr.i
+
+# target to preprocess a source file
+Mapa/tinystr.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i
+.PHONY : Mapa/tinystr.cpp.i
+
+Mapa/tinystr.s: Mapa/tinystr.cpp.s
+
+.PHONY : Mapa/tinystr.s
+
+# target to generate assembly for a file
+Mapa/tinystr.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s
+.PHONY : Mapa/tinystr.cpp.s
+
+Mapa/tinyxml.o: Mapa/tinyxml.cpp.o
+
+.PHONY : Mapa/tinyxml.o
+
+# target to build an object file
+Mapa/tinyxml.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
+.PHONY : Mapa/tinyxml.cpp.o
+
+Mapa/tinyxml.i: Mapa/tinyxml.cpp.i
+
+.PHONY : Mapa/tinyxml.i
+
+# target to preprocess a source file
+Mapa/tinyxml.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i
+.PHONY : Mapa/tinyxml.cpp.i
+
+Mapa/tinyxml.s: Mapa/tinyxml.cpp.s
+
+.PHONY : Mapa/tinyxml.s
+
+# target to generate assembly for a file
+Mapa/tinyxml.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s
+.PHONY : Mapa/tinyxml.cpp.s
+
+Mapa/tinyxmlerror.o: Mapa/tinyxmlerror.cpp.o
+
+.PHONY : Mapa/tinyxmlerror.o
+
+# target to build an object file
+Mapa/tinyxmlerror.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
+.PHONY : Mapa/tinyxmlerror.cpp.o
+
+Mapa/tinyxmlerror.i: Mapa/tinyxmlerror.cpp.i
+
+.PHONY : Mapa/tinyxmlerror.i
+
+# target to preprocess a source file
+Mapa/tinyxmlerror.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i
+.PHONY : Mapa/tinyxmlerror.cpp.i
+
+Mapa/tinyxmlerror.s: Mapa/tinyxmlerror.cpp.s
+
+.PHONY : Mapa/tinyxmlerror.s
+
+# target to generate assembly for a file
+Mapa/tinyxmlerror.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s
+.PHONY : Mapa/tinyxmlerror.cpp.s
+
+Mapa/tinyxmlparser.o: Mapa/tinyxmlparser.cpp.o
+
+.PHONY : Mapa/tinyxmlparser.o
+
+# target to build an object file
+Mapa/tinyxmlparser.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
+.PHONY : Mapa/tinyxmlparser.cpp.o
+
+Mapa/tinyxmlparser.i: Mapa/tinyxmlparser.cpp.i
+
+.PHONY : Mapa/tinyxmlparser.i
+
+# target to preprocess a source file
+Mapa/tinyxmlparser.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i
+.PHONY : Mapa/tinyxmlparser.cpp.i
+
+Mapa/tinyxmlparser.s: Mapa/tinyxmlparser.cpp.s
+
+.PHONY : Mapa/tinyxmlparser.s
+
+# target to generate assembly for a file
+Mapa/tinyxmlparser.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s
+.PHONY : Mapa/tinyxmlparser.cpp.s
+
 Motor/Motor.o: Motor/Motor.cpp.o
 
 .PHONY : Motor/Motor.o
@@ -494,6 +602,18 @@ help:
 	@echo "... Mapa/mapa.o"
 	@echo "... Mapa/mapa.i"
 	@echo "... Mapa/mapa.s"
+	@echo "... Mapa/tinystr.o"
+	@echo "... Mapa/tinystr.i"
+	@echo "... Mapa/tinystr.s"
+	@echo "... Mapa/tinyxml.o"
+	@echo "... Mapa/tinyxml.i"
+	@echo "... Mapa/tinyxml.s"
+	@echo "... Mapa/tinyxmlerror.o"
+	@echo "... Mapa/tinyxmlerror.i"
+	@echo "... Mapa/tinyxmlerror.s"
+	@echo "... Mapa/tinyxmlparser.o"
+	@echo "... Mapa/tinyxmlparser.i"
+	@echo "... Mapa/tinyxmlparser.s"
 	@echo "... Motor/Motor.o"
 	@echo "... Motor/Motor.i"
 	@echo "... Motor/Motor.s"

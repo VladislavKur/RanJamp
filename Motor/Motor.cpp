@@ -150,3 +150,10 @@ bool Motor::getOpen(){
     return(ventana->isOpen());
 
 }
+
+void setTextura(sf::RectangleShape& cuerpo, sf::Texture entrada){
+
+}
+
+
+

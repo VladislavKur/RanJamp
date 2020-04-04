@@ -249,9 +249,105 @@ CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.provides: CMakeFiles/libClases.dir/Mapa
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
 
 
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o -c /home/vermia/RanJamp/Mapa/tinystr.cpp
+
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mapa/tinystr.cpp > CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i
+
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mapa/tinystr.cpp -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s
+
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires
+
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides
+
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
+
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o -c /home/vermia/RanJamp/Mapa/tinyxml.cpp
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mapa/tinyxml.cpp > CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mapa/tinyxml.cpp -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
+
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o -c /home/vermia/RanJamp/Mapa/tinyxmlparser.cpp
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mapa/tinyxmlparser.cpp > CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mapa/tinyxmlparser.cpp -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
+
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o -c /home/vermia/RanJamp/Mapa/tinyxmlerror.cpp
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mapa/tinyxmlerror.cpp > CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mapa/tinyxmlerror.cpp -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
+
+
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/vermia/RanJamp/Motor/Motor.cpp
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.i: cmake_force
@@ -275,7 +371,7 @@ CMakeFiles/libClases.dir/Motor/Motor.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/vermia/RanJamp/Juego/Juego.cpp
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.i: cmake_force
@@ -299,7 +395,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/vermia/RanJamp/Objeto/Objeto.cpp
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i: cmake_force
@@ -331,6 +427,10 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o" \
 "CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o" \
 "CMakeFiles/libClases.dir/Mapa/mapa.cpp.o" \
+"CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o" \
+"CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o" \
+"CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o" \
+"CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o" \
 "CMakeFiles/libClases.dir/Motor/Motor.cpp.o" \
 "CMakeFiles/libClases.dir/Juego/Juego.cpp.o" \
 "CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
@@ -346,12 +446,16 @@ liblibClases.a: CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Motor/Motor.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Juego.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -368,6 +472,10 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/murcielago.
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Motor/Motor.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Juego.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.requires

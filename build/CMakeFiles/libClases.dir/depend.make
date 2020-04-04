@@ -45,6 +45,21 @@ CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.h
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinystr.h
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinyxml.h
 
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.cpp
+CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.h
+
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinystr.h
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinyxml.cpp
+CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinyxml.h
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinystr.h
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinyxml.h
+CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinyxmlerror.cpp
+
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinystr.h
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinyxml.h
+CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinyxmlparser.cpp
+
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.h
 
