@@ -72,10 +72,10 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
 }
 
 void Juego::render(float porcentaje){ //wip
-    Motor* motor=Motor::instance();
 
-
-
+    Motor * m = Motor::instance();
+    mapa * mundo = mapa::instance();
+    mundo->render();
     for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
       bulletPlayer[i].render();
@@ -89,14 +89,12 @@ void Juego::render(float porcentaje){ //wip
 
     jugador->render();
     
+    
     for(int i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
       enemies[i].render(porcentaje);
 
     }
-    // render Mapa  
-    mapa * mundo = mapa::instance();
-    mundo->render();
 }
 
 

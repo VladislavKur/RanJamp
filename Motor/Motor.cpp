@@ -3,10 +3,8 @@
 Motor* Motor::pinstance=NULL;
 
 Motor::Motor(){
-    ventana = new sf::RenderWindow;
-    ventana->create(sf::VideoMode(1080,720),"Totally not Pengo");
+    ventana = new sf::RenderWindow(sf::VideoMode(1080,720),"Totally not Pengo");
     updateClock.restart();
-
 }
 
 
@@ -44,49 +42,30 @@ Motor* Motor::instance(){
 
 
 
-bool Motor::dibujo(sf::RectangleShape entrada){
+void Motor::dibujo(sf::RectangleShape entrada){
 
-    bool devolver = false;
-
-    if(instanced){
 
         ventana->draw(entrada);
 
-        devolver = true;
 
-    }
-    
-    return(devolver);
+
 }
 
-bool Motor::dibujo(sf::CircleShape entrada){
+void Motor::dibujo(sf::CircleShape entrada){
 
-    bool devolver = false;
-
-    if(instanced){
+  
 
         ventana->draw(entrada);
 
-        devolver = true;
-
-    }
-    
-    return(devolver);
 }
 
-bool Motor::dibujo(sf::Sprite entrada){
+void Motor::dibujo(sf::Sprite entrada){
 
-    bool devolver = false;
 
-    if(instanced){
 
         ventana->draw(entrada);
 
-        devolver = true;
 
-    }
-    
-    return(devolver);
 }
 
 bool cargarSprite(sf::Texture& entrada, std::string fichero){

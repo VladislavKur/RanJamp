@@ -1,4 +1,4 @@
-# Install script for directory: /home/vermia/RanJamp/Juego
+# Install script for directory: /home/andres/Escritorio/FV JUNTO/Juego
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

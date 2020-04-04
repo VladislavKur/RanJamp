@@ -20,9 +20,9 @@
 
         public:
             static Motor *instance();
-            bool dibujo(sf::RectangleShape entrada);
-            bool dibujo(sf::Sprite entrada);
-            bool dibujo(sf::CircleShape entrada);
+            void dibujo(sf::RectangleShape entrada);
+            void dibujo(sf::Sprite entrada);
+            void dibujo(sf::CircleShape entrada);
             bool cargarSprite(sf::Texture& entrada, std::string fichero);//wip
             void recorte(sf::RectangleShape &entrada, int xi, int yi, int lengthX, int lengthY);
             void setTamanyoCuerpo(sf::RectangleShape& cuerpo,sf::Vector2f entrada);

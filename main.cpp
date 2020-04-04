@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Motor/Motor.h"
 #include "Juego/Juego.h"
-
+#include "Player/Player.h"
 #define kVel 5
 
 int main() {
@@ -32,7 +32,7 @@ int main() {
 
         delta = m->restartReloj();
 
-        instancia->update(delta);
+      //  instancia->update(delta);
 
       }
 
@@ -47,7 +47,7 @@ int main() {
       }
 
       else{
-        instancia->render(elapsus/UPDATE_TICK_TIME);
+         instancia->render(elapsus/UPDATE_TICK_TIME);
       }
 
       window->display();
