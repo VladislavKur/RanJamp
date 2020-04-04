@@ -240,14 +240,18 @@ void mapa::cargarObjectGroups(){
     }
 }
 
-vector<Vector2f>  mapa::cargarPosicionEnemigos_PowerUps(int i){
-    vector<Vector2f> posiciones;
-    
+vector<vector<string>>  mapa::cargarPosicionEnemigos_PowerUps(int i){
+    vector<vector<string>> posiciones;
+    vector<string> dentro; 
     TiXmlElement * object = objectgroups[i]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 
     while(object){
-        object->QueryIntAttribute("x" , &_posX);
-        object->QueryIntAttribute("y" , &_posY);
-        posiciones.push_back(Vector2f(_posX, _posY));
+        object->QueryStringAttribute("x" , &_SposX);
+        object->QueryStringAttribute("y" , &_SposY);
+        object->QueryStringAttribute("type", &_Stipo);
+        dentro.push_back(_SposX);
+        dentro.push_back(_SposY);
+        dentro.push_back(_Stipo);
+        posiciones.push_back(dentro);
         object = object->NextSiblingElement("object");
     }
     return posiciones;
