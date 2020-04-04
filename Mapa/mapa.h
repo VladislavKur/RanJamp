@@ -13,7 +13,7 @@ class mapa{
         void cargarmapa(const char * f ); 
         void crearSprites();
         void crearObjetos();
-        vector<vector<string>> cargarPosicionEnemigos_PowerUps(int i);
+        vector<vector<int>> cargarPosicionEnemigos_PowerUps(int i);
         void cargarObjectGroups();
         Vector2f cargarPosicionPlayer_Puerta(int i);
         void render(RenderWindow * ventana);
@@ -61,8 +61,6 @@ class mapa{
         //enemigos
         int _posX; 
         int _posY;
-        string _SposX;
-        string _SposY;
-        string _Stipo;
+        int _tipo;
          TiXmlElement ** objectgroups;
 };
