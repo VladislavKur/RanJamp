@@ -1,5 +1,7 @@
 #include "mapa.h"
 
+mapa* mapa::pinstance=NULL;
+
 mapa::mapa(){
 
 }

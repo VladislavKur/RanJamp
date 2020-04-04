@@ -5,6 +5,7 @@
 #include "../Enemigos/enemigo.h"
 #include "../Bullet/bullet.h"
 #include "../Mapa/mapa.h"
+#include "../Objeto/Objeto.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
@@ -25,7 +26,7 @@
             static Juego *instance();
             void update(float deltaTime);
             void render(float porcentaje);            
-            void colisionPlayerMundo();
+            void colisionPlayerMundo(float deltaTime);
             void crearObjetos();
     };
 

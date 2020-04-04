@@ -1,4 +1,4 @@
-# Install script for directory: /home/andres/Escritorio/FV JUNTO/Animacion
+# Install script for directory: /home/magiic/Escritorio/RanJamp/Animacion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

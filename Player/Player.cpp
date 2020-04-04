@@ -2,6 +2,7 @@
 #include "Player.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Juego.h"
 
 using namespace sf;
 Player::~Player(){
@@ -112,20 +113,43 @@ void Player::render(){
   motor->dibujo(body);
 }
 void Player::moveRight(float deltaTime){
+  mapa* mundo = mapa::instance();
+  bool puede=true;
+  RectangleShape ** objetos = mundo->getObjetos();
 
-      body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-      //Escala por defecto
-      body.setScale(1, 1);
-      body.move(500*deltaTime, 0);
+  int i = 0;
+  while(objetos){
+    if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
+        puede=false;
+    }
+    i++;
+  }
 
+  if(puede){
+    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setScale(1, 1);
+    body.move(500*deltaTime, 0);
+  }
 }
+
 void Player::moveLeft(float deltaTime){
+mapa* mundo = mapa::instance();
+  bool puede=true;
+  RectangleShape ** objetos = mundo->getObjetos();
 
-     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-     body.setScale(-1, 1);
-     body.move(-500*deltaTime, 0);
+  int i = 0;
+  while(objetos){
+    if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
+        puede=false;
+    }
+    i++;
+  }
 
-
+  if(puede){
+    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setScale(-1, 1);
+    body.move(-500*deltaTime, 0);
+  }
 }
 void Player::saltar(){
   if(saltos!=0){
@@ -143,4 +167,12 @@ void Player::obtenerPU_SaltoDoble(){
 
 void Player::setArma(int p_arma){
   arma = p_arma;
+}
+
+void Player::setJumpSpeed(float p_speed){
+  jumpSpeed=p_speed;
+}
+
+void Player::setSaltos(int p_saltos){
+  saltos=p_saltos;
 }

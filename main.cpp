@@ -26,7 +26,7 @@ int main() {
     while(m->getOpen()){
       if(m->getRelojM() > UPDATE_TICK_TIME){
 
-        delta = m->rPestartReloj();
+        delta = m->restartReloj();
 
         instancia->update(delta);
 

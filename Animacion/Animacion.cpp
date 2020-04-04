@@ -10,13 +10,13 @@ Animacion::Animacion(std::string fichero,sf::Vector2u cantidadImagenes, float Sw
     Motor * motor = Motor::instance();
     sf::Texture textura;
 
-    if(!motor->cargarSprite(textura,fichero)){
+    /*if(!motor->cargarSprite(textura,fichero)){
         std::cerr << "Error cargando la imagen " << fichero;
         //hacer handle del error WIP
-    }
+    }*/
 
     motor->setTamanyoCuerpo(this->body,tamanyoCuerpo);
-    motor->setTextura(this->body, textura);
+    //motor->setTextura(this->body, textura);
     motor->recorte(this->body,0*75,2*75,75,75);
 
     this->cantidadImagenes=cantidadImagenes; //cantidad de imagenes de spritesheet
