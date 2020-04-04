@@ -7,13 +7,11 @@
     
     
     Objeto::~Objeto(){}
-    Objeto::Objeto(sf::Texture* tex,sf::Vector2f size,  sf::Vector2f Posicion,sf::Color color, int t){
+    Objeto::Objeto(sf::Vector2f Posicion, int t){
 
-        body.setFillColor(color);
-      
-         
-            body.setSize(size);
-            body.setTexture(tex);
+    
+            body.setSize(sf::Vector2f(50,50));
+            //body.setTexture(tex);
             body.setPosition(Posicion);
 
         tipo = t;

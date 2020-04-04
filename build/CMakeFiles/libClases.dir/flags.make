@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mapa -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto 
+CXX_INCLUDES = -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mapa -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto 
 

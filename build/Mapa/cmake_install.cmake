@@ -1,4 +1,4 @@
-# Install script for directory: /home/vermia/RanJamp/Mapa
+# Install script for directory: /home/magiic/Escritorio/RanJamp/Mapa
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

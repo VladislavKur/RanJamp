@@ -1,4 +1,6 @@
 #include "Juego.h"
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>  
 
 Juego* Juego::pinstance = 0;
 
@@ -86,8 +88,25 @@ void Juego::render(float porcentaje){ //wip
 
 void Juego::crearObjetos(){ /// VlaDIS 
   mapa * mundo = mapa::instance();
-
+  int tipo = 1;
+  
+ 
   vector<Vector2f>  posicionPowerUp1 = mundo->cargarPosicionEnemigos_PowerUps(3);
 
+
+  std::string tipoPowerUP = "10";//mundo->cargarPosicionEnemigos_PowerUps(3);
+    int aux = std::stoi(tipoPowerUP);
+
+
+
+  for(int i = 0; i > posicionPowerUp1.size();i++){
+    
+    Objeto objeto1 ( posicionPowerUp1[i] ,aux);
+  }
+  
+  
+
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
+  
+
 }

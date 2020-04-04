@@ -1,4 +1,4 @@
-# Install script for directory: /home/vermia/RanJamp/Objeto
+# Install script for directory: /home/magiic/Escritorio/RanJamp/Objeto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

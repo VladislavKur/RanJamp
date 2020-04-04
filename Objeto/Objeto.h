@@ -8,7 +8,7 @@ class Objeto
 
     public:
     ~Objeto();//t --> tipo
-    Objeto(sf::Texture* tex,sf::Vector2f size, sf::Vector2f Posicion,sf::Color color, int t);
+    Objeto( sf::Vector2f Posicion, int t);
 
     void render();
     void update(Player &otherBody);

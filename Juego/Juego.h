@@ -5,6 +5,7 @@
 #include "../Enemigos/enemigo.h"
 #include "../Bullet/bullet.h"
 #include "../Mapa/mapa.h"
+#include "../Objeto/Objeto.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
