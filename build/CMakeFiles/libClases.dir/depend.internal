@@ -71,7 +71,15 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
  /home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o
+ ../Bullet/bullet.h
+ ../Enemigos/enemigo.h
+ ../Juego/Juego.h
+ ../Mapa/mapa.h
+ ../Mapa/tinystr.h
+ ../Mapa/tinyxml.h
  ../Motor/Motor.h
+ ../Objeto/Objeto.h
+ ../Player/Player.h
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Player/Player.cpp
  /home/magiic/Escritorio/RanJamp/Player/Player.h

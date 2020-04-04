@@ -70,7 +70,15 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Player/Player.h
 
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Bullet/bullet.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Juego/Juego.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/mapa.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/tinystr.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/tinyxml.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Objeto/Objeto.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.cpp
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.h
