@@ -3,7 +3,7 @@
 Motor* Motor::pinstance=NULL;
 
 Motor::Motor(){
-
+    ventana = new sf::RenderWindow;
     ventana->create(sf::VideoMode(1080,720),"Totally not Pengo");
     updateClock.restart();
 

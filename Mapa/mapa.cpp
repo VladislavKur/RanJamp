@@ -26,7 +26,7 @@ void mapa::cargarmapa(const char * f){
     cout << "LO HE CARGADO" << endl;
   }
   map = doc.FirstChildElement("map");
-
+  if (map == nullptr) cout << "sadsad" <<  endl;
   map->QueryIntAttribute("width", &_width);
   map->QueryIntAttribute("height", &_height);
   map->QueryIntAttribute("tilewidth", &_tileWidth);

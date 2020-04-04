@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) MapaObjeto",
+            "name": "(gdb) ranJamp",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/mapaObjeto",
+            "program": "${workspaceFolder}/build/ranJamp",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -17,137 +17,6 @@
             "MIMode": "gdb"
 
         }
-         ,
-        {
-            "name": "(gdb) Mapa",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/mapa",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-
-        }
-         ,
-         {
-            "name": "(gdb) Sonido",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/sonido",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-
-        }
-         ,
-        {
-            "name": "(gdb) Menu",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/menu",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-
-        }
-         ,
-      
-
-        {
-            "name": "(gdb) Caer",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/Gravedad",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-        },
-
         
-
-        {
-            "name": "(gdb) Murcielago",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/murcielago",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-        }
-
-        ,
-            
-     
-
-        {
-            "name": "(gdb) MatarPersonaje",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/matar",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-        },
-
-        {
-            "name": "(gdb) Centinela",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/centinela",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-        },
-
-       
-        {
-            "name": "(gdb) Acciones",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/Acciones",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-
-        },
-
-       
-        {
-            "name": "(gdb) Reptante",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/reptante",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb"
-
-        }
     ]
 }
