@@ -9,28 +9,26 @@ Player::~Player(){
 
 }
 Player::Player()
-:animacion("../resources/sprites.png",
+:animacion("sprites.png",
             sf::Vector2u(40,19),
             0.33f,
             sf::Vector2f(100.0f,100.0f),
             sf::Vector2f(75.0,75.0)
             ){
+    sf::Texture *text = new sf::Texture;
 
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
 
-    if(!text.loadFromFile("Resources/sprites1.png")){
-     std::cout<< "sadasds";
-    }
-    sprite.setTexture(text);
-    sprite.setScale(1,1);
-    sprite.setPosition(100, 100);
-    sprite.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    if(!text->loadFromFile("resources/sprites.png")) cout << "sadasds";
+    
+    body.setTexture(text);
+    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
 } 
 
 Player::Player(int x, int y) 
-: animacion("../resources/sprites.png",
+: animacion("sprites.png",
             sf::Vector2u(40,19),
             0.33f,
             sf::Vector2f(100.0f,100.0f),

@@ -3,6 +3,7 @@
 #include <SFML/System.hpp>
 #include "tinyxml.h"
 
+#include "../Motor/Motor.h"
 using namespace sf;
 using namespace std;
 
@@ -16,7 +17,7 @@ class mapa{
         vector<vector<int>> cargarPosicionEnemigos_PowerUps(int i);
         void cargarObjectGroups();
         Vector2f cargarPosicionPlayer_Puerta(int i);
-        void render(RenderWindow * ventana);
+        void render();
         static mapa *instance();
         RectangleShape ** getObjetos();
         

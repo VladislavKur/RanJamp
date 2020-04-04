@@ -74,6 +74,21 @@ bool Motor::dibujo(sf::CircleShape entrada){
     return(devolver);
 }
 
+bool Motor::dibujo(sf::Sprite entrada){
+
+    bool devolver = false;
+
+    if(instanced){
+
+        ventana->draw(entrada);
+
+        devolver = true;
+
+    }
+    
+    return(devolver);
+}
+
 bool cargarSprite(sf::Texture& entrada, std::string fichero){
 
     bool devolver = true;

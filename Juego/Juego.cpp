@@ -7,6 +7,7 @@ Juego::Juego(){
     mapa * mundo = mapa::instance(); 
     mundo->cargarmapa("MapaFinal.tmx");
     jugador = new Player();
+    if(jugador == nullptr) printf("asdasd");
 }
 
 Juego* Juego::instance(){
