@@ -32,6 +32,14 @@ iostream
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 SFML/Graphics.hpp
 -
@@ -41,6 +49,8 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Player/Player.h
 ../Enemigos/enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+../Enemigos/murcielago.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
 ../Bullet/bullet.h
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 ../Mapa/mapa.h

@@ -24,7 +24,7 @@ Juego* Juego::instance(){
     return(pinstance);
 }
 
-void Juego::update(float deltaTime){ //wip
+void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
 
 
     for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
@@ -37,11 +37,12 @@ void Juego::update(float deltaTime){ //wip
        bulletEnemies[i].update(deltaTime);
 
     }
-    jugador->update(deltaTime);
+    jugador->update(deltaTime); // JUGADOR SE PUEDA MOVER....
+
     RectangleShape rec = jugador->getBody();
     for(int i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].update(rec, deltaTime);
+      enemies[i].update(rec, deltaTime); // POBAR QUE FUNCIONA ...
 
     }
 
@@ -76,6 +77,7 @@ void Juego::render(float porcentaje){ //wip
     Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
+
     for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
       bulletPlayer[i].render();
@@ -98,7 +100,7 @@ void Juego::render(float porcentaje){ //wip
 }
 
 
-void Juego::crearObjetos(){ /// VlaDIS 
+void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   mapa * mundo = mapa::instance();
   int tipo = 1;
   sf::Vector2f pos;
@@ -113,12 +115,42 @@ void Juego::crearObjetos(){ /// VlaDIS
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];
     
-    Objeto objeto1 ( pos ,posicion[i][2]);
+    Objeto objeto1(pos ,posicion[i][2]);
   }
   
   
 
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
-  
-
 }
+
+//CREARENEMIGOS FUNCIONE
+
+// void Juego::crearEnemigos(){ 
+//   mapa * mundo = mapa::instance();
+
+//   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
+
+//   for(int i = 0; i > posicion.size();i++){
+
+//     switch (posicion[i][2]){
+      
+//       case 1:
+//         Murcielago murcielago(posicion[i][0] , posicion[i][1]);
+//         break;
+      
+//       case 2:
+//         Murcielago murcielago(posicion[i][0] , posicion[i][1]);
+//         break;
+      
+//       case 3:
+//         Murcielago murcielago(posicion[i][0] , posicion[i][1]);
+//         break;
+      
+
+//       default:
+//         break;
+//     }
+
+//   }
+  
+// }

@@ -3,6 +3,7 @@
 #include <iostream>
 #include "../Player/Player.h"
 #include "../Enemigos/enemigo.h"
+#include "../Enemigos/murcielago.h"
 #include "../Bullet/bullet.h"
 #include "../Mapa/mapa.h"
 #include "../Objeto/Objeto.h"
@@ -28,6 +29,7 @@
             void render(float porcentaje);            
             void colisionPlayerMundo(float deltaTime);
             void crearObjetos();
+            void crearEnemigos();
     };
 
 #endif

@@ -32,6 +32,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Bullet/bullet.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/mapa.h
@@ -73,6 +74,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Bullet/bullet.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Juego/Juego.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/mapa.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/tinystr.h

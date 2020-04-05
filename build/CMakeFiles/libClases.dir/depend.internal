@@ -33,6 +33,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
  /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+ /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
  /home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
  /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
  /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
@@ -74,6 +75,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 CMakeFiles/libClases.dir/Player/Player.cpp.o
  ../Bullet/bullet.h
  ../Enemigos/enemigo.h
+ ../Enemigos/murcielago.h
  ../Juego/Juego.h
  ../Mapa/mapa.h
  ../Mapa/tinystr.h
