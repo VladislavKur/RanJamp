@@ -46,6 +46,7 @@ void Juego::update(float deltaTime){ //wip
       enemies[i].update(rec, deltaTime);
 
     }
+    jugador->updateHitbox();
 
 }
 
@@ -67,7 +68,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-56);
+          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55);
           jugador->updateHitbox();
           aux = true;
           posant = jugador->getBody().getPosition();
@@ -83,6 +84,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setJumpSpeed(10);
       }
     }
+
 
 }
 
