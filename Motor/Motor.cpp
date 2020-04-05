@@ -125,7 +125,7 @@ int Motor::getRelojM(){
 
 float Motor::restartReloj(){
 
-    float devolver = updateClock.getElapsedTime().asSeconds();
+    float devolver = updateClock.restart().asSeconds();
 
     return(devolver);
 
@@ -133,7 +133,7 @@ float Motor::restartReloj(){
 
 int Motor::restartRelojM(){
 
-    int devolver = updateClock.getElapsedTime().asMilliseconds();
+    int devolver = updateClock.restart().asMilliseconds();
 
     return(devolver);
 

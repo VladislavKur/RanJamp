@@ -19,13 +19,15 @@ Player::Player()
 
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=75*2;
+    jumpHeight=25;
     arma=0;  
     vidas = 2; 
-    velocidad=0.4;
+    velocidad=250;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
+
+    body.setOrigin(75/2, 75/2);
 
     if(!text->loadFromFile("resources/sprites.png")) cout << "sadasds";
     
