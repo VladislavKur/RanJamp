@@ -22,7 +22,7 @@ Player::Player()
     jumpHeight=75*2;
     arma=0;  
     vidas = 2; 
-    velocidad=1;
+    velocidad=0.4;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
