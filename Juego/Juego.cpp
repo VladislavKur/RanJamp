@@ -46,7 +46,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-      bulletEnemies[i].update(deltaTime);
+      bulletEnemies[i]->update(deltaTime);
 
     }
     
@@ -119,7 +119,7 @@ void Juego::render(float porcentaje){ //wip
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-     bulletEnemies[i].render();
+     bulletEnemies[i]->render();
 
     }
 
@@ -212,4 +212,18 @@ void Juego::disparar(float deltaTime){
           }
         }
     
+}
+
+void Juego::dispararEnemigo(float deltaTime,float x, float y, bool direccion){
+
+  for(int i = 0; i < maxBullets;i++){
+
+    if(bulletEnemies[i] == NULL){
+
+      bulletEnemies[i] = new Bullet(x,y,direccion);
+
+    }
+
+  }
+
 }

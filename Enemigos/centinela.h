@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "enemigo.h"
+#include "../Juego/Juego.h"
 
 #ifndef CENTINELA_H
 #define CENTINELA_H
@@ -11,6 +12,8 @@ class Centinela : public Enemigo{
         int distanciaAtaque;
         int distanciaDisparo;
         int tipo;
+        Juego* juego;
+
         void disparar(); //devuelve bala o nada ??????
 
     public:
