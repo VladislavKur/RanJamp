@@ -32,7 +32,7 @@ int main() {
 
         delta = m->restartReloj();
 
-      //  instancia->update(delta);
+       instancia->update(delta);
 
       }
 

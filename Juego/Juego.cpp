@@ -100,7 +100,7 @@ void Juego::render(float porcentaje){ //wip
 
 void Juego::crearObjetos(){ /// VlaDIS 
   mapa * mundo = mapa::instance();
-  int tipo = 1;
+ 
   sf::Vector2f pos;
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);

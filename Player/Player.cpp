@@ -96,9 +96,9 @@ void Player::update(float deltaTime){
 
   //caer
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
+   /* if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
         saltar();
-    }
+    }*/
 
     // if(coliArriba.intersects(plataforma.getBody().getGlobalBounds())){
     //     jumpSpeed=10;
@@ -107,13 +107,6 @@ void Player::update(float deltaTime){
     //Caída constante
     body.move(0,jumpSpeed*deltaTime);
 }
-
-void Player::setSaltos(){
-  
-  //jumpHeight *= 2;
-  saltos+= 100;
-}
-
 
 
 
@@ -164,7 +157,6 @@ void Player::saltar(){
   if(saltos!=0){
         
         jumpSpeed = -sqrtf(2.0f * 981.0f * jumpHeight);
-        std::cout<< "Saltos: " << saltos<<std::endl;
         saltos--;
       }
 }
