@@ -15,6 +15,17 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
+ ../Animacion/Animacion.h
+ ../Bullet/bullet.h
+ ../Enemigos/enemigo.h
+ ../Enemigos/murcielago.h
+ ../Juego/Juego.h
+ ../Mapa/mapa.h
+ ../Mapa/tinystr.h
+ ../Mapa/tinyxml.h
+ ../Motor/Motor.h
+ ../Objeto/Objeto.h
+ ../Player/Player.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h

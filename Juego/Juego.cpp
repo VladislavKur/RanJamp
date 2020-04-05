@@ -38,6 +38,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     }
     colisionPlayerMundo(deltaTime);
+    
     jugador->update(deltaTime);
     RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
@@ -55,15 +56,20 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
     //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
     // }
+    bool pararse=false;
     for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
-        
-      jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
-      jugador->setJumpSpeed(0);
-  
+        pararse=true;
 
-      } else{
-        jugador->setJumpSpeed(9.81f*deltaTime/10);
+      } 
+
+      if(pararse){
+        jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+        jugador->setJumpSpeed(0);
+        std::cout<<jugador->getJumpSpeed()<<endl;
+
+      }else{
+        jugador->setJumpSpeed(9.81f*deltaTime/20);
       }
 
       if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
@@ -124,32 +130,30 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 
 //CREARENEMIGOS FUNCIONE
 
-// void Juego::crearEnemigos(){ 
-//   mapa * mundo = mapa::instance();
+void Juego::crearEnemigos(){ 
+  mapa * mundo = mapa::instance();
 
-//   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
+  vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
 
-//   for(int i = 0; i > posicion.size();i++){
-
-//     switch (posicion[i][2]){
+  for(int i = 0; i > posicion.size();i++){
+    float posx =  posicion[i][0];
+    float posy =  posicion[i][1];
+    switch (posicion[i][2]){
       
-//       case 1:
-//         Murcielago murcielago(posicion[i][0] , posicion[i][1]);
-//         break;
+      case 1:
+        Murcielago *  murcielago = new Murcielago(posx, posy);
+        enemies[i] = murcielago;//como hacer el cast
+        break;
       
-//       case 2:
-//         Murcielago murcielago(posicion[i][0] , posicion[i][1]);
-//         break;
+      case 2:
+        Murcielago *  murcielago2 = new Murcielago(posx, posy);
+        break;
       
-//       case 3:
-//         Murcielago murcielago(posicion[i][0] , posicion[i][1]);
-//         break;
-      
+      case 3:
+        Murcielago *  murcielago3 = new Murcielago(posx, posy);
+        break;
+    }
 
-//       default:
-//         break;
-//     }
-
-//   }
+  }
   
-// }
+}

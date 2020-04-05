@@ -31,6 +31,7 @@
             void crearObjetos();
             void crearEnemigos();
             Player *getJugador(){return jugador;};
+            void matarEnemigo(Enemigo* enem);
     };
 
 #endif

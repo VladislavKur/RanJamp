@@ -13,8 +13,7 @@ class Centinela : public Enemigo{
         void disparar(); //devuelve bala o nada ??????
 
     public:
-        Centinela(sf::Texture& tex);
-        Centinela(sf::Texture& tex, float x, float y);
+        Centinela(float x, float y);
         void update(sf::RectangleShape& player, float delta);
         void render( float porcentaje);   
 };

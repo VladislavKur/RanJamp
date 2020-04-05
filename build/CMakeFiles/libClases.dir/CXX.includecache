@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../Animacion/Animacion.h
+SFML/Graphics.hpp
+-
+Motor.h
+../Animacion/Motor.h
+
 ../Bullet/bullet.h
 SFML/Graphics.hpp
 -
@@ -143,6 +149,8 @@ enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+Juego.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 SFML/Graphics.hpp
