@@ -57,15 +57,14 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         pararse=true;
-
       } 
 
       if(pararse){
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
-        jugador->setJumpSpeed(0);
+        jugador->setJumpSpeed(-1);
 
       }else{
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*deltaTime);
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*5*deltaTime);
       }
       if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
         jugador->setJumpSpeed(10);
