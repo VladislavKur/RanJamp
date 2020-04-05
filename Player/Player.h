@@ -29,6 +29,7 @@ public:
     //FUNCIONALIDAD
     void render();
     void update(float deltaTime);
+    void updateHitbox();
     
     void saltar();
 

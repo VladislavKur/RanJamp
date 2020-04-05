@@ -1,4 +1,4 @@
-# Install script for directory: /home/magiic/Escritorio/RanJamp/Animacion
+# Install script for directory: /home/vermia/RanJamp/Animacion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

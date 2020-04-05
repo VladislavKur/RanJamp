@@ -60,29 +60,8 @@ Player::Player(int x, int y)
 }
 
 void Player::update(float deltaTime){
-    Vector2f gp = body.getPosition();
-    FloatRect gbb = body.getGlobalBounds();
-
-    coliAbajo.left = gp.x - gbb.width/2 + 25;
-    coliAbajo.top = gp.y + gbb.height/2;
-    coliAbajo.width = gbb.width/2;
-    coliAbajo.height = 6;
     
-    coliIzquierda.left = gp.x - gbb.width/2+12;
-    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
-    coliIzquierda.height = gbb.height -25;
-
-    coliDerecha.left = gp.x+5;
-    coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 -20;
-    coliDerecha.height = gbb.height -25;
-
-    coliArriba.left = gp.x - gbb.width/2 + 20;
-    coliArriba.top = gp.y-gbb.height/2 +25;
-    coliArriba.width = gbb.width - 40;
-    coliArriba.height = 5;
-
+    updateHitbox();
 
     // //Moverse a la derecha si la plataforma lo permite
     // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
@@ -214,4 +193,29 @@ void Player::setPosicion(float x, float y){
   pos.x = x;
   pos.y = y;
   body.setPosition(pos); 
+}
+
+void Player::updateHitbox(){
+    Vector2f gp = body.getPosition();
+    FloatRect gbb = body.getGlobalBounds();
+
+    coliAbajo.left = gp.x - gbb.width/2 + 25;
+    coliAbajo.top = gp.y + gbb.height/2;
+    coliAbajo.width = gbb.width/2;
+    coliAbajo.height = 6;
+    
+    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
+    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.height = gbb.height -25;
+
+    coliDerecha.left = gp.x+5;
+    coliDerecha.top = gp.y - gbb.height/2 +25;
+    coliDerecha.width = gbb.width/2 -20;
+    coliDerecha.height = gbb.height -25;
+
+    coliArriba.left = gp.x - gbb.width/2 + 20;
+    coliArriba.top = gp.y-gbb.height/2 +25;
+    coliArriba.width = gbb.width - 40;
+    coliArriba.height = 5;
 }
