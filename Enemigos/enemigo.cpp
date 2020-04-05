@@ -10,6 +10,7 @@ Enemigo::Enemigo(float x, float y){
     posXanterior = x;
     posYanterior = y;
     modo = 0;
+    vida = 1;
 
 };
 Enemigo::~Enemigo(){
