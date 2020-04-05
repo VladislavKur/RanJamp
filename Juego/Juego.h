@@ -14,7 +14,7 @@
 
         private:
             Player *jugador;
-            Enemigo* enemies = NULL;
+            Enemigo** enemies = NULL;
             Bullet* bulletPlayer = NULL;
             Bullet* bulletEnemies = NULL;
             static Juego* pinstance;

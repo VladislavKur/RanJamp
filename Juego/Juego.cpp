@@ -34,7 +34,7 @@ void Juego::update(float deltaTime){ //wip
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-       bulletEnemies[i].update(deltaTime);
+      bulletEnemies[i].update(deltaTime);
 
     }
     colisionPlayerMundo(deltaTime);
@@ -42,7 +42,7 @@ void Juego::update(float deltaTime){ //wip
     RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].update(rec, deltaTime);
+      enemies[i]->update(rec, deltaTime);
 
     }
 
@@ -91,7 +91,7 @@ void Juego::render(float porcentaje){ //wip
     
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].render(porcentaje);
+      enemies[i]->render(porcentaje);
 
     }
 }
@@ -120,4 +120,14 @@ void Juego::crearObjetos(){ /// VlaDIS
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
   
 
+}
+
+void Juego::matarEnemigo(Enemigo* enem){
+  for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
+
+    if(enemies[i] == enem){
+      delete[] enemies[i];
+    }
+
+  }
 }
