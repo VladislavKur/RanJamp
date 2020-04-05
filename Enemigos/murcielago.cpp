@@ -18,7 +18,7 @@ Murcielago::Murcielago(sf::Texture& tex) : Enemigo(tex,0,0){
 
 Murcielago::Murcielago(sf::Texture& tex, float x, float y) : Enemigo(tex,x,y){
     velocidad = 0.3;
-    altura = 0;
+    altura = 3;
     distanciaAtaque = 1000;
 };
 
@@ -77,9 +77,7 @@ void Murcielago::update(Player& player, float delta){
     if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
         if(!haPegado)
             player.setVidas(player.getVidas()-1);
-        if(player.getVidas() == 0 ){
-            player.morir();
-        }
+        
         haPegado = true;
         morir();
     }
