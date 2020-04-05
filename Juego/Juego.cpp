@@ -109,11 +109,11 @@ void Juego::render(float porcentaje){ //wip
 
     jugador->render();
     
-    
-    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
-
+    int i = 0;
+    while(enemies[i]){
+      cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
-
+      i++;
     }
 }
 
@@ -152,7 +152,7 @@ void Juego::crearEnemigos(){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
-        cout << "he añadido murcielago" << endl;
+        cout << "he añadido murcielago " << posx << ","  << posy  << endl;
         Murcielago * murcielago = new Murcielago(posx, posy);
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){

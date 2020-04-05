@@ -84,7 +84,7 @@ void Murcielago::render(float porcentaje){
     cuerpo.setPosition(
         posXanterior + diffX*porcentaje,
         posYanterior + diffY*porcentaje );
-    
+    std::cout << "ENTRO EN RENDER enemigo , " << posXanterior <<  ", " << posYanterior  << std::endl;
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
 
