@@ -20,7 +20,7 @@ Player::Player()
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=20;
-    arma=0;  
+    
     vidas = 2; 
     velocidad=250;
 
@@ -33,6 +33,11 @@ Player::Player()
     
     body.setTexture(text);
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+
+    /*PU_saltoDoble = true;
+    PU_velocidad = true;
+    arma=1;  */
+    
 } 
 
 Player::Player(int x, int y) 
@@ -131,7 +136,7 @@ void Player::moveRight(float deltaTime){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  for(unsigned int i=0; i<sizeof(objetos)+2 ; i++){
   
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;

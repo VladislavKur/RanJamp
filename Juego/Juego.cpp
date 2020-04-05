@@ -72,9 +72,9 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         posobj = objetos[i]->getPosition();
         pararse=true;
       } 
-
+jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
       if(pararse){
-        jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+        
 
         if(aux == false){
           jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55);
