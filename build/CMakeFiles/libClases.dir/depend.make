@@ -16,7 +16,10 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Motor/Motor.h
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Bullet/bullet.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/murcielago.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/reptante.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Juego/Juego.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mapa/mapa.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mapa/tinystr.h
@@ -44,7 +47,10 @@ CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Bullet/bullet.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/murcielago.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/reptante.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/mapa.h
@@ -85,7 +91,10 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Bullet/bullet.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/murcielago.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/reptante.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Juego/Juego.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/mapa.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/tinystr.h

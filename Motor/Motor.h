@@ -40,6 +40,8 @@
             char readEventTeclado();
             sf::RenderWindow* getVentana(){return ventana;}
 
+            sf::View Camara(sf::Vector2f sad);
+
     };
 
 

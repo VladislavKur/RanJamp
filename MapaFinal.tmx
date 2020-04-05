@@ -657,7 +657,7 @@
   <object id="13" type="2" x="566.667" y="612" width="28" height="26.6667">
    <ellipse/>
   </object>
-  <object id="14" x="716" y="490.667" width="28" height="26.6667">
+  <object id="14" type="2" x="716" y="490.667" width="28" height="26.6667">
    <ellipse/>
   </object>
   <object id="15" type="2" x="120" y="605.333" width="29.3333" height="30.6667">
