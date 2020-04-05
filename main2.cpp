@@ -28,42 +28,17 @@ int main() {
     //funcion inicializar juego de juego VERY WIP SUCH WOW
 
     while(m->getOpen()){
-
-      RenderWindow* window = m->getVentana();
-
-      sf::Event event;
-    while(window->pollEvent(event)){
-      switch (event.type)
-      {
-      //Para poder cerrar la ventana se necesita:
-      case sf::Event::EventType::Closed :
-        window->close();
-      break;
-
-      case sf::Event::EventType::KeyPressed:
-
-        switch (event.key.code) {
-
-        default:
-          break;
-        }
-
-      break; // de KeyPressed
-      
-      default:
-        break;
-      }
-    }
-      if(m->getRelojM() > UPDATE_TICK_TIME){
+      /*if(m->getRelojM() > UPDATE_TICK_TIME){
 
         delta = m->restartReloj();
 
-        instancia->update(delta);
+      //  instancia->update(delta);
 
       }
 
       elapsus = m->getRelojM();
 
+      RenderWindow* window = m->getVentana();
 
       window->clear();
       
@@ -75,14 +50,15 @@ int main() {
          instancia->render(elapsus/UPDATE_TICK_TIME);
       }
 
+      window->display();*/
+
+      RenderWindow* window = m->getVentana();
+
+      window->clear(Color(128,0,0));
+      
+      window->draw(instancia->getJugador()->getBody());
+
       window->display();
-
-
-      //window->clear(Color(128,0,0));
-//
-      //window->draw(instancia->getJugador()->getBody());
-//
-      //window->display();
 
     }
   //}

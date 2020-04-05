@@ -27,6 +27,8 @@ iostream
 -
 enemigo.h
 ../Enemigos/enemigo.h
+../Player/Player.h
+../Player/Player.h
 
 ../Juego/Juego.h
 SFML/Graphics.hpp
@@ -161,6 +163,8 @@ iostream
 -
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+../Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp
 reptante.h

@@ -39,6 +39,8 @@ iostream
 -
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+../Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 SFML/Graphics.hpp

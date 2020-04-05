@@ -30,6 +30,7 @@
             void colisionPlayerMundo(float deltaTime);
             void crearObjetos();
             void crearEnemigos();
+            Player *getJugador(){return jugador;};
     };
 
 #endif

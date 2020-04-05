@@ -19,10 +19,13 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
+ ../Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp
  /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Player/Player.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp
