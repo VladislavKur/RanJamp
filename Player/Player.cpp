@@ -46,7 +46,8 @@ Player::Player(int x, int y)
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=75*2;
-    arma=0;    
+    arma=0;  
+    vidas = 2;  
 }
 
 void Player::update(float deltaTime){
@@ -108,7 +109,23 @@ void Player::update(float deltaTime){
     body.move(0,jumpSpeed*deltaTime);
 }
 
+void Player::setSaltos(){
+  
+  //jumpHeight *= 2;
+  saltos+= 100;
+}
 
+
+void Player::setVidas(int v){
+  vidas = v;
+  if(vidas == 0)
+    morir();
+}
+
+void Player::morir(){
+  body.setSize(sf::Vector2f(0,0));
+ 
+}
 
 void Player::render(){
   Motor * motor = Motor::instance();

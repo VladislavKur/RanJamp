@@ -17,23 +17,16 @@ Murcielago::Murcielago(sf::Texture& tex) : Enemigo(tex,0,0){
 };
 
 Murcielago::Murcielago(sf::Texture& tex, float x, float y) : Enemigo(tex,x,y){
-    /*posX = x;
-    posY = y;
-    diffX= 0.0;
-    diffY= 0.0;
-    posXanterior = x;
-    posYanterior = y;*/
-    modo = 0;
-    //cuerpo.setTexture(tex);
-    cuerpo.setOrigin(75 / 2, 75 / 2);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 75, 75));
-    cuerpo.setPosition(x, y);
+    velocidad = 0.3;
+    altura = 0;
+    distanciaAtaque = 1000;
 };
 
-void Murcielago::update(sf::RectangleShape& entrada, float delta){
+void Murcielago::update(Player& player, float delta){
+    sf::RectangleShape body = player.getBody();
 
-    float posJugadorX = entrada.getPosition().x;
-    float posJugadorY = entrada.getPosition().y;
+    float posJugadorX = body.getPosition().x;
+    float posJugadorY = body.getPosition().y;
 
     float local_diffX = posJugadorX - posX;
     float local_diffY = posJugadorY - posY;
@@ -74,13 +67,23 @@ void Murcielago::update(sf::RectangleShape& entrada, float delta){
                 if(direccion == 0)
                     direccion = local_diffX/local_diffabsX;
 
-                actualizarPosicion(direccion*velocidad,0);     
+                actualizarPosicion(direccion*velocidad*delta,0);     
             break;
 
         }
         
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
 
+    if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
+        if(!haPegado)
+            player.setVidas(player.getVidas()-1);
+        if(player.getVidas() == 0 ){
+            player.morir();
+        }
+        haPegado = true;
+        morir();
+    }
+    
 };
 
 void Murcielago::render(float porcentaje){

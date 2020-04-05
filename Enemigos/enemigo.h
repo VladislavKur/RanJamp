@@ -10,7 +10,7 @@
 class Enemigo{
     public:
         virtual void update(sf::RectangleShape& player, float delta){}; ///player
-        virtual void render( float porcentaje){};
+        virtual void render(float porcentaje){};
 
     protected:
         float posX, posY;
@@ -18,11 +18,14 @@ class Enemigo{
         float diffX, diffY;
         float velocidad;
         int modo;
+        int vida;
         Enemigo(sf::Texture& tex,float x, float y);
         ~Enemigo();
         sf::Sprite cuerpo;
         sf::Clock relojAnim;
         void actualizarPosicion(float x, float y);
+        void morir();
+        int getVidas(){return vida;}
 };
 
 
