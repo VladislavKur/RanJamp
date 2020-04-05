@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../Animacion/Animacion.h
+SFML/Graphics.hpp
+-
+Motor.h
+../Animacion/Motor.h
+
 ../Bullet/bullet.h
 SFML/Graphics.hpp
 -
@@ -131,6 +137,8 @@ enemigo.h
 /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
 /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+Juego.h
+/home/magiic/Escritorio/RanJamp/Enemigos/Juego.h
 
 /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp

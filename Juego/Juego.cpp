@@ -37,6 +37,8 @@ void Juego::update(float deltaTime){ //wip
        bulletEnemies[i].update(deltaTime);
 
     }
+    colisionPlayerMundo(deltaTime);
+    
     jugador->update(deltaTime);
     RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
@@ -51,22 +53,23 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
-    int i = 0;
-    while (objetos){
+    bool pararse=false;
+    for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
-        
-      jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
-      jugador->setJumpSpeed(0);
-  
+        pararse=true;
 
-      } else{
-        jugador->setJumpSpeed(9.81f*deltaTime);
+      } 
+
+      if(pararse){
+        jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+        jugador->setJumpSpeed(0);
+
+      }else{
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*deltaTime);
       }
-
       if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
         jugador->setJumpSpeed(10);
       }
-      i++;
     }
 
 }

@@ -15,6 +15,16 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
+ ../Animacion/Animacion.h
+ ../Bullet/bullet.h
+ ../Enemigos/enemigo.h
+ ../Juego/Juego.h
+ ../Mapa/mapa.h
+ ../Mapa/tinystr.h
+ ../Mapa/tinyxml.h
+ ../Motor/Motor.h
+ ../Objeto/Objeto.h
+ ../Player/Player.h
  /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp
  /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h

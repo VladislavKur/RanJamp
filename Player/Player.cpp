@@ -17,9 +17,17 @@ Player::Player()
             ){
     sf::Texture *text = new sf::Texture;
 
+    saltos = 1;
+    jumpSpeed=0;
+    jumpHeight=25;
+    arma=0;  
+    vidas = 2; 
+    velocidad=250;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
+
+    body.setOrigin(75/2, 75/2);
 
     if(!text->loadFromFile("resources/sprites.png")) cout << "sadasds";
     
@@ -48,6 +56,7 @@ Player::Player(int x, int y)
     jumpHeight=75*2;
     arma=0;  
     vidas = 2;  
+    velocidad=1;
 }
 
 void Player::update(float deltaTime){
@@ -100,6 +109,13 @@ void Player::update(float deltaTime){
    /* if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
         saltar();
     }*/
+    
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
+        moveRight(deltaTime);
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){
+        moveLeft(deltaTime);
+    }
 
     // if(coliArriba.intersects(plataforma.getBody().getGlobalBounds())){
     //     jumpSpeed=10;
@@ -136,18 +152,17 @@ void Player::moveRight(float deltaTime){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  int i = 0;
-  while(objetos){
+  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
     }
-    i++;
   }
 
   if(puede){
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
     body.setScale(1, 1);
-    body.move(500*deltaTime, 0);
+    body.move(velocidad*deltaTime, 0);
   }
 }
 
@@ -156,18 +171,17 @@ mapa* mundo = mapa::instance();
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  int i = 0;
-  while(objetos){
-    if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
+  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  
+    if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
     }
-    i++;
   }
 
   if(puede){
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
     body.setScale(-1, 1);
-    body.move(-500*deltaTime, 0);
+    body.move(-velocidad*deltaTime, 0);
   }
 }
 void Player::saltar(){
