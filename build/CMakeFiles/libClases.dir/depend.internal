@@ -17,7 +17,10 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  ../Animacion/Animacion.h
  ../Bullet/bullet.h
+ ../Enemigos/centinela.h
  ../Enemigos/enemigo.h
+ ../Enemigos/murcielago.h
+ ../Enemigos/reptante.h
  ../Juego/Juego.h
  ../Mapa/mapa.h
  ../Mapa/tinystr.h
@@ -45,7 +48,10 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  ../Motor/Motor.h
  /home/vermia/RanJamp/Animacion/Animacion.h
  /home/vermia/RanJamp/Bullet/bullet.h
+ /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
+ /home/vermia/RanJamp/Enemigos/murcielago.h
+ /home/vermia/RanJamp/Enemigos/reptante.h
  /home/vermia/RanJamp/Juego/Juego.cpp
  /home/vermia/RanJamp/Juego/Juego.h
  /home/vermia/RanJamp/Mapa/mapa.h
@@ -86,7 +92,10 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
  /home/vermia/RanJamp/Player/Player.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o
  ../Bullet/bullet.h
+ ../Enemigos/centinela.h
  ../Enemigos/enemigo.h
+ ../Enemigos/murcielago.h
+ ../Enemigos/reptante.h
  ../Juego/Juego.h
  ../Mapa/mapa.h
  ../Mapa/tinystr.h

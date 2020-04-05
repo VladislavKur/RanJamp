@@ -5,7 +5,10 @@ CMakeFiles/ranJamp.dir/main.cpp.o
  ../Motor/Motor.h
  /home/vermia/RanJamp/Animacion/Animacion.h
  /home/vermia/RanJamp/Bullet/bullet.h
+ /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
+ /home/vermia/RanJamp/Enemigos/murcielago.h
+ /home/vermia/RanJamp/Enemigos/reptante.h
  /home/vermia/RanJamp/Juego/Juego.h
  /home/vermia/RanJamp/Mapa/mapa.h
  /home/vermia/RanJamp/Mapa/tinystr.h

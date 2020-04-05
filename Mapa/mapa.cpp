@@ -244,9 +244,10 @@ void mapa::cargarObjectGroups(){
 
 vector<vector<int>>  mapa::cargarPosicionEnemigos_PowerUps(int i){
     vector<vector<int>> posiciones;
-    vector<int> dentro; 
+  
     TiXmlElement * object = objectgroups[i]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 
     while(object){
+        vector<int> dentro; 
         object->QueryIntAttribute("x" , &_posX);
         object->QueryIntAttribute("y" , &_posY);
         object->QueryIntAttribute("type", &_tipo);

@@ -24,6 +24,14 @@ SFML/Graphics.hpp
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
 
+/home/vermia/RanJamp/Enemigos/centinela.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
+
 /home/vermia/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
@@ -31,6 +39,24 @@ iostream
 -
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
+
+/home/vermia/RanJamp/Enemigos/murcielago.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
+../Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
+
+/home/vermia/RanJamp/Enemigos/reptante.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
 /home/vermia/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
@@ -41,6 +67,12 @@ iostream
 /home/vermia/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
 /home/vermia/RanJamp/Enemigos/enemigo.h
+../Enemigos/murcielago.h
+/home/vermia/RanJamp/Enemigos/murcielago.h
+../Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
+../Enemigos/reptante.h
+/home/vermia/RanJamp/Enemigos/reptante.h
 ../Bullet/bullet.h
 /home/vermia/RanJamp/Bullet/bullet.h
 ../Mapa/mapa.h

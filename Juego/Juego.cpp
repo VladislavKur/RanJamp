@@ -11,6 +11,8 @@ Juego::Juego(){
     mundo->crearObjetos();
     jugador = new Player();
     if(jugador == nullptr) printf("asdasd");
+    //crearObjetos();
+    crearEnemigos();
 }
 
 Juego* Juego::instance(){
@@ -24,7 +26,7 @@ Juego* Juego::instance(){
     return(pinstance);
 }
 
-void Juego::update(float deltaTime){ //wip
+void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
 
 
     for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
@@ -43,7 +45,7 @@ void Juego::update(float deltaTime){ //wip
     RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].update(rec, deltaTime);
+      //enemies[i]->update(rec, deltaTime); // POBAR QUE FUNCIONA ...
 
     }
     jugador->updateHitbox();
@@ -54,6 +56,9 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
+    // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
+    //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
+    // }
     Vector2f posobj;
     bool pararse=false;
     bool aux = false;
@@ -109,13 +114,13 @@ void Juego::render(float porcentaje){ //wip
     
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].render(porcentaje);
+      enemies[i]->render(porcentaje);
 
     }
 }
 
 
-void Juego::crearObjetos(){ /// VlaDIS 
+void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   mapa * mundo = mapa::instance();
  
   sf::Vector2f pos;
@@ -130,12 +135,38 @@ void Juego::crearObjetos(){ /// VlaDIS
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];
     
-    Objeto objeto1 ( pos ,posicion[i][2]);
+    Objeto objeto1(pos ,posicion[i][2]);
   }
   
   
 
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
-  
+}
 
+//CREARENEMIGOS FUNCIONE
+
+void Juego::crearEnemigos(){ 
+  mapa * mundo = mapa::instance();
+
+  vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
+  enemies = new Enemigo *[posicion.size()]; 
+  for(int i = 0; i < posicion.size();i++){
+    float posx =  posicion[i][0];
+    float posy =  posicion[i][1];
+    if(posicion[i][2] == 1){
+        cout << "he añadido murcielago" << endl;
+        Murcielago * murcielago = new Murcielago(posx, posy);
+        enemies[i] = (Enemigo *) murcielago;
+    }else if(posicion[i][2] == 2){
+        cout << "he añadido centinela" << endl;
+        Centinela * centinela = new Centinela(posx, posy);
+        enemies[i] = (Enemigo *) centinela;
+    }else if(posicion[i][2] == 3){
+        cout << "he añadido reptante" << endl;
+        Reptante * reptante = new Reptante(posx, posy);
+        enemies[i] = (Enemigo *) reptante;
+    }
+
+  }
+  
 }
