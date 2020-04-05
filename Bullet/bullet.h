@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "../Motor/Motor.h"
 
-#define maxBullets 64
+#define maxBullets 256
 
 class Bullet
 {

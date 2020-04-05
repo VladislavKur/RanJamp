@@ -10,10 +10,11 @@ class Centinela : public Enemigo{
     private:
         int distanciaAtaque;
         int distanciaDisparo;
+        int tipo;
         void disparar(); //devuelve bala o nada ??????
 
     public:
-        Centinela(float x, float y);
+        Centinela(float x, float y, int type);
         void update(Player* player, float delta);
         void render( float porcentaje);   
 };

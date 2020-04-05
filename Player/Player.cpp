@@ -20,9 +20,17 @@ Player::Player()
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=20;
-    arma=0;  
+    arma=1;  
     vidas = 2; 
     velocidad=250;
+
+    PU_saltoDoble=true;
+    PU_slowhits=false;
+    PU_velocidad=false;
+
+    auxSaltos = true;
+    cooldownSalto = 0;
+    cooldownDisparo = 0;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
@@ -33,8 +41,7 @@ Player::Player()
     
     body.setTexture(text);
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-
-    PU_saltoDoble = true;
+  
 } 
 
 Player::Player(int x, int y) 
@@ -44,7 +51,6 @@ Player::Player(int x, int y)
             sf::Vector2f(100.0f,100.0f),
             sf::Vector2f(75.0,75.0)
             ){
-    
     
     //body.setSize(sf::Vector2f(100.0f,100.0f));
     //body.setTexture(tex);
@@ -59,12 +65,20 @@ Player::Player(int x, int y)
     arma=0;  
     vidas = 2;  
     velocidad=1;
+    
 }
 
 void Player::update(float deltaTime){
     
     updateHitbox();
 
+
+    cooldownSalto-=deltaTime;
+    if(cooldownSalto<=0){
+      auxSaltos=true;
+    }
+
+    cooldownDisparo-=deltaTime;
     // //Moverse a la derecha si la plataforma lo permite
     // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
     //   if(!coliDerecha.intersects(plataforma.getBody().getGlobalBounds()))
@@ -88,7 +102,10 @@ void Player::update(float deltaTime){
   //caer
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
-        saltar();
+      if(auxSaltos==true && saltos > 0){
+          saltar();
+          cooldownSalto=40*deltaTime;
+        }
     }
     
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
@@ -167,9 +184,8 @@ mapa* mundo = mapa::instance();
 }
 void Player::saltar(){
   if(saltos!=0){
-        
+        auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
-        std::cout<< "Saltos: " << saltos<<std::endl;
         saltos--;
       }
 }

@@ -1,7 +1,7 @@
 #include "centinela.h"
 
 
-Centinela::Centinela( float x, float y) : Enemigo(x,y){
+Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
    sf::Texture *text = new sf::Texture;
 
     cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
@@ -15,6 +15,7 @@ Centinela::Centinela( float x, float y) : Enemigo(x,y){
     cuerpo.setTextureRect(sf::IntRect(0, 0, 96 , 320));
    // cuerpo.setScale(1.5, 2.5);
 
+    tipo = type;
     modo  = 0;
     velocidad = 0.3;
     distanciaDisparo = 100;
@@ -43,6 +44,8 @@ void Centinela::update(Player* player, float deltaTime){
             case(0): //está quieto
                 if(local_diffabs < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
                     modo = 1;
+                    if(tipo == 1)
+                        modo = 2;
                     cambio = true;
                 }
                 if(local_diffabs < distanciaDisparo){//si está lo suficientemente cerca, cambiamos
@@ -67,6 +70,8 @@ void Centinela::update(Player* player, float deltaTime){
             case(2):
                 if(local_diffabs > distanciaDisparo){//si está lo suficientemente lejos, cambiamos
                     modo = 1;
+                    if(tipo == 1)
+                        modo = 0;
                     cambio = true;
                 } 
                 else{//DISPARA!!!! necesitamos el trabajo de vermivlad

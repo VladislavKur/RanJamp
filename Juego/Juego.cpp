@@ -13,7 +13,12 @@ Juego::Juego(){
     if(jugador == nullptr) printf("asdasd");
     crearObjetos();
     crearEnemigos();
-    view.setSize(720,720);
+    view.setSize(720,480);
+
+  for(int i = 0 ; i < maxBullets ; i++){
+       bulletPlayer[i]=NULL;
+    }
+
 }
 
 Juego* Juego::instance(){
@@ -29,10 +34,14 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-    
-    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
-       bulletPlayer[i].update(deltaTime);
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
+      disparar(deltaTime);
+  }
+    
+    for(unsigned i = 0; i < maxBullets ;i++){
+      if(bulletPlayer[i] == NULL) continue;
+       bulletPlayer[i]->update(deltaTime);
 
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
@@ -107,9 +116,9 @@ void Juego::render(float porcentaje){ //wip
     Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
-    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
-
-      bulletPlayer[i].render();
+    for(unsigned i = 0; i < maxBullets;i++){
+      if(bulletPlayer[i]==NULL) continue;
+      bulletPlayer[i]->render();
 
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
@@ -155,14 +164,14 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 
 
 void Juego::matarEnemigo(Enemigo* enem){
-  /*for(unsigned i = 0; i < *enemies.length() ;i++){
+  for(unsigned i = 0; i <  (sizeof(enemies)/sizeof(*enemies));i++){
 
     if(enemies[i] == enem){
       delete[] enemies[i];
+      break;
     }
 
-  }*/
-  numEmenigos--;
+  }
 }
 //CREARENEMIGOS FUNCIONE
 
@@ -181,9 +190,14 @@ void Juego::crearEnemigos(){
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
         cout << "he añadido centinela" << endl;
-        Centinela * centinela = new Centinela(posx, posy);
+        Centinela * centinela = new Centinela(posx, posy,1);
         enemies[i] = (Enemigo *) centinela;
     }else if(posicion[i][2] == 3){
+        cout << "he añadido un centinela que se mueve"<< endl;
+        Centinela* centinela = new Centinela(posx,posy,0);
+        enemies[i] = (Enemigo *) centinela;
+    }
+    else if(posicion[i][2] == 4){
         cout << "he añadido reptante" << endl;
         Reptante * reptante = new Reptante(posx, posy);
         enemies[i] = (Enemigo *) reptante;
@@ -191,4 +205,16 @@ void Juego::crearEnemigos(){
 
   }
   
+}
+
+void Juego::disparar(float deltaTime){
+  
+        for(int i=0 ; i<maxBullets ; i++){
+          if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
+            bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) );
+            jugador->setCooldownDisparo(10*deltaTime);
+            break;
+          }
+        }
+    
 }
