@@ -176,9 +176,14 @@ void Juego::crearEnemigos(){
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
         cout << "he añadido centinela" << endl;
-        Centinela * centinela = new Centinela(posx, posy);
+        Centinela * centinela = new Centinela(posx, posy,1);
         enemies[i] = (Enemigo *) centinela;
     }else if(posicion[i][2] == 3){
+        cout << "he añadido un centinela que se mueve"<< endl;
+        Centinela* centinela = new Centinela(posx,posy,0);
+        enemies[i] = (Enemigo *) centinela;
+    }
+    else if(posicion[i][2] == 4){
         cout << "he añadido reptante" << endl;
         Reptante * reptante = new Reptante(posx, posy);
         enemies[i] = (Enemigo *) reptante;
