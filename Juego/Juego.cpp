@@ -11,8 +11,9 @@ Juego::Juego(){
     mundo->crearObjetos();
     jugador = new Player();
     if(jugador == nullptr) printf("asdasd");
-    //crearObjetos();
+    crearObjetos();
     crearEnemigos();
+    view.setSize(720,720);
 }
 
 Juego* Juego::instance(){
@@ -27,8 +28,8 @@ Juego* Juego::instance(){
 }
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
-
-
+  Motor * m = Motor::instance();
+    
     for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
        bulletPlayer[i].update(deltaTime);
@@ -36,18 +37,25 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-       bulletEnemies[i].update(deltaTime);
+      bulletEnemies[i].update(deltaTime);
 
     }
+    
     colisionPlayerMundo(deltaTime);
     
     jugador->update(deltaTime);
-    RectangleShape rec = jugador->getBody();
-    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
+  
+    view.setCenter(jugador->getBody().getPosition());
 
-      //enemies[i]->update(rec, deltaTime); // POBAR QUE FUNCIONA ...
+    m->getVentana()->setView(view);
+
+
+    for(unsigned i = 0; i < numEmenigos; i++){
+
+      enemies[i]->update(jugador , deltaTime);
 
     }
+    jugador->updateHitbox();
 
 }
 
@@ -58,11 +66,12 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
     //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
     // }
+
     Vector2f posobj;
     bool pararse=false;
     bool aux = false;
     Vector2f posant;
-    for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
+    for(unsigned int i=0 ; i<  mundo->getNumObjetos(); i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         posobj = objetos[i]->getPosition();
         pararse=true;
@@ -72,10 +81,11 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-56);
+          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55);
           jugador->updateHitbox();
           aux = true;
           posant = jugador->getBody().getPosition();
+          
         } else if(posant != jugador->getBody().getPosition()){
           aux = false;
         }
@@ -88,6 +98,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setJumpSpeed(10);
       }
     }
+
 
 }
 
@@ -110,7 +121,7 @@ void Juego::render(float porcentaje){ //wip
     jugador->render();
     
     int i = 0;
-    while(enemies[i]){
+    while(enemies[i] != nullptr && i < numEmenigos){
       cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
       i++;
@@ -141,14 +152,27 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
 }
 
+
+
+void Juego::matarEnemigo(Enemigo* enem){
+  /*for(unsigned i = 0; i < *enemies.length() ;i++){
+
+    if(enemies[i] == enem){
+      delete[] enemies[i];
+    }
+
+  }*/
+  numEmenigos--;
+}
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ 
   mapa * mundo = mapa::instance();
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
+  numEmenigos = posicion.size();
   enemies = new Enemigo *[posicion.size()]; 
-  for(int i = 0; i < posicion.size();i++){
+  for(unsigned i = 0; i < posicion.size();i++){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){

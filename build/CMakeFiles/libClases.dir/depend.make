@@ -9,12 +9,14 @@ CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Bullet/bullet.cpp
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Bullet/bullet.h
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Motor/Motor.h
 
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.cpp
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Player/Player.h
 
-CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Bullet/bullet.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.h
@@ -26,10 +28,11 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mapa/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mapa/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Objeto/Objeto.h
-CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.cpp
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Animacion/Animacion.h
@@ -39,10 +42,13 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Player/Player.h
 
+CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/reptante.cpp
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/reptante.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Animacion/Animacion.h

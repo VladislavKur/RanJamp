@@ -3,23 +3,25 @@
 
 
 Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
-    sf::Texture *tex = new sf::Texture;
-    if (!tex->loadFromFile("resources/sprites.png")) {
-        std::cerr << "Error cargando la imagen sprites.png";
-        exit(0);
-    }
-    cuerpo.setTexture(tex);
-    cuerpo.setOrigin(75 / 2, 75 / 2);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 75, 75));
-    cuerpo.setPosition(posX, posY);
+     sf::Texture *text = new sf::Texture;
+
+    cuerpo.setSize(sf::Vector2f(100.0f,100.0f));
+    cuerpo.setPosition(100, 100);
+
+    cuerpo.setOrigin(75/2, 75/2);
+
+    if(!text->loadFromFile("resources/Imagenes/Murcielagos.png")) std::cout << "sadasds";
     
+    cuerpo.setTexture(text);
+    cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 64, 64));
+    cuerpo.setScale(0.5, 1);
     velocidad = 0.3;
     altura = 3;
-    distanciaAtaque = 1000;
+    distanciaAtaque = 0.1;
 };
 
-void Murcielago::update(Player& player, float delta){
-    sf::RectangleShape body = player.getBody();
+void Murcielago::update(Player* player, float delta){
+    sf::RectangleShape body = player->getBody();
 
     float posJugadorX = body.getPosition().x;
     float posJugadorY = body.getPosition().y;
@@ -70,13 +72,13 @@ void Murcielago::update(Player& player, float delta){
         
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
 
-    if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
-        if(!haPegado)
-            player.setVidas(player.getVidas()-1);
-        
-        haPegado = true;
-        morir();
-    }
+    // if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
+    //     if(!haPegado)
+    //         player->setVidas(player->getVidas()-1);
+    //     std::cout<<"colisionese"<<std::endl;
+    //     haPegado = true;
+    //     morir();
+    // }
     
 };
 
@@ -88,6 +90,5 @@ void Murcielago::render(float porcentaje){
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
 
-    /////HABLAR CON FIDEL
-    //renderizar con getPosition() en vez de move()
+    
 };

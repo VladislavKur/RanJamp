@@ -2,22 +2,32 @@
 
 
 Centinela::Centinela( float x, float y) : Enemigo(x,y){
-     sf::Texture *tex = new sf::Texture;
-    if (!tex->loadFromFile("resources/sprites.png")) {
-        std::cerr << "Error cargando la imagen sprites.png";
-        exit(0);
-    }
-    modo = 0;
-    cuerpo.setTexture(tex);
-    cuerpo.setOrigin(75 / 2, 75 / 2);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 75, 75));
-    cuerpo.setPosition(x, y);
+   sf::Texture *text = new sf::Texture;
+
+    cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
+    cuerpo.setPosition(100, 100);
+
+    cuerpo.setOrigin(75/2, 75/2);
+
+    if(!text->loadFromFile("resources/Imagenes/Arqueros.png")) std::cout << "sadasds";
+    
+    cuerpo.setTexture(text);
+    cuerpo.setTextureRect(sf::IntRect(0, 0, 96 , 320));
+   // cuerpo.setScale(1.5, 2.5);
+
+    modo  = 0;
+    velocidad = 0.3;
+    distanciaDisparo = 100;
+    distanciaAtaque = 100;
+
 };
 
 
-void Centinela::update(sf::RectangleShape& entrada, float deltaTime){
+void Centinela::update(Player* player, float deltaTime){
 
-    float posJugador = entrada.getPosition().x;
+    sf::RectangleShape body = player->getBody();
+
+    float posJugador = body.getPosition().x;
 
     float local_diffX = posJugador - posX;
     float local_diffabs = abs(local_diffX);
@@ -66,7 +76,7 @@ void Centinela::update(sf::RectangleShape& entrada, float deltaTime){
                     ////WIP
                     ////WIP
                     ////WIP
-                    entrada.setScale(0.5,0.5);
+                    body.setScale(0.5,0.5);
 
                 }
                 

@@ -5,8 +5,20 @@ Motor* Motor::pinstance=NULL;
 Motor::Motor(){
     ventana = new sf::RenderWindow(sf::VideoMode(1080,720),"Totally not Pengo");
     updateClock.restart();
+    
 }
 
+
+sf::View Motor::Camara(sf::Vector2f sad){
+
+
+    sf::Vector2f center(sad.x/2, sad.y/2);
+
+
+    sf::View view (center, sad);
+
+    return view;
+}
 
 Motor* Motor::instance(){
 

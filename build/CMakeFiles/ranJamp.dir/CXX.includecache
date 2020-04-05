@@ -39,6 +39,8 @@ iostream
 -
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+../Player/Player.h
+/home/andres/Escritorio/FV JUNTO/Player/Player.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
 SFML/Graphics.hpp
@@ -47,8 +49,6 @@ iostream
 -
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
-../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
 SFML/Graphics.hpp

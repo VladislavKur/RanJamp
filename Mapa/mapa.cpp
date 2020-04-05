@@ -310,6 +310,10 @@ void mapa::render(){
 }
 
 
+int mapa::getNumObjetos(){
+  return _numObjects;
+}
+
 /*
 void mapa::liberar(){
     //liberar memoria

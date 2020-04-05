@@ -30,6 +30,8 @@ int main() {
     RectangleShape coliIzV;
     RectangleShape coliDcV;
 
+
+
     //funcion inicializar juego de juego VERY WIP SUCH WOW
 
     while(m->getOpen()){
@@ -95,7 +97,7 @@ int main() {
       else{
          instancia->render(elapsus/UPDATE_TICK_TIME);
       }
-
+      
       window->draw(coliDcV);
       window->draw(coliIzV);
       window->draw(coliArV);
@@ -110,7 +112,7 @@ int main() {
 //
       //window->display();
 
-      cout<<instancia->getJugador()->getJumpSpeed()<<endl;
+      //cout<<instancia->getJugador()->getJumpSpeed()<<endl;
 
       
 

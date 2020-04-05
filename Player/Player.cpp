@@ -33,6 +33,8 @@ Player::Player()
     
     body.setTexture(text);
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+
+    PU_saltoDoble = true;
 } 
 
 Player::Player(int x, int y) 
@@ -131,7 +133,7 @@ void Player::moveRight(float deltaTime){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
@@ -150,7 +152,7 @@ mapa* mundo = mapa::instance();
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
         puede=false;

@@ -20,6 +20,7 @@ class mapa{
         void render();
         static mapa *instance();
         RectangleShape ** getObjetos();
+        int getNumObjetos();
         
     protected:
             mapa();

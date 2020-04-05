@@ -21,7 +21,7 @@
             Bullet* bulletPlayer = NULL;
             Bullet* bulletEnemies = NULL;
             static Juego* pinstance;
-
+            int numEmenigos; 
         protected:
             Juego();
 
@@ -34,6 +34,8 @@
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
+
+            sf::View view;
     };
 
 #endif
