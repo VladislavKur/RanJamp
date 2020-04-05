@@ -250,8 +250,10 @@ void Juego::colisionBulletEnemigo(float deltaTime){
       if(enemies[j]==NULL)      continue;
 
       if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
-          delete enemies[j];
-          enemies[j]=NULL;
+          for (int index = j; index < numEmenigos; index++)
+            enemies[index] = enemies[index+1];
+          enemies[numEmenigos] = NULL;
+          numEmenigos--;
       }
     }
   }
