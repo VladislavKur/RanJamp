@@ -2,8 +2,8 @@
 
 
 Reptante::Reptante(float x, float y) : Enemigo(x,y){
-     sf::Texture *tex = new sf::Texture;
-    if (!tex->loadFromFile("resources/sprites.png")) {
+     /*sf::Texture tex;
+    if (!tex.loadFromFile("resources/sprites.png")) {
         std::cerr << "Error cargando la imagen sprites.png";
         exit(0);
     }
@@ -12,7 +12,7 @@ Reptante::Reptante(float x, float y) : Enemigo(x,y){
     cuerpo.setOrigin(75 / 2, 75 / 2);
     cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 75, 75));
     cuerpo.setTexture(tex);
-    cuerpo.setPosition(x, y);
+    cuerpo.setPosition(x, y);*/
     
     
 };

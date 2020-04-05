@@ -29,6 +29,7 @@ public:
     //FUNCIONALIDAD
     void render();
     void update(float deltaTime);
+    void updateHitbox();
     
     void saltar();
 
@@ -58,6 +59,7 @@ public:
     void setVelocidad();
     void setArma(int);
     void setVidas(int);
+    void setPosicion(float, float );
 
     void moveRight(float deltaTime);
     void moveLeft(float deltaTime);

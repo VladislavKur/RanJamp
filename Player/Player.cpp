@@ -19,13 +19,15 @@ Player::Player()
 
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=75*2;
+    jumpHeight=20;
     arma=0;  
     vidas = 2; 
-    velocidad=1;
+    velocidad=250;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
+
+    body.setOrigin(75/2, 75/2);
 
     if(!text->loadFromFile("resources/sprites.png")) cout << "sadasds";
     
@@ -58,29 +60,8 @@ Player::Player(int x, int y)
 }
 
 void Player::update(float deltaTime){
-    Vector2f gp = body.getPosition();
-    FloatRect gbb = body.getGlobalBounds();
-
-    coliAbajo.left = gp.x - gbb.width/2 + 25;
-    coliAbajo.top = gp.y + gbb.height/2;
-    coliAbajo.width = gbb.width-50;
-    coliAbajo.height = 6;
     
-    coliIzquierda.left = gp.x - gbb.width/2+12;
-    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
-    coliIzquierda.height = gbb.height -25;
-
-    coliDerecha.left = gp.x+5;
-    coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 -20;
-    coliDerecha.height = gbb.height -25;
-
-    coliArriba.left = gp.x - gbb.width/2 + 20;
-    coliArriba.top = gp.y-gbb.height/2 +25;
-    coliArriba.width = gbb.width - 40;
-    coliArriba.height = 5;
-
+    updateHitbox();
 
     // //Moverse a la derecha si la plataforma lo permite
     // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
@@ -107,6 +88,7 @@ void Player::update(float deltaTime){
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
         saltar();
     }
+    
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
         moveRight(deltaTime);
     }
@@ -170,7 +152,7 @@ mapa* mundo = mapa::instance();
 
   for(unsigned int i=0; i<sizeof(objetos) ; i++){
   
-    if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
+    if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
         puede=false;
     }
   }
@@ -184,7 +166,7 @@ mapa* mundo = mapa::instance();
 void Player::saltar(){
   if(saltos!=0){
         
-        jumpSpeed = -sqrtf(2.0f * 981.0f * jumpHeight);
+        jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
         std::cout<< "Saltos: " << saltos<<std::endl;
         saltos--;
       }
@@ -205,4 +187,35 @@ void Player::setJumpSpeed(float p_speed){
 
 void Player::setSaltos(int p_saltos){
   saltos=p_saltos;
+}
+void Player::setPosicion(float x, float y){
+  sf::Vector2f pos;
+  pos.x = x;
+  pos.y = y;
+  body.setPosition(pos); 
+}
+
+void Player::updateHitbox(){
+    Vector2f gp = body.getPosition();
+    FloatRect gbb = body.getGlobalBounds();
+
+    coliAbajo.left = gp.x - gbb.width/2 + 25;
+    coliAbajo.top = gp.y + gbb.height/2;
+    coliAbajo.width = gbb.width/2;
+    coliAbajo.height = 6;
+    
+    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
+    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.height = gbb.height -25;
+
+    coliDerecha.left = gp.x+5;
+    coliDerecha.top = gp.y - gbb.height/2 +25;
+    coliDerecha.width = gbb.width/2 -20;
+    coliDerecha.height = gbb.height -25;
+
+    coliArriba.left = gp.x - gbb.width/2 + 20;
+    coliArriba.top = gp.y-gbb.height/2 +25;
+    coliArriba.width = gbb.width - 40;
+    coliArriba.height = 5;
 }

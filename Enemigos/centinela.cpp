@@ -2,8 +2,8 @@
 
 
 Centinela::Centinela( float x, float y) : Enemigo(x,y){
-     sf::Texture *tex = new sf::Texture;
-    if (!tex->loadFromFile("resources/sprites.png")) {
+   /*  sf::Texture tex;
+    if (!tex.loadFromFile("resources/sprites.png")) {
         std::cerr << "Error cargando la imagen sprites.png";
         exit(0);
     }
@@ -12,6 +12,10 @@ Centinela::Centinela( float x, float y) : Enemigo(x,y){
     cuerpo.setOrigin(75 / 2, 75 / 2);
     cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 75, 75));
     cuerpo.setPosition(x, y);
+    velocidad = 0.3;
+    distanciaDisparo = 100;
+    distanciaAtaque = 100;*/
+
 };
 
 
