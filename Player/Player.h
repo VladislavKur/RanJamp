@@ -18,6 +18,7 @@ private:
     float jumpHeight; //Constante (en principio)
     Animacion animacion;
     int vidas;
+    float cooldownSalto;
 
 public:
     //CANON
@@ -25,6 +26,7 @@ public:
     Player(int x, int y);
     //Player(sf::Texture* textura, sf::Vector2u cantidadImagenes, float SwitchTimeSprite);
     ~Player() ;
+    bool auxSaltos;
 
     //FUNCIONALIDAD
     void render();
@@ -42,6 +44,7 @@ public:
     float getJumpSpeed(){return jumpSpeed;};
     sf::RectangleShape getBody(){return body;}
     int getVidas(){return vidas;}
+    float getCooldownSalto(){return cooldownSalto;};
 
     //SET
     void obtenerPU_SaltoDoble();
