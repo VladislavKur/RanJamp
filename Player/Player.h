@@ -17,6 +17,7 @@ private:
     float jumpSpeed;
     float jumpHeight; //Constante (en principio)
     Animacion animacion;
+    int vidas;
 
 public:
     //CANON
@@ -39,6 +40,7 @@ public:
     bool getPU_Slowhits(){return PU_slowhits;};
     float getJumpSpeed(){return jumpSpeed;};
     sf::RectangleShape getBody(){return body;}
+    int getVidas(){return vidas;}
 
     //SET
     void obtenerPU_SaltoDoble();
@@ -55,9 +57,12 @@ public:
 
     void setVelocidad();
     void setArma(int);
+    void setVidas(int);
 
     void moveRight(float deltaTime);
     void moveLeft(float deltaTime);
+
+    void morir();
 
     sf::FloatRect coliAbajo;
     sf::FloatRect coliArriba;

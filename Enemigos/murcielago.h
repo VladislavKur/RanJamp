@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "enemigo.h"
+#include "../Player/Player.h"
 
 #ifndef MURCIELAGO_H
 #define MURCIELAGO_H
@@ -15,7 +16,7 @@ class Murcielago : public Enemigo{
     public:
         Murcielago(sf::Texture& tex);
         Murcielago(sf::Texture& tex, float x, float y);
-        void update(sf::RectangleShape& player, float delta);
+        void update(Player& player, float delta);
         void render( float porcentaje);   
 };
 

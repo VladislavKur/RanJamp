@@ -27,19 +27,19 @@ Juego* Juego::instance(){
 void Juego::update(float deltaTime){ //wip
 
 
-    for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
+    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
        bulletPlayer[i].update(deltaTime);
 
     }
-    for(int i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
+    for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
        bulletEnemies[i].update(deltaTime);
 
     }
     jugador->update(deltaTime);
     RectangleShape rec = jugador->getBody();
-    for(int i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
+    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
       enemies[i].update(rec, deltaTime);
 
@@ -76,12 +76,12 @@ void Juego::render(float porcentaje){ //wip
     Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
-    for(int i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
+    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
       bulletPlayer[i].render();
 
     }
-    for(int i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
+    for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
      bulletEnemies[i].render();
 
@@ -90,7 +90,7 @@ void Juego::render(float porcentaje){ //wip
     jugador->render();
     
     
-    for(int i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
+    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
       enemies[i].render(porcentaje);
 
@@ -108,7 +108,7 @@ void Juego::crearObjetos(){ /// VlaDIS
 
 
 
-  for(int i = 0; i > posicion.size();i++){
+  for(unsigned i = 0; i > posicion.size();i++){
 
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];

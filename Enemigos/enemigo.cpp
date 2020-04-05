@@ -17,6 +17,9 @@ Enemigo::Enemigo(sf::Texture& tex,float x, float y){
 Enemigo::~Enemigo(){
   
 }
+void Enemigo::morir(){
+    cuerpo.setScale(0,0);
+}
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){
 
