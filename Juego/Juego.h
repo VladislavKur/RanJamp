@@ -28,6 +28,7 @@
             void render(float porcentaje);            
             void colisionPlayerMundo(float deltaTime);
             void crearObjetos();
+            Player *getJugador(){return jugador;};
     };
 
 #endif
