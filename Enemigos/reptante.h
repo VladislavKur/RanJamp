@@ -15,8 +15,7 @@ class Reptante : public Enemigo{
        
         int direccion;
     public:
-        Reptante(sf::Texture& tex);
-        Reptante(sf::Texture& tex, float x, float y);
+        Reptante(float x, float y);
         void update(sf::RectangleShape& player, float delta);
         void render( float porcentaje);   
         //Collider getCollider(){return Collider(cuerpo);}

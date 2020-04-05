@@ -19,9 +19,9 @@ class Enemigo{
         float velocidad;
         int modo;
         int vida;
-        Enemigo(sf::Texture& tex,float x, float y);
+        Enemigo(float x, float y);
         ~Enemigo();
-        sf::Sprite cuerpo;
+        sf::RectangleShape cuerpo;
         sf::Clock relojAnim;
         void actualizarPosicion(float x, float y);
         void morir();
