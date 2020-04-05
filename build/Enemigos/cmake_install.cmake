@@ -1,4 +1,4 @@
-# Install script for directory: /home/magiic/Escritorio/RanJamp/Enemigos
+# Install script for directory: /home/vermia/RanJamp/Enemigos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

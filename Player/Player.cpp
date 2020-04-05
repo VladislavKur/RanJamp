@@ -24,6 +24,13 @@ Player::Player()
     vidas = 2; 
     velocidad=250;
 
+    PU_saltoDoble=true;
+    PU_slowhits=false;
+    PU_velocidad=false;
+
+    auxSaltos = true;
+    cooldownSalto = 0;
+
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
 
@@ -63,6 +70,11 @@ void Player::update(float deltaTime){
     
     updateHitbox();
 
+
+    cooldownSalto-=deltaTime;
+    if(cooldownSalto<=0){
+      auxSaltos=true;
+    }
     // //Moverse a la derecha si la plataforma lo permite
     // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
     //   if(!coliDerecha.intersects(plataforma.getBody().getGlobalBounds()))
@@ -86,7 +98,10 @@ void Player::update(float deltaTime){
   //caer
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
-        saltar();
+      if(auxSaltos==true && saltos > 0){
+          saltar();
+          cooldownSalto=40*deltaTime;
+        }
     }
     
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
@@ -131,8 +146,7 @@ void Player::moveRight(float deltaTime){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos) ; i++){
-  
+  for(unsigned int i=0; i<sizeof(objetos)+2 ; i++){
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
     }
@@ -165,9 +179,8 @@ mapa* mundo = mapa::instance();
 }
 void Player::saltar(){
   if(saltos!=0){
-        
+        auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
-        std::cout<< "Saltos: " << saltos<<std::endl;
         saltos--;
       }
 }
