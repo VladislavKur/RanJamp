@@ -18,7 +18,7 @@
         private:
             Player *jugador;
             Enemigo** enemies = NULL;
-            Bullet* bulletPlayer = NULL;
+            Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies = NULL;
             static Juego* pinstance;
 
@@ -34,6 +34,7 @@
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
+            void disparar(float deltaTime);
 
             sf::View view;
     };

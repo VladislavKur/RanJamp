@@ -14,6 +14,11 @@ Juego::Juego(){
     //crearObjetos();
     crearEnemigos();
     view.setSize(720,480);
+
+  for(int i = 0 ; i < maxBullets ; i++){
+       bulletPlayer[i]=NULL;
+    }
+
 }
 
 Juego* Juego::instance(){
@@ -29,10 +34,14 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-    
-    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
-       bulletPlayer[i].update(deltaTime);
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
+      disparar(deltaTime);
+  }
+    
+    for(unsigned i = 0; i < maxBullets ;i++){
+      if(bulletPlayer[i] == NULL) continue;
+       bulletPlayer[i]->update(deltaTime);
 
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
@@ -104,9 +113,9 @@ void Juego::render(float porcentaje){ //wip
     Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
-    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
-
-      bulletPlayer[i].render();
+    for(unsigned i = 0; i < maxBullets;i++){
+      if(bulletPlayer[i]==NULL) continue;
+      bulletPlayer[i]->render();
 
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
@@ -186,4 +195,16 @@ void Juego::crearEnemigos(){
 
   }
   
+}
+
+void Juego::disparar(float deltaTime){
+  
+        for(int i=0 ; i<maxBullets ; i++){
+          if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
+            bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) );
+            jugador->setCooldownDisparo(10*deltaTime);
+            break;
+          }
+        }
+    
 }

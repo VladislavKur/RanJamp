@@ -20,7 +20,7 @@ Player::Player()
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=20;
-    arma=0;  
+    arma=1;  
     vidas = 2; 
     velocidad=250;
 
@@ -30,6 +30,7 @@ Player::Player()
 
     auxSaltos = true;
     cooldownSalto = 0;
+    cooldownDisparo = 0;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
@@ -75,6 +76,8 @@ void Player::update(float deltaTime){
     if(cooldownSalto<=0){
       auxSaltos=true;
     }
+
+    cooldownDisparo-=deltaTime;
     // //Moverse a la derecha si la plataforma lo permite
     // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
     //   if(!coliDerecha.intersects(plataforma.getBody().getGlobalBounds()))
