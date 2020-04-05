@@ -12,43 +12,43 @@ SFML/Graphics.hpp
 iostream
 -
 
-/home/fv/Desktop/RanJamp/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 Motor.h
-/home/fv/Desktop/RanJamp/Animacion/Motor.h
+/home/vermia/RanJamp/Animacion/Motor.h
 
-/home/fv/Desktop/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/fv/Desktop/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/fv/Desktop/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/fv/Desktop/RanJamp/Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/fv/Desktop/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
-/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/fv/Desktop/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 ../Mapa/mapa.h
-/home/fv/Desktop/RanJamp/Mapa/mapa.h
+/home/vermia/RanJamp/Mapa/mapa.h
 ../Objeto/Objeto.h
-/home/fv/Desktop/RanJamp/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 
-/home/fv/Desktop/RanJamp/Mapa/mapa.h
+/home/vermia/RanJamp/Mapa/mapa.h
 SFML/Graphics.hpp
 -
 iostream
@@ -56,17 +56,17 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
+/home/vermia/RanJamp/Mapa/tinyxml.h
 ../Motor/Motor.h
-/home/fv/Desktop/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/fv/Desktop/RanJamp/Mapa/tinystr.h
+/home/vermia/RanJamp/Mapa/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
+/home/vermia/RanJamp/Mapa/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -84,35 +84,35 @@ iostream
 sstream
 -
 tinystr.h
-/home/fv/Desktop/RanJamp/Mapa/tinystr.h
+/home/vermia/RanJamp/Mapa/tinystr.h
 
-/home/fv/Desktop/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/fv/Desktop/RanJamp/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/fv/Desktop/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 
-/home/fv/Desktop/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/fv/Desktop/RanJamp/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 
-/home/fv/Desktop/RanJamp/main.cpp
+/home/vermia/RanJamp/main.cpp
 SFML/Graphics.hpp
 -
 iostream
 -
 Motor/Motor.h
-/home/fv/Desktop/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 Juego/Juego.h
-/home/fv/Desktop/RanJamp/Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 Player/Player.h
-/home/fv/Desktop/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 
