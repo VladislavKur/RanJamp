@@ -57,6 +57,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     
     colisionPlayerMundo(deltaTime);
     colisionBulletMundo(deltaTime);
+    colisionBulletEnemigo(deltaTime);
     
     jugador->update(deltaTime);
   
@@ -66,7 +67,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
 
     for(unsigned i = 0; i < numEmenigos; i++){
-
+      if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
 
     }
@@ -237,6 +238,20 @@ void Juego::colisionBulletMundo(float deltaTime){
       if(objetos[j]->getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
+      }
+    }
+  }
+}
+
+void Juego::colisionBulletEnemigo(float deltaTime){
+  for(unsigned int i=0 ; i<maxBullets ; i++){
+    for(unsigned int j=0 ; j<numEmenigos ; j++){
+      if(bulletPlayer[i]==NULL) continue;
+      if(enemies[j]==NULL)      continue;
+
+      if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+          delete enemies[j];
+          enemies[j]=NULL;
       }
     }
   }

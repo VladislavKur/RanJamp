@@ -29,6 +29,8 @@
             static Juego *instance();
             void update(float deltaTime);
             void render(float porcentaje);            
+
+            void colisionBulletEnemigo(float deltaTime);
             void colisionPlayerMundo(float deltaTime);
             void colisionBulletMundo(float deltaTime);
 
@@ -37,7 +39,6 @@
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
             void disparar(float deltaTime);
-            void limpiarBalas();
 
             sf::View view;
     };
