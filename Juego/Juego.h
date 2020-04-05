@@ -30,11 +30,14 @@
             void update(float deltaTime);
             void render(float porcentaje);            
             void colisionPlayerMundo(float deltaTime);
+            void colisionBulletMundo(float deltaTime);
+
             void crearObjetos();
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
             void disparar(float deltaTime);
+            void limpiarBalas();
 
             sf::View view;
     };

@@ -41,9 +41,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     
     for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] == NULL) continue;
+      if(bulletPlayer[i]->lifetime<=0){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+      }
+      if(bulletPlayer[i] == NULL) continue; //POR SEGUNDA VEZ, porque puede que se haya destruido en la linea anterior si ha entrado al if
        bulletPlayer[i]->update(deltaTime);
-
     }
+
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
       bulletEnemies[i].update(deltaTime);
@@ -51,6 +56,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     
     colisionPlayerMundo(deltaTime);
+    colisionBulletMundo(deltaTime);
     
     jugador->update(deltaTime);
     view.setCenter(jugador->getBody().getPosition());
@@ -212,4 +218,21 @@ void Juego::disparar(float deltaTime){
           }
         }
     
+}
+
+void Juego::colisionBulletMundo(float deltaTime){
+    mapa * mundo = mapa::instance(); 
+    RectangleShape ** objetos = mundo->getObjetos();
+
+  for(unsigned int i=0 ; i<maxBullets ; i++){
+    for(unsigned int j=0 ; j<sizeof(objetos); j++){
+      if(bulletPlayer[i]==NULL) continue;
+      if(objetos[j]==NULL) continue;
+
+      if(objetos[j]->getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+      }
+    }
+  }
 }

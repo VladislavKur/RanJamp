@@ -18,6 +18,9 @@ public:
     void update(float deltaTime);
     void render();
 
+    sf::CircleShape getBody(){return body;};
+
+
     static Bullet* bullets[maxBullets];
     static void initBulletArray();
     static bool array_inicializado;
