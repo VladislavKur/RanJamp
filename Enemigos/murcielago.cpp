@@ -17,11 +17,11 @@ Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
     
     velocidad = 0.3;
     altura = 3;
-    distanciaAtaque = 1000;
+    distanciaAtaque = 0.1;
 };
 
-void Murcielago::update(Player& player, float delta){
-    sf::RectangleShape body = player.getBody();
+void Murcielago::update(Player* player, float delta){
+    sf::RectangleShape body = player->getBody();
 
     float posJugadorX = body.getPosition().x;
     float posJugadorY = body.getPosition().y;
@@ -74,8 +74,8 @@ void Murcielago::update(Player& player, float delta){
 
     if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
         if(!haPegado)
-            player.setVidas(player.getVidas()-1);
-        
+            player->setVidas(player->getVidas()-1);
+        std::cout<<"colisionese"<<std::endl;
         haPegado = true;
         morir();
     }
@@ -90,6 +90,5 @@ void Murcielago::render(float porcentaje){
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
 
-    std::cout<<"entro"<<std::endl;
     
 };

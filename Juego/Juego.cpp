@@ -13,6 +13,7 @@ Juego::Juego(){
     if(jugador == nullptr) printf("asdasd");
     //crearObjetos();
     crearEnemigos();
+    view.setSize(720,480);
 }
 
 Juego* Juego::instance(){
@@ -27,8 +28,8 @@ Juego* Juego::instance(){
 }
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
-
-
+  Motor * m = Motor::instance();
+    
     for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
 
        bulletPlayer[i].update(deltaTime);
@@ -39,15 +40,20 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       bulletEnemies[i].update(deltaTime);
 
     }
+    
     colisionPlayerMundo(deltaTime);
     
     jugador->update(deltaTime);
+    view.setCenter(jugador->getBody().getPosition());
+    m->getVentana()->setView(view);
+
     RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
       //enemies[i]->update(rec, deltaTime); // POBAR QUE FUNCIONA ...
 
     }
+    jugador->updateHitbox();
 
 }
 
@@ -72,10 +78,11 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-56);
+          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55);
           jugador->updateHitbox();
           aux = true;
           posant = jugador->getBody().getPosition();
+          
         } else if(posant != jugador->getBody().getPosition()){
           aux = false;
         }
@@ -88,6 +95,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setJumpSpeed(10);
       }
     }
+
 
 }
 
@@ -159,7 +167,7 @@ void Juego::crearEnemigos(){
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
   enemies = new Enemigo *[posicion.size()]; 
-  for(int i = 0; i < posicion.size();i++){
+  for(unsigned i = 0; i < posicion.size();i++){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){

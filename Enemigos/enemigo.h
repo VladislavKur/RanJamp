@@ -2,14 +2,14 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "../Motor/Motor.h"
-
+#include "../Player/Player.h"
 
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 
 class Enemigo{
     public:
-        virtual void update(sf::RectangleShape& player, float delta){}; ///player
+        virtual void update(Player* player, float delta){}; ///player
         virtual void render(float porcentaje){};
         ~Enemigo();
 

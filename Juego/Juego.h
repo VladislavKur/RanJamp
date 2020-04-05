@@ -34,6 +34,8 @@
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
+
+            sf::View view;
     };
 
 #endif
