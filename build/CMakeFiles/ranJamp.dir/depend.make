@@ -4,8 +4,10 @@
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Motor/Motor.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Bullet/bullet.h
+CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/murcielago.h
+CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/reptante.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Juego/Juego.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Mapa/mapa.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Mapa/tinystr.h

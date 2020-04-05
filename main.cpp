@@ -57,7 +57,7 @@ int main() {
       if(m->getRelojM() > UPDATE_TICK_TIME){
 
         delta = m->restartReloj();
-
+        //std::cout<<delta<<std::endl;
         instancia->update(delta);
 
       }
@@ -83,6 +83,8 @@ int main() {
       //window->draw(instancia->getJugador()->getBody());
 //
       //window->display();
+
+      cout<<instancia->getJugador()->getJumpSpeed()<<endl;
 
     }
   //}

@@ -11,6 +11,8 @@ Juego::Juego(){
     mundo->crearObjetos();
     jugador = new Player();
     if(jugador == nullptr) printf("asdasd");
+    //crearObjetos();
+    crearEnemigos();
 }
 
 Juego* Juego::instance(){
@@ -43,7 +45,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].update(rec, deltaTime); // POBAR QUE FUNCIONA ...
+      //enemies[i]->update(rec, deltaTime); // POBAR QUE FUNCIONA ...
 
     }
 
@@ -66,12 +68,10 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
       if(pararse){
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
         jugador->setJumpSpeed(0);
-        std::cout<<jugador->getJumpSpeed()<<endl;
 
       }else{
-        jugador->setJumpSpeed(9.81f*deltaTime/20);
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*deltaTime);
       }
-
       if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
         jugador->setJumpSpeed(10);
       }
@@ -100,7 +100,7 @@ void Juego::render(float porcentaje){ //wip
     
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i].render(porcentaje);
+      enemies[i]->render(porcentaje);
 
     }
 }
@@ -134,24 +134,22 @@ void Juego::crearEnemigos(){
   mapa * mundo = mapa::instance();
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
-
-  for(int i = 0; i > posicion.size();i++){
+  enemies = new Enemigo *[posicion.size()]; 
+  for(int i = 0; i < posicion.size();i++){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
-    switch (posicion[i][2]){
-      
-      case 1:
-        Murcielago *  murcielago = new Murcielago(posx, posy);
-        enemies[i] = murcielago;//como hacer el cast
-        break;
-      
-      case 2:
-        Murcielago *  murcielago2 = new Murcielago(posx, posy);
-        break;
-      
-      case 3:
-        Murcielago *  murcielago3 = new Murcielago(posx, posy);
-        break;
+    if(posicion[i][2] == 1){
+        cout << "he añadido murcielago" << endl;
+        Murcielago * murcielago = new Murcielago(posx, posy);
+        enemies[i] = (Enemigo *) murcielago;
+    }else if(posicion[i][2] == 2){
+        cout << "he añadido centinela" << endl;
+        Centinela * centinela = new Centinela(posx, posy);
+        enemies[i] = (Enemigo *) centinela;
+    }else if(posicion[i][2] == 3){
+        cout << "he añadido reptante" << endl;
+        Reptante * reptante = new Reptante(posx, posy);
+        enemies[i] = (Enemigo *) reptante;
     }
 
   }

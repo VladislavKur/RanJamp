@@ -24,6 +24,14 @@ SFML/Graphics.hpp
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
@@ -42,6 +50,14 @@ enemigo.h
 ../Player/Player.h
 /home/andres/Escritorio/FV JUNTO/Player/Player.h
 
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+SFML/Graphics.hpp
+-
+iostream
+-
+enemigo.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 SFML/Graphics.hpp
 -
@@ -53,6 +69,10 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 ../Enemigos/murcielago.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+../Enemigos/centinela.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+../Enemigos/reptante.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
 ../Bullet/bullet.h
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 ../Mapa/mapa.h
