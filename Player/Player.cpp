@@ -150,7 +150,8 @@ void Player::moveRight(float deltaTime){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos)+2 ; i++){
+  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
+  
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
     }
@@ -168,7 +169,7 @@ mapa* mundo = mapa::instance();
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
         puede=false;

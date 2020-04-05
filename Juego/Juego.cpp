@@ -11,7 +11,7 @@ Juego::Juego(){
     mundo->crearObjetos();
     jugador = new Player();
     if(jugador == nullptr) printf("asdasd");
-    //crearObjetos();
+    crearObjetos();
     crearEnemigos();
     view.setSize(720,480);
 
@@ -59,12 +59,15 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletMundo(deltaTime);
     
     jugador->update(deltaTime);
+  
     view.setCenter(jugador->getBody().getPosition());
+
     m->getVentana()->setView(view);
 
-    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      enemies[i]->update(jugador, deltaTime); // POBAR QUE FUNCIONA ...
+    for(unsigned i = 0; i < numEmenigos; i++){
+
+      enemies[i]->update(jugador , deltaTime);
 
     }
     jugador->updateHitbox();
@@ -78,11 +81,12 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
     //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
     // }
+
     Vector2f posobj;
     bool pararse=false;
     bool aux = false;
     Vector2f posant;
-    for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
+    for(unsigned int i=0 ; i<  mundo->getNumObjetos(); i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         posobj = objetos[i]->getPosition();
         pararse=true;
@@ -131,11 +135,11 @@ void Juego::render(float porcentaje){ //wip
 
     jugador->render();
     
-    
-    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
-
+    int i = 0;
+    while(enemies[i] != nullptr && i < numEmenigos){
+      cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
-
+      i++;
     }
 }
 
@@ -181,13 +185,14 @@ void Juego::crearEnemigos(){
   mapa * mundo = mapa::instance();
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
+  numEmenigos = posicion.size();
   enemies = new Enemigo *[posicion.size()]; 
   for(unsigned i = 0; i < posicion.size();i++){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
-        cout << "he añadido murcielago" << endl;
-        Murcielago * murcielago = new Murcielago(743, 224);
+        cout << "he añadido murcielago " << posx << ","  << posy  << endl;
+        Murcielago * murcielago = new Murcielago(posx, posy);
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
         cout << "he añadido centinela" << endl;
@@ -225,7 +230,7 @@ void Juego::colisionBulletMundo(float deltaTime){
     RectangleShape ** objetos = mundo->getObjetos();
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
-    for(unsigned int j=0 ; j<sizeof(objetos); j++){
+    for(unsigned int j=0 ; j<mundo->getNumObjetos(); j++){
       if(bulletPlayer[i]==NULL) continue;
       if(objetos[j]==NULL) continue;
 

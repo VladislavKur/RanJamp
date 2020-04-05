@@ -4,15 +4,16 @@
 Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
    sf::Texture *text = new sf::Texture;
 
-    cuerpo.setSize(sf::Vector2f(100.0f,100.0f));
+    cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
     cuerpo.setPosition(100, 100);
 
     cuerpo.setOrigin(75/2, 75/2);
 
-    if(!text->loadFromFile("resources/sprites.png")) std::cout << "sadasds";
+    if(!text->loadFromFile("resources/Imagenes/Arqueros.png")) std::cout << "sadasds";
     
     cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    cuerpo.setTextureRect(sf::IntRect(0, 0, 96 , 320));
+   // cuerpo.setScale(1.5, 2.5);
 
     tipo = type;
     modo  = 0;

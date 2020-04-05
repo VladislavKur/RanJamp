@@ -21,7 +21,7 @@
             Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies = NULL;
             static Juego* pinstance;
-
+            int numEmenigos; 
         protected:
             Juego();
 

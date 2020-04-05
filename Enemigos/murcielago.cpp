@@ -10,10 +10,11 @@ Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
     
     cuerpo.setOrigin(75/2, 75/2);
 
-    if(!text->loadFromFile("resources/sprites.png")) std::cout << "sadasds";
+    if(!text->loadFromFile("resources/Imagenes/Murcielagos.png")) std::cout << "sadasds";
     
     cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(1 * 75, 2 * 75, 75, 75));
+    cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 64, 64));
+    cuerpo.setScale(0.5, 1);
     cuerpo.setPosition(x,y);
     velocidad = 0.3;
     altura = 3;
@@ -94,7 +95,7 @@ void Murcielago::render(float porcentaje){
     cuerpo.setPosition(
         posXanterior + diffX*porcentaje,
         posYanterior + diffY*porcentaje );
-    
+    std::cout << "ENTRO EN RENDER enemigo , " << posXanterior <<  ", " << posYanterior  << std::endl;
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
     
