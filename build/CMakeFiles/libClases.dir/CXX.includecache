@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../Animacion/Animacion.h
+SFML/Graphics.hpp
+-
+Motor.h
+../Animacion/Motor.h
+
 ../Bullet/bullet.h
 SFML/Graphics.hpp
 -
@@ -92,105 +98,107 @@ SFML/Graphics.hpp
 ../Animacion/Animacion.h
 ../Animacion/Animacion.h
 
-/home/vermia/RanJamp/Animacion/Animacion.cpp
+/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp
 Animacion.h
-/home/vermia/RanJamp/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/vermia/RanJamp/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 Motor.h
-/home/vermia/RanJamp/Animacion/Motor.h
+/home/fv/Desktop/RanJamp/Animacion/Motor.h
 
-/home/vermia/RanJamp/Bullet/bullet.cpp
+/home/fv/Desktop/RanJamp/Bullet/bullet.cpp
 bullet.h
-/home/vermia/RanJamp/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 
-/home/vermia/RanJamp/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/vermia/RanJamp/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/vermia/RanJamp/Enemigos/centinela.cpp
+/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp
 centinela.h
-/home/vermia/RanJamp/Enemigos/centinela.h
+/home/fv/Desktop/RanJamp/Enemigos/centinela.h
 
-/home/vermia/RanJamp/Enemigos/centinela.h
+/home/fv/Desktop/RanJamp/Enemigos/centinela.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/vermia/RanJamp/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 
-/home/vermia/RanJamp/Enemigos/enemigo.cpp
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
-/home/vermia/RanJamp/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+Juego.h
+/home/fv/Desktop/RanJamp/Enemigos/Juego.h
 
-/home/vermia/RanJamp/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/vermia/RanJamp/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/vermia/RanJamp/Enemigos/murcielago.cpp
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp
 murcielago.h
-/home/vermia/RanJamp/Enemigos/murcielago.h
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.h
 
-/home/vermia/RanJamp/Enemigos/murcielago.h
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/vermia/RanJamp/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 ../Player/Player.h
-/home/vermia/RanJamp/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 
-/home/vermia/RanJamp/Enemigos/reptante.cpp
+/home/fv/Desktop/RanJamp/Enemigos/reptante.cpp
 reptante.h
-/home/vermia/RanJamp/Enemigos/reptante.h
+/home/fv/Desktop/RanJamp/Enemigos/reptante.h
 
-/home/vermia/RanJamp/Enemigos/reptante.h
+/home/fv/Desktop/RanJamp/Enemigos/reptante.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/vermia/RanJamp/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 
-/home/vermia/RanJamp/Juego/Juego.cpp
+/home/fv/Desktop/RanJamp/Juego/Juego.cpp
 Juego.h
-/home/vermia/RanJamp/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
-/home/vermia/RanJamp/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/vermia/RanJamp/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
-/home/vermia/RanJamp/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/vermia/RanJamp/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 ../Mapa/mapa.h
-/home/vermia/RanJamp/Mapa/mapa.h
+/home/fv/Desktop/RanJamp/Mapa/mapa.h
 ../Objeto/Objeto.h
-/home/vermia/RanJamp/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 
-/home/vermia/RanJamp/Mapa/mapa.cpp
+/home/fv/Desktop/RanJamp/Mapa/mapa.cpp
 mapa.h
-/home/vermia/RanJamp/Mapa/mapa.h
+/home/fv/Desktop/RanJamp/Mapa/mapa.h
 
-/home/vermia/RanJamp/Mapa/mapa.h
+/home/fv/Desktop/RanJamp/Mapa/mapa.h
 SFML/Graphics.hpp
 -
 iostream
@@ -198,21 +206,21 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/vermia/RanJamp/Mapa/tinyxml.h
+/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
 ../Motor/Motor.h
-/home/vermia/RanJamp/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/vermia/RanJamp/Mapa/tinystr.cpp
+/home/fv/Desktop/RanJamp/Mapa/tinystr.cpp
 tinystr.h
-/home/vermia/RanJamp/Mapa/tinystr.h
+/home/fv/Desktop/RanJamp/Mapa/tinystr.h
 
-/home/vermia/RanJamp/Mapa/tinystr.h
+/home/fv/Desktop/RanJamp/Mapa/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/vermia/RanJamp/Mapa/tinyxml.cpp
+/home/fv/Desktop/RanJamp/Mapa/tinyxml.cpp
 ctype.h
 -
 sstream
@@ -220,9 +228,9 @@ sstream
 iostream
 -
 tinyxml.h
-/home/vermia/RanJamp/Mapa/tinyxml.h
+/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
 
-/home/vermia/RanJamp/Mapa/tinyxml.h
+/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -240,59 +248,59 @@ iostream
 sstream
 -
 tinystr.h
-/home/vermia/RanJamp/Mapa/tinystr.h
+/home/fv/Desktop/RanJamp/Mapa/tinystr.h
 
-/home/vermia/RanJamp/Mapa/tinyxmlerror.cpp
+/home/fv/Desktop/RanJamp/Mapa/tinyxmlerror.cpp
 tinyxml.h
-/home/vermia/RanJamp/Mapa/tinyxml.h
+/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
 
-/home/vermia/RanJamp/Mapa/tinyxmlparser.cpp
+/home/fv/Desktop/RanJamp/Mapa/tinyxmlparser.cpp
 ctype.h
 -
 stddef.h
 -
 tinyxml.h
-/home/vermia/RanJamp/Mapa/tinyxml.h
+/home/fv/Desktop/RanJamp/Mapa/tinyxml.h
 windows.h
 -
 
-/home/vermia/RanJamp/Motor/Motor.cpp
+/home/fv/Desktop/RanJamp/Motor/Motor.cpp
 Motor.h
-/home/vermia/RanJamp/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/vermia/RanJamp/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/vermia/RanJamp/Objeto/Objeto.cpp
+/home/fv/Desktop/RanJamp/Objeto/Objeto.cpp
 Objeto.h
-/home/vermia/RanJamp/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/vermia/RanJamp/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/vermia/RanJamp/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 
-/home/vermia/RanJamp/Player/Player.cpp
+/home/fv/Desktop/RanJamp/Player/Player.cpp
 Player.h
-/home/vermia/RanJamp/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 iostream
 -
 Juego.h
-/home/vermia/RanJamp/Player/Juego.h
+/home/fv/Desktop/RanJamp/Player/Juego.h
 
-/home/vermia/RanJamp/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/vermia/RanJamp/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 

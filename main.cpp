@@ -54,17 +54,16 @@ int main() {
         break;
       }
     }
-      /*if(m->getRelojM() > UPDATE_TICK_TIME){
+      if(m->getRelojM() > UPDATE_TICK_TIME){
 
         delta = m->restartReloj();
 
-      //  instancia->update(delta);
+        instancia->update(delta);
 
       }
 
       elapsus = m->getRelojM();
 
-      RenderWindow* window = m->getVentana();
 
       window->clear();
       
@@ -76,16 +75,14 @@ int main() {
          instancia->render(elapsus/UPDATE_TICK_TIME);
       }
 
-      window->display();*/
-
-
-      window->clear(Color(128,0,0));
-
-
-
-      window->draw(instancia->getJugador()->getBody());
-
       window->display();
+
+
+      //window->clear(Color(128,0,0));
+//
+      //window->draw(instancia->getJugador()->getBody());
+//
+      //window->display();
 
     }
   //}
