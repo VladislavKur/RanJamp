@@ -19,7 +19,7 @@ Player::Player()
 
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=25;
+    jumpHeight=20;
     arma=0;  
     vidas = 2; 
     velocidad=250;
@@ -65,7 +65,7 @@ void Player::update(float deltaTime){
 
     coliAbajo.left = gp.x - gbb.width/2 + 25;
     coliAbajo.top = gp.y + gbb.height/2;
-    coliAbajo.width = gbb.width-50;
+    coliAbajo.width = gbb.width/2;
     coliAbajo.height = 6;
     
     coliIzquierda.left = gp.x - gbb.width/2+12;
@@ -106,9 +106,9 @@ void Player::update(float deltaTime){
 
   //caer
 
-   /* if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
         saltar();
-    }*/
+    }
     
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
         moveRight(deltaTime);
@@ -173,7 +173,7 @@ mapa* mundo = mapa::instance();
 
   for(unsigned int i=0; i<sizeof(objetos) ; i++){
   
-    if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
+    if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
         puede=false;
     }
   }
@@ -187,7 +187,8 @@ mapa* mundo = mapa::instance();
 void Player::saltar(){
   if(saltos!=0){
         
-        jumpSpeed = -sqrtf(2.0f * 981.0f * jumpHeight);
+        jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
+        std::cout<< "Saltos: " << saltos<<std::endl;
         saltos--;
       }
 }
@@ -207,4 +208,10 @@ void Player::setJumpSpeed(float p_speed){
 
 void Player::setSaltos(int p_saltos){
   saltos=p_saltos;
+}
+void Player::setPosicion(float x, float y){
+  sf::Vector2f pos;
+  pos.x = x;
+  pos.y = y;
+  body.setPosition(pos); 
 }

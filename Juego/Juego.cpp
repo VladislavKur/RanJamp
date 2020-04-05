@@ -53,19 +53,30 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
+    Vector2f posobj;
     bool pararse=false;
+    bool aux = false;
+    Vector2f posant;
     for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
+        posobj = objetos[i]->getPosition();
         pararse=true;
-
       } 
 
       if(pararse){
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+
+        if(aux == false){
+          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55);
+          aux = true;
+          posant = jugador->getBody().getPosition();
+        } else if(posant != jugador->getBody().getPosition()){
+          aux = false;
+        }
         jugador->setJumpSpeed(0);
 
       }else{
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*deltaTime);
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*5*deltaTime);
       }
       if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
         jugador->setJumpSpeed(10);
