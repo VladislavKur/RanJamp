@@ -14,7 +14,7 @@ class Centinela : public Enemigo{
 
     public:
         Centinela(float x, float y);
-        void update(sf::RectangleShape& player, float delta);
+        void update(Player* player, float delta);
         void render( float porcentaje);   
 };
 

@@ -37,9 +37,10 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-       bulletEnemies[i].update(deltaTime);
+      bulletEnemies[i].update(deltaTime);
 
     }
+    
     colisionPlayerMundo(deltaTime);
     
     jugador->update(deltaTime);
@@ -148,6 +149,17 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
 }
 
+
+
+void Juego::matarEnemigo(Enemigo* enem){
+  /*for(unsigned i = 0; i < *enemies.length() ;i++){
+
+    if(enemies[i] == enem){
+      delete[] enemies[i];
+    }
+
+  }*/
+}
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ 
@@ -155,7 +167,7 @@ void Juego::crearEnemigos(){
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
   enemies = new Enemigo *[posicion.size()]; 
-  for(int i = 0; i < posicion.size();i++){
+  for(unsigned i = 0; i < posicion.size();i++){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
