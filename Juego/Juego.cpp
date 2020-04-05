@@ -56,10 +56,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     view.setCenter(jugador->getBody().getPosition());
     m->getVentana()->setView(view);
 
-    RectangleShape rec = jugador->getBody();
     for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      //enemies[i]->update(rec, deltaTime); // POBAR QUE FUNCIONA ...
+      enemies[i]->update(jugador, deltaTime); // POBAR QUE FUNCIONA ...
 
     }
     jugador->updateHitbox();
@@ -161,13 +160,14 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 
 
 void Juego::matarEnemigo(Enemigo* enem){
-  /*for(unsigned i = 0; i < *enemies.length() ;i++){
+  for(unsigned i = 0; i <  (sizeof(enemies)/sizeof(*enemies));i++){
 
     if(enemies[i] == enem){
       delete[] enemies[i];
+      break;
     }
 
-  }*/
+  }
 }
 //CREARENEMIGOS FUNCIONE
 
@@ -181,13 +181,18 @@ void Juego::crearEnemigos(){
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
         cout << "he añadido murcielago" << endl;
-        Murcielago * murcielago = new Murcielago(posx, posy);
+        Murcielago * murcielago = new Murcielago(743, 224);
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
         cout << "he añadido centinela" << endl;
-        Centinela * centinela = new Centinela(posx, posy);
+        Centinela * centinela = new Centinela(posx, posy,1);
         enemies[i] = (Enemigo *) centinela;
     }else if(posicion[i][2] == 3){
+        cout << "he añadido un centinela que se mueve"<< endl;
+        Centinela* centinela = new Centinela(posx,posy,0);
+        enemies[i] = (Enemigo *) centinela;
+    }
+    else if(posicion[i][2] == 4){
         cout << "he añadido reptante" << endl;
         Reptante * reptante = new Reptante(posx, posy);
         enemies[i] = (Enemigo *) reptante;

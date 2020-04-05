@@ -6,18 +6,23 @@ Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
      sf::Texture *text = new sf::Texture;
 
     cuerpo.setSize(sf::Vector2f(100.0f,100.0f));
-    cuerpo.setPosition(100, 100);
-
+    
+    
     cuerpo.setOrigin(75/2, 75/2);
 
     if(!text->loadFromFile("resources/sprites.png")) std::cout << "sadasds";
     
     cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-    
+    cuerpo.setTextureRect(sf::IntRect(1 * 75, 2 * 75, 75, 75));
+    cuerpo.setPosition(x,y);
     velocidad = 0.3;
     altura = 3;
-    distanciaAtaque = 0.1;
+    distanciaAtaque = 1000;
+    
+
+    colision.setSize(sf::Vector2f(50.0f,50.0f));
+    colision.setPosition(x-10.0, y-10.0);
+    
 };
 
 void Murcielago::update(Player* player, float delta){
@@ -34,28 +39,31 @@ void Murcielago::update(Player* player, float delta){
     diffX = 0; //inicialmente no se mueve
     diffY = 0; //inicialmente no se mueve
 
-
-    bool cambio; //no nos cambiamos de modo por defecto
+    
+    bool cambio = false; //no nos cambiamos de modo por defecto
     do{
         cambio = false;//no nos cambiamos de modo por defecto
+        //std::cout<<"cambio-->"<<cambio<<false<<std::endl;
         switch(modo){
-
             case(0): //está quieto
                 if(local_diffabsX < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
                     modo = 1;
                     cambio = true;
+                    std::cout<<"**"<<local_diffabsX<<std::endl;
                 }
+                std::cout<<"**"<<local_diffabsX<<std::endl;
             break;
             case(1)://diagonal
                 if(local_diffY <= altura){
                    modo = 2;
                    cambio = true;
+                   std::cout<<"1**"<<local_diffabsX<<std::endl;
                 }
                 else{
-
+                    std::cout<<"d**"<<local_diffabsX<<std::endl;
                     float movimientoSuaveX = (local_diffX/local_diffabsX)*velocidad*delta;
                     float movimientoSuaveY = (local_diffY/local_diffabsY)*velocidad*delta;
-
+                    
                     actualizarPosicion(movimientoSuaveX,movimientoSuaveY); 
                 }
                 
@@ -64,19 +72,19 @@ void Murcielago::update(Player* player, float delta){
 
                 if(direccion == 0)
                     direccion = local_diffX/local_diffabsX;
-
-                actualizarPosicion(direccion*velocidad*delta,0);     
+                std::cout<<"2**"<<local_diffabsX<<std::endl;
+                actualizarPosicion(-direccion*velocidad*delta,0);     
             break;
 
         }
         
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
-
-    if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
+    
+    if(colision.getGlobalBounds().intersects(body.getGlobalBounds())){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
-        std::cout<<"colisionese"<<std::endl;
         haPegado = true;
+        std::cout<<"muero"<<std::endl;
         morir();
     }
     
@@ -89,6 +97,5 @@ void Murcielago::render(float porcentaje){
     
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
-
     
 };

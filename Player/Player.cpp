@@ -41,6 +41,7 @@ Player::Player()
     
     body.setTexture(text);
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+  
 } 
 
 Player::Player(int x, int y) 
@@ -50,7 +51,6 @@ Player::Player(int x, int y)
             sf::Vector2f(100.0f,100.0f),
             sf::Vector2f(75.0,75.0)
             ){
-    
     
     //body.setSize(sf::Vector2f(100.0f,100.0f));
     //body.setTexture(tex);
@@ -65,6 +65,7 @@ Player::Player(int x, int y)
     arma=0;  
     vidas = 2;  
     velocidad=1;
+    
 }
 
 void Player::update(float deltaTime){
