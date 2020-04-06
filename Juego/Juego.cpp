@@ -34,7 +34,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-
+   //mapa * mundo = mapa::instance(); 
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
       disparar(deltaTime);
   }
@@ -51,7 +51,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-      bulletEnemies[i].update(deltaTime);
+      bulletEnemies[i]->update(deltaTime);
 
     }
     
@@ -60,18 +60,47 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo(deltaTime);
     
     jugador->update(deltaTime);
-  
-    view.setCenter(jugador->getBody().getPosition());
+
+    
+  /*  if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
+       view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));
+        
+    } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
+              view.setCenter(sf::Vector2f (2240-view.getSize().x/2,1600-view.getSize().y/2));
+           }
+              else if(jugador->getBody().getPosition().y < view.getSize().y/2){
+                      view.setCenter(jugador->getBody().getPosition().x,view.getSize().y/2);
+              }
+                    else if(jugador->getBody().getPosition().y > 1600-view.getSize().y/2){
+                            view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2);
+                          } else view.setCenter(jugador->getBody().getPosition());*/
+    Vector2f playerPos = jugador->getBody().getPosition();
+
+    view.setCenter(playerPos);
+    if( playerPos.x<view.getSize().x/2) {
+      view.setCenter(view.getSize().x/2, playerPos.y);
+    }
+    if( playerPos.y > 1600-view.getSize().y/2){
+      view.setCenter(view.getCenter().x, 1600-view.getSize().y/2);
+    }
+    if( playerPos.x>2240-view.getSize().x/2) {
+      view.setCenter(2240-view.getSize().x/2, view.getCenter().y);
+    }
+    if( playerPos.y < view.getSize().y/2){
+      view.setCenter(view.getCenter().x, view.getSize().y/2);
+    }
+
 
     m->getVentana()->setView(view);
-
 
     for(unsigned i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
+      enemies[i]->updateHitbox();
 
     }
     jugador->updateHitbox();
+    
 
 }
 
@@ -92,7 +121,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         posobj = objetos[i]->getPosition();
         pararse=true;
       } 
-
+      
       if(pararse){
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
@@ -130,7 +159,7 @@ void Juego::render(float porcentaje){ //wip
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-     bulletEnemies[i].render();
+     bulletEnemies[i]->render();
 
     }
 
@@ -169,17 +198,6 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 }
 
 
-
-void Juego::matarEnemigo(Enemigo* enem){
-  for(unsigned i = 0; i <  (sizeof(enemies)/sizeof(*enemies));i++){
-
-    if(enemies[i] == enem){
-      delete[] enemies[i];
-      break;
-    }
-
-  }
-}
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ 
@@ -214,6 +232,23 @@ void Juego::crearEnemigos(){
   
 }
 
+void Juego::matarEnemigo(Enemigo* enem){
+  for (int i = 0; i < numEmenigos; i++){
+    if(enemies[i] == enem){
+      for(int j = i; j < numEmenigos; j++){
+        enemies[j] = enemies[j+1];
+        enemies[numEmenigos] = NULL;
+        numEmenigos--;
+      }
+    }
+  }
+}
+
+void Juego::matarJugador(){
+
+}
+
+
 void Juego::disparar(float deltaTime){
   
         for(int i=0 ; i<maxBullets ; i++){
@@ -226,6 +261,19 @@ void Juego::disparar(float deltaTime){
     
 }
 
+void Juego::dispararEnemigo(float deltaTime,float x, float y, bool direccion){
+
+  for(int i = 0; i < maxBullets;i++){
+
+    if(bulletEnemies[i] == NULL){
+
+      bulletEnemies[i] = new Bullet(x,y,direccion);
+
+    }
+
+  }
+
+}
 void Juego::colisionBulletMundo(float deltaTime){
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();

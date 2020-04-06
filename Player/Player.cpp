@@ -42,7 +42,10 @@ Player::Player()
     body.setTexture(text);
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
 
-  
+    /*PU_saltoDoble = true;
+    PU_velocidad = true;
+    arma=1;  */
+    
 } 
 
 Player::Player(int x, int y) 
@@ -138,7 +141,9 @@ void Player::setVidas(int v){
 }
 
 void Player::morir(){
-  body.setSize(sf::Vector2f(0,0));
+  //body.setSize(sf::Vector2f(0,0));
+  Juego* juego = Juego::instance();
+  juego->matarJugador();
  
 }
 
@@ -223,9 +228,9 @@ void Player::updateHitbox(){
     coliAbajo.width = gbb.width/2;
     coliAbajo.height = 6;
     
-    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.left = gp.x - gbb.width/2+12; //rojo
     coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.width = gbb.width/2-10;
     coliIzquierda.height = gbb.height -25;
 
     coliDerecha.left = gp.x+5;

@@ -2,7 +2,9 @@
 
 
 Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
-   sf::Texture *text = new sf::Texture;
+    sf::Texture *text = new sf::Texture;
+
+    juego = Juego::instance();
 
     cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
     cuerpo.setPosition(100, 100);
@@ -76,12 +78,21 @@ void Centinela::update(Player* player, float deltaTime){
                 } 
                 else{//DISPARA!!!! necesitamos el trabajo de vermivlad
 
-                    ////WIP
-                    ////WIP
-                    ////WIP
-                    ////WIP
-                    ////WIP
-                    body.setScale(0.5,0.5);
+                    bool auxiliar;
+
+                    if((local_diffX/local_diffabs) == 1){
+
+                        auxiliar = true;
+
+                    }
+                    else{
+
+                        auxiliar = false;
+
+                    }
+                    
+                    juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
+                    
 
                 }
                 
