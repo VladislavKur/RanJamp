@@ -138,7 +138,9 @@ void Player::setVidas(int v){
 }
 
 void Player::morir(){
-  body.setSize(sf::Vector2f(0,0));
+  //body.setSize(sf::Vector2f(0,0));
+  Juego* juego = Juego::instance();
+  juego->matarJugador();
  
 }
 

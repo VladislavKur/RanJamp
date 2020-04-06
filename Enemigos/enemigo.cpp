@@ -21,7 +21,7 @@ void Enemigo::morir(){
     //if(cuerpo.getScale().x < 0.1)
     cuerpo.setScale(0,0);
     Juego* juego = Juego::instance();
-   // juego->matarEnemigo(this);
+    juego->matarEnemigo(this);
      
 }
 

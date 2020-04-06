@@ -1,4 +1,4 @@
-# Install script for directory: /home/andres/Escritorio/FV JUNTO/Enemigos
+# Install script for directory: /home/fv/Desktop/RanJamp/Enemigos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

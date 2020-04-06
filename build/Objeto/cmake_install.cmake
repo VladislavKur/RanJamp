@@ -1,4 +1,4 @@
-# Install script for directory: /home/andres/Escritorio/FV JUNTO/Objeto
+# Install script for directory: /home/fv/Desktop/RanJamp/Objeto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

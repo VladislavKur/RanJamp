@@ -169,17 +169,6 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 }
 
 
-
-void Juego::matarEnemigo(Enemigo* enem){
-  for(unsigned i = 0; i <  (sizeof(enemies)/sizeof(*enemies));i++){
-
-    if(enemies[i] == enem){
-      delete[] enemies[i];
-      break;
-    }
-
-  }
-}
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ 
@@ -213,6 +202,23 @@ void Juego::crearEnemigos(){
   }
   
 }
+
+void Juego::matarEnemigo(Enemigo* enem){
+  for (int i = 0; i < numEmenigos; i++){
+    if(enemies[i] == enem){
+      for(int j = i; j < numEmenigos; j++){
+        enemies[j] = enemies[j+1];
+        enemies[numEmenigos] = NULL;
+        numEmenigos--;
+      }
+    }
+  }
+}
+
+void Juego::matarJugador(){
+    
+}
+
 
 void Juego::disparar(float deltaTime){
   

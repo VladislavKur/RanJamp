@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Player/Player.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
+  "/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
+  "/home/fv/Desktop/RanJamp/Bullet/bullet.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/reptante.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "/home/fv/Desktop/RanJamp/Juego/Juego.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/mapa.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinystr.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinyxml.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinyxmlerror.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinyxmlparser.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
+  "/home/fv/Desktop/RanJamp/Motor/Motor.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
+  "/home/fv/Desktop/RanJamp/Objeto/Objeto.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+  "/home/fv/Desktop/RanJamp/Player/Player.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
