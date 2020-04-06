@@ -163,8 +163,6 @@ enemigo.h
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
-../Juego/Juego.h
-/home/fv/Desktop/RanJamp/Juego/Juego.h
 
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp

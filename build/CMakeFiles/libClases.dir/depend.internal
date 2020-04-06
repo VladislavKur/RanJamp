@@ -20,18 +20,9 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  ../Motor/Motor.h
  /home/fv/Desktop/RanJamp/Animacion/Animacion.h
- /home/fv/Desktop/RanJamp/Bullet/bullet.h
- /home/fv/Desktop/RanJamp/Enemigos/centinela.h
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
- /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
- /home/fv/Desktop/RanJamp/Enemigos/reptante.h
- /home/fv/Desktop/RanJamp/Juego/Juego.h
- /home/fv/Desktop/RanJamp/Mapa/mapa.h
- /home/fv/Desktop/RanJamp/Mapa/tinystr.h
- /home/fv/Desktop/RanJamp/Mapa/tinyxml.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
- /home/fv/Desktop/RanJamp/Objeto/Objeto.h
  /home/fv/Desktop/RanJamp/Player/Player.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  ../Motor/Motor.h

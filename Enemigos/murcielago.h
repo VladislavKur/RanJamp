@@ -11,11 +11,12 @@ class Murcielago : public Enemigo{
         int distanciaAtaque;
         int altura;
         int direccion = 0;
-        bool haPegado;
+        
     public:
         Murcielago(float x, float y);
         void update(Player* player, float delta);
-        void render( float porcentaje);   
+        void render( float porcentaje);  
+        bool haPegado; 
 };
 
 #endif

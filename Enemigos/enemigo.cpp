@@ -1,5 +1,4 @@
 #include "enemigo.h"
-#include "../Juego/Juego.h"
 
 Enemigo::Enemigo(float x, float y){
     
@@ -20,13 +19,14 @@ void Enemigo::morir(){
     //cuerpo.setScale(sf::Vector2f(cuerpo.getScale().x*0.9, cuerpo.getScale().y*0.9));
     //if(cuerpo.getScale().x < 0.1)
     cuerpo.setScale(0,0);
-    Juego* juego = Juego::instance();
-    juego->matarEnemigo(this);
+    //Juego* juego = Juego::instance();
+    //juego->matarEnemigo(this);
+    vida = 0;
      
 }
 void Enemigo::updateHitbox(){
-    Vector2f gp = cuerpo.getPosition();
-    FloatRect gbb = cuerpo.getGlobalBounds();
+    sf::Vector2f gp = cuerpo.getPosition();
+    sf::FloatRect gbb = cuerpo.getGlobalBounds();
 
     coliAbajo.left = gp.x - gbb.width/2 + 25;
     coliAbajo.top = gp.y + gbb.height/2;

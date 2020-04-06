@@ -4,7 +4,6 @@
 #include "../Motor/Motor.h"
 #include "../Player/Player.h"
 
-
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 
@@ -14,13 +13,14 @@ class Enemigo{
         virtual void render(float porcentaje){};
         sf::RectangleShape getCuerpo(){return cuerpo;};
         ~Enemigo();
-
+        bool colision;
         void updateHitbox();
         sf::FloatRect coliAbajo;
         sf::FloatRect coliArriba;
         sf::FloatRect coliIzquierda;
         sf::FloatRect coliDerecha;
-
+        void morir();
+        int getVidas(){return vida;}
     protected:
         float posX, posY;
         float posXanterior, posYanterior;
@@ -31,11 +31,9 @@ class Enemigo{
         Enemigo(float x, float y);
         //sf::FloatRect colision;
         sf::RectangleShape cuerpo;
-        sf::RectangleShape colision;
         sf::Clock relojAnim;
         void actualizarPosicion(float x, float y);
-        void morir();
-        int getVidas(){return vida;}
+       
 };
 
 
