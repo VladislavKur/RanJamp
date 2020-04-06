@@ -20,7 +20,7 @@ Player::Player()
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=20;
-    
+    arma=1;  
     vidas = 2; 
     velocidad=250;
 
@@ -30,6 +30,7 @@ Player::Player()
 
     auxSaltos = true;
     cooldownSalto = 0;
+    cooldownDisparo = 0;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
     body.setPosition(100, 100);
@@ -55,7 +56,6 @@ Player::Player(int x, int y)
             sf::Vector2f(75.0,75.0)
             ){
     
-    
     //body.setSize(sf::Vector2f(100.0f,100.0f));
     //body.setTexture(tex);
     
@@ -69,6 +69,7 @@ Player::Player(int x, int y)
     arma=0;  
     vidas = 2;  
     velocidad=1;
+    
 }
 
 void Player::update(float deltaTime){
@@ -80,6 +81,8 @@ void Player::update(float deltaTime){
     if(cooldownSalto<=0){
       auxSaltos=true;
     }
+
+    cooldownDisparo-=deltaTime;
     // //Moverse a la derecha si la plataforma lo permite
     // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
     //   if(!coliDerecha.intersects(plataforma.getBody().getGlobalBounds()))
@@ -138,7 +141,9 @@ void Player::setVidas(int v){
 }
 
 void Player::morir(){
-  body.setSize(sf::Vector2f(0,0));
+  //body.setSize(sf::Vector2f(0,0));
+  Juego* juego = Juego::instance();
+  juego->matarJugador();
  
 }
 
@@ -151,7 +156,8 @@ void Player::moveRight(float deltaTime){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos)+2 ; i++){
+  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
+  
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
     }
@@ -169,7 +175,7 @@ mapa* mundo = mapa::instance();
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i<sizeof(objetos) ; i++){
+  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
         puede=false;
@@ -185,7 +191,7 @@ mapa* mundo = mapa::instance();
 void Player::saltar(){
   if(saltos!=0){
         auxSaltos= false;
-        jumpSpeed = -sqrtf(4.0f * 981.0f * jumpHeight);
+        jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
         saltos--;
       }
 }

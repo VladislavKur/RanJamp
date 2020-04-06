@@ -71,7 +71,7 @@ int main() {
 
       elapsus = m->getRelojM();
 
-/*
+
       coliArV.setPosition( instancia->getJugador()->coliArriba.left , instancia->getJugador()->coliArriba.top );
       coliArV.setFillColor(Color(255, 255, 0, 128));
       coliArV.setSize( Vector2f( instancia->getJugador()->coliArriba.width, instancia->getJugador()->coliArriba.height ) );
@@ -87,7 +87,7 @@ int main() {
       coliDcV.setPosition( instancia->getJugador()->coliDerecha.left , instancia->getJugador()->coliDerecha.top );
       coliDcV.setFillColor(Color(0, 0, 255, 128));
       coliDcV.setSize( Vector2f( instancia->getJugador()->coliDerecha.width, instancia->getJugador()->coliDerecha.height ) );
-*/
+
       window->clear();
       
       if(elapsus >= UPDATE_TICK_TIME){
@@ -111,6 +111,7 @@ int main() {
       //window->draw(instancia->getJugador()->getBody());
 //
       //window->display();
+     // std::cout<<"PU_Saltodoble: " << instancia->getJugador()->getPU_SaltoDoble() << " ------- AuxSaltos: "<<instancia->getJugador()->auxSaltos<<" ------- Saltos: "<<instancia->getJugador()->getSaltos()<< " ------- Cooldown: "<< instancia->getJugador()->getCooldownSalto() <<endl;
 
       //cout<<instancia->getJugador()->getJumpSpeed()<<endl;
 

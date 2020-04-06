@@ -11,6 +11,7 @@ class Enemigo{
     public:
         virtual void update(Player* player, float delta){}; ///player
         virtual void render(float porcentaje){};
+        sf::RectangleShape getCuerpo(){return cuerpo;};
         ~Enemigo();
 
     protected:
@@ -21,8 +22,9 @@ class Enemigo{
         int modo;
         int vida;
         Enemigo(float x, float y);
-        
+        //sf::FloatRect colision;
         sf::RectangleShape cuerpo;
+        sf::RectangleShape colision;
         sf::Clock relojAnim;
         void actualizarPosicion(float x, float y);
         void morir();

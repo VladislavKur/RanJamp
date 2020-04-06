@@ -5,15 +5,20 @@ Juego* Juego::pinstance = 0;
 
 Juego::Juego(){
     mapa * mundo = mapa::instance(); 
-    mundo->cargarmapa("MapaFinal.tmx");
+    mundo->cargarmapa("Nivel1.tmx");
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
     jugador = new Player();
     if(jugador == nullptr) printf("asdasd");
-    //crearObjetos();
+    crearObjetos();
     crearEnemigos();
-    view.setSize(720,480);
+    view.setSize(1024,720);
+
+  for(int i = 0 ; i < maxBullets ; i++){
+       bulletPlayer[i]=NULL;
+    }
+
 }
 
 Juego* Juego::instance(){
@@ -29,12 +34,21 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
+   //mapa * mundo = mapa::instance(); 
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
+      disparar(deltaTime);
+  }
     
-    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
-
-       bulletPlayer[i].update(deltaTime);
-
+    for(unsigned i = 0; i < maxBullets ;i++){
+      if(bulletPlayer[i] == NULL) continue;
+      if(bulletPlayer[i]->lifetime<=0){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+      }
+      if(bulletPlayer[i] == NULL) continue; //POR SEGUNDA VEZ, porque puede que se haya destruido en la linea anterior si ha entrado al if
+       bulletPlayer[i]->update(deltaTime);
     }
+
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
       bulletEnemies[i].update(deltaTime);
@@ -42,15 +56,25 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     
     colisionPlayerMundo(deltaTime);
+    colisionBulletMundo(deltaTime);
+    colisionBulletEnemigo(deltaTime);
     
     jugador->update(deltaTime);
-    view.setCenter(jugador->getBody().getPosition());
+    std::cout << jugador->getBody().getPosition().x << "x" <<std::endl;
+    std::cout << jugador->getBody().getPosition().y << "y" << std::endl;
+    
+    if(jugador->getBody().getPosition().x < 514.0f || jugador->getBody().getPosition().y <1275.0f){
+      view.setCenter(sf::Vector2f (515,1225));
+        
+    } else view.setCenter(jugador->getBody().getPosition());
+          
+
     m->getVentana()->setView(view);
 
-    RectangleShape rec = jugador->getBody();
-    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
 
-      //enemies[i]->update(rec, deltaTime); // POBAR QUE FUNCIONA ...
+    for(unsigned i = 0; i < numEmenigos; i++){
+      if(enemies[i]==NULL) continue;
+      enemies[i]->update(jugador , deltaTime);
 
     }
     jugador->updateHitbox();
@@ -64,11 +88,12 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
     //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
     // }
+
     Vector2f posobj;
     bool pararse=false;
     bool aux = false;
     Vector2f posant;
-    for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
+    for(unsigned int i=0 ; i<  mundo->getNumObjetos(); i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         posobj = objetos[i]->getPosition();
         pararse=true;
@@ -104,9 +129,9 @@ void Juego::render(float porcentaje){ //wip
     Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
-    for(unsigned i = 0; i < (sizeof(bulletPlayer)/sizeof(*bulletPlayer));i++){
-
-      bulletPlayer[i].render();
+    for(unsigned i = 0; i < maxBullets;i++){
+      if(bulletPlayer[i]==NULL) continue;
+      bulletPlayer[i]->render();
 
     }
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
@@ -117,11 +142,11 @@ void Juego::render(float porcentaje){ //wip
 
     jugador->render();
     
-    
-    for(unsigned i = 0; i < (sizeof(enemies)/sizeof(*enemies));i++){
-
+    int i = 0;
+    while(enemies[i] != nullptr && i < numEmenigos){
+      cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
-
+      i++;
     }
 }
 
@@ -150,35 +175,31 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 }
 
 
-
-void Juego::matarEnemigo(Enemigo* enem){
-  /*for(unsigned i = 0; i < *enemies.length() ;i++){
-
-    if(enemies[i] == enem){
-      delete[] enemies[i];
-    }
-
-  }*/
-}
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ 
   mapa * mundo = mapa::instance();
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
+  numEmenigos = posicion.size();
   enemies = new Enemigo *[posicion.size()]; 
   for(unsigned i = 0; i < posicion.size();i++){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
-        cout << "he añadido murcielago" << endl;
+        cout << "he añadido murcielago " << posx << ","  << posy  << endl;
         Murcielago * murcielago = new Murcielago(posx, posy);
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
         cout << "he añadido centinela" << endl;
-        Centinela * centinela = new Centinela(posx, posy);
+        Centinela * centinela = new Centinela(posx, posy,1);
         enemies[i] = (Enemigo *) centinela;
     }else if(posicion[i][2] == 3){
+        cout << "he añadido un centinela que se mueve"<< endl;
+        Centinela* centinela = new Centinela(posx,posy,0);
+        enemies[i] = (Enemigo *) centinela;
+    }
+    else if(posicion[i][2] == 4){
         cout << "he añadido reptante" << endl;
         Reptante * reptante = new Reptante(posx, posy);
         enemies[i] = (Enemigo *) reptante;
@@ -186,4 +207,66 @@ void Juego::crearEnemigos(){
 
   }
   
+}
+
+void Juego::matarEnemigo(Enemigo* enem){
+  for (int i = 0; i < numEmenigos; i++){
+    if(enemies[i] == enem){
+      for(int j = i; j < numEmenigos; j++){
+        enemies[j] = enemies[j+1];
+        enemies[numEmenigos] = NULL;
+        numEmenigos--;
+      }
+    }
+  }
+}
+
+void Juego::matarJugador(){
+    
+}
+
+
+void Juego::disparar(float deltaTime){
+  
+        for(int i=0 ; i<maxBullets ; i++){
+          if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
+            bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) );
+            jugador->setCooldownDisparo(10*deltaTime);
+            break;
+          }
+        }
+    
+}
+
+void Juego::colisionBulletMundo(float deltaTime){
+    mapa * mundo = mapa::instance(); 
+    RectangleShape ** objetos = mundo->getObjetos();
+
+  for(unsigned int i=0 ; i<maxBullets ; i++){
+    for(unsigned int j=0 ; j<mundo->getNumObjetos(); j++){
+      if(bulletPlayer[i]==NULL) continue;
+      if(objetos[j]==NULL) continue;
+
+      if(objetos[j]->getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+      }
+    }
+  }
+}
+
+void Juego::colisionBulletEnemigo(float deltaTime){
+  for(unsigned int i=0 ; i<maxBullets ; i++){
+    for(unsigned int j=0 ; j<numEmenigos ; j++){
+      if(bulletPlayer[i]==NULL) continue;
+      if(enemies[j]==NULL)      continue;
+
+      if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+          for (int index = j; index < numEmenigos; index++)
+            enemies[index] = enemies[index+1];
+          enemies[numEmenigos] = NULL;
+          numEmenigos--;
+      }
+    }
+  }
 }

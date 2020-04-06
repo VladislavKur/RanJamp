@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "../Motor/Motor.h"
 
-#define maxBullets 64
+#define maxBullets 256
 
 class Bullet
 {
@@ -17,6 +17,9 @@ public:
     float lifetime; //Contador que destruye la bala cuando llega a 0
     void update(float deltaTime);
     void render();
+
+    sf::CircleShape getBody(){return body;};
+
 
     static Bullet* bullets[maxBullets];
     static void initBulletArray();

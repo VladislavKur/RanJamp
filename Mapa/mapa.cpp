@@ -31,7 +31,7 @@ void mapa::cargarmapa(const char * f){
   map->QueryIntAttribute("height", &_height);
   map->QueryIntAttribute("tilewidth", &_tileWidth);
   map->QueryIntAttribute("tileheight", &_tileHeight);
- 
+
   TiXmlElement * tileset = map->FirstChildElement("tileset");
 
   while(tileset){
@@ -140,7 +140,7 @@ void mapa::crearSprites(){
             gid = gid - cambio[k-1];
           }
           if(gid <=  cambio[k]){
-            if(gid>=_tileWidth*_tileHeight){
+            if(gid > cambio[k]){
               cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
@@ -285,7 +285,7 @@ void mapa::render(){
             gid = gid - cambio[k-1];
           }
           if(gid <=  cambio[k]){
-            if(gid>=_tileWidth*_tileHeight){
+            if(gid > cambio[k]){
               cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
@@ -304,11 +304,15 @@ void mapa::render(){
   }
   
    
-  for(int i=0; i < _numObjects; i++){
-    motor->dibujo(*objetos[i]);
-  }
+  // for(int i=0; i < _numObjects; i++){
+  //   motor->dibujo(*objetos[i]);
+  // }
 }
 
+
+int mapa::getNumObjetos(){
+  return _numObjects;
+}
 
 /*
 void mapa::liberar(){

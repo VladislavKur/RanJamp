@@ -10,6 +10,7 @@ Enemigo::Enemigo(float x, float y){
     posXanterior = x;
     posYanterior = y;
     modo = 0;
+    vida = 1;
 
 };
 Enemigo::~Enemigo(){
@@ -20,7 +21,7 @@ void Enemigo::morir(){
     //if(cuerpo.getScale().x < 0.1)
     cuerpo.setScale(0,0);
     Juego* juego = Juego::instance();
-   // juego->matarEnemigo(this);
+    juego->matarEnemigo(this);
      
 }
 
