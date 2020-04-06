@@ -31,8 +31,8 @@ iostream
 -
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
-../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+../Bullet/bullet.h
+/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 SFML/Graphics.hpp

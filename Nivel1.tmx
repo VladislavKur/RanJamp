@@ -3519,17 +3519,17 @@
   <object id="25" x="2050" y="1024" width="195" height="60"/>
   <object id="27" x="1059" y="1220" width="190" height="56"/>
  </objectgroup>
- <objectgroup name="Capa de Enemigos" visible="0">
+ <objectgroup name="Capa de Enemigos">
   <object id="13" type="1" x="1425" y="880" width="65" height="80">
    <ellipse/>
   </object>
   <object id="14" type="1" x="615" y="1175" width="65" height="75">
    <ellipse/>
   </object>
-  <object id="15" type="2" x="1710" y="985" width="105" height="80">
+  <object id="15" type="2" x="1780" y="1071" width="78" height="80">
    <ellipse/>
   </object>
-  <object id="17" type="2" x="1385" y="1215" width="65" height="60">
+  <object id="17" type="2" x="1407" y="1219" width="65" height="60">
    <ellipse/>
   </object>
  </objectgroup>
