@@ -264,8 +264,7 @@ void Juego::matarEnemigo(Enemigo* enem){
   for (int i = 0; i < numEmenigos; i++){
     if(enemies[i] == enem){
       for(int j = i; j < numEmenigos; j++){
-        enemies[j] = enemies[j+1];
-        
+        enemies[j] = enemies[j+1];        
       }
       enemies[numEmenigos] = NULL;
       numEmenigos--;
