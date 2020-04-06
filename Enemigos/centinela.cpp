@@ -12,7 +12,7 @@ Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     if(!text->loadFromFile("resources/Imagenes/Arqueros.png")) std::cout << "sadasds";
     
     cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0, 0, 96 , 320));
+    cuerpo.setTextureRect(sf::IntRect(0, 0, 192 , 640));
    // cuerpo.setScale(1.5, 2.5);
 
     tipo = type;

@@ -5,7 +5,7 @@
 Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
      sf::Texture *text = new sf::Texture;
 
-    cuerpo.setSize(sf::Vector2f(100.0f,100.0f));
+    cuerpo.setSize(sf::Vector2f(50.0f,80.0f));
     
     
     cuerpo.setOrigin(75/2, 75/2);
@@ -14,7 +14,6 @@ Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
     
     cuerpo.setTexture(text);
     cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 64, 64));
-    cuerpo.setScale(0.5, 1);
     cuerpo.setPosition(x,y);
     velocidad = 0.3;
     altura = 3;
