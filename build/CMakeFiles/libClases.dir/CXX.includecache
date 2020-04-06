@@ -29,6 +29,8 @@ iostream
 ../Motor/Motor.h
 ../Player/Player.h
 ../Player/Player.h
+../Juego/Juego.h
+../Juego/Juego.h
 
 ../Enemigos/murcielago.h
 SFML/Graphics.hpp
@@ -163,8 +165,6 @@ enemigo.h
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
-Juego.h
-/home/fv/Desktop/RanJamp/Enemigos/Juego.h
 
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
@@ -175,6 +175,8 @@ iostream
 /home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Player/Player.h
 /home/fv/Desktop/RanJamp/Player/Player.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
 /home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp
 murcielago.h

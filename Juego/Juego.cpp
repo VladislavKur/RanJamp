@@ -65,13 +65,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     m->getVentana()->setView(view);
 
-
     for(unsigned i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
+      //enemies[i]->updateHitbox();
 
     }
     jugador->updateHitbox();
+    
 
 }
 
@@ -216,7 +217,7 @@ void Juego::matarEnemigo(Enemigo* enem){
 }
 
 void Juego::matarJugador(){
-    
+
 }
 
 

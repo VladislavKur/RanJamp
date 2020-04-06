@@ -1,7 +1,5 @@
 #include "murcielago.h"
 
-
-
 Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
      sf::Texture *text = new sf::Texture;
 
@@ -38,7 +36,7 @@ void Murcielago::update(Player* player, float delta){
 
     diffX = 0; //inicialmente no se mueve
     diffY = 0; //inicialmente no se mueve
-
+    
     
     bool cambio = false; //no nos cambiamos de modo por defecto
     do{
