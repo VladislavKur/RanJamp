@@ -18,6 +18,7 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing) : body(){
         array_inicializado=true;
     }
 
+    velocidad=600;
     lifetime=5;
 
     facing=p_facing;
@@ -29,7 +30,7 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing) : body(){
 
 void Bullet::update(float deltaTime){
     lifetime-=deltaTime;
-    body.move( (facing ? 1 : -1) * 1200*deltaTime,0);
+    body.move( (facing ? 1 : -1) * velocidad*deltaTime,0);
 }
 
 void Bullet::render(){

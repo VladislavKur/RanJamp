@@ -19,7 +19,7 @@ Player::Player()
 
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=20;
+    jumpHeight=30;
     arma=1;  
     vidas = 2; 
     velocidad=250;

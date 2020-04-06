@@ -130,7 +130,6 @@ Bullet* Centinela::disparar(){
         shoot = false;
 
         devolver = new Bullet(posX,posY,direccion);
-
     }
 
     return(devolver);
