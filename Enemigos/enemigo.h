@@ -11,6 +11,7 @@ class Enemigo{
     public:
         virtual void update(Player* player, float delta){}; ///player
         virtual void render(float porcentaje){};
+        sf::RectangleShape getCuerpo(){return cuerpo;};
         ~Enemigo();
 
     protected:

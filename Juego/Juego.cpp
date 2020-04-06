@@ -41,9 +41,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     
     for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] == NULL) continue;
+      if(bulletPlayer[i]->lifetime<=0){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+      }
+      if(bulletPlayer[i] == NULL) continue; //POR SEGUNDA VEZ, porque puede que se haya destruido en la linea anterior si ha entrado al if
        bulletPlayer[i]->update(deltaTime);
-
     }
+
     for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
       bulletEnemies[i].update(deltaTime);
@@ -51,6 +56,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     
     colisionPlayerMundo(deltaTime);
+    colisionBulletMundo(deltaTime);
+    colisionBulletEnemigo(deltaTime);
     
     jugador->update(deltaTime);
   
@@ -60,7 +67,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
 
     for(unsigned i = 0; i < numEmenigos; i++){
-
+      if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
 
     }
@@ -217,4 +224,37 @@ void Juego::disparar(float deltaTime){
           }
         }
     
+}
+
+void Juego::colisionBulletMundo(float deltaTime){
+    mapa * mundo = mapa::instance(); 
+    RectangleShape ** objetos = mundo->getObjetos();
+
+  for(unsigned int i=0 ; i<maxBullets ; i++){
+    for(unsigned int j=0 ; j<mundo->getNumObjetos(); j++){
+      if(bulletPlayer[i]==NULL) continue;
+      if(objetos[j]==NULL) continue;
+
+      if(objetos[j]->getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+      }
+    }
+  }
+}
+
+void Juego::colisionBulletEnemigo(float deltaTime){
+  for(unsigned int i=0 ; i<maxBullets ; i++){
+    for(unsigned int j=0 ; j<numEmenigos ; j++){
+      if(bulletPlayer[i]==NULL) continue;
+      if(enemies[j]==NULL)      continue;
+
+      if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+          for (int index = j; index < numEmenigos; index++)
+            enemies[index] = enemies[index+1];
+          enemies[numEmenigos] = NULL;
+          numEmenigos--;
+      }
+    }
+  }
 }
