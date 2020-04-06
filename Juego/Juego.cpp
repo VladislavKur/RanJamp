@@ -186,11 +186,19 @@ void Juego::render(float porcentaje){ //wip
     jugador->render();
     
     int i = 0;
+    int j = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
       cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
       i++;
     }
+
+    while(objetos[j] != nullptr && j < numObjetos){
+     
+      objetos[j]->render();
+      j++;
+    }
+    
 }
 
 
@@ -200,8 +208,8 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   sf::Vector2f pos;
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
-
-
+  numObjetos = posicion.size();
+  objetos = new Objeto *[posicion.size()]; 
 
 
   for(unsigned i = 0; i > posicion.size();i++){
@@ -209,7 +217,8 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];
     
-    Objeto objeto1(pos ,posicion[i][2]);
+    Objeto *objeto1 = new Objeto(pos ,posicion[i][2]);
+    objetos[i] = (Objeto *) objeto1;
   }
   
   

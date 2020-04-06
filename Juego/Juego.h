@@ -18,10 +18,12 @@
         private:
             Player *jugador;
             Enemigo** enemies = NULL;
+            Objeto** objetos= NULL;
             Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
+            int numObjetos;
         protected:
             Juego();
 
