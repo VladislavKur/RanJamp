@@ -15,6 +15,7 @@ class mapa{
         void crearSprites();
         void crearObjetos();
         vector<vector<int>> cargarPosicionEnemigos_PowerUps(int i);
+        vector<int>  cargarPosicionBordes();
         void cargarObjectGroups();
         Vector2f cargarPosicionPlayer_Puerta(int i);
         void render();
@@ -52,7 +53,6 @@ class mapa{
 
 
         //objetos
-
         int _widthObject;
         int _heightObject;
         int _x;
@@ -66,4 +66,9 @@ class mapa{
         int _posY;
         int _tipo;
          TiXmlElement ** objectgroups;
+
+         //bordes; 
+         int _X; 
+         int _Y; 
+         int _Height;
 };

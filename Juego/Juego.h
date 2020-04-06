@@ -19,7 +19,7 @@
             Player *jugador;
             Enemigo** enemies = NULL;
             Bullet* bulletPlayer[maxBullets];
-            Bullet* bulletEnemies = NULL;
+            Bullet* bulletEnemies[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
         protected:
@@ -30,6 +30,7 @@
             void update(float deltaTime);
             void render(float porcentaje);            
 
+            void colisionBulletJugador(float deltatime);
             void colisionBulletEnemigo(float deltaTime);
             void colisionPlayerMundo(float deltaTime);
             void colisionBulletMundo(float deltaTime);
@@ -40,6 +41,8 @@
             void matarEnemigo(Enemigo* enem);
             void matarJugador();
             void disparar(float deltaTime);
+            void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
+            void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
 
             sf::View view;
     };

@@ -1,5 +1,4 @@
 #include "enemigo.h"
-#include "Juego.h"
 
 Enemigo::Enemigo(float x, float y){
     
@@ -20,10 +19,12 @@ void Enemigo::morir(){
     //cuerpo.setScale(sf::Vector2f(cuerpo.getScale().x*0.9, cuerpo.getScale().y*0.9));
     //if(cuerpo.getScale().x < 0.1)
     cuerpo.setScale(0,0);
-    Juego* juego = Juego::instance();
-    juego->matarEnemigo(this);
+    //Juego* juego = Juego::instance();
+    //juego->matarEnemigo(this);
+    vida = 0;
      
 }
+
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){
 

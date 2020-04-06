@@ -21,7 +21,7 @@ Player::Player()
     jumpSpeed=0;
     jumpHeight=20;
     arma=1;  
-    vidas = 2; 
+    vidas = 5; 
     velocidad=250;
 
     PU_saltoDoble=true;
@@ -67,7 +67,7 @@ Player::Player(int x, int y)
     jumpSpeed=0;
     jumpHeight=75*2;
     arma=0;  
-    vidas = 2;  
+    vidas = 5;  
     velocidad=1;
     
 }
@@ -208,9 +208,9 @@ void Player::updateHitbox(){
     coliAbajo.width = gbb.width/2;
     coliAbajo.height = 6;
     
-    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.left = gp.x - gbb.width/2+12; //rojo
     coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.width = gbb.width/2-10;
     coliIzquierda.height = gbb.height -25;
 
     coliDerecha.left = gp.x+5;
