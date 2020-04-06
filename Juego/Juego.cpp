@@ -39,7 +39,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       disparar(deltaTime);
   }
     
-    /*for(unsigned i = 0; i < maxBullets ;i++){
+    for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] == NULL) continue;
       if(bulletPlayer[i]->lifetime<=0){
         delete bulletPlayer[i];
@@ -49,7 +49,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
        bulletPlayer[i]->update(deltaTime);
     }
 
-    for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
+    /*for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
       bulletEnemies[i]->update(deltaTime);
 
@@ -154,12 +154,12 @@ void Juego::render(float porcentaje){ //wip
     Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
-    /*for(unsigned i = 0; i < maxBullets;i++){
+    for(unsigned i = 0; i < maxBullets;i++){
       if(bulletPlayer[i]==NULL) continue;
       bulletPlayer[i]->render();
 
     }
-    for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
+    /*for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
      bulletEnemies[i]->render();
 

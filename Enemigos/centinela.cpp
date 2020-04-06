@@ -4,8 +4,6 @@
 Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     sf::Texture *text = new sf::Texture;
 
-
-
     cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
     cuerpo.setPosition(100, 100);
 
