@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vermia/RanJamp/Animacion/Animacion.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
-  "/home/vermia/RanJamp/Bullet/bullet.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
-  "/home/vermia/RanJamp/Enemigos/centinela.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
-  "/home/vermia/RanJamp/Enemigos/enemigo.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
-  "/home/vermia/RanJamp/Enemigos/murcielago.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "/home/vermia/RanJamp/Enemigos/reptante.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
-  "/home/vermia/RanJamp/Juego/Juego.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
-  "/home/vermia/RanJamp/Mapa/mapa.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
-  "/home/vermia/RanJamp/Mapa/tinystr.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
-  "/home/vermia/RanJamp/Mapa/tinyxml.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
-  "/home/vermia/RanJamp/Mapa/tinyxmlerror.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
-  "/home/vermia/RanJamp/Mapa/tinyxmlparser.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
-  "/home/vermia/RanJamp/Motor/Motor.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
-  "/home/vermia/RanJamp/Objeto/Objeto.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
-  "/home/vermia/RanJamp/Player/Player.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
+  "/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
+  "/home/fv/Desktop/RanJamp/Bullet/bullet.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
+  "/home/fv/Desktop/RanJamp/Enemigos/reptante.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "/home/fv/Desktop/RanJamp/Juego/Juego.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/mapa.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinystr.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinyxml.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinyxmlerror.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
+  "/home/fv/Desktop/RanJamp/Mapa/tinyxmlparser.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
+  "/home/fv/Desktop/RanJamp/Motor/Motor.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
+  "/home/fv/Desktop/RanJamp/Objeto/Objeto.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+  "/home/fv/Desktop/RanJamp/Player/Player.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

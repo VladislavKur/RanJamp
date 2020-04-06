@@ -21,7 +21,7 @@
             Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies[maxBullets];
             static Juego* pinstance;
-
+            int numEmenigos; 
         protected:
             Juego();
 
@@ -29,11 +29,16 @@
             static Juego *instance();
             void update(float deltaTime);
             void render(float porcentaje);            
+
+            void colisionBulletEnemigo(float deltaTime);
             void colisionPlayerMundo(float deltaTime);
+            void colisionBulletMundo(float deltaTime);
+
             void crearObjetos();
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
+            void matarJugador();
             void disparar(float deltaTime);
             void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
 

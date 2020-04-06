@@ -1,5 +1,5 @@
 #include "enemigo.h"
-#include "Juego.h"
+#include "../Juego/Juego.h"
 
 Enemigo::Enemigo(float x, float y){
     
@@ -21,8 +21,32 @@ void Enemigo::morir(){
     //if(cuerpo.getScale().x < 0.1)
     cuerpo.setScale(0,0);
     Juego* juego = Juego::instance();
-   // juego->matarEnemigo(this);
+    juego->matarEnemigo(this);
      
+}
+void Enemigo::updateHitbox(){
+    Vector2f gp = cuerpo.getPosition();
+    FloatRect gbb = cuerpo.getGlobalBounds();
+
+    coliAbajo.left = gp.x - gbb.width/2 + 25;
+    coliAbajo.top = gp.y + gbb.height/2;
+    coliAbajo.width = gbb.width/2;
+    coliAbajo.height = 6;
+    
+    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
+    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.height = gbb.height -25;
+
+    coliDerecha.left = gp.x+5;
+    coliDerecha.top = gp.y - gbb.height/2 +25;
+    coliDerecha.width = gbb.width/2 + 30;
+    coliDerecha.height = gbb.height -25;
+
+    coliArriba.left = gp.x - gbb.width/2 + 20;
+    coliArriba.top = gp.y-gbb.height/2 +25;
+    coliArriba.width = gbb.width - 40;
+    coliArriba.height = 5;
 }
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){
