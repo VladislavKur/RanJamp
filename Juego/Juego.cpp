@@ -212,7 +212,7 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   objetos = new Objeto *[posicion.size()]; 
 
 
-  for(unsigned i = 0; i > posicion.size();i++){
+  for(unsigned i = 0; i < posicion.size();i++){
 
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];
