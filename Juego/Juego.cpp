@@ -62,7 +62,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     jugador->update(deltaTime);
 
     
-    if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
+  /*  if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
        view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));
         
     } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
@@ -73,7 +73,22 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
               }
                     else if(jugador->getBody().getPosition().y > 1600-view.getSize().y/2){
                             view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2);
-                          } else view.setCenter(jugador->getBody().getPosition());
+                          } else view.setCenter(jugador->getBody().getPosition());*/
+    Vector2f playerPos = jugador->getBody().getPosition();
+
+    view.setCenter(playerPos);
+    if( playerPos.x<view.getSize().x/2) {
+      view.setCenter(view.getSize().x/2, playerPos.y);
+    }
+    if( playerPos.y > 1600-view.getSize().y/2){
+      view.setCenter(view.getCenter().x, 1600-view.getSize().y/2);
+    }
+    if( playerPos.x>2240-view.getSize().x/2) {
+      view.setCenter(2240-view.getSize().x/2, view.getCenter().y);
+    }
+    if( playerPos.y < view.getSize().y/2){
+      view.setCenter(view.getCenter().x, view.getSize().y/2);
+    }
 
 
     m->getVentana()->setView(view);
