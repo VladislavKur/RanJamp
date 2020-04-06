@@ -45,7 +45,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
   // for(int i = 0; i < dimensiones.size(); i ++){
   //   cout<< "dimensiones "<< i << " = "<< dimensiones[i] << endl;
   // }
-  if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
       disparar(deltaTime);
   }
     
@@ -74,6 +74,43 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletJugador(deltaTime);
     
     jugador->update(deltaTime);
+    int j = 0;
+    while(objetos[j] != nullptr && j < numObjetos){
+     
+     std::cout << objetos[j] << std:: endl;
+     std::cout << numObjetos << "sadasdsa" << std:: endl;
+     
+      if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
+
+            switch (objetos[j]->getTipo()){
+                case 0:
+                jugador->obtenerPU_Velocidad();
+                     destruirObjetos(objetos[j]);
+              
+                break;
+                case 1:
+                    jugador->setArma(1);
+                     destruirObjetos(objetos[j]);
+                    break;
+
+                case 2:
+                   jugador->obtenerPU_SaltoDoble();
+                     destruirObjetos(objetos[j]);
+                    break;
+
+                case 3:
+                    jugador->obtenerPU_Velocidad();
+                     destruirObjetos(objetos[j]);
+                    break;
+            
+            default:
+                std:: cout <<"Default" << std::endl;
+                break;
+            } 
+
+        }
+      j++;
+    }
 
     
  
@@ -103,7 +140,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       if(enemies[i]->getVidas() == 0){
         matarEnemigo(enemies[i]);
       }
-
+   
+      
       Centinela* casteado = dynamic_cast<Centinela*>(enemies[i]);
 
       if(casteado != nullptr){
@@ -188,7 +226,7 @@ void Juego::render(float porcentaje){ //wip
     int i = 0;
     int j = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
-      cout << " ENEMIGO " << i << endl;
+     
       enemies[i]->render(porcentaje);
       i++;
     }
@@ -218,12 +256,25 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
     pos.y = posicion[i][1];
     
     Objeto *objeto1 = new Objeto(pos ,posicion[i][2]);
-    objetos[i] = (Objeto *) objeto1;
+    objetos[i] =  objeto1;
   }
   
   
 
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
+}
+
+void Juego::destruirObjetos(Objeto* enem){
+  for (int i = 0; i < numObjetos; i++){
+    if(objetos[i] == enem){
+      for(int j = i; j < numObjetos; j++){
+        objetos[j] = objetos[j+1];
+        objetos[numObjetos] = NULL;
+        numObjetos--;
+      }
+    }
+  }
+
 }
 
 //CREARENEMIGOS FUNCIONE

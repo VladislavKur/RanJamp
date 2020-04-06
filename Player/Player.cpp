@@ -87,7 +87,7 @@ void Player::update(float deltaTime){
 
   //caer
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){
       if(auxSaltos==true && saltos > 0){
           saltar();
           cooldownSalto=15*deltaTime;
