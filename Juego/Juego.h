@@ -38,6 +38,7 @@
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
+            void matarJugador();
             void disparar(float deltaTime);
 
             sf::View view;

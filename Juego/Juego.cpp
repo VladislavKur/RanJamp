@@ -5,7 +5,7 @@ Juego* Juego::pinstance = 0;
 
 Juego::Juego(){
     mapa * mundo = mapa::instance(); 
-    mundo->cargarmapa("MapaFinal.tmx");
+    mundo->cargarmapa("Nivel1.tmx");
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
@@ -34,7 +34,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-
+   //mapa * mundo = mapa::instance(); 
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
       disparar(deltaTime);
   }
@@ -60,8 +60,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo(deltaTime);
     
     jugador->update(deltaTime);
-  
-    view.setCenter(jugador->getBody().getPosition());
+    std::cout << jugador->getBody().getPosition().x << "x" <<std::endl;
+    std::cout << jugador->getBody().getPosition().y << "y" << std::endl;
+    
+    if(jugador->getBody().getPosition().x < 514.0f || jugador->getBody().getPosition().y <1275.0f){
+      view.setCenter(sf::Vector2f (515,1225));
+        
+    } else view.setCenter(jugador->getBody().getPosition());
+          
 
     m->getVentana()->setView(view);
 
@@ -92,7 +98,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         posobj = objetos[i]->getPosition();
         pararse=true;
       } 
-
+      
       if(pararse){
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
@@ -169,17 +175,6 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 }
 
 
-
-void Juego::matarEnemigo(Enemigo* enem){
-  for(unsigned i = 0; i <  (sizeof(enemies)/sizeof(*enemies));i++){
-
-    if(enemies[i] == enem){
-      delete[] enemies[i];
-      break;
-    }
-
-  }
-}
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ 
@@ -213,6 +208,23 @@ void Juego::crearEnemigos(){
   }
   
 }
+
+void Juego::matarEnemigo(Enemigo* enem){
+  for (int i = 0; i < numEmenigos; i++){
+    if(enemies[i] == enem){
+      for(int j = i; j < numEmenigos; j++){
+        enemies[j] = enemies[j+1];
+        enemies[numEmenigos] = NULL;
+        numEmenigos--;
+      }
+    }
+  }
+}
+
+void Juego::matarJugador(){
+    
+}
+
 
 void Juego::disparar(float deltaTime){
   

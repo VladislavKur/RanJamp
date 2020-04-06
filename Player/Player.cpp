@@ -41,7 +41,11 @@ Player::Player()
     
     body.setTexture(text);
     body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-  
+
+    /*PU_saltoDoble = true;
+    PU_velocidad = true;
+    arma=1;  */
+    
 } 
 
 Player::Player(int x, int y) 
@@ -104,7 +108,7 @@ void Player::update(float deltaTime){
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
       if(auxSaltos==true && saltos > 0){
           saltar();
-          cooldownSalto=40*deltaTime;
+          cooldownSalto=15*deltaTime;
         }
     }
     
@@ -137,7 +141,9 @@ void Player::setVidas(int v){
 }
 
 void Player::morir(){
-  body.setSize(sf::Vector2f(0,0));
+  //body.setSize(sf::Vector2f(0,0));
+  Juego* juego = Juego::instance();
+  juego->matarJugador();
  
 }
 

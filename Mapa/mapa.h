@@ -40,6 +40,7 @@ class mapa{
         int * cambio;
         int _tileWidth;
         int _tileHeight;
+        int _tileCount;
         int _numLayers = 0;
         int _numTilesets = 0;
         int ***_tilemap;
