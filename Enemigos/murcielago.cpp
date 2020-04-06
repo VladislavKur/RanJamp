@@ -73,7 +73,12 @@ void Murcielago::update(Player* player, float delta){
         
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
     
-    if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
+    //if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
+    if(coliDerecha.intersects(body.getGlobalBounds())
+    || coliIzquierda.intersects(body.getGlobalBounds())
+    || coliAbajo.intersects(player->coliArriba)
+    || coliArriba.intersects(coliAbajo)
+    ){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
         haPegado = true;

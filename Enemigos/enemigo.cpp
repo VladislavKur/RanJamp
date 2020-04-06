@@ -1,5 +1,5 @@
 #include "enemigo.h"
-
+#include "../Juego/Juego.h"
 
 Enemigo::Enemigo(float x, float y){
     
@@ -40,7 +40,7 @@ void Enemigo::updateHitbox(){
 
     coliDerecha.left = gp.x+5;
     coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 -20;
+    coliDerecha.width = gbb.width/2 + 30;
     coliDerecha.height = gbb.height -25;
 
     coliArriba.left = gp.x - gbb.width/2 + 20;

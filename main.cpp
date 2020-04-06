@@ -111,7 +111,7 @@ int main() {
       //window->draw(instancia->getJugador()->getBody());
 //
       //window->display();
-      std::cout<<"PU_Saltodoble: " << instancia->getJugador()->getPU_SaltoDoble() << " ------- AuxSaltos: "<<instancia->getJugador()->auxSaltos<<" ------- Saltos: "<<instancia->getJugador()->getSaltos()<< " ------- Cooldown: "<< instancia->getJugador()->getCooldownSalto() <<endl;
+     // std::cout<<"PU_Saltodoble: " << instancia->getJugador()->getPU_SaltoDoble() << " ------- AuxSaltos: "<<instancia->getJugador()->auxSaltos<<" ------- Saltos: "<<instancia->getJugador()->getSaltos()<< " ------- Cooldown: "<< instancia->getJugador()->getCooldownSalto() <<endl;
 
       //cout<<instancia->getJugador()->getJumpSpeed()<<endl;
 

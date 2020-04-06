@@ -3,7 +3,7 @@
 #include <iostream>
 #include "../Motor/Motor.h"
 #include "../Player/Player.h"
-#include "../Juego/Juego.h"
+
 
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
