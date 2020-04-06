@@ -62,18 +62,22 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     jugador->update(deltaTime);
 
     
-    if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
-       view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));
+    if(jugador->getBody().getPosition().x < view.getSize().x/2 && 
+       jugador->getBody().getPosition().y <1600.0f){
+          view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));// esquina izq abajo
         
-    } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
-              view.setCenter(sf::Vector2f (2240-view.getSize().x/2,1600-view.getSize().y/2));
+    } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && 
+              jugador->getBody().getPosition().y <1600.0f){
+                view.setCenter(sf::Vector2f (2240-view.getSize().x/2,1600-view.getSize().y/2));//esquina derecha abajo
            }
-              else if(jugador->getBody().getPosition().y < view.getSize().y/2){
-                      view.setCenter(jugador->getBody().getPosition().x,view.getSize().y/2);
-              }
-                    else if(jugador->getBody().getPosition().y > 1600-view.getSize().y/2){
-                            view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2);
-                          } else view.setCenter(jugador->getBody().getPosition());
+              else if( jugador->getBody().getPosition().x < view.getSize().x/2 && 
+                       jugador->getBody().getPosition().y < view.getSize().y/2 ){
+                           view.setCenter(jugador->getBody().getPosition().x,view.getSize().y/2); // esquina izq arriba
+                    }
+                    else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && 
+                            jugador->getBody().getPosition().y > 1600-view.getSize().y/2 ){
+                               view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2); // esquina der arr
+                             } else view.setCenter(jugador->getBody().getPosition());
 
 
     m->getVentana()->setView(view);
