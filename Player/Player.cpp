@@ -83,25 +83,7 @@ void Player::update(float deltaTime){
     }
 
     cooldownDisparo-=deltaTime;
-    // //Moverse a la derecha si la plataforma lo permite
-    // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
-    //   if(!coliDerecha.intersects(plataforma.getBody().getGlobalBounds()))
-    //     moveRight(deltaTime);
-    //   }
-    // //Moverse a la izquierda si la plataforma lo permite
-    // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){
-    //   if(!coliIzquierda.intersects(plataforma.getBody().getGlobalBounds()))
-    //     moveLeft(deltaTime);
-    //   }
 
-//Dejar de caer si toco plataforma
-//  if(coliAbajo.intersects(plataforma.getBody().getGlobalBounds()) ||
-//    coliAbajo.intersects(suelo.getBody().getGlobalBounds()) ){
-//     saltos = PU_saltoDoble ? 2 : 1;
-//     jumpSpeed=0;
-  
-//    } else 
-//       jumpSpeed+=981.0f*deltaTime;
 
   //caer
 
@@ -119,9 +101,7 @@ void Player::update(float deltaTime){
         moveLeft(deltaTime);
     }
 
-    // if(coliArriba.intersects(plataforma.getBody().getGlobalBounds())){
-    //     jumpSpeed=10;
-    // }
+  
     
     //Caída constante
     body.move(0,jumpSpeed*deltaTime);
