@@ -107,7 +107,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     m->getVentana()->setView(view);
 
-    for(unsigned i = 0; i < numEmenigos; i++){
+    for(int i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
       enemies[i]->updateHitbox();
@@ -149,7 +149,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     bool pararse=false;
     bool aux = false;
     Vector2f posant;
-    for(unsigned int i=0 ; i<  mundo->getNumObjetos(); i++){
+    for(int i=0 ; i<  mundo->getNumObjetos(); i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
         posobj = objetos[i]->getPosition();
         pararse=true;
@@ -182,7 +182,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
 
 void Juego::render(float porcentaje){ //wip
 
-    Motor * m = Motor::instance();
+    //Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
     for(unsigned i = 0; i < maxBullets;i++){
@@ -320,7 +320,7 @@ void Juego::colisionBulletMundo(float deltaTime){
     RectangleShape ** objetos = mundo->getObjetos();
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
-    for(unsigned int j=0 ; j<mundo->getNumObjetos(); j++){
+    for(int j=0 ; j<mundo->getNumObjetos(); j++){
       if(bulletPlayer[i]==NULL) continue;
       if(objetos[j]==NULL) continue;
 
@@ -353,7 +353,7 @@ void Juego::colisionBulletJugador(float deltaTime){
 
 void Juego::colisionBulletEnemigo(float deltaTime){
   for(unsigned int i=0 ; i<maxBullets ; i++){
-    for(unsigned int j=0 ; j<numEmenigos ; j++){
+    for(int j=0 ; j<numEmenigos ; j++){
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
 
@@ -362,6 +362,9 @@ void Juego::colisionBulletEnemigo(float deltaTime){
             enemies[index] = enemies[index+1];
           enemies[numEmenigos] = NULL;
           numEmenigos--;
+
+          delete bulletPlayer[i];
+          bulletPlayer[i]=NULL;
       }
     }
   }
