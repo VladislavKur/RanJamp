@@ -60,14 +60,21 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo(deltaTime);
     
     jugador->update(deltaTime);
-    std::cout << jugador->getBody().getPosition().x << "x" <<std::endl;
-    std::cout << jugador->getBody().getPosition().y << "y" << std::endl;
+
     
-    if(jugador->getBody().getPosition().x < 514.0f || jugador->getBody().getPosition().y <1275.0f){
-      view.setCenter(sf::Vector2f (515,1225));
+    if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
+       view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));
         
-    } else view.setCenter(jugador->getBody().getPosition());
-          
+    } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
+              view.setCenter(sf::Vector2f (2240-view.getSize().x/2,1600-view.getSize().y/2));
+           }
+              else if(jugador->getBody().getPosition().y < view.getSize().y/2){
+                      view.setCenter(jugador->getBody().getPosition().x,view.getSize().y/2);
+              }
+                    else if(jugador->getBody().getPosition().y > 1600-view.getSize().y/2){
+                            view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2);
+                          } else view.setCenter(jugador->getBody().getPosition());
+
 
     m->getVentana()->setView(view);
 
