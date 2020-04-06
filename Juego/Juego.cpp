@@ -226,7 +226,7 @@ void Juego::render(float porcentaje){ //wip
     int i = 0;
     int j = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
-     
+      //cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
       i++;
     }
@@ -265,13 +265,13 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 }
 
 void Juego::destruirObjetos(Objeto* enem){
-  for (int i = 0; i < numObjetos; i++){
+ for (int i = 0; i < numObjetos; i++){
     if(objetos[i] == enem){
       for(int j = i; j < numObjetos; j++){
-        objetos[j] = objetos[j+1];
-        objetos[numObjetos] = NULL;
-        numObjetos--;
+        objetos[j] = objetos[j+1];        
       }
+      objetos[numObjetos] = NULL;
+      numObjetos--;
     }
   }
 
@@ -315,10 +315,10 @@ void Juego::matarEnemigo(Enemigo* enem){
   for (int i = 0; i < numEmenigos; i++){
     if(enemies[i] == enem){
       for(int j = i; j < numEmenigos; j++){
-        enemies[j] = enemies[j+1];
-        enemies[numEmenigos] = NULL;
-        numEmenigos--;
+        enemies[j] = enemies[j+1];        
       }
+      enemies[numEmenigos] = NULL;
+      numEmenigos--;
     }
   }
 }

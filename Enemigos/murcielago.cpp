@@ -90,7 +90,7 @@ void Murcielago::updateHitbox(){
     sf::FloatRect gbb = cuerpo.getGlobalBounds();
 
     coliAbajo.left = gp.x - gbb.width/2 + 20;
-    coliAbajo.top = gp.y + gbb.height/2 -500;
+    coliAbajo.top = gp.y + gbb.height/2 -50;
     coliAbajo.width =0;
     coliAbajo.height = 0;
     
@@ -101,7 +101,7 @@ void Murcielago::updateHitbox(){
 
     coliDerecha.left = gp.x + 5;
     coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 + 30;
+    coliDerecha.width = gbb.width/2 + 25;
     coliDerecha.height = gbb.height -50;
 
     coliArriba.left = gp.x - gbb.width/2 + 20;
