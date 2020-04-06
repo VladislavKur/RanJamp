@@ -112,10 +112,9 @@ int main() {
 //
       //window->display();
 
-      std::cout<<instancia->getJugador()->getJumpSpeed()<<endl;
+      //cout<<instancia->getJugador()->getJumpSpeed()<<endl;
 
       
-
     }
   //}
 
