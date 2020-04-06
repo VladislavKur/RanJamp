@@ -14,7 +14,7 @@ Juego::Juego(){
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720);
-
+    
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
   }
@@ -40,7 +40,11 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-   //mapa * mundo = mapa::instance(); 
+  mapa * mundo = mapa::instance(); 
+  vector<int> dimensiones = mundo->cargarPosicionBordes();
+  // for(int i = 0; i < dimensiones.size(); i ++){
+  //   cout<< "dimensiones "<< i << " = "<< dimensiones[i] << endl;
+  // }
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
       disparar(deltaTime);
   }
@@ -89,11 +93,11 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     if( playerPos.x<view.getSize().x/2) {
       view.setCenter(view.getSize().x/2, playerPos.y);
     }
-    if( playerPos.y > 1600-view.getSize().y/2){
-      view.setCenter(view.getCenter().x, 1600-view.getSize().y/2);
+    if( playerPos.y > dimensiones[1]-view.getSize().y/2){
+      view.setCenter(view.getCenter().x, dimensiones[1]-view.getSize().y/2);
     }
-    if( playerPos.x>2240-view.getSize().x/2) {
-      view.setCenter(2240-view.getSize().x/2, view.getCenter().y);
+    if( playerPos.x>dimensiones[3]-view.getSize().x/2) {
+      view.setCenter(dimensiones[3]-view.getSize().x/2, view.getCenter().y);
     }
     if( playerPos.y < view.getSize().y/2){
       view.setCenter(view.getCenter().x, view.getSize().y/2);
@@ -185,9 +189,8 @@ void Juego::render(float porcentaje){ //wip
 
     for(unsigned i = 0; i < maxBullets;i++){
 
-      if(bulletEnemies[i] == NULL) continue;
-      bulletPlayer[i]->render();
-
+      //if(bulletEnemies[i] == NULL)continue;
+      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render();}
     }
 
     jugador->render();

@@ -11,7 +11,7 @@ Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
     cuerpo.setPosition(100, 100);
 
-    cuerpo.setOrigin(75/2, 75/2);
+    cuerpo.setOrigin(75, 150);
 
     if(!text->loadFromFile("resources/Imagenes/Arqueros.png")) std::cout << "sadasds";
     
@@ -22,7 +22,7 @@ Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     tipo = type;
     modo  = 0;
     velocidad = 0.3;
-    distanciaDisparo = 100;
+    distanciaDisparo = 1000;
     distanciaAtaque = 200;
 
 };
@@ -41,7 +41,7 @@ void Centinela::update(Player* player, float deltaTime){
     diffY = 0; //inicialmente no se mueve
 
     bool cambio; //no nos cambiamos de modo por defecto
-    do{
+     do{
         cambio = false;//no nos cambiamos de modo por defecto
         switch(modo){
 
