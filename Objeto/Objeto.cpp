@@ -8,8 +8,10 @@
     
     Objeto::~Objeto(){}
     Objeto::Objeto(sf::Vector2f Posicion, int t){
+             sf::Texture *text = new sf::Texture ;
 
-    
+ 
+
             body.setSize(sf::Vector2f(50,50));
             //body.setTexture(tex);
             body.setPosition(Posicion);
@@ -25,8 +27,8 @@
         //std::cout<<"Tipo : "<< tipo <<std::endl;
         if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && body.getGlobalBounds().intersects(otherBody.getBody().getGlobalBounds())){
 
-            body.setSize(sf::Vector2f(0,0));
-            body.setPosition(-500,-500); //lejos de la accion  
+          
+           
            
             
 

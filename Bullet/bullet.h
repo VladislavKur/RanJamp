@@ -9,6 +9,7 @@ class Bullet
 private:
     sf::CircleShape body;
     bool facing;
+    float velocidad;
     
 public:
     Bullet(float, float, bool);
