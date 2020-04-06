@@ -201,7 +201,7 @@ void Juego::render(float porcentaje){ //wip
     
     int i = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
-      cout << " ENEMIGO " << i << endl;
+      //cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
       i++;
     }
@@ -270,9 +270,10 @@ void Juego::matarEnemigo(Enemigo* enem){
     if(enemies[i] == enem){
       for(int j = i; j < numEmenigos; j++){
         enemies[j] = enemies[j+1];
-        enemies[numEmenigos] = NULL;
-        numEmenigos--;
+        
       }
+      enemies[numEmenigos] = NULL;
+      numEmenigos--;
     }
   }
 }
