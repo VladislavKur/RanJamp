@@ -18,9 +18,7 @@ Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
     distanciaAtaque = 510;
     
     haPegado = false;
-    colision.setSize(sf::Vector2f(50.0f,50.0f));
-    colision.setPosition(x-10.0, y-10.0);
-    colision.setFillColor(sf::Color::White);
+    
 };
 
 void Murcielago::update(Player* player, float delta){
@@ -76,8 +74,8 @@ void Murcielago::update(Player* player, float delta){
     //if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
     if(coliDerecha.intersects(body.getGlobalBounds())
     || coliIzquierda.intersects(body.getGlobalBounds())
-    || coliAbajo.intersects(body.getGlobalBounds())
-    || coliArriba.intersects(body.getGlobalBounds())
+    || coliAbajo.intersects(player->coliArriba)
+    || coliArriba.intersects(player->coliAbajo)
     ){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
@@ -87,7 +85,30 @@ void Murcielago::update(Player* player, float delta){
     }
     
 };
+void Murcielago::updateHitbox(){
+    sf::Vector2f gp = cuerpo.getPosition();
+    sf::FloatRect gbb = cuerpo.getGlobalBounds();
 
+    coliAbajo.left = gp.x - gbb.width/2 + 20;
+    coliAbajo.top = gp.y + gbb.height/2 -500;
+    coliAbajo.width =0;
+    coliAbajo.height = 0;
+    
+    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
+    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.height = gbb.height - 50;
+
+    coliDerecha.left = gp.x + 5;
+    coliDerecha.top = gp.y - gbb.height/2 +25;
+    coliDerecha.width = gbb.width/2 + 30;
+    coliDerecha.height = gbb.height -50;
+
+    coliArriba.left = gp.x - gbb.width/2 + 20;
+    coliArriba.top = gp.y-gbb.height/2 +25;
+    coliArriba.width = 0;
+    coliArriba.height = 0;
+}
 void Murcielago::render(float porcentaje){
     cuerpo.setPosition(
         posXanterior + diffX*porcentaje,

@@ -179,8 +179,6 @@ enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
-../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 SFML/Graphics.hpp

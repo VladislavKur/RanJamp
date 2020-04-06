@@ -12,12 +12,13 @@
   }
   
 
-Bullet::Bullet(float p_x, float p_y, bool p_facing) : body(){
+Bullet::Bullet(float p_x, float p_y, bool p_facing , int i) : body(){
     if(!array_inicializado){
         initBulletArray();
         array_inicializado=true;
     }
 
+    velocidad=600;
     lifetime=5;
 
     facing=p_facing;
@@ -25,11 +26,19 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing) : body(){
     body.setPosition(p_x, p_y);
     body.setFillColor(sf::Color(255,128,0));
     body.setRadius(10);
+    sf::Texture * t; 
+    if(i == 1){
+      t->loadFromFile("resources/Imagenes/Bala_fuego");
+    }else if(i == 2){
+      t->loadFromFile("resources/Imagenes/Flecha");
+    }
+
+    body.setTexture(t);
 }
 
 void Bullet::update(float deltaTime){
     lifetime-=deltaTime;
-    body.move( (facing ? 1 : -1) * 1200*deltaTime,0);
+    body.move( (facing ? 1 : -1) * velocidad*deltaTime,0);
 }
 
 void Bullet::render(){

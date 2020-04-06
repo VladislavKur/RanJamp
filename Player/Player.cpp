@@ -19,9 +19,9 @@ Player::Player()
 
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=20;
+    jumpHeight=30;
     arma=1;  
-    vidas = 2; 
+    vidas = 5; 
     velocidad=250;
 
     PU_saltoDoble=true;
@@ -67,7 +67,7 @@ Player::Player(int x, int y)
     jumpSpeed=0;
     jumpHeight=75*2;
     arma=0;  
-    vidas = 2;  
+    vidas = 5;  
     velocidad=1;
     
 }
@@ -83,25 +83,7 @@ void Player::update(float deltaTime){
     }
 
     cooldownDisparo-=deltaTime;
-    // //Moverse a la derecha si la plataforma lo permite
-    // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
-    //   if(!coliDerecha.intersects(plataforma.getBody().getGlobalBounds()))
-    //     moveRight(deltaTime);
-    //   }
-    // //Moverse a la izquierda si la plataforma lo permite
-    // if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){
-    //   if(!coliIzquierda.intersects(plataforma.getBody().getGlobalBounds()))
-    //     moveLeft(deltaTime);
-    //   }
 
-//Dejar de caer si toco plataforma
-//  if(coliAbajo.intersects(plataforma.getBody().getGlobalBounds()) ||
-//    coliAbajo.intersects(suelo.getBody().getGlobalBounds()) ){
-//     saltos = PU_saltoDoble ? 2 : 1;
-//     jumpSpeed=0;
-  
-//    } else 
-//       jumpSpeed+=981.0f*deltaTime;
 
   //caer
 
@@ -119,9 +101,7 @@ void Player::update(float deltaTime){
         moveLeft(deltaTime);
     }
 
-    // if(coliArriba.intersects(plataforma.getBody().getGlobalBounds())){
-    //     jumpSpeed=10;
-    // }
+  
     
     //Caída constante
     body.move(0,jumpSpeed*deltaTime);
