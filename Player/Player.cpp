@@ -228,9 +228,9 @@ void Player::updateHitbox(){
     coliAbajo.width = gbb.width/2;
     coliAbajo.height = 6;
     
-    coliIzquierda.left = gp.x - gbb.width/2+12;
+    coliIzquierda.left = gp.x - gbb.width/2+12; //rojo
     coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
+    coliIzquierda.width = gbb.width/2-10;
     coliIzquierda.height = gbb.height -25;
 
     coliDerecha.left = gp.x+5;

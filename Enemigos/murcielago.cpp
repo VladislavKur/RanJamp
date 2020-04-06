@@ -76,8 +76,8 @@ void Murcielago::update(Player* player, float delta){
     //if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
     if(coliDerecha.intersects(body.getGlobalBounds())
     || coliIzquierda.intersects(body.getGlobalBounds())
-    || coliAbajo.intersects(player->coliArriba)
-    || coliArriba.intersects(coliAbajo)
+    || coliAbajo.intersects(body.getGlobalBounds())
+    || coliArriba.intersects(body.getGlobalBounds())
     ){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
