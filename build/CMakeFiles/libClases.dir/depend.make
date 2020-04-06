@@ -11,6 +11,7 @@ CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Motor/Motor.h
 
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Bullet/bullet.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.cpp
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/enemigo.h

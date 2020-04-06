@@ -1,82 +1,82 @@
 [
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c /home/fv/Desktop/RanJamp/main.cpp",
-  "file": "/home/fv/Desktop/RanJamp/main.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c /home/antonio/Documents/movidas/RanJamp/main.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/main.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/fv/Desktop/RanJamp/Player/Player.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Player/Player.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Player/Player.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Player/Player.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c /home/fv/Desktop/RanJamp/Bullet/bullet.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Bullet/bullet.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Bullet/bullet.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c /home/fv/Desktop/RanJamp/Animacion/Animacion.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c /home/fv/Desktop/RanJamp/Enemigos/centinela.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c /home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o -c /home/fv/Desktop/RanJamp/Enemigos/reptante.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Enemigos/reptante.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/reptante.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/reptante.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c /home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/mapa.cpp.o -c /home/fv/Desktop/RanJamp/Mapa/mapa.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Mapa/mapa.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/mapa.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/mapa.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/mapa.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o -c /home/fv/Desktop/RanJamp/Mapa/tinystr.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Mapa/tinystr.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o -c /home/fv/Desktop/RanJamp/Mapa/tinyxml.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Mapa/tinyxml.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o -c /home/fv/Desktop/RanJamp/Mapa/tinyxmlparser.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Mapa/tinyxmlparser.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlparser.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlparser.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o -c /home/fv/Desktop/RanJamp/Mapa/tinyxmlerror.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Mapa/tinyxmlerror.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlerror.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlerror.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/fv/Desktop/RanJamp/Motor/Motor.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Motor/Motor.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Motor/Motor.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Motor/Motor.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/fv/Desktop/RanJamp/Juego/Juego.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Juego/Juego.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp"
 },
 {
-  "directory": "/home/fv/Desktop/RanJamp/build",
-  "command": "/usr/bin/g++-5    -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/fv/Desktop/RanJamp/Objeto/Objeto.cpp",
-  "file": "/home/fv/Desktop/RanJamp/Objeto/Objeto.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.cpp"
 }
 ]

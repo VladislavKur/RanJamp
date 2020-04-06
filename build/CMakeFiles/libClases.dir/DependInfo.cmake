@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
-  "/home/fv/Desktop/RanJamp/Bullet/bullet.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
-  "/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
-  "/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
-  "/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "/home/fv/Desktop/RanJamp/Enemigos/reptante.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
-  "/home/fv/Desktop/RanJamp/Juego/Juego.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
-  "/home/fv/Desktop/RanJamp/Mapa/mapa.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
-  "/home/fv/Desktop/RanJamp/Mapa/tinystr.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
-  "/home/fv/Desktop/RanJamp/Mapa/tinyxml.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
-  "/home/fv/Desktop/RanJamp/Mapa/tinyxmlerror.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
-  "/home/fv/Desktop/RanJamp/Mapa/tinyxmlparser.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
-  "/home/fv/Desktop/RanJamp/Motor/Motor.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
-  "/home/fv/Desktop/RanJamp/Objeto/Objeto.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
-  "/home/fv/Desktop/RanJamp/Player/Player.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Bullet/bullet.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Enemigos/reptante.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Mapa/mapa.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlerror.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlparser.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Motor/Motor.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+  "/home/antonio/Documents/movidas/RanJamp/Player/Player.cpp" "/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
