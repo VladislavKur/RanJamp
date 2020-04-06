@@ -260,6 +260,32 @@ vector<vector<int>>  mapa::cargarPosicionEnemigos_PowerUps(int i){
     return posiciones;
 }
 
+vector<int>  mapa::cargarPosicionBordes(){
+    vector<int> posiciones;
+  
+    TiXmlElement * object = objectgroups[4]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 
+    int i = 0;
+    while(object){
+        object->QueryIntAttribute("x" , &_X);
+        object->QueryIntAttribute("y" , &_Y);
+        object->QueryIntAttribute("height" , &_Height);
+        if(i == 0){
+          int alto = _X; 
+          int bajo = _X + _Height; 
+          posiciones.push_back(alto);
+          posiciones.push_back(bajo); 
+          posiciones.push_back(alto);// izquierda
+        }else if(i == 1){
+          int derecha = _X; 
+          posiciones.push_back(derecha); // derecha
+        }
+        object = object->NextSiblingElement("object");
+        i++;
+    }
+    return posiciones;
+}
+
+
 Vector2f mapa::cargarPosicionPlayer_Puerta(int i){
     Vector2f pos;
     TiXmlElement * object = objectgroups[i]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 

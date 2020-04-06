@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="70" height="50" tilewidth="32" tileheight="32" nextobjectid="28">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="70" height="50" tilewidth="32" tileheight="32" nextobjectid="35">
  <tileset firstgid="1" name="FONDOFINAL" tilewidth="32" tileheight="32" tilecount="3500">
   <image source="resources/Imagenes/FONDOFINAL.jpg" width="2240" height="1600"/>
  </tileset>
@@ -1670,7 +1670,7 @@
    <tile gid="1663"/>
    <tile gid="1664"/>
    <tile gid="1665"/>
-   <tile gid="1666"/>
+   <tile gid="2661"/>
    <tile gid="1667"/>
    <tile gid="1668"/>
    <tile gid="1669"/>
@@ -2844,14 +2844,14 @@
    <tile gid="2837"/>
    <tile gid="2838"/>
    <tile gid="2839"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
-   <tile gid="3294"/>
+   <tile gid="2840"/>
+   <tile gid="2841"/>
+   <tile gid="3349"/>
+   <tile gid="3349"/>
+   <tile gid="3349"/>
+   <tile gid="3349"/>
+   <tile gid="3349"/>
+   <tile gid="3349"/>
    <tile gid="2848"/>
    <tile gid="2849"/>
    <tile gid="2850"/>
@@ -2906,7 +2906,7 @@
    <tile gid="3294"/>
    <tile gid="3294"/>
    <tile gid="3294"/>
-   <tile gid="3294"/>
+   <tile gid="3349"/>
    <tile gid="2903"/>
    <tile gid="2904"/>
    <tile gid="2905"/>
@@ -2914,14 +2914,14 @@
    <tile gid="2907"/>
    <tile gid="2908"/>
    <tile gid="2909"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="2910"/>
+   <tile gid="2911"/>
+   <tile gid="3216"/>
+   <tile gid="3216"/>
+   <tile gid="3216"/>
+   <tile gid="3216"/>
+   <tile gid="3216"/>
+   <tile gid="3216"/>
    <tile gid="2918"/>
    <tile gid="2919"/>
    <tile gid="2920"/>
@@ -2976,7 +2976,7 @@
    <tile gid="2661"/>
    <tile gid="2661"/>
    <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="3146"/>
    <tile gid="2973"/>
    <tile gid="2974"/>
    <tile gid="2975"/>
@@ -2984,14 +2984,14 @@
    <tile gid="2977"/>
    <tile gid="2978"/>
    <tile gid="2979"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="2980"/>
+   <tile gid="2981"/>
+   <tile gid="2982"/>
+   <tile gid="2983"/>
+   <tile gid="2984"/>
+   <tile gid="2985"/>
+   <tile gid="2986"/>
+   <tile gid="2987"/>
    <tile gid="2988"/>
    <tile gid="2989"/>
    <tile gid="2990"/>
@@ -3054,14 +3054,14 @@
    <tile gid="3047"/>
    <tile gid="3048"/>
    <tile gid="3049"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="3050"/>
+   <tile gid="3051"/>
+   <tile gid="3052"/>
+   <tile gid="3053"/>
+   <tile gid="3054"/>
+   <tile gid="3055"/>
+   <tile gid="3056"/>
+   <tile gid="3057"/>
    <tile gid="3058"/>
    <tile gid="3059"/>
    <tile gid="3060"/>
@@ -3124,14 +3124,14 @@
    <tile gid="3117"/>
    <tile gid="3118"/>
    <tile gid="3119"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="3120"/>
+   <tile gid="3121"/>
+   <tile gid="3122"/>
+   <tile gid="3123"/>
+   <tile gid="3124"/>
+   <tile gid="3125"/>
+   <tile gid="3126"/>
+   <tile gid="3127"/>
    <tile gid="3128"/>
    <tile gid="3129"/>
    <tile gid="3130"/>
@@ -3194,14 +3194,14 @@
    <tile gid="3187"/>
    <tile gid="3188"/>
    <tile gid="3189"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="3190"/>
+   <tile gid="3191"/>
+   <tile gid="3192"/>
+   <tile gid="3193"/>
+   <tile gid="3194"/>
+   <tile gid="3195"/>
+   <tile gid="3196"/>
+   <tile gid="3197"/>
    <tile gid="3198"/>
    <tile gid="3199"/>
    <tile gid="3200"/>
@@ -3264,14 +3264,14 @@
    <tile gid="3257"/>
    <tile gid="3258"/>
    <tile gid="3259"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
-   <tile gid="2661"/>
+   <tile gid="3260"/>
+   <tile gid="3261"/>
+   <tile gid="3262"/>
+   <tile gid="3263"/>
+   <tile gid="3264"/>
+   <tile gid="3265"/>
+   <tile gid="3266"/>
+   <tile gid="3267"/>
    <tile gid="3268"/>
    <tile gid="3269"/>
    <tile gid="3270"/>
@@ -3507,19 +3507,19 @@
    <tile gid="3500"/>
   </data>
  </layer>
- <objectgroup name="Capa de Colisiones">
+ <objectgroup name="Capa de Colisiones" visible="0">
   <object id="1" x="0" y="1505" width="2230" height="85"/>
   <object id="3" x="5" y="-5" width="2230" height="25"/>
   <object id="4" x="2220" y="-5" width="20" height="1590"/>
   <object id="5" x="0" y="-5" width="30" height="1590"/>
   <object id="6" x="386" y="1376" width="284" height="64"/>
   <object id="7" x="735" y="1314" width="288" height="62"/>
-  <object id="8" x="1248" y="1285" width="256" height="220"/>
+  <object id="8" x="1312" y="1278.67" width="192" height="62.6667"/>
   <object id="9" x="1602" y="1152" width="408" height="63"/>
   <object id="25" x="2050" y="1024" width="195" height="60"/>
   <object id="27" x="1059" y="1220" width="190" height="56"/>
  </objectgroup>
- <objectgroup name="Capa de Enemigos">
+ <objectgroup name="Capa de Enemigos" visible="0">
   <object id="13" type="1" x="1425" y="880" width="65" height="80">
    <ellipse/>
   </object>
@@ -3533,19 +3533,23 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Player">
+ <objectgroup name="Capa de Player" visible="0">
   <object id="21" x="110" y="1225" width="100" height="270">
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de PowerUps">
+ <objectgroup name="Capa de PowerUps" visible="0">
   <object id="22" x="870" y="1263" width="35" height="40"/>
   <object id="23" x="1905" y="1115" width="50" height="30"/>
   <object id="24" x="980" y="1440" width="40" height="45"/>
  </objectgroup>
- <objectgroup name="Capa de Puerta">
+ <objectgroup name="Capa de Puerta" visible="0">
   <object id="26" x="2140" y="795" width="60" height="190">
    <ellipse/>
   </object>
+ </objectgroup>
+ <objectgroup name="Capa de Bordes">
+  <object id="29" x="0" y="0" width="20" height="1600"/>
+  <object id="32" x="2240" y="0" width="20" height="1600"/>
  </objectgroup>
 </map>

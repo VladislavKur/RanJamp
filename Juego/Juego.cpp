@@ -14,7 +14,7 @@ Juego::Juego(){
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720);
-
+    
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
     }
