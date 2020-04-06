@@ -17,7 +17,13 @@ Juego::Juego(){
 
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
-    }
+  }
+
+  for(int i = 0; i < maxBullets;i++){
+
+      bulletEnemies[i] = NULL;
+
+  }
 
 }
 
@@ -40,19 +46,22 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
   }
     
     for(unsigned i = 0; i < maxBullets ;i++){
-      if(bulletPlayer[i] == NULL) continue;
-      if(bulletPlayer[i]->lifetime<=0){
-        delete bulletPlayer[i];
-        bulletPlayer[i]=NULL;
+      if(bulletPlayer[i] != NULL){
+        if(bulletPlayer[i]->lifetime<=0){
+          delete bulletPlayer[i];
+          bulletPlayer[i]=NULL;
+        }
+        else
+          bulletPlayer[i]->update(deltaTime);
       }
-      if(bulletPlayer[i] == NULL) continue; //POR SEGUNDA VEZ, porque puede que se haya destruido en la linea anterior si ha entrado al if
-       bulletPlayer[i]->update(deltaTime);
-    }
-
-    for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
-
-      bulletEnemies[i]->update(deltaTime);
-
+      if(bulletEnemies[i] != NULL){
+        if(bulletEnemies[i]->lifetime<=0){
+          delete bulletEnemies[i];
+          bulletEnemies[i] = NULL;
+        }
+        else
+          bulletEnemies[i]->update(deltaTime);
+      }
     }
     
     colisionPlayerMundo(deltaTime);
@@ -98,6 +107,22 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       enemies[i]->update(jugador , deltaTime);
       enemies[i]->updateHitbox();
 
+      Centinela* casteado = dynamic_cast<Centinela*>(enemies[i]);
+
+      if(casteado != nullptr){
+
+        if(casteado->getShoot()){
+
+          for(int j = 0; j < maxBullets;j++){
+
+            if(bulletEnemies[j] == NULL)
+              bulletEnemies[j] = casteado->disparar();
+
+          }
+
+        }
+
+      }      
     }
     jugador->updateHitbox();
     
@@ -157,9 +182,11 @@ void Juego::render(float porcentaje){ //wip
       bulletPlayer[i]->render();
 
     }
-    for(unsigned i = 0; i < (sizeof(bulletEnemies)/sizeof(*bulletEnemies));i++){
 
-     bulletEnemies[i]->render();
+    for(unsigned i = 0; i < maxBullets;i++){
+
+      if(bulletEnemies[i] == NULL) continue;
+      bulletPlayer[i]->render();
 
     }
 
@@ -196,7 +223,6 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
 
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
 }
-
 
 //CREARENEMIGOS FUNCIONE
 
@@ -261,19 +287,7 @@ void Juego::disparar(float deltaTime){
     
 }
 
-void Juego::dispararEnemigo(float deltaTime,float x, float y, bool direccion){
 
-  for(int i = 0; i < maxBullets;i++){
-
-    if(bulletEnemies[i] == NULL){
-
-      bulletEnemies[i] = new Bullet(x,y,direccion);
-
-    }
-
-  }
-
-}
 void Juego::colisionBulletMundo(float deltaTime){
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();

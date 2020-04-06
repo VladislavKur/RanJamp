@@ -4,7 +4,9 @@
 Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     sf::Texture *text = new sf::Texture;
 
-    juego = Juego::instance();
+    shoot = false;
+
+    shootTime = 0.0;
 
     cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
     cuerpo.setPosition(100, 100);
@@ -21,7 +23,7 @@ Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     modo  = 0;
     velocidad = 0.3;
     distanciaDisparo = 100;
-    distanciaAtaque = 100;
+    distanciaAtaque = 200;
 
 };
 
@@ -78,22 +80,30 @@ void Centinela::update(Player* player, float deltaTime){
                 } 
                 else{//DISPARA!!!! necesitamos el trabajo de vermivlad
 
-                    bool auxiliar;
+                    if(shootTime <= 0.0){
+                        bool auxiliar;
 
-                    if((local_diffX/local_diffabs) == 1){
+                        if((local_diffX/local_diffabs) == 1){
 
-                        auxiliar = true;
+                            auxiliar = true;
 
+                        }
+                        else{
+
+                            auxiliar = false;
+
+                        }
+                        
+                        direccion = auxiliar;
+                        
+                        shoot = true;
+                        shootTime = 3.0;
                     }
                     else{
 
-                        auxiliar = false;
+                        shootTime -= deltaTime;
 
                     }
-                    
-                    juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
-                    
-
                 }
                 
             break;
@@ -110,4 +120,18 @@ void Centinela::render( float porcentaje){
 
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
+}
+
+Bullet* Centinela::disparar(){
+    Bullet* devolver = NULL;
+
+    if(shoot){
+
+        shoot = false;
+
+        devolver = new Bullet(posX,posY,direccion);
+
+    }
+
+    return(devolver);
 }
