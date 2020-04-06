@@ -76,18 +76,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     jugador->update(deltaTime);
 
     
-  /*  if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
-       view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));
-        
-    } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
-              view.setCenter(sf::Vector2f (2240-view.getSize().x/2,1600-view.getSize().y/2));
-           }
-              else if(jugador->getBody().getPosition().y < view.getSize().y/2){
-                      view.setCenter(jugador->getBody().getPosition().x,view.getSize().y/2);
-              }
-                    else if(jugador->getBody().getPosition().y > 1600-view.getSize().y/2){
-                            view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2);
-                          } else view.setCenter(jugador->getBody().getPosition());*/
+ 
     Vector2f playerPos = jugador->getBody().getPosition();
 
     view.setCenter(playerPos);
@@ -141,10 +130,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
-    // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
-    //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
-    // }
-
+    
     Vector2f posobj;
     bool pararse=false;
     bool aux = false;
@@ -200,11 +186,19 @@ void Juego::render(float porcentaje){ //wip
     jugador->render();
     
     int i = 0;
+    int j = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
       cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
       i++;
     }
+
+    while(objetos[j] != nullptr && j < numObjetos){
+     
+      objetos[j]->render();
+      j++;
+    }
+    
 }
 
 
@@ -214,8 +208,8 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   sf::Vector2f pos;
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
-
-
+  numObjetos = posicion.size();
+  objetos = new Objeto *[posicion.size()]; 
 
 
   for(unsigned i = 0; i > posicion.size();i++){
@@ -223,7 +217,8 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];
     
-    Objeto objeto1(pos ,posicion[i][2]);
+    Objeto *objeto1 = new Objeto(pos ,posicion[i][2]);
+    objetos[i] = (Objeto *) objeto1;
   }
   
   
