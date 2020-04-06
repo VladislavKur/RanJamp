@@ -18,7 +18,7 @@ class Objeto
     void recogido();
     int getTipo();
     void setTipo(int t);
-
+    void destroirObjeto(Objeto *);
     private:
 
     sf::RectangleShape body;

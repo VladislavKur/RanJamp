@@ -9,7 +9,7 @@ Player::~Player(){
 
 }
 Player::Player()
-:animacion("sprites.png",
+:animacion("/Imagenes/mago.png",
             sf::Vector2u(40,19),
             0.33f,
             sf::Vector2f(100.0f,100.0f),
@@ -33,14 +33,14 @@ Player::Player()
     cooldownDisparo = 0;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
-    body.setPosition(100, 100);
+    body.setPosition(100, 1000);
 
-    body.setOrigin(75/2, 75/2);
+    body.setOrigin(75/2 ,75/2);
 
-    if(!text->loadFromFile("resources/sprites.png")) cout << "sadasds";
+    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds";
     
     body.setTexture(text);
-    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
 
     /*PU_saltoDoble = true;
     PU_velocidad = true;
@@ -49,7 +49,7 @@ Player::Player()
 } 
 
 Player::Player(int x, int y) 
-: animacion("sprites.png",
+: animacion("/Imagenes/mago.png",
             sf::Vector2u(40,19),
             0.33f,
             sf::Vector2f(100.0f,100.0f),
@@ -87,7 +87,7 @@ void Player::update(float deltaTime){
 
   //caer
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){
       if(auxSaltos==true && saltos > 0){
           saltar();
           cooldownSalto=15*deltaTime;
@@ -144,7 +144,7 @@ void Player::moveRight(float deltaTime){
   }
 
   if(puede){
-    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     body.setScale(1, 1);
     body.move(velocidad*deltaTime, 0);
   }
@@ -163,7 +163,7 @@ mapa* mundo = mapa::instance();
   }
 
   if(puede){
-    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     body.setScale(-1, 1);
     body.move(-velocidad*deltaTime, 0);
   }

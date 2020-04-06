@@ -40,6 +40,7 @@
             void colisionBulletMundo(float deltaTime);
 
             void crearObjetos();
+            void destruirObjetos(Objeto*);
             void crearEnemigos();
             Player *getJugador(){return jugador;};
             void matarEnemigo(Enemigo* enem);
