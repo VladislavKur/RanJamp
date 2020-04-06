@@ -98,10 +98,10 @@ int main() {
          instancia->render(elapsus/UPDATE_TICK_TIME);
       }
       
-      window->draw(coliDcV);
+      /*window->draw(coliDcV);
       window->draw(coliIzV);
       window->draw(coliArV);
-      window->draw(coliAbV);
+      window->draw(coliAbV);*/
 
       window->display();
 

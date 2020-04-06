@@ -17,6 +17,7 @@ class Murcielago : public Enemigo{
         void update(Player* player, float delta);
         void render( float porcentaje);  
         bool haPegado; 
+        void updateHitbox();
 };
 
 #endif

@@ -31,6 +31,8 @@ iostream
 -
 enemigo.h
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+../Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp

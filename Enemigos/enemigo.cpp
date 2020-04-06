@@ -24,30 +24,7 @@ void Enemigo::morir(){
     vida = 0;
      
 }
-void Enemigo::updateHitbox(){
-    sf::Vector2f gp = cuerpo.getPosition();
-    sf::FloatRect gbb = cuerpo.getGlobalBounds();
 
-    coliAbajo.left = gp.x - gbb.width/2 + 20;
-    coliAbajo.top = gp.y + gbb.height/2 -30;
-    coliAbajo.width = gbb.width/2 -40;
-    coliAbajo.height = 5;
-    
-    coliIzquierda.left = gp.x - gbb.width/2+12;
-    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
-    coliIzquierda.height = gbb.height -25;
-
-    coliDerecha.left = gp.x + 5;
-    coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 + 30;
-    coliDerecha.height = gbb.height -25;
-
-    coliArriba.left = gp.x - gbb.width/2 + 20;
-    coliArriba.top = gp.y-gbb.height/2 +25;
-    coliArriba.width = gbb.width - 40;
-    coliArriba.height = 5;
-}
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){
 

@@ -9,12 +9,12 @@
 
 class Enemigo{
     public:
-        virtual void update(Player* player, float delta){}; ///player
+        virtual void update(Player* player, float deltaTime){}; ///player
         virtual void render(float porcentaje){};
         sf::RectangleShape getCuerpo(){return cuerpo;};
         ~Enemigo();
         bool colision;
-        void updateHitbox();
+        virtual void updateHitbox(){}
         sf::FloatRect coliAbajo;
         sf::FloatRect coliArriba;
         sf::FloatRect coliIzquierda;
