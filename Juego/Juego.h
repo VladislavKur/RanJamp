@@ -41,6 +41,8 @@
             void matarEnemigo(Enemigo* enem);
             void matarJugador();
             void disparar(float deltaTime);
+            void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
+            void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
 
             sf::View view;
     };

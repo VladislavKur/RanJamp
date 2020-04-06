@@ -111,6 +111,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
       enemies[i]->updateHitbox();
+      if(enemies[i]->getVidas() == 0){
+        matarEnemigo(enemies[i]);
+      }
 
       Centinela* casteado = dynamic_cast<Centinela*>(enemies[i]);
 

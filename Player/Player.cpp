@@ -21,7 +21,7 @@ Player::Player()
     jumpSpeed=0;
     jumpHeight=30;
     arma=1;  
-    vidas = 2; 
+    vidas = 5; 
     velocidad=250;
 
     PU_saltoDoble=true;

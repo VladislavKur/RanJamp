@@ -104,6 +104,10 @@ void Centinela::update(Player* player, float deltaTime){
                         shootTime -= deltaTime;
 
                     }
+                    
+                    //juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
+                    
+
                 }
                 
             break;
