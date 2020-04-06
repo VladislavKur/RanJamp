@@ -12,7 +12,7 @@ class Centinela : public Enemigo{
         int distanciaAtaque;
         int distanciaDisparo;
         int tipo;
-        Juego* juego;
+    
 
         void disparar(); //devuelve bala o nada ??????
 

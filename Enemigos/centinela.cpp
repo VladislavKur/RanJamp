@@ -4,7 +4,6 @@
 Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     sf::Texture *text = new sf::Texture;
 
-    juego = Juego::instance();
 
     cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
     cuerpo.setPosition(100, 100);
@@ -91,7 +90,7 @@ void Centinela::update(Player* player, float deltaTime){
 
                     }
                     
-                    juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
+                    //juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
                     
 
                 }

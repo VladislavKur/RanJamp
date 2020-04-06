@@ -263,7 +263,7 @@ vector<vector<int>>  mapa::cargarPosicionEnemigos_PowerUps(int i){
 vector<int>  mapa::cargarPosicionBordes(){
     vector<int> posiciones;
   
-    TiXmlElement * object = objectgroups[4]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 
+    TiXmlElement * object = objectgroups[5]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 
     int i = 0;
     while(object){
         object->QueryIntAttribute("x" , &_X);

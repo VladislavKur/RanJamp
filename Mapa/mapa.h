@@ -15,7 +15,7 @@ class mapa{
         void crearSprites();
         void crearObjetos();
         vector<vector<int>> cargarPosicionEnemigos_PowerUps(int i);
-        vector<int>  mapa::cargarPosicionBordes();
+        vector<int>  cargarPosicionBordes();
         void cargarObjectGroups();
         Vector2f cargarPosicionPlayer_Puerta(int i);
         void render();

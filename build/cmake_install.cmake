@@ -1,4 +1,4 @@
-# Install script for directory: /home/fv/Desktop/RanJamp
+# Install script for directory: /home/andres/Escritorio/FV JUNTO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,14 +34,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fv/Desktop/RanJamp/build/Player/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Bullet/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Animacion/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Enemigos/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Mapa/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Motor/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Juego/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Objeto/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Player/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Bullet/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Animacion/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Enemigos/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Mapa/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Motor/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Juego/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Objeto/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fv/Desktop/RanJamp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andres/Escritorio/FV JUNTO/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mapa -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto 
+CXX_INCLUDES = -I"/home/andres/Escritorio/FV JUNTO/Player" -I"/home/andres/Escritorio/FV JUNTO/Bullet" -I"/home/andres/Escritorio/FV JUNTO/Animacion" -I"/home/andres/Escritorio/FV JUNTO/Enemigos" -I"/home/andres/Escritorio/FV JUNTO/Mapa" -I"/home/andres/Escritorio/FV JUNTO/Motor" -I"/home/andres/Escritorio/FV JUNTO/Juego" -I"/home/andres/Escritorio/FV JUNTO/Objeto" 
 
