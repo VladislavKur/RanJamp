@@ -42,6 +42,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/andres/Escritorio/FV JUNTO/build/Motor/cmake_install.cmake")
   include("/home/andres/Escritorio/FV JUNTO/build/Juego/cmake_install.cmake")
   include("/home/andres/Escritorio/FV JUNTO/build/Objeto/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Texto/cmake_install.cmake")
 
 endif()
 

@@ -9,6 +9,7 @@
 #include "../Bullet/bullet.h"
 #include "../Mapa/mapa.h"
 #include "../Objeto/Objeto.h"
+#include "../Texto/texto.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
@@ -22,6 +23,7 @@
             Bullet* bulletEnemies[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
+            texto * t;
         protected:
             Juego();
 

@@ -24,6 +24,11 @@ Juego::Juego(){
       bulletEnemies[i] = NULL;
 
   }
+  std::vector<sf::String> s; 
+  s.push_back("SALTA");
+  std::vector<Vector2f> pos;
+  pos.push_back(Vector2f(10 , 1500));
+  t = new texto(1 , s , pos);
 
 }
 
@@ -197,10 +202,12 @@ void Juego::render(float porcentaje){ //wip
     
     int i = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
-      cout << " ENEMIGO " << i << endl;
+      //cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);
       i++;
     }
+
+    t->render();
 }
 
 

@@ -22,7 +22,7 @@ class mapa{
         static mapa *instance();
         RectangleShape ** getObjetos();
         int getNumObjetos();
-        
+        void liberar();
     protected:
             mapa();
 

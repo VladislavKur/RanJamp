@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
   "CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+  "CMakeFiles/libClases.dir/Texto/texto.cpp.o"
   "liblibClases.pdb"
   "liblibClases.a"
 )

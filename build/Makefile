@@ -541,6 +541,33 @@ Player/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Player/Player.cpp.s
 .PHONY : Player/Player.cpp.s
 
+Texto/texto.o: Texto/texto.cpp.o
+
+.PHONY : Texto/texto.o
+
+# target to build an object file
+Texto/texto.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Texto/texto.cpp.o
+.PHONY : Texto/texto.cpp.o
+
+Texto/texto.i: Texto/texto.cpp.i
+
+.PHONY : Texto/texto.i
+
+# target to preprocess a source file
+Texto/texto.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Texto/texto.cpp.i
+.PHONY : Texto/texto.cpp.i
+
+Texto/texto.s: Texto/texto.cpp.s
+
+.PHONY : Texto/texto.s
+
+# target to generate assembly for a file
+Texto/texto.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Texto/texto.cpp.s
+.PHONY : Texto/texto.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -623,6 +650,9 @@ help:
 	@echo "... Player/Player.o"
 	@echo "... Player/Player.i"
 	@echo "... Player/Player.s"
+	@echo "... Texto/texto.o"
+	@echo "... Texto/texto.i"
+	@echo "... Texto/texto.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1670,7 +1670,7 @@
    <tile gid="1663"/>
    <tile gid="1664"/>
    <tile gid="1665"/>
-   <tile gid="2661"/>
+   <tile gid="1666"/>
    <tile gid="1667"/>
    <tile gid="1668"/>
    <tile gid="1669"/>
@@ -3507,7 +3507,7 @@
    <tile gid="3500"/>
   </data>
  </layer>
- <objectgroup name="Capa de Colisiones" visible="0">
+ <objectgroup name="Capa de Colisiones">
   <object id="1" x="0" y="1505" width="2230" height="85"/>
   <object id="3" x="5" y="-5" width="2230" height="25"/>
   <object id="4" x="2220" y="-5" width="20" height="1590"/>
@@ -3533,17 +3533,17 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Player" visible="0">
+ <objectgroup name="Capa de Player">
   <object id="21" x="110" y="1225" width="100" height="270">
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de PowerUps" visible="0">
+ <objectgroup name="Capa de PowerUps">
   <object id="22" x="870" y="1263" width="35" height="40"/>
   <object id="23" x="1905" y="1115" width="50" height="30"/>
   <object id="24" x="980" y="1440" width="40" height="45"/>
  </objectgroup>
- <objectgroup name="Capa de Puerta" visible="0">
+ <objectgroup name="Capa de Puerta">
   <object id="26" x="2140" y="795" width="60" height="190">
    <ellipse/>
   </object>

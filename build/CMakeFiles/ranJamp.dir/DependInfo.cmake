@@ -18,6 +18,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Motor"
   "../Juego"
   "../Objeto"
+  "../Texto"
   )
 
 # Targets to which this target links.

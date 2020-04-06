@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Player/Player.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
+  "/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Texto/texto.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -32,6 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Motor"
   "../Juego"
   "../Objeto"
+  "../Texto"
   )
 
 # Targets to which this target links.

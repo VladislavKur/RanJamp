@@ -417,6 +417,30 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.provides: CMakeFiles/libClases.dir/
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.provides.build: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 
 
+CMakeFiles/libClases.dir/Texto/texto.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp"
+
+CMakeFiles/libClases.dir/Texto/texto.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Texto/texto.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp" > CMakeFiles/libClases.dir/Texto/texto.cpp.i
+
+CMakeFiles/libClases.dir/Texto/texto.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Texto/texto.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp" -o CMakeFiles/libClases.dir/Texto/texto.cpp.s
+
+CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
+
+CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides: CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides
+
+CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides.build: CMakeFiles/libClases.dir/Texto/texto.cpp.o
+
+
 # Object files for target libClases
 libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Player/Player.cpp.o" \
@@ -433,7 +457,8 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o" \
 "CMakeFiles/libClases.dir/Motor/Motor.cpp.o" \
 "CMakeFiles/libClases.dir/Juego/Juego.cpp.o" \
-"CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+"CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o" \
+"CMakeFiles/libClases.dir/Texto/texto.cpp.o"
 
 # External object files for target libClases
 libClases_EXTERNAL_OBJECTS =
@@ -453,9 +478,10 @@ liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Motor/Motor.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Juego.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Texto/texto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -479,6 +505,7 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cp
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Motor/Motor.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Juego.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
 
 .PHONY : CMakeFiles/libClases.dir/requires
 

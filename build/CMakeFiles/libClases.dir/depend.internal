@@ -34,6 +34,7 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
  /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
+ /home/andres/Escritorio/FV JUNTO/Texto/texto.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  ../Motor/Motor.h
  /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
@@ -66,6 +67,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
  /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
+ /home/andres/Escritorio/FV JUNTO/Texto/texto.h
 CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
  /home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
  /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
@@ -109,6 +111,11 @@ CMakeFiles/libClases.dir/Player/Player.cpp.o
  ../Motor/Motor.h
  ../Objeto/Objeto.h
  ../Player/Player.h
+ ../Texto/texto.h
  /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.cpp
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
+CMakeFiles/libClases.dir/Texto/texto.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Texto/texto.cpp
+ /home/andres/Escritorio/FV JUNTO/Texto/texto.h

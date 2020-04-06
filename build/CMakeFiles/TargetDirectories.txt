@@ -18,3 +18,5 @@
 /home/andres/Escritorio/FV JUNTO/build/Juego/CMakeFiles/rebuild_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Objeto/CMakeFiles/edit_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Objeto/CMakeFiles/rebuild_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Texto/CMakeFiles/edit_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Texto/CMakeFiles/rebuild_cache.dir

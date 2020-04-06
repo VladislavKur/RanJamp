@@ -340,7 +340,7 @@ int mapa::getNumObjetos(){
   return _numObjects;
 }
 
-/*
+
 void mapa::liberar(){
     //liberar memoria
     for(int i = 0; i < _numLayers; i++)
@@ -352,4 +352,41 @@ void mapa::liberar(){
         delete[] _tilemap[i];
     }
     delete[] _tilemap;
-}*/
+
+
+    for(int i = 0; i < _numTilesets; i++){
+      delete[] imagenes[i];
+    }
+    delete[] imagenes;
+
+    for(int i = 0; i < _numLayers; i++)
+    {
+        for(int j = 0; j < _height; j++)
+        {
+            delete[] _tilemapSprite[i][j];
+        }
+        delete[] _tilemapSprite[i];
+    }
+    delete[] _tilemapSprite;
+
+    delete[] _imgwidth;
+    delete[] _imgheight;
+    delete[]  cambio;
+    delete[]  map;
+    delete[] _tilesetTexture;
+
+    for(int i = 0; i < _numTilesets; i++){
+      delete[] objetos[i];
+    }
+    delete[] objetos;
+    
+    for(int i = 0; i < _numTilesets; i++){
+      delete[] objects[i];
+    }
+    delete[] objects;
+
+    for(int i = 0; i < _numTilesets; i++){
+      delete[] objectgroups[i];
+    }
+    delete[] objectgroups;
+}

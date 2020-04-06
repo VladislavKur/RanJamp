@@ -15,5 +15,6 @@ CMakeFiles/ranJamp.dir/main.cpp.o: ../Mapa/tinyxml.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Motor/Motor.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Player/Player.h
+CMakeFiles/ranJamp.dir/main.cpp.o: ../Texto/texto.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../main.cpp
 

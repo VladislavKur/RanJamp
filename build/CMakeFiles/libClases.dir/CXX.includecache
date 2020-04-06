@@ -69,6 +69,8 @@ iostream
 ../Mapa/mapa.h
 ../Objeto/Objeto.h
 ../Objeto/Objeto.h
+../Texto/texto.h
+../Texto/texto.h
 
 ../Mapa/mapa.h
 SFML/Graphics.hpp
@@ -125,6 +127,16 @@ SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
 ../Animacion/Animacion.h
+
+../Texto/texto.h
+SFML/System.hpp
+-
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+../Motor/Motor.h
 
 /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp
 Animacion.h
@@ -229,6 +241,8 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
 ../Objeto/Objeto.h
 /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+../Texto/texto.h
+/home/andres/Escritorio/FV JUNTO/Texto/texto.h
 
 /home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
 mapa.h
@@ -339,4 +353,18 @@ SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
 /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+
+/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp
+texto.h
+/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+
+/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+SFML/System.hpp
+-
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
