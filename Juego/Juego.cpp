@@ -13,7 +13,7 @@ Juego::Juego(){
     if(jugador == nullptr) printf("asdasd");
     crearObjetos();
     crearEnemigos();
-    view.setSize(720,480);
+    view.setSize(1024,720);
 
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
