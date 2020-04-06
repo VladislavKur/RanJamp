@@ -30,6 +30,7 @@
             void update(float deltaTime);
             void render(float porcentaje);            
 
+            void colisionBulletJugador(float deltatime);
             void colisionBulletEnemigo(float deltaTime);
             void colisionPlayerMundo(float deltaTime);
             void colisionBulletMundo(float deltaTime);

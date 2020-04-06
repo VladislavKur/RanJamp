@@ -71,6 +71,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionPlayerMundo(deltaTime);
     colisionBulletMundo(deltaTime);
     colisionBulletEnemigo(deltaTime);
+    colisionBulletJugador(deltaTime);
     
     jugador->update(deltaTime);
 
@@ -274,6 +275,26 @@ void Juego::matarEnemigo(Enemigo* enem){
 }
 
 void Juego::matarJugador(){
+  mapa* mundo = mapa::instance();
+  mundo->cargarmapa("Nivel1.tmx");
+  mundo->crearSprites();
+  mundo->cargarObjectGroups();
+  mundo->crearObjetos();
+  jugador = new Player();
+  if(jugador == nullptr) printf("asdasd");
+  crearObjetos();
+  crearEnemigos();
+  view.setSize(1024,720);
+    
+  for(int i = 0 ; i < maxBullets ; i++){
+       bulletPlayer[i]=NULL;
+  }
+
+  for(int i = 0; i < maxBullets;i++){
+
+      bulletEnemies[i] = NULL;
+
+  }
 
 }
 
@@ -303,6 +324,25 @@ void Juego::colisionBulletMundo(float deltaTime){
       if(objetos[j]->getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
+      }
+    }
+  }
+}
+
+void Juego::colisionBulletJugador(float deltaTime){
+
+  for(unsigned int i = 0; i < maxBullets; i++){
+
+    if(bulletEnemies[i] != NULL){
+
+      if(jugador->getBody().getGlobalBounds().intersects(bulletEnemies[i]->getBody().getGlobalBounds())){
+
+        jugador->setVidas(jugador->getVidas()-1);
+
+        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        delete bulletEnemies[i];
+        bulletEnemies[i] = NULL;
+
       }
     }
   }

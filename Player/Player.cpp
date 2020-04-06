@@ -67,7 +67,7 @@ Player::Player(int x, int y)
     jumpSpeed=0;
     jumpHeight=75*2;
     arma=0;  
-    vidas = 2;  
+    vidas = 5;  
     velocidad=1;
     
 }
