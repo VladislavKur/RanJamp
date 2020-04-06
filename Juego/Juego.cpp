@@ -261,7 +261,6 @@ void Juego::disparar(float deltaTime){
     
 }
 
-<<<<<<< HEAD
 void Juego::dispararEnemigo(float deltaTime,float x, float y, bool direccion){
 
   for(int i = 0; i < maxBullets;i++){
@@ -275,7 +274,6 @@ void Juego::dispararEnemigo(float deltaTime,float x, float y, bool direccion){
   }
 
 }
-=======
 void Juego::colisionBulletMundo(float deltaTime){
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
@@ -308,4 +306,3 @@ void Juego::colisionBulletEnemigo(float deltaTime){
     }
   }
 }
->>>>>>> 1f0392dde7aaa71d098cddbd8647afa85d4b589a
