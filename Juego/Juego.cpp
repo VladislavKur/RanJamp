@@ -62,19 +62,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     jugador->update(deltaTime);
 
     
-  /*  if(jugador->getBody().getPosition().x < view.getSize().x/2 && jugador->getBody().getPosition().y <1600.0f){
-       view.setCenter(sf::Vector2f (view.getSize().x/2, 1600-view.getSize().y/2));
-        
-    } else if(jugador->getBody().getPosition().x > 2240.0f-view.getSize().x/2 && 
-              jugador->getBody().getPosition().y <1600.0f){
-                view.setCenter(sf::Vector2f (2240-view.getSize().x/2,1600-view.getSize().y/2));//esquina derecha abajo
-           }
-              else if(jugador->getBody().getPosition().y < view.getSize().y/2){
-                      view.setCenter(jugador->getBody().getPosition().x,view.getSize().y/2);
-              }
-                    else if(jugador->getBody().getPosition().y > 1600-view.getSize().y/2){
-                            view.setCenter(jugador->getBody().getPosition().x, 1600-view.getSize().y/2);
-                          } else view.setCenter(jugador->getBody().getPosition());*/
+ 
     Vector2f playerPos = jugador->getBody().getPosition();
 
     view.setCenter(playerPos);
@@ -108,10 +96,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
     
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
-    // for(unsigned int i=0 ; i<sizeof(objetos) ; i++){
-    //     std::cout<< "objeto " << i << "= [" << objetos[i]->getPosition().x <<  ", " << objetos[i]->getPosition().y << "]" << endl;   
-    // }
-
+    
     Vector2f posobj;
     bool pararse=false;
     bool aux = false;
