@@ -18,7 +18,7 @@
             body.setPosition(Posicion);
 
         tipo = t;
-
+    
 
     }
 

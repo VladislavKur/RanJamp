@@ -77,9 +77,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     int j = 0;
     while(objetos[j] != nullptr && j < numObjetos){
      
-     std::cout << objetos[j] << std:: endl;
-     std::cout << numObjetos << "sadasdsa" << std:: endl;
      
+       if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
       if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
 
             switch (objetos[j]->getTipo()){
