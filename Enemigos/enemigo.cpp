@@ -15,7 +15,7 @@ Enemigo::Enemigo(float x, float y){
 Enemigo::~Enemigo(){
   
 }
-void Enemigo::morir(){
+void Enemigo::morir(){ //WIP eliminar probablemente
     //cuerpo.setScale(sf::Vector2f(cuerpo.getScale().x*0.9, cuerpo.getScale().y*0.9));
     //if(cuerpo.getScale().x < 0.1)
     cuerpo.setScale(0,0);
