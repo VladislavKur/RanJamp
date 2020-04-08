@@ -28,11 +28,11 @@ void Enemigo::morir(){ //WIP eliminar probablemente
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){
 
-    posXanterior = posX;
+    posXanterior = posX; //LA DE ANTES DE LOS CALCULOS DEL UPDATE
     posYanterior = posY;
-    posX += entradaX;
+    posX += entradaX; //LA DE DESPUES DE LOS CALCULOS DEL UPDATE
     posY += entradaY;
-    diffX = posX - posXanterior;
+    diffX = posX - posXanterior; //LA DIFERENCIA ENTRE POSX y la anterior
     diffY = posY - posYanterior;
 
 };
