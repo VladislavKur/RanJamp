@@ -3,17 +3,17 @@
 
 Juego* Juego::pinstance = 0;
 
-Juego::Juego(){
+Juego::Juego(){ //WIP FUNCION CARGARNIVEL
     mapa * mundo = mapa::instance(); 
     mundo->cargarmapa("Nivel1.tmx");
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
     jugador = new Player();
-    if(jugador == nullptr) printf("asdasd");
+    //if(jugador == nullptr) printf("asdasd");
     crearObjetos();
     crearEnemigos();
-    view.setSize(1024,720);
+    view.setSize(1024,720); //FACHADA WIP
     
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
@@ -50,10 +50,10 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
   // for(int i = 0; i < dimensiones.size(); i ++){
   //   cout<< "dimensiones "<< i << " = "<< dimensiones[i] << endl;
   // }
-  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
       disparar(deltaTime);
   }
-    
+    //el for de abajo, mejor en una función aparte, por claridad y organizacion
     for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] != NULL){
         if(bulletPlayer[i]->lifetime<=0){
@@ -61,7 +61,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
           bulletPlayer[i]=NULL;
         }
         else
-          bulletPlayer[i]->update(deltaTime);
+          bulletPlayer[i]->update(deltaTime);//revisar
       }
       if(bulletEnemies[i] != NULL){
         if(bulletEnemies[i]->lifetime<=0){
@@ -69,25 +69,25 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
           bulletEnemies[i] = NULL;
         }
         else
-          bulletEnemies[i]->update(deltaTime);
+          bulletEnemies[i]->update(deltaTime);//revisar
       }
     }
-    
+    //puede que en alguna de estas funciones deltaTime NO sea necesario
     colisionPlayerMundo(deltaTime);
     colisionBulletMundo(deltaTime);
     colisionBulletEnemigo(deltaTime);
     colisionBulletJugador(deltaTime);
     
-    jugador->update(deltaTime);
+    jugador->update(deltaTime); //revisar
     int j = 0;
-    while(objetos[j] != nullptr && j < numObjetos){
+    while(objetos[j] != nullptr && j < numObjetos){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
      
      //std::cout << objetos[j] << std:: endl;
     // std::cout << numObjetos << "sadasdsa" << std:: endl;
      
       if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
 
-            switch (objetos[j]->getTipo()){
+            switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
                 jugador->obtenerPU_Velocidad();
                      destruirObjetos(objetos[j]);
@@ -119,9 +119,10 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     
  
-    Vector2f playerPos = jugador->getBody().getPosition();
+    Vector2f playerPos = jugador->getBody().getPosition();//WIP fachada
 
-    view.setCenter(playerPos);
+    view.setCenter(playerPos); //WIP fachada
+    ///////////////Esta zona es WIP fachada y funcion diferente
     if( playerPos.x<view.getSize().x/2) {
       view.setCenter(view.getSize().x/2, playerPos.y);
     }
@@ -134,20 +135,20 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     if( playerPos.y < view.getSize().y/2){
       view.setCenter(view.getCenter().x, view.getSize().y/2);
     }
+    //////////////////
 
-
-    m->getVentana()->setView(view);
+    m->getVentana()->setView(view); //wIP fachada
 
     for(int i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
-      enemies[i]->updateHitbox();
-      if(enemies[i]->getVidas() == 0){
+      enemies[i]->updateHitbox(); //dentro de update de enemigo
+      if(enemies[i]->getVidas() == 0){ //dentro de update de enemigo
         matarEnemigo(enemies[i]);
       }
    
-      
-      Centinela* casteado = dynamic_cast<Centinela*>(enemies[i]);
+      //esto del casteo está bien hecho, pero en una funcion aparte
+      Centinela* casteado = dynamic_cast<Centinela*>(enemies[i]); 
 
       if(casteado != nullptr){
 
@@ -164,22 +165,22 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
       }      
     }
-    jugador->updateHitbox();
+    jugador->updateHitbox(); //dentro de update de jugador
     
 
 }
 
-void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! -> interseccion player y rectangleshape 
+void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta funcion debería estar dentro de player.cpp)
     
     mapa * mundo = mapa::instance(); 
-    RectangleShape ** objetos = mundo->getObjetos();
+    RectangleShape ** objetos = mundo->getObjetos();//WIP FACHADA
     
-    Vector2f posobj;
+    Vector2f posobj; //WIP FACHADA
     bool pararse=false;
     bool aux = false;
-    Vector2f posant;
+    Vector2f posant; //WIP FACHADA
     for(int i=0 ; i<  mundo->getNumObjetos(); i++){
-      if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){
+      if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){//WIP FACHADA
         posobj = objetos[i]->getPosition();
         pararse=true;
       } 
@@ -188,12 +189,12 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55);
-          jugador->updateHitbox();
+          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55); //WIP FACHADA y explicar que hace esto detalladamente pls
+          jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
           aux = true;
-          posant = jugador->getBody().getPosition();
+          posant = jugador->getBody().getPosition(); //WIP FACHADA
           
-        } else if(posant != jugador->getBody().getPosition()){
+        } else if(posant != jugador->getBody().getPosition()){ //WIP FACHADA
           aux = false;
         }
         jugador->setJumpSpeed(0);
@@ -201,7 +202,7 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
       }else{
         jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*5*deltaTime);
       }
-      if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){
+      if(jugador->coliArriba.intersects(objetos[i]->getGlobalBounds())){ //WIP fachada
         jugador->setJumpSpeed(10);
       }
     }
@@ -209,21 +210,21 @@ void Juego::colisionPlayerMundo(float deltaTime){// ESTO LO HACE VERMIAAA !!!!! 
 
 }
 
-void Juego::render(float porcentaje){ //wip
+void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
 
     //Motor * m = Motor::instance();
     mapa * mundo = mapa::instance();
     mundo->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletPlayer[i]==NULL) continue;
-      bulletPlayer[i]->render();
+      bulletPlayer[i]->render(); //interpolacion
 
     }
 
     for(unsigned i = 0; i < maxBullets;i++){
 
       //if(bulletEnemies[i] == NULL)continue;
-      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render();}
+      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render();} //interpolacion
     }
 
     jugador->render();
@@ -232,7 +233,7 @@ void Juego::render(float porcentaje){ //wip
     int j = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
       //cout << " ENEMIGO " << i << endl;
-      enemies[i]->render(porcentaje);
+      enemies[i]->render(porcentaje);//esto está interpolado
       i++;
     }
 
@@ -246,10 +247,10 @@ void Juego::render(float porcentaje){ //wip
 }
 
 
-void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
+void Juego::crearObjetos(){ //WIP FACHADA
   mapa * mundo = mapa::instance();
  
-  sf::Vector2f pos;
+  sf::Vector2f pos; //WIP fachada
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
   numObjetos = posicion.size();
@@ -270,7 +271,7 @@ void Juego::crearObjetos(){ /// VlaDIS // LLAMARLO EN EL CONSTRUCTOR
   // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
 }
 
-void Juego::destruirObjetos(Objeto* enem){
+void Juego::destruirObjetos(Objeto* enem){ //está nice
  for (int i = 0; i < numObjetos; i++){
     if(objetos[i] == enem){
       for(int j = i; j < numObjetos; j++){
@@ -285,7 +286,7 @@ void Juego::destruirObjetos(Objeto* enem){
 
 //CREARENEMIGOS FUNCIONE
 
-void Juego::crearEnemigos(){ 
+void Juego::crearEnemigos(){ //está nice
   mapa * mundo = mapa::instance();
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
@@ -295,21 +296,21 @@ void Juego::crearEnemigos(){
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
-        cout << "he añadido murcielago " << posx << ","  << posy  << endl;
+        //cout << "he añadido murcielago " << posx << ","  << posy  << endl; //eliminar
         Murcielago * murcielago = new Murcielago(posx, posy);
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
-        cout << "he añadido centinela" << endl;
+        //cout << "he añadido centinela" << endl; //eliminar
         Centinela * centinela = new Centinela(posx, posy,1);
         enemies[i] = (Enemigo *) centinela;
     }else if(posicion[i][2] == 3){
-        cout << "he añadido un centinela que se mueve"<< endl;
+        //cout << "he añadido un centinela que se mueve"<< endl; //eliminar
         Centinela* centinela = new Centinela(posx,posy,0);
         enemies[i] = (Enemigo *) centinela;
     }
     else if(posicion[i][2] == 4){
-        cout << "he añadido reptante" << endl;
-        Reptante * reptante = new Reptante(posx, posy);
+        //cout << "he añadido reptante" << endl; //eliminar
+        Reptante * reptante = new Reptante(posx, posy); // WIP el reptante está sin terminar LOL
         enemies[i] = (Enemigo *) reptante;
     }
 
@@ -317,7 +318,7 @@ void Juego::crearEnemigos(){
   
 }
 
-void Juego::matarEnemigo(Enemigo* enem){
+void Juego::matarEnemigo(Enemigo* enem){ //está nice
   for (int i = 0; i < numEmenigos; i++){
     if(enemies[i] == enem){
       for(int j = i; j < numEmenigos; j++){
@@ -329,7 +330,7 @@ void Juego::matarEnemigo(Enemigo* enem){
   }
 }
 
-void Juego::matarJugador(){
+void Juego::matarJugador(){ //está nice
   mapa* mundo = mapa::instance();
   mundo->setCargado(false);
   mundo->liberar();
@@ -338,7 +339,7 @@ void Juego::matarJugador(){
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
   jugador = new Player();
-  if(jugador == nullptr) printf("asdasd");
+  //if(jugador == nullptr) printf("asdasd");//quitar
   crearObjetos();
   crearEnemigos();
   view.setSize(1024,720);
@@ -356,10 +357,11 @@ void Juego::matarJugador(){
 }
 
 
-void Juego::disparar(float deltaTime){
-  
+void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería estar dentro de jugador?)
+   //a lo mejor parte del código aquí y parte del código en jugador (sin fundamento, a debatir)
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
+            //y por estas cosas usamos fachada ^.^
             bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) , 1 );
             jugador->setCooldownDisparo(10*deltaTime);
             break;
@@ -369,7 +371,7 @@ void Juego::disparar(float deltaTime){
 }
 
 
-void Juego::colisionBulletMundo(float deltaTime){
+void Juego::colisionBulletMundo(float deltaTime){//WIP fachada
     mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
 
@@ -386,7 +388,7 @@ void Juego::colisionBulletMundo(float deltaTime){
   }
 }
 
-void Juego::colisionBulletJugador(float deltaTime){
+void Juego::colisionBulletJugador(float deltaTime){ //WIP fachada
 
   for(unsigned int i = 0; i < maxBullets; i++){
 
@@ -405,7 +407,7 @@ void Juego::colisionBulletJugador(float deltaTime){
   }
 }
 
-void Juego::colisionBulletEnemigo(float deltaTime){
+void Juego::colisionBulletEnemigo(float deltaTime){//WIP fachada
   for(unsigned int i=0 ; i<maxBullets ; i++){
     for(int j=0 ; j<numEmenigos ; j++){
       if(bulletPlayer[i]==NULL) continue;
