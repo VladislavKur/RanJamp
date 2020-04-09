@@ -8,9 +8,10 @@
     
     Objeto::~Objeto(){}
     Objeto::Objeto(sf::Vector2f Posicion, int t){
-             sf::Texture *text = new sf::Texture ;
+            sf::Texture *text = new sf::Texture ;
 
- 
+            text->loadFromFile("resources/Imagenes/powerup1.png");
+            body.setTexture(text);
 
             body.setSize(sf::Vector2f(50,50));
             //body.setTexture(tex);
