@@ -53,6 +53,11 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
       disparar(deltaTime);
   }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::P)){
+      jugador->obtenerPU_SaltoDoble();
+      jugador->obtenerPU_Slowhits();
+      jugador->obtenerPU_Velocidad();
+  }
     
     for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] != NULL){

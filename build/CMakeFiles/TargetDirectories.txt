@@ -1,22 +1,22 @@
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/ranJamp.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir
-/home/andres/Escritorio/FV JUNTO/build/Player/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Player/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Bullet/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Bullet/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Animacion/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Animacion/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Enemigos/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Enemigos/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Mapa/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Mapa/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Motor/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Motor/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Juego/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Juego/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Objeto/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Objeto/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Texto/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Texto/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/CMakeFiles/ranJamp.dir
+/home/vermia/R/src/build/CMakeFiles/libClases.dir
+/home/vermia/R/src/build/Player/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Player/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Bullet/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Bullet/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Animacion/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Animacion/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Enemigos/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Enemigos/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Mapa/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Mapa/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Motor/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Motor/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Juego/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Juego/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Objeto/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Objeto/CMakeFiles/rebuild_cache.dir
+/home/vermia/R/src/build/Texto/CMakeFiles/edit_cache.dir
+/home/vermia/R/src/build/Texto/CMakeFiles/rebuild_cache.dir

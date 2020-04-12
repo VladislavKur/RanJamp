@@ -51,7 +51,7 @@ public:
     //SET
     void obtenerPU_SaltoDoble();
     void obtenerPU_Velocidad(){PU_velocidad = true;}
-    void obtenerPU_Slowhits();
+    void obtenerPU_Slowhits(){PU_slowhits = true;}
 
     void perderPU_SaltoDoble();
     void perderPU_Velocidad();

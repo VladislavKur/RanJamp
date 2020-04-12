@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/andres/Escritorio/FV JUNTO/Player" -I"/home/andres/Escritorio/FV JUNTO/Bullet" -I"/home/andres/Escritorio/FV JUNTO/Animacion" -I"/home/andres/Escritorio/FV JUNTO/Enemigos" -I"/home/andres/Escritorio/FV JUNTO/Mapa" -I"/home/andres/Escritorio/FV JUNTO/Motor" -I"/home/andres/Escritorio/FV JUNTO/Juego" -I"/home/andres/Escritorio/FV JUNTO/Objeto" -I"/home/andres/Escritorio/FV JUNTO/Texto" 
+CXX_INCLUDES = -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto 
 

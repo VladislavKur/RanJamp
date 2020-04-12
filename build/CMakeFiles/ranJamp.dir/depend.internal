@@ -3,18 +3,18 @@
 
 CMakeFiles/ranJamp.dir/main.cpp.o
  ../Motor/Motor.h
- /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
- /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
- /home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
- /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
- /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
- /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
- /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
- /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
- /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
- /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
- /home/andres/Escritorio/FV JUNTO/Player/Player.h
- /home/andres/Escritorio/FV JUNTO/Texto/texto.h
- /home/andres/Escritorio/FV JUNTO/main.cpp
+ /home/vermia/R/src/Animacion/Animacion.h
+ /home/vermia/R/src/Bullet/bullet.h
+ /home/vermia/R/src/Enemigos/centinela.h
+ /home/vermia/R/src/Enemigos/enemigo.h
+ /home/vermia/R/src/Enemigos/murcielago.h
+ /home/vermia/R/src/Enemigos/reptante.h
+ /home/vermia/R/src/Juego/Juego.h
+ /home/vermia/R/src/Mapa/mapa.h
+ /home/vermia/R/src/Mapa/tinystr.h
+ /home/vermia/R/src/Mapa/tinyxml.h
+ /home/vermia/R/src/Motor/Motor.h
+ /home/vermia/R/src/Objeto/Objeto.h
+ /home/vermia/R/src/Player/Player.h
+ /home/vermia/R/src/Texto/texto.h
+ /home/vermia/R/src/main.cpp

@@ -1,4 +1,4 @@
-# Install script for directory: /home/andres/Escritorio/FV JUNTO
+# Install script for directory: /home/vermia/R/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,15 +34,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/andres/Escritorio/FV JUNTO/build/Player/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Bullet/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Animacion/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Enemigos/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Mapa/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Motor/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Juego/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Objeto/cmake_install.cmake")
-  include("/home/andres/Escritorio/FV JUNTO/build/Texto/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Player/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Bullet/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Animacion/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Enemigos/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Mapa/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Motor/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Juego/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Objeto/cmake_install.cmake")
+  include("/home/vermia/R/src/build/Texto/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andres/Escritorio/FV JUNTO/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vermia/R/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
