@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "/home/magiic/Escritorio/RanJamp/Enemigos/reptante.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Juego/Juego.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Mapa/mapa.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Mapa/tinystr.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"

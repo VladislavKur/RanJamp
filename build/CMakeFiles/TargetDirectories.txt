@@ -1,7 +1,8 @@
 /home/magiic/Escritorio/RanJamp/build/CMakeFiles/edit_cache.dir
-/home/magiic/Escritorio/RanJamp/build/CMakeFiles/rebuild_cache.dir
-/home/magiic/Escritorio/RanJamp/build/CMakeFiles/ranJamp.dir
 /home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir
+/home/magiic/Escritorio/RanJamp/build/CMakeFiles/pajarraco.dir
+/home/magiic/Escritorio/RanJamp/build/CMakeFiles/ranJamp.dir
+/home/magiic/Escritorio/RanJamp/build/CMakeFiles/rebuild_cache.dir
 /home/magiic/Escritorio/RanJamp/build/Player/CMakeFiles/edit_cache.dir
 /home/magiic/Escritorio/RanJamp/build/Player/CMakeFiles/rebuild_cache.dir
 /home/magiic/Escritorio/RanJamp/build/Bullet/CMakeFiles/edit_cache.dir

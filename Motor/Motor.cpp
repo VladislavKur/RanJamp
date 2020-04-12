@@ -155,6 +155,18 @@ int Motor::restartRelojM(){
 
 }
 
+void Motor::limpieza(){
+
+    ventana->clear();
+
+}
+
+void Motor::mostrar(){
+
+    ventana->display();
+
+}
+
 bool Motor::getOpen(){
 
     return(ventana->isOpen());

@@ -14,8 +14,8 @@ Player::Player()
             0.33f,
             sf::Vector2f(100.0f,100.0f),
             sf::Vector2f(75.0,75.0)
-            ){
-    sf::Texture *text = new sf::Texture;
+            ){//WIP fachada
+    sf::Texture *text = new sf::Texture; //wip fachada
 
     saltos = 1;
     jumpSpeed=0;
@@ -32,15 +32,15 @@ Player::Player()
     cooldownSalto = 0;
     cooldownDisparo = 0;
 
-    body.setSize(sf::Vector2f(100.0f,100.0f));
-    body.setPosition(100, 1000);
+    body.setSize(sf::Vector2f(100.0f,100.0f)); //wip fachada
+    body.setPosition(100, 1000); //wip fachada
 
-    body.setOrigin(75/2 ,75/2);
+    body.setOrigin(75/2 ,75/2); //wip fachada
 
-    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds";
+    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
     
-    body.setTexture(text);
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
+    body.setTexture(text); //wip fachada
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada
 
     /*PU_saltoDoble = true;
     PU_velocidad = true;
@@ -54,7 +54,7 @@ Player::Player(int x, int y)
             0.33f,
             sf::Vector2f(100.0f,100.0f),
             sf::Vector2f(75.0,75.0)
-            ){
+            ){ //lo mismo que lo del constructor de arriba, wip fachada y TERMINAR
     
     //body.setSize(sf::Vector2f(100.0f,100.0f));
     //body.setTexture(tex);
@@ -74,7 +74,7 @@ Player::Player(int x, int y)
 
 void Player::update(float deltaTime){
     
-    updateHitbox();
+    updateHitbox(); //arreglar lo de update hitbox
 
 
     cooldownSalto-=deltaTime;
@@ -87,24 +87,24 @@ void Player::update(float deltaTime){
 
   //caer
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
       if(auxSaltos==true && saltos > 0){
           saltar();
           cooldownSalto=15*deltaTime;
         }
     }
     
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
         moveRight(deltaTime);
     }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
         moveLeft(deltaTime);
     }
 
   
     
     //Caída constante
-    body.move(0,jumpSpeed*deltaTime);
+    body.move(0,jumpSpeed*deltaTime); //wip fachada
 }
 
 

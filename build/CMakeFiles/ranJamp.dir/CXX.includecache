@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../Motor/Motor.h
-SFML/Graphics.hpp
--
-iostream
--
-
 /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
-Motor.h
-/home/magiic/Escritorio/RanJamp/Animacion/Motor.h
+../Motor/Motor.h
+/home/magiic/Escritorio/RanJamp/Motor/Motor.h
 
 /home/magiic/Escritorio/RanJamp/Bullet/bullet.h
 SFML/Graphics.hpp
@@ -52,7 +46,7 @@ iostream
 enemigo.h
 /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/reptante.h
+/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
@@ -73,8 +67,8 @@ iostream
 /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
 ../Enemigos/centinela.h
 /home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
-../Enemigos/reptante.h
-/home/magiic/Escritorio/RanJamp/Enemigos/reptante.h
+../Enemigos/pajaro.h
+/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
 ../Bullet/bullet.h
 /home/magiic/Escritorio/RanJamp/Bullet/bullet.h
 ../Mapa/mapa.h

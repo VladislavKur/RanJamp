@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
   "CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
   "CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
   "CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
   "CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
   "CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
