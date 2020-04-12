@@ -1,87 +1,92 @@
 [
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/main.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/main.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Player/Player.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Player/Player.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Player/Player.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Player/Player.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Bullet/bullet.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/mapa.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/mapa.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/mapa.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/mapa.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlparser.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlparser.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlerror.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxmlerror.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Motor/Motor.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Motor/Motor.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Texto/texto.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Texto/texto.cpp"
 },
 {
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mapa\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp"
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/pajarraco.dir/pajarraco.cpp.o -c /home/antonio/Documents/movidas/RanJamp/pajarraco.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/pajarraco.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mapa -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c /home/antonio/Documents/movidas/RanJamp/main.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/main.cpp"
 }
 ]

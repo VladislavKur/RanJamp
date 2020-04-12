@@ -1,22 +1,23 @@
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/ranJamp.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir
-/home/andres/Escritorio/FV JUNTO/build/Player/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Player/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Bullet/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Bullet/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Animacion/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Animacion/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Enemigos/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Enemigos/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Mapa/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Mapa/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Motor/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Motor/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Juego/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Juego/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Objeto/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Objeto/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Texto/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/Texto/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/libClases.dir
+/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/pajarraco.dir
+/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/ranJamp.dir
+/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Player/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Player/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Bullet/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Bullet/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Animacion/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Animacion/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Enemigos/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Enemigos/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Mapa/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Mapa/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Motor/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Motor/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Juego/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Juego/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Objeto/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Objeto/CMakeFiles/rebuild_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Texto/CMakeFiles/edit_cache.dir
+/home/antonio/Documents/movidas/RanJamp/build/Texto/CMakeFiles/rebuild_cache.dir

@@ -54,47 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/andres/Escritorio/FV JUNTO"
+CMAKE_SOURCE_DIR = /home/antonio/Documents/movidas/RanJamp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/andres/Escritorio/FV JUNTO/build"
-
-#=============================================================================
-# Target rules for target CMakeFiles/ranJamp.dir
-
-# All Build rule for target.
-CMakeFiles/ranJamp.dir/all: CMakeFiles/libClases.dir/all
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/depend
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=18,19 "Built target ranJamp"
-.PHONY : CMakeFiles/ranJamp.dir/all
-
-# Include target in all.
-all: CMakeFiles/ranJamp.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ranJamp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 19
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ranJamp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
-.PHONY : CMakeFiles/ranJamp.dir/rule
-
-# Convenience name for target.
-ranJamp: CMakeFiles/ranJamp.dir/rule
-
-.PHONY : ranJamp
-
-# clean rule for target.
-CMakeFiles/ranJamp.dir/clean:
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/clean
-.PHONY : CMakeFiles/ranJamp.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/ranJamp.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /home/antonio/Documents/movidas/RanJamp/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/libClases.dir
@@ -103,7 +66,7 @@ clean: CMakeFiles/ranJamp.dir/clean
 CMakeFiles/libClases.dir/all:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/depend
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target libClases"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target libClases"
 .PHONY : CMakeFiles/libClases.dir/all
 
 # Include target in all.
@@ -113,9 +76,9 @@ all: CMakeFiles/libClases.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libClases.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libClases.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 0
 .PHONY : CMakeFiles/libClases.dir/rule
 
 # Convenience name for target.
@@ -130,6 +93,80 @@ CMakeFiles/libClases.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/libClases.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pajarraco.dir
+
+# All Build rule for target.
+CMakeFiles/pajarraco.dir/all: CMakeFiles/libClases.dir/all
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/depend
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=18,19 "Built target pajarraco"
+.PHONY : CMakeFiles/pajarraco.dir/all
+
+# Include target in all.
+all: CMakeFiles/pajarraco.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pajarraco.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 19
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pajarraco.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 0
+.PHONY : CMakeFiles/pajarraco.dir/rule
+
+# Convenience name for target.
+pajarraco: CMakeFiles/pajarraco.dir/rule
+
+.PHONY : pajarraco
+
+# clean rule for target.
+CMakeFiles/pajarraco.dir/clean:
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/clean
+.PHONY : CMakeFiles/pajarraco.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pajarraco.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ranJamp.dir
+
+# All Build rule for target.
+CMakeFiles/ranJamp.dir/all: CMakeFiles/libClases.dir/all
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/depend
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=20,21 "Built target ranJamp"
+.PHONY : CMakeFiles/ranJamp.dir/all
+
+# Include target in all.
+all: CMakeFiles/ranJamp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ranJamp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 19
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ranJamp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 0
+.PHONY : CMakeFiles/ranJamp.dir/rule
+
+# Convenience name for target.
+ranJamp: CMakeFiles/ranJamp.dir/rule
+
+.PHONY : ranJamp
+
+# clean rule for target.
+CMakeFiles/ranJamp.dir/clean:
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/clean
+.PHONY : CMakeFiles/ranJamp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ranJamp.dir/clean
 
 .PHONY : clean
 

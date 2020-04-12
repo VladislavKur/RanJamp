@@ -6,85 +6,79 @@
 
 #IncludeRegexTransform: 
 
-../Motor/Motor.h
-SFML/Graphics.hpp
--
-iostream
--
-
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
-SFML/Graphics.hpp
--
-Motor.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Motor.h
-
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+/home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
+SFML/Graphics.hpp
+-
+../Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+
+/home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/antonio/Documents/movidas/RanJamp/Player/Player.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/antonio/Documents/movidas/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
 ../Enemigos/murcielago.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
 ../Enemigos/centinela.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
-../Enemigos/reptante.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
+../Enemigos/pajaro.h
+/home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
 ../Mapa/mapa.h
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/antonio/Documents/movidas/RanJamp/Mapa/mapa.h
 ../Objeto/Objeto.h
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
 ../Texto/texto.h
-/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+/home/antonio/Documents/movidas/RanJamp/Texto/texto.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/antonio/Documents/movidas/RanJamp/Mapa/mapa.h
 SFML/Graphics.hpp
 -
 iostream
@@ -92,17 +86,17 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/antonio/Documents/movidas/RanJamp/Mapa/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -120,27 +114,27 @@ iostream
 sstream
 -
 tinystr.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/antonio/Documents/movidas/RanJamp/Mapa/tinystr.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/antonio/Documents/movidas/RanJamp/Player/Player.h
 
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/antonio/Documents/movidas/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
 
-/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+/home/antonio/Documents/movidas/RanJamp/Texto/texto.h
 SFML/System.hpp
 -
 SFML/Graphics.hpp
@@ -148,17 +142,17 @@ SFML/Graphics.hpp
 iostream
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/main.cpp
+/home/antonio/Documents/movidas/RanJamp/main.cpp
 SFML/Graphics.hpp
 -
 iostream
 -
 Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
 Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
 Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/antonio/Documents/movidas/RanJamp/Player/Player.h
 

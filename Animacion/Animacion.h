@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "Motor.h"
+#include "../Motor/Motor.h"
 //ALEJANDRO EL GUAPO ME HA DICHO QUE PONGA RELOJES DENTRO DE ANIMACION
 
 class Animacion{

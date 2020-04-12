@@ -310,8 +310,8 @@ void Juego::crearEnemigos(){ //está nice
     }
     else if(posicion[i][2] == 4){
         //cout << "he añadido reptante" << endl; //eliminar
-        Reptante * reptante = new Reptante(posx, posy); // WIP el reptante está sin terminar LOL
-        enemies[i] = (Enemigo *) reptante;
+        Pajaro * pajaro = new Pajaro(posx, posy); // WIP el reptante está sin terminar LOL
+        enemies[i] = (Enemigo *) pajaro;
     }
 
   }

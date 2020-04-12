@@ -5,7 +5,7 @@
 #include "../Enemigos/enemigo.h"
 #include "../Enemigos/murcielago.h"
 #include "../Enemigos/centinela.h"
-#include "../Enemigos/reptante.h"
+#include "../Enemigos/pajaro.h"
 #include "../Bullet/bullet.h"
 #include "../Mapa/mapa.h"
 #include "../Objeto/Objeto.h"
