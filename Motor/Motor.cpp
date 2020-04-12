@@ -63,6 +63,10 @@ void Motor::dibujo(sf::RectangleShape entrada){
 
 }
 
+void Motor::dibujo( sf::Text  entrada){
+    ventana->draw(entrada);
+}
+
 void Motor::dibujo(sf::CircleShape entrada){
 
   

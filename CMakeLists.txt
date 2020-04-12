@@ -15,7 +15,7 @@ add_subdirectory(Mapa)
 add_subdirectory(Motor)
 add_subdirectory(Juego)
 add_subdirectory(Objeto)
-
+add_subdirectory(Texto)
 
 #Opciones a pasar al compilador de C++
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")

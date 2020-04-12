@@ -24,6 +24,11 @@ Juego::Juego(){
       bulletEnemies[i] = NULL;
 
   }
+  std::vector<sf::String> s; 
+  s.push_back("SALTA");
+  std::vector<Vector2f> pos;
+  pos.push_back(Vector2f(10 , 1500));
+  t = new texto(1 , s , pos);
 
 }
 
@@ -76,7 +81,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     jugador->update(deltaTime);
     int j = 0;
     while(objetos[j] != nullptr && j < numObjetos){
-     
+
      
        if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
       if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
@@ -101,7 +106,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     jugador->obtenerPU_Velocidad();
                      destruirObjetos(objetos[j]);
                     break;
-            
+                case 4: 
+                    destruirObjetos(objetos[j]);
+                    break;
             default:
                 std:: cout <<"Default" << std::endl;
                 break;
@@ -230,6 +237,7 @@ void Juego::render(float porcentaje){ //wip
       i++;
     }
 
+    t->render();
     while(objetos[j] != nullptr && j < numObjetos){
      
       objetos[j]->render();
@@ -324,7 +332,9 @@ void Juego::matarEnemigo(Enemigo* enem){
 
 void Juego::matarJugador(){
   mapa* mundo = mapa::instance();
-  mundo->cargarmapa("Nivel1.tmx");
+  mundo->setCargado(false);
+  mundo->liberar();
+  mundo->cargarmapa("MapaFinal.tmx");
   mundo->crearSprites();
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
@@ -351,7 +361,7 @@ void Juego::disparar(float deltaTime){
   
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
-            bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) );
+            bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) , 1 );
             jugador->setCooldownDisparo(10*deltaTime);
             break;
           }

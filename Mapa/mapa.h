@@ -22,14 +22,16 @@ class mapa{
         static mapa *instance();
         RectangleShape ** getObjetos();
         int getNumObjetos();
-        
+        void liberar();
+        void setCargado(bool cambio);
     protected:
             mapa();
 
     private:
+        bool cargado;
       
         static mapa* pinstance;
-        TiXmlDocument doc;
+        TiXmlDocument  doc;
         TiXmlElement * map;
         VertexArray m_vertices;
         Texture m_tileset;

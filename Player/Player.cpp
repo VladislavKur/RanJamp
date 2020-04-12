@@ -9,7 +9,7 @@ Player::~Player(){
 
 }
 Player::Player()
-:animacion("sprites.png",
+:animacion("/Imagenes/mago.png",
             sf::Vector2u(40,19),
             0.33f,
             sf::Vector2f(100.0f,100.0f),
@@ -20,11 +20,11 @@ Player::Player()
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=30;
-    arma=1;  
+    arma=0;  
     vidas = 5; 
     velocidad=250;
 
-    PU_saltoDoble=true;
+    PU_saltoDoble=false;
     PU_slowhits=false;
     PU_velocidad=false;
 
@@ -33,14 +33,14 @@ Player::Player()
     cooldownDisparo = 0;
 
     body.setSize(sf::Vector2f(100.0f,100.0f));
-    body.setPosition(100, 100);
+    body.setPosition(100, 1000);
 
-    body.setOrigin(75/2, 75/2);
+    body.setOrigin(75/2 ,75/2);
 
-    if(!text->loadFromFile("resources/sprites.png")) cout << "sadasds";
+    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds";
     
     body.setTexture(text);
-    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
 
     /*PU_saltoDoble = true;
     PU_velocidad = true;
@@ -49,7 +49,7 @@ Player::Player()
 } 
 
 Player::Player(int x, int y) 
-: animacion("sprites.png",
+: animacion("/Imagenes/mago.png",
             sf::Vector2u(40,19),
             0.33f,
             sf::Vector2f(100.0f,100.0f),
@@ -107,11 +107,6 @@ void Player::update(float deltaTime){
     body.move(0,jumpSpeed*deltaTime);
 }
 
-void Player::setSaltos(){
-  
-  //jumpHeight *= 2;
-  saltos+= 100;
-}
 
 
 void Player::setVidas(int v){
@@ -144,7 +139,7 @@ void Player::moveRight(float deltaTime){
   }
 
   if(puede){
-    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     body.setScale(1, 1);
     body.move(velocidad*deltaTime, 0);
   }
@@ -163,7 +158,7 @@ mapa* mundo = mapa::instance();
   }
 
   if(puede){
-    body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     body.setScale(-1, 1);
     body.move(-velocidad*deltaTime, 0);
   }
@@ -177,9 +172,6 @@ void Player::saltar(){
 }
 
 
-void Player::obtenerPU_SaltoDoble(){
-  PU_saltoDoble=true;
-}
 
 void Player::setArma(int p_arma){
   arma = p_arma;
@@ -191,6 +183,9 @@ void Player::setJumpSpeed(float p_speed){
 
 void Player::setSaltos(int p_saltos){
   saltos=p_saltos;
+}
+void Player::setVelocidad(float vel){
+  velocidad = vel;
 }
 void Player::setPosicion(float x, float y){
   sf::Vector2f pos;
@@ -222,4 +217,14 @@ void Player::updateHitbox(){
     coliArriba.top = gp.y-gbb.height/2 +25;
     coliArriba.width = gbb.width - 40;
     coliArriba.height = 5;
+}
+void Player::obtenerPU_SaltoDoble(){
+  PU_saltoDoble=true;
+}
+void Player::obtenerPU_Velocidad(){
+  PU_velocidad= true;
+  velocidad = 350;
+}
+void Player::obtenerPU_Slowhits(){
+  PU_slowhits= true;
 }

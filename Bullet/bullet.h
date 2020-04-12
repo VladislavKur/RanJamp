@@ -12,7 +12,7 @@ private:
     float velocidad;
     
 public:
-    Bullet(float, float, bool);
+    Bullet(float, float, bool, int);
     ~Bullet() {}
 
     float lifetime; //Contador que destruye la bala cuando llega a 0
