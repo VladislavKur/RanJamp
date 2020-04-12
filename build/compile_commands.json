@@ -1,11 +1,6 @@
 [
 {
   "directory": "/home/vermia/R/src/build",
-  "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c /home/vermia/R/src/main.cpp",
-  "file": "/home/vermia/R/src/main.cpp"
-},
-{
-  "directory": "/home/vermia/R/src/build",
   "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/vermia/R/src/Player/Player.cpp",
   "file": "/home/vermia/R/src/Player/Player.cpp"
 },
@@ -31,8 +26,8 @@
 },
 {
   "directory": "/home/vermia/R/src/build",
-  "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o -c /home/vermia/R/src/Enemigos/reptante.cpp",
-  "file": "/home/vermia/R/src/Enemigos/reptante.cpp"
+  "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c /home/vermia/R/src/Enemigos/pajaro.cpp",
+  "file": "/home/vermia/R/src/Enemigos/pajaro.cpp"
 },
 {
   "directory": "/home/vermia/R/src/build",
@@ -83,5 +78,15 @@
   "directory": "/home/vermia/R/src/build",
   "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/vermia/R/src/Texto/texto.cpp",
   "file": "/home/vermia/R/src/Texto/texto.cpp"
+},
+{
+  "directory": "/home/vermia/R/src/build",
+  "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/pajarraco.dir/pajarraco.cpp.o -c /home/vermia/R/src/pajarraco.cpp",
+  "file": "/home/vermia/R/src/pajarraco.cpp"
+},
+{
+  "directory": "/home/vermia/R/src/build",
+  "command": "/usr/bin/g++-5    -I/home/vermia/R/src/Player -I/home/vermia/R/src/Bullet -I/home/vermia/R/src/Animacion -I/home/vermia/R/src/Enemigos -I/home/vermia/R/src/Mapa -I/home/vermia/R/src/Motor -I/home/vermia/R/src/Juego -I/home/vermia/R/src/Objeto -I/home/vermia/R/src/Texto   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c /home/vermia/R/src/main.cpp",
+  "file": "/home/vermia/R/src/main.cpp"
 }
 ]

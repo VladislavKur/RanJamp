@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vermia/R/src/Enemigos/centinela.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
   "/home/vermia/R/src/Enemigos/enemigo.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
   "/home/vermia/R/src/Enemigos/murcielago.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "/home/vermia/R/src/Enemigos/reptante.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "/home/vermia/R/src/Enemigos/pajaro.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
   "/home/vermia/R/src/Juego/Juego.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "/home/vermia/R/src/Mapa/mapa.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
   "/home/vermia/R/src/Mapa/tinystr.cpp" "/home/vermia/R/src/build/CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"

@@ -40,7 +40,7 @@ iostream
 enemigo.h
 ../Enemigos/enemigo.h
 
-../Enemigos/reptante.h
+../Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
@@ -61,8 +61,8 @@ iostream
 ../Enemigos/murcielago.h
 ../Enemigos/centinela.h
 ../Enemigos/centinela.h
-../Enemigos/reptante.h
-../Enemigos/reptante.h
+../Enemigos/pajaro.h
+../Enemigos/pajaro.h
 ../Bullet/bullet.h
 ../Bullet/bullet.h
 ../Mapa/mapa.h
@@ -110,12 +110,6 @@ sstream
 tinystr.h
 ../Mapa/tinystr.h
 
-../Motor/Motor.h
-SFML/Graphics.hpp
--
-iostream
--
-
 ../Objeto/Objeto.h
 SFML/Graphics.hpp
 -
@@ -149,8 +143,8 @@ iostream
 /home/vermia/R/src/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
-Motor.h
-/home/vermia/R/src/Animacion/Motor.h
+../Motor/Motor.h
+/home/vermia/R/src/Motor/Motor.h
 
 /home/vermia/R/src/Bullet/bullet.cpp
 bullet.h
@@ -202,11 +196,11 @@ iostream
 enemigo.h
 /home/vermia/R/src/Enemigos/enemigo.h
 
-/home/vermia/R/src/Enemigos/reptante.cpp
-reptante.h
-/home/vermia/R/src/Enemigos/reptante.h
+/home/vermia/R/src/Enemigos/pajaro.cpp
+pajaro.h
+/home/vermia/R/src/Enemigos/pajaro.h
 
-/home/vermia/R/src/Enemigos/reptante.h
+/home/vermia/R/src/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
@@ -231,8 +225,8 @@ iostream
 /home/vermia/R/src/Enemigos/murcielago.h
 ../Enemigos/centinela.h
 /home/vermia/R/src/Enemigos/centinela.h
-../Enemigos/reptante.h
-/home/vermia/R/src/Enemigos/reptante.h
+../Enemigos/pajaro.h
+/home/vermia/R/src/Enemigos/pajaro.h
 ../Bullet/bullet.h
 /home/vermia/R/src/Bullet/bullet.h
 ../Mapa/mapa.h

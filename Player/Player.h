@@ -21,6 +21,9 @@ private:
     float cooldownSalto;
     float cooldownDisparo;
 
+    bool godMode;
+    int vidasAnteriores;
+
 public:
     //CANON
     Player();
@@ -33,8 +36,13 @@ public:
     void render();
     void update(float deltaTime);
     void updateHitbox();
+
+    void perderVida();
     
+    void toggleGodMode();
     void saltar();
+
+    void reset();
 
     //GET
     int getSaltos(){return saltos;}
@@ -47,23 +55,24 @@ public:
     int getVidas(){return vidas;}
     float getCooldownSalto(){return cooldownSalto;};
     float getCooldownDisparo(){return cooldownDisparo;}
+    float getVelocidad(){return velocidad;}
 
     //SET
     void obtenerPU_SaltoDoble();
-    void obtenerPU_Velocidad(){PU_velocidad = true;}
-    void obtenerPU_Slowhits(){PU_slowhits = true;}
+    void obtenerPU_Velocidad();
+    void obtenerPU_Slowhits();
 
     void perderPU_SaltoDoble();
     void perderPU_Velocidad();
     void perderPU_Slowhits();
 
     void setJumpSpeed(float);
-    void setSaltos();
+    
     void setSaltos(int);
     void avanzarCooldownDisparo(float deltaTime){cooldownDisparo-=deltaTime;};
     void setCooldownDisparo(float p_cooldown){cooldownDisparo=p_cooldown;}
 
-    void setVelocidad();
+    void setVelocidad(float);
     void setArma(int);
     void setVidas(int);
     void setPosicion(float, float );

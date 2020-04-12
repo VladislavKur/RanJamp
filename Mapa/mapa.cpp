@@ -346,7 +346,7 @@ int mapa::getNumObjetos(){
 }
 
 
-void mapa::liberar(){
+void mapa::liberar(){ //WIP preguntar fidel
     //liberar memoria
     for(int i = 0; i < _numLayers; i++)
     {

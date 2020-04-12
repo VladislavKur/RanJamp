@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../Motor/Motor.h
-SFML/Graphics.hpp
--
-iostream
--
-
 /home/vermia/R/src/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
-Motor.h
-/home/vermia/R/src/Animacion/Motor.h
+../Motor/Motor.h
+/home/vermia/R/src/Motor/Motor.h
 
 /home/vermia/R/src/Bullet/bullet.h
 SFML/Graphics.hpp
@@ -52,7 +46,7 @@ iostream
 enemigo.h
 /home/vermia/R/src/Enemigos/enemigo.h
 
-/home/vermia/R/src/Enemigos/reptante.h
+/home/vermia/R/src/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
@@ -73,8 +67,8 @@ iostream
 /home/vermia/R/src/Enemigos/murcielago.h
 ../Enemigos/centinela.h
 /home/vermia/R/src/Enemigos/centinela.h
-../Enemigos/reptante.h
-/home/vermia/R/src/Enemigos/reptante.h
+../Enemigos/pajaro.h
+/home/vermia/R/src/Enemigos/pajaro.h
 ../Bullet/bullet.h
 /home/vermia/R/src/Bullet/bullet.h
 ../Mapa/mapa.h

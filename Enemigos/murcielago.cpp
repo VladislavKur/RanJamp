@@ -21,10 +21,10 @@ Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
     
 };
 
-void Murcielago::update(Player* player, float delta){
+void Murcielago::update(Player* player, float delta){//WIP fachada
     sf::RectangleShape body = player->getBody();
 
-    float posJugadorX = body.getPosition().x;
+    float posJugadorX = body.getPosition().x; //WIP FACHADA
     float posJugadorY = body.getPosition().y;
 
     float local_diffX = posJugadorX - posX;
@@ -78,9 +78,9 @@ void Murcielago::update(Player* player, float delta){
     || coliArriba.intersects(player->coliAbajo)
     ){
         if(!haPegado)
-            player->setVidas(player->getVidas()-1);
+            player->perderVida();
         haPegado = true;
-        std::cout<<"muero"<<std::endl;
+        //std::cout<<"muero"<<std::endl;
         morir();
     }
     
@@ -112,8 +112,9 @@ void Murcielago::updateHitbox(){
 void Murcielago::render(float porcentaje){
     cuerpo.setPosition(
         posXanterior + diffX*porcentaje,
-        posYanterior + diffY*porcentaje );
+        posYanterior + diffY*porcentaje ); //se actualiza la posicion del cuerpo, also WIP fachada
     //std::cout << "ENTRO EN RENDER enemigo , " << posXanterior <<  ", " << posYanterior  << std::endl;
+    //falta poner que la animacion haga cosas
     Motor * motor = Motor::instance();
     motor->dibujo(cuerpo);
     

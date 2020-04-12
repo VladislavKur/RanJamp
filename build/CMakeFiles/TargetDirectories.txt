@@ -1,7 +1,8 @@
 /home/vermia/R/src/build/CMakeFiles/edit_cache.dir
-/home/vermia/R/src/build/CMakeFiles/rebuild_cache.dir
-/home/vermia/R/src/build/CMakeFiles/ranJamp.dir
 /home/vermia/R/src/build/CMakeFiles/libClases.dir
+/home/vermia/R/src/build/CMakeFiles/pajarraco.dir
+/home/vermia/R/src/build/CMakeFiles/ranJamp.dir
+/home/vermia/R/src/build/CMakeFiles/rebuild_cache.dir
 /home/vermia/R/src/build/Player/CMakeFiles/edit_cache.dir
 /home/vermia/R/src/build/Player/CMakeFiles/rebuild_cache.dir
 /home/vermia/R/src/build/Bullet/CMakeFiles/edit_cache.dir

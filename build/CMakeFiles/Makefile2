@@ -60,43 +60,6 @@ CMAKE_SOURCE_DIR = /home/vermia/R/src
 CMAKE_BINARY_DIR = /home/vermia/R/src/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/ranJamp.dir
-
-# All Build rule for target.
-CMakeFiles/ranJamp.dir/all: CMakeFiles/libClases.dir/all
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/depend
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vermia/R/src/build/CMakeFiles --progress-num=18,19 "Built target ranJamp"
-.PHONY : CMakeFiles/ranJamp.dir/all
-
-# Include target in all.
-all: CMakeFiles/ranJamp.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ranJamp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/R/src/build/CMakeFiles 19
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ranJamp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/R/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/ranJamp.dir/rule
-
-# Convenience name for target.
-ranJamp: CMakeFiles/ranJamp.dir/rule
-
-.PHONY : ranJamp
-
-# clean rule for target.
-CMakeFiles/ranJamp.dir/clean:
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/clean
-.PHONY : CMakeFiles/ranJamp.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/ranJamp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/libClases.dir
 
 # All Build rule for target.
@@ -130,6 +93,80 @@ CMakeFiles/libClases.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/libClases.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pajarraco.dir
+
+# All Build rule for target.
+CMakeFiles/pajarraco.dir/all: CMakeFiles/libClases.dir/all
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/depend
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vermia/R/src/build/CMakeFiles --progress-num=18,19 "Built target pajarraco"
+.PHONY : CMakeFiles/pajarraco.dir/all
+
+# Include target in all.
+all: CMakeFiles/pajarraco.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pajarraco.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/R/src/build/CMakeFiles 19
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pajarraco.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/R/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/pajarraco.dir/rule
+
+# Convenience name for target.
+pajarraco: CMakeFiles/pajarraco.dir/rule
+
+.PHONY : pajarraco
+
+# clean rule for target.
+CMakeFiles/pajarraco.dir/clean:
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/clean
+.PHONY : CMakeFiles/pajarraco.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pajarraco.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ranJamp.dir
+
+# All Build rule for target.
+CMakeFiles/ranJamp.dir/all: CMakeFiles/libClases.dir/all
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/depend
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vermia/R/src/build/CMakeFiles --progress-num=20,21 "Built target ranJamp"
+.PHONY : CMakeFiles/ranJamp.dir/all
+
+# Include target in all.
+all: CMakeFiles/ranJamp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ranJamp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/R/src/build/CMakeFiles 19
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ranJamp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/R/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/ranJamp.dir/rule
+
+# Convenience name for target.
+ranJamp: CMakeFiles/ranJamp.dir/rule
+
+.PHONY : ranJamp
+
+# clean rule for target.
+CMakeFiles/ranJamp.dir/clean:
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/clean
+.PHONY : CMakeFiles/ranJamp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ranJamp.dir/clean
 
 .PHONY : clean
 

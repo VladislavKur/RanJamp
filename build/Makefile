@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ranJamp
-
-# Build rule for target.
-ranJamp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ranJamp
-.PHONY : ranJamp
-
-# fast build rule for target.
-ranJamp/fast:
-	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
-.PHONY : ranJamp/fast
-
-#=============================================================================
 # Target rules for targets named libClases
 
 # Build rule for target.
@@ -135,6 +122,32 @@ libClases: cmake_check_build_system
 libClases/fast:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/build
 .PHONY : libClases/fast
+
+#=============================================================================
+# Target rules for targets named pajarraco
+
+# Build rule for target.
+pajarraco: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pajarraco
+.PHONY : pajarraco
+
+# fast build rule for target.
+pajarraco/fast:
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/build
+.PHONY : pajarraco/fast
+
+#=============================================================================
+# Target rules for targets named ranJamp
+
+# Build rule for target.
+ranJamp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ranJamp
+.PHONY : ranJamp
+
+# fast build rule for target.
+ranJamp/fast:
+	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
+.PHONY : ranJamp/fast
 
 Animacion/Animacion.o: Animacion/Animacion.cpp.o
 
@@ -271,32 +284,32 @@ Enemigos/murcielago.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.s
 .PHONY : Enemigos/murcielago.cpp.s
 
-Enemigos/reptante.o: Enemigos/reptante.cpp.o
+Enemigos/pajaro.o: Enemigos/pajaro.cpp.o
 
-.PHONY : Enemigos/reptante.o
+.PHONY : Enemigos/pajaro.o
 
 # target to build an object file
-Enemigos/reptante.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
-.PHONY : Enemigos/reptante.cpp.o
+Enemigos/pajaro.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
+.PHONY : Enemigos/pajaro.cpp.o
 
-Enemigos/reptante.i: Enemigos/reptante.cpp.i
+Enemigos/pajaro.i: Enemigos/pajaro.cpp.i
 
-.PHONY : Enemigos/reptante.i
+.PHONY : Enemigos/pajaro.i
 
 # target to preprocess a source file
-Enemigos/reptante.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/reptante.cpp.i
-.PHONY : Enemigos/reptante.cpp.i
+Enemigos/pajaro.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i
+.PHONY : Enemigos/pajaro.cpp.i
 
-Enemigos/reptante.s: Enemigos/reptante.cpp.s
+Enemigos/pajaro.s: Enemigos/pajaro.cpp.s
 
-.PHONY : Enemigos/reptante.s
+.PHONY : Enemigos/pajaro.s
 
 # target to generate assembly for a file
-Enemigos/reptante.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/reptante.cpp.s
-.PHONY : Enemigos/reptante.cpp.s
+Enemigos/pajaro.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s
+.PHONY : Enemigos/pajaro.cpp.s
 
 Juego/Juego.o: Juego/Juego.cpp.o
 
@@ -595,6 +608,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pajarraco.o: pajarraco.cpp.o
+
+.PHONY : pajarraco.o
+
+# target to build an object file
+pajarraco.cpp.o:
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/pajarraco.cpp.o
+.PHONY : pajarraco.cpp.o
+
+pajarraco.i: pajarraco.cpp.i
+
+.PHONY : pajarraco.i
+
+# target to preprocess a source file
+pajarraco.cpp.i:
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/pajarraco.cpp.i
+.PHONY : pajarraco.cpp.i
+
+pajarraco.s: pajarraco.cpp.s
+
+.PHONY : pajarraco.s
+
+# target to generate assembly for a file
+pajarraco.cpp.s:
+	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/pajarraco.cpp.s
+.PHONY : pajarraco.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -602,9 +642,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... ranJamp"
 	@echo "... libClases"
+	@echo "... pajarraco"
+	@echo "... ranJamp"
+	@echo "... rebuild_cache"
 	@echo "... Animacion/Animacion.o"
 	@echo "... Animacion/Animacion.i"
 	@echo "... Animacion/Animacion.s"
@@ -620,9 +661,9 @@ help:
 	@echo "... Enemigos/murcielago.o"
 	@echo "... Enemigos/murcielago.i"
 	@echo "... Enemigos/murcielago.s"
-	@echo "... Enemigos/reptante.o"
-	@echo "... Enemigos/reptante.i"
-	@echo "... Enemigos/reptante.s"
+	@echo "... Enemigos/pajaro.o"
+	@echo "... Enemigos/pajaro.i"
+	@echo "... Enemigos/pajaro.s"
 	@echo "... Juego/Juego.o"
 	@echo "... Juego/Juego.i"
 	@echo "... Juego/Juego.s"
@@ -656,6 +697,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pajarraco.o"
+	@echo "... pajarraco.i"
+	@echo "... pajarraco.s"
 .PHONY : help
 
 
