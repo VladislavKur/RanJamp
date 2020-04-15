@@ -50,6 +50,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
       disparar(deltaTime);
   }
+  
+  
+    
     //el for de abajo, mejor en una función aparte, por claridad y organizacion
     for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] != NULL){
@@ -71,15 +74,16 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
     colisionPlayerMundo(deltaTime);
-    colisionBulletMundo(deltaTime);
-    colisionBulletEnemigo(deltaTime);
-    colisionBulletJugador(deltaTime);
+    colisionBulletMundo();
+    colisionBulletEnemigo();
+    colisionBulletJugador();
     
     jugador->update(deltaTime , mundo); //revisar
    
     int j = 0;
     while(objetos[j] != nullptr && j < numObjetos){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
      
+       if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
       if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
 
             switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
@@ -102,7 +106,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     jugador->obtenerPU_Velocidad();
                      destruirObjetos(objetos[j]);
                     break;
-            
+                case 4: 
+                    destruirObjetos(objetos[j]);
+                    break;
             default:
                 std:: cout <<"Default" << std::endl;
                 break;
@@ -306,8 +312,9 @@ void Juego::crearEnemigos(){ //está nice
         enemies[i] = (Enemigo *) centinela;
     }
     else if(posicion[i][2] == 4){
-        Reptante * reptante = new Reptante(posx, posy); // WIP el reptante está sin terminar LOL
-        enemies[i] = (Enemigo *) reptante;
+        //cout << "he añadido reptante" << endl; //eliminar
+        Pajaro * pajaro = new Pajaro(posx, posy); // WIP el reptante está sin terminar LOL
+        enemies[i] = (Enemigo *) pajaro;
     }
 
   }
@@ -333,6 +340,7 @@ void Juego::matarJugador(){ //está nice
   mundo->crearSprites();
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
+  mundo->cargarPosicionPlayer_Puerta(4);
   jugador = new Player();
   crearObjetos();
   crearEnemigos();
@@ -365,7 +373,7 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
 }
 
 
-void Juego::colisionBulletMundo(float deltaTime){//WIP fachada
+void Juego::colisionBulletMundo(){//WIP fachada
     RectangleShape ** objetos = mundo->getObjetos();
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
@@ -381,7 +389,7 @@ void Juego::colisionBulletMundo(float deltaTime){//WIP fachada
   }
 }
 
-void Juego::colisionBulletJugador(float deltaTime){ //WIP fachada
+void Juego::colisionBulletJugador(){ //WIP fachada
   bool morir = false;
   for(unsigned int i = 0; i < maxBullets; i++){
 
@@ -403,7 +411,7 @@ void Juego::colisionBulletJugador(float deltaTime){ //WIP fachada
   
 }
 
-void Juego::colisionBulletEnemigo(float deltaTime){//WIP fachada
+void Juego::colisionBulletEnemigo(){//WIP fachada
   for(unsigned int i=0 ; i < maxBullets ; i++){
     for(int j=0 ; j<numEmenigos ; j++){
       if(bulletPlayer[i]==NULL) continue;
@@ -431,12 +439,18 @@ void Juego::cargarMusica(){
 
 void Juego::comprobarPasarNivel(){
  if( mundo->getPuerta()->getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
+   nextLevel();
+ }
+}
+
+void Juego::nextLevel(){
     delete mundo;
     mundo = new Mundo();
     mundo->cargarmapa("Nivel2.tmx");
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
+    mundo->cargarPosicionPlayer_Puerta(4);
     jugador = new Player();
     crearObjetos();
     crearEnemigos();
@@ -447,9 +461,6 @@ void Juego::comprobarPasarNivel(){
     }
 
     for(int i = 0; i < maxBullets;i++){
-
         bulletEnemies[i] = NULL;
-
     }
- }
 }

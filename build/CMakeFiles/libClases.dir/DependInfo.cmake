@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-  "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
+  "/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Hud/hud.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu.cpp.o"

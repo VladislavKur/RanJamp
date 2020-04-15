@@ -1,11 +1,6 @@
 [
 {
   "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/main.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/main.cpp"
-},
-{
-  "directory": "/home/andres/Escritorio/FV JUNTO/build",
   "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Player/Player.cpp\"",
   "file": "/home/andres/Escritorio/FV JUNTO/Player/Player.cpp"
 },
@@ -31,8 +26,8 @@
 },
 {
   "directory": "/home/andres/Escritorio/FV JUNTO/build",
-  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp\"",
-  "file": "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp"
+  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp\"",
+  "file": "/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp"
 },
 {
   "directory": "/home/andres/Escritorio/FV JUNTO/build",
@@ -98,5 +93,15 @@
   "directory": "/home/andres/Escritorio/FV JUNTO/build",
   "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp\"",
   "file": "/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp"
+},
+{
+  "directory": "/home/andres/Escritorio/FV JUNTO/build",
+  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/pajarraco.dir/pajarraco.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/pajarraco.cpp\"",
+  "file": "/home/andres/Escritorio/FV JUNTO/pajarraco.cpp"
+},
+{
+  "directory": "/home/andres/Escritorio/FV JUNTO/build",
+  "command": "/usr/bin/g++-5    -I\"/home/andres/Escritorio/FV JUNTO/Player\" -I\"/home/andres/Escritorio/FV JUNTO/Bullet\" -I\"/home/andres/Escritorio/FV JUNTO/Animacion\" -I\"/home/andres/Escritorio/FV JUNTO/Enemigos\" -I\"/home/andres/Escritorio/FV JUNTO/Mundo\" -I\"/home/andres/Escritorio/FV JUNTO/Motor\" -I\"/home/andres/Escritorio/FV JUNTO/Juego\" -I\"/home/andres/Escritorio/FV JUNTO/Objeto\" -I\"/home/andres/Escritorio/FV JUNTO/Texto\" -I\"/home/andres/Escritorio/FV JUNTO/Menu\" -I\"/home/andres/Escritorio/FV JUNTO/Hud\" -I\"/home/andres/Escritorio/FV JUNTO/Musica\"   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c \"/home/andres/Escritorio/FV JUNTO/main.cpp\"",
+  "file": "/home/andres/Escritorio/FV JUNTO/main.cpp"
 }
 ]

@@ -177,28 +177,28 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o.provides: CMakeFiles/libClase
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o.provides.build: CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
 
 
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/reptante.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp"
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Enemigos/pajaro.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp"
 
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/reptante.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp" > CMakeFiles/libClases.dir/Enemigos/reptante.cpp.i
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp" > CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i
 
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/reptante.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp" -o CMakeFiles/libClases.dir/Enemigos/reptante.cpp.s
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp" -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s
 
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.requires:
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.requires:
 
-.PHONY : CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.requires
+.PHONY : CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.requires
 
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.provides: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.provides
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.provides: CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.provides
 
-CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.provides.build: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.provides.build: CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
 
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: CMakeFiles/libClases.dir/flags.make
@@ -520,7 +520,7 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o" \
 "CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o" \
 "CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o" \
-"CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o" \
+"CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o" \
 "CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o" \
 "CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o" \
 "CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o" \
@@ -543,7 +543,7 @@ liblibClases.a: CMakeFiles/libClases.dir/Bullet/bullet.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o
@@ -573,7 +573,7 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bullet/bullet.cpp.o.
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.requires

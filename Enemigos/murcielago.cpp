@@ -80,7 +80,7 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
         haPegado = true;
-        std::cout<<"muero"<<std::endl;
+        //std::cout<<"muero"<<std::endl;
         morir();
     }
     

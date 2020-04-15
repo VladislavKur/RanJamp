@@ -5,7 +5,7 @@
 #include "../Enemigos/enemigo.h"
 #include "../Enemigos/murcielago.h"
 #include "../Enemigos/centinela.h"
-#include "../Enemigos/reptante.h"
+#include "../Enemigos/pajaro.h"
 #include "../Bullet/bullet.h"
 #include "../Mundo/Mundo.h"
 #include "../Objeto/Objeto.h"
@@ -39,10 +39,10 @@
             void update(float deltaTime);
             void render(float porcentaje);            
 
-            void colisionBulletJugador(float deltatime);
-            void colisionBulletEnemigo(float deltaTime);
-            void colisionPlayerMundo(float deltaTime);
-            void colisionBulletMundo(float deltaTime);
+            void colisionBulletJugador();
+            void colisionBulletEnemigo();
+            void colisionPlayerMundo(float deltatime);
+            void colisionBulletMundo();
             
             void cargarMusica();
             void crearObjetos();
@@ -57,7 +57,7 @@
             void comprobarPasarNivel();
             sf::View view;
 
-         
+            void nextLevel();
     };
 
 #endif

@@ -100,7 +100,37 @@ int main() {
 
         case sf::Event::EventType::KeyPressed:
 
-          switch (event.key.code) {
+        switch (event.key.code) {
+          /*Sif(sf::Keyboard::isKeyPressed(sf::Keyboard::X)){ //WIP FACHADA y LECTURA TECLADO
+      jugador->morir();
+  }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::G)){ //WIP FACHADA y LECTURA TECLADO
+      jugador->godMode();
+  }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::R)){ //WIP FACHADA y LECTURA TECLADO
+      
+  }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::N)){ //WIP FACHADA y LECTURA TECLADO
+      
+  }*/
+        case sf::Keyboard::P:
+          instancia->getJugador()->obtenerPU_SaltoDoble();
+          instancia->getJugador()->obtenerPU_Slowhits();
+          instancia->getJugador()->obtenerPU_Velocidad();
+        break;
+        case sf::Keyboard::X:
+          instancia->matarJugador();
+        break;
+        case sf::Keyboard::G:
+          instancia->getJugador()->toggleGodMode();
+        break;
+        case sf::Keyboard::R:
+          instancia->getJugador()->reset();
+        break;
+
+        case sf::Keyboard::N:
+          instancia->nextLevel();
+        break;
 
           default:
             break;

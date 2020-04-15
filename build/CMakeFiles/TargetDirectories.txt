@@ -1,7 +1,8 @@
 /home/andres/Escritorio/FV JUNTO/build/CMakeFiles/edit_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/rebuild_cache.dir
-/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/ranJamp.dir
 /home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir
+/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/pajarraco.dir
+/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/ranJamp.dir
+/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/rebuild_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Player/CMakeFiles/edit_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Player/CMakeFiles/rebuild_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Bullet/CMakeFiles/edit_cache.dir

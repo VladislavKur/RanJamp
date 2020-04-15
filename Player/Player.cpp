@@ -16,13 +16,14 @@ Player::Player()
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=30;
-    arma=1;  
+    arma=0;  
     vidas = 5; 
     velocidad=250;
 
-    PU_saltoDoble=true;
+    PU_saltoDoble=false;
     PU_slowhits=false;
     PU_velocidad=false;
+    godMode=false;
 
     auxSaltos = true;
     cooldownSalto = 0;
@@ -65,6 +66,8 @@ Player::Player(int x, int y)
     arma=0;  
     vidas = 5;  
     velocidad=1;
+    godMode=false;
+
     
 }
 
@@ -103,17 +106,15 @@ void Player::update(float deltaTime , Mundo * mundo){
     body.move(0,jumpSpeed*deltaTime); //wip fachada
 }
 
-void Player::setSaltos(){
-  
-  //jumpHeight *= 2;
-  saltos+= 100;
-}
 
 
 bool Player::setVidas(int v){
   bool devolver = false; 
-  vidas = v;
-  if(vidas == 0){
+  if((godMode  == true && (v > vidas)) || godMode == false){
+      vidas = v;
+  }
+
+  if(vidas == 0 && godMode == false){
     devolver = true; 
   }
 
@@ -168,9 +169,6 @@ void Player::saltar(){
 }
 
 
-void Player::obtenerPU_SaltoDoble(){
-  PU_saltoDoble=true;
-}
 
 void Player::setArma(int p_arma){
   arma = p_arma;
@@ -182,6 +180,9 @@ void Player::setJumpSpeed(float p_speed){
 
 void Player::setSaltos(int p_saltos){
   saltos=p_saltos;
+}
+void Player::setVelocidad(float vel){
+  velocidad = vel;
 }
 void Player::setPosicion(float x, float y){
   sf::Vector2f pos;
@@ -213,4 +214,63 @@ void Player::updateHitbox(){
     coliArriba.top = gp.y-gbb.height/2 +25;
     coliArriba.width = gbb.width - 40;
     coliArriba.height = 5;
+}
+void Player::obtenerPU_SaltoDoble(){
+  PU_saltoDoble=true;
+}
+void Player::obtenerPU_Velocidad(){
+  PU_velocidad= true;
+  velocidad = 350;
+}
+void Player::obtenerPU_Slowhits(){
+  PU_slowhits= true;
+}
+
+
+// void Player::perderVida(){
+//   if(!godMode){
+//     vidas--;
+//     if(vidas<=0){
+//       morir();
+//     }
+//   }
+// }
+
+void Player::toggleGodMode(){
+  if(godMode){
+    godMode=false;
+  } else{
+    godMode=true;
+    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
+  }
+}
+
+void Player::reset(){
+  sf::Texture *text = new sf::Texture; //wip fachada
+
+    saltos = 1;
+    jumpSpeed=0;
+    jumpHeight=30;
+    arma=0;  
+    vidas = 5; 
+    velocidad=250;
+
+    PU_saltoDoble=false;
+    PU_slowhits=false;
+    PU_velocidad=false;
+    godMode=false;
+
+    auxSaltos = true;
+    cooldownSalto = 0;
+    cooldownDisparo = 0;
+
+    body.setSize(sf::Vector2f(100.0f,100.0f)); //wip fachada
+    body.setPosition(100, 1000); //wip fachada
+
+    body.setOrigin(75/2 ,75/2); //wip fachada
+
+    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
+    
+    body.setTexture(text); //wip fachada
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada
 }

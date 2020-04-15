@@ -276,6 +276,7 @@ Vector2f Mundo::cargarPosicionPlayer_Puerta(int i){
     }
     return pos;
 }
+
 void Mundo::render(){
 
   Motor * motor = Motor::instance();

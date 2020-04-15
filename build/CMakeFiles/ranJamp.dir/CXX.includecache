@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../Motor/Motor.h
-SFML/Graphics.hpp
--
-iostream
--
-
 /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
-Motor.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Motor.h
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 SFML/Graphics.hpp
@@ -52,7 +46,7 @@ iostream
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
@@ -81,8 +75,8 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
 ../Enemigos/centinela.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
-../Enemigos/reptante.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+../Enemigos/pajaro.h
+/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.h
 ../Bullet/bullet.h
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
 ../Mundo/Mundo.h
