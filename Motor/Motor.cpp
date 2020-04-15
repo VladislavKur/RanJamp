@@ -31,28 +31,6 @@ Motor* Motor::instance(){
     return(pinstance);
 }
 
-// bool Motor::instanced = false;
-
-// bool Motor::crearVentana(){
-
-//     bool devolver = false;
-
-//     //if(!instanced){
-
-//         devolver = true;
-
-//         ventana->create(sf::VideoMode(1080,720),"Totally not Pengo");
-
-//         updateClock.restart();
-
-//         instanced = true;
-//     //}
-
-//     return(devolver);
-
-// }
-
-
 
 void Motor::dibujo(sf::RectangleShape entrada){
 

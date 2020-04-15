@@ -1,10 +1,6 @@
 
 #include "Player.h"
-#include <SFML/Graphics.hpp>
-#include <iostream>
-#include "Juego.h"
 
-using namespace sf;
 Player::~Player(){
 
 }
@@ -33,7 +29,7 @@ Player::Player()
     cooldownDisparo = 0;
 
     body.setSize(sf::Vector2f(100.0f,100.0f)); //wip fachada
-    body.setPosition(100, 1000); //wip fachada
+    body.setPosition(100, 950); //wip fachada
 
     body.setOrigin(75/2 ,75/2); //wip fachada
 
@@ -72,7 +68,7 @@ Player::Player(int x, int y)
     
 }
 
-void Player::update(float deltaTime){
+void Player::update(float deltaTime , Mundo * mundo){
     
     updateHitbox(); //arreglar lo de update hitbox
 
@@ -95,10 +91,10 @@ void Player::update(float deltaTime){
     }
     
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
-        moveRight(deltaTime);
+        moveRight(deltaTime , mundo);
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
-        moveLeft(deltaTime);
+        moveLeft(deltaTime, mundo);
     }
 
   
@@ -114,29 +110,25 @@ void Player::setSaltos(){
 }
 
 
-void Player::setVidas(int v){
+bool Player::setVidas(int v){
+  bool devolver = false; 
   vidas = v;
-  if(vidas == 0)
-    morir();
-}
+  if(vidas == 0){
+    devolver = true; 
+  }
 
-void Player::morir(){
-  //body.setSize(sf::Vector2f(0,0));
-  Juego* juego = Juego::instance();
-  juego->matarJugador();
- 
+  return devolver;
 }
 
 void Player::render(){
   Motor * motor = Motor::instance();
   motor->dibujo(body);
 }
-void Player::moveRight(float deltaTime){
-  mapa* mundo = mapa::instance();
-  bool puede=true;
+void Player::moveRight(float deltaTime , Mundo * mundo){
+  bool puede = true;
   RectangleShape ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
+  for( int i=0; i< mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
         puede=false;
@@ -150,8 +142,7 @@ void Player::moveRight(float deltaTime){
   }
 }
 
-void Player::moveLeft(float deltaTime){
-mapa* mundo = mapa::instance();
+void Player::moveLeft(float deltaTime , Mundo * mundo){
   bool puede=true;
   RectangleShape ** objetos = mundo->getObjetos();
 

@@ -1,8 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../Animacion/Animacion.h"
-
-
+#include "../Mundo/Mundo.h"
 
 class Player
 {
@@ -31,7 +30,7 @@ public:
 
     //FUNCIONALIDAD
     void render();
-    void update(float deltaTime);
+    void update(float deltaTime , Mundo * mundo);
     void updateHitbox();
     
     void saltar();
@@ -65,13 +64,11 @@ public:
 
     void setVelocidad();
     void setArma(int);
-    void setVidas(int);
+    bool setVidas(int);
     void setPosicion(float, float );
 
-    void moveRight(float deltaTime);
-    void moveLeft(float deltaTime);
-
-    void morir();
+    void moveRight(float deltaTime, Mundo * mundo);
+    void moveLeft(float deltaTime, Mundo * mundo);
 
     sf::FloatRect coliAbajo;
     sf::FloatRect coliArriba;

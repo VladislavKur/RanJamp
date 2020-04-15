@@ -6,137 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../Bullet/bullet.h
-SFML/Graphics.hpp
--
-../Motor/Motor.h
-../Motor/Motor.h
-
-../Enemigos/centinela.h
-SFML/Graphics.hpp
--
-iostream
--
-enemigo.h
-../Enemigos/enemigo.h
-../Bullet/bullet.h
-../Bullet/bullet.h
-
-../Enemigos/enemigo.h
-SFML/Graphics.hpp
--
-iostream
--
-../Motor/Motor.h
-../Motor/Motor.h
-../Player/Player.h
-../Player/Player.h
-
-../Enemigos/murcielago.h
-SFML/Graphics.hpp
--
-iostream
--
-enemigo.h
-../Enemigos/enemigo.h
-
-../Enemigos/reptante.h
-SFML/Graphics.hpp
--
-iostream
--
-enemigo.h
-../Enemigos/enemigo.h
-
-../Juego/Juego.h
-SFML/Graphics.hpp
--
-iostream
--
-../Player/Player.h
-../Player/Player.h
-../Enemigos/enemigo.h
-../Enemigos/enemigo.h
-../Enemigos/murcielago.h
-../Enemigos/murcielago.h
-../Enemigos/centinela.h
-../Enemigos/centinela.h
-../Enemigos/reptante.h
-../Enemigos/reptante.h
-../Bullet/bullet.h
-../Bullet/bullet.h
-../Mapa/mapa.h
-../Mapa/mapa.h
-../Objeto/Objeto.h
-../Objeto/Objeto.h
-../Texto/texto.h
-../Texto/texto.h
-
-../Mapa/mapa.h
-SFML/Graphics.hpp
--
-iostream
--
-SFML/System.hpp
--
-tinyxml.h
-../Mapa/tinyxml.h
-../Motor/Motor.h
-../Motor/Motor.h
-
-../Mapa/tinystr.h
-assert.h
--
-string.h
--
-
-../Mapa/tinyxml.h
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-assert.h
--
-string
--
-iostream
--
-sstream
--
-tinystr.h
-../Mapa/tinystr.h
-
 ../Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
-
-../Objeto/Objeto.h
-SFML/Graphics.hpp
--
-../Player/Player.h
-../Player/Player.h
-
-../Player/Player.h
-SFML/Graphics.hpp
--
-../Animacion/Animacion.h
-../Animacion/Animacion.h
-
-../Texto/texto.h
-SFML/System.hpp
--
-SFML/Graphics.hpp
--
-iostream
--
-../Motor/Motor.h
-../Motor/Motor.h
 
 /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp
 Animacion.h
@@ -214,6 +88,18 @@ iostream
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
+/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp
+hud.h
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
 Juego.h
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
@@ -235,18 +121,44 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
 ../Bullet/bullet.h
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
-../Mapa/mapa.h
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+../Mundo/Mundo.h
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
 ../Objeto/Objeto.h
 /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
 ../Texto/texto.h
 /home/andres/Escritorio/FV JUNTO/Texto/texto.h
+../Musica/musica.h
+/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+../Hud/hud.h
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
-mapa.h
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp
+menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
+Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.cpp
+Mundo.h
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
 SFML/Graphics.hpp
 -
 iostream
@@ -254,21 +166,21 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp
+/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.cpp
 tinystr.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.cpp
 ctype.h
 -
 sstream
@@ -276,9 +188,9 @@ sstream
 iostream
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -296,28 +208,28 @@ iostream
 sstream
 -
 tinystr.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlerror.cpp
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlparser.cpp
 ctype.h
 -
 stddef.h
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 windows.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
-Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp
+musica.h
+/home/andres/Escritorio/FV JUNTO/Musica/musica.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
-SFML/Graphics.hpp
+/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+SFML/Audio.hpp
 -
 iostream
 -
@@ -339,18 +251,14 @@ SFML/Graphics.hpp
 /home/andres/Escritorio/FV JUNTO/Player/Player.cpp
 Player.h
 /home/andres/Escritorio/FV JUNTO/Player/Player.h
-SFML/Graphics.hpp
--
-iostream
--
-Juego.h
-/home/andres/Escritorio/FV JUNTO/Player/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
 /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+../Mundo/Mundo.h
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
 
 /home/andres/Escritorio/FV JUNTO/Texto/texto.cpp
 texto.h

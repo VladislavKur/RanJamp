@@ -1,0 +1,49 @@
+El grupo se ha divivido en 3 parejas: 
+
+Alejandro, Andrés: 
+    
+        -Cargar los mapas.  !!HECHO!!
+        -Dibujar los mapas.	!!HECHO!!
+        -Diseñar los mapas(capas, ...).	  !!HECHO!!
+    	-Crear Personajes y Enemigos (Diseño) !!HECHO!!!
+        -Menú. 	!ATRASADO!
+        -Sonido y Música (Cargarlos).!ATRASADO!
+
+
+Mónica, Antonio:
+    -IA de los enemigos (Diagramas de máquina de estados).
+        -enemCentil.cpp, enemMurcielago.cpp, enemRep.cpp    !!HECHO!!!!HECHO!!!!ATRASADO!!
+    -Características de los enemigos (vida, fuerza, velocidad propia). !!HECHO!!
+        -centinela.h, centinela.cpp, murcielago.h, murcielago.cpp
+    -Matar enemigo. 		!!HECHO!!
+    -Morir por enemigo (2 golpes) → Prueba de vida del personaje.
+        -matarpersonaje.cpp		!!HECHO!!
+    -Interpolación de render.
+        -enemCentil.cpp, enemMurcielago.cpp, enemRep.cpp, centinela.cpp, murcielago.cpp		!ATRASADO!
+
+Vladis, Martín: 
+    
+        -Personaje y movimientos básicos. 	!!HECHO!!!
+    -Físicas del juego (gravedad, velocidad). 	!!HECHO!!!
+        -Colisión objetos fijos. 		!!HECHO!!!
+    -Físicas y colisiones con plataformas. 	!!HECHO!!!
+        -Objetos-PowerUp 			!!HECHO!!!
+        -Personaje recogiendo armas.		!ATRASADO!
+        -Personaje Disparando.			!!HECHO!!!
+	-Camara que sigue al player (limitada por mapa) !!HECHO!!!
+
+
+
+Problemas Durante el Hito 2:
+	+ Muerte de player por Enemigo, daba segmentation Fault
+	+ Cargar Texturas y su implementacion
+	+ Problemas de herencia
+	+ Juntar codigo no presencialmente
+
+
+	
+% en funcion de horas Horas aproximadas de trabajo: 
+
+Alejandro, Andrés : 32+- h. (andres 60%, Alejandro 40%)
+Antonio , Monica: 30-32 h.  (Antonio 50% , Monica 50% )
+Vladis , Martín : 30-35 h.  (Martin 50 %, Vladis 50%)

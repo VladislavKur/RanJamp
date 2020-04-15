@@ -16,6 +16,9 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.cpp
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Motor/Motor.h
@@ -23,6 +26,9 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.cpp
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Motor/Motor.h
@@ -31,6 +37,9 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/murcielago.cpp
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Player/Player.h
 
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Motor/Motor.h
@@ -39,7 +48,14 @@ CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/reptante.cpp
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Enemigos/reptante.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o: ../Player/Player.h
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
+CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.h
+CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Motor/Motor.h
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Animacion/Animacion.h
@@ -48,60 +64,65 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/reptante.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Hud/hud.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.h
-CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/mapa.h
-CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/tinystr.h
-CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mapa/tinyxml.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mundo/tinyxml.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Musica/musica.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Player/Player.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Texto/texto.h
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.cpp
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.h
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinystr.h
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/tinyxml.h
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Motor/Motor.h
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.cpp
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.h
-
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinystr.h
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinyxml.cpp
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinyxml.h
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinystr.h
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinyxml.h
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinyxmlerror.cpp
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinystr.h
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinyxml.h
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinyxmlparser.cpp
+CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
+CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.h
+CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Motor/Motor.h
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.h
 
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/Mundo.cpp
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/tinyxml.h
+
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: ../Mundo/tinystr.cpp
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: ../Mundo/tinystr.h
+
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: ../Mundo/tinyxml.cpp
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: ../Mundo/tinyxml.h
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: ../Mundo/tinyxml.h
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: ../Mundo/tinyxmlerror.cpp
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: ../Mundo/tinyxml.h
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: ../Mundo/tinyxmlparser.cpp
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
+CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.h
+
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Player/Player.h
 
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Bullet/bullet.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/centinela.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/enemigo.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/murcielago.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enemigos/reptante.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Juego/Juego.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/mapa.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/tinystr.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mapa/tinyxml.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Motor/Motor.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Objeto/Objeto.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.h
-CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Texto/texto.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/Mundo.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/tinystr.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.cpp
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.h
 

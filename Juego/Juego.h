@@ -7,9 +7,11 @@
 #include "../Enemigos/centinela.h"
 #include "../Enemigos/reptante.h"
 #include "../Bullet/bullet.h"
-#include "../Mapa/mapa.h"
+#include "../Mundo/Mundo.h"
 #include "../Objeto/Objeto.h"
 #include "../Texto/texto.h"
+#include "../Musica/musica.h"
+#include "../Hud/hud.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
@@ -24,8 +26,11 @@
             Bullet* bulletEnemies[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
-            texto * t;
+            //texto * t;
+            musica * so;
             int numObjetos;
+            Mundo * mundo;
+            int nivel;
         protected:
             Juego();
 
@@ -38,7 +43,8 @@
             void colisionBulletEnemigo(float deltaTime);
             void colisionPlayerMundo(float deltaTime);
             void colisionBulletMundo(float deltaTime);
-
+            
+            void cargarMusica();
             void crearObjetos();
             void destruirObjetos(Objeto*);
             void crearEnemigos();
@@ -48,8 +54,10 @@
             void disparar(float deltaTime);
             void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
             void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
-
+            void comprobarPasarNivel();
             sf::View view;
+
+         
     };
 
 #endif

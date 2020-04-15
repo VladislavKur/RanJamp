@@ -17,6 +17,9 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  ../Motor/Motor.h
@@ -24,6 +27,9 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  ../Motor/Motor.h
@@ -32,6 +38,9 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp
  /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
 CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
  ../Motor/Motor.h
@@ -40,7 +49,14 @@ CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.cpp
  /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
+CMakeFiles/libClases.dir/Hud/hud.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Hud/hud.cpp
+ /home/andres/Escritorio/FV JUNTO/Hud/hud.h
+ /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  ../Motor/Motor.h
  /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
@@ -49,60 +65,65 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+ /home/andres/Escritorio/FV JUNTO/Hud/hud.h
  /home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
  /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
- /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+ /home/andres/Escritorio/FV JUNTO/Musica/musica.h
  /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
  /home/andres/Escritorio/FV JUNTO/Texto/texto.h
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
- /home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp
- /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+CMakeFiles/libClases.dir/Menu/menu.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Menu/menu.cpp
+ /home/andres/Escritorio/FV JUNTO/Menu/menu.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.cpp
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.cpp
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.cpp
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlerror.cpp
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlparser.cpp
+CMakeFiles/libClases.dir/Musica/musica.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Musica/musica.cpp
+ /home/andres/Escritorio/FV JUNTO/Musica/musica.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
  ../Motor/Motor.h
  /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+ /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp
  /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o
- ../Bullet/bullet.h
- ../Enemigos/centinela.h
- ../Enemigos/enemigo.h
- ../Enemigos/murcielago.h
- ../Enemigos/reptante.h
- ../Juego/Juego.h
- ../Mapa/mapa.h
- ../Mapa/tinystr.h
- ../Mapa/tinyxml.h
  ../Motor/Motor.h
- ../Objeto/Objeto.h
- ../Player/Player.h
- ../Texto/texto.h
  /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+ /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.cpp
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
 CMakeFiles/libClases.dir/Texto/texto.cpp.o

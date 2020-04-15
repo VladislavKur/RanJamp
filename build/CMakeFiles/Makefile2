@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = "/home/andres/Escritorio/FV JUNTO/build"
 CMakeFiles/ranJamp.dir/all: CMakeFiles/libClases.dir/all
 	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/depend
 	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=18,19 "Built target ranJamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=21,22 "Built target ranJamp"
 .PHONY : CMakeFiles/ranJamp.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/ranJamp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ranJamp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 19
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 22
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ranJamp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
 .PHONY : CMakeFiles/ranJamp.dir/rule
@@ -103,7 +103,7 @@ clean: CMakeFiles/ranJamp.dir/clean
 CMakeFiles/libClases.dir/all:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/depend
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target libClases"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target libClases"
 .PHONY : CMakeFiles/libClases.dir/all
 
 # Include target in all.
@@ -113,7 +113,7 @@ all: CMakeFiles/libClases.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libClases.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 17
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 20
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libClases.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
 .PHONY : CMakeFiles/libClases.dir/rule
@@ -206,22 +206,22 @@ Enemigos/preinstall:
 .PHONY : Enemigos/preinstall
 
 #=============================================================================
-# Directory level rules for directory Mapa
+# Directory level rules for directory Mundo
 
 # Convenience name for "all" pass in the directory.
-Mapa/all:
+Mundo/all:
 
-.PHONY : Mapa/all
+.PHONY : Mundo/all
 
 # Convenience name for "clean" pass in the directory.
-Mapa/clean:
+Mundo/clean:
 
-.PHONY : Mapa/clean
+.PHONY : Mundo/clean
 
 # Convenience name for "preinstall" pass in the directory.
-Mapa/preinstall:
+Mundo/preinstall:
 
-.PHONY : Mapa/preinstall
+.PHONY : Mundo/preinstall
 
 #=============================================================================
 # Directory level rules for directory Motor
@@ -294,6 +294,60 @@ Texto/clean:
 Texto/preinstall:
 
 .PHONY : Texto/preinstall
+
+#=============================================================================
+# Directory level rules for directory Menu
+
+# Convenience name for "all" pass in the directory.
+Menu/all:
+
+.PHONY : Menu/all
+
+# Convenience name for "clean" pass in the directory.
+Menu/clean:
+
+.PHONY : Menu/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Menu/preinstall:
+
+.PHONY : Menu/preinstall
+
+#=============================================================================
+# Directory level rules for directory Hud
+
+# Convenience name for "all" pass in the directory.
+Hud/all:
+
+.PHONY : Hud/all
+
+# Convenience name for "clean" pass in the directory.
+Hud/clean:
+
+.PHONY : Hud/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Hud/preinstall:
+
+.PHONY : Hud/preinstall
+
+#=============================================================================
+# Directory level rules for directory Musica
+
+# Convenience name for "all" pass in the directory.
+Musica/all:
+
+.PHONY : Musica/all
+
+# Convenience name for "clean" pass in the directory.
+Musica/clean:
+
+.PHONY : Musica/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Musica/preinstall:
+
+.PHONY : Musica/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

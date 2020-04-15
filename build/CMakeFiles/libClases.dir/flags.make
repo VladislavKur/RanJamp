@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/andres/Escritorio/FV JUNTO/Player" -I"/home/andres/Escritorio/FV JUNTO/Bullet" -I"/home/andres/Escritorio/FV JUNTO/Animacion" -I"/home/andres/Escritorio/FV JUNTO/Enemigos" -I"/home/andres/Escritorio/FV JUNTO/Mapa" -I"/home/andres/Escritorio/FV JUNTO/Motor" -I"/home/andres/Escritorio/FV JUNTO/Juego" -I"/home/andres/Escritorio/FV JUNTO/Objeto" -I"/home/andres/Escritorio/FV JUNTO/Texto" 
+CXX_INCLUDES = -I"/home/andres/Escritorio/FV JUNTO/Player" -I"/home/andres/Escritorio/FV JUNTO/Bullet" -I"/home/andres/Escritorio/FV JUNTO/Animacion" -I"/home/andres/Escritorio/FV JUNTO/Enemigos" -I"/home/andres/Escritorio/FV JUNTO/Mundo" -I"/home/andres/Escritorio/FV JUNTO/Motor" -I"/home/andres/Escritorio/FV JUNTO/Juego" -I"/home/andres/Escritorio/FV JUNTO/Objeto" -I"/home/andres/Escritorio/FV JUNTO/Texto" -I"/home/andres/Escritorio/FV JUNTO/Menu" -I"/home/andres/Escritorio/FV JUNTO/Hud" -I"/home/andres/Escritorio/FV JUNTO/Musica" 
 

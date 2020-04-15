@@ -225,124 +225,124 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.provides: CMakeFiles/libClases.d
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.provides.build: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
 
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o: ../Mapa/mapa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libClases.dir/Mapa/mapa.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/mapa.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp"
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/Mundo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.cpp"
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/mapa.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp" > CMakeFiles/libClases.dir/Mapa/mapa.cpp.i
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.cpp" > CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/mapa.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mapa/mapa.cpp" -o CMakeFiles/libClases.dir/Mapa/mapa.cpp.s
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.cpp" -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.requires:
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.requires:
 
-.PHONY : CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.requires
+.PHONY : CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.requires
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.provides
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.provides: CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.provides
 
-CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
-
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o: ../Mapa/tinystr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp"
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp" > CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.cpp" -o CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires:
-
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides
-
-CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.provides.build: CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o
 
 
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o: ../Mapa/tinyxml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp"
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: ../Mundo/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.cpp"
 
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp" > CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.cpp" > CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i
 
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.cpp" -o CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.cpp" -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s
 
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires:
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.requires:
 
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.requires
 
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.provides: CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.provides
 
-CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
-
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o: ../Mapa/tinyxmlparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp"
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp" > CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlparser.cpp" -o CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires:
-
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides
-
-CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
+CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.provides.build: CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o
 
 
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o: ../Mapa/tinyxmlerror.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp"
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: ../Mundo/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.cpp"
 
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp" > CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.cpp" > CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i
 
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mapa/tinyxmlerror.cpp" -o CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.cpp" -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s
 
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires:
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.requires:
 
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.requires
 
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.provides: CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.provides
 
-CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.provides.build: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
+CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.provides.build: CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o
+
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: ../Mundo/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlparser.cpp"
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlparser.cpp" > CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlparser.cpp" -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.requires
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.provides: CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.provides
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.provides.build: CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o
+
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: ../Mundo/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlerror.cpp"
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlerror.cpp" > CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlerror.cpp" -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.requires
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.provides: CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.provides
+
+CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.provides.build: CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o
 
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: CMakeFiles/libClases.dir/flags.make
@@ -441,6 +441,78 @@ CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides: CMakeFiles/libClases.dir/Te
 CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides.build: CMakeFiles/libClases.dir/Texto/texto.cpp.o
 
 
+CMakeFiles/libClases.dir/Menu/menu.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp"
+
+CMakeFiles/libClases.dir/Menu/menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp" > CMakeFiles/libClases.dir/Menu/menu.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp" -o CMakeFiles/libClases.dir/Menu/menu.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu.cpp.o
+
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp"
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Hud/hud.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp" > CMakeFiles/libClases.dir/Hud/hud.cpp.i
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Hud/hud.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp" -o CMakeFiles/libClases.dir/Hud/hud.cpp.s
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides
+
+CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides.build: CMakeFiles/libClases.dir/Hud/hud.cpp.o
+
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp"
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Musica/musica.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp" > CMakeFiles/libClases.dir/Musica/musica.cpp.i
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Musica/musica.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp" -o CMakeFiles/libClases.dir/Musica/musica.cpp.s
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides
+
+CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build: CMakeFiles/libClases.dir/Musica/musica.cpp.o
+
+
 # Object files for target libClases
 libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Player/Player.cpp.o" \
@@ -450,15 +522,18 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o" \
 "CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o" \
 "CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o" \
-"CMakeFiles/libClases.dir/Mapa/mapa.cpp.o" \
-"CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o" \
-"CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o" \
-"CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o" \
-"CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o" \
+"CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o" \
+"CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o" \
+"CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o" \
+"CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o" \
+"CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o" \
 "CMakeFiles/libClases.dir/Motor/Motor.cpp.o" \
 "CMakeFiles/libClases.dir/Juego/Juego.cpp.o" \
 "CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o" \
-"CMakeFiles/libClases.dir/Texto/texto.cpp.o"
+"CMakeFiles/libClases.dir/Texto/texto.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu.cpp.o" \
+"CMakeFiles/libClases.dir/Hud/hud.cpp.o" \
+"CMakeFiles/libClases.dir/Musica/musica.cpp.o"
 
 # External object files for target libClases
 libClases_EXTERNAL_OBJECTS =
@@ -470,18 +545,21 @@ liblibClases.a: CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Motor/Motor.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Juego.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Texto/texto.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Hud/hud.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -497,15 +575,18 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/centinela.c
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/reptante.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/mapa.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Motor/Motor.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Juego.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
 
 .PHONY : CMakeFiles/libClases.dir/requires
 

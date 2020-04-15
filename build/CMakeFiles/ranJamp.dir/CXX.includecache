@@ -60,6 +60,14 @@ iostream
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
 
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 SFML/Graphics.hpp
 -
@@ -77,14 +85,32 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
 ../Bullet/bullet.h
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
-../Mapa/mapa.h
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+../Mundo/Mundo.h
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
 ../Objeto/Objeto.h
 /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
 ../Texto/texto.h
 /home/andres/Escritorio/FV JUNTO/Texto/texto.h
+../Musica/musica.h
+/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+../Hud/hud.h
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
 SFML/Graphics.hpp
 -
 iostream
@@ -92,17 +118,17 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -120,10 +146,10 @@ iostream
 sstream
 -
 tinystr.h
-/home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
+/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
-SFML/Graphics.hpp
+/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+SFML/Audio.hpp
 -
 iostream
 -
@@ -139,6 +165,8 @@ SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
 /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+../Mundo/Mundo.h
+/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
 
 /home/andres/Escritorio/FV JUNTO/Texto/texto.h
 SFML/System.hpp
@@ -161,4 +189,6 @@ Juego/Juego.h
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 Player/Player.h
 /home/andres/Escritorio/FV JUNTO/Player/Player.h
+Menu/menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
 

@@ -9,11 +9,14 @@ CMakeFiles/ranJamp.dir/main.cpp.o
  /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
  /home/andres/Escritorio/FV JUNTO/Enemigos/reptante.h
+ /home/andres/Escritorio/FV JUNTO/Hud/hud.h
  /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
- /home/andres/Escritorio/FV JUNTO/Mapa/mapa.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinystr.h
- /home/andres/Escritorio/FV JUNTO/Mapa/tinyxml.h
+ /home/andres/Escritorio/FV JUNTO/Menu/menu.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+ /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+ /home/andres/Escritorio/FV JUNTO/Musica/musica.h
  /home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
  /home/andres/Escritorio/FV JUNTO/Player/Player.h
  /home/andres/Escritorio/FV JUNTO/Texto/texto.h

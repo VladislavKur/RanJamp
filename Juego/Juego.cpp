@@ -4,13 +4,15 @@
 Juego* Juego::pinstance = 0;
 
 Juego::Juego(){ //WIP FUNCION CARGARNIVEL
-    mapa * mundo = mapa::instance(); 
+    nivel = 1;
+    cargarMusica();
+    mundo = new Mundo();  
     mundo->cargarmapa("Nivel1.tmx");
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
+    mundo->cargarPosicionPlayer_Puerta(4);
     jugador = new Player();
-    //if(jugador == nullptr) printf("asdasd");
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720); //FACHADA WIP
@@ -28,8 +30,6 @@ Juego::Juego(){ //WIP FUNCION CARGARNIVEL
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
   pos.push_back(Vector2f(10 , 1500));
-  t = new texto(1 , s , pos);
-
 }
 
 Juego* Juego::instance(){
@@ -45,11 +45,8 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-  mapa * mundo = mapa::instance(); 
+
   vector<int> dimensiones = mundo->cargarPosicionBordes();
-  // for(int i = 0; i < dimensiones.size(); i ++){
-  //   cout<< "dimensiones "<< i << " = "<< dimensiones[i] << endl;
-  // }
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
       disparar(deltaTime);
   }
@@ -78,12 +75,10 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo(deltaTime);
     colisionBulletJugador(deltaTime);
     
-    jugador->update(deltaTime); //revisar
+    jugador->update(deltaTime , mundo); //revisar
+   
     int j = 0;
     while(objetos[j] != nullptr && j < numObjetos){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
-     
-     //std::cout << objetos[j] << std:: endl;
-    // std::cout << numObjetos << "sadasdsa" << std:: endl;
      
       if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
 
@@ -138,7 +133,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     //////////////////
 
     m->getVentana()->setView(view); //wIP fachada
-
+    hud * Hud = hud::instance();
+    Hud->setMarcador( view.getCenter().x , view.getCenter().y, jugador->getVidas());
     for(int i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
@@ -167,12 +163,13 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     jugador->updateHitbox(); //dentro de update de jugador
     
+    comprobarPasarNivel();
 
 }
 
 void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta funcion debería estar dentro de player.cpp)
     
-    mapa * mundo = mapa::instance(); 
+
     RectangleShape ** objetos = mundo->getObjetos();//WIP FACHADA
     
     Vector2f posobj; //WIP FACHADA
@@ -212,8 +209,8 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
 
-    //Motor * m = Motor::instance();
-    mapa * mundo = mapa::instance();
+
+    hud * Hud = hud::instance();
     mundo->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletPlayer[i]==NULL) continue;
@@ -237,18 +234,19 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       i++;
     }
 
-    t->render();
+    //t->render();
     while(objetos[j] != nullptr && j < numObjetos){
      
       objetos[j]->render();
       j++;
     }
+
+    Hud->render();
     
 }
 
 
 void Juego::crearObjetos(){ //WIP FACHADA
-  mapa * mundo = mapa::instance();
  
   sf::Vector2f pos; //WIP fachada
  
@@ -287,7 +285,6 @@ void Juego::destruirObjetos(Objeto* enem){ //está nice
 //CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ //está nice
-  mapa * mundo = mapa::instance();
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
   numEmenigos = posicion.size();
@@ -309,7 +306,6 @@ void Juego::crearEnemigos(){ //está nice
         enemies[i] = (Enemigo *) centinela;
     }
     else if(posicion[i][2] == 4){
-        //cout << "he añadido reptante" << endl; //eliminar
         Reptante * reptante = new Reptante(posx, posy); // WIP el reptante está sin terminar LOL
         enemies[i] = (Enemigo *) reptante;
     }
@@ -331,15 +327,13 @@ void Juego::matarEnemigo(Enemigo* enem){ //está nice
 }
 
 void Juego::matarJugador(){ //está nice
-  mapa* mundo = mapa::instance();
-  mundo->setCargado(false);
-  mundo->liberar();
-  mundo->cargarmapa("MapaFinal.tmx");
+  delete mundo;
+  mundo = new Mundo();
+  mundo->cargarmapa("Nivel1.tmx");
   mundo->crearSprites();
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
   jugador = new Player();
-  //if(jugador == nullptr) printf("asdasd");//quitar
   crearObjetos();
   crearEnemigos();
   view.setSize(1024,720);
@@ -372,7 +366,6 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
 
 
 void Juego::colisionBulletMundo(float deltaTime){//WIP fachada
-    mapa * mundo = mapa::instance(); 
     RectangleShape ** objetos = mundo->getObjetos();
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
@@ -389,26 +382,29 @@ void Juego::colisionBulletMundo(float deltaTime){//WIP fachada
 }
 
 void Juego::colisionBulletJugador(float deltaTime){ //WIP fachada
-
+  bool morir = false;
   for(unsigned int i = 0; i < maxBullets; i++){
 
     if(bulletEnemies[i] != NULL){
 
       if(jugador->getBody().getGlobalBounds().intersects(bulletEnemies[i]->getBody().getGlobalBounds())){
 
-        jugador->setVidas(jugador->getVidas()-1);
+       morir = jugador->setVidas(jugador->getVidas()-1);
 
         std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletEnemies[i];
         bulletEnemies[i] = NULL;
-
+        if(morir == true){
+          matarJugador();
+        }
       }
     }
   }
+  
 }
 
 void Juego::colisionBulletEnemigo(float deltaTime){//WIP fachada
-  for(unsigned int i=0 ; i<maxBullets ; i++){
+  for(unsigned int i=0 ; i < maxBullets ; i++){
     for(int j=0 ; j<numEmenigos ; j++){
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
@@ -424,4 +420,36 @@ void Juego::colisionBulletEnemigo(float deltaTime){//WIP fachada
       }
     }
   }
+}
+
+
+void Juego::cargarMusica(){
+    sf::String ss = "resources/Sonidos/si-veo2.ogg";
+    so = new musica(ss);
+    so->reproducirMusica();
+}
+
+void Juego::comprobarPasarNivel(){
+ if( mundo->getPuerta()->getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
+    delete mundo;
+    mundo = new Mundo();
+    mundo->cargarmapa("Nivel2.tmx");
+    mundo->crearSprites();
+    mundo->cargarObjectGroups();
+    mundo->crearObjetos();
+    jugador = new Player();
+    crearObjetos();
+    crearEnemigos();
+    view.setSize(1024,720);
+      
+    for(int i = 0 ; i < maxBullets ; i++){
+        bulletPlayer[i]=NULL;
+    }
+
+    for(int i = 0; i < maxBullets;i++){
+
+        bulletEnemies[i] = NULL;
+
+    }
+ }
 }

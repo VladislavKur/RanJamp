@@ -298,6 +298,33 @@ Enemigos/reptante.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/reptante.cpp.s
 .PHONY : Enemigos/reptante.cpp.s
 
+Hud/hud.o: Hud/hud.cpp.o
+
+.PHONY : Hud/hud.o
+
+# target to build an object file
+Hud/hud.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Hud/hud.cpp.o
+.PHONY : Hud/hud.cpp.o
+
+Hud/hud.i: Hud/hud.cpp.i
+
+.PHONY : Hud/hud.i
+
+# target to preprocess a source file
+Hud/hud.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Hud/hud.cpp.i
+.PHONY : Hud/hud.cpp.i
+
+Hud/hud.s: Hud/hud.cpp.s
+
+.PHONY : Hud/hud.s
+
+# target to generate assembly for a file
+Hud/hud.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Hud/hud.cpp.s
+.PHONY : Hud/hud.cpp.s
+
 Juego/Juego.o: Juego/Juego.cpp.o
 
 .PHONY : Juego/Juego.o
@@ -325,140 +352,32 @@ Juego/Juego.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Juego.cpp.s
 .PHONY : Juego/Juego.cpp.s
 
-Mapa/mapa.o: Mapa/mapa.cpp.o
+Menu/menu.o: Menu/menu.cpp.o
 
-.PHONY : Mapa/mapa.o
-
-# target to build an object file
-Mapa/mapa.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/mapa.cpp.o
-.PHONY : Mapa/mapa.cpp.o
-
-Mapa/mapa.i: Mapa/mapa.cpp.i
-
-.PHONY : Mapa/mapa.i
-
-# target to preprocess a source file
-Mapa/mapa.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/mapa.cpp.i
-.PHONY : Mapa/mapa.cpp.i
-
-Mapa/mapa.s: Mapa/mapa.cpp.s
-
-.PHONY : Mapa/mapa.s
-
-# target to generate assembly for a file
-Mapa/mapa.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/mapa.cpp.s
-.PHONY : Mapa/mapa.cpp.s
-
-Mapa/tinystr.o: Mapa/tinystr.cpp.o
-
-.PHONY : Mapa/tinystr.o
+.PHONY : Menu/menu.o
 
 # target to build an object file
-Mapa/tinystr.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.o
-.PHONY : Mapa/tinystr.cpp.o
+Menu/menu.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.o
+.PHONY : Menu/menu.cpp.o
 
-Mapa/tinystr.i: Mapa/tinystr.cpp.i
+Menu/menu.i: Menu/menu.cpp.i
 
-.PHONY : Mapa/tinystr.i
-
-# target to preprocess a source file
-Mapa/tinystr.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.i
-.PHONY : Mapa/tinystr.cpp.i
-
-Mapa/tinystr.s: Mapa/tinystr.cpp.s
-
-.PHONY : Mapa/tinystr.s
-
-# target to generate assembly for a file
-Mapa/tinystr.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinystr.cpp.s
-.PHONY : Mapa/tinystr.cpp.s
-
-Mapa/tinyxml.o: Mapa/tinyxml.cpp.o
-
-.PHONY : Mapa/tinyxml.o
-
-# target to build an object file
-Mapa/tinyxml.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.o
-.PHONY : Mapa/tinyxml.cpp.o
-
-Mapa/tinyxml.i: Mapa/tinyxml.cpp.i
-
-.PHONY : Mapa/tinyxml.i
+.PHONY : Menu/menu.i
 
 # target to preprocess a source file
-Mapa/tinyxml.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.i
-.PHONY : Mapa/tinyxml.cpp.i
+Menu/menu.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.i
+.PHONY : Menu/menu.cpp.i
 
-Mapa/tinyxml.s: Mapa/tinyxml.cpp.s
+Menu/menu.s: Menu/menu.cpp.s
 
-.PHONY : Mapa/tinyxml.s
-
-# target to generate assembly for a file
-Mapa/tinyxml.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxml.cpp.s
-.PHONY : Mapa/tinyxml.cpp.s
-
-Mapa/tinyxmlerror.o: Mapa/tinyxmlerror.cpp.o
-
-.PHONY : Mapa/tinyxmlerror.o
-
-# target to build an object file
-Mapa/tinyxmlerror.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.o
-.PHONY : Mapa/tinyxmlerror.cpp.o
-
-Mapa/tinyxmlerror.i: Mapa/tinyxmlerror.cpp.i
-
-.PHONY : Mapa/tinyxmlerror.i
-
-# target to preprocess a source file
-Mapa/tinyxmlerror.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.i
-.PHONY : Mapa/tinyxmlerror.cpp.i
-
-Mapa/tinyxmlerror.s: Mapa/tinyxmlerror.cpp.s
-
-.PHONY : Mapa/tinyxmlerror.s
+.PHONY : Menu/menu.s
 
 # target to generate assembly for a file
-Mapa/tinyxmlerror.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlerror.cpp.s
-.PHONY : Mapa/tinyxmlerror.cpp.s
-
-Mapa/tinyxmlparser.o: Mapa/tinyxmlparser.cpp.o
-
-.PHONY : Mapa/tinyxmlparser.o
-
-# target to build an object file
-Mapa/tinyxmlparser.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.o
-.PHONY : Mapa/tinyxmlparser.cpp.o
-
-Mapa/tinyxmlparser.i: Mapa/tinyxmlparser.cpp.i
-
-.PHONY : Mapa/tinyxmlparser.i
-
-# target to preprocess a source file
-Mapa/tinyxmlparser.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.i
-.PHONY : Mapa/tinyxmlparser.cpp.i
-
-Mapa/tinyxmlparser.s: Mapa/tinyxmlparser.cpp.s
-
-.PHONY : Mapa/tinyxmlparser.s
-
-# target to generate assembly for a file
-Mapa/tinyxmlparser.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mapa/tinyxmlparser.cpp.s
-.PHONY : Mapa/tinyxmlparser.cpp.s
+Menu/menu.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.s
+.PHONY : Menu/menu.cpp.s
 
 Motor/Motor.o: Motor/Motor.cpp.o
 
@@ -486,6 +405,168 @@ Motor/Motor.s: Motor/Motor.cpp.s
 Motor/Motor.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Motor/Motor.cpp.s
 .PHONY : Motor/Motor.cpp.s
+
+Mundo/Mundo.o: Mundo/Mundo.cpp.o
+
+.PHONY : Mundo/Mundo.o
+
+# target to build an object file
+Mundo/Mundo.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o
+.PHONY : Mundo/Mundo.cpp.o
+
+Mundo/Mundo.i: Mundo/Mundo.cpp.i
+
+.PHONY : Mundo/Mundo.i
+
+# target to preprocess a source file
+Mundo/Mundo.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i
+.PHONY : Mundo/Mundo.cpp.i
+
+Mundo/Mundo.s: Mundo/Mundo.cpp.s
+
+.PHONY : Mundo/Mundo.s
+
+# target to generate assembly for a file
+Mundo/Mundo.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s
+.PHONY : Mundo/Mundo.cpp.s
+
+Mundo/tinystr.o: Mundo/tinystr.cpp.o
+
+.PHONY : Mundo/tinystr.o
+
+# target to build an object file
+Mundo/tinystr.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o
+.PHONY : Mundo/tinystr.cpp.o
+
+Mundo/tinystr.i: Mundo/tinystr.cpp.i
+
+.PHONY : Mundo/tinystr.i
+
+# target to preprocess a source file
+Mundo/tinystr.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i
+.PHONY : Mundo/tinystr.cpp.i
+
+Mundo/tinystr.s: Mundo/tinystr.cpp.s
+
+.PHONY : Mundo/tinystr.s
+
+# target to generate assembly for a file
+Mundo/tinystr.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s
+.PHONY : Mundo/tinystr.cpp.s
+
+Mundo/tinyxml.o: Mundo/tinyxml.cpp.o
+
+.PHONY : Mundo/tinyxml.o
+
+# target to build an object file
+Mundo/tinyxml.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o
+.PHONY : Mundo/tinyxml.cpp.o
+
+Mundo/tinyxml.i: Mundo/tinyxml.cpp.i
+
+.PHONY : Mundo/tinyxml.i
+
+# target to preprocess a source file
+Mundo/tinyxml.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i
+.PHONY : Mundo/tinyxml.cpp.i
+
+Mundo/tinyxml.s: Mundo/tinyxml.cpp.s
+
+.PHONY : Mundo/tinyxml.s
+
+# target to generate assembly for a file
+Mundo/tinyxml.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s
+.PHONY : Mundo/tinyxml.cpp.s
+
+Mundo/tinyxmlerror.o: Mundo/tinyxmlerror.cpp.o
+
+.PHONY : Mundo/tinyxmlerror.o
+
+# target to build an object file
+Mundo/tinyxmlerror.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o
+.PHONY : Mundo/tinyxmlerror.cpp.o
+
+Mundo/tinyxmlerror.i: Mundo/tinyxmlerror.cpp.i
+
+.PHONY : Mundo/tinyxmlerror.i
+
+# target to preprocess a source file
+Mundo/tinyxmlerror.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i
+.PHONY : Mundo/tinyxmlerror.cpp.i
+
+Mundo/tinyxmlerror.s: Mundo/tinyxmlerror.cpp.s
+
+.PHONY : Mundo/tinyxmlerror.s
+
+# target to generate assembly for a file
+Mundo/tinyxmlerror.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s
+.PHONY : Mundo/tinyxmlerror.cpp.s
+
+Mundo/tinyxmlparser.o: Mundo/tinyxmlparser.cpp.o
+
+.PHONY : Mundo/tinyxmlparser.o
+
+# target to build an object file
+Mundo/tinyxmlparser.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o
+.PHONY : Mundo/tinyxmlparser.cpp.o
+
+Mundo/tinyxmlparser.i: Mundo/tinyxmlparser.cpp.i
+
+.PHONY : Mundo/tinyxmlparser.i
+
+# target to preprocess a source file
+Mundo/tinyxmlparser.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i
+.PHONY : Mundo/tinyxmlparser.cpp.i
+
+Mundo/tinyxmlparser.s: Mundo/tinyxmlparser.cpp.s
+
+.PHONY : Mundo/tinyxmlparser.s
+
+# target to generate assembly for a file
+Mundo/tinyxmlparser.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s
+.PHONY : Mundo/tinyxmlparser.cpp.s
+
+Musica/musica.o: Musica/musica.cpp.o
+
+.PHONY : Musica/musica.o
+
+# target to build an object file
+Musica/musica.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Musica/musica.cpp.o
+.PHONY : Musica/musica.cpp.o
+
+Musica/musica.i: Musica/musica.cpp.i
+
+.PHONY : Musica/musica.i
+
+# target to preprocess a source file
+Musica/musica.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Musica/musica.cpp.i
+.PHONY : Musica/musica.cpp.i
+
+Musica/musica.s: Musica/musica.cpp.s
+
+.PHONY : Musica/musica.s
+
+# target to generate assembly for a file
+Musica/musica.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Musica/musica.cpp.s
+.PHONY : Musica/musica.cpp.s
 
 Objeto/Objeto.o: Objeto/Objeto.cpp.o
 
@@ -623,27 +704,36 @@ help:
 	@echo "... Enemigos/reptante.o"
 	@echo "... Enemigos/reptante.i"
 	@echo "... Enemigos/reptante.s"
+	@echo "... Hud/hud.o"
+	@echo "... Hud/hud.i"
+	@echo "... Hud/hud.s"
 	@echo "... Juego/Juego.o"
 	@echo "... Juego/Juego.i"
 	@echo "... Juego/Juego.s"
-	@echo "... Mapa/mapa.o"
-	@echo "... Mapa/mapa.i"
-	@echo "... Mapa/mapa.s"
-	@echo "... Mapa/tinystr.o"
-	@echo "... Mapa/tinystr.i"
-	@echo "... Mapa/tinystr.s"
-	@echo "... Mapa/tinyxml.o"
-	@echo "... Mapa/tinyxml.i"
-	@echo "... Mapa/tinyxml.s"
-	@echo "... Mapa/tinyxmlerror.o"
-	@echo "... Mapa/tinyxmlerror.i"
-	@echo "... Mapa/tinyxmlerror.s"
-	@echo "... Mapa/tinyxmlparser.o"
-	@echo "... Mapa/tinyxmlparser.i"
-	@echo "... Mapa/tinyxmlparser.s"
+	@echo "... Menu/menu.o"
+	@echo "... Menu/menu.i"
+	@echo "... Menu/menu.s"
 	@echo "... Motor/Motor.o"
 	@echo "... Motor/Motor.i"
 	@echo "... Motor/Motor.s"
+	@echo "... Mundo/Mundo.o"
+	@echo "... Mundo/Mundo.i"
+	@echo "... Mundo/Mundo.s"
+	@echo "... Mundo/tinystr.o"
+	@echo "... Mundo/tinystr.i"
+	@echo "... Mundo/tinystr.s"
+	@echo "... Mundo/tinyxml.o"
+	@echo "... Mundo/tinyxml.i"
+	@echo "... Mundo/tinyxml.s"
+	@echo "... Mundo/tinyxmlerror.o"
+	@echo "... Mundo/tinyxmlerror.i"
+	@echo "... Mundo/tinyxmlerror.s"
+	@echo "... Mundo/tinyxmlparser.o"
+	@echo "... Mundo/tinyxmlparser.i"
+	@echo "... Mundo/tinyxmlparser.s"
+	@echo "... Musica/musica.o"
+	@echo "... Musica/musica.i"
+	@echo "... Musica/musica.s"
 	@echo "... Objeto/Objeto.o"
 	@echo "... Objeto/Objeto.i"
 	@echo "... Objeto/Objeto.s"
