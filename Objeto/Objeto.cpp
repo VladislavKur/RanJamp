@@ -9,10 +9,9 @@
     Objeto::~Objeto(){}
     Objeto::Objeto(sf::Vector2f Posicion, int t){
             sf::Texture *text = new sf::Texture ;
-
+ 
             text->loadFromFile("resources/Imagenes/powerup1.png");
             body.setTexture(text);
-
             body.setSize(sf::Vector2f(50,50));
             //body.setTexture(tex);
             body.setPosition(Posicion);
@@ -22,44 +21,13 @@
 
     }
 
+    void Objeto::destroirObjeto(Objeto * obj){
+        delete obj;
+    }
+
     //t --> tipo
     void Objeto::update(Player &otherBody){
-        sf::Texture *text = new sf::Texture ;
-        //std::cout<<"Tipo : "<< tipo <<std::endl;
-        if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && body.getGlobalBounds().intersects(otherBody.getBody().getGlobalBounds())){
-
-          
-           
-           
-            
-
-            switch (tipo){
-            
-                case 1:
-                    otherBody.setArma(1);
-                    text->loadFromFile("resources/Imagenes/powerup1.png");
-                    body.setTexture(text);
-                    break;
-
-                case 2:
-                    otherBody.obtenerPU_SaltoDoble();
-                    text->loadFromFile("resources/Imagenes/powerup2.png");
-                    body.setTexture(text);
-                    break;
-
-                case 3:
-                    otherBody.obtenerPU_Velocidad();
-                    text->loadFromFile("resources/Imagenes/powerup3.png");
-                    body.setTexture(text);
-                    break;
-            
-            default:
-                std:: cout <<"Default" << std::endl;
-                break;
-            } 
-
-        }
-        delete text; text = nullptr;
+        
 
     }
 

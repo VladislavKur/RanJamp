@@ -30,7 +30,7 @@ public:
     bool auxSaltos;
 
     //FUNCIONALIDAD
-    void render();
+    void render(sf::RenderWindow & v);
     void update(float deltaTime);
     void updateHitbox();
     

@@ -10,9 +10,9 @@ private:
     sf::CircleShape body;
     bool facing;
     float velocidad;
-    
+    int dir;
 public:
-    Bullet(float, float, bool);
+    Bullet(float, float, bool, int);
     ~Bullet() {}
 
     float lifetime; //Contador que destruye la bala cuando llega a 0
@@ -21,8 +21,4 @@ public:
 
     sf::CircleShape getBody(){return body;};
 
-
-    static Bullet* bullets[maxBullets];
-    static void initBulletArray();
-    static bool array_inicializado;
 };

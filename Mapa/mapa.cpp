@@ -3,7 +3,7 @@
 mapa* mapa::pinstance=NULL;
 
 mapa::mapa(){
-
+  cargado = false;
 }
 
 mapa* mapa::instance(){
@@ -17,13 +17,18 @@ mapa* mapa::instance(){
     return(pinstance);
 }
 
+void mapa::setCargado(bool cambio){
+  cargado = cambio;
+}
 
 void mapa::cargarmapa(const char * f){
-
-  if(!doc.LoadFile(f)){
-    cout<< "ERROR AL CARGAR EL DOCUMENTO"<<endl;
-  }else{
-    cout << "LO HE CARGADO" << endl;
+  if(cargado == false){
+    if(!doc.LoadFile(f)){
+      cout<< "ERROR AL CARGAR EL DOCUMENTO"<<endl;
+    }else{
+      cout << "LO HE CARGADO" << endl;
+      cargado = true;
+    }
   }
   map = doc.FirstChildElement("map");
   if (map == nullptr) cout << "sadsad" <<  endl;
@@ -340,8 +345,8 @@ int mapa::getNumObjetos(){
   return _numObjects;
 }
 
-/*
-void mapa::liberar(){
+
+void mapa::liberar(){ //WIP preguntar fidel
     //liberar memoria
     for(int i = 0; i < _numLayers; i++)
     {
@@ -352,4 +357,44 @@ void mapa::liberar(){
         delete[] _tilemap[i];
     }
     delete[] _tilemap;
-}*/
+
+    // int j = 0;
+    // while (imagenes[j] != nullptr){
+    //  delete[] imagenes[j];
+    //  j++;
+    // }
+    delete[] imagenes;
+
+    for(int i = 0; i < _numLayers; i++)
+    {
+        for(int j = 0; j < _height; j++)
+        {
+            delete[] _tilemapSprite[i][j];
+        }
+        delete[] _tilemapSprite[i];
+    }
+    delete[] _tilemapSprite;
+
+    delete[] _imgwidth;
+    delete[] _imgheight;
+    delete[]  cambio;
+    delete  map;
+    delete[] _tilesetTexture;
+
+    // for(int i = 0; i < _numTilesets; i++){
+    //   delete[] objetos[i];
+    // }
+    delete[] objetos;
+    
+    // for(int i = 0; i < _numTilesets; i++){
+    //   delete[] objects[i];
+    // }
+    delete[] objects;
+
+    // for(int i = 0; i < _numTilesets; i++){
+    //   delete[] objectgroups[i];
+    // }
+    delete[] objectgroups;
+    
+    //delete doc;
+}
