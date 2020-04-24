@@ -17,6 +17,8 @@ Nube::Nube(float x, float y) : Enemigo(x,y){
     distanciaAtaque = 1000;
     modo = 0;    
     velocidad = 50;
+
+    shootTime = 0.0f;
 }
 
 void Nube::update(sf::RectangleShape& body, float delta){
@@ -43,7 +45,7 @@ void Nube::update(sf::RectangleShape& body, float delta){
         case(1): //ataque -> le busco
             if(local_diffabs> distanciaAtaque){
                 modo = 0;
-            }else if(local_diffX == 0){                
+            }else if(local_diffabs <= 3){                
                 modo = 2;            
             }
             else{
@@ -54,32 +56,27 @@ void Nube::update(sf::RectangleShape& body, float delta){
         break;
         case(2): //le sigo y disparo
             cout<<"le sigo"<<"\n";
-            actualizarPosicion((local_diffX/local_diffabs)*velPlayer*delta,0); 
+            actualizarPosicion((local_diffX/local_diffabs)*velocidad*delta,0); 
             //posX = posJugador;
 
             if(shootTime <= 0.0){
                 bool auxiliar;
 
                 if((local_diffX/local_diffabs) == 1){
-
                     auxiliar = true;
-
                 }
                 else{
-
                     auxiliar = false;
-
                 }
                 
                 direccion = auxiliar;
                 
                 shoot = true;
                 shootTime = 3.0;
+                
             }
             else{
-
                 shootTime -= delta;
-
             }
             
             //juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
@@ -94,6 +91,8 @@ Bullet* Nube::disparar(){
 
     if(shoot){
 
+        cout<<"dispara"<<endl;
+
         shoot = false;
 
         devolver = new Bullet(posX,posY,direccion, 2);
@@ -102,13 +101,12 @@ Bullet* Nube::disparar(){
     return(devolver);
 
 }
-
-void Nube::render(sf::RenderWindow &v, float porcentaje){
+bool Nube::getShoot(){return shoot;}
+void Nube::render(float porcentaje){
     cuerpo.setPosition(
         posXanterior + diffX*porcentaje,
         posYanterior + diffY*porcentaje );
 
-    /*Motor * motor = Motor::instance();
-    motor->dibujo(cuerpo);*/
-    v.draw(cuerpo);
+    Motor * motor = Motor::instance();
+    motor->dibujo(cuerpo);
 }

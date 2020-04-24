@@ -11,11 +11,14 @@ add_subdirectory(Player)
 add_subdirectory(Bullet)
 add_subdirectory(Animacion)
 add_subdirectory(Enemigos)
-add_subdirectory(Mapa)
+add_subdirectory(Mundo)
 add_subdirectory(Motor)
 add_subdirectory(Juego)
 add_subdirectory(Objeto)
 add_subdirectory(Texto)
+add_subdirectory(Menu)
+add_subdirectory(Hud)
+add_subdirectory(Musica)
 
 #Opciones a pasar al compilador de C++
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")
@@ -24,6 +27,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")
 
 add_executable(ranJamp main.cpp)
 add_executable(nube enemNube.cpp)
+add_executable(pajarraco pajarraco.cpp)
 
 
 #Añadir todos los objetos (ficheros o) que requiera el ejecutable. 
@@ -32,6 +36,7 @@ add_executable(nube enemNube.cpp)
 
 target_link_libraries(ranJamp libClases)
 target_link_libraries(nube libClases)
+target_link_libraries(pajarraco libClases)
 
   
 
@@ -42,5 +47,6 @@ if (SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
     target_link_libraries(ranJamp ${SFML_LIBRARIES})
     target_link_libraries(nube ${SFML_LIBRARIES})
+    target_link_libraries(pajarraco ${SFML_LIBRARIES})
    
 endif()

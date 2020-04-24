@@ -1,25 +1,17 @@
-#pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "Motor/Motor.h"
 #include "Juego/Juego.h"
 #include "Player/Player.h"
+#include "Menu/menu.h"
 #define kVel 5
 
 int main() {
   /////////////
   ////START////
   /////////////
-  // sf::Texture t; 
-  // sf::Sprite s; 
-  // if(!t.loadFromFile("Resources/sprites.png")){
-  //   std::cout<<"mierda"<<endl;
-  // }
-  // s.setTexture(t);
   const float UPDATE_TICK_TIME = 15.0;
   Motor * m = Motor::instance();
-  //Creamos una ventana
-  //if(m->crearVentana()){ //si la ventana se crea correctamente
 
     float elapsus;
     float delta;
@@ -29,8 +21,67 @@ int main() {
     RectangleShape coliAbV;
     RectangleShape coliIzV;
     RectangleShape coliDcV;
+/*
+    // ESTO VA EN MOTOR---
+    Font fuente; 
+    if(!fuente.loadFromFile("resources/fuentes/AnotherRound.otf")){
+      cout<< "NO SE CARGA"<<endl;
+    }
+    //.-------
+    menu men(fuente, 3); // crear  menu 
+    men.cambiarTexto(0, sf::Color::Red, "PLAY" , 540 , 320); // Fachada
+    men.cambiarTexto(1, sf::Color::White, "OPTIONS" , 540, 350); 
+    men.cambiarTexto(2, sf::Color::White, "EXIT" , 540 , 380); 
+    while (m->getVentana()->isOpen()) {
+      //Bucle de obtención de eventos
+        Event event;
+        while (m->getVentana()->pollEvent(event)) {
 
+          switch (event.type){
+            case Event::Closed:
+              m->getVentana()->close();
+            break;
+            
+            case Event::KeyPressed:
+              //Verifico si se pulsa alguna tecla de movimiento
+              switch (event.key.code) {
+                case Keyboard::Up:
+                  men.moveUp();
+                break;
+                case Keyboard::Down:
+                  men.moveDown();
+                break;
+                case Keyboard::Return:
+                  switch (men.getItemPressed()){
+                    case 0:
+                        cout<<"eligo play" << endl;
+                    break;
+                    
+                    case 1: 
+                        cout<<"eligio opciones"<<endl;
+                      break;
+                    case 2:
+                        cout<<"eligo salir"<<endl;
+                        m->getVentana()->close();
+                      break;
+                  }
+                break;
+                default:
+                break;
+                
+              }
+          
+            default: 
+            break;  
+          }
+        }
 
+        m->getVentana()->clear();
+        men.render();
+        m->getVentana()->display();
+    }
+
+*/
 
     //funcion inicializar juego de juego VERY WIP SUCH WOW
 
@@ -39,32 +90,61 @@ int main() {
       RenderWindow* window = m->getVentana();
 
       sf::Event event;
-    while(window->pollEvent(event)){
-      switch (event.type)
-      {
-      //Para poder cerrar la ventana se necesita:
-      case sf::Event::EventType::Closed :
-        window->close();
-      break;
+      while(window->pollEvent(event)){
+        switch (event.type)
+        {
+        //Para poder cerrar la ventana se necesita:
+        case sf::Event::EventType::Closed :
+          window->close();
+        break;
 
-      case sf::Event::EventType::KeyPressed:
+        case sf::Event::EventType::KeyPressed:
 
         switch (event.key.code) {
+          /*Sif(sf::Keyboard::isKeyPressed(sf::Keyboard::X)){ //WIP FACHADA y LECTURA TECLADO
+      jugador->morir();
+  }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::G)){ //WIP FACHADA y LECTURA TECLADO
+      jugador->godMode();
+  }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::R)){ //WIP FACHADA y LECTURA TECLADO
+      
+  }
+  if(sf::Keyboard::isKeyPressed(sf::Keyboard::N)){ //WIP FACHADA y LECTURA TECLADO
+      
+  }*/
+        case sf::Keyboard::P:
+          instancia->getJugador()->obtenerPU_SaltoDoble();
+          instancia->getJugador()->obtenerPU_Slowhits();
+          instancia->getJugador()->obtenerPU_Velocidad();
+        break;
+        case sf::Keyboard::X:
+          instancia->matarJugador();
+        break;
+        case sf::Keyboard::G:
+          instancia->getJugador()->toggleGodMode();
+        break;
+        case sf::Keyboard::R:
+          instancia->getJugador()->reset();
+        break;
 
+        case sf::Keyboard::N:
+          instancia->nextLevel();
+        break;
+
+          default:
+            break;
+          }
+
+        break; // de KeyPressed
+        
         default:
           break;
         }
-
-      break; // de KeyPressed
-      
-      default:
-        break;
       }
-    }
       if(m->getRelojM() > UPDATE_TICK_TIME){
 
         delta = m->restartReloj();
-        //std::cout<<delta<<std::endl;
         instancia->update(delta);
 
       }
@@ -98,26 +178,10 @@ int main() {
          instancia->render(elapsus/UPDATE_TICK_TIME);
       }
       
-      /*window->draw(coliDcV);
-      window->draw(coliIzV);
-      window->draw(coliArV);
-      window->draw(coliAbV);*/
-
       window->display();
-
-
-      //window->clear(Color(128,0,0));
-//
-      //window->draw(instancia->getJugador()->getBody());
-//
-      //window->display();
-     // std::cout<<"PU_Saltodoble: " << instancia->getJugador()->getPU_SaltoDoble() << " ------- AuxSaltos: "<<instancia->getJugador()->auxSaltos<<" ------- Saltos: "<<instancia->getJugador()->getSaltos()<< " ------- Cooldown: "<< instancia->getJugador()->getCooldownSalto() <<endl;
-
-      //cout<<instancia->getJugador()->getJumpSpeed()<<endl;
 
       
     }
-  //}
 
   return 0;
 }

@@ -11,9 +11,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Bullet/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Enemigos/CMakeLists.txt"
+  "../Hud/CMakeLists.txt"
   "../Juego/CMakeLists.txt"
-  "../Mapa/CMakeLists.txt"
+  "../Menu/CMakeLists.txt"
   "../Motor/CMakeLists.txt"
+  "../Mundo/CMakeLists.txt"
+  "../Musica/CMakeLists.txt"
   "../Objeto/CMakeLists.txt"
   "../Player/CMakeLists.txt"
   "../Texto/CMakeLists.txt"
@@ -51,16 +54,20 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Bullet/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Animacion/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Enemigos/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Mapa/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Mundo/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Motor/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Juego/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Objeto/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Texto/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Menu/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Hud/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Musica/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/libClases.dir/DependInfo.cmake"
-  "CMakeFiles/nube.dir/DependInfo.cmake"
   "CMakeFiles/ranJamp.dir/DependInfo.cmake"
+  "CMakeFiles/nube.dir/DependInfo.cmake"
+  "CMakeFiles/pajarraco.dir/DependInfo.cmake"
   )

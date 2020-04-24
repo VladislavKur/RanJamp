@@ -14,11 +14,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Bullet"
   "../Animacion"
   "../Enemigos"
-  "../Mapa"
+  "../Mundo"
   "../Motor"
   "../Juego"
   "../Objeto"
   "../Texto"
+  "../Menu"
+  "../Hud"
+  "../Musica"
   )
 
 # Targets to which this target links.

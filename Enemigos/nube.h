@@ -21,8 +21,9 @@ class Nube : public Enemigo{
         Nube(float x, float y);
         ~Nube();
         void update(sf::RectangleShape& player, float deltaTime);
-        void render(sf::RenderWindow &v, float porcentaje);
+        void render( float porcentaje);
         Bullet* disparar();
+        bool getShoot();
 };
 
 #endif

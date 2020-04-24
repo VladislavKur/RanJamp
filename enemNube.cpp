@@ -2,16 +2,18 @@
 #include <iostream>
 #include "Enemigos/nube.h"
 #include "Player/Player.h"
-#define kVel 900.0
+#include "Motor/Motor.h"
 
+#define kVel 90.0
+#define maxBullets 256
 
 int main() {
 
   const float UPDATE_TICK_TIME = 15.0; //magnitud: millisegundos
 
   //Creamos una ventana
-  sf::RenderWindow window(sf::VideoMode(1200, 1200), "P0. Fundamentos de los Videojuegos. DCCIA");
-    
+  //sf::RenderWindow window(sf::VideoMode(1200, 1200), "P0. Fundamentos de los Videojuegos. DCCIA");
+  Motor* motor = Motor::instance();
   //////////////
   ///BLOQUE////
   /////////////  
@@ -21,19 +23,30 @@ int main() {
   
 
   Nube *enemigo = new Nube(1100,200);
-  //Player* player = new Player(1100,600);
-
-  //Bucle del juego
 
   sf::Clock updateClock;
   float delta;
   float elapsus;
   int contador = 0;
-  while (window.isOpen()) {
 
-    /////////////////////////////////////////////
-    //LO PRIMERO ES LA COMPROBACION DE UPDATE//
-    /////////////////////////////////////////////
+  Bullet* bulletNube[maxBullets];
+  for(int i = 0; i < maxBullets;i++){
+    bulletNube[i] = NULL;
+  }
+
+
+  while (motor->getOpen()) {
+
+    for(unsigned i = 0; i < maxBullets ;i++){
+        if(bulletNube[i] != NULL){
+          if(bulletNube[i]->lifetime<=0){
+            delete bulletNube[i];
+          bulletNube[i] = NULL;
+        }
+        else
+          bulletNube[i]->update(delta);//revisar
+        }
+    }
 
     if(updateClock.getElapsedTime().asMilliseconds()>UPDATE_TICK_TIME){ //si hay que actualizar, actualiza
       delta = updateClock.restart().asSeconds();
@@ -41,20 +54,30 @@ int main() {
       //player->update(delta);
     }
 
+    Nube* casteadoNube = dynamic_cast<Nube*>(enemigo); 
+    if(casteadoNube != nullptr){
+        if(casteadoNube->getShoot()){
+          for(int j = 0; j < maxBullets;j++){
+            if(bulletNube[j] == NULL)
+              bulletNube[j] = casteadoNube->disparar();
+          }
+        }
+    }
+
     sf::Event event;
-    while (window.pollEvent(event)) {
+    while (motor->getVentana()->pollEvent(event)) {
 
       switch (event.type) {
       //Si se recibe el evento de cerrar la ventana la cierro
       case sf::Event::Closed:
-        window.close();
+        motor->getVentana()->close();
         break;
 
       case sf::Event::KeyPressed:
         switch (event.key.code) {
             //Tecla ESC para salir
             case sf::Keyboard::Escape:
-            window.close();
+            motor->getVentana()->close();
             break;
 
             //Cualquier tecla desconocida se imprime por pantalla su código
@@ -67,18 +90,42 @@ int main() {
       }
     
     }
-    //////////////////////////
-    //LO SEGUNDO ES RENDERIZAR
-    //////////////////////////
 
-    window.clear();
+
     cuerpoMueve.move(kVel/1000.0,0);
+
+    bool morir = false;
+    for(unsigned int i = 0; i < maxBullets; i++){
+      if(bulletNube[i] != NULL){
+
+        if(cuerpoMueve.getGlobalBounds().intersects(bulletNube[i]->getBody().getGlobalBounds())){
+
+          morir = true;
+          std::cout << "Vidas del jugador: " << 0 << "\n";
+          
+          bulletNube[i] = NULL;
+          delete bulletNube[i];
+
+          if(morir == true){
+            //matarJugador();
+            cuerpoMueve.setScale(0.5, 0.5);
+          }
+        }
+      }
+
+    }
+
+    motor->limpieza();
+
+    for(unsigned i = 0; i < maxBullets;i++){
+      if(bulletNube[i] != nullptr){bulletNube[i]->render();} //interpolacion
+    }
     elapsus = updateClock.getElapsedTime().asMilliseconds();
 
-    enemigo->render(window, elapsus/UPDATE_TICK_TIME);
+    enemigo->render(elapsus/UPDATE_TICK_TIME);
     //player->render(window);
-    window.draw(cuerpoMueve);
-    window.display();
+    motor->dibujo(cuerpoMueve);
+    motor->mostrar();
     contador++;
   }
 
