@@ -12,15 +12,14 @@ using namespace std;
 class Nube : public Enemigo{
     private:
         int distanciaAtaque;
-        int altura;
         int direccion = 0;
-        bool shoot;
         float shootTime;
+        bool shoot;
         
     public:
         Nube(float x, float y);
         ~Nube();
-        void update(sf::RectangleShape& player, float deltaTime);
+        void update(Player* player, float deltaTime);
         void render( float porcentaje);
         Bullet* disparar();
         bool getShoot();

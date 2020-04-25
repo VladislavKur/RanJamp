@@ -1,28 +1,37 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include "../Motor/Motor.h"
-//ALEJANDRO EL GUAPO ME HA DICHO QUE PONGA RELOJES DENTRO DE ANIMACION
+
+#ifndef ANIMACION_H
+#define ANIMACION_H
 
 class Animacion{
 
-    public:
-        Animacion(std::string fichero,sf::Vector2u cantidadImagenes, float SwitchTimeSprite,
-            sf::Vector2f tamanyoCuerpo,sf::Vector2f tamanyoSprite);
-        ~Animacion();
-        void Update(float deltaTime);
-        void setSprite(sf::Vector2u Sprites);
-        
-       
     private:
-        sf::Vector2u cantidadImagenes;
-        sf::Vector2u spriteActual;
-        sf::RectangleShape body;
-        
+        //funciones
+        void nextSprite();
+        //variables objeto
+        sf::Shape* body;
+        Motor* motor;
+        //variables basicas
+        int tamX, tamY; //tamaño del sprite
+        int posicionesX,posicionesY; //el numero de sprites que hay
+        int numeroSpriteX, numeroSpriteY; //el numero ACTUAL del sprite
+        float tiempoActual, tiempoAnterior, tiempoDuracionMax, tiempoDiff;
+        bool cambiado;
 
-        float temporizador;
-        float SwitchTimeSprite;
-
-         
-        sf::IntRect textureRect;
+    public:
+        Animacion(){};
+        Animacion(sf::Shape* cuerpo, float timeAnimation,
+            int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY
+            );
+        ~Animacion();
+        void update(float deltaTime);
+        void render(float porcentaje);
+        void setSprite(int spriteNumber);
+        int getAnimationNumbers(){return posicionesX;};
 
 };
+
+#endif

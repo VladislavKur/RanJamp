@@ -26,6 +26,12 @@ Juego::Juego(){ //WIP FUNCION CARGARNIVEL
       bulletEnemies[i] = NULL;
 
   }
+
+  for(int i = 0; i < maxBullets;i++){
+
+      bulletNube[i] = NULL;
+
+  }
   std::vector<sf::String> s; 
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
@@ -70,6 +76,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
         }
         else
           bulletEnemies[i]->update(deltaTime);//revisar
+      }
+      if(bulletNube[i] != NULL){
+        if(bulletNube[i]->lifetime<=0){
+          delete bulletNube[i];
+          bulletNube[i] = NULL;
+        }
+        else
+          bulletNube[i]->update(deltaTime);//revisar
       }
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
@@ -160,7 +174,22 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
           for(int j = 0; j < maxBullets;j++){
 
             if(bulletEnemies[j] == NULL)
-              bulletEnemies[j] = casteado->disparar();
+              bulletEnemies[j] = casteadoCent->disparar();
+
+          }
+
+        }
+
+      }  
+
+      if(casteadoNube != nullptr){
+
+        if(casteadoNube->getShoot()){
+
+          for(int j = 0; j < maxBullets;j++){
+
+            if(bulletNube[j] == NULL)
+              bulletNube[j] = casteadoCent->disparar();
 
           }
 
@@ -230,8 +259,14 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       //if(bulletEnemies[i] == NULL)continue;
       if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render();} //interpolacion
     }
+    
+    for(unsigned i = 0; i < maxBullets;i++){
 
-    //jugador->render();
+      
+      if(bulletNube[i] != nullptr){bulletNube[i]->render();} //interpolacion
+    }
+
+    jugador->render();
     
     int i = 0;
     int j = 0;
@@ -356,6 +391,11 @@ void Juego::matarJugador(){ //está nice
       bulletEnemies[i] = NULL;
 
   }
+  for(int i = 0; i < maxBullets;i++){
+
+      bulletNube[i] = NULL;
+
+  }
 
 }
 
@@ -408,6 +448,22 @@ void Juego::colisionBulletJugador(){ //WIP fachada
         }
       }
     }
+
+    if(bulletNube[i] != NULL){
+
+      if(jugador->getBody().getGlobalBounds().intersects(bulletNube[i]->getBody().getGlobalBounds())){
+
+       morir = jugador->setVidas(jugador->getVidas()-1);
+
+        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        delete bulletNube[i];
+        bulletNube[i] = NULL;
+        if(morir == true){
+          matarJugador();
+        }
+      }
+    }
+
   }
   
 }
@@ -463,5 +519,9 @@ void Juego::nextLevel(){
 
     for(int i = 0; i < maxBullets;i++){
         bulletEnemies[i] = NULL;
+    }
+
+    for(int i = 0; i < maxBullets;i++){
+        bulletNube[i] = NULL;
     }
 }

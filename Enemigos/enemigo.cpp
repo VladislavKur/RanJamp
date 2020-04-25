@@ -1,38 +1,22 @@
 #include "enemigo.h"
 
-Enemigo::Enemigo(float x, float y){
-    
-    posX = x;
-    posY = y;
-    diffX= 0.0;
-    diffY= 0.0;
-    posXanterior = x;
-    posYanterior = y;
+Enemigo::Enemigo(float x, float y, int sizeWidth, int sizeHeight, 
+            std::string fichero, float escala){
     modo = 0;
-    vida = 1;
+    body = new Cuerpo(x, y, sizeWidth, sizeHeight, fichero, escala, RECTANGLE);
+}
 
-};
 Enemigo::~Enemigo(){
-  
 }
-void Enemigo::morir(){ //WIP eliminar probablemente
-    cuerpo.setScale(0,0);
-    vida = 0;
-     
-}
-
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){
+    body->posicionamiento(entradaX, entradaY);
+}
 
-    posXanterior = posX; //LA DE ANTES DE LOS CALCULOS DEL UPDATE
-    posYanterior = posY;
-    posX += entradaX; //LA DE DESPUES DE LOS CALCULOS DEL UPDATE
-    posY += entradaY;
-    diffX = posX - posXanterior; //LA DIFERENCIA ENTRE POSX y la anterior
-    diffY = posY - posYanterior;
+bool Enemigo::comprobarColision(Cuerpo* cuerpo){
+    return body->colisiona(cuerpo);
+}
 
-    /*std::cout << "ant "<<posXanterior<<" "<<posYanterior<<"\n"
-            <<"posx "<<posX<<" "<<posY<<"\n"
-            <<"diff "<<diffX<<" "<<diffY<<"\n"
-            <<"entrada "<<entradaX<<"  "<<entradaY<<"\n";*/
-};
+Cuerpo* Enemigo::getCuerpo(){
+    return body;
+}

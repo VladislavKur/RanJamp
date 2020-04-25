@@ -1,19 +1,8 @@
 #include "nube.h"
 
-Nube::Nube(float x, float y) : Enemigo(x,y){
-    sf::Texture *text = new sf::Texture;
-
-    cuerpo.setSize(sf::Vector2f(100.0f,100.0f));
-    cuerpo.setPosition(100, 100);
-
-    cuerpo.setOrigin(75/2, 75/2);
-
-    if(!text->loadFromFile("resources/sprites.png")) 
-        std::cout << "sadasds";
+Nube::Nube(float x, float y) 
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
     
-    cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-
     distanciaAtaque = 1000;
     modo = 0;    
     velocidad = 50;
@@ -21,25 +10,20 @@ Nube::Nube(float x, float y) : Enemigo(x,y){
     shootTime = 0.0f;
 }
 
-void Nube::update(sf::RectangleShape& body, float delta){
-    //sf::RectangleShape body = player->getBody();
+void Nube::update(Player* player, float delta){
 
-    float posJugador = body.getPosition().x;
+    float posJugador = player->getBody().getPosition().x;
 
-    float local_diffX = posJugador - posX;
+    float local_diffX = posJugador - body->getPosicion()[0];
     float local_diffabs = abs(local_diffX);
     
     float velPlayer =  900.0/1000.0;
 
-    diffX = 0; //inicialmente no se mueve
-    diffY = 0; //inicialmente no se mueve
-
-   switch(modo){
+    switch(modo){
 
         case(0): //está quieto
             if(local_diffabs < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
                 modo = 1;
-                cout<<"quieto"<<"\n";
             }
         break;
         case(1): //ataque -> le busco
@@ -49,16 +33,13 @@ void Nube::update(sf::RectangleShape& body, float delta){
                 modo = 2;            
             }
             else{
-                cout<<"ataque"<<"\n";
                 actualizarPosicion((local_diffX/local_diffabs)*velocidad*delta,0); 
             }
             
         break;
         case(2): //le sigo y disparo
-            cout<<"le sigo"<<"\n";
             actualizarPosicion((local_diffX/local_diffabs)*velocidad*delta,0); 
-            //posX = posJugador;
-
+ 
             if(shootTime <= 0.0){
                 bool auxiliar;
 
@@ -78,8 +59,6 @@ void Nube::update(sf::RectangleShape& body, float delta){
             else{
                 shootTime -= delta;
             }
-            
-            //juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
 
         break;
 
@@ -91,22 +70,20 @@ Bullet* Nube::disparar(){
 
     if(shoot){
 
-        cout<<"dispara"<<endl;
-
         shoot = false;
 
-        devolver = new Bullet(posX,posY,direccion, 2);
+        vector<float> pos = body->getPosicion();
+
+        devolver = new Bullet(pos[0], pos[1], direccion, 2);
     }
 
-    return(devolver);
+    return devolver;
 
 }
-bool Nube::getShoot(){return shoot;}
-void Nube::render(float porcentaje){
-    cuerpo.setPosition(
-        posXanterior + diffX*porcentaje,
-        posYanterior + diffY*porcentaje );
+bool Nube::getShoot(){
+    return shoot;
+}
 
-    Motor * motor = Motor::instance();
-    motor->dibujo(cuerpo);
+void Nube::render(float porcentaje){
+    body->render(porcentaje);
 }
