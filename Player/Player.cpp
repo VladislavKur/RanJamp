@@ -280,3 +280,16 @@ void Player::reset(){
     body.setTexture(text); //wip fachada
     body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada
 }
+
+bool Player::GolpeMelee(){
+  Vector2f gp = body.getPosition();
+  FloatRect gbb = body.getGlobalBounds();
+
+
+    melee.left = gp.x+5;
+    melee.top = gp.y - gbb.height/2 +25;
+    melee.width = gbb.width/2 -200;
+    melee.height = gbb.height -25;
+
+
+}

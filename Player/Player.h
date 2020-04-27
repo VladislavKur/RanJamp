@@ -42,6 +42,9 @@ public:
     void toggleGodMode();
     void saltar();
 
+
+    bool GolpeMelee();
+
     void reset();
 
     //GET
@@ -86,4 +89,5 @@ public:
     sf::FloatRect coliArriba;
     sf::FloatRect coliIzquierda;
     sf::FloatRect coliDerecha;
+    sf::FloatRect melee;
 };
