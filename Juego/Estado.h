@@ -11,8 +11,8 @@ class Estado{
         Estado();
         ~Estado();
     
-        virtual void update();
-        virtual void render();
+        virtual void update(float deltaTime);
+        virtual void render(float num);
 };
 
 #endif

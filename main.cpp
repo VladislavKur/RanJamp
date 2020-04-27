@@ -4,6 +4,8 @@
 #include "Motor/Motor.h"
 #include "Juego/Juego.h"
 #include "Player/Player.h"
+#include "Juego/Manejador.h"
+#include "Juego/Menu.h"
 #define kVel 5
 
 int main() {
@@ -23,7 +25,12 @@ int main() {
 
     float elapsus;
     float delta;
-    Juego* instancia = Juego::instance();
+
+    //Crear singletons
+    Juego* juego = Juego::instance();
+    Menu* menu = Menu::instancia();
+    Manejador* instancia = Manejador::instancia();
+    instancia->cambiarEstado(menu);
 
     RectangleShape coliArV;
     RectangleShape coliAbV;
@@ -63,23 +70,23 @@ int main() {
       
   }*/
         case sf::Keyboard::P:
-          instancia->getJugador()->obtenerPU_SaltoDoble();
-          instancia->getJugador()->obtenerPU_Slowhits();
-          instancia->getJugador()->obtenerPU_Velocidad();
+          juego->getJugador()->obtenerPU_SaltoDoble();
+          juego->getJugador()->obtenerPU_Slowhits();
+          juego->getJugador()->obtenerPU_Velocidad();
         break;
         case sf::Keyboard::X:
-          instancia->getJugador()->morir();
+          juego->getJugador()->morir();
         break;
         case sf::Keyboard::G:
-          instancia->getJugador()->toggleGodMode();
+          juego->getJugador()->toggleGodMode();
         break;
         case sf::Keyboard::R:
-          instancia->getJugador()->reset();
+          juego->getJugador()->reset();
         break;
 
         case sf::Keyboard::N:
           
-          //instancia->nextLevel();
+          //juego->nextLevel();
         break;
 
         default:
@@ -103,21 +110,21 @@ int main() {
       elapsus = m->getRelojM();
 
 
-      coliArV.setPosition( instancia->getJugador()->coliArriba.left , instancia->getJugador()->coliArriba.top );
+      coliArV.setPosition( juego->getJugador()->coliArriba.left , juego->getJugador()->coliArriba.top );
       coliArV.setFillColor(Color(255, 255, 0, 128));
-      coliArV.setSize( Vector2f( instancia->getJugador()->coliArriba.width, instancia->getJugador()->coliArriba.height ) );
+      coliArV.setSize( Vector2f( juego->getJugador()->coliArriba.width, juego->getJugador()->coliArriba.height ) );
 
-      coliAbV.setPosition( instancia->getJugador()->coliAbajo.left , instancia->getJugador()->coliAbajo.top );
+      coliAbV.setPosition( juego->getJugador()->coliAbajo.left , juego->getJugador()->coliAbajo.top );
       coliAbV.setFillColor(Color(0,0,0, 128));
-      coliAbV.setSize( Vector2f( instancia->getJugador()->coliAbajo.width, instancia->getJugador()->coliAbajo.height ) );
+      coliAbV.setSize( Vector2f( juego->getJugador()->coliAbajo.width, juego->getJugador()->coliAbajo.height ) );
       
-      coliIzV.setPosition( instancia->getJugador()->coliIzquierda.left , instancia->getJugador()->coliIzquierda.top );
+      coliIzV.setPosition( juego->getJugador()->coliIzquierda.left , juego->getJugador()->coliIzquierda.top );
       coliIzV.setFillColor(Color(255, 0, 0, 128));
-      coliIzV.setSize( Vector2f( instancia->getJugador()->coliIzquierda.width, instancia->getJugador()->coliIzquierda.height ) );
+      coliIzV.setSize( Vector2f( juego->getJugador()->coliIzquierda.width, juego->getJugador()->coliIzquierda.height ) );
 
-      coliDcV.setPosition( instancia->getJugador()->coliDerecha.left , instancia->getJugador()->coliDerecha.top );
+      coliDcV.setPosition( juego->getJugador()->coliDerecha.left , juego->getJugador()->coliDerecha.top );
       coliDcV.setFillColor(Color(0, 0, 255, 128));
-      coliDcV.setSize( Vector2f( instancia->getJugador()->coliDerecha.width, instancia->getJugador()->coliDerecha.height ) );
+      coliDcV.setSize( Vector2f( juego->getJugador()->coliDerecha.width, juego->getJugador()->coliDerecha.height ) );
 
       window->clear();
       

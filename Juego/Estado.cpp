@@ -8,10 +8,10 @@ Estado::~Estado(){
 
 }
 
-void Estado::update(){
+void Estado::update(float deltaTime){
 
 }
 
-void Estado::render(){
+void Estado::render(float num){
     
 }

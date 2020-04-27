@@ -13,8 +13,8 @@ public:
     static Manejador* instancia();
     ~Manejador();
     void cambiarEstado(Estado* p_estado);
-    void update();
-    void render();
+    void update(float deltaTime);
+    void render(float num);
 };
 
 #endif
