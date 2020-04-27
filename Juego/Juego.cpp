@@ -1,6 +1,5 @@
 #include "Juego.h"
 
-
 Juego* Juego::pinstance = 0;
 
 Juego::Juego(){ //WIP FUNCION CARGARNIVEL

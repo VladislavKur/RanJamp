@@ -10,11 +10,12 @@
 #include "../Mapa/mapa.h"
 #include "../Objeto/Objeto.h"
 #include "../Texto/texto.h"
+#include "Estado.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
 
-    class Juego{
+    class Juego : public Estado{
 
         private:
             Player *jugador;
@@ -49,7 +50,6 @@
             void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
             void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
             
-
 
             
             sf::View view;
