@@ -265,7 +265,7 @@ void Juego::crearObjetos(){ //WIP FACHADA
     pos.x =posicion[i][0];
     pos.y = posicion[i][1];
     
-    Objeto *objeto1 = new Objeto(pos ,posicion[i][2]);
+    Objeto *objeto1 = new Objeto(pos ,posicion[i][2] );
     objetos[i] =  objeto1;
   }
   
@@ -428,3 +428,4 @@ void Juego::colisionBulletEnemigo(float deltaTime){//WIP fachada
     }
   }
 }
+
