@@ -3,14 +3,22 @@
 
 Bullet::Bullet(float p_x, float p_y, bool p_facing , int i) : body(){ //WIP fachada
 
+    
+    
+    
+    
     velocidad=600; //quiza lo mejor es ponerlo como constantes
     lifetime=5;   //lo del comentario anterior
 
     facing=p_facing;
+
     
-    body.setPosition(p_x, p_y); //wip fachada
+    dir = i;
+    body = new Cuerpo(p_x, p_y, 10, 10, nullptr, 1, CIRCLE);
+    /*body.setPosition(p_x, p_y); //wip fachada
     body.setFillColor(sf::Color(255,128,0)); //wip fachada
-    body.setRadius(10); //wip fachada
+    body.setRadius(10); //wip fachada*/
+
     // sf::Texture * t; 
     // if(i == 1){
     //   t->loadFromFile("resources/Imagenes/Bala_fuego.png");
@@ -29,12 +37,17 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i) : body(){ //WIP fach
 
 void Bullet::update(float deltaTime){
     lifetime-=deltaTime;
-    body.move( (facing ? 1 : -1) * velocidad*deltaTime,0);
-    //falta aplicar lo de los enemigos de antonioMonica pero aqui para la interpolacion
-}
+    float sadX,sadY ;
+    sadX = body->getPosicion()[0];
+    sadY = body->getPosicion()[1];
+    
+      body->posicionamiento((facing ? 1 : -1)  * velocidad * deltaTime + sadX,sadY+0);
 
-void Bullet::render(){
-  Motor * motor = Motor::instance();
-  motor->dibujo(body);
-  //falta aplicar lo de los enemigos de antonioMonica pero aqui para la interpolacion
+}
+    
+
+void Bullet::render(float porcentaje){
+  
+    body->render(porcentaje);
+ 
 }

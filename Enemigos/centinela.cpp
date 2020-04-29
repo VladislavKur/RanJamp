@@ -1,23 +1,11 @@
 #include "centinela.h"
 
 
-Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
-    sf::Texture *text = new sf::Texture;
+Centinela::Centinela( float x, float y, int type) 
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
 
     shoot = false;
-
     shootTime = 0.0;
-
-    cuerpo.setSize(sf::Vector2f(150.0f,250.0f));
-    cuerpo.setPosition(100, 100);
-
-    cuerpo.setOrigin(75, 150);
-
-    if(!text->loadFromFile("resources/Imagenes/Arqueros.png")) std::cout << "sadasds";
-    
-    cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0, 0, 192 , 640));
-   // cuerpo.setScale(1.5, 2.5);
 
     tipo = type;
     modo  = 0;
@@ -25,20 +13,17 @@ Centinela::Centinela( float x, float y, int type) : Enemigo(x,y){
     distanciaDisparo = 1000;
     distanciaAtaque = 200;
 
-};
+}
 
 
 void Centinela::update(Player* player, float deltaTime){
 
-    sf::RectangleShape body = player->getBody();
+    sf::RectangleShape bodyJ = player->getBody();
 
-    float posJugador = body.getPosition().x;
+    float posJugador = bodyJ.getPosition().x;
 
-    float local_diffX = posJugador - posX;
+    float local_diffX = posJugador - body->getPosicion()[0];
     float local_diffabs = abs(local_diffX);
-
-    diffX = 0; //inicialmente no se mueve
-    diffY = 0; //inicialmente no se mueve
 
     bool cambio; //no nos cambiamos de modo por defecto
      do{
@@ -117,15 +102,6 @@ void Centinela::update(Player* player, float deltaTime){
 
 };
 
-void Centinela::render( float porcentaje){
-    cuerpo.setPosition(
-        posXanterior + diffX*porcentaje,
-        posYanterior + diffY*porcentaje );
-
-    Motor * motor = Motor::instance();
-    motor->dibujo(cuerpo);
-}
-
 Bullet* Centinela::disparar(){
     Bullet* devolver = NULL;
 
@@ -133,8 +109,14 @@ Bullet* Centinela::disparar(){
 
         shoot = false;
 
-        devolver = new Bullet(posX,posY,direccion, 2);
+        vector<float> pos = body->getPosicion();
+
+        devolver = new Bullet(pos[0], pos[1], direccion, 2);
     }
 
     return(devolver);
+}
+
+void Centinela::render( float porcentaje){
+    body->render(porcentaje);
 }

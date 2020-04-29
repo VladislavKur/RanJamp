@@ -1,14 +1,15 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../Animacion/Animacion.h"
-
-
+#include "../Mundo/Mundo.h"
+#include "../Enumerador/typeBody.h"
+#include "../Cuerpo/Cuerpo.h"
 
 class Player
 {
 private:
     sf::Vector2u textura;
-    sf::RectangleShape body;
+    Cuerpo* body;
     
     float velocidad;
     int saltos;
@@ -33,8 +34,8 @@ public:
     bool auxSaltos;
 
     //FUNCIONALIDAD
-    void render();
-    void update(float deltaTime);
+    void render(float );
+    void update(float deltaTime , Mundo * mundo);
     void updateHitbox();
 
     void perderVida();
@@ -51,7 +52,7 @@ public:
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
     float getJumpSpeed(){return jumpSpeed;};
-    sf::RectangleShape getBody(){return body;}
+    Cuerpo* getBody(){return body;}
     int getVidas(){return vidas;}
     float getCooldownSalto(){return cooldownSalto;};
     float getCooldownDisparo(){return cooldownDisparo;}
@@ -74,13 +75,11 @@ public:
 
     void setVelocidad(float);
     void setArma(int);
-    void setVidas(int);
+    bool setVidas(int);
     void setPosicion(float, float );
 
-    void moveRight(float deltaTime);
-    void moveLeft(float deltaTime);
-
-    void morir();
+    void moveRight(float deltaTime, Mundo * mundo);
+    void moveLeft(float deltaTime, Mundo * mundo);
 
     sf::FloatRect coliAbajo;
     sf::FloatRect coliArriba;
