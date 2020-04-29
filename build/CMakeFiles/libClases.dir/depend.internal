@@ -13,6 +13,7 @@ CMakeFiles/libClases.dir/Bullet/bullet.cpp.o
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp
@@ -33,6 +34,7 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
@@ -44,6 +46,7 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
@@ -56,6 +59,7 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Bullet/bullet.h
@@ -70,6 +74,7 @@ CMakeFiles/libClases.dir/Enemigos/nube.cpp.o
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
@@ -82,6 +87,7 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Hud/hud.cpp.o
  /home/magiic/Escritorio/RanJamp/Hud/hud.cpp
  /home/magiic/Escritorio/RanJamp/Hud/hud.h
@@ -107,6 +113,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/magiic/Escritorio/RanJamp/Musica/musica.h
  /home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
  /home/magiic/Escritorio/RanJamp/Texto/texto.h
 CMakeFiles/libClases.dir/Menu/menu.cpp.o
  /home/magiic/Escritorio/RanJamp/Menu/menu.cpp
@@ -150,6 +157,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
  /home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp
  /home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
@@ -160,6 +168,7 @@ CMakeFiles/libClases.dir/Player/Player.cpp.o
  /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
  /home/magiic/Escritorio/RanJamp/Player/Player.cpp
  /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Texto/texto.cpp.o
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Texto/texto.cpp

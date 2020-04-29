@@ -37,6 +37,8 @@ SFML/Graphics.hpp
 /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
 ../Cuerpo/Cuerpo.h
 /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+../Rectagulo/Rectangulo.h
+/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 
 /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp
 Cuerpo.h
@@ -171,6 +173,8 @@ iostream
 /home/magiic/Escritorio/RanJamp/Musica/musica.h
 ../Hud/hud.h
 /home/magiic/Escritorio/RanJamp/Hud/hud.h
+../Rectagulo/Rectangulo.h
+/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 
 /home/magiic/Escritorio/RanJamp/Menu/menu.cpp
 menu.h
@@ -287,6 +291,12 @@ SFML/Graphics.hpp
 -
 ../Player/Player.h
 /home/magiic/Escritorio/RanJamp/Player/Player.h
+../Enumerador/typeBody.h
+/home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+../Cuerpo/Cuerpo.h
+/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+../Rectagulo/Rectangulo.h
+/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
 
 /home/magiic/Escritorio/RanJamp/Player/Player.cpp
 Player.h
@@ -301,6 +311,14 @@ SFML/Graphics.hpp
 /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
 ../Enumerador/typeBody.h
 /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+../Cuerpo/Cuerpo.h
+/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+../Rectagulo/Rectangulo.h
+/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+
+/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+SFML/Graphics.hpp
+-
 ../Cuerpo/Cuerpo.h
 /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
 

@@ -1,6 +1,10 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../Player/Player.h"
+#include "../Enumerador/typeBody.h"
+#include "../Cuerpo/Cuerpo.h"
+#include "../Rectagulo/Rectangulo.h"
+
 
 
 class Objeto
@@ -8,20 +12,22 @@ class Objeto
 
     public:
     ~Objeto();//t --> tipo
-    Objeto( sf::Vector2f Posicion, int t);
+    Objeto( float , float, int t);
 
-    void render();
+    void render(float );
     void update(Player &otherBody);
-    sf::RectangleShape getBody();
+    Cuerpo* getBody();
 
 
     void recogido();
     int getTipo();
     void setTipo(int t);
     void destroirObjeto(Objeto *);
+    Rectangulo* getHitbox(){return hitbox;}
     private:
 
-    sf::RectangleShape body;
+    Cuerpo* body;
+    Rectangulo* hitbox;
 
     int tipo;
 

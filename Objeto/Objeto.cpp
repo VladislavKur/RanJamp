@@ -7,18 +7,15 @@
     
     
     Objeto::~Objeto(){}
-    Objeto::Objeto(sf::Vector2f Posicion, int t){
-            sf::Texture *text = new sf::Texture ;
+    Objeto::Objeto(float x, float y, int t){
+            
  
-            text->loadFromFile("resources/Imagenes/powerup1.png");
-            body.setTexture(text);
-            body.setSize(sf::Vector2f(50,50));
-            //body.setTexture(tex);
-            body.setPosition(Posicion);
-
-        tipo = t;
-    
-
+            tipo = t;
+            hitbox = new Rectangulo(50,50,x,y);
+            body = new Cuerpo(x,y,50,50,"powerup1.png",1,RECTANGLE);
+           
+            
+        
     }
 
     void Objeto::destroirObjeto(Objeto * obj){
@@ -44,13 +41,15 @@
          return tipo;
     }
 
-    sf::RectangleShape Objeto::getBody(){
+    Cuerpo* Objeto::getBody(){
     return body;
 }
 
 
 
-    void Objeto:: render(){
-        Motor * motor = Motor::instance();
-        motor->dibujo(body); 
+    void Objeto::render(float porcentaje){
+        
+        body->render(porcentaje);
     }
+
+    

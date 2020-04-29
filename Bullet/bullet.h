@@ -4,6 +4,7 @@
 #include "../Enumerador/typeBody.h"
 #include "../Enumerador/typeBullet.h"
 #include "../Cuerpo/Cuerpo.h"
+#include "../Rectagulo/Rectangulo.h"
 
 #define maxBullets 256
 
@@ -11,6 +12,7 @@ class Bullet
 {
 private:
     Cuerpo * body;
+    Rectangulo* hitbox;
     bool facing;
     float velocidad;
     int dir;
@@ -22,6 +24,7 @@ public:
     void update(float deltaTime);
     void render(float );
 
+    Rectangulo* getHitbox(){return hitbox;}
     Cuerpo* getBody(){return body;};
 
 };

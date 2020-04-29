@@ -10,7 +10,7 @@ Player::Player(int x, int y) {
   /*Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
             std::string fichero, float escala, typeBody tipoCuerpo){*/
 
-
+    hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=30;
@@ -28,6 +28,7 @@ Player::Player(int x, int y) {
     cooldownDisparo = 0;
     body = new Cuerpo(x,y,100,100,"mago.png",1,RECTANGLE);
     body->Origen(100/2,100/2);
+    facing = true;
     //body->texturizar(text);
     /*
     body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/ // ESTO HAY QUE PONERLO
@@ -59,9 +60,11 @@ void Player::update(float deltaTime , Mundo * mundo){
     
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
         moveRight(deltaTime , mundo);
+        facing = true;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
         moveLeft(deltaTime, mundo);
+        facing = false;
     }
 
   

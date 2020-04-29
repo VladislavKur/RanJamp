@@ -12,6 +12,7 @@ CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Enumerador/typeBullet.h
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
@@ -32,6 +33,7 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Cuerpo/Cuerpo.h
@@ -43,6 +45,7 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Cuerpo/Cuerpo.h
@@ -55,6 +58,7 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Bullet/bullet.h
@@ -69,6 +73,7 @@ CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Cuerpo/Cuerpo.h
@@ -81,6 +86,7 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.h
@@ -106,6 +112,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Musica/musica.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Rectagulo/Rectangulo.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Texto/texto.h
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
@@ -149,6 +156,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Cuerpo/Cuerpo.h
@@ -159,6 +167,7 @@ CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.cpp
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Rectagulo/Rectangulo.h
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.cpp

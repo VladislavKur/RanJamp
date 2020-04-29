@@ -6,7 +6,7 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i) : body(){ //WIP fach
     
     
     
-    
+    hitbox = new Rectangulo(10,10,p_x,p_y);
     velocidad=600; //quiza lo mejor es ponerlo como constantes
     lifetime=5;   //lo del comentario anterior
 

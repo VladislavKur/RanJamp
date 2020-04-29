@@ -13,6 +13,7 @@
 #include "../Texto/texto.h"
 #include "../Musica/musica.h"
 #include "../Hud/hud.h"
+#include "../Rectagulo/Rectangulo.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H

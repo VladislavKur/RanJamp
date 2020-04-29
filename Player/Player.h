@@ -4,7 +4,7 @@
 #include "../Mundo/Mundo.h"
 #include "../Enumerador/typeBody.h"
 #include "../Cuerpo/Cuerpo.h"
-
+#include "../Rectagulo/Rectangulo.h"
 class Player
 {
 private:
@@ -24,6 +24,8 @@ private:
 
     bool godMode;
     int vidasAnteriores;
+    Rectangulo* hitbox;
+    bool facing;
 
 public:
     //CANON
@@ -48,15 +50,18 @@ public:
     //GET
     int getSaltos(){return saltos;}
     int getArma(){return arma;}
+    
     bool getPU_SaltoDoble(){return PU_saltoDoble;}; 
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
     float getJumpSpeed(){return jumpSpeed;};
     Cuerpo* getBody(){return body;}
+    Rectangulo* getHitbox(){return hitbox;}
     int getVidas(){return vidas;}
     float getCooldownSalto(){return cooldownSalto;};
     float getCooldownDisparo(){return cooldownDisparo;}
     float getVelocidad(){return velocidad;}
+    bool getFacing(){return facing;}
 
     //SET
     void obtenerPU_SaltoDoble();

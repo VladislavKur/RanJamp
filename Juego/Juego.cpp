@@ -93,12 +93,13 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletJugador();
     
     jugador->update(deltaTime , mundo); //revisar
-   
+    
     int j = 0;
     while(objetos[j] != nullptr && j < numObjetos){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
      
-       if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
-      if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
+       //if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
+      if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && 
+      objetos[j]->getHitbox()->getIntersect(*jugador->getHitbox())){
 
             switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
@@ -134,20 +135,21 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     
  
-    Vector2f playerPos = jugador->getBody().getPosition();//WIP fachada
+    float playerPosX = jugador->getBody()->getPosicion()[0];
+    float playerPosY = jugador->getBody()->getPosicion()[1];
 
-    view.setCenter(playerPos); //WIP fachada
+    view.setCenter(playerPosX,playerPosY); //WIP fachada
     ///////////////Esta zona es WIP fachada y funcion diferente
-    if( playerPos.x<view.getSize().x/2) {
-      view.setCenter(view.getSize().x/2, playerPos.y);
+    if( playerPosX < view.getSize().x/2) {
+      view.setCenter(view.getSize().x/2, playerPosY);
     }
-    if( playerPos.y > dimensiones[1]-view.getSize().y/2){
+    if( playerPosY > dimensiones[1]-view.getSize().y/2){
       view.setCenter(view.getCenter().x, dimensiones[1]-view.getSize().y/2);
     }
-    if( playerPos.x>dimensiones[3]-view.getSize().x/2) {
+    if( playerPosX>dimensiones[3]-view.getSize().x/2) {
       view.setCenter(dimensiones[3]-view.getSize().x/2, view.getCenter().y);
     }
-    if( playerPos.y < view.getSize().y/2){
+    if( playerPosY < view.getSize().y/2){
       view.setCenter(view.getCenter().x, view.getSize().y/2);
     }
     //////////////////
@@ -159,9 +161,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
       enemies[i]->updateHitbox(); //dentro de update de enemigo
-      if(enemies[i]->getVidas() == 0){ //dentro de update de enemigo
-        matarEnemigo(enemies[i]);
-      }
+     // if(enemies[i]->getVidas() == 0){ //dentro de update de enemigo
+       // matarEnemigo(enemies[i]);
+     // }
    
       //esto del casteo está bien hecho, pero en una funcion aparte
       Centinela* casteadoCent = dynamic_cast<Centinela*>(enemies[i]);
@@ -208,13 +210,16 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
 
     RectangleShape ** objetos = mundo->getObjetos();//WIP FACHADA
     
-    Vector2f posobj; //WIP FACHADA
+    float posobjX;
+    float posobjY; //WIP FACHADA
     bool pararse=false;
     bool aux = false;
-    Vector2f posant; //WIP FACHADA
+    float posantX; //WIP FACHADA
+    float posantY;
     for(int i=0 ; i<  mundo->getNumObjetos(); i++){
       if(jugador->coliAbajo.intersects(objetos[i]->getGlobalBounds())){//WIP FACHADA
-        posobj = objetos[i]->getPosition();
+        posobjX = objetos[i]->getPosition().x;
+        posobjY = objetos[i]->getPosition().y;
         pararse=true;
       } 
       
@@ -222,12 +227,13 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->setPosicion(jugador->getBody().getPosition().x,posobj.y-55); //WIP FACHADA y explicar que hace esto detalladamente pls
+          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY-55); //WIP FACHADA y explicar que hace esto detalladamente pls
           jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
           aux = true;
-          posant = jugador->getBody().getPosition(); //WIP FACHADA
+          posantX = jugador->getBody()->getPosicion()[0];
+          posantX = jugador->getBody()->getPosicion()[1]; //WIP FACHADA
           
-        } else if(posant != jugador->getBody().getPosition()){ //WIP FACHADA
+        } else if(posantX != jugador->getBody()->getPosicion()[0] && posantY != jugador->getBody()->getPosicion()[1]){ //WIP FACHADA
           aux = false;
         }
         jugador->setJumpSpeed(0);
@@ -250,23 +256,23 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     mundo->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletPlayer[i]==NULL) continue;
-      bulletPlayer[i]->render(); //interpolacion
+      bulletPlayer[i]->render(porcentaje); //interpolacion
 
     }
 
     for(unsigned i = 0; i < maxBullets;i++){
 
       //if(bulletEnemies[i] == NULL)continue;
-      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render();} //interpolacion
+      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion
     }
     
     for(unsigned i = 0; i < maxBullets;i++){
 
       
-      if(bulletNube[i] != nullptr){bulletNube[i]->render();} //interpolacion
+      if(bulletNube[i] != nullptr){bulletNube[i]->render(porcentaje);} //interpolacion
     }
 
-    jugador->render();
+    jugador->render(porcentaje);
     
     int i = 0;
     int j = 0;
@@ -279,7 +285,7 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     //t->render();
     while(objetos[j] != nullptr && j < numObjetos){
      
-      objetos[j]->render();
+      objetos[j]->render(porcentaje);
       j++;
     }
 
@@ -290,7 +296,7 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
 
 void Juego::crearObjetos(){ //WIP FACHADA
  
-  sf::Vector2f pos; //WIP fachada
+  
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
   numObjetos = posicion.size();
@@ -299,10 +305,9 @@ void Juego::crearObjetos(){ //WIP FACHADA
 
   for(unsigned i = 0; i < posicion.size();i++){
 
-    pos.x =posicion[i][0];
-    pos.y = posicion[i][1];
+  
     
-    Objeto *objeto1 = new Objeto(pos ,posicion[i][2] );
+    Objeto *objeto1 = new Objeto(posicion[i][0],posicion[i][1] ,posicion[i][2] );
     objetos[i] =  objeto1;
   }
   
@@ -405,7 +410,7 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
             //y por estas cosas usamos fachada ^.^
-            bulletPlayer[i]=new Bullet( jugador->getBody().getPosition().x , jugador->getBody().getPosition().y, (jugador->getBody().getScale().x > 0) , 1 );
+            bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 );
             jugador->setCooldownDisparo(10*deltaTime);
             break;
           }
@@ -415,17 +420,17 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
 
 
 void Juego::colisionBulletMundo(){//WIP fachada
-    RectangleShape ** objetos = mundo->getObjetos();
+    RectangleShape ** objetos = mundo->getObjetos(); // esto tiene que cambiar para que vaya la linea de abajo
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
     for(int j=0 ; j<mundo->getNumObjetos(); j++){
       if(bulletPlayer[i]==NULL) continue;
       if(objetos[j]==NULL) continue;
 
-      if(objetos[j]->getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+      /*if(objetos[j]->getGlobalBounds().intersects(*bulletPlayer[i]->getHitbox() )){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
-      }
+      }*/
     }
   }
 }
@@ -436,7 +441,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
     if(bulletEnemies[i] != NULL){
 
-      if(jugador->getBody().getGlobalBounds().intersects(bulletEnemies[i]->getBody().getGlobalBounds())){
+      if(jugador->getHitbox()->getIntersect(*bulletEnemies[i]->getHitbox())){
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
@@ -451,7 +456,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
     if(bulletNube[i] != NULL){
 
-      if(jugador->getBody().getGlobalBounds().intersects(bulletNube[i]->getBody().getGlobalBounds())){
+      if(jugador->getHitbox()->getIntersect(*bulletNube[i]->getHitbox())){
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
@@ -474,7 +479,7 @@ void Juego::colisionBulletEnemigo(){//WIP fachada
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
 
-      if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+     /* if(enemies[j]->getCuerpo().getGlobalBounds().intersects( *bulletPlayer[i]->getHitbox() )){
           for (int index = j; index < numEmenigos; index++)
             enemies[index] = enemies[index+1];
           enemies[numEmenigos] = NULL;
@@ -482,13 +487,11 @@ void Juego::colisionBulletEnemigo(){//WIP fachada
 
           delete bulletPlayer[i];
           bulletPlayer[i]=NULL;
-      }
+      }*/
     }
   }
 }
 
-<<<<<<< HEAD
-=======
 
 void Juego::cargarMusica(){
     sf::String ss = "resources/Sonidos/si-veo2.ogg";
@@ -497,9 +500,9 @@ void Juego::cargarMusica(){
 }
 
 void Juego::comprobarPasarNivel(){
- if( mundo->getPuerta()->getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())){
+ /*if( mundo->getPuerta()->getGlobalBounds().intersects(*jugador->getHitbox())){
    nextLevel();
- }
+ }*/
 }
 
 void Juego::nextLevel(){
@@ -527,4 +530,3 @@ void Juego::nextLevel(){
         bulletNube[i] = NULL;
     }
 }
->>>>>>> f53dbbcdfc941eb04358359d9bc24e5d7ddc7c99
