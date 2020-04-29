@@ -121,8 +121,10 @@ int main() {
       if(bulletNube[i] != nullptr){bulletNube[i]->render();} //interpolacion
     }
     elapsus = updateClock.getElapsedTime().asMilliseconds();
-
-    enemigo->render(elapsus/UPDATE_TICK_TIME);
+    if(elapsus>UPDATE_TICK_TIME){
+      enemigo->render(1.0);
+    }else
+      enemigo->render(elapsus/UPDATE_TICK_TIME);
     //player->render(window);
     motor->dibujo(cuerpoMueve);
     motor->mostrar();

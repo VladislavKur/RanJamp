@@ -159,7 +159,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
       enemies[i]->updateHitbox(); //dentro de update de enemigo
-      if(enemies[i]->getVidas() == 0){ //dentro de update de enemigo
+      if(enemies[i]->muerto){ //dentro de update de enemigo
         matarEnemigo(enemies[i]);
       }
    
@@ -474,7 +474,7 @@ void Juego::colisionBulletEnemigo(){//WIP fachada
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
 
-      if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
+      //if(enemies[j]->getCuerpo().getGlobalBounds().intersects( bulletPlayer[i]->getBody().getGlobalBounds() )){
           for (int index = j; index < numEmenigos; index++)
             enemies[index] = enemies[index+1];
           enemies[numEmenigos] = NULL;
@@ -482,7 +482,7 @@ void Juego::colisionBulletEnemigo(){//WIP fachada
 
           delete bulletPlayer[i];
           bulletPlayer[i]=NULL;
-      }
+      //}
     }
   }
 }

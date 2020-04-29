@@ -1,7 +1,7 @@
 #include "pajaro.h"
 
 Pajaro::Pajaro(float x, float y) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.25){
 
     alturaActual = y;
     alturaMinRelativa = alturaMax + alturaActual;
@@ -9,9 +9,7 @@ Pajaro::Pajaro(float x, float y)
     direccion = -1;
     haPegado = false;
 
-    velocidad = 150;
-
-    modo = 0;
+    velocidad = 50;
 
 //    updateHitbox();
     
@@ -19,7 +17,7 @@ Pajaro::Pajaro(float x, float y)
 
 void Pajaro::updateHitbox(){
 
-    sf::Vector2f gp = cuerpo.getPosition();
+   /* vector<float> gp = cuerpo.getPosition();
     sf::FloatRect gbb = cuerpo.getGlobalBounds();
 
     coliAbajo.left = gp.x - gbb.width/2 + 20;
@@ -40,7 +38,7 @@ void Pajaro::updateHitbox(){
     coliArriba.left = gp.x - gbb.width/2 + 20;
     coliArriba.top = gp.y-gbb.height/2 +25;
     coliArriba.width = 0;
-    coliArriba.height = 0;
+    coliArriba.height = 0;*/
 
 }
 
@@ -49,11 +47,10 @@ void Pajaro::update(Player* entrada, float delta){
     float posX = body->getPosicion()[0];
     float posY = body->getPosicion()[1];
 
-    posX = posX - delta*velocidad*0.6;
-
-    posY = posY + direccion*delta*velocidad;
-
-    body->posicionamiento(posX, posY);
+    //posX = posX - delta*velocidad*0.6;
+    //posY = posY + direccion*delta*velocidad;
+    
+    body->posicionamiento(-delta*velocidad*0.6, direccion*delta*velocidad);
 
     if(posY >= alturaMinRelativa){ //la parte más baja que puede bajar
         posY = alturaMinRelativa;

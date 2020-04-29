@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
   "/home/fv/Desktop/RanJamp/Bullet/bullet.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
+  "/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
   "/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
   "/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
   "/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
@@ -41,6 +42,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Menu"
   "../Hud"
   "../Musica"
+  "../Cuerpo"
   )
 
 # Targets to which this target links.

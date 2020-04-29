@@ -28,3 +28,5 @@
 /home/fv/Desktop/RanJamp/build/Hud/CMakeFiles/rebuild_cache.dir
 /home/fv/Desktop/RanJamp/build/Musica/CMakeFiles/edit_cache.dir
 /home/fv/Desktop/RanJamp/build/Musica/CMakeFiles/rebuild_cache.dir
+/home/fv/Desktop/RanJamp/build/Cuerpo/CMakeFiles/edit_cache.dir
+/home/fv/Desktop/RanJamp/build/Cuerpo/CMakeFiles/rebuild_cache.dir

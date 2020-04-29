@@ -46,6 +46,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/fv/Desktop/RanJamp/build/Menu/cmake_install.cmake")
   include("/home/fv/Desktop/RanJamp/build/Hud/cmake_install.cmake")
   include("/home/fv/Desktop/RanJamp/build/Musica/cmake_install.cmake")
+  include("/home/fv/Desktop/RanJamp/build/Cuerpo/cmake_install.cmake")
 
 endif()
 

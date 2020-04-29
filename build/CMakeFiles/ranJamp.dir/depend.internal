@@ -4,11 +4,13 @@
 CMakeFiles/ranJamp.dir/main.cpp.o
  /home/fv/Desktop/RanJamp/Animacion/Animacion.h
  /home/fv/Desktop/RanJamp/Bullet/bullet.h
+ /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
  /home/fv/Desktop/RanJamp/Enemigos/centinela.h
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
  /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
  /home/fv/Desktop/RanJamp/Enemigos/nube.h
  /home/fv/Desktop/RanJamp/Enemigos/pajaro.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
  /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Juego/Juego.h
  /home/fv/Desktop/RanJamp/Menu/menu.h

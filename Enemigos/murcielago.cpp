@@ -71,9 +71,9 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
     
 }
 
-void Murcielago::updateHitbox(){
-    sf::Vector2f gp = cuerpo.getPosition();
-    sf::FloatRect gbb = cuerpo.getGlobalBounds();
+void Murcielago::updateHitbox(){/*
+    sf::Vector2f gp = sf::Vector2f(body->getPosicion()[0],body->getPosicion()[1]);
+    sf::FloatRect gbb = sf::FloatRect(body->getBounds()[0], body->getBounds()[1]);
 
     coliAbajo.left = gp.x - gbb.width/2 + 20;
     coliAbajo.top = gp.y + gbb.height/2 -50;
@@ -93,7 +93,7 @@ void Murcielago::updateHitbox(){
     coliArriba.left = gp.x - gbb.width/2 + 20;
     coliArriba.top = gp.y-gbb.height/2 +25;
     coliArriba.width = 0;
-    coliArriba.height = 0;
+    coliArriba.height = 0;*/
 }
 
 void Murcielago::render(float porcentaje){

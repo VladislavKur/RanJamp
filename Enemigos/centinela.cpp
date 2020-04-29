@@ -117,6 +117,10 @@ Bullet* Centinela::disparar(){
     return(devolver);
 }
 
+bool Centinela::getShoot(){
+    return shoot;
+}
+
 void Centinela::render( float porcentaje){
     body->render(porcentaje);
 }

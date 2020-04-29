@@ -14,7 +14,7 @@ class Enemigo{
         virtual void update(Player* player, float deltaTime){}; ///player
         virtual void render(float porcentaje){};
         virtual void updateHitbox(){}
-
+        bool muerto;
         Cuerpo* getCuerpo();
         bool comprobarColision(Cuerpo* cuerpo);
         

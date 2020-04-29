@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Animacion/CMakeLists.txt"
   "../Bullet/CMakeLists.txt"
   "../CMakeLists.txt"
+  "../Cuerpo/CMakeLists.txt"
   "../Enemigos/CMakeLists.txt"
   "../Hud/CMakeLists.txt"
   "../Juego/CMakeLists.txt"
@@ -62,6 +63,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Menu/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Hud/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Musica/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Cuerpo/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

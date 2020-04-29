@@ -5,12 +5,7 @@ Player::~Player(){
 
 }
 Player::Player()
-:animacion("/Imagenes/mago.png",
-            sf::Vector2u(40,19),
-            0.33f,
-            sf::Vector2f(100.0f,100.0f),
-            sf::Vector2f(75.0,75.0)
-            ){//WIP fachada
+{//WIP fachada
     sf::Texture *text = new sf::Texture; //wip fachada
 
     saltos = 1;
@@ -46,12 +41,7 @@ Player::Player()
 } 
 
 Player::Player(int x, int y) 
-: animacion("/Imagenes/mago.png",
-            sf::Vector2u(40,19),
-            0.33f,
-            sf::Vector2f(100.0f,100.0f),
-            sf::Vector2f(75.0,75.0)
-            ){ //lo mismo que lo del constructor de arriba, wip fachada y TERMINAR
+            { //lo mismo que lo del constructor de arriba, wip fachada y TERMINAR
     
     //body.setSize(sf::Vector2f(100.0f,100.0f));
     //body.setTexture(tex);
@@ -61,7 +51,7 @@ Player::Player(int x, int y)
 
     //body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
     saltos = 1;
-    jumpSpeed=0;
+    jumpSpeed=0.0;
     jumpHeight=75*2;
     arma=0;  
     vidas = 5;  

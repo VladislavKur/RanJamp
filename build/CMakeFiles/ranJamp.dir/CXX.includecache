@@ -9,6 +9,8 @@
 /home/fv/Desktop/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
+iostream
+-
 ../Motor/Motor.h
 /home/fv/Desktop/RanJamp/Motor/Motor.h
 
@@ -17,6 +19,18 @@ SFML/Graphics.hpp
 -
 ../Motor/Motor.h
 /home/fv/Desktop/RanJamp/Motor/Motor.h
+
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
+../Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
+../Enumerador/typeBody.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 
 /home/fv/Desktop/RanJamp/Enemigos/centinela.h
 SFML/Graphics.hpp
@@ -37,6 +51,8 @@ iostream
 /home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Player/Player.h
 /home/fv/Desktop/RanJamp/Player/Player.h
+../Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 
 /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
 SFML/Graphics.hpp
@@ -63,6 +79,8 @@ iostream
 -
 enemigo.h
 /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 
 /home/fv/Desktop/RanJamp/Hud/hud.h
 SFML/Graphics.hpp

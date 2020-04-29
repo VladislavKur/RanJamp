@@ -3,11 +3,13 @@
 
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Bullet/bullet.h
+CMakeFiles/ranJamp.dir/main.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/nube.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Enemigos/pajaro.h
+CMakeFiles/ranJamp.dir/main.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Hud/hud.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Juego/Juego.h
 CMakeFiles/ranJamp.dir/main.cpp.o: ../Menu/menu.h

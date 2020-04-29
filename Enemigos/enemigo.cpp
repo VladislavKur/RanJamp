@@ -14,7 +14,10 @@ void Enemigo::actualizarPosicion(float entradaX, float entradaY){
 }
 
 bool Enemigo::comprobarColision(Cuerpo* cuerpo){
-    return body->colisiona(cuerpo);
+    bool dev = body->colisiona(cuerpo);
+    if(dev)
+        muerto =true;
+    return dev;
 }
 
 Cuerpo* Enemigo::getCuerpo(){

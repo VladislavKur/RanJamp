@@ -22,6 +22,8 @@
             static Motor *instance();
             void dibujo(sf::Shape* entrada);
             void dibujo(sf::Sprite entrada);
+            void dibujo(sf::RectangleShape entrada);
+            void dibujo(sf::CircleShape entrada);
             void dibujo( sf::Text  entrada);
             bool cargarSprite(sf::Texture& entrada, std::string fichero);//wip
             void recorte(sf::Shape* entrada, int xi, int yi, int lengthX, int lengthY);

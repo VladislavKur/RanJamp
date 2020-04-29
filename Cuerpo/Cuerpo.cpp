@@ -1,6 +1,6 @@
 #include "Cuerpo.h"
 
-Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
+Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala, typeBody tipoCuerpo){
 
     motor = Motor::instance();
@@ -9,7 +9,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
     class_positionY = y_entrada;
 
     class_previousX = x_entrada;
-    class_positionY = y_entrada;
+    class_previousY = y_entrada;
 
     if(tipoCuerpo == RECTANGLE)
         body = new sf::RectangleShape();
@@ -25,7 +25,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
     
     class_move = false;
 
-    posicionamiento(x_entrada, y_entrada);
+    motor->posicionar(body, class_previousX, class_previousY);
 
     vector<int> aux = texturizar(fichero, sizeWidth, sizeHeight);
 
@@ -36,6 +36,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
 
     motor->setScale(body, escala, escala);
 
+    addAnimacion(0.20);
 }
 
 
@@ -44,8 +45,8 @@ void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     class_previousX = class_positionX;
     class_previousY = class_positionY;
 
-    class_positionX = x_entrada;
-    class_positionY = y_entrada;
+    class_positionX += x_entrada;
+    class_positionY += y_entrada;
 
     class_move = true;
 
@@ -104,7 +105,12 @@ std::vector<float> Cuerpo::getBounds(){
 }
 
 std::vector<float> Cuerpo::getPosicion(){
-    return vector<float>(class_positionX, class_positionY);
+    vector<float> devolver;
+    
+    devolver.push_back(class_positionX);
+    devolver.push_back(class_positionY);
+        
+    return devolver;
 }
 
 std::vector<float> Cuerpo::getSize(){
@@ -134,12 +140,12 @@ void Cuerpo::update(float deltaTime){
 
 void Cuerpo::render(float porcentaje){
     if(this != NULL){
-        animacion->render(porcentaje);
+        //animacion->render(porcentaje);
 
         motor->posicionar(body, 
         class_previousX + (class_positionX-class_previousX)*porcentaje,
         class_previousY + (class_positionY-class_previousY)*porcentaje);
-
+        //motor->posicionar(body, 1100,200);
         motor->dibujo(body);
     }
 }

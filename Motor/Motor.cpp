@@ -37,11 +37,20 @@ void Motor::dibujo(sf::Shape* cuerpo){
     sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
     sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
 
-    if(casteadoRect != NULL)
+    if(casteadoRect != NULL){
         ventana->draw(*casteadoRect);
-    else if(casteadoCirc)
+    }
+    else if(casteadoCirc != NULL)
         ventana->draw(*casteadoCirc);
         
+}
+
+void Motor::dibujo( sf::RectangleShape  entrada){
+    ventana->draw(entrada);
+}
+
+void Motor::dibujo( sf::CircleShape  entrada){
+    ventana->draw(entrada);
 }
 
 void Motor::dibujo( sf::Text  entrada){
