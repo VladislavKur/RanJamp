@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/magiic/Escritorio/RanJamp
+CMAKE_SOURCE_DIR = /home/vermia/RanJamp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/magiic/Escritorio/RanJamp/build
+CMAKE_BINARY_DIR = /home/vermia/RanJamp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libClases.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/libClases.dir/flags.make
 
 CMakeFiles/libClases.dir/Player/Player.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libClases.dir/Player/Player.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/magiic/Escritorio/RanJamp/Player/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libClases.dir/Player/Player.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/vermia/RanJamp/Player/Player.cpp
 
 CMakeFiles/libClases.dir/Player/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Player/Player.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Player/Player.cpp > CMakeFiles/libClases.dir/Player/Player.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Player/Player.cpp > CMakeFiles/libClases.dir/Player/Player.cpp.i
 
 CMakeFiles/libClases.dir/Player/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Player/Player.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Player/Player.cpp -o CMakeFiles/libClases.dir/Player/Player.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Player/Player.cpp -o CMakeFiles/libClases.dir/Player/Player.cpp.s
 
 CMakeFiles/libClases.dir/Player/Player.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/libClases.dir/Player/Player.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Bullet/bullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c /home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c /home/vermia/RanJamp/Bullet/bullet.cpp
 
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Bullet/bullet.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp > CMakeFiles/libClases.dir/Bullet/bullet.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Bullet/bullet.cpp > CMakeFiles/libClases.dir/Bullet/bullet.cpp.i
 
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Bullet/bullet.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Bullet/bullet.cpp -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.s
 
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/libClases.dir/Bullet/bullet.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o: ../Animacion/Animacion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c /home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c /home/vermia/RanJamp/Animacion/Animacion.cpp
 
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Animacion/Animacion.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp > CMakeFiles/libClases.dir/Animacion/Animacion.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Animacion/Animacion.cpp > CMakeFiles/libClases.dir/Animacion/Animacion.cpp.i
 
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Animacion/Animacion.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Animacion/Animacion.cpp -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.s
 
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o.provides.build: CMakeFiles/li
 
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c /home/vermia/RanJamp/Enemigos/centinela.cpp
 
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/centinela.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp > CMakeFiles/libClases.dir/Enemigos/centinela.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Enemigos/centinela.cpp > CMakeFiles/libClases.dir/Enemigos/centinela.cpp.i
 
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/centinela.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Enemigos/centinela.cpp -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.s
 
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o.provides.build: CMakeFiles/lib
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/murcielago.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c /home/vermia/RanJamp/Enemigos/murcielago.cpp
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp > CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Enemigos/murcielago.cpp > CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.i
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Enemigos/murcielago.cpp -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.s
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o.provides.build: CMakeFiles/li
 
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Enemigos/pajaro.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c /home/vermia/RanJamp/Enemigos/pajaro.cpp
 
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp > CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Enemigos/pajaro.cpp > CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.i
 
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Enemigos/pajaro.cpp -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.s
 
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o.provides.build: CMakeFiles/libCla
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c /home/vermia/RanJamp/Enemigos/enemigo.cpp
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp > CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Enemigos/enemigo.cpp > CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.i
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Enemigos/enemigo.cpp -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.s
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o.provides.build: CMakeFiles/libCl
 
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o: ../Enemigos/nube.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libClases.dir/Enemigos/nube.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/nube.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/nube.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libClases.dir/Enemigos/nube.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Enemigos/nube.cpp.o -c /home/vermia/RanJamp/Enemigos/nube.cpp
 
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Enemigos/nube.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Enemigos/nube.cpp > CMakeFiles/libClases.dir/Enemigos/nube.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Enemigos/nube.cpp > CMakeFiles/libClases.dir/Enemigos/nube.cpp.i
 
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Enemigos/nube.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Enemigos/nube.cpp -o CMakeFiles/libClases.dir/Enemigos/nube.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Enemigos/nube.cpp -o CMakeFiles/libClases.dir/Enemigos/nube.cpp.s
 
 CMakeFiles/libClases.dir/Enemigos/nube.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/libClases.dir/Enemigos/nube.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/Mundo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/Mundo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o -c /home/vermia/RanJamp/Mundo/Mundo.cpp
 
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Mundo/Mundo.cpp > CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mundo/Mundo.cpp > CMakeFiles/libClases.dir/Mundo/Mundo.cpp.i
 
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Mundo/Mundo.cpp -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mundo/Mundo.cpp -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.s
 
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: ../Mundo/tinystr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o -c /home/vermia/RanJamp/Mundo/tinystr.cpp
 
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Mundo/tinystr.cpp > CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mundo/tinystr.cpp > CMakeFiles/libClases.dir/Mundo/tinystr.cpp.i
 
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Mundo/tinystr.cpp -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mundo/tinystr.cpp -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.s
 
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o: ../Mundo/tinyxml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o -c /home/vermia/RanJamp/Mundo/tinyxml.cpp
 
 CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.cpp > CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mundo/tinyxml.cpp > CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.i
 
 CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.cpp -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mundo/tinyxml.cpp -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.s
 
 CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o: ../Mundo/tinyxmlparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o -c /home/vermia/RanJamp/Mundo/tinyxmlparser.cpp
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlparser.cpp > CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mundo/tinyxmlparser.cpp > CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.i
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlparser.cpp -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mundo/tinyxmlparser.cpp -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.s
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.provides.build: CMakeFiles/li
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o: ../Mundo/tinyxmlerror.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o -c /home/vermia/RanJamp/Mundo/tinyxmlerror.cpp
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlerror.cpp > CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Mundo/tinyxmlerror.cpp > CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.i
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlerror.cpp -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Mundo/tinyxmlerror.cpp -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.s
 
 CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.provides.build: CMakeFiles/lib
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/magiic/Escritorio/RanJamp/Motor/Motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/vermia/RanJamp/Motor/Motor.cpp
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Motor/Motor.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Motor/Motor.cpp > CMakeFiles/libClases.dir/Motor/Motor.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Motor/Motor.cpp > CMakeFiles/libClases.dir/Motor/Motor.cpp.i
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Motor/Motor.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Motor/Motor.cpp -o CMakeFiles/libClases.dir/Motor/Motor.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Motor/Motor.cpp -o CMakeFiles/libClases.dir/Motor/Motor.cpp.s
 
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/libClases.dir/Motor/Motor.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/magiic/Escritorio/RanJamp/Juego/Juego.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/vermia/RanJamp/Juego/Juego.cpp
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Juego/Juego.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Juego/Juego.cpp > CMakeFiles/libClases.dir/Juego/Juego.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Juego/Juego.cpp > CMakeFiles/libClases.dir/Juego/Juego.cpp.i
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Juego/Juego.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Juego/Juego.cpp -o CMakeFiles/libClases.dir/Juego/Juego.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Juego/Juego.cpp -o CMakeFiles/libClases.dir/Juego/Juego.cpp.s
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/vermia/RanJamp/Objeto/Objeto.cpp
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp > CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Objeto/Objeto.cpp > CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Objeto/Objeto.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Objeto/Objeto.cpp -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.s
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/magiic/Escritorio/RanJamp/Texto/texto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/vermia/RanJamp/Texto/texto.cpp
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Texto/texto.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Texto/texto.cpp > CMakeFiles/libClases.dir/Texto/texto.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Texto/texto.cpp > CMakeFiles/libClases.dir/Texto/texto.cpp.i
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Texto/texto.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Texto/texto.cpp -o CMakeFiles/libClases.dir/Texto/texto.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Texto/texto.cpp -o CMakeFiles/libClases.dir/Texto/texto.cpp.s
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c /home/magiic/Escritorio/RanJamp/Menu/menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c /home/vermia/RanJamp/Menu/menu.cpp
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Menu/menu.cpp > CMakeFiles/libClases.dir/Menu/menu.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Menu/menu.cpp > CMakeFiles/libClases.dir/Menu/menu.cpp.i
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Menu/menu.cpp -o CMakeFiles/libClases.dir/Menu/menu.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Menu/menu.cpp -o CMakeFiles/libClases.dir/Menu/menu.cpp.s
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides.build: CMakeFiles/libClases.di
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c /home/magiic/Escritorio/RanJamp/Hud/hud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c /home/vermia/RanJamp/Hud/hud.cpp
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Hud/hud.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Hud/hud.cpp > CMakeFiles/libClases.dir/Hud/hud.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Hud/hud.cpp > CMakeFiles/libClases.dir/Hud/hud.cpp.i
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Hud/hud.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Hud/hud.cpp -o CMakeFiles/libClases.dir/Hud/hud.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Hud/hud.cpp -o CMakeFiles/libClases.dir/Hud/hud.cpp.s
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides.build: CMakeFiles/libClases.dir/
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c /home/magiic/Escritorio/RanJamp/Musica/musica.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c /home/vermia/RanJamp/Musica/musica.cpp
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Musica/musica.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Musica/musica.cpp > CMakeFiles/libClases.dir/Musica/musica.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Musica/musica.cpp > CMakeFiles/libClases.dir/Musica/musica.cpp.i
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Musica/musica.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Musica/musica.cpp -o CMakeFiles/libClases.dir/Musica/musica.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Musica/musica.cpp -o CMakeFiles/libClases.dir/Musica/musica.cpp.s
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/vermia/RanJamp/Cuerpo/Cuerpo.cpp
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp > CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Cuerpo/Cuerpo.cpp > CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Cuerpo/Cuerpo.cpp -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.requires:
 
@@ -611,7 +611,7 @@ liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -649,6 +649,6 @@ CMakeFiles/libClases.dir/clean:
 .PHONY : CMakeFiles/libClases.dir/clean
 
 CMakeFiles/libClases.dir/depend:
-	cd /home/magiic/Escritorio/RanJamp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/magiic/Escritorio/RanJamp /home/magiic/Escritorio/RanJamp /home/magiic/Escritorio/RanJamp/build /home/magiic/Escritorio/RanJamp/build /home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vermia/RanJamp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vermia/RanJamp /home/vermia/RanJamp /home/vermia/RanJamp/build /home/vermia/RanJamp/build /home/vermia/RanJamp/build/CMakeFiles/libClases.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libClases.dir/depend
 

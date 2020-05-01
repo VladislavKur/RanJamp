@@ -6,203 +6,203 @@
 
 #IncludeRegexTransform: 
 
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp
+/home/vermia/RanJamp/Animacion/Animacion.cpp
 Animacion.h
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp
+/home/vermia/RanJamp/Bullet/bullet.cpp
 bullet.h
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 ../Enumerador/typeBody.h
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+/home/vermia/RanJamp/Enumerador/typeBody.h
 ../Enumerador/typeBullet.h
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+/home/vermia/RanJamp/Enumerador/typeBullet.h
 ../Cuerpo/Cuerpo.h
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 ../Rectagulo/Rectangulo.h
-/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+/home/vermia/RanJamp/Rectagulo/Rectangulo.h
 
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp
+/home/vermia/RanJamp/Cuerpo/Cuerpo.cpp
 Cuerpo.h
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 ../Animacion/Animacion.h
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 ../Enumerador/typeBody.h
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+/home/vermia/RanJamp/Enumerador/typeBody.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp
+/home/vermia/RanJamp/Enemigos/centinela.cpp
 centinela.h
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp
+/home/vermia/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 ../Player/Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 ../Cuerpo/Cuerpo.h
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp
+/home/vermia/RanJamp/Enemigos/murcielago.cpp
 murcielago.h
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+/home/vermia/RanJamp/Enemigos/murcielago.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+/home/vermia/RanJamp/Enemigos/murcielago.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/nube.cpp
+/home/vermia/RanJamp/Enemigos/nube.cpp
 nube.h
-/home/magiic/Escritorio/RanJamp/Enemigos/nube.h
+/home/vermia/RanJamp/Enemigos/nube.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/nube.h
+/home/vermia/RanJamp/Enemigos/nube.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp
+/home/vermia/RanJamp/Enemigos/pajaro.cpp
 pajaro.h
-/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
+/home/vermia/RanJamp/Enemigos/pajaro.h
 
-/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
+/home/vermia/RanJamp/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+/home/vermia/RanJamp/Enumerador/typeBody.h
 
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+/home/vermia/RanJamp/Enumerador/typeBullet.h
 
-/home/magiic/Escritorio/RanJamp/Hud/hud.cpp
+/home/vermia/RanJamp/Hud/hud.cpp
 hud.h
-/home/magiic/Escritorio/RanJamp/Hud/hud.h
+/home/vermia/RanJamp/Hud/hud.h
 
-/home/magiic/Escritorio/RanJamp/Hud/hud.h
+/home/vermia/RanJamp/Hud/hud.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Juego/Juego.cpp
+/home/vermia/RanJamp/Juego/Juego.cpp
 Juego.h
-/home/magiic/Escritorio/RanJamp/Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 
-/home/magiic/Escritorio/RanJamp/Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
-/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
 ../Enemigos/murcielago.h
-/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+/home/vermia/RanJamp/Enemigos/murcielago.h
 ../Enemigos/centinela.h
-/home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
 ../Enemigos/nube.h
-/home/magiic/Escritorio/RanJamp/Enemigos/nube.h
+/home/vermia/RanJamp/Enemigos/nube.h
 ../Enemigos/pajaro.h
-/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
+/home/vermia/RanJamp/Enemigos/pajaro.h
 ../Bullet/bullet.h
-/home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
 ../Mundo/Mundo.h
-/home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+/home/vermia/RanJamp/Mundo/Mundo.h
 ../Objeto/Objeto.h
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 ../Texto/texto.h
-/home/magiic/Escritorio/RanJamp/Texto/texto.h
+/home/vermia/RanJamp/Texto/texto.h
 ../Musica/musica.h
-/home/magiic/Escritorio/RanJamp/Musica/musica.h
+/home/vermia/RanJamp/Musica/musica.h
 ../Hud/hud.h
-/home/magiic/Escritorio/RanJamp/Hud/hud.h
+/home/vermia/RanJamp/Hud/hud.h
 ../Rectagulo/Rectangulo.h
-/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+/home/vermia/RanJamp/Rectagulo/Rectangulo.h
 
-/home/magiic/Escritorio/RanJamp/Menu/menu.cpp
+/home/vermia/RanJamp/Menu/menu.cpp
 menu.h
-/home/magiic/Escritorio/RanJamp/Menu/menu.h
+/home/vermia/RanJamp/Menu/menu.h
 
-/home/magiic/Escritorio/RanJamp/Menu/menu.h
+/home/vermia/RanJamp/Menu/menu.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Motor/Motor.cpp
+/home/vermia/RanJamp/Motor/Motor.cpp
 Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/magiic/Escritorio/RanJamp/Mundo/Mundo.cpp
+/home/vermia/RanJamp/Mundo/Mundo.cpp
 Mundo.h
-/home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+/home/vermia/RanJamp/Mundo/Mundo.h
 
-/home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+/home/vermia/RanJamp/Mundo/Mundo.h
 SFML/Graphics.hpp
 -
 iostream
@@ -210,21 +210,21 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+/home/vermia/RanJamp/Mundo/tinyxml.h
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 
-/home/magiic/Escritorio/RanJamp/Mundo/tinystr.cpp
+/home/vermia/RanJamp/Mundo/tinystr.cpp
 tinystr.h
-/home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
+/home/vermia/RanJamp/Mundo/tinystr.h
 
-/home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
+/home/vermia/RanJamp/Mundo/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.cpp
+/home/vermia/RanJamp/Mundo/tinyxml.cpp
 ctype.h
 -
 sstream
@@ -232,9 +232,9 @@ sstream
 iostream
 -
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+/home/vermia/RanJamp/Mundo/tinyxml.h
 
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+/home/vermia/RanJamp/Mundo/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -252,81 +252,81 @@ iostream
 sstream
 -
 tinystr.h
-/home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
+/home/vermia/RanJamp/Mundo/tinystr.h
 
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxmlerror.cpp
+/home/vermia/RanJamp/Mundo/tinyxmlerror.cpp
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+/home/vermia/RanJamp/Mundo/tinyxml.h
 
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxmlparser.cpp
+/home/vermia/RanJamp/Mundo/tinyxmlparser.cpp
 ctype.h
 -
 stddef.h
 -
 tinyxml.h
-/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+/home/vermia/RanJamp/Mundo/tinyxml.h
 windows.h
 -
 
-/home/magiic/Escritorio/RanJamp/Musica/musica.cpp
+/home/vermia/RanJamp/Musica/musica.cpp
 musica.h
-/home/magiic/Escritorio/RanJamp/Musica/musica.h
+/home/vermia/RanJamp/Musica/musica.h
 
-/home/magiic/Escritorio/RanJamp/Musica/musica.h
+/home/vermia/RanJamp/Musica/musica.h
 SFML/Audio.hpp
 -
 iostream
 -
 
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp
-Objeto.h
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.cpp
 SFML/Graphics.hpp
 -
 iostream
 -
+Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 
-/home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 ../Enumerador/typeBody.h
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+/home/vermia/RanJamp/Enumerador/typeBody.h
 ../Cuerpo/Cuerpo.h
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 ../Rectagulo/Rectangulo.h
-/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+/home/vermia/RanJamp/Rectagulo/Rectangulo.h
 
-/home/magiic/Escritorio/RanJamp/Player/Player.cpp
+/home/vermia/RanJamp/Player/Player.cpp
 Player.h
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 
-/home/magiic/Escritorio/RanJamp/Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+/home/vermia/RanJamp/Animacion/Animacion.h
 ../Mundo/Mundo.h
-/home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+/home/vermia/RanJamp/Mundo/Mundo.h
 ../Enumerador/typeBody.h
-/home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+/home/vermia/RanJamp/Enumerador/typeBody.h
 ../Cuerpo/Cuerpo.h
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 ../Rectagulo/Rectangulo.h
-/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+/home/vermia/RanJamp/Rectagulo/Rectangulo.h
 
-/home/magiic/Escritorio/RanJamp/Rectagulo/Rectangulo.h
+/home/vermia/RanJamp/Rectagulo/Rectangulo.h
 SFML/Graphics.hpp
 -
 ../Cuerpo/Cuerpo.h
-/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 
-/home/magiic/Escritorio/RanJamp/Texto/texto.cpp
+/home/vermia/RanJamp/Texto/texto.cpp
 texto.h
-/home/magiic/Escritorio/RanJamp/Texto/texto.h
+/home/vermia/RanJamp/Texto/texto.h
 
-/home/magiic/Escritorio/RanJamp/Texto/texto.h
+/home/vermia/RanJamp/Texto/texto.h
 SFML/System.hpp
 -
 SFML/Graphics.hpp
@@ -334,5 +334,5 @@ SFML/Graphics.hpp
 iostream
 -
 ../Motor/Motor.h
-/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
 

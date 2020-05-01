@@ -5,7 +5,8 @@
 #include "../Cuerpo/Cuerpo.h"
 #include "../Rectagulo/Rectangulo.h"
 
-
+#ifndef OBJETO_H
+#define OBJETO_H
 
 class Objeto
 {
@@ -33,3 +34,4 @@ class Objeto
 
 
 };
+#endif
