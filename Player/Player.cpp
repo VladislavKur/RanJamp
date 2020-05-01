@@ -127,7 +127,7 @@ void Player::render(){
 }
 void Player::moveRight(float deltaTime , Mundo * mundo){
   bool puede = true;
-  RectangleShape ** objetos = mundo->getObjetos();
+  Cuerpo ** objetos = mundo->getObjetos();
 
   for( int i=0; i< mundo->getNumObjetos() ; i++){
   
@@ -145,7 +145,7 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
 
 void Player::moveLeft(float deltaTime , Mundo * mundo){
   bool puede=true;
-  RectangleShape ** objetos = mundo->getObjetos();
+  Cuerpo ** objetos = mundo->getObjetos();
 
   for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
   

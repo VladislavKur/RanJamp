@@ -20,6 +20,22 @@ SFML/Graphics.hpp
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
+/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.cpp
+Bloque.h
+/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+
+/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+SFML/Graphics.hpp
+-
+iostream
+-
+SFML/System.hpp
+-
+../Textura/Textura.h
+/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp
 bullet.h
 /home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
@@ -29,6 +45,22 @@ SFML/Graphics.hpp
 -
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.cpp
+Cuerpo.h
+/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+
+/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+../Animacion/Animacion.h
+/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+../Enumerador/typeBody.h
+/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
 
 /home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp
 centinela.h
@@ -81,6 +113,8 @@ iostream
 -
 enemigo.h
 /home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+
+/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
 
 /home/andres/Escritorio/FV JUNTO/Hud/hud.cpp
 hud.h
@@ -161,6 +195,12 @@ SFML/System.hpp
 -
 tinyxml.h
 /home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+../Textura/Textura.h
+/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+../Bloque/Bloque.h
+/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+../Cuerpo/Cuerpo.h
+/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 
@@ -264,6 +304,20 @@ SFML/System.hpp
 SFML/Graphics.hpp
 -
 iostream
+-
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Textura/Textura.cpp
+Textura.h
+/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+
+/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+SFML/Graphics.hpp
+-
+iostream
+-
+SFML/System.hpp
 -
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h

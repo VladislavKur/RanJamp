@@ -22,6 +22,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Menu"
   "../Hud"
   "../Musica"
+  "../Bloque"
+  "../Textura"
+  "../Cuerpo"
   )
 
 # Targets to which this target links.

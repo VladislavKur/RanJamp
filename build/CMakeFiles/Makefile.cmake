@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../Animacion/CMakeLists.txt"
+  "../Bloque/CMakeLists.txt"
   "../Bullet/CMakeLists.txt"
   "../CMakeLists.txt"
+  "../Cuerpo/CMakeLists.txt"
   "../Enemigos/CMakeLists.txt"
   "../Hud/CMakeLists.txt"
   "../Juego/CMakeLists.txt"
@@ -20,6 +22,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Objeto/CMakeLists.txt"
   "../Player/CMakeLists.txt"
   "../Texto/CMakeLists.txt"
+  "../Textura/CMakeLists.txt"
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
@@ -62,6 +65,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Menu/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Hud/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Musica/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Bloque/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Textura/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Cuerpo/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

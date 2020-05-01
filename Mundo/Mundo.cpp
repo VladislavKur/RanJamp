@@ -29,7 +29,7 @@ void Mundo::cargarmapa(const char * f){
   _imgwidth = new int[_numTilesets];
   _imgheight = new int[_numTilesets];
   cambio = new int[_numTilesets];
-  _tilesetTexture = new Texture[_numTilesets];
+  _tilesetTexture = new Textura[_numTilesets];
   
   tileset = map->FirstChildElement("tileset");
   int num = 0;
@@ -43,16 +43,10 @@ void Mundo::cargarmapa(const char * f){
   }
 
   for(int i = 0; i < _numTilesets; i++){
-    const char *filename = imagenes[i]->Attribute("source");
-    if(filename == NULL){
-      cout<<" ERRRORRRRR file" << i<<endl;
-    }else{
-      cout<<"tengo algo file " << i << endl;
-    }
     imagenes[i]->QueryIntAttribute("width", &_imgwidth[i]);
     imagenes[i]->QueryIntAttribute("height", &_imgheight[i]);
 
-    if(!_tilesetTexture[i].loadFromFile(filename)){
+    if(!_tilesetTexture[i](imagenes[i]->Attribute("source"))){
       cout<<"NO SE CARGA LA TEXTURA = " << i <<endl;
     }else{
       cout<< "TENGO TEXTURA = " << i <<endl;
@@ -83,22 +77,29 @@ void Mundo::cargarmapa(const char * f){
   }
 
     //reservar memoria
-  _tilemapSprite = new Sprite ***[_numLayers];
+  _tilemapSprite = new Bloque ***[_numLayers];
   for(int i = 0; i < _numLayers; i++){
-    _tilemapSprite[i] = new Sprite ** [_height];
+    _tilemapSprite[i] = new Bloque ** [_height];
   }
   for(int i = 0; i < _numLayers; i++){
     for(int j = 0; j < _height; j++){
-      _tilemapSprite[i][j] = new Sprite * [_width];
+      _tilemapSprite[i][j] = new Bloque * [_width];
     }
   }
 
+  TiXmlElement * layer2;
   TiXmlElement * data;
+  cout<< "NUMERO DE CAPAS = " << _numLayers<< endl; 
   for(int l=0; l<_numLayers; l++){
     if( l == 0 ){
-        data = map->FirstChildElement("layer")->FirstChildElement("data")->FirstChildElement("tile");
+        layer2 = map->FirstChildElement("layer");
+        data = layer2->FirstChildElement("data")->FirstChildElement("tile");
     }else{
-        data = map->NextSiblingElement("layer")->FirstChildElement("data")->FirstChildElement("tile");
+        data = layer2->NextSiblingElement("layer")->FirstChildElement("data")->FirstChildElement("tile");
+        layer2 = layer2->NextSiblingElement("layer");
+        if(data != nullptr){
+          cout<< "NUIDNSUONSIDN" << endl;
+        }
     }
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){ 
@@ -113,6 +114,7 @@ void Mundo::cargarmapa(const char * f){
 void Mundo::crearSprites(){
 
   for(int l=0; l<_numLayers; l++){
+    cout << "layers sprites: " << l << endl;
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){
       int imagen = 0;
@@ -128,7 +130,7 @@ void Mundo::crearSprites(){
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
             }else if(gid > 0){
-              _tilemapSprite[l][y][x] = new Sprite(_tilesetTexture[k]);
+              _tilemapSprite[l][y][x] = new Bloque(_tilesetTexture[k]);
               int Tcolumnas = _imgwidth[k] / _tileWidth; 
               int fila = (gid / Tcolumnas);
               int columna = (gid % Tcolumnas);
@@ -141,7 +143,7 @@ void Mundo::crearSprites(){
               if(columna < 0){
                 columna = 0;
               }
-              _tilemapSprite[l][y][x]->setTextureRect(IntRect(columna*32, fila*32, 32, 32));
+              _tilemapSprite[l][y][x]->setTextureRect(columna*32, fila*32, 32, 32);
               _tilemapSprite[l][y][x]->setPosition(x*_tileWidth, y*_tileHeight);
               pintada = true;
             }else{
@@ -158,7 +160,7 @@ void Mundo::crearSprites(){
 }
 
 
- RectangleShape ** Mundo::getObjetos(){
+ Cuerpo ** Mundo::getObjetos(){
    return objetos;
  }
 
@@ -172,7 +174,7 @@ void Mundo::crearObjetos(){
     }
     cout<< "numObjects " << _numObjects<< endl;
     objects = new TiXmlElement * [_numObjects];
-    objetos = new RectangleShape * [_numObjects];
+    objetos = new Cuerpo * [_numObjects];
     
     object = objectgroups[0]->FirstChildElement("object");
     
@@ -190,12 +192,12 @@ void Mundo::crearObjetos(){
         objects[i]->QueryIntAttribute("height", &_heightObject);
         objects[i]->QueryIntAttribute("x", &_x);
         objects[i]->QueryIntAttribute("y", &_y);
-        objetos[i] = new RectangleShape(Vector2f(_widthObject, _heightObject));
+        objetos[i] = new Cuerpo(_x,_y, _widthObject,_heightObject);
         if(objetos[i] != nullptr ){
          cout<< "TENGOO ALGO" <<endl;
         }
-        objetos[i]->setPosition(_x,_y);
-        objetos[i]->setFillColor(Color(255, 0 , 0));
+        //objetos[i]->setPosition(_x,_y);
+        //objetos[i]->setFillColor(Color(255, 0 , 0));
     }
 }
 
@@ -262,17 +264,19 @@ vector<int>  Mundo::cargarPosicionBordes(){
 }
 
 
-Vector2f Mundo::cargarPosicionPlayer_Puerta(int i){
-    Vector2f pos;
+vector<float> Mundo::cargarPosicionPlayer_Puerta(int i){
+    vector<float> pos;
     TiXmlElement * object = objectgroups[i]->FirstChildElement("object"); // entramos en el primer object del segundo elemento de objectgroups 
     if(object){
         object->QueryIntAttribute("x" , &_posX);
         object->QueryIntAttribute("y" , &_posY);
-        pos.x = _posX;
-        pos.y = _posY;
+        object->QueryIntAttribute("width" , &_widthP);
+        object->QueryIntAttribute("height" , &_heightP);
+        pos.push_back(_posX);
+        pos.push_back(_posY);
     }
     if(i == 4){
-      puerta = new RectangleShape(pos);
+      puerta = new Cuerpo(_posX,_posY, _widthP,_heightP);
     }
     return pos;
 }
@@ -296,7 +300,7 @@ void Mundo::render(){
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
             }else if(gid > 0){
-              motor->dibujo(*_tilemapSprite[l][y][x]);
+              _tilemapSprite[l][y][x]->render(); 
               pintada = true;
             }else{
               _tilemapSprite[l][y][x] = NULL;
@@ -345,8 +349,9 @@ Mundo::~Mundo(){ //WIP preguntar fidel
     delete[] _imgwidth;
     delete[] _imgheight;
     delete[]  cambio;  
+    delete puerta;
 }
 
-RectangleShape * Mundo::getPuerta(){
+Cuerpo * Mundo::getPuerta(){
   return puerta;
 }

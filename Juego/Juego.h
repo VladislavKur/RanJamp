@@ -31,6 +31,7 @@
             int numObjetos;
             Mundo * mundo;
             int nivel;
+            string * niveles;
         protected:
             Juego();
 
@@ -58,6 +59,7 @@
             sf::View view;
 
             void nextLevel();
+            void inicializarNiveles();
     };
 
 #endif

@@ -27,3 +27,9 @@
 /home/andres/Escritorio/FV JUNTO/build/Hud/CMakeFiles/rebuild_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Musica/CMakeFiles/edit_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Musica/CMakeFiles/rebuild_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Bloque/CMakeFiles/edit_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Bloque/CMakeFiles/rebuild_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Textura/CMakeFiles/edit_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Textura/CMakeFiles/rebuild_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Cuerpo/CMakeFiles/edit_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Cuerpo/CMakeFiles/rebuild_cache.dir

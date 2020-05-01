@@ -4,30 +4,57 @@
 #include <SFML/System.hpp>
 #include "tinyxml.h"
 
+#include "../Textura/Textura.h"
+#include "../Bloque/Bloque.h"
+#include "../Cuerpo/Cuerpo.h"
 #include "../Motor/Motor.h"
 using namespace sf;
 using namespace std;
 
 class Mundo{
     public:
-        Mundo();
-        ~Mundo();
-        void cargarmapa(const char * f ); 
+        Mundo(); //Constructor
+        ~Mundo(); //Destructor para liberar memoria
+
+        //Método que carga el mapa creado con tiled del nivel que corresponda
+        void cargarmapa(const char * f );
+        
+        //Método que asigna a todos los tiles del mapa con la textura que le corresponde
         void crearSprites();
+        
+        //Crea los rectangle shape para las colisiones de las paredes y suelos
         void crearObjetos();
+
+        //Carga las posiciones de los enemigos y de los PowerUps y los coloca en esas posiciones.
         vector<vector<int>> cargarPosicionEnemigos_PowerUps(int i);
+        
+        //Carga la posición de los bordes del mapa para que el jugador no pueda salirse del mapa.
         vector<int>  cargarPosicionBordes();
+        
+        //Carga y guarda todos los grupos de objetos
         void cargarObjectGroups();
-        Vector2f cargarPosicionPlayer_Puerta(int i);
+
+        //Carga las posiciones del jugador y del final del nivel y los coloca en esas posiciones, y devuelve 
+        //la posicion correspondiente
+        vector<float> cargarPosicionPlayer_Puerta(int i);
+
+        //Renderiza todos los sprites
         void render();
-        RectangleShape ** getObjetos();
+
+        //Devuelve un puntero a los rectangleShapes de los objetos del mapa
+        Cuerpo ** getObjetos();
+
+        //Devuelve el numero de objetos
         int getNumObjetos();
-        RectangleShape * getPuerta();
+
+        //Devuelve el rectangleshape que corresponde con el final del mapa llamado Puerta.
+        Cuerpo * getPuerta();
+        
     private:
         TiXmlDocument doc;
         TiXmlElement * map;
         VertexArray m_vertices;
-        Texture m_tileset;
+        Textura m_tileset;
         int _activeLayer;
         int _width;
         int _height;
@@ -40,8 +67,8 @@ class Mundo{
         int _numLayers = 0;
         int _numTilesets = 0;
         int ***_tilemap;
-        Sprite ****_tilemapSprite;
-        Texture *_tilesetTexture;
+        Bloque ****_tilemapSprite;
+        Textura *_tilesetTexture;
         TiXmlElement ** imagenes;
 
 
@@ -52,7 +79,7 @@ class Mundo{
         int _x;
         int _y;
         int _numObjects = 0;
-        RectangleShape ** objetos;
+        Cuerpo ** objetos;
         TiXmlElement ** objects;
 
         //enemigos
@@ -67,5 +94,7 @@ class Mundo{
          int _Height;
 
          //puerta 
-         RectangleShape * puerta;
+         Cuerpo * puerta;
+         int _widthP;
+         int _heightP;
 };

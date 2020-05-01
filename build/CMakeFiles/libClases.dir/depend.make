@@ -5,60 +5,90 @@ CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o: ../Animacion/Animacion.cpp
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o: ../Animacion/Animacion.h
 CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o: ../Motor/Motor.h
 
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Bloque/Bloque.cpp
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Textura/Textura.h
+
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Bullet/bullet.cpp
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Bullet/bullet.h
 CMakeFiles/libClases.dir/Bullet/bullet.cpp.o: ../Motor/Motor.h
 
+CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
+CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.h
+CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Enumerador/typeBody.h
+CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Motor/Motor.h
+
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Bloque/Bloque.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Bullet/bullet.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.cpp
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.cpp
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enemigos/enemigo.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/murcielago.cpp
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enemigos/murcielago.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Enemigos/pajaro.cpp
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Enemigos/pajaro.h
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.h
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Motor/Motor.h
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Bloque/Bloque.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Bullet/bullet.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Cuerpo/Cuerpo.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/centinela.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/enemigo.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/murcielago.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enemigos/pajaro.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Hud/hud.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.h
@@ -70,6 +100,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Musica/musica.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Player/Player.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Texto/texto.h
+CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.h
@@ -78,11 +109,16 @@ CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.cpp
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o: ../Motor/Motor.h
 
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Cuerpo/Cuerpo.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/Mundo.cpp
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Mundo/tinyxml.h
+CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: ../Mundo/tinystr.cpp
 CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o: ../Mundo/tinystr.h
@@ -103,6 +139,9 @@ CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.h
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Cuerpo/Cuerpo.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/tinystr.h
@@ -110,16 +149,25 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.h
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Animacion/Animacion.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Bloque/Bloque.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Cuerpo/Cuerpo.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Enumerador/typeBody.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/Mundo.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/tinystr.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Mundo/tinyxml.h
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.cpp
 CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Player/Player.h
+CMakeFiles/libClases.dir/Player/Player.cpp.o: ../Textura/Textura.h
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Motor/Motor.h
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.cpp
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.h
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Motor/Motor.h
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Textura/Textura.cpp
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Textura/Textura.h
 

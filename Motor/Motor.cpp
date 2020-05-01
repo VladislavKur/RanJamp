@@ -77,6 +77,30 @@ bool cargarSprite(sf::Texture& entrada, std::string fichero){
 
 }
 
+bool cargarSprite(sf::Texture& entrada, const char * fichero){
+
+    bool devolver = true;
+
+    if(!entrada.loadFromFile(fichero)){
+
+
+        devolver = false;
+
+    }
+
+    return(devolver);
+
+}
+
+void Motor::setOrigin(sf::Sprite &entrada, int ancho , int largo){
+    entrada.setOrigin( ancho/2 , largo/2);
+}
+void Motor::recorte(sf::Sprite &entrada,  int xi,int yi, int lengthX, int lengthY){
+
+    entrada.setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+
+}
+
 void Motor::recorte(sf::RectangleShape &entrada,  int xi,int yi, int lengthX, int lengthY){
 
     entrada.setOrigin(xi + (lengthX/2),yi+(lengthY/2));
@@ -97,11 +121,24 @@ void setTextura(sf::RectangleShape& cuerpo, sf::Texture* texture){
 
 }
 
+
+void setTextura(sf::Sprite& cuerpo, sf::Texture entrada){
+    cuerpo.setTexture(entrada);
+}
+
+
 void posicionar(sf::RectangleShape& entrada, float x, float y){
 
     entrada.setPosition(x,y);
 
 }
+
+void posicionar(sf::Sprite& entrada, float x, float y){
+
+    entrada.setPosition(x,y);
+
+}
+
 
 float Motor::getReloj(){
 
@@ -150,10 +187,5 @@ bool Motor::getOpen(){
     return(ventana->isOpen());
 
 }
-
-void setTextura(sf::RectangleShape& cuerpo, sf::Texture entrada){
-
-}
-
 
 

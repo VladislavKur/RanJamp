@@ -176,6 +176,33 @@ Animacion/Animacion.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Animacion/Animacion.cpp.s
 .PHONY : Animacion/Animacion.cpp.s
 
+Bloque/Bloque.o: Bloque/Bloque.cpp.o
+
+.PHONY : Bloque/Bloque.o
+
+# target to build an object file
+Bloque/Bloque.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
+.PHONY : Bloque/Bloque.cpp.o
+
+Bloque/Bloque.i: Bloque/Bloque.cpp.i
+
+.PHONY : Bloque/Bloque.i
+
+# target to preprocess a source file
+Bloque/Bloque.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i
+.PHONY : Bloque/Bloque.cpp.i
+
+Bloque/Bloque.s: Bloque/Bloque.cpp.s
+
+.PHONY : Bloque/Bloque.s
+
+# target to generate assembly for a file
+Bloque/Bloque.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.s
+.PHONY : Bloque/Bloque.cpp.s
+
 Bullet/bullet.o: Bullet/bullet.cpp.o
 
 .PHONY : Bullet/bullet.o
@@ -202,6 +229,33 @@ Bullet/bullet.s: Bullet/bullet.cpp.s
 Bullet/bullet.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bullet/bullet.cpp.s
 .PHONY : Bullet/bullet.cpp.s
+
+Cuerpo/Cuerpo.o: Cuerpo/Cuerpo.cpp.o
+
+.PHONY : Cuerpo/Cuerpo.o
+
+# target to build an object file
+Cuerpo/Cuerpo.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
+.PHONY : Cuerpo/Cuerpo.cpp.o
+
+Cuerpo/Cuerpo.i: Cuerpo/Cuerpo.cpp.i
+
+.PHONY : Cuerpo/Cuerpo.i
+
+# target to preprocess a source file
+Cuerpo/Cuerpo.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i
+.PHONY : Cuerpo/Cuerpo.cpp.i
+
+Cuerpo/Cuerpo.s: Cuerpo/Cuerpo.cpp.s
+
+.PHONY : Cuerpo/Cuerpo.s
+
+# target to generate assembly for a file
+Cuerpo/Cuerpo.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s
+.PHONY : Cuerpo/Cuerpo.cpp.s
 
 Enemigos/centinela.o: Enemigos/centinela.cpp.o
 
@@ -662,6 +716,33 @@ Texto/texto.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Texto/texto.cpp.s
 .PHONY : Texto/texto.cpp.s
 
+Textura/Textura.o: Textura/Textura.cpp.o
+
+.PHONY : Textura/Textura.o
+
+# target to build an object file
+Textura/Textura.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.o
+.PHONY : Textura/Textura.cpp.o
+
+Textura/Textura.i: Textura/Textura.cpp.i
+
+.PHONY : Textura/Textura.i
+
+# target to preprocess a source file
+Textura/Textura.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.i
+.PHONY : Textura/Textura.cpp.i
+
+Textura/Textura.s: Textura/Textura.cpp.s
+
+.PHONY : Textura/Textura.s
+
+# target to generate assembly for a file
+Textura/Textura.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.s
+.PHONY : Textura/Textura.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -730,9 +811,15 @@ help:
 	@echo "... Animacion/Animacion.o"
 	@echo "... Animacion/Animacion.i"
 	@echo "... Animacion/Animacion.s"
+	@echo "... Bloque/Bloque.o"
+	@echo "... Bloque/Bloque.i"
+	@echo "... Bloque/Bloque.s"
 	@echo "... Bullet/bullet.o"
 	@echo "... Bullet/bullet.i"
 	@echo "... Bullet/bullet.s"
+	@echo "... Cuerpo/Cuerpo.o"
+	@echo "... Cuerpo/Cuerpo.i"
+	@echo "... Cuerpo/Cuerpo.s"
 	@echo "... Enemigos/centinela.o"
 	@echo "... Enemigos/centinela.i"
 	@echo "... Enemigos/centinela.s"
@@ -784,6 +871,9 @@ help:
 	@echo "... Texto/texto.o"
 	@echo "... Texto/texto.i"
 	@echo "... Texto/texto.s"
+	@echo "... Textura/Textura.o"
+	@echo "... Textura/Textura.i"
+	@echo "... Textura/Textura.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

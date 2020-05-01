@@ -18,6 +18,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/libClases.dir/Menu/menu.cpp.o"
   "CMakeFiles/libClases.dir/Hud/hud.cpp.o"
   "CMakeFiles/libClases.dir/Musica/musica.cpp.o"
+  "CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
+  "CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+  "CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
   "liblibClases.pdb"
   "liblibClases.a"
 )

@@ -2,11 +2,18 @@
 #include <iostream>
 
 class musica{
-    public: 
-        musica(sf::String x);
-        void reproducirMusica();
+    public:  
+        // CONSTRUCTOR, PASANDO UN STRING QUE TIENE LA DIRECCION DE EL ARCHIVO
+        musica(sf::String x); 
+
+        // REPRODUCE EL SONIDO
+        void reproducirMusica();  
+
+        // PARA EL SONIDO
         void pausarMusica();
-        void ponerBucle();
+
+        // PONE EN BUCLE EL SONIDO
+        void ponerBucle(); 
     private:
         sf::SoundBuffer soundBuffer;
         sf::Sound sound;

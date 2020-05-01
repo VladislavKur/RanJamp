@@ -4,10 +4,11 @@
 Juego* Juego::pinstance = 0;
 
 Juego::Juego(){ //WIP FUNCION CARGARNIVEL
-    nivel = 1;
-    cargarMusica();
+    nivel = 0;
+    inicializarNiveles();
+    //cargarMusica();
     mundo = new Mundo();  
-    mundo->cargarmapa("Nivel1.tmx");
+    mundo->cargarmapa(niveles[nivel].c_str());
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
@@ -334,9 +335,10 @@ void Juego::matarEnemigo(Enemigo* enem){ //está nice
 }
 
 void Juego::matarJugador(){ //está nice
+  nivel = 0;
   delete mundo;
   mundo = new Mundo();
-  mundo->cargarmapa("Nivel1.tmx");
+  mundo->cargarmapa(niveles[nivel].c_str());
   mundo->crearSprites();
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
@@ -444,9 +446,10 @@ void Juego::comprobarPasarNivel(){
 }
 
 void Juego::nextLevel(){
+    nivel++;
     delete mundo;
     mundo = new Mundo();
-    mundo->cargarmapa("Nivel2.tmx");
+    mundo->cargarmapa(niveles[nivel].c_str());
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
@@ -463,4 +466,16 @@ void Juego::nextLevel(){
     for(int i = 0; i < maxBullets;i++){
         bulletEnemies[i] = NULL;
     }
+}
+
+void Juego::inicializarNiveles(){
+
+  niveles = new string[5];
+  niveles[0] = "Nivel1.tmx";
+  niveles[1] = "Nivel2.tmx";
+  niveles[2] = "Nivel3.tmx";
+  niveles[3] = "Nivel4.tmx";
+  niveles[4] = "NivelHielo.tmx";
+
+  
 }

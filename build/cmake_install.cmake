@@ -46,6 +46,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/andres/Escritorio/FV JUNTO/build/Menu/cmake_install.cmake")
   include("/home/andres/Escritorio/FV JUNTO/build/Hud/cmake_install.cmake")
   include("/home/andres/Escritorio/FV JUNTO/build/Musica/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Bloque/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Textura/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Cuerpo/cmake_install.cmake")
 
 endif()
 
