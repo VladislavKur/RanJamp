@@ -32,25 +32,20 @@ Motor* Motor::instance(){
 }
 
 
-void Motor::dibujo(sf::RectangleShape entrada){
+void Motor::dibujo(sf::Shape* cuerpo){
 
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
 
-        ventana->draw(entrada);
-
-
-
+    if(casteadoRect != NULL)
+        ventana->draw(*casteadoRect);
+    else if(casteadoCirc)
+        ventana->draw(*casteadoCirc);
+        
 }
 
 void Motor::dibujo( sf::Text  entrada){
     ventana->draw(entrada);
-}
-
-void Motor::dibujo(sf::CircleShape entrada){
-
-  
-
-        ventana->draw(entrada);
-
 }
 
 void Motor::dibujo(sf::Sprite entrada){
@@ -62,19 +57,25 @@ void Motor::dibujo(sf::Sprite entrada){
 
 }
 
-bool cargarSprite(sf::Texture& entrada, std::string fichero){
+bool Motor::cargarSprite(sf::Texture& entrada, std::string fichero){
 
     bool devolver = true;
 
-    if(!entrada.loadFromFile("resources/" + fichero)){
-
-
+    if(!entrada.loadFromFile("resources/Imagenes/" + fichero)){
         devolver = false;
-
     }
 
     return(devolver);
+}
 
+void Motor::posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
+
+    if(casteadoRect != NULL)
+        casteadoRect->setOrigin(ancho/2, altura/2);
+    else if(casteadoCirc != NULL)
+        casteadoCirc->setOrigin(ancho/2, altura/2);
 }
 
 bool cargarSprite(sf::Texture& entrada, const char * fichero){
@@ -102,22 +103,60 @@ void Motor::recorte(sf::Sprite &entrada,  int xi,int yi, int lengthX, int length
 }
 
 void Motor::recorte(sf::RectangleShape &entrada,  int xi,int yi, int lengthX, int lengthY){
+    
+}
+void Motor::recorte(sf::Shape* cuerpo,  int xi,int yi, int lengthX, int lengthY){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
 
-    entrada.setOrigin(xi + (lengthX/2),yi+(lengthY/2));
-
-    entrada.setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+    if(casteadoRect != NULL)
+        casteadoRect->setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+    else if(casteadoCirc != NULL)
+        casteadoCirc->setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
 
 }
 
-void Motor::setTamanyoCuerpo(sf::RectangleShape &cuerpo,sf::Vector2f entrada){
+void Motor::setTamanyoCuerpo(sf::Shape* cuerpo,sf::Vector2f entrada){
 
-    cuerpo.setSize(entrada);
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
+
+    if(casteadoRect != NULL)
+        casteadoRect->setSize(entrada);
+    if(casteadoCirc != NULL)
+        casteadoCirc->setRadius(entrada.x); // revisar si sale bala mal
 
 }
 
-void setTextura(sf::RectangleShape& cuerpo, sf::Texture* texture){
+void Motor::setScale(sf::Shape* cuerpo, float escalaX, float escalaY) {
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
 
-    cuerpo.setTexture(texture);
+    if(casteadoRect != NULL)
+        casteadoRect->setScale(sf::Vector2f(escalaX, escalaY));
+    else if(casteadoCirc != NULL)
+        casteadoCirc->setScale(sf::Vector2f(escalaX, escalaY));
+}
+
+void Motor::setTextura(sf::Shape* cuerpo, sf::Texture* texture){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
+
+    if(casteadoRect != NULL)
+        casteadoRect->setTexture(texture);
+    else if(casteadoCirc != NULL)
+        casteadoCirc->setTexture(texture);
+
+}
+
+void Motor::posicionar(sf::Shape* entrada, float x, float y){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(entrada);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(entrada);
+
+    if(casteadoRect != NULL)
+        casteadoRect->setPosition(x,y);
+    else if(casteadoCirc != NULL)
+        casteadoCirc->setPosition(x,y);
 
 }
 
@@ -128,9 +167,16 @@ void setTextura(sf::Sprite& cuerpo, sf::Texture entrada){
 
 
 void posicionar(sf::RectangleShape& entrada, float x, float y){
+    
+}
+bool Motor::compararColision(sf::Shape* cuerpo1, sf::Shape* cuerpo2){
+    bool dev = false;
 
-    entrada.setPosition(x,y);
+    if(cuerpo1->getGlobalBounds().intersects(cuerpo2->getGlobalBounds())){
+        dev = true;
+    }
 
+    return dev;
 }
 
 void posicionar(sf::Sprite& entrada, float x, float y){

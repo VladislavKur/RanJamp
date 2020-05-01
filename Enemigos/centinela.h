@@ -20,7 +20,7 @@ class Centinela : public Enemigo{
         Centinela(float x, float y, int type);
         void update(Player* player, float delta);
         void render( float porcentaje);   
-        Bullet* disparar(); //devuelve bala o nada ??????
+        Bullet* disparar(); 
         bool getShoot(){return shoot;};
 };
 

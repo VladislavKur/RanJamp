@@ -5,43 +5,65 @@
 
 Animacion::~Animacion(){}
 
-Animacion::Animacion(std::string fichero,sf::Vector2u cantidadImagenes, float SwitchTimeSprite, sf::Vector2f tamanyoCuerpo,sf::Vector2f tamanyoSprite){
+Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation, int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY){
 
-    Motor * motor = Motor::instance();
-    sf::Texture textura;
-
-    /*if(!motor->cargarSprite(textura,fichero)){
-        std::cerr << "Error cargando la imagen " << fichero;
-        //hacer handle del error WIP
-    }*/
-
-    motor->setTamanyoCuerpo(this->body,tamanyoCuerpo);
-    //motor->setTextura(this->body, textura);
-    motor->recorte(this->body,0*75,2*75,75,75);
-
-    this->cantidadImagenes=cantidadImagenes; //cantidad de imagenes de spritesheet
-    this->SwitchTimeSprite=SwitchTimeSprite; //el tiempo que tarda de una imagen a otra
-
-    spriteActual.y= 0;  //empieza con el primero
-    spriteActual.x = 0; //empieza con el primero
+    motor = Motor::instance();
     
-    temporizador = 0; //el temporizador se inicia a 0
+    body  = cuerpo;
 
+    tiempoDuracionMax = timeAnimation;
 
-    textureRect.height = textura.getSize().y/ float(cantidadImagenes.y); //
-    textureRect.width = textura.getSize().x/ float(cantidadImagenes.x);
+    tamX = spriteSizeX;
+    tamY = spriteSizeY;
+
+    numeroSpriteX = 0;
+    numeroSpriteY = 0;
+
+    tiempoActual = tiempoDuracionMax;
+    tiempoAnterior = tiempoDuracionMax;
+    tiempoDiff = 0;
+    cambiado = false;
 
 }
 
-void Animacion::Update(float deltaTime){
+void Animacion::update(float deltaTime){
+    
+    tiempoAnterior = tiempoActual;
+    tiempoActual -= deltaTime;
+    tiempoDiff = abs(tiempoActual - tiempoAnterior);
 
-
-    textureRect.left = spriteActual.x * textureRect.width;
-    textureRect.top = spriteActual.y * textureRect.height;
-
+    if(tiempoActual < 0.0){
+        tiempoActual += tiempoDuracionMax;
+        cambiado = true;
+    }
 }
 
-void Animacion::setSprite(sf::Vector2u sprites){
-    spriteActual.x = sprites.x;
-    spriteActual.y = sprites.y;
+void Animacion::setSprite(int spriteNumber){
+
+    if(numeroSpriteY < posicionesY){        
+        numeroSpriteY = spriteNumber;
+        motor->recorte(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+    }
+    else
+        numeroSpriteY = 0;
+}
+
+void Animacion::nextSprite(){
+    numeroSpriteX++;
+
+    if(numeroSpriteX == posicionesX)
+        numeroSpriteX = 0;
+
+    motor->recorte(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+}
+
+void Animacion::render(float porcentaje){
+    if(cambiado){
+        int aux = tiempoAnterior - tiempoDiff*porcentaje;
+
+        if(aux <= 0){
+            cambiado = false;
+            nextSprite();
+        }
+    }
 }

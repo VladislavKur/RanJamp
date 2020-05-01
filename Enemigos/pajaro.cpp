@@ -1,13 +1,7 @@
 #include "pajaro.h"
 
-Pajaro::Pajaro(float x, float y) : Enemigo(x,y){
-    sf::Texture *text = new sf::Texture;
-
-    sizeHeight = 75;
-    sizeWidth = 75;
-
-    cuerpo.setSize(sf::Vector2f(sizeWidth,sizeHeight));
-    cuerpo.setPosition(x, y);
+Pajaro::Pajaro(float x, float y) 
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
 
     alturaActual = y;
     alturaMinRelativa = alturaMax + alturaActual;
@@ -17,19 +11,9 @@ Pajaro::Pajaro(float x, float y) : Enemigo(x,y){
 
     velocidad = 150;
 
-    cuerpo.setOrigin(sizeWidth/2, sizeHeight/2);
-
-    tamanyoHeightEsquina = sizeHeight/10;
-    tamanyoWidthEsquina = sizeWidth/10;
-
-    if(!text->loadFromFile("resources/sprites.png")) std::cout << "sadasds";
-    
-    cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-
     modo = 0;
 
-    updateHitbox();
+//    updateHitbox();
     
 };
 
@@ -40,7 +24,7 @@ void Pajaro::updateHitbox(){
 
     coliAbajo.left = gp.x - gbb.width/2 + 20;
     coliAbajo.top = gp.y + gbb.height/2 -50;
-    coliAbajo.width =0;
+    coliAbajo.width = 0;
     coliAbajo.height = 0;
     
     coliIzquierda.left = gp.x - gbb.width/2+12;
@@ -62,14 +46,14 @@ void Pajaro::updateHitbox(){
 
 void Pajaro::update(Player* entrada, float delta){
 ///las colisiones
-    
-    posXanterior = posX;
+    float posX = body->getPosicion()[0];
+    float posY = body->getPosicion()[1];
 
     posX = posX - delta*velocidad*0.6;
 
-    posYanterior = posY;
-
     posY = posY + direccion*delta*velocidad;
+
+    body->posicionamiento(posX, posY);
 
     if(posY >= alturaMinRelativa){ //la parte más baja que puede bajar
         posY = alturaMinRelativa;
@@ -90,17 +74,11 @@ void Pajaro::update(Player* entrada, float delta){
             if(!haPegado)
                 entrada->setVidas(entrada->getVidas()-1);
             haPegado = true;
-            morir();
         }
     }
     updateHitbox();
 };
 
 void Pajaro::render( float porcentaje){
-    cuerpo.setPosition(
-        posXanterior + diffX*porcentaje,
-        posYanterior + diffY*porcentaje );
-
-    Motor * motor = Motor::instance();
-    motor->dibujo(cuerpo);
+    body->render(porcentaje);
 }

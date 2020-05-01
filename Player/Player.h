@@ -2,12 +2,14 @@
 #include <SFML/Graphics.hpp>
 #include "../Animacion/Animacion.h"
 #include "../Mundo/Mundo.h"
-
+#include "../Enumerador/typeBody.h"
+#include "../Cuerpo/Cuerpo.h"
+#include "../Rectagulo/Rectangulo.h"
 class Player
 {
 private:
     sf::Vector2u textura;
-    sf::RectangleShape body;
+    Cuerpo* body;
     
     float velocidad;
     int saltos;
@@ -22,7 +24,13 @@ private:
 
     bool godMode;
     int vidasAnteriores;
+    Rectangulo * hitbox;
+    bool facing;
 
+    Rectangulo * coliAbajo;
+    Rectangulo * coliArriba;
+    Rectangulo * coliIzquierda;
+    Rectangulo * coliDerecha;
 public:
     //CANON
     Player();
@@ -32,7 +40,7 @@ public:
     bool auxSaltos;
 
     //FUNCIONALIDAD
-    void render();
+    void render(float );
     void update(float deltaTime , Mundo * mundo);
     void updateHitbox();
 
@@ -46,15 +54,18 @@ public:
     //GET
     int getSaltos(){return saltos;}
     int getArma(){return arma;}
+    
     bool getPU_SaltoDoble(){return PU_saltoDoble;}; 
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
     float getJumpSpeed(){return jumpSpeed;};
-    sf::RectangleShape getBody(){return body;}
+    Cuerpo * getBody(){return body;}
+    Rectangulo * getHitbox(){return hitbox;}
     int getVidas(){return vidas;}
     float getCooldownSalto(){return cooldownSalto;};
     float getCooldownDisparo(){return cooldownDisparo;}
     float getVelocidad(){return velocidad;}
+    bool getFacing(){return facing;}
 
     //SET
     void obtenerPU_SaltoDoble();
@@ -79,8 +90,8 @@ public:
     void moveRight(float deltaTime, Mundo * mundo);
     void moveLeft(float deltaTime, Mundo * mundo);
 
-    sf::FloatRect coliAbajo;
-    sf::FloatRect coliArriba;
-    sf::FloatRect coliIzquierda;
-    sf::FloatRect coliDerecha;
+    Rectangulo * getColiAbajo(){return coliAbajo;};
+    Rectangulo * getColiArriba(){return coliArriba;};
+    Rectangulo * getColiIzquierda(){return coliIzquierda;};
+    Rectangulo * getColiDerecha(){return coliDerecha;};
 };

@@ -152,21 +152,21 @@ int main() {
       elapsus = m->getRelojM();
 
 
-      coliArV.setPosition( instancia->getJugador()->coliArriba.left , instancia->getJugador()->coliArriba.top );
-      coliArV.setFillColor(Color(255, 255, 0, 128));
-      coliArV.setSize( Vector2f( instancia->getJugador()->coliArriba.width, instancia->getJugador()->coliArriba.height ) );
+      // coliArV.setPosition( instancia->getJugador()->coliArriba.left , instancia->getJugador()->coliArriba.top );
+      // coliArV.setFillColor(Color(255, 255, 0, 128));
+      // coliArV.setSize( Vector2f( instancia->getJugador()->coliArriba.width, instancia->getJugador()->coliArriba.height ) );
 
-      coliAbV.setPosition( instancia->getJugador()->coliAbajo.left , instancia->getJugador()->coliAbajo.top );
-      coliAbV.setFillColor(Color(0,0,0, 128));
-      coliAbV.setSize( Vector2f( instancia->getJugador()->coliAbajo.width, instancia->getJugador()->coliAbajo.height ) );
+      // coliAbV.setPosition( instancia->getJugador()->coliAbajo.left , instancia->getJugador()->coliAbajo.top );
+      // coliAbV.setFillColor(Color(0,0,0, 128));
+      // coliAbV.setSize( Vector2f( instancia->getJugador()->coliAbajo.width, instancia->getJugador()->coliAbajo.height ) );
       
-      coliIzV.setPosition( instancia->getJugador()->coliIzquierda.left , instancia->getJugador()->coliIzquierda.top );
-      coliIzV.setFillColor(Color(255, 0, 0, 128));
-      coliIzV.setSize( Vector2f( instancia->getJugador()->coliIzquierda.width, instancia->getJugador()->coliIzquierda.height ) );
+      // coliIzV.setPosition( instancia->getJugador()->coliIzquierda.left , instancia->getJugador()->coliIzquierda.top );
+      // coliIzV.setFillColor(Color(255, 0, 0, 128));
+      // coliIzV.setSize( Vector2f( instancia->getJugador()->coliIzquierda.width, instancia->getJugador()->coliIzquierda.height ) );
 
-      coliDcV.setPosition( instancia->getJugador()->coliDerecha.left , instancia->getJugador()->coliDerecha.top );
-      coliDcV.setFillColor(Color(0, 0, 255, 128));
-      coliDcV.setSize( Vector2f( instancia->getJugador()->coliDerecha.width, instancia->getJugador()->coliDerecha.height ) );
+      // coliDcV.setPosition( instancia->getJugador()->coliDerecha.left , instancia->getJugador()->coliDerecha.top );
+      // coliDcV.setFillColor(Color(0, 0, 255, 128));
+      // coliDcV.setSize( Vector2f( instancia->getJugador()->coliDerecha.width, instancia->getJugador()->coliDerecha.height ) );
 
       window->clear();
       
@@ -178,6 +178,11 @@ int main() {
          instancia->render(elapsus/UPDATE_TICK_TIME);
       }
       
+     /* window->draw(coliDcV);
+      window->draw(coliIzV);
+      window->draw(coliArV);
+      window->draw(coliAbV);*/
+
       window->display();
 
       

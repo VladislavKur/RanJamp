@@ -5,6 +5,7 @@
 #include "../Enemigos/enemigo.h"
 #include "../Enemigos/murcielago.h"
 #include "../Enemigos/centinela.h"
+#include "../Enemigos/nube.h"
 #include "../Enemigos/pajaro.h"
 #include "../Bullet/bullet.h"
 #include "../Mundo/Mundo.h"
@@ -12,6 +13,7 @@
 #include "../Texto/texto.h"
 #include "../Musica/musica.h"
 #include "../Hud/hud.h"
+#include "../Rectagulo/Rectangulo.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
@@ -24,6 +26,7 @@
             Objeto** objetos= NULL;
             Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies[maxBullets];
+            Bullet* bulletNube[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
             //texto * t;

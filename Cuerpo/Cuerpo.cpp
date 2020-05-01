@@ -55,6 +55,13 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
 
 }
 
+Rectangulo * Cuerpo::getGlobalBounds(){
+    
+    sf::FloatRect aux = body->getGlobalBounds();
+
+    Rectangulo * R = new Rectangulo(aux.width,aux.height,aux.left,aux.top);
+   return R;
+}
 
 void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     

@@ -1,45 +1,32 @@
 #include "murcielago.h"
 
-Murcielago::Murcielago(float x, float y) : Enemigo(x,y){
-     sf::Texture *text = new sf::Texture;
-
-    cuerpo.setSize(sf::Vector2f(50.0f,80.0f));
+Murcielago::Murcielago(float x, float y) 
+    : Enemigo(x, y, 64, 64, "Murcielagos.png", 1){
     
-    
-    cuerpo.setOrigin(75/2, 75/2);
-
-    if(!text->loadFromFile("resources/Imagenes/Murcielagos.png")) std::cout << "sadasds";
-    
-    cuerpo.setTexture(text);
-    cuerpo.setTextureRect(sf::IntRect(0 * 75, 0 * 75, 64, 64));
-    cuerpo.setPosition(x,y);
     velocidad = 100;
     altura = 1;
     distanciaAtaque = 510;
     
     haPegado = false;
     
-};
+}
 
 void Murcielago::update(Player* player, float delta){//WIP fachada
-    sf::RectangleShape body = player->getBody();
+    sf::RectangleShape bodyJ = player->getBody();
 
-    float posJugadorX = body.getPosition().x; //WIP FACHADA
-    float posJugadorY = body.getPosition().y;
+    float posJugadorX = bodyJ.getPosition().x; //WIP FACHADA
+    float posJugadorY = bodyJ.getPosition().y;
 
-    float local_diffX = posJugadorX - posX;
-    float local_diffY = posJugadorY - posY;
+    float local_diffX = posJugadorX - body->getPosicion()[0];
+    float local_diffY = posJugadorY - body->getPosicion()[1];
     float local_diffabsX = abs(local_diffX);
     float local_diffabsY = abs(local_diffY);
-
-    diffX = 0; //inicialmente no se mueve
-    diffY = 0; //inicialmente no se mueve
-    
     
     bool cambio = false; //no nos cambiamos de modo por defecto
+    
     do{
         cambio = false;//no nos cambiamos de modo por defecto
-        //std::cout<<"cambio-->"<<cambio<<false<<std::endl;
+        
         switch(modo){
             case(0): //está quieto
                 if(local_diffabsX < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
@@ -70,25 +57,24 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
         }
         
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
-    
-    //if(cuerpo.getGlobalBounds().intersects(body.getGlobalBounds())){
-    if(coliDerecha.intersects(body.getGlobalBounds())
-    || coliIzquierda.intersects(body.getGlobalBounds())
+
+    if(coliDerecha.intersects(bodyJ.getGlobalBounds())
+    || coliIzquierda.intersects(bodyJ.getGlobalBounds())
     || coliAbajo.intersects(player->coliArriba)
     || coliArriba.intersects(player->coliAbajo)
     ){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
+        
         haPegado = true;
-        //std::cout<<"muero"<<std::endl;
-        morir();
     }
     
-};
+}
+
 void Murcielago::updateHitbox(){
     sf::Vector2f gp = cuerpo.getPosition();
     sf::FloatRect gbb = cuerpo.getGlobalBounds();
-
+    
     coliAbajo.left = gp.x - gbb.width/2 + 20;
     coliAbajo.top = gp.y + gbb.height/2 -50;
     coliAbajo.width =0;
@@ -109,13 +95,7 @@ void Murcielago::updateHitbox(){
     coliArriba.width = 0;
     coliArriba.height = 0;
 }
+
 void Murcielago::render(float porcentaje){
-    cuerpo.setPosition(
-        posXanterior + diffX*porcentaje,
-        posYanterior + diffY*porcentaje ); //se actualiza la posicion del cuerpo, also WIP fachada
-    //std::cout << "ENTRO EN RENDER enemigo , " << posXanterior <<  ", " << posYanterior  << std::endl;
-    //falta poner que la animacion haga cosas
-    Motor * motor = Motor::instance();
-    motor->dibujo(cuerpo);
-    
-};
+    body->render(porcentaje);
+}
