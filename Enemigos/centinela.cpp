@@ -18,9 +18,7 @@ Centinela::Centinela( float x, float y, int type)
 
 void Centinela::update(Player* player, float deltaTime){
 
-    sf::RectangleShape bodyJ = player->getBody();
-
-    float posJugador = bodyJ.getPosition().x;
+    float posJugador = player->getBody()->getPosicion()[0];
 
     float local_diffX = posJugador - body->getPosicion()[0];
     float local_diffabs = abs(local_diffX);
@@ -115,6 +113,10 @@ Bullet* Centinela::disparar(){
     }
 
     return(devolver);
+}
+
+bool Centinela::getShoot(){
+    return shoot;
 }
 
 void Centinela::render( float porcentaje){

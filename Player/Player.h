@@ -4,9 +4,9 @@
 #include "../Mundo/Mundo.h"
 #include "../Enumerador/typeBody.h"
 #include "../Cuerpo/Cuerpo.h"
-#include "../Rectagulo/Rectangulo.h"
-class Player
-{
+#include "../Rectangulo/Rectangulo.h"
+
+class Player{
 private:
     sf::Vector2u textura;
     Cuerpo* body;
@@ -33,7 +33,7 @@ private:
     Rectangulo * coliDerecha;
 public:
     //CANON
-    Player();
+    Player(){};
     Player(int x, int y);
     //Player(sf::Texture* textura, sf::Vector2u cantidadImagenes, float SwitchTimeSprite);
     ~Player() ;

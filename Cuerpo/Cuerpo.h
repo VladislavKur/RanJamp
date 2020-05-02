@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-#include "../Rectagulo/Rectangulo.h"
+#include "../Rectangulo/Rectangulo.h"
 #include "../Motor/Motor.h"
 #include "../Animacion/Animacion.h"
 #include "../Enumerador/typeBody.h"
@@ -11,7 +11,6 @@
 #define CUERPO_H
 
 using namespace std;
-
 class Cuerpo{
 
     private:
@@ -19,7 +18,7 @@ class Cuerpo{
         Animacion* animacion;
         sf::Shape* body;
         Motor* motor;
-        Rectangulo * rectangulo;
+        Rectangulo* rectangulo;
         sf::Texture* class_textura;
         //basicas
         bool class_move;
@@ -43,7 +42,7 @@ class Cuerpo{
         void render(float porcentaje);
         void addAnimacion(float timeAnimacion);
         void setSpriteAnimacion(int entrada);
-        bool colisiona(Cuerpo* entrada);
+        bool colisiona(Cuerpo * entrada);
         std::vector<float> getPosicion();
         std::vector<float>getSize();
         Rectangulo * getGlobalBounds();

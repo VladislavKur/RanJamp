@@ -43,18 +43,15 @@ void Motor::dibujo(sf::Shape* cuerpo){
         ventana->draw(*casteadoCirc);
         
 }
-
+void Motor::dibujo(sf::RectangleShape & cuerpo){
+    ventana->draw(cuerpo);
+}
 void Motor::dibujo( sf::Text  entrada){
     ventana->draw(entrada);
 }
 
 void Motor::dibujo(sf::Sprite entrada){
-
-
-
-        ventana->draw(entrada);
-
-
+    ventana->draw(entrada);
 }
 
 bool Motor::cargarSprite(sf::Texture& entrada, std::string fichero){
@@ -68,6 +65,18 @@ bool Motor::cargarSprite(sf::Texture& entrada, std::string fichero){
     return(devolver);
 }
 
+bool Motor::cargarSprite(sf::Texture& entrada, std::string fichero, bool x){
+
+    bool devolver = x;
+
+    if(!entrada.loadFromFile(fichero)){
+        devolver = false;
+    }
+
+    return(devolver);
+}
+
+
 void Motor::posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura){
     sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
     sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
@@ -78,20 +87,20 @@ void Motor::posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura){
         casteadoCirc->setOrigin(ancho/2, altura/2);
 }
 
-bool cargarSprite(sf::Texture& entrada, const char * fichero){
+// bool cargarSprite(sf::Texture& entrada, const char * fichero){
 
-    bool devolver = true;
+//     bool devolver = true;
 
-    if(!entrada.loadFromFile(fichero)){
+//     if(!entrada.loadFromFile(fichero)){
 
 
-        devolver = false;
+//         devolver = false;
 
-    }
+//     }
 
-    return(devolver);
+//     return(devolver);
 
-}
+// }
 
 void Motor::setOrigin(sf::Sprite &entrada, int ancho , int largo){
     entrada.setOrigin( ancho/2 , largo/2);
@@ -149,6 +158,12 @@ void Motor::setTextura(sf::Shape* cuerpo, sf::Texture* texture){
 
 }
 
+
+void setTextura(sf::Sprite & cuerpo, sf::Texture entrada){
+    cuerpo.setTexture(entrada);
+}
+
+
 void Motor::posicionar(sf::Shape* entrada, float x, float y){
     sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(entrada);
     sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(entrada);
@@ -160,10 +175,6 @@ void Motor::posicionar(sf::Shape* entrada, float x, float y){
 
 }
 
-
-void setTextura(sf::Sprite& cuerpo, sf::Texture entrada){
-    cuerpo.setTexture(entrada);
-}
 
 
 void posicionar(sf::RectangleShape& entrada, float x, float y){

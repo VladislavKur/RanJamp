@@ -13,7 +13,8 @@ Juego::Juego(){ //WIP FUNCION CARGARNIVEL
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);
-    jugador = new Player();
+    vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
+    jugador = new Player(posP[0], posP[1]);
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720); //FACHADA WIP
@@ -384,7 +385,8 @@ void Juego::matarJugador(){ //está nice
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
   mundo->cargarPosicionPlayer_Puerta(4);
-  jugador = new Player();
+  vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
+  jugador = new Player(posP[0], posP[1]);
   crearObjetos();
   crearEnemigos();
   view.setSize(1024,720);
@@ -515,8 +517,9 @@ void Juego::nextLevel(){
     mundo->crearSprites();
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
-    mundo->cargarPosicionPlayer_Puerta(4);
-    jugador = new Player();
+    mundo->cargarPosicionPlayer_Puerta(4);//Puerta
+    vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
+    jugador = new Player(posP[0], posP[1]);
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720);

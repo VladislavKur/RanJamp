@@ -4,7 +4,7 @@
 #include "../Enumerador/typeBody.h"
 #include "../Enumerador/typeBullet.h"
 #include "../Cuerpo/Cuerpo.h"
-#include "../Rectagulo/Rectangulo.h"
+#include "../Rectangulo/Rectangulo.h"
 
 #define maxBullets 256
 

@@ -5,15 +5,9 @@
 Textura::Textura(string entrada){
 
     t = new sf::Texture();
-    bool cargado = motor->cargarSprite(*t, entrada);
+    motor->cargarSprite(*t, entrada, true);
 }
 
-
-Textura::Textura(const char * entrada){
-
-    t = new sf::Texture();
-    bool cargado = motor->cargarSprite(*t, entrada);
-}
 
 
 Textura::~Textura(){

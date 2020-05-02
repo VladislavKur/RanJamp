@@ -21,10 +21,11 @@
         public:
             static Motor *instance();
             void dibujo(sf::Shape* entrada);
+            void dibujo(sf::RectangleShape & cuerpo);
             void dibujo(sf::Sprite entrada);
             void dibujo( sf::Text  entrada);
             bool cargarSprite(sf::Texture& entrada, std::string fichero);
-            bool cargarSprite(sf::Texture& entrada, const char * fichero);
+            bool cargarSprite(sf::Texture& entrada, std::string fichero, bool x);
             void setOrigin(sf::Sprite &entrada, int ancho, int largo);
             void recorte(sf::Sprite &entrada, int xi, int yi, int lengthX, int lengthY);
             void recorte(sf::RectangleShape &entrada, int xi, int yi, int lengthX, int lengthY);

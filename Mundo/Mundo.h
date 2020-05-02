@@ -54,7 +54,6 @@ class Mundo{
         TiXmlDocument doc;
         TiXmlElement * map;
         VertexArray m_vertices;
-        Textura m_tileset;
         int _activeLayer;
         int _width;
         int _height;
@@ -68,7 +67,7 @@ class Mundo{
         int _numTilesets = 0;
         int ***_tilemap;
         Bloque ****_tilemapSprite;
-        Textura *_tilesetTexture;
+        Textura **_tilesetTexture;
         TiXmlElement ** imagenes;
 
 

@@ -22,6 +22,7 @@ add_subdirectory(Musica)
 add_subdirectory(Bloque)
 add_subdirectory(Textura)
 add_subdirectory(Cuerpo)
+add_subdirectory(Rectangulo)
 
 
 #Opciones a pasar al compilador de C++
@@ -30,8 +31,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")
 #y ficheros que aporten código que no sean librerias o subcarpetas 
 
 add_executable(ranJamp main.cpp)
-add_executable(nube enemNube.cpp)
-add_executable(pajarraco pajarraco.cpp)
 
 
 #Añadir todos los objetos (ficheros o) que requiera el ejecutable. 
@@ -39,8 +38,6 @@ add_executable(pajarraco pajarraco.cpp)
 #aportaran código
 
 target_link_libraries(ranJamp libClases)
-target_link_libraries(nube libClases)
-target_link_libraries(pajarraco libClases)
 
   
 
@@ -50,7 +47,5 @@ find_package(SFML REQUIRED system window graphics network audio)
 if (SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
     target_link_libraries(ranJamp ${SFML_LIBRARIES})
-    target_link_libraries(nube ${SFML_LIBRARIES})
-    target_link_libraries(pajarraco ${SFML_LIBRARIES})
    
 endif()

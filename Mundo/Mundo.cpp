@@ -1,6 +1,7 @@
 #include "Mundo.h"
 
 Mundo::Mundo(){
+
 }
 
 
@@ -29,7 +30,7 @@ void Mundo::cargarmapa(const char * f){
   _imgwidth = new int[_numTilesets];
   _imgheight = new int[_numTilesets];
   cambio = new int[_numTilesets];
-  _tilesetTexture = new Textura[_numTilesets];
+  _tilesetTexture = new Textura *[_numTilesets];
   
   tileset = map->FirstChildElement("tileset");
   int num = 0;
@@ -45,12 +46,9 @@ void Mundo::cargarmapa(const char * f){
   for(int i = 0; i < _numTilesets; i++){
     imagenes[i]->QueryIntAttribute("width", &_imgwidth[i]);
     imagenes[i]->QueryIntAttribute("height", &_imgheight[i]);
-
-    if(!_tilesetTexture[i](imagenes[i]->Attribute("source"))){
-      cout<<"NO SE CARGA LA TEXTURA = " << i <<endl;
-    }else{
-      cout<< "TENGO TEXTURA = " << i <<endl;
-    }
+    string s = imagenes[i]->Attribute("source");
+    _tilesetTexture[i] = new Textura(s);
+    
   }
 
   TiXmlElement *layer = map->FirstChildElement("layer");

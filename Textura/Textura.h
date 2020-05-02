@@ -12,8 +12,9 @@ using namespace std;
 class Textura{
     friend class Bloque;
     public:
+        Textura(){};
         Textura(string entrada);
-        Textura(const char * entrada);
+        //Textura(const char * entrada);
         ~Textura();
     protected:
         Texture * getTexture();
