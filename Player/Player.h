@@ -4,9 +4,9 @@
 #include "../Mundo/Mundo.h"
 #include "../Enumerador/typeBody.h"
 #include "../Cuerpo/Cuerpo.h"
-#include "../Rectagulo/Rectangulo.h"
-class Player
-{
+#include "../Rectangulo/Rectangulo.h"
+
+class Player{
 private:
     sf::Vector2u textura;
     Cuerpo* body;
@@ -24,12 +24,16 @@ private:
 
     bool godMode;
     int vidasAnteriores;
-    Rectangulo* hitbox;
+    Rectangulo * hitbox;
     bool facing;
 
+    Rectangulo * coliAbajo;
+    Rectangulo * coliArriba;
+    Rectangulo * coliIzquierda;
+    Rectangulo * coliDerecha;
 public:
     //CANON
-    Player();
+    Player(){};
     Player(int x, int y);
     //Player(sf::Texture* textura, sf::Vector2u cantidadImagenes, float SwitchTimeSprite);
     ~Player() ;
@@ -55,8 +59,8 @@ public:
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
     float getJumpSpeed(){return jumpSpeed;};
-    Cuerpo* getBody(){return body;}
-    Rectangulo* getHitbox(){return hitbox;}
+    Cuerpo * getBody(){return body;}
+    Rectangulo * getHitbox(){return hitbox;}
     int getVidas(){return vidas;}
     float getCooldownSalto(){return cooldownSalto;};
     float getCooldownDisparo(){return cooldownDisparo;}
@@ -86,8 +90,8 @@ public:
     void moveRight(float deltaTime, Mundo * mundo);
     void moveLeft(float deltaTime, Mundo * mundo);
 
-    sf::FloatRect coliAbajo;
-    sf::FloatRect coliArriba;
-    sf::FloatRect coliIzquierda;
-    sf::FloatRect coliDerecha;
+    Rectangulo * getColiAbajo(){return coliAbajo;};
+    Rectangulo * getColiArriba(){return coliArriba;};
+    Rectangulo * getColiIzquierda(){return coliIzquierda;};
+    Rectangulo * getColiDerecha(){return coliDerecha;};
 };

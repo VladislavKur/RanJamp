@@ -3,7 +3,7 @@
 #include "../Player/Player.h"
 #include "../Enumerador/typeBody.h"
 #include "../Cuerpo/Cuerpo.h"
-#include "../Rectagulo/Rectangulo.h"
+#include "../Rectangulo/Rectangulo.h"
 
 #ifndef OBJETO_H
 #define OBJETO_H

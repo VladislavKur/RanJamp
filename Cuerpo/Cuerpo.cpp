@@ -9,7 +9,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
     class_positionY = y_entrada;
 
     class_previousX = x_entrada;
-    class_positionY = y_entrada;
+    class_previousY = y_entrada;
 
     if(tipoCuerpo == RECTANGLE)
         body = new sf::RectangleShape();
@@ -38,6 +38,30 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
 
 }
 
+Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight){
+     motor = Motor::instance();
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    body = new sf::RectangleShape();
+
+    class_width = sizeWidth;
+    class_height = sizeHeight;
+    
+    motor->posicionar(body, x_entrada, y_entrada);
+
+    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
+
+}
+
+Rectangulo * Cuerpo::getGlobalBounds(){
+    
+    sf::FloatRect aux = body->getGlobalBounds();
+
+    Rectangulo * R = new Rectangulo(aux.width,aux.height,aux.left,aux.top);
+   return R;
+}
 
 void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     

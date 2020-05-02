@@ -22,6 +22,22 @@ iostream
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
 
+/home/vermia/RanJamp/Bloque/Bloque.cpp
+Bloque.h
+/home/vermia/RanJamp/Bloque/Bloque.h
+
+/home/vermia/RanJamp/Bloque/Bloque.h
+SFML/Graphics.hpp
+-
+iostream
+-
+SFML/System.hpp
+-
+../Textura/Textura.h
+/home/vermia/RanJamp/Textura/Textura.h
+../Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
+
 /home/vermia/RanJamp/Bullet/bullet.cpp
 bullet.h
 /home/vermia/RanJamp/Bullet/bullet.h
@@ -37,8 +53,8 @@ SFML/Graphics.hpp
 /home/vermia/RanJamp/Enumerador/typeBullet.h
 ../Cuerpo/Cuerpo.h
 /home/vermia/RanJamp/Cuerpo/Cuerpo.h
-../Rectagulo/Rectangulo.h
-/home/vermia/RanJamp/Rectagulo/Rectangulo.h
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 
 /home/vermia/RanJamp/Cuerpo/Cuerpo.cpp
 Cuerpo.h
@@ -49,6 +65,8 @@ SFML/Graphics.hpp
 -
 iostream
 -
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
 ../Animacion/Animacion.h
@@ -79,6 +97,8 @@ SFML/Graphics.hpp
 -
 iostream
 -
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
 ../Player/Player.h
@@ -173,8 +193,8 @@ iostream
 /home/vermia/RanJamp/Musica/musica.h
 ../Hud/hud.h
 /home/vermia/RanJamp/Hud/hud.h
-../Rectagulo/Rectangulo.h
-/home/vermia/RanJamp/Rectagulo/Rectangulo.h
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 
 /home/vermia/RanJamp/Menu/menu.cpp
 menu.h
@@ -211,6 +231,12 @@ SFML/System.hpp
 -
 tinyxml.h
 /home/vermia/RanJamp/Mundo/tinyxml.h
+../Textura/Textura.h
+/home/vermia/RanJamp/Textura/Textura.h
+../Bloque/Bloque.h
+/home/vermia/RanJamp/Bloque/Bloque.h
+../Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
 
@@ -279,6 +305,8 @@ iostream
 -
 
 /home/vermia/RanJamp/Objeto/Objeto.cpp
+Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 iostream
@@ -295,8 +323,8 @@ SFML/Graphics.hpp
 /home/vermia/RanJamp/Enumerador/typeBody.h
 ../Cuerpo/Cuerpo.h
 /home/vermia/RanJamp/Cuerpo/Cuerpo.h
-../Rectagulo/Rectangulo.h
-/home/vermia/RanJamp/Rectagulo/Rectangulo.h
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 
 /home/vermia/RanJamp/Player/Player.cpp
 Player.h
@@ -313,14 +341,16 @@ SFML/Graphics.hpp
 /home/vermia/RanJamp/Enumerador/typeBody.h
 ../Cuerpo/Cuerpo.h
 /home/vermia/RanJamp/Cuerpo/Cuerpo.h
-../Rectagulo/Rectangulo.h
-/home/vermia/RanJamp/Rectagulo/Rectangulo.h
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 
-/home/vermia/RanJamp/Rectagulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.cpp
+Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
+
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
 SFML/Graphics.hpp
 -
-../Cuerpo/Cuerpo.h
-/home/vermia/RanJamp/Cuerpo/Cuerpo.h
 
 /home/vermia/RanJamp/Texto/texto.cpp
 texto.h
@@ -332,6 +362,20 @@ SFML/System.hpp
 SFML/Graphics.hpp
 -
 iostream
+-
+../Motor/Motor.h
+/home/vermia/RanJamp/Motor/Motor.h
+
+/home/vermia/RanJamp/Textura/Textura.cpp
+Textura.h
+/home/vermia/RanJamp/Textura/Textura.h
+
+/home/vermia/RanJamp/Textura/Textura.h
+SFML/Graphics.hpp
+-
+iostream
+-
+SFML/System.hpp
 -
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h

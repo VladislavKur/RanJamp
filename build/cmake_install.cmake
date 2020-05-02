@@ -46,7 +46,10 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/vermia/RanJamp/build/Menu/cmake_install.cmake")
   include("/home/vermia/RanJamp/build/Hud/cmake_install.cmake")
   include("/home/vermia/RanJamp/build/Musica/cmake_install.cmake")
+  include("/home/vermia/RanJamp/build/Bloque/cmake_install.cmake")
+  include("/home/vermia/RanJamp/build/Textura/cmake_install.cmake")
   include("/home/vermia/RanJamp/build/Cuerpo/cmake_install.cmake")
+  include("/home/vermia/RanJamp/build/Rectangulo/cmake_install.cmake")
 
 endif()
 

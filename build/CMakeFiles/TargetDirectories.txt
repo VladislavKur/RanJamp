@@ -1,9 +1,7 @@
 /home/vermia/RanJamp/build/CMakeFiles/edit_cache.dir
-/home/vermia/RanJamp/build/CMakeFiles/libClases.dir
 /home/vermia/RanJamp/build/CMakeFiles/rebuild_cache.dir
 /home/vermia/RanJamp/build/CMakeFiles/ranJamp.dir
-/home/vermia/RanJamp/build/CMakeFiles/nube.dir
-/home/vermia/RanJamp/build/CMakeFiles/pajarraco.dir
+/home/vermia/RanJamp/build/CMakeFiles/libClases.dir
 /home/vermia/RanJamp/build/Player/CMakeFiles/edit_cache.dir
 /home/vermia/RanJamp/build/Player/CMakeFiles/rebuild_cache.dir
 /home/vermia/RanJamp/build/Bullet/CMakeFiles/edit_cache.dir
@@ -28,5 +26,11 @@
 /home/vermia/RanJamp/build/Hud/CMakeFiles/rebuild_cache.dir
 /home/vermia/RanJamp/build/Musica/CMakeFiles/edit_cache.dir
 /home/vermia/RanJamp/build/Musica/CMakeFiles/rebuild_cache.dir
+/home/vermia/RanJamp/build/Bloque/CMakeFiles/edit_cache.dir
+/home/vermia/RanJamp/build/Bloque/CMakeFiles/rebuild_cache.dir
+/home/vermia/RanJamp/build/Textura/CMakeFiles/edit_cache.dir
+/home/vermia/RanJamp/build/Textura/CMakeFiles/rebuild_cache.dir
 /home/vermia/RanJamp/build/Cuerpo/CMakeFiles/edit_cache.dir
 /home/vermia/RanJamp/build/Cuerpo/CMakeFiles/rebuild_cache.dir
+/home/vermia/RanJamp/build/Rectangulo/CMakeFiles/edit_cache.dir
+/home/vermia/RanJamp/build/Rectangulo/CMakeFiles/rebuild_cache.dir

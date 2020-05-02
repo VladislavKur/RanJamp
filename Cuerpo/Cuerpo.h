@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+
+#include "../Rectangulo/Rectangulo.h"
 #include "../Motor/Motor.h"
 #include "../Animacion/Animacion.h"
 #include "../Enumerador/typeBody.h"
@@ -9,7 +11,6 @@
 #define CUERPO_H
 
 using namespace std;
-
 class Cuerpo{
 
     private:
@@ -17,7 +18,7 @@ class Cuerpo{
         Animacion* animacion;
         sf::Shape* body;
         Motor* motor;
-        
+        Rectangulo* rectangulo;
         sf::Texture* class_textura;
         //basicas
         bool class_move;
@@ -30,6 +31,7 @@ class Cuerpo{
     public:
         Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala, typeBody tipoCuerpo); //cambiar tipo por enum (0: RS, 1:CS)
+        Cuerpo(float x , float y, int sizeWidth , int sizeHeight);
         ~Cuerpo();
         void posicionamiento(float x_entrada,float y_entrada);
         std::vector<int> texturizar(std::string entrada, int sizeWidth, int sizeHeight);
@@ -40,10 +42,10 @@ class Cuerpo{
         void render(float porcentaje);
         void addAnimacion(float timeAnimacion);
         void setSpriteAnimacion(int entrada);
-        bool colisiona(Cuerpo* entrada);
+        bool colisiona(Cuerpo * entrada);
         std::vector<float> getPosicion();
         std::vector<float>getSize();
-
+        Rectangulo * getGlobalBounds();
 };
 
 #endif

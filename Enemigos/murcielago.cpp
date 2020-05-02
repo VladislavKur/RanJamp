@@ -12,10 +12,9 @@ Murcielago::Murcielago(float x, float y)
 }
 
 void Murcielago::update(Player* player, float delta){//WIP fachada
-    sf::RectangleShape bodyJ = player->getBody();
 
-    float posJugadorX = bodyJ.getPosition().x; //WIP FACHADA
-    float posJugadorY = bodyJ.getPosition().y;
+    float posJugadorX = player->getBody()->getPosicion()[0]; //WIP FACHADA
+    float posJugadorY = player->getBody()->getPosicion()[1];
 
     float local_diffX = posJugadorX - body->getPosicion()[0];
     float local_diffY = posJugadorY - body->getPosicion()[1];
@@ -58,10 +57,10 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
         
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
 
-    if(coliDerecha.intersects(bodyJ.getGlobalBounds())
-    || coliIzquierda.intersects(bodyJ.getGlobalBounds())
-    || coliAbajo.intersects(player->coliArriba)
-    || coliArriba.intersects(player->coliAbajo)
+    if(coliDerecha->getIntersect(*player->getBody()->getGlobalBounds())
+    || coliIzquierda->getIntersect(*player->getBody()->getGlobalBounds())
+    || coliAbajo->getIntersect(*player->getColiArriba())
+    || coliArriba->getIntersect(*player->getColiAbajo())
     ){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
@@ -72,28 +71,30 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
 }
 
 void Murcielago::updateHitbox(){
-    sf::Vector2f gp = cuerpo.getPosition();
-    sf::FloatRect gbb = cuerpo.getGlobalBounds();
-    
-    coliAbajo.left = gp.x - gbb.width/2 + 20;
-    coliAbajo.top = gp.y + gbb.height/2 -50;
-    coliAbajo.width =0;
-    coliAbajo.height = 0;
-    
-    coliIzquierda.left = gp.x - gbb.width/2+12;
-    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-15;
-    coliIzquierda.height = gbb.height - 50;
 
-    coliDerecha.left = gp.x + 5;
-    coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 + 25;
-    coliDerecha.height = gbb.height -50;
+    float gpx = body->getPosicion()[0];
+    float gpy = body->getPosicion()[1];
+    std::vector<float> gbb = body->getBounds();
 
-    coliArriba.left = gp.x - gbb.width/2 + 20;
-    coliArriba.top = gp.y-gbb.height/2 +25;
-    coliArriba.width = 0;
-    coliArriba.height = 0;
+    coliAbajo->setLeft(gpx - gbb[2]/2 + 20);
+    coliAbajo->setTop(gpy + gbb[3]/2 - 50);
+    coliAbajo->setWidth(0);
+    coliAbajo->setHeight(0);
+    
+    coliIzquierda->setLeft( gpx -  gbb[2]/2+12); //rojo
+    coliIzquierda->setTop( gpy -  gbb[3]/2 + 25) ;
+    coliIzquierda->setWidth( gbb[2]/2-15);
+    coliIzquierda->setHeight(gbb[3] -50);
+
+    coliDerecha->setLeft(gpx+5);
+    coliDerecha->setTop(gpy -  gbb[3]/2 +25);
+    coliDerecha->setWidth(gbb[2]/2 +25);
+    coliDerecha->setHeight(gbb[3] -50);
+
+    coliArriba->setLeft(gpx -  gbb[2]/2 + 20);
+    coliArriba->setTop( gpy-  gbb[3]/2 +25);
+    coliArriba->setWidth(0);
+    coliArriba->setHeight(0);
 }
 
 void Murcielago::render(float porcentaje){

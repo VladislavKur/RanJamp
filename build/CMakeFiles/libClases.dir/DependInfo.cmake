@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vermia/RanJamp/Animacion/Animacion.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o"
+  "/home/vermia/RanJamp/Bloque/Bloque.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
   "/home/vermia/RanJamp/Bullet/bullet.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
   "/home/vermia/RanJamp/Cuerpo/Cuerpo.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
   "/home/vermia/RanJamp/Enemigos/centinela.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
@@ -24,7 +25,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vermia/RanJamp/Musica/musica.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Musica/musica.cpp.o"
   "/home/vermia/RanJamp/Objeto/Objeto.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
   "/home/vermia/RanJamp/Player/Player.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Player/Player.cpp.o"
+  "/home/vermia/RanJamp/Rectangulo/Rectangulo.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
   "/home/vermia/RanJamp/Texto/texto.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Texto/texto.cpp.o"
+  "/home/vermia/RanJamp/Textura/Textura.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -42,7 +45,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Menu"
   "../Hud"
   "../Musica"
+  "../Bloque"
+  "../Textura"
   "../Cuerpo"
+  "../Rectangulo"
   )
 
 # Targets to which this target links.

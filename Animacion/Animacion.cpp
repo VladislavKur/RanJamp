@@ -5,9 +5,7 @@
 
 Animacion::~Animacion(){}
 
-Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation,
-            int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY
-            ){
+Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation, int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY){
 
     motor = Motor::instance();
     

@@ -4,7 +4,7 @@
 Player::~Player(){
 
 }
-Player::Player(int x, int y) { 
+Player::Player(int x, int y){ 
 
 
   /*Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
@@ -33,7 +33,10 @@ Player::Player(int x, int y) {
     /*
     body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/ // ESTO HAY QUE PONERLO
     
-    
+    coliAbajo = new Rectangulo(0,0,0,0);
+    coliArriba = new Rectangulo(0,0,0,0);
+    coliDerecha = new Rectangulo(0,0,0,0);
+    coliIzquierda = new Rectangulo(0,0,0,0);
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
@@ -96,11 +99,11 @@ void Player::render(float porcentaje){
 
 void Player::moveRight(float deltaTime , Mundo * mundo){
   bool puede = true;
-  RectangleShape ** objetos = mundo->getObjetos();
+  Cuerpo ** objetos = mundo->getObjetos();
 
   for( int i=0; i< mundo->getNumObjetos() ; i++){
   
-    if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
+    if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }
   }
@@ -115,11 +118,11 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
 
 void Player::moveLeft(float deltaTime , Mundo * mundo){
   bool puede=true;
-  RectangleShape ** objetos = mundo->getObjetos();
+  Cuerpo ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
+  for(unsigned int i=0; i< (unsigned)mundo->getNumObjetos() ; i++){
   
-    if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
+    if(objetos[i]->getGlobalBounds()->getIntersect(*coliIzquierda)){
         puede=false;
     }
   }
@@ -162,26 +165,25 @@ void Player::updateHitbox(){
    float gpy = body->getPosicion()[1];
    std::vector<float> gbb = body->getBounds();
 
-
-    coliAbajo.left = gpx - gbb[2]/2 + 25;
-    coliAbajo.top = gpy + gbb[3]/2;
-    coliAbajo.width = gbb[2]/2;
-    coliAbajo.height = 6;
+    coliAbajo->setLeft(gpx - gbb[2]/2 + 25);
+    coliAbajo->setTop(gpy + gbb[3]/2);
+    coliAbajo->setWidth(gbb[2]/2);
+    coliAbajo->setHeight(6);
     
-    coliIzquierda.left = gpx -  gbb[2]/2+12; //rojo
-    coliIzquierda.top = gpy -  gbb[3]/2 + 25 ;
-    coliIzquierda.width =  gbb[2]/2-10;
-    coliIzquierda.height =  gbb[3] -25;
+    coliIzquierda->setLeft( gpx -  gbb[2]/2+12); //rojo
+    coliIzquierda->setTop( gpy -  gbb[3]/2 + 25) ;
+    coliIzquierda->setWidth( gbb[2]/2-10);
+    coliIzquierda->setHeight(gbb[3] -25);
 
-    coliDerecha.left = gpx+5;
-    coliDerecha.top = gpy -  gbb[3]/2 +25;
-    coliDerecha.width =  gbb[2]/2 -20;
-    coliDerecha.height =  gbb[3] -25;
+    coliDerecha->setLeft(gpx+5);
+    coliDerecha->setTop(gpy -  gbb[3]/2 +25);
+    coliDerecha->setWidth(gbb[2]/2 -20);
+    coliDerecha->setHeight(gbb[3] -25);
 
-    coliArriba.left = gpx -  gbb[2]/2 + 20;
-    coliArriba.top = gpy-  gbb[3]/2 +25;
-    coliArriba.width =  gbb[2]- 40;
-    coliArriba.height = 5;
+    coliArriba->setLeft(gpx -  gbb[2]/2 + 20);
+    coliArriba->setTop( gpy-  gbb[3]/2 +25);
+    coliArriba->setWidth(gbb[2]- 40);
+    coliArriba->setHeight(5);
 }
 void Player::obtenerPU_SaltoDoble(){
   PU_saltoDoble=true;

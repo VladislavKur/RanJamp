@@ -9,13 +9,27 @@ using namespace std;
 #define num_items 3
 class menu{
     public: 
-        menu( Font fuente, int max);
-        ~menu();
-        void render();
-        void moveUp();
+        // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO
+        menu( Font fuente, int max); 
+
+        // DESTRUCTRO 
+        ~menu(); 
+        
+        // PINTAR EL MENU
+        void render(); 
+
+        // MOVERSE HACIA ARRIBA EN EL MENU 
+        void moveUp(); 
+
+        // MOVERSE HACIA ABAJO EN EL MENU 
         void moveDown();
-        int getItemPressed();
-        void cambiarTexto(int i, Color c, String s, float posx , float posy);
+
+        // DEVULVE LA OPCCION SELECCIONADA 
+        int getItemPressed(); 
+        
+        //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
+        void cambiarTexto(int i, Color c, String s, float posx , float posy); 
+        
     private: 
         int numOpciones;
         int selectedItem; 

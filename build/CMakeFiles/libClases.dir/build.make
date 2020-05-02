@@ -537,9 +537,57 @@ CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides: CMakeFiles/libClases.dir/
 CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 
 
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Bloque/Bloque.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o -c /home/vermia/RanJamp/Bloque/Bloque.cpp
+
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Bloque/Bloque.cpp > CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i
+
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Bloque/Bloque.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Bloque/Bloque.cpp -o CMakeFiles/libClases.dir/Bloque/Bloque.cpp.s
+
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires
+
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides
+
+CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides.build: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
+
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Textura/Textura.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Textura/Textura.cpp.o -c /home/vermia/RanJamp/Textura/Textura.cpp
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Textura/Textura.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Textura/Textura.cpp > CMakeFiles/libClases.dir/Textura/Textura.cpp.i
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Textura/Textura.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Textura/Textura.cpp -o CMakeFiles/libClases.dir/Textura/Textura.cpp.s
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Textura/Textura.cpp.o.requires
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides: CMakeFiles/libClases.dir/Textura/Textura.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides
+
+CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides.build: CMakeFiles/libClases.dir/Textura/Textura.cpp.o
+
+
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/vermia/RanJamp/Cuerpo/Cuerpo.cpp
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i: cmake_force
@@ -559,6 +607,30 @@ CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.provides: CMakeFiles/libClases.dir/
 .PHONY : CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.provides
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.provides.build: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
+
+
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: ../Rectangulo/Rectangulo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o -c /home/vermia/RanJamp/Rectangulo/Rectangulo.cpp
+
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Rectangulo/Rectangulo.cpp > CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i
+
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Rectangulo/Rectangulo.cpp -o CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.s
+
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.requires
+
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.provides: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.provides
+
+CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.provides.build: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
 
 
 # Object files for target libClases
@@ -583,7 +655,10 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Menu/menu.cpp.o" \
 "CMakeFiles/libClases.dir/Hud/hud.cpp.o" \
 "CMakeFiles/libClases.dir/Musica/musica.cpp.o" \
-"CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+"CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o" \
+"CMakeFiles/libClases.dir/Textura/Textura.cpp.o" \
+"CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o" \
+"CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
 
 # External object files for target libClases
 libClases_EXTERNAL_OBJECTS =
@@ -608,10 +683,13 @@ liblibClases.a: CMakeFiles/libClases.dir/Texto/texto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Hud/hud.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Textura/Textura.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -640,7 +718,10 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Texto/texto.cpp.o.re
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Textura/Textura.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.requires
 
 .PHONY : CMakeFiles/libClases.dir/requires
 

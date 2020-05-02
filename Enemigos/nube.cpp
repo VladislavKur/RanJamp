@@ -1,7 +1,7 @@
 #include "nube.h"
 
 Nube::Nube(float x, float y) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.25){
     
     distanciaAtaque = 1000;
     modo = 0;    
@@ -10,14 +10,16 @@ Nube::Nube(float x, float y)
     shootTime = 0.0f;
 }
 
-void Nube::update(Player* player, float delta){
+void Nube::update(sf::RectangleShape player, float delta){
 
-    float posJugador = player->getBody().getPosition().x;
+    //float posJugador = player->getBody().getPosition().x;
+    float posJugador = player.getPosition().x;
 
     float local_diffX = posJugador - body->getPosicion()[0];
+    
     float local_diffabs = abs(local_diffX);
     
-    float velPlayer =  900.0/1000.0;
+    //float velPlayer =  900.0/1000.0;
 
     switch(modo){
 
@@ -63,6 +65,8 @@ void Nube::update(Player* player, float delta){
         break;
 
     }
+
+    body->update(delta);
 }
 
 Bullet* Nube::disparar(){
@@ -73,7 +77,7 @@ Bullet* Nube::disparar(){
         shoot = false;
 
         vector<float> pos = body->getPosicion();
-
+        //cout<<"balas "<<pos[0]<<pos[1]<<endl;
         devolver = new Bullet(pos[0], pos[1], direccion, 2);
     }
 
@@ -86,4 +90,5 @@ bool Nube::getShoot(){
 
 void Nube::render(float porcentaje){
     body->render(porcentaje);
+    //cout<<body->getPosicion()[0]<<" "<<body->getPosicion()[1]<<endl;
 }
