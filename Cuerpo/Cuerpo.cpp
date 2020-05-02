@@ -1,6 +1,6 @@
 #include "Cuerpo.h"
 
-Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
+Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
             std::string fichero, float escala, typeBody tipoCuerpo){
 
     motor = Motor::instance();

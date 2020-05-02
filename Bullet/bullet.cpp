@@ -14,7 +14,7 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i) : body(){ //WIP fach
 
     
     dir = i;
-    body = new Cuerpo(p_x, p_y, 10, 10, nullptr, 1, CIRCLE);
+    body = new Cuerpo(p_x, p_y, 10, 10, "Bala_fuego.png", 1, CIRCLE);
     /*body.setPosition(p_x, p_y); //wip fachada
     body.setFillColor(sf::Color(255,128,0)); //wip fachada
     body.setRadius(10); //wip fachada*/

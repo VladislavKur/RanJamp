@@ -4,9 +4,9 @@ Bloque::Bloque(Textura * t){
     motor = Motor::instance();
 
     s = new sf::Sprite();
-    Texture* tt; 
-    tt=t->getTexture();
-   motor->setTextura(*s, *tt);
+    //Texture* tt; 
+    //tt=t->getTexture();
+    motor->setTextura(*s, Texture());
 }
 
 void Bloque::setTextureRect(int x, int y, int ancho, int largo){
