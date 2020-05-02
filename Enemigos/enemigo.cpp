@@ -4,6 +4,10 @@ Enemigo::Enemigo(float x, float y, int sizeWidth, int sizeHeight,
             std::string fichero, float escala){
     modo = 0;
     body = new Cuerpo(x, y, sizeWidth, sizeHeight, fichero, escala, RECTANGLE);
+    coliDerecha = new Rectangulo(0,0,0,0);
+    coliIzquierda = new Rectangulo(0,0,0,0);
+    coliAbajo = new Rectangulo(0,0,0,0);
+    coliArriba = new Rectangulo(0,0,0,0);
 }
 
 Enemigo::~Enemigo(){

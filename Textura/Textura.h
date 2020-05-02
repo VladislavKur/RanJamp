@@ -10,14 +10,15 @@ using namespace std;
 #ifndef TEXTURA_H
 #define TEXTURA_H
 class Textura{
-    friend class Bloque;
+    //friend class Bloque;
     public:
         Textura(){};
         Textura(string entrada);
         //Textura(const char * entrada);
         ~Textura();
-    protected:
         Texture * getTexture();
+    protected:
+        
     private:
         Texture * t;
         Motor * motor;

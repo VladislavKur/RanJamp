@@ -115,6 +115,7 @@ void Mundo::crearSprites(){
     cout << "layers sprites: " << l << endl;
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){
+          cout<<"X: " << x << "Y: " << y<<endl;
       int imagen = 0;
       bool pintada = false;
         for(int k = 0; k< _numTilesets && !pintada; k++){
