@@ -90,6 +90,8 @@ public:
     void moveRight(float deltaTime, Mundo * mundo);
     void moveLeft(float deltaTime, Mundo * mundo);
 
+    void setSize(float sizeX, float sizeY);
+
     Rectangulo * getColiAbajo(){return coliAbajo;};
     Rectangulo * getColiArriba(){return coliArriba;};
     Rectangulo * getColiIzquierda(){return coliIzquierda;};

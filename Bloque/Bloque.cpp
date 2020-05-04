@@ -6,7 +6,7 @@ Bloque::Bloque(Textura * t){
     s = new sf::Sprite();
     //Texture* tt; 
     //tt=t->getTexture();
-    motor->setTextura(*s, Texture());
+    motor->setTextura(s, t->getTexture());
 }
 
 void Bloque::setTextureRect(int x, int y, int ancho, int largo){
