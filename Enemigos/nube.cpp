@@ -78,7 +78,7 @@ Bullet* Nube::disparar(){
 
         vector<float> pos = body->getPosicion();
         //cout<<"balas "<<pos[0]<<pos[1]<<endl;
-        devolver = new Bullet(pos[0], pos[1], direccion, 2);
+        devolver = new Bullet(pos[0], pos[1], direccion, 2, 0);
     }
 
     return devolver;

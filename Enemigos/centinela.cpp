@@ -7,6 +7,9 @@ Centinela::Centinela( float x, float y, int type)
     shoot = false;
     shootTime = 0.0;
 
+    body->setSize(150,320);
+    body->Origen(150/2, 320/2);
+
     tipo = type;
     modo  = 0;
     velocidad = 0.3;
@@ -109,7 +112,7 @@ Bullet* Centinela::disparar(){
 
         vector<float> pos = body->getPosicion();
 
-        devolver = new Bullet(pos[0], pos[1], direccion, 2);
+        devolver = new Bullet(pos[0], pos[1], direccion, 2, 1);
     }
 
     return(devolver);

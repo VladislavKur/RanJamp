@@ -101,7 +101,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
      
        //if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
       if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && 
-      objetos[j]->getHitbox()->getIntersect(*jugador->getHitbox())){
+      objetos[j]->getBody()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
 
             switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
@@ -163,9 +163,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
       enemies[i]->updateHitbox(); //dentro de update de enemigo
-     // if(enemies[i]->getVidas() == 0){ //dentro de update de enemigo
-       // matarEnemigo(enemies[i]);
-     // }
+      if(enemies[i]->muerto){ //dentro de update de enemigo
+        matarEnemigo(enemies[i]);
+      }
    
       //esto del casteo está bien hecho, pero en una funcion aparte
       Centinela* casteadoCent = dynamic_cast<Centinela*>(enemies[i]);
@@ -262,11 +262,7 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
 
     }
 
-    for(unsigned i = 0; i < maxBullets;i++){
-
-      //if(bulletEnemies[i] == NULL)continue;
-      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion
-    }
+    
     
     for(unsigned i = 0; i < maxBullets;i++){
 
@@ -291,8 +287,12 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       j++;
     }
 
+  
     Hud->render();
-    
+    for(unsigned i = 0; i < maxBullets;i++){
+      //if(bulletEnemies[i] == NULL)continue;
+      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion
+    }
 }
 
 
@@ -387,6 +387,9 @@ void Juego::matarJugador(){ //está nice
   mundo->cargarPosicionPlayer_Puerta(4);
   vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
   jugador = new Player(posP[0], posP[1]);
+  if(jugador->getBody()->getPosicion()[1]<0){
+    jugador->getBody()->posicionamiento(posP[0], posP[1]);
+  }
   crearObjetos();
   crearEnemigos();
   view.setSize(1024,720);
@@ -413,8 +416,8 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
    //a lo mejor parte del código aquí y parte del código en jugador (sin fundamento, a debatir)
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
-            //y por estas cosas usamos fachada ^.^
-            bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 );
+            bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
+            cout<<jugador->getBody()->getPosicion()[1]<<endl;
             jugador->setCooldownDisparo(10*deltaTime);
             break;
           }
@@ -431,7 +434,7 @@ void Juego::colisionBulletMundo(){//WIP fachada
       if(bulletPlayer[i]==NULL) continue;
       if(objetos[j]==NULL) continue;
 
-      if(objetos[j]->getGlobalBounds()->getIntersect(*bulletPlayer[i]->getHitbox())){
+      if(objetos[j]->getGlobalBounds()->getIntersect(*bulletPlayer[i]->getBody()->getGlobalBounds())){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
       }
@@ -445,7 +448,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
     if(bulletEnemies[i] != NULL){
 
-      if(jugador->getHitbox()->getIntersect(*bulletEnemies[i]->getHitbox())){
+      if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletEnemies[i]->getBody()->getGlobalBounds())){
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
@@ -504,9 +507,9 @@ void Juego::cargarMusica(){
 }
 
 void Juego::comprobarPasarNivel(){
- /*if( mundo->getPuerta()->getGlobalBounds().intersects(*jugador->getHitbox())){
+ if( mundo->getPuerta()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
    nextLevel();
- }*/
+ }
 }
 
 void Juego::nextLevel(){
