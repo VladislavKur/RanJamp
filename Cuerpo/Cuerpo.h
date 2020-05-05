@@ -37,6 +37,7 @@ class Cuerpo{
         std::vector<int> texturizar(std::string entrada, int sizeWidth, int sizeHeight);
         std::vector<float> getBounds();
         void update(float deltaTime);
+        //Hola 
         void Origen(float, float);
         void Scalar(float, float);
         void render(float porcentaje);
