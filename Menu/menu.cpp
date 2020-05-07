@@ -1,4 +1,13 @@
 #include "menu.h"
+/*menu* menu::p_instancia=NULL;
+
+menu* menu::instancia(){
+    if(p_instancia==NULL){
+        p_instancia = new menu(Font(), 3);
+    }
+    return p_instancia;
+}*/
+
 //ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
 menu::menu(Font fuente , int max){
     font = fuente;
@@ -11,7 +20,7 @@ menu::~menu(){
 
 }
 
-void menu::render(){ 
+void menu::render(float num){ 
     Motor * motor = Motor::instance();
     for(int i = 0; i < numOpciones; i++){
         motor->dibujo(texto[i]);

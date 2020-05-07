@@ -1,7 +1,5 @@
 #include "Textura.h"
 
-
-
 Textura::Textura(string entrada){
 
     t = new sf::Texture();
@@ -11,7 +9,7 @@ Textura::Textura(string entrada){
 
 
 Textura::~Textura(){
-
+   delete t;
 }
 
 Texture * Textura::getTexture(){

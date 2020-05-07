@@ -319,7 +319,7 @@ int Mundo::getNumObjetos(){
 }
 
 
-Mundo::~Mundo(){ //WIP preguntar fidel
+Mundo::~Mundo(){ 
     //liberar memoria
     for(int i = 0; i < _numLayers; i++)
     {

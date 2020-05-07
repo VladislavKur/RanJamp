@@ -489,33 +489,9 @@ CMakeFiles/libClases.dir/Juego/Estado.cpp.o.provides: CMakeFiles/libClases.dir/J
 CMakeFiles/libClases.dir/Juego/Estado.cpp.o.provides.build: CMakeFiles/libClases.dir/Juego/Estado.cpp.o
 
 
-CMakeFiles/libClases.dir/Juego/Menu.cpp.o: CMakeFiles/libClases.dir/flags.make
-CMakeFiles/libClases.dir/Juego/Menu.cpp.o: ../Juego/Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Juego/Menu.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Menu.cpp.o -c /home/vermia/RanJamp/Juego/Menu.cpp
-
-CMakeFiles/libClases.dir/Juego/Menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Juego/Menu.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Juego/Menu.cpp > CMakeFiles/libClases.dir/Juego/Menu.cpp.i
-
-CMakeFiles/libClases.dir/Juego/Menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Juego/Menu.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Juego/Menu.cpp -o CMakeFiles/libClases.dir/Juego/Menu.cpp.s
-
-CMakeFiles/libClases.dir/Juego/Menu.cpp.o.requires:
-
-.PHONY : CMakeFiles/libClases.dir/Juego/Menu.cpp.o.requires
-
-CMakeFiles/libClases.dir/Juego/Menu.cpp.o.provides: CMakeFiles/libClases.dir/Juego/Menu.cpp.o.requires
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Menu.cpp.o.provides.build
-.PHONY : CMakeFiles/libClases.dir/Juego/Menu.cpp.o.provides
-
-CMakeFiles/libClases.dir/Juego/Menu.cpp.o.provides.build: CMakeFiles/libClases.dir/Juego/Menu.cpp.o
-
-
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/vermia/RanJamp/Objeto/Objeto.cpp
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i: cmake_force
@@ -539,7 +515,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/vermia/RanJamp/Texto/texto.cpp
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.i: cmake_force
@@ -563,7 +539,7 @@ CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c /home/vermia/RanJamp/Menu/menu.cpp
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.i: cmake_force
@@ -583,6 +559,30 @@ CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides: CMakeFiles/libClases.dir/Menu
 .PHONY : CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o: ../Menu/menu_inicial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o -c /home/vermia/RanJamp/Menu/menu_inicial.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Menu/menu_inicial.cpp > CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Menu/menu_inicial.cpp -o CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
 
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: CMakeFiles/libClases.dir/flags.make
@@ -749,10 +749,10 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Juego/Juego.cpp.o" \
 "CMakeFiles/libClases.dir/Juego/Manejador.cpp.o" \
 "CMakeFiles/libClases.dir/Juego/Estado.cpp.o" \
-"CMakeFiles/libClases.dir/Juego/Menu.cpp.o" \
 "CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o" \
 "CMakeFiles/libClases.dir/Texto/texto.cpp.o" \
 "CMakeFiles/libClases.dir/Menu/menu.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o" \
 "CMakeFiles/libClases.dir/Hud/hud.cpp.o" \
 "CMakeFiles/libClases.dir/Musica/musica.cpp.o" \
 "CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o" \
@@ -781,10 +781,10 @@ liblibClases.a: CMakeFiles/libClases.dir/Motor/Timer.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Juego.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Estado.cpp.o
-liblibClases.a: CMakeFiles/libClases.dir/Juego/Menu.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Texto/texto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Hud/hud.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
@@ -820,10 +820,10 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Motor/Timer.cpp.o.re
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Juego.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Estado.cpp.o.requires
-CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Menu.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires

@@ -141,7 +141,7 @@ CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
  /home/vermia/RanJamp/Juego/Estado.h
  /home/vermia/RanJamp/Juego/Manejador.cpp
  /home/vermia/RanJamp/Juego/Manejador.h
-CMakeFiles/libClases.dir/Juego/Menu.cpp.o
+CMakeFiles/libClases.dir/Menu/menu.cpp.o
  /home/vermia/RanJamp/Animacion/Animacion.h
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
@@ -157,8 +157,8 @@ CMakeFiles/libClases.dir/Juego/Menu.cpp.o
  /home/vermia/RanJamp/Juego/Estado.h
  /home/vermia/RanJamp/Juego/Juego.h
  /home/vermia/RanJamp/Juego/Manejador.h
- /home/vermia/RanJamp/Juego/Menu.cpp
- /home/vermia/RanJamp/Juego/Menu.h
+ /home/vermia/RanJamp/Menu/menu.cpp
+ /home/vermia/RanJamp/Menu/menu.h
  /home/vermia/RanJamp/Motor/Motor.h
  /home/vermia/RanJamp/Mundo/Mundo.h
  /home/vermia/RanJamp/Mundo/tinystr.h
@@ -169,10 +169,35 @@ CMakeFiles/libClases.dir/Juego/Menu.cpp.o
  /home/vermia/RanJamp/Rectangulo/Rectangulo.h
  /home/vermia/RanJamp/Texto/texto.h
  /home/vermia/RanJamp/Textura/Textura.h
-CMakeFiles/libClases.dir/Menu/menu.cpp.o
- /home/vermia/RanJamp/Menu/menu.cpp
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+ /home/vermia/RanJamp/Animacion/Animacion.h
+ /home/vermia/RanJamp/Bloque/Bloque.h
+ /home/vermia/RanJamp/Bullet/bullet.h
+ /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/centinela.h
+ /home/vermia/RanJamp/Enemigos/enemigo.h
+ /home/vermia/RanJamp/Enemigos/murcielago.h
+ /home/vermia/RanJamp/Enemigos/nube.h
+ /home/vermia/RanJamp/Enemigos/pajaro.h
+ /home/vermia/RanJamp/Enumerador/typeBody.h
+ /home/vermia/RanJamp/Enumerador/typeBullet.h
+ /home/vermia/RanJamp/Hud/hud.h
+ /home/vermia/RanJamp/Juego/Estado.h
+ /home/vermia/RanJamp/Juego/Juego.h
+ /home/vermia/RanJamp/Juego/Manejador.h
  /home/vermia/RanJamp/Menu/menu.h
+ /home/vermia/RanJamp/Menu/menu_inicial.cpp
+ /home/vermia/RanJamp/Menu/menu_inicial.h
  /home/vermia/RanJamp/Motor/Motor.h
+ /home/vermia/RanJamp/Mundo/Mundo.h
+ /home/vermia/RanJamp/Mundo/tinystr.h
+ /home/vermia/RanJamp/Mundo/tinyxml.h
+ /home/vermia/RanJamp/Musica/musica.h
+ /home/vermia/RanJamp/Objeto/Objeto.h
+ /home/vermia/RanJamp/Player/Player.h
+ /home/vermia/RanJamp/Rectangulo/Rectangulo.h
+ /home/vermia/RanJamp/Texto/texto.h
+ /home/vermia/RanJamp/Textura/Textura.h
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o
  /home/vermia/RanJamp/Motor/Motor.cpp
  /home/vermia/RanJamp/Motor/Motor.h

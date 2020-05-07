@@ -115,7 +115,6 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
   Cuerpo ** objetos = mundo->getObjetos();
 
   for( int i=0; i< mundo->getNumObjetos() ; i++){
-  
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }

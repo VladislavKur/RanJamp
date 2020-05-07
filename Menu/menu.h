@@ -1,22 +1,26 @@
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
 //ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
 #include "../Motor/Motor.h"
+#include "../Juego/Juego.h"
+#include "../Juego/Estado.h"
+#include "../Juego/Manejador.h"
 
 using namespace  sf;
 using namespace std;
 
 #define num_items 3
-class menu{
+class menu : public Estado{
     public: 
-        // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO
-        menu( Font fuente, int max); 
+        //static menu* instancia();
 
-        // DESTRUCTRO 
+        menu( Font fuente, int max); 
+        // DESTRUCTOR
         ~menu(); 
         
         // PINTAR EL MENU
-        void render(); 
+        void render(float num); 
 
         // MOVERSE HACIA ARRIBA EN EL MENU 
         void moveUp(); 
@@ -24,15 +28,21 @@ class menu{
         // MOVERSE HACIA ABAJO EN EL MENU 
         void moveDown();
 
+        // RECOGER INPUT DE LAS TECLAS
+        virtual void update(float deltaTime);
+
         // DEVULVE LA OPCCION SELECCIONADA 
         int getItemPressed(); 
         
         //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
         void cambiarTexto(int i, Color c, String s, float posx , float posy); 
         
-    private: 
+    protected: 
+    // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO
         int numOpciones;
+        //static menu* p_instancia;
         int selectedItem; 
         Font font; 
         Text *texto;
+        float cooldown_mov;
 };

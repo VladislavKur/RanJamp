@@ -487,33 +487,6 @@ Juego/Manejador.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.s
 .PHONY : Juego/Manejador.cpp.s
 
-Juego/Menu.o: Juego/Menu.cpp.o
-
-.PHONY : Juego/Menu.o
-
-# target to build an object file
-Juego/Menu.cpp.o:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Menu.cpp.o
-.PHONY : Juego/Menu.cpp.o
-
-Juego/Menu.i: Juego/Menu.cpp.i
-
-.PHONY : Juego/Menu.i
-
-# target to preprocess a source file
-Juego/Menu.cpp.i:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Menu.cpp.i
-.PHONY : Juego/Menu.cpp.i
-
-Juego/Menu.s: Juego/Menu.cpp.s
-
-.PHONY : Juego/Menu.s
-
-# target to generate assembly for a file
-Juego/Menu.cpp.s:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Menu.cpp.s
-.PHONY : Juego/Menu.cpp.s
-
 Menu/menu.o: Menu/menu.cpp.o
 
 .PHONY : Menu/menu.o
@@ -540,6 +513,33 @@ Menu/menu.s: Menu/menu.cpp.s
 Menu/menu.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.s
 .PHONY : Menu/menu.cpp.s
+
+Menu/menu_inicial.o: Menu/menu_inicial.cpp.o
+
+.PHONY : Menu/menu_inicial.o
+
+# target to build an object file
+Menu/menu_inicial.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+.PHONY : Menu/menu_inicial.cpp.o
+
+Menu/menu_inicial.i: Menu/menu_inicial.cpp.i
+
+.PHONY : Menu/menu_inicial.i
+
+# target to preprocess a source file
+Menu/menu_inicial.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i
+.PHONY : Menu/menu_inicial.cpp.i
+
+Menu/menu_inicial.s: Menu/menu_inicial.cpp.s
+
+.PHONY : Menu/menu_inicial.s
+
+# target to generate assembly for a file
+Menu/menu_inicial.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
+.PHONY : Menu/menu_inicial.cpp.s
 
 Motor/Motor.o: Motor/Motor.cpp.o
 
@@ -968,12 +968,12 @@ help:
 	@echo "... Juego/Manejador.o"
 	@echo "... Juego/Manejador.i"
 	@echo "... Juego/Manejador.s"
-	@echo "... Juego/Menu.o"
-	@echo "... Juego/Menu.i"
-	@echo "... Juego/Menu.s"
 	@echo "... Menu/menu.o"
 	@echo "... Menu/menu.i"
 	@echo "... Menu/menu.s"
+	@echo "... Menu/menu_inicial.o"
+	@echo "... Menu/menu_inicial.i"
+	@echo "... Menu/menu_inicial.s"
 	@echo "... Motor/Motor.o"
 	@echo "... Motor/Motor.i"
 	@echo "... Motor/Motor.s"

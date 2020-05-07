@@ -1,12 +1,11 @@
 #include "Bloque.h"
 
 Bloque::Bloque(Textura * t){
+    
     motor = Motor::instance();
-
     s = new sf::Sprite();
-    //Texture* tt; 
-    //tt=t->getTexture();
-    motor->setTextura(s, t->getTexture());
+    motor->setTextura(s,t->getTexture());
+    
 }
 
 void Bloque::setTextureRect(int x, int y, int ancho, int largo){
