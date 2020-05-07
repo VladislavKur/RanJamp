@@ -115,7 +115,6 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
   Cuerpo ** objetos = mundo->getObjetos();
 
   for( int i=0; i< mundo->getNumObjetos() ; i++){
-  
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }
@@ -246,4 +245,23 @@ void Player::reset(){
 
 void Player::setSize(float sizeX, float sizeY) {
   body->setSize(sizeX, sizeY);
+  /*
+    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
+    
+    body.setTexture(text); //wip fachada
+    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/
+}
+
+bool Player::GolpeMelee(){
+  /*
+  Vector2f gp = body.getPosition();
+  FloatRect gbb = body.getGlobalBounds();
+
+
+    melee.left = gp.x+5;
+    melee.top = gp.y - gbb.height/2 +25;
+    melee.width = gbb.width/2 -200;
+    melee.height = gbb.height -25;
+*/
+
 }

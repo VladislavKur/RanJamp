@@ -33,36 +33,16 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : b
     
     
     body->addAnimacion(0.1);
-    /*body.setPosition(p_x, p_y); //wip fachada
-    body.setFillColor(sf::Color(255,128,0)); //wip fachada
-    body.setRadius(10); //wip fachada*/
-
-    // sf::Texture * t; 
-    // if(i == 1){
-    //   t->loadFromFile("resources/Imagenes/Bala_fuego.png");
-    // }else if(i == 2){
-    //   t->loadFromFile("resources/Imagenes/Flecha.png");
-    // }
-
-    // body.setTexture(t);
-    // if(i == 1){
-    //  body.setTextureRect(sf::IntRect(0,0,128,128));
-    // }else if(i == 2){
-    //  body.setTextureRect(sf::IntRect(0,0,64,16));
-    // }
 
 }
 
 void Bullet::update(float deltaTime){
     lifetime-=deltaTime;
-    float sadX,sadY ;
-    sadX = body->getPosicion()[0];
-    sadY = body->getPosicion()[1];
-    
+
       body->moverse((facing ? 1 : -1)  * velocidad * deltaTime,0);
     //cout<<body->getPosicion()[0]<<"//////"<<body->getPosicion()[1]<<endl;
     updateHitbox();
-    cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
+    //cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
     
 }
     

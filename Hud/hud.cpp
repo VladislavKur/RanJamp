@@ -95,6 +95,6 @@ void hud::render(){
   motor->dibujo(*sDobleSalto);
   motor->dibujo(*sVelocidad);
   for(int i = 0; i < 6; i++){
-    motor->dibujo(texto[i]);
+    //motor->dibujo(texto[i]);
   }
 }

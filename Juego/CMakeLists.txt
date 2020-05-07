@@ -1,5 +1,7 @@
 target_sources(libClases PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Juego.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Manejador.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Estado.cpp"
 )
 
 #Y donde se encuentran los .h

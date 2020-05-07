@@ -3,7 +3,7 @@
 
 Juego* Juego::pinstance = 0;
 
-Juego::Juego(){ //WIP FUNCION CARGARNIVEL
+Juego::Juego(){
     nivel = 0;
     inicializarNiveles();
     //cargarMusica();
@@ -109,10 +109,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
             switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
-                jugador->obtenerPU_Velocidad();
-                     destruirObjetos(objetos[j]);
-              
-                break;
+                    jugador->obtenerPU_Velocidad();
+                    destruirObjetos(objetos[j]);
+                    break;
                 case 1:
                     jugador->setArma(1);
                      destruirObjetos(objetos[j]);
@@ -172,37 +171,39 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       }
    
       //esto del casteo está bien hecho, pero en una funcion aparte
-      Centinela* casteadoCent = dynamic_cast<Centinela*>(enemies[i]);
-      Nube* casteadoNube = dynamic_cast<Nube*>(enemies[i]); 
+      if(enemies[i] != nullptr){
+        Centinela* casteadoCent = dynamic_cast<Centinela*>(enemies[i]);
+        Nube* casteadoNube = dynamic_cast<Nube*>(enemies[i]); 
+      
+        if(casteadoCent != nullptr){
 
-      if(casteadoCent != nullptr){
+          if(casteadoCent->getShoot()){
 
-        if(casteadoCent->getShoot()){
+            for(int j = 0; j < maxBullets;j++){
 
-          for(int j = 0; j < maxBullets;j++){
+              if(bulletEnemies[j] == NULL)
+                bulletEnemies[j] = casteadoCent->disparar();
 
-            if(bulletEnemies[j] == NULL)
-              bulletEnemies[j] = casteadoCent->disparar();
+            }
+
+          }
+
+        }  
+
+        if(casteadoNube != nullptr){
+
+          if(casteadoNube->getShoot()){
+
+            for(int j = 0; j < maxBullets;j++){
+
+              if(bulletNube[j] == NULL)
+                bulletNube[j] = casteadoCent->disparar();
+
+            }
 
           }
 
         }
-
-      }  
-
-      if(casteadoNube != nullptr){
-
-        if(casteadoNube->getShoot()){
-
-          for(int j = 0; j < maxBullets;j++){
-
-            if(bulletNube[j] == NULL)
-              bulletNube[j] = casteadoCent->disparar();
-
-          }
-
-        }
-
       }      
     }
     jugador->updateHitbox(); //dentro de update de jugador
@@ -305,21 +306,15 @@ void Juego::crearObjetos(){ //WIP FACHADA
   
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
+  cout<< "POSICION DE LOS OBJETOS = " << posicion.size() <<endl;
+  
   numObjetos = posicion.size();
   objetos = new Objeto *[posicion.size()]; 
 
-
   for(unsigned i = 0; i < posicion.size();i++){
-
-  
-    
     Objeto *objeto1 = new Objeto(posicion[i][0],posicion[i][1] ,posicion[i][2] );
     objetos[i] =  objeto1;
   }
-  
-  
-
-  // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
 }
 
 void Juego::destruirObjetos(Objeto* enem){ //está nice
@@ -372,7 +367,9 @@ void Juego::matarEnemigo(Enemigo* enem){ //está nice
   for (int i = 0; i < numEmenigos; i++){
     if(enemies[i] == enem){
       for(int j = i; j < numEmenigos; j++){
-        enemies[j] = enemies[j+1];        
+        if(j+1 < numEmenigos){
+          enemies[j] = enemies[j+1]; 
+        }       
       }
       enemies[numEmenigos] = NULL;
       numEmenigos--;
@@ -526,7 +523,12 @@ void Juego::nextLevel(){
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);//Puerta
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
-    jugador = new Player(posP[0], posP[1]);
+    jugador->getBody()->posicionamiento(posP[0], posP[1]);
+    // if(nivel % 4 == 0){
+    //   jugador->perderPU_SaltoDoble();
+    //   jugador->perderPU_Slowhits();
+    //   jugador->perderPU_Velocidad();
+    // }
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720);
