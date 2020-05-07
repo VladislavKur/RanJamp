@@ -3,7 +3,9 @@
 #include <iostream>
 
 
-Animacion::~Animacion(){}
+Animacion::~Animacion(){
+    body=NULL;
+}
 
 Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation, int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY){
 

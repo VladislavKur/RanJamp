@@ -3,7 +3,7 @@
 
 Juego* Juego::pinstance = 0;
 
-Juego::Juego(){ //WIP FUNCION CARGARNIVEL
+Juego::Juego(){
     nivel = 0;
     inicializarNiveles();
     //cargarMusica();
@@ -105,10 +105,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
             switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
-                jugador->obtenerPU_Velocidad();
-                     destruirObjetos(objetos[j]);
-              
-                break;
+                    jugador->obtenerPU_Velocidad();
+                    destruirObjetos(objetos[j]);
+                    break;
                 case 1:
                     jugador->setArma(1);
                      destruirObjetos(objetos[j]);
@@ -229,7 +228,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY-55); //WIP FACHADA y explicar que hace esto detalladamente pls
+          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5); //WIP FACHADA y explicar que hace esto detalladamente pls
           jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
           aux = true;
           posantX = jugador->getBody()->getPosicion()[0];
@@ -301,21 +300,15 @@ void Juego::crearObjetos(){ //WIP FACHADA
   
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
+  cout<< "POSICION DE LOS OBJETOS = " << posicion.size() <<endl;
+  
   numObjetos = posicion.size();
   objetos = new Objeto *[posicion.size()]; 
 
-
   for(unsigned i = 0; i < posicion.size();i++){
-
-  
-    
     Objeto *objeto1 = new Objeto(posicion[i][0],posicion[i][1] ,posicion[i][2] );
     objetos[i] =  objeto1;
   }
-  
-  
-
-  // LLAMAR A OBJETO Y PASAR LOS PARAMETROS
 }
 
 void Juego::destruirObjetos(Objeto* enem){ //está nice

@@ -13,7 +13,7 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=30;
+    jumpHeight=25;
     arma=0;  
     vidas = 5; 
     velocidad=250;
@@ -26,12 +26,14 @@ Player::Player(int x, int y){
     auxSaltos = true;
     cooldownSalto = 0;
     cooldownDisparo = 0;
-    body = new Cuerpo(x,y,100,100,"mago.png",1,RECTANGLE);
+    body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
+    body->setSize(100,100);
+    body->addAnimacion(0.1);
     body->Origen(100/2,100/2);
     facing = true;
     //body->texturizar(text);
-    /*
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/ // ESTO HAY QUE PONERLO
+    
+    //body->setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada // ESTO HAY QUE PONERLO
     
     coliAbajo = new Rectangulo(0,0,0,0);
     coliArriba = new Rectangulo(0,0,0,0);
@@ -74,8 +76,8 @@ void Player::update(float deltaTime , Mundo * mundo){
     float sadX = body->getPosicion()[0];
     float sadY = body->getPosicion()[1];
       
-    body->posicionamiento(0+sadX,sadY+jumpSpeed*deltaTime);
-    
+    body->moverse(0,jumpSpeed*deltaTime);
+    cout<<sadX<<"----"<<sadY<<endl;
 }
 
 
@@ -102,7 +104,6 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
   Cuerpo ** objetos = mundo->getObjetos();
 
   for( int i=0; i< mundo->getNumObjetos() ; i++){
-  
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }
@@ -111,7 +112,7 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
   if(puede){
     body->Scalar(1.0f,1.0f);
     //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
-    body->posicionamiento(velocidad*deltaTime+body->getPosicion()[0],0+body->getPosicion()[1]);
+    body->moverse(velocidad*deltaTime,0);
   
   }
 }
@@ -130,8 +131,8 @@ void Player::moveLeft(float deltaTime , Mundo * mundo){
   if(puede){
     //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     
-    body->Scalar(1.0f,1.0f);
-    body->posicionamiento(-velocidad*deltaTime+body->getPosicion()[0],0+body->getPosicion()[1]);
+    body->Scalar(-1.0f,1.0f);
+    body->moverse(-velocidad*deltaTime,0);
   }
 }
 void Player::saltar(){
@@ -229,4 +230,8 @@ void Player::reset(){
     body->posicionamiento(100,1000);
     body->Origen(100/2,100/2);
 
+}
+
+void Player::setSize(float sizeX, float sizeY) {
+  body->setSize(sizeX, sizeY);
 }

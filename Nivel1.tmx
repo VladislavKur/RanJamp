@@ -3534,7 +3534,7 @@
   </object>
  </objectgroup>
  <objectgroup name="Capa de Player">
-  <object id="21" x="110" y="1225" width="100" height="270">
+  <object id="21" x="110" y="1000" width="100" height="270">
    <ellipse/>
   </object>
  </objectgroup>
