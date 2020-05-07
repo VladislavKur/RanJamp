@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "../Motor/Motor.h"
+#pragma once
 
 using namespace std;
 

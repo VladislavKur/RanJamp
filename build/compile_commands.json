@@ -76,8 +76,28 @@
 },
 {
   "directory": "/home/vermia/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Timer.cpp.o -c /home/vermia/RanJamp/Motor/Timer.cpp",
+  "file": "/home/vermia/RanJamp/Motor/Timer.cpp"
+},
+{
+  "directory": "/home/vermia/RanJamp/build",
   "command": "/usr/bin/g++-5    -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/vermia/RanJamp/Juego/Juego.cpp",
   "file": "/home/vermia/RanJamp/Juego/Juego.cpp"
+},
+{
+  "directory": "/home/vermia/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Manejador.cpp.o -c /home/vermia/RanJamp/Juego/Manejador.cpp",
+  "file": "/home/vermia/RanJamp/Juego/Manejador.cpp"
+},
+{
+  "directory": "/home/vermia/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Estado.cpp.o -c /home/vermia/RanJamp/Juego/Estado.cpp",
+  "file": "/home/vermia/RanJamp/Juego/Estado.cpp"
+},
+{
+  "directory": "/home/vermia/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Menu.cpp.o -c /home/vermia/RanJamp/Juego/Menu.cpp",
+  "file": "/home/vermia/RanJamp/Juego/Menu.cpp"
 },
 {
   "directory": "/home/vermia/RanJamp/build",

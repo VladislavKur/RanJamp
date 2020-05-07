@@ -4,6 +4,8 @@
 #include "Juego/Juego.h"
 #include "Player/Player.h"
 #include "Menu/menu.h"
+#include "Juego/Manejador.h"
+#include "Juego/Menu.h"
 #define kVel 5
 
 int main() {
@@ -15,7 +17,12 @@ int main() {
 
     float elapsus;
     float delta;
-    Juego* instancia = Juego::instance();
+
+    //Crear singletons
+    Juego* juego = Juego::instance();
+    Menu* menu = Menu::instancia();
+    Manejador* instancia = Manejador::instancia();
+    instancia->cambiarEstado(menu);
 
     RectangleShape coliArV;
     RectangleShape coliAbV;
@@ -114,22 +121,23 @@ int main() {
       
   }*/
         case sf::Keyboard::P:
-          instancia->getJugador()->obtenerPU_SaltoDoble();
-          instancia->getJugador()->obtenerPU_Slowhits();
-          instancia->getJugador()->obtenerPU_Velocidad();
+          juego->getJugador()->obtenerPU_SaltoDoble();
+          juego->getJugador()->obtenerPU_Slowhits();
+          juego->getJugador()->obtenerPU_Velocidad();
         break;
         case sf::Keyboard::X:
-          instancia->matarJugador();
+        //if ( tipoEstado == Juego ) ?
+          juego->matarJugador();
         break;
         case sf::Keyboard::G:
-          instancia->getJugador()->toggleGodMode();
+          juego->getJugador()->toggleGodMode();
         break;
         case sf::Keyboard::R:
-          instancia->getJugador()->reset();
+          juego->getJugador()->reset();
         break;
 
         case sf::Keyboard::N:
-          instancia->nextLevel();
+          juego->nextLevel();
         break;
 
           default:

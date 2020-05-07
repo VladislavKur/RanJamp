@@ -49,6 +49,9 @@ public:
     void toggleGodMode();
     void saltar();
 
+
+    bool GolpeMelee();
+
     void reset();
 
     //GET

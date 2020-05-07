@@ -160,6 +160,14 @@ iostream
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
 
+/home/vermia/RanJamp/Juego/Estado.cpp
+Estado.h
+/home/vermia/RanJamp/Juego/Estado.h
+
+/home/vermia/RanJamp/Juego/Estado.h
+SFML/Graphics.hpp
+-
+
 /home/vermia/RanJamp/Juego/Juego.cpp
 Juego.h
 /home/vermia/RanJamp/Juego/Juego.h
@@ -195,6 +203,32 @@ iostream
 /home/vermia/RanJamp/Hud/hud.h
 ../Rectangulo/Rectangulo.h
 /home/vermia/RanJamp/Rectangulo/Rectangulo.h
+Estado.h
+/home/vermia/RanJamp/Juego/Estado.h
+
+/home/vermia/RanJamp/Juego/Manejador.cpp
+Manejador.h
+/home/vermia/RanJamp/Juego/Manejador.h
+
+/home/vermia/RanJamp/Juego/Manejador.h
+SFML/Graphics.hpp
+-
+Estado.h
+/home/vermia/RanJamp/Juego/Estado.h
+
+/home/vermia/RanJamp/Juego/Menu.cpp
+Menu.h
+/home/vermia/RanJamp/Juego/Menu.h
+
+/home/vermia/RanJamp/Juego/Menu.h
+Estado.h
+/home/vermia/RanJamp/Juego/Estado.h
+Manejador.h
+/home/vermia/RanJamp/Juego/Manejador.h
+Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
+../Texto/texto.h
+/home/vermia/RanJamp/Texto/texto.h
 
 /home/vermia/RanJamp/Menu/menu.cpp
 menu.h
@@ -216,6 +250,14 @@ Motor.h
 SFML/Graphics.hpp
 -
 iostream
+-
+
+/home/vermia/RanJamp/Motor/Timer.cpp
+Timer.h
+/home/vermia/RanJamp/Motor/Timer.h
+
+/home/vermia/RanJamp/Motor/Timer.h
+SFML/Graphics.hpp
 -
 
 /home/vermia/RanJamp/Mundo/Mundo.cpp
