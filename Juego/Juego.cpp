@@ -1,4 +1,6 @@
 #include "Juego.h"
+#include "Manejador.h"
+#include "../Menu/menu_inicial.h"
 
 
 Juego* Juego::pinstance = 0;
@@ -53,6 +55,16 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
+  Font fuente;
+  fuente.loadFromFile("resources/fuentes/AnotherRound.otf");
+  menu_inicial * _menu = new menu_inicial(fuente, 3);
+    _menu->cambiarTexto(0, Color::White, "PLAY", 100, 100 );
+    _menu->cambiarTexto(1, Color::White, "CONTROLS", 100, 200 );
+    _menu->cambiarTexto(2, Color::White, "EXIT", 100, 300 );;
+  Manejador * man = Manejador::instancia();
+  if(Keyboard::isKeyPressed(Keyboard::F)){
+    man->cambiarEstado(_menu);
+  }
 
   vector<int> dimensiones = mundo->cargarPosicionBordes();
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO

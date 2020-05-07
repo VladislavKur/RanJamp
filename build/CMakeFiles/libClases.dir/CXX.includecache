@@ -171,6 +171,10 @@ SFML/Graphics.hpp
 /home/vermia/RanJamp/Juego/Juego.cpp
 Juego.h
 /home/vermia/RanJamp/Juego/Juego.h
+Manejador.h
+/home/vermia/RanJamp/Juego/Manejador.h
+../Menu/menu_inicial.h
+/home/vermia/RanJamp/Menu/menu_inicial.h
 
 /home/vermia/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp

@@ -9,6 +9,7 @@ menu_inicial::menu_inicial( Font fuente, int max) : menu(fuente, max){
 
 void menu_inicial::update(float deltaTime){
     cooldown_mov-=deltaTime;
+    texto[selectedItem].setColor(Color::Red);
     Manejador* man = Manejador::instancia();
     Juego* juego = Juego::instance();
 
