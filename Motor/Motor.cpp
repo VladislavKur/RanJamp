@@ -6,6 +6,7 @@ Motor::Motor(){
     ventana = new sf::RenderWindow(sf::VideoMode(1080,720),"Totally not Pengo");
     updateClock.restart();
     
+  
 }
 
 

@@ -16,9 +16,11 @@
 #include "../Rectangulo/Rectangulo.h"
 #include "Manejador.h"
 
+#include "../Menu/menu_pausa.h"
+
 #ifndef JUEGO_H
 #define JUEGO_H
-
+    class menu_pausa;
     class Juego : public Estado{
 
         private:
@@ -60,6 +62,8 @@
             void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
             void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
             void comprobarPasarNivel();
+
+            void pausa();
             
 
             

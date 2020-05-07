@@ -2,11 +2,10 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 //ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
-#include "../Motor/Motor.h"
-#include "../Juego/Juego.h"
-#include "../Juego/Estado.h"
-#include "../Juego/Manejador.h"
 
+
+#include "../Juego/Manejador.h"
+#include "../Motor/Motor.h"
 using namespace  sf;
 using namespace std;
 
@@ -29,13 +28,15 @@ class menu : public Estado{
         void moveDown();
 
         // RECOGER INPUT DE LAS TECLAS
-        virtual void update(float deltaTime){}
+        virtual void update(float deltaTime){};
 
         // DEVULVE LA OPCCION SELECCIONADA 
         int getItemPressed(); 
         
         //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
-        void cambiarTexto(int i, Color c, String s, float posx , float posy); 
+        void cambiarTexto(int i,  String s, float posx , float posy); 
+        
+        
         
     protected: 
     // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO

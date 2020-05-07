@@ -57,7 +57,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-
+  pausa();
   vector<int> dimensiones = mundo->cargarPosicionBordes();
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
       disparar(deltaTime);
@@ -557,4 +557,13 @@ void Juego::inicializarNiveles(){
   niveles[4] = "NivelHielo.tmx";
 
   
+}
+
+void Juego::pausa(){
+  Manejador* man = Manejador::instancia();
+  menu_pausa* menuPau = menu_pausa::instance();
+  if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
+  man->cambiarEstado(menuPau);
+  }
+    
 }

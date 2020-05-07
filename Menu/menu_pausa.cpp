@@ -1,36 +1,39 @@
-#include "menu_inicial.h"
+#include "menu_pausa.h"
 
-menu_inicial* menu_inicial::p_instance = 0;
-sf::Font* menu_inicial::fuente = new Font();
+menu_pausa* menu_pausa::p_instance = 0;
+sf::Font* menu_pausa::fuente = new Font();
 
-menu_inicial* menu_inicial::instance(){
+menu_pausa* menu_pausa::instance(){
      if(p_instance == 0){
         fuente->loadFromFile("resources/fuentes/AnotherRound.otf");
-        p_instance = new menu_inicial(*fuente, 4);
+        p_instance = new menu_pausa(*fuente, 4);
 
     }
 
     return(p_instance);
 }
 
-menu_inicial::menu_inicial( Font fuente, int max) : menu(fuente, max){
- 
+menu_pausa::menu_pausa( Font fuente, int max) : menu(fuente, max){
+    
 }
 
 
 
-void menu_inicial::update(float deltaTime){
+void menu_pausa::update(float deltaTime){
     cooldown_mov-=deltaTime;
     Manejador* man = Manejador::instancia();
     Juego* juego = Juego::instance();
     menu_controles* menucont = menu_controles::instance();
     menu_vol* menuVol = menu_vol::instance();
+    menu_inicial* menuIni = menu_inicial::instance();
 
-    cambiarTexto(0,  "PLAY", juego->view.getCenter().x, juego->view.getCenter().y-250);
-    cambiarTexto(1, "CONTROLS", juego->view.getCenter().x, juego->view.getCenter().y-175);
-    cambiarTexto(2,  "OPTIONS", juego->view.getCenter().x, juego->view.getCenter().y -100);
-    cambiarTexto(3,  "EXIT", juego->view.getCenter().x, juego->view.getCenter().y-25);
 
+    cambiarTexto(0,  "REANUDAR", juego->view.getCenter().x-100, juego->view.getCenter().y-125);
+    cambiarTexto(1,  "CONTROLS", juego->view.getCenter().x-100, juego->view.getCenter().y-50);
+    cambiarTexto(2, "OPTIONS", juego->view.getCenter().x-100, juego->view.getCenter().y+25 );
+    cambiarTexto(3,  "MENU PRINCIPAL", juego->view.getCenter().x-100, juego->view.getCenter().y+100);
+
+    
 
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
         moveUp();
@@ -59,8 +62,7 @@ void menu_inicial::update(float deltaTime){
                  
             break;
             case 3:
-                Motor * motor = Motor::instance();
-                motor->getVentana()->close();
+                man->cambiarEstado(menuIni);
             break;
         }
     }

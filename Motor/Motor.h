@@ -1,9 +1,12 @@
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+
+
 #ifndef MOTOR_H
 #define MOTOR_H
-
+    
     class Motor{
 
         friend class Animacion;
@@ -13,6 +16,7 @@
              bool instanced;
              sf::Clock updateClock;
             static Motor* pinstance;
+         
         
         
         protected:
@@ -42,6 +46,8 @@
             void posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura);
             void setScale(sf::Shape* cuerpo, float escalaX, float escalaY);
             bool compararColision(sf::Shape* cuerpo1, sf::Shape* cuerpo2);
+
+
             
             //bool crearVentana();
             float getReloj();
@@ -56,6 +62,7 @@
             sf::RenderWindow* getVentana(){return ventana;}
         
             sf::View Camara(sf::Vector2f sad);
+            sf::View getCamara();
 
     };
 

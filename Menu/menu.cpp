@@ -14,6 +14,7 @@ menu::menu(Font fuente , int max){
     texto = new Text[max];
     numOpciones = max;
     selectedItem = 0;
+    texto[0].setColor(Color::Red);
 }
 
 menu::~menu(){
@@ -36,7 +37,7 @@ void menu::moveUp(){
 }
 
 void menu::moveDown(){
-    if(selectedItem + 1 < num_items ){
+    if(selectedItem + 1 < numOpciones ){
         texto[selectedItem].setColor(Color::White);
         selectedItem++;
         texto[selectedItem].setColor(Color::Red);
@@ -47,9 +48,11 @@ int menu::getItemPressed(){
     return selectedItem;
 }
 
-void menu::cambiarTexto(int i ,Color c, String s, float posx , float posy){
+void menu::cambiarTexto(int i , String s, float posx , float posy){
   texto[i].setFont(font);
-  texto[i].setColor(c);
+  
   texto[i].setString(s);
   texto[i].setPosition(posx , posy);
 }
+
+
