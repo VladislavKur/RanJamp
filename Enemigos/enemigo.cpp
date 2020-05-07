@@ -9,7 +9,7 @@ Enemigo::Enemigo(float x, float y, int sizeWidth, int sizeHeight,
     coliIzquierda = new Rectangulo(0,0,0,0);
     coliAbajo = new Rectangulo(0,0,0,0);
     coliArriba = new Rectangulo(0,0,0,0);
-
+    muerto=false;
 }
 
 Enemigo::~Enemigo(){
