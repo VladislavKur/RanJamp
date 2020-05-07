@@ -1,6 +1,6 @@
 #include "Cuerpo.h"
 
-Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
+Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala, typeBody tipoCuerpo){
 
     motor = Motor::instance();
@@ -15,7 +15,6 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
         body = new sf::RectangleShape();
     else if(tipoCuerpo == CIRCLE)
         body = new sf::CircleShape();
-
     class_textura = new sf::Texture();
 
     class_escala = escala;
@@ -35,6 +34,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth,
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
 
     motor->setScale(body, escala, escala);
+    animacion=NULL;
 
 }
 
@@ -46,6 +46,8 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
 
     body = new sf::RectangleShape();
 
+    class_textura=NULL;
+
     class_width = sizeWidth;
     class_height = sizeHeight;
     
@@ -53,12 +55,13 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
 
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
 
+    animacion=NULL;
 }
 
 Rectangulo * Cuerpo::getGlobalBounds(){
     
     sf::FloatRect aux = body->getGlobalBounds();
-
+    //MEMORIA SIN LIBERAR!!!!
     Rectangulo * R = new Rectangulo(aux.width,aux.height,aux.left,aux.top);
    return R;
 }
@@ -74,6 +77,19 @@ void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     class_move = true;
 
     motor->posicionar(body, class_previousX, class_previousY);
+}
+
+void Cuerpo::moverse(float x_entrada,float y_entrada){
+    class_previousX = class_positionX;
+    class_previousY = class_positionY;
+
+    class_positionX +=x_entrada;
+    class_positionY +=y_entrada;
+
+    class_move = true;
+
+    motor->mover(body, x_entrada, y_entrada);
+    //cout<<body->getPosition().x<<endl;
 }
 
 vector<int> Cuerpo::texturizar(std::string entrada, int sizeWidth, int sizeHeight){
@@ -128,7 +144,10 @@ std::vector<float> Cuerpo::getBounds(){
 }
 
 std::vector<float> Cuerpo::getPosicion(){
-    return vector<float>(class_positionX, class_positionY);
+    vector<float> pos;
+    pos.push_back(class_positionX);
+    pos.push_back(class_positionY);
+    return pos;
 }
 
 std::vector<float> Cuerpo::getSize(){
@@ -157,7 +176,7 @@ void Cuerpo::update(float deltaTime){
 }
 
 void Cuerpo::render(float porcentaje){
-    if(this != NULL){
+    if(this != NULL && animacion!=NULL){
         animacion->render(porcentaje);
 
         motor->posicionar(body, 
@@ -192,3 +211,6 @@ void Cuerpo::Scalar(float x, float y){
     body->setScale(x,y);
 }
 
+void Cuerpo::setSize(float sizeX, float sizeY){
+   motor->setTamanyoCuerpo(body, sf::Vector2f(sizeX, sizeY)); 
+}

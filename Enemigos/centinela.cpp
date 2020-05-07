@@ -2,7 +2,7 @@
 
 
 Centinela::Centinela( float x, float y, int type) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.5){
 
     shoot = false;
     shootTime = 0.0;

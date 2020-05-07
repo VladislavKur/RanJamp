@@ -112,7 +112,7 @@ void Motor::recorte(sf::Sprite &entrada,  int xi,int yi, int lengthX, int length
 }
 
 void Motor::recorte(sf::RectangleShape &entrada,  int xi,int yi, int lengthX, int lengthY){
-    
+    entrada.setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
 }
 void Motor::recorte(sf::Shape* cuerpo,  int xi,int yi, int lengthX, int lengthY){
     sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
@@ -159,8 +159,8 @@ void Motor::setTextura(sf::Shape* cuerpo, sf::Texture* texture){
 }
 
 
-void Motor::setTextura(sf::Sprite & cuerpo, sf::Texture entrada){
-    cuerpo.setTexture(entrada);
+void Motor::setTextura(sf::Sprite * cuerpo, sf::Texture * entrada){
+    cuerpo->setTexture(*entrada);
 }
 
 
@@ -175,10 +175,20 @@ void Motor::posicionar(sf::Shape* entrada, float x, float y){
 
 }
 
+void Motor::mover(sf::Shape* entrada, float x, float y){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(entrada);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(entrada);
+
+    if(casteadoRect != NULL)
+        casteadoRect->move(x,y);
+    else if(casteadoCirc != NULL)
+        casteadoCirc->move(x,y);
+
+}
 
 
 void Motor::posicionar(sf::RectangleShape& entrada, float x, float y){
-    
+    entrada.setPosition(x,y);
 }
 bool Motor::compararColision(sf::Shape* cuerpo1, sf::Shape* cuerpo2){
     bool dev = false;

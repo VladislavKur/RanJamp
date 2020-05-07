@@ -1,0 +1,127 @@
+[
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/ranJamp.dir/main.cpp.o -c /home/magiic/Escritorio/RanJamp/main.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/main.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Player/Player.cpp.o -c /home/magiic/Escritorio/RanJamp/Player/Player.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Player/Player.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Bullet/bullet.cpp.o -c /home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Bullet/bullet.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Animacion/Animacion.cpp.o -c /home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Animacion/Animacion.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Enemigos/centinela.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Enemigos/nube.cpp.o -c /home/magiic/Escritorio/RanJamp/Enemigos/nube.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Enemigos/nube.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/Mundo.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Mundo/Mundo.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mundo/tinystr.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinystr.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Mundo/tinystr.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Mundo/tinyxml.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlparser.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Mundo/tinyxmlparser.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o -c /home/magiic/Escritorio/RanJamp/Mundo/tinyxmlerror.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Mundo/tinyxmlerror.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Motor.cpp.o -c /home/magiic/Escritorio/RanJamp/Motor/Motor.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Motor/Motor.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/magiic/Escritorio/RanJamp/Juego/Juego.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Juego/Juego.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Objeto/Objeto.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/magiic/Escritorio/RanJamp/Texto/texto.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Texto/texto.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c /home/magiic/Escritorio/RanJamp/Menu/menu.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Menu/menu.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c /home/magiic/Escritorio/RanJamp/Hud/hud.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Hud/hud.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c /home/magiic/Escritorio/RanJamp/Musica/musica.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Musica/musica.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o -c /home/magiic/Escritorio/RanJamp/Bloque/Bloque.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Bloque/Bloque.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Textura/Textura.cpp.o -c /home/magiic/Escritorio/RanJamp/Textura/Textura.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Textura/Textura.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp"
+},
+{
+  "directory": "/home/magiic/Escritorio/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o -c /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.cpp",
+  "file": "/home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.cpp"
+}
+]

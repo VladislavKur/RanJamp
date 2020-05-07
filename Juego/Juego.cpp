@@ -233,7 +233,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
 
         if(aux == false){
-          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY-55); //WIP FACHADA y explicar que hace esto detalladamente pls
+          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5); //WIP FACHADA y explicar que hace esto detalladamente pls
           jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
           aux = true;
           posantX = jugador->getBody()->getPosicion()[0];
