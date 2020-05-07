@@ -45,6 +45,15 @@ void Player::update(float deltaTime , Mundo * mundo){
     
     updateHitbox(); //arreglar lo de update hitbox
 
+    if(body->getPosicion()[0]<0){
+      body->posicionamiento(125, body->getPosicion()[1]);
+      jumpSpeed=0;
+    }
+
+    if(body->getPosicion()[1]<0){
+      body->posicionamiento(body->getPosicion()[0]+30, 1000);
+      jumpSpeed=0;
+    }
 
     cooldownSalto-=deltaTime;
     if(cooldownSalto<=0){
@@ -55,22 +64,24 @@ void Player::update(float deltaTime , Mundo * mundo){
 
 
   //caer
-    
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
-      if(auxSaltos==true && saltos > 0){
-          saltar();
-          cooldownSalto=15*deltaTime;
-        }
+    if(vidas!=0){
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
+        if(auxSaltos==true && saltos > 0){
+            saltar();
+            cooldownSalto=15*deltaTime;
+          }
+      }
+      
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
+          moveRight(deltaTime , mundo);
+          facing = true;
+      }
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
+          moveLeft(deltaTime, mundo);
+          facing = false;
+      }
     }
     
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
-        moveRight(deltaTime , mundo);
-        facing = true;
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
-        moveLeft(deltaTime, mundo);
-        facing = false;
-    }
 
   
     float sadX = body->getPosicion()[0];

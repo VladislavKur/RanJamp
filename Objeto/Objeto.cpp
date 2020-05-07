@@ -10,10 +10,10 @@
     Objeto::Objeto(float x, float y, int t){
             
  
-            tipo = t;
-            hitbox = new Rectangulo(50,50,x,y);
-            body = new Cuerpo(x,y,50,50,"powerup1.png",1,RECTANGLE);
-           
+        tipo = t;
+        hitbox = new Rectangulo(50,50,x,y);
+        body = new Cuerpo(x,y,50,50,"powerup1.png",1,RECTANGLE);
+        body->addAnimacion(0.1);
             
         
     }
@@ -42,13 +42,12 @@
     }
 
     Cuerpo* Objeto::getBody(){
-    return body;
-}
+        return body;
+    }
 
 
 
     void Objeto::render(float porcentaje){
-        
         body->render(porcentaje);
     }
 

@@ -6,6 +6,8 @@ Murcielago::Murcielago(float x, float y)
     velocidad = 100;
     altura = 1;
     distanciaAtaque = 510;
+
+    body->Origen(64/2, 64/2);
     
     haPegado = false;
     
@@ -42,7 +44,7 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
                     float movimientoSuaveX = (local_diffX/local_diffabsX)*velocidad*delta;
                     float movimientoSuaveY = (local_diffY/local_diffabsY)*velocidad*delta;
                     
-                    actualizarPosicion(movimientoSuaveX,movimientoSuaveY); 
+                    body->moverse(movimientoSuaveX,movimientoSuaveY); 
                 }
                 
             break;
@@ -50,7 +52,7 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
 
                 if(direccion == 0)
                     direccion = local_diffX/local_diffabsX;
-                actualizarPosicion(direccion*velocidad*delta,0);     
+                body->moverse(direccion*velocidad*delta,0);     
             break;
 
         }
@@ -64,7 +66,7 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
     ){
         if(!haPegado)
             player->setVidas(player->getVidas()-1);
-        
+        muerto=true;
         haPegado = true;
     }
     
