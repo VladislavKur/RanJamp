@@ -3,7 +3,7 @@
 #include "Motor/Motor.h"
 #include "Juego/Juego.h"
 #include "Player/Player.h"
-#include "Menu/menu.h"
+#include "Menu/menu_inicial.h"
 #include "Juego/Manejador.h"
 #define kVel 5
 
@@ -22,7 +22,7 @@ int main() {
     Juego* juego = Juego::instance();
 
     //menu
-    menu* _menu = new menu(fuente, 3);
+    menu_inicial* _menu = new menu_inicial(fuente, 3);
     _menu->cambiarTexto(0, Color::White, "PLAY", 100, 100 );
     _menu->cambiarTexto(1, Color::White, "CONTROLS", 100, 200 );
     _menu->cambiarTexto(2, Color::White, "EXIT", 100, 300 );

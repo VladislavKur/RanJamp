@@ -2,9 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 //ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
-#include "../Motor/Motor.h"
+
 #include "../Juego/Juego.h"
-#include "../Juego/Estado.h"
 #include "../Juego/Manejador.h"
 
 using namespace  sf;
@@ -29,7 +28,7 @@ class menu : public Estado{
         void moveDown();
 
         // RECOGER INPUT DE LAS TECLAS
-        virtual void update(float deltaTime);
+        virtual void update(float deltaTime){};
 
         // DEVULVE LA OPCCION SELECCIONADA 
         int getItemPressed(); 
