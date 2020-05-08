@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fv/Desktop/RanJamp
+CMAKE_SOURCE_DIR = /home/antonio/Documents/movidas/RanJamp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fv/Desktop/RanJamp/build
+CMAKE_BINARY_DIR = /home/antonio/Documents/movidas/RanJamp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fv/Desktop/RanJamp/build/CMakeFiles /home/fv/Desktop/RanJamp/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fv/Desktop/RanJamp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonio/Documents/movidas/RanJamp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named libClases
-
-# Build rule for target.
-libClases: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libClases
-.PHONY : libClases
-
-# fast build rule for target.
-libClases/fast:
-	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/build
-.PHONY : libClases/fast
-
-#=============================================================================
 # Target rules for targets named ranJamp
 
 # Build rule for target.
@@ -137,30 +124,17 @@ ranJamp/fast:
 .PHONY : ranJamp/fast
 
 #=============================================================================
-# Target rules for targets named nube
+# Target rules for targets named libClases
 
 # Build rule for target.
-nube: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nube
-.PHONY : nube
+libClases: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libClases
+.PHONY : libClases
 
 # fast build rule for target.
-nube/fast:
-	$(MAKE) -f CMakeFiles/nube.dir/build.make CMakeFiles/nube.dir/build
-.PHONY : nube/fast
-
-#=============================================================================
-# Target rules for targets named pajarraco
-
-# Build rule for target.
-pajarraco: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pajarraco
-.PHONY : pajarraco
-
-# fast build rule for target.
-pajarraco/fast:
-	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/build
-.PHONY : pajarraco/fast
+libClases/fast:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/build
+.PHONY : libClases/fast
 
 Animacion/Animacion.o: Animacion/Animacion.cpp.o
 
@@ -188,6 +162,33 @@ Animacion/Animacion.s: Animacion/Animacion.cpp.s
 Animacion/Animacion.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Animacion/Animacion.cpp.s
 .PHONY : Animacion/Animacion.cpp.s
+
+Bloque/Bloque.o: Bloque/Bloque.cpp.o
+
+.PHONY : Bloque/Bloque.o
+
+# target to build an object file
+Bloque/Bloque.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
+.PHONY : Bloque/Bloque.cpp.o
+
+Bloque/Bloque.i: Bloque/Bloque.cpp.i
+
+.PHONY : Bloque/Bloque.i
+
+# target to preprocess a source file
+Bloque/Bloque.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i
+.PHONY : Bloque/Bloque.cpp.i
+
+Bloque/Bloque.s: Bloque/Bloque.cpp.s
+
+.PHONY : Bloque/Bloque.s
+
+# target to generate assembly for a file
+Bloque/Bloque.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Bloque/Bloque.cpp.s
+.PHONY : Bloque/Bloque.cpp.s
 
 Bullet/bullet.o: Bullet/bullet.cpp.o
 
@@ -702,6 +703,33 @@ Player/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Player/Player.cpp.s
 .PHONY : Player/Player.cpp.s
 
+Rectangulo/Rectangulo.o: Rectangulo/Rectangulo.cpp.o
+
+.PHONY : Rectangulo/Rectangulo.o
+
+# target to build an object file
+Rectangulo/Rectangulo.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
+.PHONY : Rectangulo/Rectangulo.cpp.o
+
+Rectangulo/Rectangulo.i: Rectangulo/Rectangulo.cpp.i
+
+.PHONY : Rectangulo/Rectangulo.i
+
+# target to preprocess a source file
+Rectangulo/Rectangulo.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i
+.PHONY : Rectangulo/Rectangulo.cpp.i
+
+Rectangulo/Rectangulo.s: Rectangulo/Rectangulo.cpp.s
+
+.PHONY : Rectangulo/Rectangulo.s
+
+# target to generate assembly for a file
+Rectangulo/Rectangulo.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.s
+.PHONY : Rectangulo/Rectangulo.cpp.s
+
 Texto/texto.o: Texto/texto.cpp.o
 
 .PHONY : Texto/texto.o
@@ -729,32 +757,32 @@ Texto/texto.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Texto/texto.cpp.s
 .PHONY : Texto/texto.cpp.s
 
-enemNube.o: enemNube.cpp.o
+Textura/Textura.o: Textura/Textura.cpp.o
 
-.PHONY : enemNube.o
+.PHONY : Textura/Textura.o
 
 # target to build an object file
-enemNube.cpp.o:
-	$(MAKE) -f CMakeFiles/nube.dir/build.make CMakeFiles/nube.dir/enemNube.cpp.o
-.PHONY : enemNube.cpp.o
+Textura/Textura.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.o
+.PHONY : Textura/Textura.cpp.o
 
-enemNube.i: enemNube.cpp.i
+Textura/Textura.i: Textura/Textura.cpp.i
 
-.PHONY : enemNube.i
+.PHONY : Textura/Textura.i
 
 # target to preprocess a source file
-enemNube.cpp.i:
-	$(MAKE) -f CMakeFiles/nube.dir/build.make CMakeFiles/nube.dir/enemNube.cpp.i
-.PHONY : enemNube.cpp.i
+Textura/Textura.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.i
+.PHONY : Textura/Textura.cpp.i
 
-enemNube.s: enemNube.cpp.s
+Textura/Textura.s: Textura/Textura.cpp.s
 
-.PHONY : enemNube.s
+.PHONY : Textura/Textura.s
 
 # target to generate assembly for a file
-enemNube.cpp.s:
-	$(MAKE) -f CMakeFiles/nube.dir/build.make CMakeFiles/nube.dir/enemNube.cpp.s
-.PHONY : enemNube.cpp.s
+Textura/Textura.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.s
+.PHONY : Textura/Textura.cpp.s
 
 main.o: main.cpp.o
 
@@ -783,33 +811,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/ranJamp.dir/build.make CMakeFiles/ranJamp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-pajarraco.o: pajarraco.cpp.o
-
-.PHONY : pajarraco.o
-
-# target to build an object file
-pajarraco.cpp.o:
-	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/pajarraco.cpp.o
-.PHONY : pajarraco.cpp.o
-
-pajarraco.i: pajarraco.cpp.i
-
-.PHONY : pajarraco.i
-
-# target to preprocess a source file
-pajarraco.cpp.i:
-	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/pajarraco.cpp.i
-.PHONY : pajarraco.cpp.i
-
-pajarraco.s: pajarraco.cpp.s
-
-.PHONY : pajarraco.s
-
-# target to generate assembly for a file
-pajarraco.cpp.s:
-	$(MAKE) -f CMakeFiles/pajarraco.dir/build.make CMakeFiles/pajarraco.dir/pajarraco.cpp.s
-.PHONY : pajarraco.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -817,14 +818,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... libClases"
 	@echo "... rebuild_cache"
 	@echo "... ranJamp"
-	@echo "... nube"
-	@echo "... pajarraco"
+	@echo "... libClases"
 	@echo "... Animacion/Animacion.o"
 	@echo "... Animacion/Animacion.i"
 	@echo "... Animacion/Animacion.s"
+	@echo "... Bloque/Bloque.o"
+	@echo "... Bloque/Bloque.i"
+	@echo "... Bloque/Bloque.s"
 	@echo "... Bullet/bullet.o"
 	@echo "... Bullet/bullet.i"
 	@echo "... Bullet/bullet.s"
@@ -882,18 +884,18 @@ help:
 	@echo "... Player/Player.o"
 	@echo "... Player/Player.i"
 	@echo "... Player/Player.s"
+	@echo "... Rectangulo/Rectangulo.o"
+	@echo "... Rectangulo/Rectangulo.i"
+	@echo "... Rectangulo/Rectangulo.s"
 	@echo "... Texto/texto.o"
 	@echo "... Texto/texto.i"
 	@echo "... Texto/texto.s"
-	@echo "... enemNube.o"
-	@echo "... enemNube.i"
-	@echo "... enemNube.s"
+	@echo "... Textura/Textura.o"
+	@echo "... Textura/Textura.i"
+	@echo "... Textura/Textura.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... pajarraco.o"
-	@echo "... pajarraco.i"
-	@echo "... pajarraco.s"
 .PHONY : help
 
 

@@ -4,13 +4,16 @@
 Player::~Player(){
 
 }
-Player::Player()
-{//WIP fachada
-    sf::Texture *text = new sf::Texture; //wip fachada
+Player::Player(int x, int y){ 
 
+
+  /*Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
+            std::string fichero, float escala, typeBody tipoCuerpo){*/
+
+    hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=30;
+    jumpHeight=25;
     arma=0;  
     vidas = 5; 
     velocidad=250;
@@ -23,48 +26,34 @@ Player::Player()
     auxSaltos = true;
     cooldownSalto = 0;
     cooldownDisparo = 0;
-
-    body.setSize(sf::Vector2f(100.0f,100.0f)); //wip fachada
-    body.setPosition(100, 950); //wip fachada
-
-    body.setOrigin(75/2 ,75/2); //wip fachada
-
-    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
+    body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
+    body->setSize(100,100);
+    body->addAnimacion(0.1);
+    body->Origen(100/2,100/2);
+    facing = true;
+    //body->texturizar(text);
     
-    body.setTexture(text); //wip fachada
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada
-
-    /*PU_saltoDoble = true;
-    PU_velocidad = true;
-    arma=1;  */
+    //body->setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada // ESTO HAY QUE PONERLO
     
-} 
-
-Player::Player(int x, int y) 
-            { //lo mismo que lo del constructor de arriba, wip fachada y TERMINAR
-    
-    //body.setSize(sf::Vector2f(100.0f,100.0f));
-    //body.setTexture(tex);
-    
-    //body.setOrigin(75 / 2, 75 / 2);  // 75 es el tamaño del sprite, cambiar
-    //body.setPosition(x, y);//Quitar esto mas adelante
-
-    //body.setTextureRect(sf::IntRect(0 * 75, 2 * 75, 75, 75));
-    saltos = 1;
-    jumpSpeed=0.0;
-    jumpHeight=75*2;
-    arma=0;  
-    vidas = 5;  
-    velocidad=1;
-    godMode=false;
-
-    
+    coliAbajo = new Rectangulo(0,0,0,0);
+    coliArriba = new Rectangulo(0,0,0,0);
+    coliDerecha = new Rectangulo(0,0,0,0);
+    coliIzquierda = new Rectangulo(0,0,0,0);
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
     
     updateHitbox(); //arreglar lo de update hitbox
 
+    if(body->getPosicion()[0]<0){
+      body->posicionamiento(125, body->getPosicion()[1]);
+      jumpSpeed=0;
+    }
+
+    if(body->getPosicion()[1]<0){
+      body->posicionamiento(body->getPosicion()[0]+30, 1000);
+      jumpSpeed=0;
+    }
 
     cooldownSalto-=deltaTime;
     if(cooldownSalto<=0){
@@ -75,25 +64,31 @@ void Player::update(float deltaTime , Mundo * mundo){
 
 
   //caer
-
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
-      if(auxSaltos==true && saltos > 0){
-          saltar();
-          cooldownSalto=15*deltaTime;
-        }
+    if(vidas!=0){
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
+        if(auxSaltos==true && saltos > 0){
+            saltar();
+            cooldownSalto=15*deltaTime;
+          }
+      }
+      
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
+          moveRight(deltaTime , mundo);
+          facing = true;
+      }
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
+          moveLeft(deltaTime, mundo);
+          facing = false;
+      }
     }
     
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
-        moveRight(deltaTime , mundo);
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
-        moveLeft(deltaTime, mundo);
-    }
 
   
-    
-    //Caída constante
-    body.move(0,jumpSpeed*deltaTime); //wip fachada
+    float sadX = body->getPosicion()[0];
+    float sadY = body->getPosicion()[1];
+      
+    body->moverse(0,jumpSpeed*deltaTime);
+    cout<<sadX<<"/////"<<sadY<<endl;
 }
 
 
@@ -111,43 +106,45 @@ bool Player::setVidas(int v){
   return devolver;
 }
 
-void Player::render(){
-  Motor * motor = Motor::instance();
-  motor->dibujo(body);
+void Player::render(float porcentaje){
+  body->render(porcentaje);
 }
+
 void Player::moveRight(float deltaTime , Mundo * mundo){
   bool puede = true;
-  RectangleShape ** objetos = mundo->getObjetos();
+  Cuerpo ** objetos = mundo->getObjetos();
 
   for( int i=0; i< mundo->getNumObjetos() ; i++){
   
-    if(objetos[i]->getGlobalBounds().intersects( coliDerecha )){
+    if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }
   }
 
   if(puede){
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
-    body.setScale(1, 1);
-    body.move(velocidad*deltaTime, 0);
+    body->Scalar(1.0f,1.0f);
+    //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
+    body->moverse(velocidad*deltaTime,0);
+  
   }
 }
 
 void Player::moveLeft(float deltaTime , Mundo * mundo){
   bool puede=true;
-  RectangleShape ** objetos = mundo->getObjetos();
+  Cuerpo ** objetos = mundo->getObjetos();
 
-  for(unsigned int i=0; i< mundo->getNumObjetos() ; i++){
+  for(unsigned int i=0; i< (unsigned)mundo->getNumObjetos() ; i++){
   
-    if(objetos[i]->getGlobalBounds().intersects( coliIzquierda )){
+    if(objetos[i]->getGlobalBounds()->getIntersect(*coliIzquierda)){
         puede=false;
     }
   }
 
   if(puede){
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
-    body.setScale(-1, 1);
-    body.move(-velocidad*deltaTime, 0);
+    //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
+    
+    body->Scalar(-1.0f,1.0f);
+    body->moverse(-velocidad*deltaTime,0);
   }
 }
 void Player::saltar(){
@@ -174,36 +171,32 @@ void Player::setSaltos(int p_saltos){
 void Player::setVelocidad(float vel){
   velocidad = vel;
 }
-void Player::setPosicion(float x, float y){
-  sf::Vector2f pos;
-  pos.x = x;
-  pos.y = y;
-  body.setPosition(pos); 
-}
+
 
 void Player::updateHitbox(){
-    Vector2f gp = body.getPosition();
-    FloatRect gbb = body.getGlobalBounds();
+   float gpx = body->getPosicion()[0];
+   float gpy = body->getPosicion()[1];
+   std::vector<float> gbb = body->getBounds();
 
-    coliAbajo.left = gp.x - gbb.width/2 + 25;
-    coliAbajo.top = gp.y + gbb.height/2;
-    coliAbajo.width = gbb.width/2;
-    coliAbajo.height = 6;
+    coliAbajo->setLeft(gpx - gbb[2]/2 + 25);
+    coliAbajo->setTop(gpy + gbb[3]/2);
+    coliAbajo->setWidth(gbb[2]/2);
+    coliAbajo->setHeight(6);
     
-    coliIzquierda.left = gp.x - gbb.width/2+12; //rojo
-    coliIzquierda.top = gp.y - gbb.height/2 + 25 ;
-    coliIzquierda.width = gbb.width/2-10;
-    coliIzquierda.height = gbb.height -25;
+    coliIzquierda->setLeft( gpx -  gbb[2]/2+12); //rojo
+    coliIzquierda->setTop( gpy -  gbb[3]/2 + 25) ;
+    coliIzquierda->setWidth( gbb[2]/2-10);
+    coliIzquierda->setHeight(gbb[3] -25);
 
-    coliDerecha.left = gp.x+5;
-    coliDerecha.top = gp.y - gbb.height/2 +25;
-    coliDerecha.width = gbb.width/2 -20;
-    coliDerecha.height = gbb.height -25;
+    coliDerecha->setLeft(gpx+5);
+    coliDerecha->setTop(gpy -  gbb[3]/2 +25);
+    coliDerecha->setWidth(gbb[2]/2 -20);
+    coliDerecha->setHeight(gbb[3] -25);
 
-    coliArriba.left = gp.x - gbb.width/2 + 20;
-    coliArriba.top = gp.y-gbb.height/2 +25;
-    coliArriba.width = gbb.width - 40;
-    coliArriba.height = 5;
+    coliArriba->setLeft(gpx -  gbb[2]/2 + 20);
+    coliArriba->setTop( gpy-  gbb[3]/2 +25);
+    coliArriba->setWidth(gbb[2]- 40);
+    coliArriba->setHeight(5);
 }
 void Player::obtenerPU_SaltoDoble(){
   PU_saltoDoble=true;
@@ -217,14 +210,7 @@ void Player::obtenerPU_Slowhits(){
 }
 
 
-// void Player::perderVida(){
-//   if(!godMode){
-//     vidas--;
-//     if(vidas<=0){
-//       morir();
-//     }
-//   }
-// }
+
 
 void Player::toggleGodMode(){
   if(godMode){
@@ -236,8 +222,7 @@ void Player::toggleGodMode(){
 }
 
 void Player::reset(){
-  sf::Texture *text = new sf::Texture; //wip fachada
-
+  
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=30;
@@ -254,13 +239,11 @@ void Player::reset(){
     cooldownSalto = 0;
     cooldownDisparo = 0;
 
-    body.setSize(sf::Vector2f(100.0f,100.0f)); //wip fachada
-    body.setPosition(100, 1000); //wip fachada
+    body->posicionamiento(100,1000);
+    body->Origen(100/2,100/2);
 
-    body.setOrigin(75/2 ,75/2); //wip fachada
+}
 
-    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
-    
-    body.setTexture(text); //wip fachada
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada
+void Player::setSize(float sizeX, float sizeY) {
+  body->setSize(sizeX, sizeY);
 }

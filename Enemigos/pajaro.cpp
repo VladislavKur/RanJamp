@@ -42,7 +42,7 @@ void Pajaro::updateHitbox(){
 
 }
 
-void Pajaro::update(Player* entrada, float delta){
+void Pajaro::update(Player* player, float delta){
 ///las colisiones
     float posX = body->getPosicion()[0];
     float posY = body->getPosicion()[1];
@@ -63,13 +63,13 @@ void Pajaro::update(Player* entrada, float delta){
 
     }
 
-    if(entrada != NULL){
-        if(coliDerecha.intersects(entrada->getBody().getGlobalBounds())
-            || coliIzquierda.intersects(entrada->getBody().getGlobalBounds())
-            || coliAbajo.intersects(entrada->coliArriba)
-            || coliArriba.intersects(entrada->coliAbajo)){
+    if(player != NULL){
+        if(coliDerecha->getIntersect(*player->getBody()->getGlobalBounds())
+        || coliIzquierda->getIntersect(*player->getBody()->getGlobalBounds())
+        || coliAbajo->getIntersect(*player->getColiArriba())
+        || coliArriba->getIntersect(*player->getColiAbajo())){
             if(!haPegado)
-                entrada->setVidas(entrada->getVidas()-1);
+                player->setVidas(player->getVidas()-1);
             haPegado = true;
         }
     }

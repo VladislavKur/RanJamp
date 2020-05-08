@@ -3,11 +3,11 @@
 #include <iostream>
 
 
-Animacion::~Animacion(){}
+Animacion::~Animacion(){
+    body=NULL;
+}
 
-Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation,
-            int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY
-            ){
+Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation, int spriteSizeX, int spriteSizeY, int textureSizeX, int textureSizeY){
 
     motor = Motor::instance();
     
@@ -21,6 +21,9 @@ Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation,
     numeroSpriteX = 0;
     numeroSpriteY = 0;
 
+    posicionesX = textureSizeX/spriteSizeX;
+    posicionesY = textureSizeY/spriteSizeY;
+
     tiempoActual = tiempoDuracionMax;
     tiempoAnterior = tiempoDuracionMax;
     tiempoDiff = 0;
@@ -33,7 +36,6 @@ void Animacion::update(float deltaTime){
     tiempoAnterior = tiempoActual;
     tiempoActual -= deltaTime;
     tiempoDiff = abs(tiempoActual - tiempoAnterior);
-
     if(tiempoActual < 0.0){
         tiempoActual += tiempoDuracionMax;
         cambiado = true;
@@ -57,13 +59,14 @@ void Animacion::nextSprite(){
         numeroSpriteX = 0;
 
     motor->recorte(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+
 }
 
 void Animacion::render(float porcentaje){
     if(cambiado){
         int aux = tiempoAnterior - tiempoDiff*porcentaje;
 
-        if(aux <= 0){
+        if(aux <= 0.0){
             cambiado = false;
             nextSprite();
         }

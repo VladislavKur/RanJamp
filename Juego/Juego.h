@@ -13,6 +13,7 @@
 #include "../Texto/texto.h"
 #include "../Musica/musica.h"
 #include "../Hud/hud.h"
+#include "../Rectangulo/Rectangulo.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
@@ -33,6 +34,7 @@
             int numObjetos;
             Mundo * mundo;
             int nivel;
+            string * niveles;
         protected:
             Juego();
 
@@ -60,6 +62,7 @@
             sf::View view;
 
             void nextLevel();
+            void inicializarNiveles();
     };
 
 #endif

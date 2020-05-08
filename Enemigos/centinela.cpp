@@ -2,10 +2,13 @@
 
 
 Centinela::Centinela( float x, float y, int type) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 1.5){
+    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.5){
 
     shoot = false;
     shootTime = 0.0;
+
+    body->setSize(150,320);
+    body->Origen(150/2, 320/2);
 
     tipo = type;
     modo  = 0;
@@ -18,12 +21,12 @@ Centinela::Centinela( float x, float y, int type)
 
 void Centinela::update(Player* player, float deltaTime){
 
-    sf::RectangleShape bodyJ = player->getBody();
-
-    float posJugador = bodyJ.getPosition().x;
+    float posJugador = player->getBody()->getPosicion()[0];
 
     float local_diffX = posJugador - body->getPosicion()[0];
     float local_diffabs = abs(local_diffX);
+
+    bool previous_direccion = direccion;
 
     bool cambio; //no nos cambiamos de modo por defecto
      do{
@@ -100,6 +103,11 @@ void Centinela::update(Player* player, float deltaTime){
         }
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
 
+    if(previous_direccion != direccion)
+        body->Scalar(-0.5,0.5);
+
+    body->update(deltaTime);
+
 };
 
 Bullet* Centinela::disparar(){
@@ -111,7 +119,7 @@ Bullet* Centinela::disparar(){
 
         vector<float> pos = body->getPosicion();
 
-        devolver = new Bullet(pos[0], pos[1], direccion, 2);
+        devolver = new Bullet(pos[0], pos[1], direccion, 2, 1);
     }
 
     return(devolver);

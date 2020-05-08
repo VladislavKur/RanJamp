@@ -3507,7 +3507,7 @@
    <tile gid="3500"/>
   </data>
  </layer>
- <objectgroup name="Capa de Colisiones" visible="0">
+ <objectgroup name="Capa de Colisiones">
   <object id="1" x="0" y="1505" width="2230" height="85"/>
   <object id="3" x="5" y="-5" width="2230" height="25"/>
   <object id="4" x="2220" y="-5" width="20" height="1590"/>
@@ -3519,7 +3519,7 @@
   <object id="25" x="2050" y="1024" width="195" height="60"/>
   <object id="27" x="1059" y="1220" width="190" height="56"/>
  </objectgroup>
- <objectgroup name="Capa de Enemigos" visible="0">
+ <objectgroup name="Capa de Enemigos">
   <object id="13" type="1" x="1425" y="880" width="65" height="80">
    <ellipse/>
   </object>
@@ -3533,8 +3533,8 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Player" visible="0">
-  <object id="21" x="110" y="1225" width="100" height="270">
+ <objectgroup name="Capa de Player">
+  <object id="21" x="110" y="1000" width="100" height="270">
    <ellipse/>
   </object>
  </objectgroup>
