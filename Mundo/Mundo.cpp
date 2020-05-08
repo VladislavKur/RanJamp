@@ -114,22 +114,27 @@ void Mundo::crearSprites(){
   for(int l=0; l<_numLayers; l++){
     cout << "layers sprites: " << l << endl;
     for(int y=0; y<_height; y++){
+     
       for(int x=0; x<_width; x++){
           cout<<"X: " << x << "Y: " << y<<endl;
       int imagen = 0;
       bool pintada = false;
         for(int k = 0; k< _numTilesets && !pintada; k++){
           int gid = _tilemap[l][y][x];
+          
           if(imagen != 0){
+             
             gid = gid - cambio[k-1];
           }
           if(gid <=  cambio[k]){
+           
             if(gid > cambio[k]){
               cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
             }else if(gid > 0){
               _tilemapSprite[l][y][x] = new Bloque(_tilesetTexture[k]);
+              
               int Tcolumnas = _imgwidth[k] / _tileWidth; 
               int fila = (gid / Tcolumnas);
               int columna = (gid % Tcolumnas);
@@ -145,6 +150,7 @@ void Mundo::crearSprites(){
               _tilemapSprite[l][y][x]->setTextureRect(columna*32, fila*32, 32, 32);
               _tilemapSprite[l][y][x]->setPosition(x*_tileWidth, y*_tileHeight);
               pintada = true;
+               
             }else{
               _tilemapSprite[l][y][x] = NULL;
             }

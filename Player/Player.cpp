@@ -88,7 +88,7 @@ void Player::update(float deltaTime , Mundo * mundo){
     float sadY = body->getPosicion()[1];
       
     body->moverse(0,jumpSpeed*deltaTime);
-    cout<<sadX<<"/////"<<sadY<<endl;
+    //cout<<sadX<<"----"<<sadY<<endl;
 }
 
 

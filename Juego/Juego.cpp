@@ -1,5 +1,5 @@
 #include "Juego.h"
-
+#include "../Menu/menu_pausa.h"
 
 Juego* Juego::pinstance = 0;
 
@@ -8,9 +8,13 @@ Juego::Juego(){
     inicializarNiveles();
     //cargarMusica();
     mundo = new Mundo();  
+   // std:: cout << "111111111111111111111111111111111111" << std::endl;
     mundo->cargarmapa(niveles[nivel].c_str());
+    //std:: cout << "1222222222222222222222222222222222222" << std::endl;
     mundo->crearSprites();
+    //std:: cout << "133333333333333333333333333333333" << std::endl;
     mundo->cargarObjectGroups();
+    //std:: cout << "144444444444444444444444444444444444444" << std::endl;
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);
     mundo->crearObstaculos();
@@ -54,7 +58,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-
+  pausa();
   vector<int> dimensiones = mundo->cargarPosicionBordes();
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
       disparar(deltaTime);
@@ -583,4 +587,13 @@ void Juego::inicializarNiveles(){
   niveles[4] = "NivelHielo.tmx";
 
   
+}
+
+void Juego::pausa(){
+  Manejador* man = Manejador::instancia();
+  menu_pausa* menuPau = menu_pausa::instance();
+  if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
+  man->cambiarEstado(menuPau);
+  }
+    
 }

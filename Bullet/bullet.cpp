@@ -42,7 +42,7 @@ void Bullet::update(float deltaTime){
       body->moverse((facing ? 1 : -1)  * velocidad * deltaTime,0);
     //cout<<body->getPosicion()[0]<<"//////"<<body->getPosicion()[1]<<endl;
     updateHitbox();
-    cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
+    //cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
     
 }
     

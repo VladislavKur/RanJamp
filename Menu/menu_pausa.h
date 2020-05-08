@@ -6,20 +6,20 @@
 #include "menu.h"
 #include "menu_controles.h"
 #include "menu_vol.h"
-
-class menu_inicial : public menu {
+#include "menu_inicial.h"
+class menu_pausa : public menu {
     public:
 
-        static menu_inicial* instance();
+        static menu_pausa* instance();
        
         
         void update(float deltaTime);
         
 
     protected:
-        menu_inicial(sf::Font fuente, int max);
+        menu_pausa(sf::Font fuente, int max);
     private: 
         static sf::Font* fuente;
-        static menu_inicial* p_instance;
+        static menu_pausa* p_instance;
         
 };

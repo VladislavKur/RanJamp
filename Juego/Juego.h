@@ -14,11 +14,11 @@
 #include "../Musica/musica.h"
 #include "../Hud/hud.h"
 #include "../Rectangulo/Rectangulo.h"
-#include "Estado.h"
+#include "Manejador.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
-
+   
     class Juego : public Estado{
 
         private:
@@ -64,6 +64,8 @@
             void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
             void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
             void comprobarPasarNivel();
+
+            void pausa();
             
 
             

@@ -2,10 +2,12 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 //ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
-#include "../Motor/Motor.h"
-#include "../Juego/Juego.h"
-#include "../Juego/Estado.h"
+
+
 #include "../Juego/Manejador.h"
+#include "../Motor/Motor.h"
+#include "../Textura/Textura.h"
+#include "../Bloque/Bloque.h"
 
 using namespace  sf;
 using namespace std;
@@ -35,7 +37,9 @@ class menu : public Estado{
         int getItemPressed(); 
         
         //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
-        void cambiarTexto(int i, Color c, String s, float posx , float posy); 
+        void cambiarTexto(int i,  String s, float posx , float posy); 
+        
+        
         
     protected: 
     // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO
@@ -45,4 +49,6 @@ class menu : public Estado{
         Font font; 
         Text *texto;
         float cooldown_mov;
+        Textura *t; 
+        Bloque * b;
 };

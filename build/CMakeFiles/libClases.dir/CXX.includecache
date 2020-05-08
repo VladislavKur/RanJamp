@@ -171,6 +171,8 @@ SFML/Graphics.hpp
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
 Juego.h
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+../Menu/menu_pausa.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
 
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 SFML/Graphics.hpp
@@ -203,8 +205,8 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Hud/hud.h
 ../Rectangulo/Rectangulo.h
 /home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
-Estado.h
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.h
+Manejador.h
+/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
 
 /home/andres/Escritorio/FV JUNTO/Juego/Manejador.cpp
 Manejador.h
@@ -219,24 +221,42 @@ Estado.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu.cpp
 menu.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Menu/menu.h
 SFML/Graphics.hpp
 -
 iostream
 -
-../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
-../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
-../Juego/Estado.h
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.h
 ../Juego/Manejador.h
 /home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+../Textura/Textura.h
+/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+../Bloque/Bloque.h
+/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.cpp
+menu_controles.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.cpp
 menu_inicial.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
 SFML/Graphics.hpp
@@ -245,6 +265,44 @@ iostream
 -
 menu.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu.h
+menu_controles.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+menu_vol.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.cpp
+menu_pausa.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+menu_controles.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+menu_vol.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+menu_inicial.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.cpp
+menu_vol.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
 Motor.h

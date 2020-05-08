@@ -514,6 +514,33 @@ Menu/menu.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.s
 .PHONY : Menu/menu.cpp.s
 
+Menu/menu_controles.o: Menu/menu_controles.cpp.o
+
+.PHONY : Menu/menu_controles.o
+
+# target to build an object file
+Menu/menu_controles.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+.PHONY : Menu/menu_controles.cpp.o
+
+Menu/menu_controles.i: Menu/menu_controles.cpp.i
+
+.PHONY : Menu/menu_controles.i
+
+# target to preprocess a source file
+Menu/menu_controles.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i
+.PHONY : Menu/menu_controles.cpp.i
+
+Menu/menu_controles.s: Menu/menu_controles.cpp.s
+
+.PHONY : Menu/menu_controles.s
+
+# target to generate assembly for a file
+Menu/menu_controles.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s
+.PHONY : Menu/menu_controles.cpp.s
+
 Menu/menu_inicial.o: Menu/menu_inicial.cpp.o
 
 .PHONY : Menu/menu_inicial.o
@@ -540,6 +567,60 @@ Menu/menu_inicial.s: Menu/menu_inicial.cpp.s
 Menu/menu_inicial.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
 .PHONY : Menu/menu_inicial.cpp.s
+
+Menu/menu_pausa.o: Menu/menu_pausa.cpp.o
+
+.PHONY : Menu/menu_pausa.o
+
+# target to build an object file
+Menu/menu_pausa.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
+.PHONY : Menu/menu_pausa.cpp.o
+
+Menu/menu_pausa.i: Menu/menu_pausa.cpp.i
+
+.PHONY : Menu/menu_pausa.i
+
+# target to preprocess a source file
+Menu/menu_pausa.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i
+.PHONY : Menu/menu_pausa.cpp.i
+
+Menu/menu_pausa.s: Menu/menu_pausa.cpp.s
+
+.PHONY : Menu/menu_pausa.s
+
+# target to generate assembly for a file
+Menu/menu_pausa.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s
+.PHONY : Menu/menu_pausa.cpp.s
+
+Menu/menu_vol.o: Menu/menu_vol.cpp.o
+
+.PHONY : Menu/menu_vol.o
+
+# target to build an object file
+Menu/menu_vol.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+.PHONY : Menu/menu_vol.cpp.o
+
+Menu/menu_vol.i: Menu/menu_vol.cpp.i
+
+.PHONY : Menu/menu_vol.i
+
+# target to preprocess a source file
+Menu/menu_vol.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i
+.PHONY : Menu/menu_vol.cpp.i
+
+Menu/menu_vol.s: Menu/menu_vol.cpp.s
+
+.PHONY : Menu/menu_vol.s
+
+# target to generate assembly for a file
+Menu/menu_vol.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s
+.PHONY : Menu/menu_vol.cpp.s
 
 Motor/Motor.o: Motor/Motor.cpp.o
 
@@ -971,9 +1052,18 @@ help:
 	@echo "... Menu/menu.o"
 	@echo "... Menu/menu.i"
 	@echo "... Menu/menu.s"
+	@echo "... Menu/menu_controles.o"
+	@echo "... Menu/menu_controles.i"
+	@echo "... Menu/menu_controles.s"
 	@echo "... Menu/menu_inicial.o"
 	@echo "... Menu/menu_inicial.i"
 	@echo "... Menu/menu_inicial.s"
+	@echo "... Menu/menu_pausa.o"
+	@echo "... Menu/menu_pausa.i"
+	@echo "... Menu/menu_pausa.s"
+	@echo "... Menu/menu_vol.o"
+	@echo "... Menu/menu_vol.i"
+	@echo "... Menu/menu_vol.s"
 	@echo "... Motor/Motor.o"
 	@echo "... Motor/Motor.i"
 	@echo "... Motor/Motor.s"
