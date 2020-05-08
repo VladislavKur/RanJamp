@@ -119,9 +119,9 @@ void Motor::recorte(sf::Shape* cuerpo,  int xi,int yi, int lengthX, int lengthY)
     sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
 
     if(casteadoRect != NULL)
-        casteadoRect->setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+        casteadoRect->setTextureRect(sf::IntRect(xi*lengthX,yi*lengthY,lengthX,lengthY));
     else if(casteadoCirc != NULL)
-        casteadoCirc->setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+        casteadoCirc->setTextureRect(sf::IntRect(xi*lengthX,yi*lengthY,lengthX,lengthY));
 
 }
 

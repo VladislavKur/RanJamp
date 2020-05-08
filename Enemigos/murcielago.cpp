@@ -70,6 +70,9 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
         haPegado = true;
     }
     
+    //antes no estaba esta línea por algún motivo
+    body->update(delta);
+
 }
 
 void Murcielago::updateHitbox(){

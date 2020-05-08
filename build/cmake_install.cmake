@@ -1,4 +1,4 @@
-# Install script for directory: /home/vermia/RanJamp
+# Install script for directory: /home/antonio/Documents/movidas/RanJamp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,22 +34,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vermia/RanJamp/build/Player/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Bullet/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Animacion/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Enemigos/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Mundo/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Motor/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Juego/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Objeto/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Texto/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Menu/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Hud/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Musica/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Bloque/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Textura/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Cuerpo/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Rectangulo/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Player/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Bullet/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Animacion/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Enemigos/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Mundo/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Motor/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Juego/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Objeto/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Texto/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Menu/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Hud/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Musica/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Bloque/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Textura/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Cuerpo/cmake_install.cmake")
+  include("/home/antonio/Documents/movidas/RanJamp/build/Rectangulo/cmake_install.cmake")
 
 endif()
 
@@ -61,5 +61,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vermia/RanJamp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/antonio/Documents/movidas/RanJamp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

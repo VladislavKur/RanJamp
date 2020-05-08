@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo 
+CXX_INCLUDES = -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo 
 

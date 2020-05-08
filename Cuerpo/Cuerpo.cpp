@@ -164,20 +164,20 @@ std::vector<float> Cuerpo::getSize(){
 }
 
 void Cuerpo::update(float deltaTime){
-    if(this != NULL){
+    if(animacion!=NULL)
         animacion->update(deltaTime);
-        if(class_move){
-            class_previousX = class_positionX;
-            class_previousY = class_positionY;
-        }
-        else
-            class_move = false;
+    if(class_move){
+        class_previousX = class_positionX;
+        class_previousY = class_positionY;
     }
+    else
+        class_move = false;
 }
 
 void Cuerpo::render(float porcentaje){
-    if(this != NULL && animacion!=NULL){
-        animacion->render(porcentaje);
+    if(this != NULL){
+        if(animacion != NULL)
+            animacion->render(porcentaje);
 
         motor->posicionar(body, 
         class_previousX + (class_positionX-class_previousX)*porcentaje,
