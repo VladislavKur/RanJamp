@@ -36,6 +36,9 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
+
+            //obstaculos 
+            float timerObstaculos;
         protected:
             Juego();
 
@@ -47,6 +50,7 @@
             void colisionBulletJugador();
             void colisionBulletEnemigo();
             void colisionPlayerMundo(float deltatime);
+            void colisionPlayerObstaculos(float deltaTime);
             void colisionBulletMundo();
             
             void cargarMusica();

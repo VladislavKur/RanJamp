@@ -40,7 +40,16 @@ class Mundo{
 
         //Renderiza todos los sprites
         void render();
+        
 
+        void render2();
+
+        void crearObstaculos();
+
+        Cuerpo ** getObstaculos();
+
+        int getNumObstaculos();
+        
         //Devuelve un puntero a los rectangleShapes de los objetos del mapa
         Cuerpo ** getObjetos();
 
@@ -80,6 +89,17 @@ class Mundo{
         int _numObjects = 0;
         Cuerpo ** objetos;
         TiXmlElement ** objects;
+
+        //obstaculos 
+        int _widthObject2;
+        int _heightObject2;
+        int _tipo2;
+        int _x2;
+        int _y2;
+        int _numObjects2 = 0;
+        Cuerpo ** objetos2;
+        TiXmlElement ** objects2;
+       
 
         //enemigos
         int _posX; 

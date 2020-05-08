@@ -13,6 +13,7 @@ Juego::Juego(){
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);
+    mundo->crearObstaculos();
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
     jugador = new Player(posP[0], posP[1]);
     crearObjetos();
@@ -90,6 +91,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
     colisionPlayerMundo(deltaTime);
+    colisionPlayerObstaculos(deltaTime);
     colisionBulletMundo();
     colisionBulletEnemigo();
     colisionBulletJugador();
@@ -248,8 +250,34 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setJumpSpeed(10);
       }
     }
+}
 
-
+void Juego::colisionPlayerObstaculos(float deltaTime){
+    Cuerpo ** objetos = mundo->getObstaculos();
+    
+    bool pararse=false;
+    bool morir = false;
+    timerObstaculos -= deltaTime;
+    for(int i=0 ; i<  mundo->getNumObstaculos(); i++){
+      if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
+        if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){//pierde una vida
+          if(jugador->getModoDios() == false){
+            morir = jugador->setVidas(jugador->getVidas()-1);
+            if(morir == true){
+              matarJugador();
+            }
+          }
+          jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+          jugador->saltar(); 
+       
+          timerObstaculos = 1;
+        }else if(objetos[i]->getTipo() == 2){//muere
+          if(jugador->getModoDios() == false){
+            matarJugador();
+          }
+        }
+      } 
+    }
 }
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
@@ -288,7 +316,7 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       j++;
     }
 
-  
+    mundo->render2();
     Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
       //if(bulletEnemies[i] == NULL)continue;
@@ -382,6 +410,7 @@ void Juego::matarJugador(){ //está nice
   mundo->cargarObjectGroups();
   mundo->crearObjetos();
   mundo->cargarPosicionPlayer_Puerta(4);
+  mundo->crearObstaculos();
   vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
   jugador = new Player(posP[0], posP[1]);
   if(jugador->getBody()->getPosicion()[1]<0){
@@ -518,6 +547,7 @@ void Juego::nextLevel(){
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);//Puerta
+    mundo->crearObstaculos();
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
     jugador->getBody()->posicionamiento(posP[0], posP[1]);
     // if(nivel % 4 == 0){
@@ -546,10 +576,10 @@ void Juego::nextLevel(){
 void Juego::inicializarNiveles(){
 
   niveles = new string[5];
-  niveles[0] = "Nivel1.tmx";
-  niveles[1] = "Nivel2.tmx";
-  niveles[2] = "Nivel3.tmx";
-  niveles[3] = "Nivel4.tmx";
+  niveles[0] = "Mundo1-1.tmx";
+  niveles[1] = "Mundo1-2.tmx";
+  niveles[2] = "Mundo1-3.tmx";
+  niveles[3] = "Mundo1-4.tmx";
   niveles[4] = "NivelHielo.tmx";
 
   

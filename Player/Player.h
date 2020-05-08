@@ -69,7 +69,7 @@ public:
     float getCooldownDisparo(){return cooldownDisparo;}
     float getVelocidad(){return velocidad;}
     bool getFacing(){return facing;}
-
+    bool getModoDios(){return godMode;}
     //SET
     void obtenerPU_SaltoDoble();
     void obtenerPU_Velocidad();

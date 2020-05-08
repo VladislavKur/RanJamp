@@ -44,7 +44,7 @@ void Pajaro::updateHitbox(){
 
 void Pajaro::update(Player* player, float delta){
 ///las colisiones
-    float posX = body->getPosicion()[0];
+    //float posX = body->getPosicion()[0];
     float posY = body->getPosicion()[1];
 
     //posX = posX - delta*velocidad*0.6;

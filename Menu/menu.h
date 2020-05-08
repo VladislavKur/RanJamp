@@ -29,7 +29,7 @@ class menu : public Estado{
         void moveDown();
 
         // RECOGER INPUT DE LAS TECLAS
-        virtual void update(float deltaTime);
+        virtual void update(float deltaTime){};
 
         // DEVULVE LA OPCCION SELECCIONADA 
         int getItemPressed(); 
