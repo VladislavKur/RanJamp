@@ -585,9 +585,81 @@ CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides: CMakeFiles/libClases.
 CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
 
 
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o: ../Menu/menu_controles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o -c /home/vermia/RanJamp/Menu/menu_controles.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Menu/menu_controles.cpp > CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Menu/menu_controles.cpp -o CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o: ../Menu/menu_vol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o -c /home/vermia/RanJamp/Menu/menu_vol.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Menu/menu_vol.cpp > CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Menu/menu_vol.cpp -o CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o: ../Menu/menu_pausa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o -c /home/vermia/RanJamp/Menu/menu_pausa.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vermia/RanJamp/Menu/menu_pausa.cpp > CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vermia/RanJamp/Menu/menu_pausa.cpp -o CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
+
+
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c /home/vermia/RanJamp/Hud/hud.cpp
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.i: cmake_force
@@ -611,7 +683,7 @@ CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides.build: CMakeFiles/libClases.dir/
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c /home/vermia/RanJamp/Musica/musica.cpp
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.i: cmake_force
@@ -635,7 +707,7 @@ CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Bloque/Bloque.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o -c /home/vermia/RanJamp/Bloque/Bloque.cpp
 
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i: cmake_force
@@ -659,7 +731,7 @@ CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Textura/Textura.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Textura/Textura.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Textura/Textura.cpp.o -c /home/vermia/RanJamp/Textura/Textura.cpp
 
 CMakeFiles/libClases.dir/Textura/Textura.cpp.i: cmake_force
@@ -683,7 +755,7 @@ CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides.build: CMakeFiles/libCla
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/vermia/RanJamp/Cuerpo/Cuerpo.cpp
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i: cmake_force
@@ -707,7 +779,7 @@ CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: ../Rectangulo/Rectangulo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o -c /home/vermia/RanJamp/Rectangulo/Rectangulo.cpp
 
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i: cmake_force
@@ -753,6 +825,9 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Texto/texto.cpp.o" \
 "CMakeFiles/libClases.dir/Menu/menu.cpp.o" \
 "CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o" \
 "CMakeFiles/libClases.dir/Hud/hud.cpp.o" \
 "CMakeFiles/libClases.dir/Musica/musica.cpp.o" \
 "CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o" \
@@ -785,6 +860,9 @@ liblibClases.a: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Texto/texto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Hud/hud.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
@@ -793,7 +871,7 @@ liblibClases.a: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vermia/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -824,6 +902,9 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires

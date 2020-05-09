@@ -6,6 +6,7 @@ Motor::Motor(){
     ventana = new sf::RenderWindow(sf::VideoMode(1080,720),"Totally not Pengo");
     updateClock.restart();
     
+  
 }
 
 
@@ -87,20 +88,20 @@ void Motor::posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura){
         casteadoCirc->setOrigin(ancho/2, altura/2);
 }
 
-// bool Motor::cargarSprite(sf::Texture& entrada, const char * fichero){
+ /*bool Motor::cargarSprite(sf::Texture& entrada, const char * fichero){
 
-//     bool devolver = true;
+     bool devolver = true;
 
-//     if(!entrada.loadFromFile(fichero)){
+     if(!entrada.loadFromFile(fichero)){
 
 
-//         devolver = false;
+         devolver = false;
 
-//     }
+    }
 
-//     return(devolver);
+     return(devolver);
 
-// }
+ }*/
 
 void Motor::setOrigin(sf::Sprite &entrada, int ancho , int largo){
     entrada.setOrigin( ancho/2 , largo/2);

@@ -38,14 +38,11 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : b
 
 void Bullet::update(float deltaTime){
     lifetime-=deltaTime;
-    float sadX,sadY ;
-    sadX = body->getPosicion()[0];
-    sadY = body->getPosicion()[1];
-    
+
       body->moverse((facing ? 1 : -1)  * velocidad * deltaTime,0);
     //cout<<body->getPosicion()[0]<<"//////"<<body->getPosicion()[1]<<endl;
     updateHitbox();
-    cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
+    //cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
     
 }
     

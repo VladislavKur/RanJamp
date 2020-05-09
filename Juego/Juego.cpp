@@ -10,9 +10,13 @@ Juego::Juego(){
     inicializarNiveles();
     //cargarMusica();
     mundo = new Mundo();  
+   // std:: cout << "111111111111111111111111111111111111" << std::endl;
     mundo->cargarmapa(niveles[nivel].c_str());
+    //std:: cout << "1222222222222222222222222222222222222" << std::endl;
     mundo->crearSprites();
+    //std:: cout << "133333333333333333333333333333333" << std::endl;
     mundo->cargarObjectGroups();
+    //std:: cout << "144444444444444444444444444444444444444" << std::endl;
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
@@ -55,17 +59,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
-  Font fuente;
-  fuente.loadFromFile("resources/fuentes/AnotherRound.otf");
-  menu_inicial * _menu = new menu_inicial(fuente, 3);
-    _menu->cambiarTexto(0, Color::White, "PLAY", 100, 100 );
-    _menu->cambiarTexto(1, Color::White, "CONTROLS", 100, 200 );
-    _menu->cambiarTexto(2, Color::White, "EXIT", 100, 300 );;
-  Manejador * man = Manejador::instancia();
-  if(Keyboard::isKeyPressed(Keyboard::F)){
-    man->cambiarEstado(_menu);
-  }
-
+  pausa();
   vector<int> dimensiones = mundo->cargarPosicionBordes();
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
       disparar(deltaTime);
@@ -565,4 +559,13 @@ void Juego::inicializarNiveles(){
   niveles[4] = "NivelHielo.tmx";
 
   
+}
+
+void Juego::pausa(){
+  Manejador* man = Manejador::instancia();
+  menu_pausa* menuPau = menu_pausa::instance();
+  if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
+  man->cambiarEstado(menuPau);
+  }
+    
 }

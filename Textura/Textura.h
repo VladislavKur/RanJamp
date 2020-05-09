@@ -2,8 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <SFML/System.hpp>
-
 #include "../Motor/Motor.h"
+
 using namespace sf;
 using namespace std;
 

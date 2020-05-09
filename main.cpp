@@ -4,6 +4,8 @@
 #include "Juego/Juego.h"
 #include "Player/Player.h"
 #include "Menu/menu_inicial.h"
+#include "Menu/menu_controles.h"
+
 #include "Juego/Manejador.h"
 #define kVel 5
 
@@ -13,6 +15,8 @@ int main() {
   /////////////
   const float UPDATE_TICK_TIME = 15.0;
   Motor * m = Motor::instance();
+  menu_inicial* _menu = menu_inicial::instance();
+  
 
     float elapsus;
     float delta;
@@ -22,10 +26,8 @@ int main() {
     Juego* juego = Juego::instance();
 
     //menu
-    menu_inicial* _menu = new menu_inicial(fuente, 3);
-    _menu->cambiarTexto(0, Color::White, "PLAY", 100, 100 );
-    _menu->cambiarTexto(1, Color::White, "CONTROLS", 100, 200 );
-    _menu->cambiarTexto(2, Color::White, "EXIT", 100, 300 );
+    
+    
 
     Manejador* instancia = Manejador::instancia();
     instancia->cambiarEstado(_menu);
@@ -53,7 +55,7 @@ int main() {
 
         switch (event.key.code) {
 
-        case sf::Keyboard::P:
+        case sf::Keyboard::A:
           juego->getJugador()->obtenerPU_SaltoDoble();
           juego->getJugador()->obtenerPU_Slowhits();
           juego->getJugador()->obtenerPU_Velocidad();
