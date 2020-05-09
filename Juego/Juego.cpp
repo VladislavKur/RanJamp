@@ -1,4 +1,7 @@
 #include "Juego.h"
+#include "Manejador.h"
+#include "../Menu/menu_inicial.h"
+
 #include "../Menu/menu_pausa.h"
 
 Juego* Juego::pinstance = 0;
@@ -28,9 +31,7 @@ Juego::Juego(){
   }
 
   for(int i = 0; i < maxBullets;i++){
-
       bulletEnemies[i] = NULL;
-
   }
 
   for(int i = 0; i < maxBullets;i++){
@@ -133,6 +134,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletMundo();
     colisionBulletEnemigo();
     colisionBulletJugador();
+    colisionMeleeEnemigo();
     
     jugador->update(deltaTime , mundo); //revisar
     
@@ -351,6 +353,20 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
         }
       } 
     }
+}
+
+void Juego::colisionMeleeEnemigo(){
+    Rectangulo melee = jugador->getMelee();
+    if(jugador->getAtacandoMelee() > 0){
+      for(int i=0 ; i<numEmenigos; i++){
+        if(enemies[i]==NULL) continue;
+        if(enemies[i]->getCuerpo()==NULL) continue;
+        if( enemies[i]->getCuerpo()->getGlobalBounds()->getIntersect(melee) ){
+            matarEnemigo(enemies[i]);
+        }
+      }
+    }
+    
 }
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)

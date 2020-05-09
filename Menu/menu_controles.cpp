@@ -25,7 +25,7 @@ void menu_controles::update(float deltaTime){
     cooldown_mov-=deltaTime;
     Manejador* man = Manejador::instancia();
     Juego* juego = Juego::instance();
-    cambiarTexto(0, "BACK TO MENU", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
+    cambiarTexto(0, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
 
     b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
    
@@ -44,7 +44,6 @@ void menu_controles::update(float deltaTime){
         switch(selectedItem){
 
             case 0:
-               
                 man->back();
             break;
         }

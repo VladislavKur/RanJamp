@@ -41,6 +41,8 @@ public:
     //Player(sf::Texture* textura, sf::Vector2u cantidadImagenes, float SwitchTimeSprite);
     ~Player() ;
     bool auxSaltos;
+    Rectangulo* melee;
+    float atacando_melee; //positivo = atacando
 
     //FUNCIONALIDAD
     void render(float );
@@ -49,7 +51,7 @@ public:
     void perderVida();
     void toggleGodMode();
     void saltar();
-    bool GolpeMelee();
+    bool GolpeMelee(float deltaTime);
     void reset();
     void sumarMonedas();
     void cogerLlave(int i);
@@ -57,7 +59,7 @@ public:
     //GET
     int getSaltos(){return saltos;}
     int getArma(){return arma;}
-    
+    float getAtacandoMelee(){return atacando_melee;}
     bool getPU_SaltoDoble(){return PU_saltoDoble;}; 
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
@@ -71,6 +73,7 @@ public:
     bool getFacing(){return facing;}
     bool getModoDios(){return godMode;}
     int getMonedas(){return monedas;}
+    Rectangulo getMelee(){return *melee;}
     vector<int> getLlaves(){return llaves;}
     //SET
     void obtenerPU_SaltoDoble();

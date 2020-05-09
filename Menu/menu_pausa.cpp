@@ -15,7 +15,8 @@ menu_pausa* menu_pausa::instance(){
 }
 
 menu_pausa::menu_pausa( Font fuente, int max) : menu(fuente, max){
-    
+    t = new Textura("resources/Imagenes/Menu.png");
+    b = new Bloque(t);
 }
 
 
@@ -30,10 +31,12 @@ void menu_pausa::update(float deltaTime){
 
 
     cambiarTexto(0,  "REANUDAR", juego->view.getCenter().x-100, juego->view.getCenter().y-125);
-    cambiarTexto(1,  "CONTROLS", juego->view.getCenter().x-100, juego->view.getCenter().y-50);
-    cambiarTexto(2, "OPTIONS", juego->view.getCenter().x-100, juego->view.getCenter().y+25 );
-    cambiarTexto(3,  "MENU PRINCIPAL", juego->view.getCenter().x-100, juego->view.getCenter().y+100);
+    cambiarTexto(1,  "CONTROLS", juego->view.getCenter().x-100, juego->view.getCenter().y-75);
+    cambiarTexto(2, "OPTIONS", juego->view.getCenter().x-100, juego->view.getCenter().y-25 );
+    cambiarTexto(3,  "MENU PRINCIPAL", juego->view.getCenter().x-100, juego->view.getCenter().y+25);
 
+    b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
+    b->setTextureRect(0,0,1080,720);
     
 
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
