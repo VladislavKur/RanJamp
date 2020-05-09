@@ -41,3 +41,14 @@ Estado * Manejador::getAnterior(){
 Estado * Manejador::getEstado(){
     return estado;
 }
+
+Manejador::~Manejador(){
+    if(estado != nullptr){
+        delete estado;
+        estado = nullptr;
+    }
+    if(anterior != nullptr){
+        delete anterior;
+        anterior = nullptr;
+    }
+}

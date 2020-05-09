@@ -18,7 +18,7 @@ private:
     int dir;
 public:
     Bullet(float, float, bool, int, int);
-    ~Bullet() {}
+    ~Bullet();
 
     float lifetime; //Contador que destruye la bala cuando llega a 0
     void update(float deltaTime);

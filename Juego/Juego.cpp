@@ -9,23 +9,20 @@ Juego* Juego::pinstance = 0;
 Juego::Juego(){
     nivel = 0;
     inicializarNiveles();
-    //cargarMusica();
+    cargarMusica();
     mundo = new Mundo();  
-   // std:: cout << "111111111111111111111111111111111111" << std::endl;
     mundo->cargarmapa(niveles[nivel].c_str());
-    //std:: cout << "1222222222222222222222222222222222222" << std::endl;
     mundo->crearSprites();
-    //std:: cout << "133333333333333333333333333333333" << std::endl;
     mundo->cargarObjectGroups();
-    //std:: cout << "144444444444444444444444444444444444444" << std::endl;
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);
-    mundo->crearObstaculos();
+    mundo->crearObstaculos();// Obstaculos
+    mundo->crearMonedasLlaves();// Monedas y llaves
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
     jugador = new Player(posP[0], posP[1]);
     crearObjetos();
     crearEnemigos();
-    view.setSize(1024,720); //FACHADA WIP
+    view.setSize(1024,720); 
     
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
@@ -44,6 +41,41 @@ Juego::Juego(){
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
   pos.push_back(Vector2f(10 , 1500));
+}
+Juego::~Juego(){
+      if(jugador != nullptr){
+        delete jugador;
+        jugador = nullptr;
+      }
+      delete [] enemies;
+
+      delete [] objetos;
+      
+      for(int i= 0; i < maxBullets; i++){
+        if(bulletPlayer[i] != nullptr){
+          delete bulletPlayer[i];
+          bulletPlayer[i] = nullptr;
+        }
+        if(bulletEnemies[i] != nullptr){
+          delete bulletEnemies[i];
+          bulletEnemies[i] = nullptr;
+        }
+        if(bulletNube[i] != nullptr){
+          delete bulletNube[i];
+          bulletNube[i] = nullptr;
+        }
+      }
+      if(so != nullptr){
+        delete so;
+        so = nullptr;
+      }
+      if(mundo != nullptr){
+        delete mundo;
+        mundo = nullptr;
+      }
+  
+      delete[] niveles; 
+
 }
 
 Juego* Juego::instance(){
@@ -100,6 +132,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletMundo();
     colisionBulletEnemigo();
     colisionBulletJugador();
+    colisionMeleeEnemigo();
     
     jugador->update(deltaTime , mundo); //revisar
     
@@ -141,6 +174,41 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       j++;
     }
 
+    j = mundo->getNumMonedasLlaves() - 1 ;
+    cout << j << endl;
+    while(mundo->getMonedasLlaves()[j] != nullptr && j >= 0){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
+    
+      if(mundo->getMonedasLlaves()[j]->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
+
+            switch (mundo->getMonedasLlaves()[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
+                case 0:
+                    jugador->sumarMonedas();
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    break;
+                case 1:
+                    jugador->cogerLlave(1);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    break;
+                case 2:
+                    jugador->cogerLlave(2);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    break;
+                case 3:
+                    jugador->cogerLlave(3);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    break;
+                case 4:
+                    jugador->cogerLlave(4);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    break;
+                default:
+                    cout <<"Default" << endl;
+                break;
+            } 
+
+        }
+      j--;
+    }
     
  
     float playerPosX = jugador->getBody()->getPosicion()[0];
@@ -164,7 +232,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
     m->getVentana()->setView(view); //wIP fachada
     hud * Hud = hud::instance();
-    Hud->setMarcador( view.getCenter().x , view.getCenter().y, jugador->getVidas());
+    Hud->setMarcador( view.getCenter().x , view.getCenter().y, jugador->getVidas(), jugador->getMonedas(), jugador->getLlaves());
     for(int i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
@@ -241,7 +309,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
           jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
           aux = true;
           posantX = jugador->getBody()->getPosicion()[0];
-          posantX = jugador->getBody()->getPosicion()[1]; //WIP FACHADA
+          posantY = jugador->getBody()->getPosicion()[1]; //WIP FACHADA
           
         } else if(posantX != jugador->getBody()->getPosicion()[0] && posantY != jugador->getBody()->getPosicion()[1]){ //WIP FACHADA
           aux = false;
@@ -260,7 +328,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
 void Juego::colisionPlayerObstaculos(float deltaTime){
     Cuerpo ** objetos = mundo->getObstaculos();
     
-    bool pararse=false;
+
     bool morir = false;
     timerObstaculos -= deltaTime;
     for(int i=0 ; i<  mundo->getNumObstaculos(); i++){
@@ -283,6 +351,20 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
         }
       } 
     }
+}
+
+void Juego::colisionMeleeEnemigo(){
+    Rectangulo melee = jugador->getMelee();
+    if(jugador->getAtacandoMelee() > 0){
+      for(int i=0 ; i<numEmenigos; i++){
+        if(enemies[i]==NULL) continue;
+        if(enemies[i]->getCuerpo()==NULL) continue;
+        if( enemies[i]->getCuerpo()->getGlobalBounds()->getIntersect(melee) ){
+            matarEnemigo(enemies[i]);
+        }
+      }
+    }
+    
 }
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
@@ -309,22 +391,25 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     int i = 0;
     int j = 0;
     while(enemies[i] != nullptr && i < numEmenigos){
-      //cout << " ENEMIGO " << i << endl;
       enemies[i]->render(porcentaje);//esto está interpolado
       i++;
     }
 
-    //t->render();
     while(objetos[j] != nullptr && j < numObjetos){
      
       objetos[j]->render(porcentaje);
+      j++;
+    }
+    
+    j=0;
+    while(mundo->getMonedasLlaves()[j] != nullptr && j < mundo->getNumMonedasLlaves()){
+      mundo->getMonedasLlaves()[j]->render(porcentaje);
       j++;
     }
 
     mundo->render2();
     Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
-      //if(bulletEnemies[i] == NULL)continue;
       if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion
     }
 }
@@ -416,6 +501,7 @@ void Juego::matarJugador(){ //está nice
   mundo->crearObjetos();
   mundo->cargarPosicionPlayer_Puerta(4);
   mundo->crearObstaculos();
+  mundo->crearMonedasLlaves();
   vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
   jugador = new Player(posP[0], posP[1]);
   if(jugador->getBody()->getPosicion()[1]<0){
@@ -553,13 +639,14 @@ void Juego::nextLevel(){
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);//Puerta
     mundo->crearObstaculos();
+    mundo->crearMonedasLlaves();
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
     jugador->getBody()->posicionamiento(posP[0], posP[1]);
-    // if(nivel % 4 == 0){
-    //   jugador->perderPU_SaltoDoble();
-    //   jugador->perderPU_Slowhits();
-    //   jugador->perderPU_Velocidad();
-    // }
+    if(nivel % 4 == 0){
+      jugador->perderPU_Velocidad();
+      jugador->perderPU_SaltoDoble();
+      jugador->perderPU_Slowhits();
+    }
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720);
@@ -579,15 +666,14 @@ void Juego::nextLevel(){
 
 
 void Juego::inicializarNiveles(){
-
-  niveles = new string[5];
+  maxniveles = 5;
+  niveles = new string[maxniveles];
   niveles[0] = "Mundo1-1.tmx";
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
   niveles[4] = "NivelHielo.tmx";
-
-  
+ 
 }
 
 void Juego::pausa(){

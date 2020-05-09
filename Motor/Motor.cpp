@@ -9,6 +9,9 @@ Motor::Motor(){
   
 }
 
+Motor::~Motor(){
+    delete ventana;
+}
 
 sf::View Motor::Camara(sf::Vector2f sad){
 

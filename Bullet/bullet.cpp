@@ -57,3 +57,14 @@ void Bullet::updateHitbox(){
     hitbox->setLeft(body->getPosicion()[0]);
     hitbox->setTop (body->getPosicion()[1]);
 }
+
+Bullet::~Bullet(){
+    if(body != NULL){
+        delete body;
+        body = NULL;
+    }
+    if(hitbox != NULL){
+        delete hitbox;
+        hitbox = NULL;
+    }
+}

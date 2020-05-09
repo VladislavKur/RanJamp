@@ -31,6 +31,9 @@ private:
     Rectangulo * coliArriba;
     Rectangulo * coliIzquierda;
     Rectangulo * coliDerecha;
+    
+    vector<int> llaves;
+    int monedas;
 public:
     //CANON
     Player(){};
@@ -38,26 +41,25 @@ public:
     //Player(sf::Texture* textura, sf::Vector2u cantidadImagenes, float SwitchTimeSprite);
     ~Player() ;
     bool auxSaltos;
+    Rectangulo* melee;
+    float atacando_melee; //positivo = atacando
 
     //FUNCIONALIDAD
     void render(float );
     void update(float deltaTime , Mundo * mundo);
     void updateHitbox();
-
     void perderVida();
-    
     void toggleGodMode();
     void saltar();
-
-
-    bool GolpeMelee();
-
+    bool GolpeMelee(float deltaTime);
     void reset();
+    void sumarMonedas();
+    void cogerLlave(int i);
 
     //GET
     int getSaltos(){return saltos;}
     int getArma(){return arma;}
-    
+    float getAtacandoMelee(){return atacando_melee;}
     bool getPU_SaltoDoble(){return PU_saltoDoble;}; 
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
@@ -70,14 +72,17 @@ public:
     float getVelocidad(){return velocidad;}
     bool getFacing(){return facing;}
     bool getModoDios(){return godMode;}
+    int getMonedas(){return monedas;}
+    Rectangulo getMelee(){return *melee;}
+    vector<int> getLlaves(){return llaves;}
     //SET
     void obtenerPU_SaltoDoble();
     void obtenerPU_Velocidad();
     void obtenerPU_Slowhits();
 
-    void perderPU_SaltoDoble();
-    void perderPU_Velocidad();
-    void perderPU_Slowhits();
+    void perderPU_SaltoDoble(){PU_saltoDoble=false;}
+    void perderPU_Velocidad(){PU_velocidad=false;}
+    void perderPU_Slowhits(){PU_slowhits=false;}
 
     void setJumpSpeed(float);
     

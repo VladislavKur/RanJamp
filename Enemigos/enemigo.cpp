@@ -13,6 +13,26 @@ Enemigo::Enemigo(float x, float y, int sizeWidth, int sizeHeight,
 }
 
 Enemigo::~Enemigo(){
+        if(coliAbajo != NULL){
+            delete coliAbajo;
+            coliAbajo = NULL;
+        }
+        if(coliArriba != NULL){
+            delete coliArriba;
+            coliArriba = NULL;
+        }
+        if(coliIzquierda != NULL){
+            delete coliIzquierda;
+            coliIzquierda = NULL;
+        } 
+        if(coliDerecha != NULL){
+            delete coliDerecha;
+            coliDerecha = NULL;
+        }
+        if(body != NULL){
+            delete body;
+        }
+
 }
 
 void Enemigo::actualizarPosicion(float entradaX, float entradaY){

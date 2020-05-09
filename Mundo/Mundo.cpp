@@ -112,11 +112,11 @@ void Mundo::cargarmapa(const char * f){
 void Mundo::crearSprites(){
 
   for(int l=0; l<_numLayers; l++){
-    cout << "layers sprites: " << l << endl;
+    // cout << "layers sprites: " << l << endl;
     for(int y=0; y<_height; y++){
      
       for(int x=0; x<_width; x++){
-          cout<<"X: " << x << "Y: " << y<<endl;
+        // cout<<"X: " << x << "Y: " << y<<endl;
       int imagen = 0;
       bool pintada = false;
         for(int k = 0; k< _numTilesets && !pintada; k++){
@@ -169,9 +169,27 @@ void Mundo::crearSprites(){
    return objetos;
  }
 
-  Cuerpo ** Mundo::getObstaculos(){
+Cuerpo ** Mundo::getObstaculos(){
    return objetos2;
+}
+
+Cuerpo ** Mundo::getMonedasLlaves(){
+   return objetos3;
+}
+
+void Mundo::EliminarMonedasLLaves(Cuerpo * c){// hay que borrarlo y redimensionar el array
+ 
+  for (int i = 0; i < _numObjects3; i++){
+    if(objetos3[i] == c){
+      for(int j = i; j < _numObjects3; j++){
+        objetos3[j] = objetos3[j+1];        
+      }
+      objetos3[_numObjects3] = NULL;
+      _numObjects3--;
+    }
   }
+
+}
 
 void Mundo::crearObjetos(){
 
@@ -207,6 +225,8 @@ void Mundo::crearObjetos(){
         }
     }
 }
+ 
+
 
 void Mundo::crearObstaculos(){
     TiXmlElement * object = objectgroups[6]->FirstChildElement("object");
@@ -221,7 +241,6 @@ void Mundo::crearObstaculos(){
     
     object = objectgroups[6]->FirstChildElement("object");
     
-    cout<<"object " << object->Attribute("id")<<endl;
     int num = 0; 
     while(object){
         objects2[num] = object;
@@ -238,6 +257,46 @@ void Mundo::crearObstaculos(){
         objects2[i]->QueryIntAttribute("y", &_y2);
         objetos2[i] = new Cuerpo(_x2,_y2, _widthObject2,_heightObject2, _tipo2);//PASAR POR PARAMETRO EL TIPO AL CUERPO
         if(objetos2[i] != nullptr ){
+         cout<< "TENGOO ALGO" <<endl;
+        }
+    }
+}
+
+void Mundo::crearMonedasLlaves(){
+    TiXmlElement * object = objectgroups[7]->FirstChildElement("object");
+    _numObjects3 = 0;
+    while(object){
+        object = object->NextSiblingElement("object");
+        _numObjects3++;
+    }
+    cout<< "numObjects " << _numObjects3 << endl;
+    objects3 = new TiXmlElement * [_numObjects3 ];
+    objetos3 = new Cuerpo * [_numObjects3 ];
+    
+    object = objectgroups[7]->FirstChildElement("object");
+    
+    int num = 0; 
+    while(object){
+        objects3[num] = object;
+        object = object->NextSiblingElement("object");
+        num++;
+    }
+    cout<< "num" << num <<endl; 
+    
+    for(int i=0; i < _numObjects3; i++){
+        objects3[i]->QueryIntAttribute("width", &_widthObject3);
+        objects3[i]->QueryIntAttribute("height", &_heightObject3);
+        objects3[i]->QueryIntAttribute("type", &_tipo3);
+        objects3[i]->QueryIntAttribute("x", &_x3);
+        objects3[i]->QueryIntAttribute("y", &_y3);
+        if(_tipo3 == 0){
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Moneda.png" , 0.2,1 , _tipo3);//PASAR POR PARAMETRO EL TIPO AL CUERPO
+          objetos3[i]->addAnimacion(0.1);
+        }else{
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Llave.png" , 0.5, 0, _tipo3);
+          objetos3[i]->addAnimacion(0.1);
+        }
+        if(objetos3[i] != nullptr ){
          cout<< "TENGOO ALGO" <<endl;
         }
     }
@@ -325,7 +384,6 @@ vector<float> Mundo::cargarPosicionPlayer_Puerta(int i){
 
 void Mundo::render(){
 
-  Motor * motor = Motor::instance();
   for(int l=0; l<_numLayers-1; l++){
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){
@@ -358,7 +416,6 @@ void Mundo::render(){
 
 void Mundo::render2(){
 
-  Motor * motor = Motor::instance();
   for(int l=_numLayers-1; l<_numLayers; l++){
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){
@@ -397,6 +454,9 @@ int Mundo::getNumObstaculos(){
   return _numObjects2;
 }
 
+int Mundo::getNumMonedasLlaves(){
+  return _numObjects3;
+}
 
 
 Mundo::~Mundo(){ 
@@ -414,6 +474,8 @@ Mundo::~Mundo(){
     delete[] _tilesetTexture;
     
     delete[] objetos;
+    delete[] objetos2;
+    delete[] objetos3;
 
     for(int i = 0; i < _numLayers; i++)
     {

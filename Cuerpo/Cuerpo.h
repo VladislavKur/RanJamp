@@ -33,6 +33,8 @@ class Cuerpo{
             std::string fichero, float escala, typeBody tipoCuerpo); //cambiar tipo por enum (0: RS, 1:CS)
         Cuerpo(float x , float y, int sizeWidth , int sizeHeight);
         Cuerpo(float x , float y, int sizeWidth , int sizeHeight, int type);
+        Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
+            std::string fichero, float escala, int tipoCuerpo, int type);
         ~Cuerpo();
         void posicionamiento(float x_entrada,float y_entrada);
         std::vector<int> texturizar(std::string entrada, int sizeWidth, int sizeHeight);

@@ -23,6 +23,7 @@
             Motor();
 
         public:
+            ~Motor();
             static Motor *instance();
             void dibujo(sf::Shape* entrada);
             void dibujo(sf::RectangleShape & cuerpo);

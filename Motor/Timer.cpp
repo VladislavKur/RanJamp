@@ -16,10 +16,10 @@ float Timer::avanzar(float deltaTime){
     return tiempoActual;
 }
 
-float Timer::reset(){
+void Timer::reset(){
     tiempoActual=tiempoMaximo;
 }
 
-float Timer::setMaximo(float p_max){
+void Timer::setMaximo(float p_max){
     tiempoMaximo=p_max;
 }

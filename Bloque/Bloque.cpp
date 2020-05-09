@@ -22,3 +22,10 @@ void Bloque::setOrigin(float x, float y){
 void Bloque::render(){
     motor->dibujo(*s);
 }
+
+Bloque::~Bloque(){
+   if(s != NULL){
+    delete s;
+    s = NULL;
+   }
+}
