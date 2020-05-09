@@ -70,8 +70,10 @@ Player::Player(int x, int y){
     monedas = 0;
 }
 
-void Player::update(float deltaTime , Mundo * mundo){
-    
+void Player::update(float time , Mundo * mundo){
+    float deltaTime = time;
+    if(deltaTime > 0.03) deltaTime = 0.03;
+    if(deltaTime < 0.01) deltaTime = 0.01;
     updateHitbox(); //arreglar lo de update hitbox
     GolpeMelee(deltaTime);
 
@@ -116,7 +118,7 @@ void Player::update(float deltaTime , Mundo * mundo){
         }
       }
     }
-    cout<<atacando_melee<<endl;
+    //cout<<atacando_melee<<endl;
 
   
     // float sadX = body->getPosicion()[0];
@@ -151,7 +153,10 @@ void Player::render(float porcentaje){
   body->render(porcentaje);
 }
 
-void Player::moveRight(float deltaTime , Mundo * mundo){
+void Player::moveRight(float time , Mundo * mundo){
+  float deltaTime = time;
+    if(deltaTime > 0.03) deltaTime = 0.03;
+    if(deltaTime < 0.01) deltaTime = 0.01;
   bool puede = true;
   Cuerpo ** objetos = mundo->getObjetos();
 
@@ -169,7 +174,10 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
   }
 }
 
-void Player::moveLeft(float deltaTime , Mundo * mundo){
+void Player::moveLeft(float time , Mundo * mundo){
+  float deltaTime = time;
+    if(deltaTime > 0.03) deltaTime = 0.03;
+    if(deltaTime < 0.01) deltaTime = 0.01;
   bool puede=true;
   Cuerpo ** objetos = mundo->getObjetos();
 
@@ -293,7 +301,10 @@ void Player::setSize(float sizeX, float sizeY) {
     body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/
 }
 
-bool Player::GolpeMelee(float deltaTime){
+bool Player::GolpeMelee(float time){
+  float deltaTime = time;
+    if(deltaTime > 0.03) deltaTime = 0.03;
+    if(deltaTime < 0.01) deltaTime = 0.01;
   
   vector<float> gp = body->getPosicion();
   Rectangulo gbb = *body->getGlobalBounds();

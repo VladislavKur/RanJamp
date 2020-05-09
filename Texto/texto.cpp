@@ -14,7 +14,7 @@ texto::texto(int  i , std::vector<sf::String> t , std::vector<sf::Vector2f> posi
        // cout<< "textoooo " << t[j] << endl;
         text[j].setScale(5,5);
         text[j].setPosition(posiciones[j]);
-        cout<<"posi "<< posiciones[j].x << " " << posiciones[j].y << endl;
+        //cout<<"posi "<< posiciones[j].x << " " << posiciones[j].y << endl;
     }
 }
 
@@ -23,7 +23,7 @@ void texto::render(){
     for(int j = 0; j < cantidad; j++){
         motor->dibujo(text[j]);
         if(text[j].getString().isEmpty()){
-            cout<< "FUOJGINGORIDN"<<endl;
+           // cout<< "FUOJGINGORIDN"<<endl;
         }
     }
 }

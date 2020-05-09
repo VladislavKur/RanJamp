@@ -135,7 +135,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo();
     colisionBulletJugador();
     colisionMeleeEnemigo();
-    
+    std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
     
     int j = 0;
@@ -536,7 +536,7 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
             bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
-            cout<<jugador->getBody()->getPosicion()[1]<<endl;
+            //cout<<jugador->getBody()->getPosicion()[1]<<endl;
             jugador->setCooldownDisparo(10*deltaTime);
             break;
           }
@@ -571,7 +571,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
-        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        //std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletEnemies[i];
         bulletEnemies[i] = NULL;
         if(morir == true){
@@ -586,7 +586,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
-        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        //std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletNube[i];
         bulletNube[i] = NULL;
         if(morir == true){

@@ -82,7 +82,7 @@ int main() {
 
             //Cualquier tecla desconocida se imprime por pantalla su código
             default:
-            std::cout << event.key.code << std::endl;
+            //std::cout << event.key.code << std::endl;
             break;
         }
         default:
@@ -101,7 +101,7 @@ int main() {
         if(cuerpoMueve.getGlobalBounds().intersects(bulletNube[i]->getBody().getGlobalBounds())){
 
           morir = true;
-          std::cout << "Vidas del jugador: " << 0 << "\n";
+          //std::cout << "Vidas del jugador: " << 0 << "\n";
           
           bulletNube[i] = NULL;
           delete bulletNube[i];
