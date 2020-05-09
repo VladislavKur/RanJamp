@@ -184,7 +184,7 @@ void Mundo::EliminarMonedasLLaves(Cuerpo * c){// hay que borrarlo y redimensiona
       for(int j = i; j < _numObjects3; j++){
         objetos3[j] = objetos3[j+1];        
       }
-      delete objects3[_numObjects3-1];
+      //delete objects3[_numObjects3-1];
       objetos3[_numObjects3-1] = NULL;
       _numObjects3--;
     }
