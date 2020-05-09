@@ -6,7 +6,7 @@ Juego* Juego::pinstance = 0;
 Juego::Juego(){
     nivel = 0;
     inicializarNiveles();
-    cargarMusica();
+    // cargarMusica();
     mundo = new Mundo();  
     mundo->cargarmapa(niveles[nivel].c_str());
     mundo->crearSprites();
@@ -19,7 +19,9 @@ Juego::Juego(){
     jugador = new Player(posP[0], posP[1]);
     crearObjetos();
     crearEnemigos();
-    view.setSize(1024,720); 
+    view.setSize(1080,720); 
+    //view.setCenter(1080/2,720/2);
+    view.setCenter(view.getSize().x/2,view.getSize().y/2);
     
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
