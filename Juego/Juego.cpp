@@ -1,4 +1,7 @@
 #include "Juego.h"
+#include "Manejador.h"
+#include "../Menu/menu_inicial.h"
+
 #include "../Menu/menu_pausa.h"
 
 Juego* Juego::pinstance = 0;
@@ -6,7 +9,7 @@ Juego* Juego::pinstance = 0;
 Juego::Juego(){
     nivel = 0;
     inicializarNiveles();
-    cargarMusica();
+    // cargarMusica();
     mundo = new Mundo();  
     mundo->cargarmapa(niveles[nivel].c_str());
     mundo->crearSprites();
@@ -19,16 +22,16 @@ Juego::Juego(){
     jugador = new Player(posP[0], posP[1]);
     crearObjetos();
     crearEnemigos();
-    view.setSize(1024,720); 
+    view.setSize(1080,720); 
+    //view.setCenter(1080/2,720/2);
+    view.setCenter(view.getSize().x/2,view.getSize().y/2);
     
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
   }
 
   for(int i = 0; i < maxBullets;i++){
-
       bulletEnemies[i] = NULL;
-
   }
 
   for(int i = 0; i < maxBullets;i++){
@@ -131,6 +134,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletMundo();
     colisionBulletEnemigo();
     colisionBulletJugador();
+    colisionMeleeEnemigo();
     
     jugador->update(deltaTime , mundo); //revisar
     
@@ -188,22 +192,6 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la llave
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la puerta
                     break;
-                case 2:
-                    jugador->cogerLlave(2);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    break;
-                case 3:
-                    jugador->cogerLlave(3);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    break;
-                case 4:
-                    jugador->cogerLlave(4);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    break;
-                
                 default:
                     cout <<"Default" << endl;
                 break;
@@ -354,6 +342,20 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
         }
       } 
     }
+}
+
+void Juego::colisionMeleeEnemigo(){
+    Rectangulo melee = jugador->getMelee();
+    if(jugador->getAtacandoMelee() > 0){
+      for(int i=0 ; i<numEmenigos; i++){
+        if(enemies[i]==NULL) continue;
+        if(enemies[i]->getCuerpo()==NULL) continue;
+        if( enemies[i]->getCuerpo()->getGlobalBounds()->getIntersect(melee) ){
+            matarEnemigo(enemies[i]);
+        }
+      }
+    }
+    
 }
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)

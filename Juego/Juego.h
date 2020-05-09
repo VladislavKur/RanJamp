@@ -51,6 +51,7 @@
             void colisionPlayerMundo(float deltatime);
             void colisionPlayerObstaculos(float deltaTime);
             void colisionBulletMundo();
+            void colisionMeleeEnemigo();
             
             void cargarMusica();
             void crearObjetos();

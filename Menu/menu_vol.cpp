@@ -14,7 +14,8 @@ menu_vol* menu_vol::instance(){
 }
 
 menu_vol::menu_vol( Font fuente, int max) : menu(fuente, max){
-
+t = new Textura("resources/Imagenes/MenuControles.png");
+       b = new Bloque(t);
     
 }
 
@@ -24,9 +25,11 @@ void menu_vol::update(float deltaTime){
     cooldown_mov-=deltaTime;
     Manejador* man = Manejador::instancia();
     Juego* juego = Juego::instance();
-    cambiarTexto(0,  "BACK", juego->view.getCenter().x-100, juego->view.getCenter().y-125);
+    
 
+    cambiarTexto(0, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
 
+    b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
    
 
     /*if( sf::Keyboard::isKeyPressed( sf::Keyboard::Left ) && cooldown_mov<0){

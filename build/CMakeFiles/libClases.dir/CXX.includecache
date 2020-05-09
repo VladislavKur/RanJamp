@@ -173,6 +173,10 @@ SFML/Graphics.hpp
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
 Juego.h
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+Manejador.h
+/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+../Menu/menu_inicial.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
 ../Menu/menu_pausa.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
 

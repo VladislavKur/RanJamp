@@ -35,6 +35,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
 
     motor->setScale(body, escala, escala);
     animacion=NULL;
+    rectangulo=NULL;
 
     rectangulo = NULL;
 }
@@ -57,6 +58,7 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
     rectangulo = NULL;
     animacion=NULL;
+    rectangulo=NULL;
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight, int type){

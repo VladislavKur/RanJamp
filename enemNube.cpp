@@ -5,7 +5,7 @@
 #include "Motor/Motor.h"
 
 #define kVel 90.0
-#define maxBullets 256
+#define maxBullets 512
 
 int main() {
 
