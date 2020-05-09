@@ -31,6 +31,9 @@ private:
     Rectangulo * coliArriba;
     Rectangulo * coliIzquierda;
     Rectangulo * coliDerecha;
+    
+    vector<int> llaves;
+    int monedas;
 public:
     //CANON
     Player(){};
@@ -43,16 +46,13 @@ public:
     void render(float );
     void update(float deltaTime , Mundo * mundo);
     void updateHitbox();
-
     void perderVida();
-    
     void toggleGodMode();
     void saltar();
-
-
     bool GolpeMelee();
-
     void reset();
+    void sumarMonedas();
+    void cogerLlave(int i);
 
     //GET
     int getSaltos(){return saltos;}
@@ -70,14 +70,16 @@ public:
     float getVelocidad(){return velocidad;}
     bool getFacing(){return facing;}
     bool getModoDios(){return godMode;}
+    int getMonedas(){return monedas;}
+    vector<int> getLlaves(){return llaves;}
     //SET
     void obtenerPU_SaltoDoble();
     void obtenerPU_Velocidad();
     void obtenerPU_Slowhits();
 
-    void perderPU_SaltoDoble();
-    void perderPU_Velocidad();
-    void perderPU_Slowhits();
+    void perderPU_SaltoDoble(){PU_saltoDoble=false;}
+    void perderPU_Velocidad(){PU_velocidad=false;}
+    void perderPU_Slowhits(){PU_slowhits=false;}
 
     void setJumpSpeed(float);
     

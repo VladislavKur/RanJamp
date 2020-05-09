@@ -13,10 +13,10 @@ class Timer{
         Timer();
         Timer(float p_tiempoMaximo);
         float avanzar(float deltaTime);
-        float reset();
+        void reset();
         float getTiempoActual(){return tiempoActual;}
         float getMaximo(){return tiempoMaximo;}
-        float setMaximo(float p_max);
+        void setMaximo(float p_max);
 };
 
 #endif

@@ -18,12 +18,20 @@ menu::menu(Font fuente , int max){
 }
 
 menu::~menu(){
-
+    
+    delete [] texto;
+    if(t != nullptr){
+        delete t; 
+        t = nullptr;
+    }
+    if(b != nullptr){    
+        delete b;
+        b =nullptr;
+    }
 }
 
 void menu::render(float num){ 
     Motor * motor = Motor::instance();
-    Juego* juego = Juego::instance();
     if(b != nullptr){
         b->render();
     }

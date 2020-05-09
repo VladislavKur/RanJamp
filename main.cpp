@@ -55,7 +55,7 @@ int main() {
 
         switch (event.key.code) {
 
-        case sf::Keyboard::A:
+        case sf::Keyboard::Z:
           juego->getJugador()->obtenerPU_SaltoDoble();
           juego->getJugador()->obtenerPU_Slowhits();
           juego->getJugador()->obtenerPU_Velocidad();

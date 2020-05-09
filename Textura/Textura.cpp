@@ -3,13 +3,16 @@
 Textura::Textura(string entrada){
 
     t = new sf::Texture();
-    bool cargado = motor->cargarSprite(*t, entrada, true);
+    motor->cargarSprite(*t, entrada, true);
   
 }
 
 
 Textura::~Textura(){
-   delete t;
+   if(t != nullptr){
+    delete t;
+    t = nullptr;
+   }
 }
 
 Texture * Textura::getTexture(){

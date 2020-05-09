@@ -27,3 +27,7 @@ void texto::render(){
         }
     }
 }
+
+texto::~texto(){
+    delete[]text;
+}

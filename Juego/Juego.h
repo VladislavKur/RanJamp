@@ -30,18 +30,17 @@
             Bullet* bulletNube[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
-            //texto * t;
             musica * so;
             int numObjetos;
             Mundo * mundo;
             int nivel;
             string * niveles;
-
+            int maxniveles;
             //obstaculos 
             float timerObstaculos;
         protected:
             Juego();
-
+            ~Juego();
         public:
             static Juego *instance();
             void update(float deltaTime);

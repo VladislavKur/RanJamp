@@ -13,7 +13,7 @@ class Animacion{
         void nextSprite();
         //variables objeto
         sf::Shape* body;
-        Motor* motor;
+        Motor * motor;
         //variables basicas
         int tamX, tamY; //tamaño del sprite
         int posicionesX,posicionesY; //el numero de sprites que hay

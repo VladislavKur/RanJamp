@@ -6,7 +6,16 @@
     
     
     
-    Objeto::~Objeto(){}
+    Objeto::~Objeto(){
+        if(body != nullptr){
+            delete body;
+            body = nullptr;
+        }
+        if(hitbox != nullptr){
+            delete hitbox;
+            hitbox = nullptr;
+        }
+    }
     Objeto::Objeto(float x, float y, int t){
             
  
@@ -23,15 +32,15 @@
     }
 
     //t --> tipo
-    void Objeto::update(Player &otherBody){
+    // void Objeto::update(Player &otherBody){
         
 
-    }
+    // }
 
 
-    void Objeto::recogido(){
+    // void Objeto::recogido(){
 
-    }
+    // }
 
     void Objeto::setTipo(int t){
         tipo = t;

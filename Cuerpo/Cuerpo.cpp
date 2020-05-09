@@ -80,6 +80,48 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     class_tipo = type;
 }
 
+
+Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
+            std::string fichero, float escala, int tipoCuerpo, int type){
+
+    motor = Motor::instance();
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    class_previousX = x_entrada;
+    class_previousY = y_entrada;
+
+    if(tipoCuerpo == 0)
+        body = new sf::RectangleShape();
+    else if(tipoCuerpo == 1)
+        body = new sf::CircleShape();
+    class_textura = new sf::Texture();
+
+    class_escala = escala;
+
+    class_width = sizeWidth;
+    class_height = sizeHeight;
+    
+    class_move = false;
+
+    posicionamiento(x_entrada, y_entrada);
+
+    vector<int> aux = texturizar(fichero, sizeWidth, sizeHeight);
+
+    class_widthTexture = aux[0];
+    class_heightTexture = aux[1];
+
+    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
+
+    motor->setScale(body, escala, escala);
+    
+    animacion=NULL;
+    
+    class_tipo = type;
+}
+
+
 int Cuerpo::getTipo(){
   return class_tipo;
 }
@@ -229,6 +271,10 @@ Cuerpo::~Cuerpo(){
     if(class_textura != NULL){
         delete class_textura; 
         class_textura = NULL;
+    }
+    if(rectangulo != NULL){
+        delete rectangulo;
+        rectangulo = NULL;
     }
 }
 

@@ -2,7 +2,32 @@
 #include "Player.h"
 
 Player::~Player(){
+    if(body != nullptr){
+      delete body;
+      body = nullptr;
+    }
+    if(hitbox != nullptr){
+      delete hitbox;
+      hitbox = nullptr;
+    }
 
+    if(coliAbajo != NULL){
+      delete coliAbajo;
+      coliAbajo = NULL;
+    }
+    if(coliArriba != NULL){
+      delete coliArriba;
+      coliArriba = NULL;
+    }
+    if(coliIzquierda != NULL){
+      delete coliIzquierda;
+      coliIzquierda = NULL;
+    } 
+    if(coliDerecha != NULL){
+      delete coliDerecha;
+      coliDerecha = NULL;
+    }
+    
 }
 Player::Player(int x, int y){ 
 
@@ -39,6 +64,8 @@ Player::Player(int x, int y){
     coliArriba = new Rectangulo(0,0,0,0);
     coliDerecha = new Rectangulo(0,0,0,0);
     coliIzquierda = new Rectangulo(0,0,0,0);
+
+    monedas = 0;
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
@@ -84,14 +111,20 @@ void Player::update(float deltaTime , Mundo * mundo){
     
 
   
-    float sadX = body->getPosicion()[0];
-    float sadY = body->getPosicion()[1];
+    // float sadX = body->getPosicion()[0];
+    // float sadY = body->getPosicion()[1];
       
     body->moverse(0,jumpSpeed*deltaTime);
     //cout<<sadX<<"----"<<sadY<<endl;
 }
 
+void Player::sumarMonedas(){
+  monedas++;
+}
 
+void Player::cogerLlave(int i){
+  llaves.push_back(i);
+}
 
 bool Player::setVidas(int v){
   bool devolver = false; 
@@ -263,5 +296,5 @@ bool Player::GolpeMelee(){
     melee.width = gbb.width/2 -200;
     melee.height = gbb.height -25;
 */
-
+  return false;
 }
