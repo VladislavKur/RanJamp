@@ -116,7 +116,7 @@ void Motor::setOrigin2(sf::Sprite &entrada, int ancho , int largo){
 }
 void Motor::recorte(sf::Sprite &entrada,  int xi,int yi, int lengthX, int lengthY){
 
-    entrada.setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+    entrada.setTextureRect(sf::IntRect(xi*lengthX,yi*lengthY,lengthX,lengthY));
 
 }
 
