@@ -26,8 +26,6 @@ void Centinela::update(Player* player, float deltaTime){
     float local_diffX = posJugador - body->getPosicion()[0];
     float local_diffabs = abs(local_diffX);
 
-    bool previous_direccion = direccion;
-
     bool cambio; //no nos cambiamos de modo por defecto
      do{
         cambio = false;//no nos cambiamos de modo por defecto
@@ -102,11 +100,6 @@ void Centinela::update(Player* player, float deltaTime){
 
         }
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
-
-    if(previous_direccion != direccion)
-        body->Scalar(-0.5,0.5);
-
-    body->update(deltaTime);
 
 };
 

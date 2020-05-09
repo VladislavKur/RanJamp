@@ -76,8 +76,23 @@
 },
 {
   "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Motor/Timer.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Motor/Timer.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Motor/Timer.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
   "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp",
   "file": "/home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Manejador.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Juego/Manejador.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Juego/Estado.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Estado.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Juego/Estado.cpp"
 },
 {
   "directory": "/home/antonio/Documents/movidas/RanJamp/build",
@@ -93,6 +108,26 @@
   "directory": "/home/antonio/Documents/movidas/RanJamp/build",
   "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu.cpp",
   "file": "/home/antonio/Documents/movidas/RanJamp/Menu/menu.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.cpp"
+},
+{
+  "directory": "/home/antonio/Documents/movidas/RanJamp/build",
+  "command": "/usr/bin/g++-5    -I/home/antonio/Documents/movidas/RanJamp/Player -I/home/antonio/Documents/movidas/RanJamp/Bullet -I/home/antonio/Documents/movidas/RanJamp/Animacion -I/home/antonio/Documents/movidas/RanJamp/Enemigos -I/home/antonio/Documents/movidas/RanJamp/Mundo -I/home/antonio/Documents/movidas/RanJamp/Motor -I/home/antonio/Documents/movidas/RanJamp/Juego -I/home/antonio/Documents/movidas/RanJamp/Objeto -I/home/antonio/Documents/movidas/RanJamp/Texto -I/home/antonio/Documents/movidas/RanJamp/Menu -I/home/antonio/Documents/movidas/RanJamp/Hud -I/home/antonio/Documents/movidas/RanJamp/Musica -I/home/antonio/Documents/movidas/RanJamp/Bloque -I/home/antonio/Documents/movidas/RanJamp/Textura -I/home/antonio/Documents/movidas/RanJamp/Cuerpo -I/home/antonio/Documents/movidas/RanJamp/Rectangulo   -std=c++1y -Wall -Wextra -g   -o CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.cpp",
+  "file": "/home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.cpp"
 },
 {
   "directory": "/home/antonio/Documents/movidas/RanJamp/build",

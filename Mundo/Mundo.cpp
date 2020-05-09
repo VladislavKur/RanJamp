@@ -112,24 +112,29 @@ void Mundo::cargarmapa(const char * f){
 void Mundo::crearSprites(){
 
   for(int l=0; l<_numLayers; l++){
-    cout << "layers sprites: " << l << endl;
+    // cout << "layers sprites: " << l << endl;
     for(int y=0; y<_height; y++){
+     
       for(int x=0; x<_width; x++){
-          cout<<"X: " << x << "Y: " << y<<endl;
+        // cout<<"X: " << x << "Y: " << y<<endl;
       int imagen = 0;
       bool pintada = false;
         for(int k = 0; k< _numTilesets && !pintada; k++){
           int gid = _tilemap[l][y][x];
+          
           if(imagen != 0){
+             
             gid = gid - cambio[k-1];
           }
           if(gid <=  cambio[k]){
+           
             if(gid > cambio[k]){
               cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
               << y << ") :" << gid << " fuera del rango del tileset (" 
               << _width*_height << ")" << endl;
             }else if(gid > 0){
               _tilemapSprite[l][y][x] = new Bloque(_tilesetTexture[k]);
+              
               int Tcolumnas = _imgwidth[k] / _tileWidth; 
               int fila = (gid / Tcolumnas);
               int columna = (gid % Tcolumnas);
@@ -145,6 +150,7 @@ void Mundo::crearSprites(){
               _tilemapSprite[l][y][x]->setTextureRect(columna*32, fila*32, 32, 32);
               _tilemapSprite[l][y][x]->setPosition(x*_tileWidth, y*_tileHeight);
               pintada = true;
+               
             }else{
               _tilemapSprite[l][y][x] = NULL;
             }
@@ -162,6 +168,29 @@ void Mundo::crearSprites(){
  Cuerpo ** Mundo::getObjetos(){
    return objetos;
  }
+
+Cuerpo ** Mundo::getObstaculos(){
+   return objetos2;
+}
+
+Cuerpo ** Mundo::getMonedasLlaves(){
+   return objetos3;
+}
+
+void Mundo::EliminarMonedasLLaves(Cuerpo * c){// hay que borrarlo y redimensionar el array
+ 
+  for (int i = 0; i < _numObjects3; i++){
+    if(objetos3[i] == c){
+      for(int j = i; j < _numObjects3; j++){
+        objetos3[j] = objetos3[j+1];        
+      }
+      //delete objects3[_numObjects3-1];
+      objetos3[_numObjects3-1] = NULL;
+      _numObjects3--;
+    }
+  }
+
+}
 
 void Mundo::crearObjetos(){
 
@@ -195,8 +224,85 @@ void Mundo::crearObjetos(){
         if(objetos[i] != nullptr ){
          cout<< "TENGOO ALGO" <<endl;
         }
-        //objetos[i]->setPosition(_x,_y);
-        //objetos[i]->setFillColor(Color(255, 0 , 0));
+    }
+}
+ 
+
+
+void Mundo::crearObstaculos(){
+    TiXmlElement * object = objectgroups[6]->FirstChildElement("object");
+    _numObjects2 = 0;
+    while(object){
+        object = object->NextSiblingElement("object");
+        _numObjects2++;
+    }
+    cout<< "numObjects " << _numObjects2 << endl;
+    objects2 = new TiXmlElement * [_numObjects2 ];
+    objetos2 = new Cuerpo * [_numObjects2 ];
+    
+    object = objectgroups[6]->FirstChildElement("object");
+    
+    int num = 0; 
+    while(object){
+        objects2[num] = object;
+        object = object->NextSiblingElement("object");
+        num++;
+    }
+    cout<< "num" << num <<endl; 
+    
+    for(int i=0; i < _numObjects2; i++){
+        objects2[i]->QueryIntAttribute("width", &_widthObject2);
+        objects2[i]->QueryIntAttribute("height", &_heightObject2);
+        objects2[i]->QueryIntAttribute("type", &_tipo2);
+        objects2[i]->QueryIntAttribute("x", &_x2);
+        objects2[i]->QueryIntAttribute("y", &_y2);
+        objetos2[i] = new Cuerpo(_x2,_y2, _widthObject2,_heightObject2, _tipo2);//PASAR POR PARAMETRO EL TIPO AL CUERPO
+        if(objetos2[i] != nullptr ){
+         cout<< "TENGOO ALGO" <<endl;
+        }
+    }
+}
+
+void Mundo::crearMonedasLlaves(){
+    TiXmlElement * object = objectgroups[7]->FirstChildElement("object");
+    _numObjects3 = 0;
+    while(object){
+        object = object->NextSiblingElement("object");
+        _numObjects3++;
+    }
+    cout<< "numObjects " << _numObjects3 << endl;
+    objects3 = new TiXmlElement * [_numObjects3 ];
+    objetos3 = new Cuerpo * [_numObjects3 ];
+    
+    object = objectgroups[7]->FirstChildElement("object");
+    
+    int num = 0; 
+    while(object){
+        objects3[num] = object;
+        object = object->NextSiblingElement("object");
+        num++;
+    }
+    cout<< "num" << num <<endl; 
+    
+    for(int i=0; i < _numObjects3; i++){
+        objects3[i]->QueryIntAttribute("width", &_widthObject3);
+        objects3[i]->QueryIntAttribute("height", &_heightObject3);
+        objects3[i]->QueryIntAttribute("type", &_tipo3);
+        objects3[i]->QueryIntAttribute("x", &_x3);
+        objects3[i]->QueryIntAttribute("y", &_y3);
+        if(_tipo3 == 0){
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Moneda.png" , 0.2,1 , _tipo3);//PASAR POR PARAMETRO EL TIPO AL CUERPO
+          objetos3[i]->addAnimacion(0.1);
+        }else if(_tipo3 > 0 && _tipo3 <= 4){
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Llave.png" , 0.5, 0, _tipo3);
+          objetos3[i]->addAnimacion(0.1);
+        }else if(_tipo3 > 4 && _tipo3 <= 8){
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"madera.png" , 0.5, 0, _tipo3);
+          objetos3[i]->addAnimacion(0.1);
+        }
+        if(objetos3[i] != nullptr ){
+         cout<< "TENGOO ALGO" <<endl;
+        }
     }
 }
 
@@ -282,8 +388,7 @@ vector<float> Mundo::cargarPosicionPlayer_Puerta(int i){
 
 void Mundo::render(){
 
-  Motor * motor = Motor::instance();
-  for(int l=0; l<_numLayers; l++){
+  for(int l=0; l<_numLayers-1; l++){
     for(int y=0; y<_height; y++){
       for(int x=0; x<_width; x++){
       int imagen = 0;
@@ -313,13 +418,52 @@ void Mundo::render(){
   }
 }
 
+void Mundo::render2(){
+
+  for(int l=_numLayers-1; l<_numLayers; l++){
+    for(int y=0; y<_height; y++){
+      for(int x=0; x<_width; x++){
+      int imagen = 0;
+      bool pintada = false;
+        for(int k = 0; k< _numTilesets && !pintada; k++){
+          int gid = _tilemap[l][y][x];
+          if(imagen != 0){
+            gid = gid - cambio[k-1];
+          }
+          if(gid <=  cambio[k]){
+            if(gid > cambio[k]){
+              cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
+              << y << ") :" << gid << " fuera del rango del tileset (" 
+              << _width*_height << ")" << endl;
+            }else if(gid > 0){
+              _tilemapSprite[l][y][x]->render(); 
+              pintada = true;
+            }else{
+              _tilemapSprite[l][y][x] = NULL;
+            }
+          }else{
+            imagen++;
+          }
+        }
+      }
+    }
+  }
+}
 
 int Mundo::getNumObjetos(){
   return _numObjects;
 }
 
+int Mundo::getNumObstaculos(){
+  return _numObjects2;
+}
 
-Mundo::~Mundo(){ //WIP preguntar fidel
+int Mundo::getNumMonedasLlaves(){
+  return _numObjects3;
+}
+
+
+Mundo::~Mundo(){ 
     //liberar memoria
     for(int i = 0; i < _numLayers; i++)
     {
@@ -334,6 +478,8 @@ Mundo::~Mundo(){ //WIP preguntar fidel
     delete[] _tilesetTexture;
     
     delete[] objetos;
+    delete[] objetos2;
+    delete[] objetos3;
 
     for(int i = 0; i < _numLayers; i++)
     {

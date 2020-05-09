@@ -40,7 +40,24 @@ class Mundo{
 
         //Renderiza todos los sprites
         void render();
+        
 
+        void render2();
+
+        void crearObstaculos();
+
+        void crearMonedasLlaves();
+
+        Cuerpo ** getObstaculos();
+
+        Cuerpo ** getMonedasLlaves();
+
+        int getNumObstaculos();
+        
+        int getNumMonedasLlaves();
+        
+        
+        void EliminarMonedasLLaves(Cuerpo * c);
         //Devuelve un puntero a los rectangleShapes de los objetos del mapa
         Cuerpo ** getObjetos();
 
@@ -53,7 +70,6 @@ class Mundo{
     private:
         TiXmlDocument doc;
         TiXmlElement * map;
-        VertexArray m_vertices;
         int _activeLayer;
         int _width;
         int _height;
@@ -80,6 +96,29 @@ class Mundo{
         int _numObjects = 0;
         Cuerpo ** objetos;
         TiXmlElement ** objects;
+
+        //obstaculos
+        int _widthObject2;
+        int _heightObject2;
+        int _tipo2;
+        int _x2;
+        int _y2;
+        int _numObjects2 = 0;
+        Cuerpo ** objetos2;
+        TiXmlElement ** objects2;
+       
+        // monedas o  llaves 
+        int _widthObject3;
+        int _heightObject3;
+        int _tipo3;
+        int _x3;
+        int _y3;
+        int _numObjects3 = 0;
+        Cuerpo ** objetos3;
+        TiXmlElement ** objects3;
+       
+
+
 
         //enemigos
         int _posX; 

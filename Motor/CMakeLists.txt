@@ -1,5 +1,6 @@
 target_sources(libClases PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Motor.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Timer.cpp"
 )
 
 #Y donde se encuentran los .h

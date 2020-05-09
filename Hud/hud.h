@@ -3,16 +3,16 @@
 #include <iostream>
 
 #include "../Motor/Motor.h"
-
+#include "../Cuerpo/Cuerpo.h"
 using namespace sf;
 using namespace std; 
 
 class hud{
     public: 
         static hud* instance(); 
-
+        ~hud();
         // SE ACTUALIZAN LOS VALORES DEL HUD
-        void setMarcador(int posX , int posY , int vidasPengo);
+        void setMarcador(int posX , int posY , int vidasPengo,int monedas, vector<int> llaves);
        
         //CAMBIA LOS VALORES Y POSICION DEL ARRAY DE TEXTO 
         void cambiarTexto(const Font &font , int i, Color c, string s , Vector2f v, int posx , int posy);
@@ -28,7 +28,7 @@ class hud{
         
     private:
         static hud* p_instancia; 
-        RectangleShape * r;
+        //RectangleShape * r;
         Font * font; 
         Text * texto;
         Sprite * sVidas;
@@ -39,7 +39,15 @@ class hud{
         Texture * tVelocidad; 
         Sprite * sArma; 
         Texture * tArma; 
-        
+        Texture * tMonedas;
+        Sprite * sMonedas;
+        Texture * tLlaves;
+        Sprite * sLlaves;
+        Texture * tTiempo;
+        Sprite * sTiempo;
+        Texture * tPuntos;
+        Sprite * sPuntos;
+        Cuerpo ** sprites;
         Clock clockGlobal;
 
         int puntos = 500; 

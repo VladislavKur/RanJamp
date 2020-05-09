@@ -105,9 +105,16 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
  /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
 CMakeFiles/libClases.dir/Hud/hud.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
+ /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
  /home/antonio/Documents/movidas/RanJamp/Hud/hud.cpp
  /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
  /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+ /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
+CMakeFiles/libClases.dir/Juego/Estado.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.cpp
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
  /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h
@@ -121,8 +128,15 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
  /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBullet.h
  /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
  /home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp
  /home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.h
  /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
  /home/antonio/Documents/movidas/RanJamp/Mundo/Mundo.h
  /home/antonio/Documents/movidas/RanJamp/Mundo/tinystr.h
@@ -133,13 +147,165 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
  /home/antonio/Documents/movidas/RanJamp/Texto/texto.h
  /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.cpp
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
 CMakeFiles/libClases.dir/Menu/menu.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
+ /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h
+ /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
+ /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/nube.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBullet.h
+ /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
  /home/antonio/Documents/movidas/RanJamp/Menu/menu.cpp
  /home/antonio/Documents/movidas/RanJamp/Menu/menu.h
  /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/Mundo.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinystr.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinyxml.h
+ /home/antonio/Documents/movidas/RanJamp/Musica/musica.h
+ /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
+ /home/antonio/Documents/movidas/RanJamp/Player/Player.h
+ /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
+ /home/antonio/Documents/movidas/RanJamp/Texto/texto.h
+ /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
+ /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h
+ /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
+ /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/nube.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBullet.h
+ /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.cpp
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.h
+ /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/Mundo.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinystr.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinyxml.h
+ /home/antonio/Documents/movidas/RanJamp/Musica/musica.h
+ /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
+ /home/antonio/Documents/movidas/RanJamp/Player/Player.h
+ /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
+ /home/antonio/Documents/movidas/RanJamp/Texto/texto.h
+ /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
+ /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h
+ /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
+ /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/nube.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBullet.h
+ /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.cpp
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.h
+ /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/Mundo.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinystr.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinyxml.h
+ /home/antonio/Documents/movidas/RanJamp/Musica/musica.h
+ /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
+ /home/antonio/Documents/movidas/RanJamp/Player/Player.h
+ /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
+ /home/antonio/Documents/movidas/RanJamp/Texto/texto.h
+ /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
+ /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h
+ /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
+ /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/nube.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBullet.h
+ /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.cpp
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.h
+ /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/Mundo.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinystr.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinyxml.h
+ /home/antonio/Documents/movidas/RanJamp/Musica/musica.h
+ /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
+ /home/antonio/Documents/movidas/RanJamp/Player/Player.h
+ /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
+ /home/antonio/Documents/movidas/RanJamp/Texto/texto.h
+ /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
+ /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h
+ /home/antonio/Documents/movidas/RanJamp/Bullet/bullet.h
+ /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/centinela.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/enemigo.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/murcielago.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/nube.h
+ /home/antonio/Documents/movidas/RanJamp/Enemigos/pajaro.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBody.h
+ /home/antonio/Documents/movidas/RanJamp/Enumerador/typeBullet.h
+ /home/antonio/Documents/movidas/RanJamp/Hud/hud.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Estado.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Juego.h
+ /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu.h
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.cpp
+ /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.h
+ /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/Mundo.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinystr.h
+ /home/antonio/Documents/movidas/RanJamp/Mundo/tinyxml.h
+ /home/antonio/Documents/movidas/RanJamp/Musica/musica.h
+ /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.h
+ /home/antonio/Documents/movidas/RanJamp/Player/Player.h
+ /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.h
+ /home/antonio/Documents/movidas/RanJamp/Texto/texto.h
+ /home/antonio/Documents/movidas/RanJamp/Textura/Textura.h
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o
  /home/antonio/Documents/movidas/RanJamp/Motor/Motor.cpp
  /home/antonio/Documents/movidas/RanJamp/Motor/Motor.h
+CMakeFiles/libClases.dir/Motor/Timer.cpp.o
+ /home/antonio/Documents/movidas/RanJamp/Motor/Timer.cpp
+ /home/antonio/Documents/movidas/RanJamp/Motor/Timer.h
 CMakeFiles/libClases.dir/Mundo/Mundo.cpp.o
  /home/antonio/Documents/movidas/RanJamp/Animacion/Animacion.h
  /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.h

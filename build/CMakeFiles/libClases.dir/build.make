@@ -393,9 +393,33 @@ CMakeFiles/libClases.dir/Motor/Motor.cpp.o.provides: CMakeFiles/libClases.dir/Mo
 CMakeFiles/libClases.dir/Motor/Motor.cpp.o.provides.build: CMakeFiles/libClases.dir/Motor/Motor.cpp.o
 
 
+CMakeFiles/libClases.dir/Motor/Timer.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Motor/Timer.cpp.o: ../Motor/Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libClases.dir/Motor/Timer.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Motor/Timer.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Motor/Timer.cpp
+
+CMakeFiles/libClases.dir/Motor/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Motor/Timer.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Motor/Timer.cpp > CMakeFiles/libClases.dir/Motor/Timer.cpp.i
+
+CMakeFiles/libClases.dir/Motor/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Motor/Timer.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Motor/Timer.cpp -o CMakeFiles/libClases.dir/Motor/Timer.cpp.s
+
+CMakeFiles/libClases.dir/Motor/Timer.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Motor/Timer.cpp.o.requires
+
+CMakeFiles/libClases.dir/Motor/Timer.cpp.o.provides: CMakeFiles/libClases.dir/Motor/Timer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Motor/Timer.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Motor/Timer.cpp.o.provides
+
+CMakeFiles/libClases.dir/Motor/Timer.cpp.o.provides.build: CMakeFiles/libClases.dir/Motor/Timer.cpp.o
+
+
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o: ../Juego/Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Juego.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Juego.cpp
 
 CMakeFiles/libClases.dir/Juego/Juego.cpp.i: cmake_force
@@ -417,9 +441,57 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o.provides: CMakeFiles/libClases.dir/Ju
 CMakeFiles/libClases.dir/Juego/Juego.cpp.o.provides.build: CMakeFiles/libClases.dir/Juego/Juego.cpp.o
 
 
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.o: ../Juego/Manejador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libClases.dir/Juego/Manejador.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Manejador.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.cpp
+
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Juego/Manejador.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.cpp > CMakeFiles/libClases.dir/Juego/Manejador.cpp.i
+
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Juego/Manejador.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Juego/Manejador.cpp -o CMakeFiles/libClases.dir/Juego/Manejador.cpp.s
+
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.requires
+
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.provides: CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.provides
+
+CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.provides.build: CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
+
+
+CMakeFiles/libClases.dir/Juego/Estado.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Juego/Estado.cpp.o: ../Juego/Estado.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libClases.dir/Juego/Estado.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Juego/Estado.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Juego/Estado.cpp
+
+CMakeFiles/libClases.dir/Juego/Estado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Juego/Estado.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Juego/Estado.cpp > CMakeFiles/libClases.dir/Juego/Estado.cpp.i
+
+CMakeFiles/libClases.dir/Juego/Estado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Juego/Estado.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Juego/Estado.cpp -o CMakeFiles/libClases.dir/Juego/Estado.cpp.s
+
+CMakeFiles/libClases.dir/Juego/Estado.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Juego/Estado.cpp.o.requires
+
+CMakeFiles/libClases.dir/Juego/Estado.cpp.o.provides: CMakeFiles/libClases.dir/Juego/Estado.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Estado.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Juego/Estado.cpp.o.provides
+
+CMakeFiles/libClases.dir/Juego/Estado.cpp.o.provides.build: CMakeFiles/libClases.dir/Juego/Estado.cpp.o
+
+
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o: ../Objeto/Objeto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Objeto/Objeto.cpp
 
 CMakeFiles/libClases.dir/Objeto/Objeto.cpp.i: cmake_force
@@ -443,7 +515,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Texto/texto.cpp.o: ../Texto/texto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libClases.dir/Texto/texto.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Texto/texto.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Texto/texto.cpp
 
 CMakeFiles/libClases.dir/Texto/texto.cpp.i: cmake_force
@@ -467,7 +539,7 @@ CMakeFiles/libClases.dir/Texto/texto.cpp.o.provides.build: CMakeFiles/libClases.
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Menu/menu.cpp.o: ../Menu/menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Menu/menu.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu.cpp
 
 CMakeFiles/libClases.dir/Menu/menu.cpp.i: cmake_force
@@ -489,9 +561,105 @@ CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides: CMakeFiles/libClases.dir/Menu
 CMakeFiles/libClases.dir/Menu/menu.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu.cpp.o
 
 
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o: ../Menu/menu_inicial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.cpp > CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Menu/menu_inicial.cpp -o CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o: ../Menu/menu_controles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.cpp > CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Menu/menu_controles.cpp -o CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o: ../Menu/menu_vol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.cpp > CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Menu/menu_vol.cpp -o CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o: ../Menu/menu_pausa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.cpp > CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documents/movidas/RanJamp/Menu/menu_pausa.cpp -o CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
+
+
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Hud/hud.cpp
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.i: cmake_force
@@ -515,7 +683,7 @@ CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides.build: CMakeFiles/libClases.dir/
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Musica/musica.cpp
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.i: cmake_force
@@ -539,7 +707,7 @@ CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Bloque/Bloque.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Bloque/Bloque.cpp
 
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i: cmake_force
@@ -563,7 +731,7 @@ CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Textura/Textura.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Textura/Textura.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Textura/Textura.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Textura/Textura.cpp
 
 CMakeFiles/libClases.dir/Textura/Textura.cpp.i: cmake_force
@@ -587,7 +755,7 @@ CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides.build: CMakeFiles/libCla
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Cuerpo/Cuerpo.cpp
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i: cmake_force
@@ -611,7 +779,7 @@ CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: ../Rectangulo/Rectangulo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o -c /home/antonio/Documents/movidas/RanJamp/Rectangulo/Rectangulo.cpp
 
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i: cmake_force
@@ -649,10 +817,17 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o" \
 "CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o" \
 "CMakeFiles/libClases.dir/Motor/Motor.cpp.o" \
+"CMakeFiles/libClases.dir/Motor/Timer.cpp.o" \
 "CMakeFiles/libClases.dir/Juego/Juego.cpp.o" \
+"CMakeFiles/libClases.dir/Juego/Manejador.cpp.o" \
+"CMakeFiles/libClases.dir/Juego/Estado.cpp.o" \
 "CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o" \
 "CMakeFiles/libClases.dir/Texto/texto.cpp.o" \
 "CMakeFiles/libClases.dir/Menu/menu.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o" \
 "CMakeFiles/libClases.dir/Hud/hud.cpp.o" \
 "CMakeFiles/libClases.dir/Musica/musica.cpp.o" \
 "CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o" \
@@ -677,10 +852,17 @@ liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Motor/Motor.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Motor/Timer.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Juego/Juego.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Juego/Estado.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Texto/texto.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Hud/hud.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
@@ -689,7 +871,7 @@ liblibClases.a: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/antonio/Documents/movidas/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -712,10 +894,17 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinyxml.cpp.o.
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinyxmlparser.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Mundo/tinyxmlerror.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Motor/Motor.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Motor/Timer.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Juego.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Manejador.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Juego/Estado.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Texto/texto.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires

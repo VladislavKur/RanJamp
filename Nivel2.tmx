@@ -6,6 +6,9 @@
  <tileset firstgid="3501" name="pinchos" tilewidth="32" tileheight="32" tilecount="8">
   <image source="resources/Imagenes/pinchos.png" width="128" height="64"/>
  </tileset>
+ <tileset firstgid="3509" name="portal" tilewidth="32" tileheight="32" tilecount="16">
+  <image source="resources/Imagenes/portal.png" width="128" height="128"/>
+ </tileset>
  <layer name="Capa de Patrones 1" width="70" height="50">
   <data>
    <tile gid="1"/>
@@ -7014,7 +7017,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Capa de patrones 3" width="70" height="50">
+ <layer name="Capa de patrones 3" width="70" height="50" visible="0">
   <data>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10518,7 +10521,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Capa de patrones 2" width="70" height="50">
+ <layer name="Capa de patrones 2" width="70" height="50" visible="0">
   <data>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10796,6 +10799,10 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="3509"/>
+   <tile gid="3510"/>
+   <tile gid="3511"/>
+   <tile gid="3512"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10862,6 +10869,10 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="3513"/>
+   <tile gid="3514"/>
+   <tile gid="3515"/>
+   <tile gid="3516"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10928,6 +10939,10 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="3517"/>
+   <tile gid="3518"/>
+   <tile gid="3519"/>
+   <tile gid="3520"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10994,22 +11009,10 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="3521"/>
+   <tile gid="3522"/>
+   <tile gid="3523"/>
+   <tile gid="3524"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -14034,7 +14037,7 @@
   <object id="25" x="2030" y="232" width="195" height="60"/>
   <object id="27" x="1203" y="752" width="190" height="56"/>
  </objectgroup>
- <objectgroup name="Capa de Enemigos">
+ <objectgroup name="Capa de Enemigos" visible="0">
   <object id="13" type="1" x="1241" y="656" width="65" height="80">
    <ellipse/>
   </object>
@@ -14060,18 +14063,18 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Player">
+ <objectgroup name="Capa de Player" visible="0">
   <object id="21" x="110" y="1225" width="100" height="270">
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de PowerUps">
+ <objectgroup name="Capa de PowerUps" visible="0">
   <object id="22" type="1" x="1318" y="687" width="35" height="40"/>
   <object id="23" type="3" x="1041" y="959" width="50" height="30"/>
   <object id="24" type="2" x="276" y="1440" width="40" height="45"/>
  </objectgroup>
- <objectgroup name="Capa de Puerta">
-  <object id="26" x="2132" y="43" width="60" height="190">
+ <objectgroup name="Capa de Puerta" visible="0">
+  <object id="26" x="2108" y="92" width="128" height="137">
    <ellipse/>
   </object>
  </objectgroup>
