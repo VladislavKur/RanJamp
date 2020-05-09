@@ -6,6 +6,9 @@
 
 #include "../Juego/Manejador.h"
 #include "../Motor/Motor.h"
+#include "../Textura/Textura.h"
+#include "../Bloque/Bloque.h"
+
 using namespace  sf;
 using namespace std;
 
@@ -46,4 +49,6 @@ class menu : public Estado{
         Font font; 
         Text *texto;
         float cooldown_mov;
+        Textura *t; 
+        Bloque * b;
 };

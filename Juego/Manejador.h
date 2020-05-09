@@ -18,7 +18,8 @@ public:
     void cambiarEstado(Estado* p_estado);
     void update(float deltaTime);
     void render(float num);
-
+    Estado * getAnterior();
+    Estado * getEstado();
     void back();
 
     

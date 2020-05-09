@@ -14,7 +14,8 @@ menu_controles* menu_controles::instance(){
 }
 
 menu_controles::menu_controles( Font fuente, int max) : menu(fuente, max){
-
+       t = new Textura("resources/Imagenes/MenuControles.png");
+       b = new Bloque(t);
    
 }
 
@@ -26,7 +27,7 @@ void menu_controles::update(float deltaTime){
     Juego* juego = Juego::instance();
     cambiarTexto(0, "BACK TO MENU", juego->view.getCenter().x-100, juego->view.getCenter().y-25);
 
-
+    b->setPosition(juego->view.getCenter().x , juego->view.getCenter().y);
    
     //menu_volumen* menuVol = menu_volumen::instance();
 

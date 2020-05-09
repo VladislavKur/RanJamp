@@ -31,6 +31,7 @@
             bool cargarSprite(sf::Texture& entrada, std::string fichero);
             bool cargarSprite(sf::Texture& entrada, std::string fichero, bool x);
             void setOrigin(sf::Sprite &entrada, int ancho, int largo);
+            void setOrigin2(sf::Sprite &entrada, int ancho, int largo);
             void recorte(sf::Sprite &entrada, int xi, int yi, int lengthX, int lengthY);
             void recorte(sf::RectangleShape &entrada, int xi, int yi, int lengthX, int lengthY);
             void setTamanyoCuerpo(sf::RectangleShape& cuerpo,sf::Vector2f entrada);

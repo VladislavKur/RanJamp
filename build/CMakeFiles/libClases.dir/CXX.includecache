@@ -175,6 +175,8 @@ Manejador.h
 /home/vermia/RanJamp/Juego/Manejador.h
 ../Menu/menu_inicial.h
 /home/vermia/RanJamp/Menu/menu_inicial.h
+../Menu/menu_pausa.h
+/home/vermia/RanJamp/Menu/menu_pausa.h
 
 /home/vermia/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
@@ -209,8 +211,6 @@ iostream
 /home/vermia/RanJamp/Rectangulo/Rectangulo.h
 Manejador.h
 /home/vermia/RanJamp/Juego/Manejador.h
-../Menu/menu_pausa.h
-/home/vermia/RanJamp/Menu/menu_pausa.h
 
 /home/vermia/RanJamp/Juego/Manejador.cpp
 Manejador.h
@@ -225,6 +225,8 @@ Estado.h
 /home/vermia/RanJamp/Menu/menu.cpp
 menu.h
 /home/vermia/RanJamp/Menu/menu.h
+../Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 
 /home/vermia/RanJamp/Menu/menu.h
 SFML/Graphics.hpp
@@ -235,6 +237,10 @@ iostream
 /home/vermia/RanJamp/Juego/Manejador.h
 ../Motor/Motor.h
 /home/vermia/RanJamp/Motor/Motor.h
+../Textura/Textura.h
+/home/vermia/RanJamp/Textura/Textura.h
+../Bloque/Bloque.h
+/home/vermia/RanJamp/Bloque/Bloque.h
 
 /home/vermia/RanJamp/Menu/menu_controles.cpp
 menu_controles.h
@@ -253,6 +259,8 @@ menu.h
 /home/vermia/RanJamp/Menu/menu_inicial.cpp
 menu_inicial.h
 /home/vermia/RanJamp/Menu/menu_inicial.h
+../Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 
 /home/vermia/RanJamp/Menu/menu_inicial.h
 SFML/Graphics.hpp
@@ -265,12 +273,12 @@ menu_controles.h
 /home/vermia/RanJamp/Menu/menu_controles.h
 menu_vol.h
 /home/vermia/RanJamp/Menu/menu_vol.h
-../Juego/Juego.h
-/home/vermia/RanJamp/Juego/Juego.h
 
 /home/vermia/RanJamp/Menu/menu_pausa.cpp
 menu_pausa.h
 /home/vermia/RanJamp/Menu/menu_pausa.h
+../Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 
 /home/vermia/RanJamp/Menu/menu_pausa.h
 SFML/Graphics.hpp

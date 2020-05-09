@@ -33,3 +33,11 @@ void Manejador::update(float deltaTime){
 void Manejador::back(){
     estado = anterior;
 }
+
+Estado * Manejador::getAnterior(){
+    return anterior;
+}
+
+Estado * Manejador::getEstado(){
+    return estado;
+}

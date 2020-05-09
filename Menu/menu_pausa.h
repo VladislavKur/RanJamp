@@ -7,7 +7,6 @@
 #include "menu_controles.h"
 #include "menu_vol.h"
 #include "menu_inicial.h"
-class Juego;
 class menu_pausa : public menu {
     public:
 

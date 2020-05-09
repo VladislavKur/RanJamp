@@ -16,11 +16,9 @@
 #include "../Rectangulo/Rectangulo.h"
 #include "Manejador.h"
 
-#include "../Menu/menu_pausa.h"
-
 #ifndef JUEGO_H
 #define JUEGO_H
-    class menu_pausa;
+   
     class Juego : public Estado{
 
         private:
@@ -38,6 +36,9 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
+
+            //obstaculos 
+            float timerObstaculos;
         protected:
             Juego();
 
@@ -49,6 +50,7 @@
             void colisionBulletJugador();
             void colisionBulletEnemigo();
             void colisionPlayerMundo(float deltatime);
+            void colisionPlayerObstaculos(float deltaTime);
             void colisionBulletMundo();
             
             void cargarMusica();

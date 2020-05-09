@@ -9,13 +9,16 @@ Bloque::Bloque(Textura * t){
 }
 
 void Bloque::setTextureRect(int x, int y, int ancho, int largo){
-    motor->recorte(*s, x,y ,ancho,largo);
+    motor->recorte(*s, x , y , ancho, largo);
 }
 
 void Bloque::setPosition(float x, float y){
     motor->posicionar(*s, x , y);
 }
 
+void Bloque::setOrigin(float x, float y){
+    motor->setOrigin2(*s, x , y);
+}
 void Bloque::render(){
     motor->dibujo(*s);
 }

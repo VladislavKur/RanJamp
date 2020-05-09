@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "../Juego/Juego.h"
 /*menu* menu::p_instancia=NULL;
 
 menu* menu::instancia(){
@@ -8,7 +9,6 @@ menu* menu::instancia(){
     return p_instancia;
 }*/
 
-//ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
 menu::menu(Font fuente , int max){
     font = fuente;
     texto = new Text[max];
@@ -23,9 +23,14 @@ menu::~menu(){
 
 void menu::render(float num){ 
     Motor * motor = Motor::instance();
+    Juego* juego = Juego::instance();
+    if(b != nullptr){
+        b->render();
+    }
     for(int i = 0; i < numOpciones; i++){
         motor->dibujo(texto[i]);
     }
+    
 }
 
 void menu::moveUp(){

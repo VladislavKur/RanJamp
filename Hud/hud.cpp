@@ -11,7 +11,6 @@ hud * hud::instance(){
 }
 
 hud::hud(int posY, int vidasPlayer, int max){ 
-
     r = new RectangleShape[1];
     tVidas = new Texture[1];
     tDobleSalto = new Texture[1];

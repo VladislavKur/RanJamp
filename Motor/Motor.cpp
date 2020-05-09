@@ -52,7 +52,9 @@ void Motor::dibujo( sf::Text  entrada){
 }
 
 void Motor::dibujo(sf::Sprite entrada){
-    ventana->draw(entrada);
+    if(entrada.getTexture() != nullptr){
+        ventana->draw(entrada);
+    }
 }
 
 bool Motor::cargarSprite(sf::Texture& entrada, std::string fichero){
@@ -105,6 +107,9 @@ void Motor::posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura){
 
 void Motor::setOrigin(sf::Sprite &entrada, int ancho , int largo){
     entrada.setOrigin( ancho/2 , largo/2);
+}
+void Motor::setOrigin2(sf::Sprite &entrada, int ancho , int largo){
+    entrada.setOrigin( ancho , largo);
 }
 void Motor::recorte(sf::Sprite &entrada,  int xi,int yi, int lengthX, int lengthY){
 

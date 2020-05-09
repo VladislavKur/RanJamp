@@ -1,4 +1,5 @@
 #include "menu_pausa.h"
+#include "../Juego/Juego.h"
 
 menu_pausa* menu_pausa::p_instance = 0;
 sf::Font* menu_pausa::fuente = new Font();

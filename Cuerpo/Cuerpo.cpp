@@ -58,6 +58,32 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     animacion=NULL;
 }
 
+Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight, int type){
+     motor = Motor::instance();
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    body = new sf::RectangleShape();
+
+    class_textura=NULL;
+
+    class_width = sizeWidth;
+    class_height = sizeHeight;
+    
+    motor->posicionar(body, x_entrada, y_entrada);
+
+    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
+
+    animacion=NULL;
+
+    class_tipo = type;
+}
+
+int Cuerpo::getTipo(){
+  return class_tipo;
+}
+
 Rectangulo * Cuerpo::getGlobalBounds(){
     
     sf::FloatRect aux = body->getGlobalBounds();
@@ -124,6 +150,8 @@ bool Cuerpo::colisiona(Cuerpo* entrada){
     bool devuelvo = false;
 
     devuelvo = motor->compararColision(body, entrada->body);
+
+    return devuelvo;
 }
 
 void Cuerpo::setSpriteAnimacion(int entrada){

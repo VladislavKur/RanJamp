@@ -4,10 +4,8 @@
 //ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
 
 #include "menu.h"
-//#include "menu_inicial.h"
-
 #include "../Juego/Juego.h"
-class Juego;
+
 class menu_vol : public menu {
     public:
 

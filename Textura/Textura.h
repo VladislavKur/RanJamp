@@ -14,7 +14,6 @@ class Textura{
     public:
         Textura(){};
         Textura(string entrada);
-        //Textura(const char * entrada);
         ~Textura();
         Texture * getTexture();
     protected:
@@ -22,5 +21,6 @@ class Textura{
     private:
         Texture * t;
         Motor * motor;
+     
 };
 #endif

@@ -1,5 +1,5 @@
 #include "menu_inicial.h"
-
+#include "../Juego/Juego.h"
 menu_inicial* menu_inicial::p_instance = 0;
 sf::Font* menu_inicial::fuente = new Font();
 
@@ -14,7 +14,8 @@ menu_inicial* menu_inicial::instance(){
 }
 
 menu_inicial::menu_inicial( Font fuente, int max) : menu(fuente, max){
- 
+    t = new Textura("resources/Imagenes/Menu.png");
+    b = new Bloque(t);
 }
 
 
@@ -31,8 +32,12 @@ void menu_inicial::update(float deltaTime){
     cambiarTexto(1, "CONTROLS", juego->view.getCenter().x, juego->view.getCenter().y-175);
     cambiarTexto(2,  "OPTIONS", juego->view.getCenter().x, juego->view.getCenter().y -100);
     cambiarTexto(3,  "EXIT", juego->view.getCenter().x, juego->view.getCenter().y-25);
-
-
+    if(man->getAnterior() == man->getEstado()){    
+        b->setPosition(0,0);
+    }else{
+        b->setOrigin(juego->view.getCenter().x, juego->view.getCenter().y);
+    }
+       b->setTextureRect(0,0,1080,720);
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
         moveUp();
         cooldown_mov = 0.25;

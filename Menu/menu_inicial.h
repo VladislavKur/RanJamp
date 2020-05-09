@@ -6,8 +6,7 @@
 #include "menu.h"
 #include "menu_controles.h"
 #include "menu_vol.h"
-#include "../Juego/Juego.h"
-class Juego;
+
 class menu_inicial : public menu {
     public:
 
