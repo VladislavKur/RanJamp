@@ -159,6 +159,8 @@ iostream
 -
 ../Motor/Motor.h
 /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+../Cuerpo/Cuerpo.h
+/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
 
 /home/magiic/Escritorio/RanJamp/Juego/Estado.cpp
 Estado.h

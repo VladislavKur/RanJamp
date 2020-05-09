@@ -93,6 +93,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
+  //std::cout << jugador->getBody()->getPosicion()[0] << ", " << jugador->getBody()->getPosicion()[1]<< std::endl; 
   pausa();
   vector<int> dimensiones = mundo->cargarPosicionBordes();
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
@@ -130,12 +131,12 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
     colisionPlayerMundo(deltaTime);
-    colisionPlayerObstaculos(deltaTime);
-    colisionBulletMundo();
-    colisionBulletEnemigo();
-    colisionBulletJugador();
-    colisionMeleeEnemigo();
-    std::cout << deltaTime << std::endl;
+    //colisionPlayerObstaculos(deltaTime);
+    //colisionBulletMundo();
+    //colisionBulletEnemigo();
+    //colisionBulletJugador();
+    //colisionMeleeEnemigo();
+   // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
     
     int j = 0;
@@ -177,7 +178,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
 
     j = mundo->getNumMonedasLlaves() - 1 ;
-    cout << j << endl;
+    //cout << j << endl;
     while(mundo->getMonedasLlaves()[j] != nullptr && j >= 0){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
     
       if(mundo->getMonedasLlaves()[j]->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
@@ -189,19 +190,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     break;
                 case 1:
                     jugador->cogerLlave(1);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    break;
-                case 2:
-                    jugador->cogerLlave(2);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    break;
-                case 3:
-                    jugador->cogerLlave(3);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
-                    break;
-                case 4:
-                    jugador->cogerLlave(4);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la llave
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la puerta
                     break;
                 default:
                     cout <<"Default" << endl;
@@ -319,7 +309,8 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setJumpSpeed(0);
 
       }else{
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*5*deltaTime);
+        std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*6*deltaTime);
       }
       if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
         jugador->setJumpSpeed(10);
@@ -334,6 +325,7 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
     bool morir = false;
     timerObstaculos -= deltaTime;
     for(int i=0 ; i<  mundo->getNumObstaculos(); i++){
+      if(objetos[i]!= nullptr)
       if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
         if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){//pierde una vida
           if(jugador->getModoDios() == false){

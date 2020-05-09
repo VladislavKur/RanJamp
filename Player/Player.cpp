@@ -70,10 +70,8 @@ Player::Player(int x, int y){
     monedas = 0;
 }
 
-void Player::update(float time , Mundo * mundo){
-    float deltaTime = time;
-    if(deltaTime > 0.03) deltaTime = 0.03;
-    if(deltaTime < 0.01) deltaTime = 0.01;
+void Player::update(float deltaTime , Mundo * mundo){
+    
     updateHitbox(); //arreglar lo de update hitbox
     GolpeMelee(deltaTime);
 
@@ -100,16 +98,19 @@ void Player::update(float time , Mundo * mundo){
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
         if(auxSaltos==true && saltos > 0){
             saltar();
+           
             cooldownSalto=15*deltaTime;
           }
       }
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
+          
           facing = true;
       }
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
           moveLeft(deltaTime, mundo);
+         
           facing = false;
       }
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl)){ //lo mismo que lo anterior WIP fachada
@@ -121,11 +122,8 @@ void Player::update(float time , Mundo * mundo){
     //cout<<atacando_melee<<endl;
 
   
-    // float sadX = body->getPosicion()[0];
-    // float sadY = body->getPosicion()[1];
-      
+    
     body->moverse(0,jumpSpeed*deltaTime);
-    //cout<<sadX<<"----"<<sadY<<endl;
 }
 
 void Player::sumarMonedas(){
@@ -153,38 +151,47 @@ void Player::render(float porcentaje){
   body->render(porcentaje);
 }
 
-void Player::moveRight(float time , Mundo * mundo){
-  float deltaTime = time;
-    if(deltaTime > 0.03) deltaTime = 0.03;
-    if(deltaTime < 0.01) deltaTime = 0.01;
+void Player::moveRight(float deltaTime , Mundo * mundo){
+  
   bool puede = true;
   Cuerpo ** objetos = mundo->getObjetos();
-
+  Cuerpo ** puertas = mundo->getMonedasLlaves();
   for( int i=0; i< mundo->getNumObjetos() ; i++){
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }
   }
-
+  for( int i=0; i< mundo->getNumMonedasLlaves() ; i++){
+    if(puertas[i]->getTipo() == 2){
+      if(puertas[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
+        puede=false;
+      }
+    }
+  }
   if(puede){
     body->Scalar(1.0f,1.0f);
-    //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     body->moverse(velocidad*deltaTime,0);
+
   
   }
 }
 
-void Player::moveLeft(float time , Mundo * mundo){
-  float deltaTime = time;
-    if(deltaTime > 0.03) deltaTime = 0.03;
-    if(deltaTime < 0.01) deltaTime = 0.01;
+void Player::moveLeft(float deltaTime , Mundo * mundo){
+  
   bool puede=true;
   Cuerpo ** objetos = mundo->getObjetos();
-
+  Cuerpo ** puertas = mundo->getMonedasLlaves();
   for(unsigned int i=0; i< (unsigned)mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliIzquierda)){
         puede=false;
+    }
+  }
+  for( int i=0; i< mundo->getNumMonedasLlaves() ; i++){
+    if(puertas[i]->getTipo() == 2){
+      if(puertas[i]->getGlobalBounds()->getIntersect(*coliIzquierda)){
+        puede=false;
+      }
     }
   }
 
@@ -196,9 +203,12 @@ void Player::moveLeft(float time , Mundo * mundo){
   }
 }
 void Player::saltar(){
+  
   if(saltos!=0){
+
         auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
+        
         saltos--;
       }
 }
@@ -301,10 +311,8 @@ void Player::setSize(float sizeX, float sizeY) {
     body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/
 }
 
-bool Player::GolpeMelee(float time){
-  float deltaTime = time;
-    if(deltaTime > 0.03) deltaTime = 0.03;
-    if(deltaTime < 0.01) deltaTime = 0.01;
+bool Player::GolpeMelee(float deltaTime){
+
   
   vector<float> gp = body->getPosicion();
   Rectangulo gbb = *body->getGlobalBounds();

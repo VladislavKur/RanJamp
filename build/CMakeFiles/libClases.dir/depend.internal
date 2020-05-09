@@ -105,9 +105,13 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
  /home/magiic/Escritorio/RanJamp/Textura/Textura.h
 CMakeFiles/libClases.dir/Hud/hud.cpp.o
+ /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+ /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
  /home/magiic/Escritorio/RanJamp/Hud/hud.cpp
  /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+ /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
 CMakeFiles/libClases.dir/Juego/Estado.cpp.o
  /home/magiic/Escritorio/RanJamp/Juego/Estado.cpp
  /home/magiic/Escritorio/RanJamp/Juego/Estado.h

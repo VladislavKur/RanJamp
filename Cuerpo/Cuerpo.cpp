@@ -1,6 +1,6 @@
 #include "Cuerpo.h"
 
-Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
+Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala, typeBody tipoCuerpo){
 
     motor = Motor::instance();
@@ -37,6 +37,7 @@ Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
     animacion=NULL;
     rectangulo=NULL;
 
+    rectangulo = NULL;
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight){
@@ -55,7 +56,7 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->posicionar(body, x_entrada, y_entrada);
 
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
-
+    rectangulo = NULL;
     animacion=NULL;
     rectangulo=NULL;
 }
@@ -78,7 +79,7 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
 
     animacion=NULL;
-
+    rectangulo = NULL;
     class_tipo = type;
 }
 
@@ -119,7 +120,7 @@ Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
     motor->setScale(body, escala, escala);
     
     animacion=NULL;
-    
+    rectangulo = NULL;
     class_tipo = type;
 }
 
@@ -182,6 +183,10 @@ vector<int> Cuerpo::texturizar(std::string entrada, int sizeWidth, int sizeHeigh
     motor->recorte(body, 0, 0, sizeWidth, sizeHeight);
 
     return devuelvo;
+}
+
+void Cuerpo::recorte(int x , int y ){
+    motor->recorte(body, x, y, class_width, class_height);
 }
 
 void Cuerpo::addAnimacion(float timeAnimacion){
@@ -255,6 +260,11 @@ void Cuerpo::render(float porcentaje){
         class_previousX + (class_positionX-class_previousX)*porcentaje,
         class_previousY + (class_positionY-class_previousY)*porcentaje);
 
+        motor->dibujo(body);
+    }
+}
+void Cuerpo::render(){
+    if(this != NULL){
         motor->dibujo(body);
     }
 }

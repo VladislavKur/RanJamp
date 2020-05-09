@@ -70,7 +70,6 @@ class Mundo{
     private:
         TiXmlDocument doc;
         TiXmlElement * map;
-        VertexArray m_vertices;
         int _activeLayer;
         int _width;
         int _height;
