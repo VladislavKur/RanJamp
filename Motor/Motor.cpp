@@ -6,8 +6,12 @@ Motor::Motor(){
     ventana = new sf::RenderWindow(sf::VideoMode(1080,720),"Totally not Pengo");
     updateClock.restart();
     
+  
 }
 
+Motor::~Motor(){
+    delete ventana;
+}
 
 sf::View Motor::Camara(sf::Vector2f sad){
 
@@ -51,7 +55,9 @@ void Motor::dibujo( sf::Text  entrada){
 }
 
 void Motor::dibujo(sf::Sprite entrada){
-    ventana->draw(entrada);
+    if(entrada.getTexture() != nullptr){
+        ventana->draw(entrada);
+    }
 }
 
 bool Motor::cargarSprite(sf::Texture& entrada, std::string fichero){
@@ -87,27 +93,30 @@ void Motor::posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura){
         casteadoCirc->setOrigin(ancho/2, altura/2);
 }
 
-// bool Motor::cargarSprite(sf::Texture& entrada, const char * fichero){
+ /*bool Motor::cargarSprite(sf::Texture& entrada, const char * fichero){
 
-//     bool devolver = true;
+     bool devolver = true;
 
-//     if(!entrada.loadFromFile(fichero)){
+     if(!entrada.loadFromFile(fichero)){
 
 
-//         devolver = false;
+         devolver = false;
 
-//     }
+    }
 
-//     return(devolver);
+     return(devolver);
 
-// }
+ }*/
 
 void Motor::setOrigin(sf::Sprite &entrada, int ancho , int largo){
     entrada.setOrigin( ancho/2 , largo/2);
 }
+void Motor::setOrigin2(sf::Sprite &entrada, int ancho , int largo){
+    entrada.setOrigin( ancho , largo);
+}
 void Motor::recorte(sf::Sprite &entrada,  int xi,int yi, int lengthX, int lengthY){
 
-    entrada.setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+    entrada.setTextureRect(sf::IntRect(xi*lengthX,yi*lengthY,lengthX,lengthY));
 
 }
 

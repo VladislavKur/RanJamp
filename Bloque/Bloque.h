@@ -15,6 +15,7 @@ class Bloque{
         Bloque(Textura * t);
         ~Bloque();
         void setTextureRect(int x, int y, int ancho, int largo);
+        void setOrigin(float x, float y);
         void setPosition(float x , float y);
         void render();
     private:

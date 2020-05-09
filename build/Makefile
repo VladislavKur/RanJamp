@@ -406,6 +406,33 @@ Hud/hud.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Hud/hud.cpp.s
 .PHONY : Hud/hud.cpp.s
 
+Juego/Estado.o: Juego/Estado.cpp.o
+
+.PHONY : Juego/Estado.o
+
+# target to build an object file
+Juego/Estado.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Estado.cpp.o
+.PHONY : Juego/Estado.cpp.o
+
+Juego/Estado.i: Juego/Estado.cpp.i
+
+.PHONY : Juego/Estado.i
+
+# target to preprocess a source file
+Juego/Estado.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Estado.cpp.i
+.PHONY : Juego/Estado.cpp.i
+
+Juego/Estado.s: Juego/Estado.cpp.s
+
+.PHONY : Juego/Estado.s
+
+# target to generate assembly for a file
+Juego/Estado.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Estado.cpp.s
+.PHONY : Juego/Estado.cpp.s
+
 Juego/Juego.o: Juego/Juego.cpp.o
 
 .PHONY : Juego/Juego.o
@@ -432,6 +459,33 @@ Juego/Juego.s: Juego/Juego.cpp.s
 Juego/Juego.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Juego.cpp.s
 .PHONY : Juego/Juego.cpp.s
+
+Juego/Manejador.o: Juego/Manejador.cpp.o
+
+.PHONY : Juego/Manejador.o
+
+# target to build an object file
+Juego/Manejador.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
+.PHONY : Juego/Manejador.cpp.o
+
+Juego/Manejador.i: Juego/Manejador.cpp.i
+
+.PHONY : Juego/Manejador.i
+
+# target to preprocess a source file
+Juego/Manejador.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.i
+.PHONY : Juego/Manejador.cpp.i
+
+Juego/Manejador.s: Juego/Manejador.cpp.s
+
+.PHONY : Juego/Manejador.s
+
+# target to generate assembly for a file
+Juego/Manejador.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.s
+.PHONY : Juego/Manejador.cpp.s
 
 Menu/menu.o: Menu/menu.cpp.o
 
@@ -460,6 +514,114 @@ Menu/menu.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu.cpp.s
 .PHONY : Menu/menu.cpp.s
 
+Menu/menu_controles.o: Menu/menu_controles.cpp.o
+
+.PHONY : Menu/menu_controles.o
+
+# target to build an object file
+Menu/menu_controles.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
+.PHONY : Menu/menu_controles.cpp.o
+
+Menu/menu_controles.i: Menu/menu_controles.cpp.i
+
+.PHONY : Menu/menu_controles.i
+
+# target to preprocess a source file
+Menu/menu_controles.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.i
+.PHONY : Menu/menu_controles.cpp.i
+
+Menu/menu_controles.s: Menu/menu_controles.cpp.s
+
+.PHONY : Menu/menu_controles.s
+
+# target to generate assembly for a file
+Menu/menu_controles.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_controles.cpp.s
+.PHONY : Menu/menu_controles.cpp.s
+
+Menu/menu_inicial.o: Menu/menu_inicial.cpp.o
+
+.PHONY : Menu/menu_inicial.o
+
+# target to build an object file
+Menu/menu_inicial.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
+.PHONY : Menu/menu_inicial.cpp.o
+
+Menu/menu_inicial.i: Menu/menu_inicial.cpp.i
+
+.PHONY : Menu/menu_inicial.i
+
+# target to preprocess a source file
+Menu/menu_inicial.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.i
+.PHONY : Menu/menu_inicial.cpp.i
+
+Menu/menu_inicial.s: Menu/menu_inicial.cpp.s
+
+.PHONY : Menu/menu_inicial.s
+
+# target to generate assembly for a file
+Menu/menu_inicial.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
+.PHONY : Menu/menu_inicial.cpp.s
+
+Menu/menu_pausa.o: Menu/menu_pausa.cpp.o
+
+.PHONY : Menu/menu_pausa.o
+
+# target to build an object file
+Menu/menu_pausa.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
+.PHONY : Menu/menu_pausa.cpp.o
+
+Menu/menu_pausa.i: Menu/menu_pausa.cpp.i
+
+.PHONY : Menu/menu_pausa.i
+
+# target to preprocess a source file
+Menu/menu_pausa.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.i
+.PHONY : Menu/menu_pausa.cpp.i
+
+Menu/menu_pausa.s: Menu/menu_pausa.cpp.s
+
+.PHONY : Menu/menu_pausa.s
+
+# target to generate assembly for a file
+Menu/menu_pausa.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.s
+.PHONY : Menu/menu_pausa.cpp.s
+
+Menu/menu_vol.o: Menu/menu_vol.cpp.o
+
+.PHONY : Menu/menu_vol.o
+
+# target to build an object file
+Menu/menu_vol.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
+.PHONY : Menu/menu_vol.cpp.o
+
+Menu/menu_vol.i: Menu/menu_vol.cpp.i
+
+.PHONY : Menu/menu_vol.i
+
+# target to preprocess a source file
+Menu/menu_vol.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.i
+.PHONY : Menu/menu_vol.cpp.i
+
+Menu/menu_vol.s: Menu/menu_vol.cpp.s
+
+.PHONY : Menu/menu_vol.s
+
+# target to generate assembly for a file
+Menu/menu_vol.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_vol.cpp.s
+.PHONY : Menu/menu_vol.cpp.s
+
 Motor/Motor.o: Motor/Motor.cpp.o
 
 .PHONY : Motor/Motor.o
@@ -486,6 +648,33 @@ Motor/Motor.s: Motor/Motor.cpp.s
 Motor/Motor.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Motor/Motor.cpp.s
 .PHONY : Motor/Motor.cpp.s
+
+Motor/Timer.o: Motor/Timer.cpp.o
+
+.PHONY : Motor/Timer.o
+
+# target to build an object file
+Motor/Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Motor/Timer.cpp.o
+.PHONY : Motor/Timer.cpp.o
+
+Motor/Timer.i: Motor/Timer.cpp.i
+
+.PHONY : Motor/Timer.i
+
+# target to preprocess a source file
+Motor/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Motor/Timer.cpp.i
+.PHONY : Motor/Timer.cpp.i
+
+Motor/Timer.s: Motor/Timer.cpp.s
+
+.PHONY : Motor/Timer.s
+
+# target to generate assembly for a file
+Motor/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Motor/Timer.cpp.s
+.PHONY : Motor/Timer.cpp.s
 
 Mundo/Mundo.o: Mundo/Mundo.cpp.o
 
@@ -851,15 +1040,36 @@ help:
 	@echo "... Hud/hud.o"
 	@echo "... Hud/hud.i"
 	@echo "... Hud/hud.s"
+	@echo "... Juego/Estado.o"
+	@echo "... Juego/Estado.i"
+	@echo "... Juego/Estado.s"
 	@echo "... Juego/Juego.o"
 	@echo "... Juego/Juego.i"
 	@echo "... Juego/Juego.s"
+	@echo "... Juego/Manejador.o"
+	@echo "... Juego/Manejador.i"
+	@echo "... Juego/Manejador.s"
 	@echo "... Menu/menu.o"
 	@echo "... Menu/menu.i"
 	@echo "... Menu/menu.s"
+	@echo "... Menu/menu_controles.o"
+	@echo "... Menu/menu_controles.i"
+	@echo "... Menu/menu_controles.s"
+	@echo "... Menu/menu_inicial.o"
+	@echo "... Menu/menu_inicial.i"
+	@echo "... Menu/menu_inicial.s"
+	@echo "... Menu/menu_pausa.o"
+	@echo "... Menu/menu_pausa.i"
+	@echo "... Menu/menu_pausa.s"
+	@echo "... Menu/menu_vol.o"
+	@echo "... Menu/menu_vol.i"
+	@echo "... Menu/menu_vol.s"
 	@echo "... Motor/Motor.o"
 	@echo "... Motor/Motor.i"
 	@echo "... Motor/Motor.s"
+	@echo "... Motor/Timer.o"
+	@echo "... Motor/Timer.i"
+	@echo "... Motor/Timer.s"
 	@echo "... Mundo/Mundo.o"
 	@echo "... Mundo/Mundo.i"
 	@echo "... Mundo/Mundo.s"

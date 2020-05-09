@@ -1,9 +1,12 @@
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+
+
 #ifndef MOTOR_H
 #define MOTOR_H
-
+    
     class Motor{
 
         friend class Animacion;
@@ -13,12 +16,14 @@
              bool instanced;
              sf::Clock updateClock;
             static Motor* pinstance;
+         
         
         
         protected:
             Motor();
 
         public:
+            ~Motor();
             static Motor *instance();
             void dibujo(sf::Shape* entrada);
             void dibujo(sf::RectangleShape & cuerpo);
@@ -27,6 +32,7 @@
             bool cargarSprite(sf::Texture& entrada, std::string fichero);
             bool cargarSprite(sf::Texture& entrada, std::string fichero, bool x);
             void setOrigin(sf::Sprite &entrada, int ancho, int largo);
+            void setOrigin2(sf::Sprite &entrada, int ancho, int largo);
             void recorte(sf::Sprite &entrada, int xi, int yi, int lengthX, int lengthY);
             void recorte(sf::RectangleShape &entrada, int xi, int yi, int lengthX, int lengthY);
             void setTamanyoCuerpo(sf::RectangleShape& cuerpo,sf::Vector2f entrada);
@@ -42,6 +48,8 @@
             void posicionarOrigen(sf::Shape* cuerpo, float ancho, float altura);
             void setScale(sf::Shape* cuerpo, float escalaX, float escalaY);
             bool compararColision(sf::Shape* cuerpo1, sf::Shape* cuerpo2);
+
+
             
             //bool crearVentana();
             float getReloj();
@@ -56,6 +64,7 @@
             sf::RenderWindow* getVentana(){return ventana;}
         
             sf::View Camara(sf::Vector2f sad);
+            sf::View getCamara();
 
     };
 

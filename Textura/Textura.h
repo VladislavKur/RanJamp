@@ -2,8 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <SFML/System.hpp>
-
 #include "../Motor/Motor.h"
+
 using namespace sf;
 using namespace std;
 
@@ -14,7 +14,6 @@ class Textura{
     public:
         Textura(){};
         Textura(string entrada);
-        //Textura(const char * entrada);
         ~Textura();
         Texture * getTexture();
     protected:
@@ -22,5 +21,6 @@ class Textura{
     private:
         Texture * t;
         Motor * motor;
+     
 };
 #endif

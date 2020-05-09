@@ -14,11 +14,12 @@
 #include "../Musica/musica.h"
 #include "../Hud/hud.h"
 #include "../Rectangulo/Rectangulo.h"
+#include "Manejador.h"
 
 #ifndef JUEGO_H
 #define JUEGO_H
-
-    class Juego{
+   
+    class Juego : public Estado{
 
         private:
             Player *jugador;
@@ -29,15 +30,17 @@
             Bullet* bulletNube[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
-            //texto * t;
             musica * so;
             int numObjetos;
             Mundo * mundo;
             int nivel;
             string * niveles;
+            int maxniveles;
+            //obstaculos 
+            float timerObstaculos;
         protected:
             Juego();
-
+            ~Juego();
         public:
             static Juego *instance();
             void update(float deltaTime);
@@ -46,7 +49,9 @@
             void colisionBulletJugador();
             void colisionBulletEnemigo();
             void colisionPlayerMundo(float deltatime);
+            void colisionPlayerObstaculos(float deltaTime);
             void colisionBulletMundo();
+            void colisionMeleeEnemigo();
             
             void cargarMusica();
             void crearObjetos();
@@ -59,6 +64,11 @@
             void dispararEnemigo(float deltaTime, float x, float y, bool direccion);
             void colisionEnemigoPlayer(Enemigo* enem, float deltaTime);
             void comprobarPasarNivel();
+
+            void pausa();
+            
+
+            
             sf::View view;
 
             void nextLevel();

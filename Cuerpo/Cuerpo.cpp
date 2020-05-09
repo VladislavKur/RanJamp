@@ -1,6 +1,6 @@
 #include "Cuerpo.h"
 
-Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
+Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala, typeBody tipoCuerpo){
 
     motor = Motor::instance();
@@ -35,7 +35,9 @@ Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
 
     motor->setScale(body, escala, escala);
     animacion=NULL;
+    rectangulo=NULL;
 
+    rectangulo = NULL;
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight){
@@ -54,8 +56,77 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->posicionar(body, x_entrada, y_entrada);
 
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
+    rectangulo = NULL;
+    animacion=NULL;
+    rectangulo=NULL;
+}
+
+Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight, int type){
+     motor = Motor::instance();
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    body = new sf::RectangleShape();
+
+    class_textura=NULL;
+
+    class_width = sizeWidth;
+    class_height = sizeHeight;
+    
+    motor->posicionar(body, x_entrada, y_entrada);
+
+    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
 
     animacion=NULL;
+    rectangulo = NULL;
+    class_tipo = type;
+}
+
+
+Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
+            std::string fichero, float escala, int tipoCuerpo, int type){
+
+    motor = Motor::instance();
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    class_previousX = x_entrada;
+    class_previousY = y_entrada;
+
+    if(tipoCuerpo == 0)
+        body = new sf::RectangleShape();
+    else if(tipoCuerpo == 1)
+        body = new sf::CircleShape();
+    class_textura = new sf::Texture();
+
+    class_escala = escala;
+
+    class_width = sizeWidth;
+    class_height = sizeHeight;
+    
+    class_move = false;
+
+    posicionamiento(x_entrada, y_entrada);
+
+    vector<int> aux = texturizar(fichero, sizeWidth, sizeHeight);
+
+    class_widthTexture = aux[0];
+    class_heightTexture = aux[1];
+
+    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
+
+    motor->setScale(body, escala, escala);
+    
+    animacion=NULL;
+    rectangulo = NULL;
+    class_tipo = type;
+}
+
+
+int Cuerpo::getTipo(){
+  return class_tipo;
 }
 
 Rectangulo * Cuerpo::getGlobalBounds(){
@@ -114,6 +185,10 @@ vector<int> Cuerpo::texturizar(std::string entrada, int sizeWidth, int sizeHeigh
     return devuelvo;
 }
 
+void Cuerpo::recorte(int x , int y ){
+    motor->recorte(body, x, y, class_width, class_height);
+}
+
 void Cuerpo::addAnimacion(float timeAnimacion){
     animacion = new Animacion(body, timeAnimacion, class_width, class_height,
         class_widthTexture, class_heightTexture);
@@ -124,6 +199,8 @@ bool Cuerpo::colisiona(Cuerpo* entrada){
     bool devuelvo = false;
 
     devuelvo = motor->compararColision(body, entrada->body);
+
+    return devuelvo;
 }
 
 void Cuerpo::setSpriteAnimacion(int entrada){
@@ -186,6 +263,11 @@ void Cuerpo::render(float porcentaje){
         motor->dibujo(body);
     }
 }
+void Cuerpo::render(){
+    if(this != NULL){
+        motor->dibujo(body);
+    }
+}
 
 Cuerpo::~Cuerpo(){
     if(animacion!=NULL){
@@ -201,6 +283,10 @@ Cuerpo::~Cuerpo(){
     if(class_textura != NULL){
         delete class_textura; 
         class_textura = NULL;
+    }
+    if(rectangulo != NULL){
+        delete rectangulo;
+        rectangulo = NULL;
     }
 }
 
