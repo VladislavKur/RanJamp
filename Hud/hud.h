@@ -3,7 +3,7 @@
 #include <iostream>
 
 #include "../Motor/Motor.h"
-
+#include "../Cuerpo/Cuerpo.h"
 using namespace sf;
 using namespace std; 
 
@@ -43,11 +43,11 @@ class hud{
         Sprite * sMonedas;
         Texture * tLlaves;
         Sprite * sLlaves;
-        // Texture * tTiempo;
-        // Sprite * sTiempo;
-        // Texture * tPuntos;
-        // Sprite * sPuntos;
-        
+        Texture * tTiempo;
+        Sprite * sTiempo;
+        Texture * tPuntos;
+        Sprite * sPuntos;
+        Cuerpo ** sprites;
         Clock clockGlobal;
 
         int puntos = 500; 

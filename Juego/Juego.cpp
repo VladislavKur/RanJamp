@@ -185,20 +185,25 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     break;
                 case 1:
                     jugador->cogerLlave(1);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la llave
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la puerta
                     break;
                 case 2:
                     jugador->cogerLlave(2);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 case 3:
                     jugador->cogerLlave(3);
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 case 4:
                     jugador->cogerLlave(4);
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
+                
                 default:
                     cout <<"Default" << endl;
                 break;

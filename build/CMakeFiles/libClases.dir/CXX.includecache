@@ -159,6 +159,8 @@ iostream
 -
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+../Cuerpo/Cuerpo.h
+/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
 
 /home/andres/Escritorio/FV JUNTO/Juego/Estado.cpp
 Estado.h

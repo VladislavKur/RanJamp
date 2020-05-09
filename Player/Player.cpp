@@ -108,14 +108,8 @@ void Player::update(float deltaTime , Mundo * mundo){
           facing = false;
       }
     }
-    
-
-  
-    // float sadX = body->getPosicion()[0];
-    // float sadY = body->getPosicion()[1];
       
     body->moverse(0,jumpSpeed*deltaTime);
-    //cout<<sadX<<"----"<<sadY<<endl;
 }
 
 void Player::sumarMonedas(){
@@ -146,16 +140,21 @@ void Player::render(float porcentaje){
 void Player::moveRight(float deltaTime , Mundo * mundo){
   bool puede = true;
   Cuerpo ** objetos = mundo->getObjetos();
-
+  Cuerpo ** puertas = mundo->getMonedasLlaves();
   for( int i=0; i< mundo->getNumObjetos() ; i++){
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
         puede=false;
     }
   }
-
+  for( int i=0; i< mundo->getNumMonedasLlaves() ; i++){
+    if(puertas[i]->getTipo() >= 5){
+      if(puertas[i]->getGlobalBounds()->getIntersect(*coliDerecha)){
+        puede=false;
+      }
+    }
+  }
   if(puede){
     body->Scalar(1.0f,1.0f);
-    //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
     body->moverse(velocidad*deltaTime,0);
   
   }
@@ -164,11 +163,18 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
 void Player::moveLeft(float deltaTime , Mundo * mundo){
   bool puede=true;
   Cuerpo ** objetos = mundo->getObjetos();
-
+  Cuerpo ** puertas = mundo->getMonedasLlaves();
   for(unsigned int i=0; i< (unsigned)mundo->getNumObjetos() ; i++){
   
     if(objetos[i]->getGlobalBounds()->getIntersect(*coliIzquierda)){
         puede=false;
+    }
+  }
+  for( int i=0; i< mundo->getNumMonedasLlaves() ; i++){
+    if(puertas[i]->getTipo() >= 5){
+      if(puertas[i]->getGlobalBounds()->getIntersect(*coliIzquierda)){
+        puede=false;
+      }
     }
   }
 

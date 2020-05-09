@@ -105,9 +105,13 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
  /home/andres/Escritorio/FV JUNTO/Textura/Textura.h
 CMakeFiles/libClases.dir/Hud/hud.cpp.o
+ /home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+ /home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+ /home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
  /home/andres/Escritorio/FV JUNTO/Hud/hud.cpp
  /home/andres/Escritorio/FV JUNTO/Hud/hud.h
  /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+ /home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
 CMakeFiles/libClases.dir/Juego/Estado.cpp.o
  /home/andres/Escritorio/FV JUNTO/Juego/Estado.cpp
  /home/andres/Escritorio/FV JUNTO/Juego/Estado.h

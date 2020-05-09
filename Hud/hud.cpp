@@ -11,63 +11,23 @@ hud * hud::instance(){
 }
 
 hud::hud(int posY, int vidasPlayer, int max){ 
-    tVidas = new Texture[1];
-    tDobleSalto = new Texture[1];
-    tVidas = new Texture[1];
-    tArma = new Texture[1];
-    tVelocidad = new Texture[1];
-    sVidas = new Sprite[1];
-    sDobleSalto = new Sprite[1];
-    sVelocidad = new Sprite[1];
-    sArma = new Sprite[1];
-    tMonedas = new Texture[1];
-    sMonedas = new Sprite[1];
-    tLlaves = new Texture[1];
-    sLlaves = new Sprite[1];
-    // tTiempo = new Texture[1];
-    // sTiempo = new Sprite[1];
-    // tPuntos = new Texture[1];
-    // sPuntos = new Sprite[1];
+    sprites = new Cuerpo *[9];
+    sprites[0] = new Cuerpo(100 , posY - 600,350,250,"madera.png",1, 0,-1);
+    sprites[0]->recorte(25,25);
+    sprites[1] = new Cuerpo(128 , posY - 600,160,32,"vidas.png",1, 0,-1);
+    sprites[1]->recorte(0,5*32);
+    sprites[2] = new Cuerpo(638 , posY - 600,32,32,"saltos.png",1, 0,-1);
+    sprites[3] = new Cuerpo(672, posY - 600,32,32,"velocidad.png",1, 0,-1);
+    sprites[4] = new Cuerpo(704, posY - 600,32,32,"powerup3.png",1, 0,-1);
+    sprites[5] = new Cuerpo(704, posY - 520,100,100,"Moneda.png",1, 0,-1);
+    sprites[5]->Scalar(0.2, 0.2);
+    sprites[6] = new Cuerpo(128 , posY - 600,100,100,"Llave.png",1, 0,-1);
+    sprites[6]->Scalar(0.2, 0.2);
+    sprites[7] = new Cuerpo(128 , posY - 600,100,100,"tiempo.png",1, 0,-1);
+    sprites[7]->Scalar(0.2, 0.2);
+    sprites[8] = new Cuerpo(128 , posY - 600,100,100,"estrella.png",1, 0,-1);
+    sprites[8]->Scalar(0.2, 0.2);
     font = new Font[1];
-
-
-    
-    tVidas->loadFromFile("resources/Imagenes/vidas.png"); 
-    sVidas->setTexture(*tVidas);
-    sVidas->setTextureRect(IntRect(0,5*32,160,32));
-    sVidas->setPosition(128 , posY - 600);
-    tDobleSalto->loadFromFile("resources/Imagenes/saltos.png"); 
-    sDobleSalto->setTexture(*tDobleSalto);
-    sDobleSalto->setTextureRect(IntRect(0,0,32,32));
-    sDobleSalto->setPosition(638 , posY - 600);
-    tVelocidad->loadFromFile("resources/Imagenes/velocidad.png"); 
-    sVelocidad->setTexture(*tVelocidad); 
-    sVelocidad->setTextureRect(IntRect(0,0,32,32));
-    sVelocidad->setPosition(672 , posY - 600);
-    tArma->loadFromFile("resources/Imagenes/powerup3.png");  
-    sArma->setTexture(*tArma);  
-    sArma->setTextureRect(IntRect(0,0,32,32));
-    sArma->setPosition(704, posY - 600);
-    tMonedas->loadFromFile("resources/Imagenes/Moneda.png");
-    sMonedas->setTexture(*tMonedas);
-    sMonedas->setTextureRect(IntRect(0,0,100,100));
-    sMonedas->scale(0.2, 0.2);
-    sMonedas->setPosition(704, posY - 520);
-    tLlaves->loadFromFile("resources/Imagenes/Llave.png");
-    sLlaves->setTexture(*tLlaves);
-    sLlaves->setTextureRect(IntRect(0,0,100,100));
-    sLlaves->scale(0.2, 0.2);
-    sLlaves->setPosition(672, posY - 520);
-    // tTiempo->loadFromFile("resources/Imagenes/tiempo.png");
-    // sTiempo->setTexture(*tMonedas);
-    // sTiempo->setTextureRect(IntRect(0,0,100,100));
-    // sTiempo->scale(0.2, 0.2);
-    // sTiempo->setPosition(704, posY - 520);
-    // tPuntos->loadFromFile("resources/Imagenes/estrella.png");
-    // sPuntos->setTexture(*tLlaves);
-    // sPuntos->setTextureRect(IntRect(0,0,100,100));
-    // sPuntos->scale(0.2, 0.2);
-    // sPuntos->setPosition(672, posY - 520);
 
     texto = new Text[max];
 
@@ -90,89 +50,39 @@ void hud::cambiarTexto(const Font &f , int i, Color c, string s , Vector2f v, in
 }
 
 void hud::setMarcador(int posX , int posY, int vidasPlayer, int monedas, vector<int> llaves){
- // r->setPosition(posX - 512 , posY - 360);
-  sVidas->setTextureRect(IntRect(0, 32 *(vidasPlayer), 160, 32));
-  sVidas->setPosition(posX - 384 , posY - 300);
-  sArma->setPosition(posX + 192, posY - 300);
-  sDobleSalto->setPosition( posX + 126 , posY - 300);
-  sVelocidad->setPosition( posX + 160 , posY - 300);
-
-  texto[0].setPosition( posX - 256 , posY - 340);
+  sprites[0]->posicionamiento(posX - 300 , posY - 400);
+  sprites[1]->posicionamiento(posX - 384 , posY - 300);
+  sprites[1]->recorte(0, 32 *(vidasPlayer));
+  sprites[2]->posicionamiento(posX - 250 , posY - 300);
+  sprites[3]->posicionamiento(posX - 220 , posY - 300);
+  sprites[4]->posicionamiento(posX - 190, posY - 300);
+  sprites[5]->posicionamiento(posX - 200 , posY - 340);
+  sprites[6]->posicionamiento(posX - 150 , posY - 300);
+  sprites[7]->posicionamiento(posX - 450 , posY - 340);
+  sprites[8]->posicionamiento(posX - 340 , posY - 340);
+  puntos += 50;
+  texto[0].setPosition( posX - 300 , posY - 355);
   texto[0].setString(to_string(puntos));
-  texto[1].setPosition( posX + 128, posY - 340);
+  texto[1].setPosition( posX - 400 , posY - 355);
   texto[1].setString(to_string(int(clockGlobal.getElapsedTime().asSeconds())));
-  texto[2].setPosition(posX + 350 , posY - 300);
+  texto[2].setPosition(posX - 150 , posY - 355);
   texto[2].setString(to_string(monedas));
 }
 
 
 void hud::render(){
   Motor * motor = Motor::instance();
-  motor->dibujo(*sVidas);
-  motor->dibujo(*sArma);
-  motor->dibujo(*sDobleSalto);
-  motor->dibujo(*sVelocidad);
-  motor->dibujo(*sMonedas);
-  motor->dibujo(*sLlaves);
-  // motor->dibujo(*sTiempo);
-  // motor->dibujo(*sPuntos);
-  // for(int i = 0; i < 3; i++){
-  //   motor->dibujo(texto[i]);
-  // }
+ 
+  for(int i = 0; i < 9; i++){
+    sprites[i]->render();
+  }
+  for(int i = 0; i < 3; i++){
+    motor->dibujo(texto[i]);
+  }
 }
 
 hud::~hud(){
-  if(sVidas != NULL){
-    delete sVidas;
-    sVidas = NULL;
-  }
-  if(sArma != NULL){
-    delete sArma;
-    sArma = NULL;
-  }
-  if(sDobleSalto != NULL){
-    delete sDobleSalto;
-    sDobleSalto =NULL;
-  }
-  if(sVelocidad != NULL){
-    delete sVelocidad;
-    sVelocidad = NULL;
-  }
-  if(sMonedas != NULL){
-    delete sMonedas;
-    sMonedas = NULL;
-  }
-  if(sLlaves != NULL){
-    delete sLlaves;
-  }
-  // delete sTiempo;
-  // delete sPuntos;
-  if(tLlaves != NULL){
-   delete tLlaves;
-   tLlaves = NULL;
-  }
-  // delete tPuntos;
-  // delete tTiempo;
-  if(tVidas != NULL){
-    delete tVidas;
-    tVidas = NULL;
-  }
-  if(tArma != NULL){
-    delete tArma;
-    tArma = NULL;
-  }
-  if(tDobleSalto != NULL){
-    delete tDobleSalto;
-    tDobleSalto = nullptr;
-  }
-  if(tVelocidad != nullptr){
-    delete tVelocidad;
-    tVelocidad = nullptr;
-  }
-  if(tMonedas != nullptr){
-    delete tMonedas;
-    tMonedas = nullptr;
-  }
+  delete[] sprites;
   delete[] texto;
   if(font != nullptr){
     delete font;
