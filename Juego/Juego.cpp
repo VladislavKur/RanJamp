@@ -104,11 +104,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       disparar(deltaTime);
   }
   
+
   
     
     //el for de abajo, mejor en una función aparte, por claridad y organizacion
     for(unsigned i = 0; i < maxBullets ;i++){
       if(bulletPlayer[i] != NULL){
+        
+
         if(bulletPlayer[i]->lifetime<=0){
           delete bulletPlayer[i];
           bulletPlayer[i]=NULL;
@@ -117,6 +120,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
           bulletPlayer[i]->update(deltaTime);//revisar
       }
       if(bulletEnemies[i] != NULL){
+        if(jugador->getPU_Slowhits()){
+          bulletEnemies[i]->setVelocidad(300);
+        } else bulletEnemies[i]->setVelocidad(600);
         if(bulletEnemies[i]->lifetime<=0){
           delete bulletEnemies[i];
           bulletEnemies[i] = NULL;
@@ -125,6 +131,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
           bulletEnemies[i]->update(deltaTime);//revisar
       }
       if(bulletNube[i] != NULL){
+        if(jugador->getPU_Slowhits()){
+          bulletNube[i]->setVelocidad(300);
+        } else bulletNube[i]->setVelocidad(600);
         if(bulletNube[i]->lifetime<=0){
           delete bulletNube[i];
           bulletNube[i] = NULL;
