@@ -15,7 +15,7 @@ Centinela::Centinela( float x, float y, int type)
     velocidad = 0.3;
     distanciaDisparo = 1000;
     distanciaAtaque = 200;
-
+    vida = 5;
 }
 
 

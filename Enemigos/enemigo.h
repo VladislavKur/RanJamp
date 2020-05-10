@@ -19,7 +19,7 @@ class Enemigo{
         bool muerto;
         Cuerpo* getCuerpo();
         bool comprobarColision(Cuerpo* cuerpo);
-        
+        void restarVida(int i);
     protected:
         Enemigo(float x, float y, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala);
@@ -33,6 +33,7 @@ class Enemigo{
         Rectangulo * coliArriba;
         Rectangulo * coliIzquierda;
         Rectangulo * coliDerecha;
+        int vida;
        
 };
 

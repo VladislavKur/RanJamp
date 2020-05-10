@@ -42,6 +42,8 @@ class hud{
         bool getGodMode(){return godMode;}
         void setGodMode();
         void reiniciarTiempo();
+        void setArma(int pos, int mejora);
+        vector<int> getArma(){return arma;}
     protected: 
         hud(int posPengo, int vidasPengo, int max);
         
@@ -60,4 +62,5 @@ class hud{
         bool slow = false; 
         int i_velocidad = 250;
         bool godMode = false;
+        vector<int> arma;
 };

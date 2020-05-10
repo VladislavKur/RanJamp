@@ -49,3 +49,10 @@ bool Enemigo::comprobarColision(Cuerpo* cuerpo){
 Cuerpo* Enemigo::getCuerpo(){
     return body;
 }
+
+void Enemigo::restarVida(int i){
+    vida -= i;
+    if(vida <= 0){
+        muerto = true;
+    }
+}

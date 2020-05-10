@@ -130,7 +130,7 @@ void Tienda::update(float deltaTime){
     }
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
         cooldown_mov = 0.35;
-        if(selectedItem == 4){
+        if(selectedItem == numOpciones){
             man->back();
         }else{
             if(hud->getMonedero() >= sprites[selectedItem]->getTipo()){
@@ -170,6 +170,38 @@ void Tienda::update(float deltaTime){
                         hud->setMonedero(sprites[selectedItem]->getTipo());
                     }else{
                         cout << "ya tengo velocidad"<<endl;
+                    }
+                    break;
+                case 4://arma1
+                    if(hud->getArma()[0] == 0){
+                        cout << "HE COMPRADO ARMA 1"<<endl;
+                        hud->setArma(0,1);
+                    }else{
+                        cout << "YA TENGO ARMA 1"<<endl;
+                    }
+                    break;
+                case 5://arma2
+                    if(hud->getArma()[1] == 0){
+                        cout << "HE COMPRADO ARMA 2"<<endl;
+                        hud->setArma(1,1);
+                    }else{
+                        cout << "YA TENGO ARMA 2"<<endl;
+                    }
+                    break;
+                case 6://arma2
+                    if(hud->getArma()[1] > 0){
+                        cout << "HE COMPRADO ARMA 2"<<endl;
+                        hud->setArma(0,1);
+                    }else{
+                        cout << "YA TENGO ARMA 2"<<endl;
+                    }
+                    break;
+                case 7://arma2
+                    if(hud->getArma()[1] > 0){
+                        cout << "HE COMPRADO ARMA 2"<<endl;
+                        hud->setArma(0,1);
+                    }else{
+                        cout << "YA TENGO ARMA 2"<<endl;
                     }
                     break;
                 default:

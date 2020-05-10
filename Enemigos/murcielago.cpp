@@ -10,7 +10,7 @@ Murcielago::Murcielago(float x, float y)
     body->Origen(64/2, 64/2);
     
     haPegado = false;
-    
+    vida = 1;
 }
 
 void Murcielago::update(Player* player, float delta){//WIP fachada

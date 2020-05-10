@@ -8,6 +8,7 @@ Nube::Nube(float x, float y)
     velocidad = 50;
 
     shootTime = 0.0f;
+    vida = 3;
 }
 
 void Nube::update(sf::RectangleShape player, float delta){

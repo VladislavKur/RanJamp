@@ -38,10 +38,7 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=50;
-    arma=0;  
-    vidas = 5; 
-    velocidad=250;
+    jumpHeight=50; 
 
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
@@ -50,6 +47,7 @@ Player::Player(int x, int y){
     velocidad = Hud->getIVelocidad();
     vidas = Hud->getVidas();
     godMode = Hud->getGodMode();
+    arma = 0;
 
     auxSaltos = true;
     cooldownSalto = 0;
@@ -295,14 +293,15 @@ void Player::reset(){
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=30;
-    arma=0;  
-    vidas = 5; 
-    velocidad=250;
-
-    PU_saltoDoble=false;
-    PU_slowhits=false;
-    PU_velocidad=false;
-    godMode=false;
+    
+    hud * Hud = hud::instance();
+    PU_saltoDoble= Hud->getDoblesalto();
+    PU_slowhits= Hud->getSlow();
+    PU_velocidad=Hud->getVelocidad();
+    velocidad = Hud->getIVelocidad();
+    vidas = Hud->getVidas();
+    godMode = Hud->getGodMode();
+    arma=0; 
 
     auxSaltos = true;
     cooldownSalto = 0;

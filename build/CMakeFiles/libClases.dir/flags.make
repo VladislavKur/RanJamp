@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/vermia/RanJamp/Player -I/home/vermia/RanJamp/Bullet -I/home/vermia/RanJamp/Animacion -I/home/vermia/RanJamp/Enemigos -I/home/vermia/RanJamp/Mundo -I/home/vermia/RanJamp/Motor -I/home/vermia/RanJamp/Juego -I/home/vermia/RanJamp/Objeto -I/home/vermia/RanJamp/Texto -I/home/vermia/RanJamp/Menu -I/home/vermia/RanJamp/Hud -I/home/vermia/RanJamp/Musica -I/home/vermia/RanJamp/Bloque -I/home/vermia/RanJamp/Textura -I/home/vermia/RanJamp/Cuerpo -I/home/vermia/RanJamp/Rectangulo -I/home/vermia/RanJamp/Tienda 
+CXX_INCLUDES = -I"/home/andres/Escritorio/FV JUNTO/Player" -I"/home/andres/Escritorio/FV JUNTO/Bullet" -I"/home/andres/Escritorio/FV JUNTO/Animacion" -I"/home/andres/Escritorio/FV JUNTO/Enemigos" -I"/home/andres/Escritorio/FV JUNTO/Mundo" -I"/home/andres/Escritorio/FV JUNTO/Motor" -I"/home/andres/Escritorio/FV JUNTO/Juego" -I"/home/andres/Escritorio/FV JUNTO/Objeto" -I"/home/andres/Escritorio/FV JUNTO/Texto" -I"/home/andres/Escritorio/FV JUNTO/Menu" -I"/home/andres/Escritorio/FV JUNTO/Hud" -I"/home/andres/Escritorio/FV JUNTO/Musica" -I"/home/andres/Escritorio/FV JUNTO/Bloque" -I"/home/andres/Escritorio/FV JUNTO/Textura" -I"/home/andres/Escritorio/FV JUNTO/Cuerpo" -I"/home/andres/Escritorio/FV JUNTO/Rectangulo" -I"/home/andres/Escritorio/FV JUNTO/Tienda" 
 

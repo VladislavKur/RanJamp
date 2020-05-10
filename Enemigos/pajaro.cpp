@@ -10,7 +10,7 @@ Pajaro::Pajaro(float x, float y)
     haPegado = false;
 
     velocidad = 50;
-
+    vida = 2;
 //    updateHitbox();
     
 };

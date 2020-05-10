@@ -37,6 +37,9 @@ hud::hud(int posY, int vidasPlayer, int max){
     cambiarTexto(*font , 0 , Color::Blue , "0" , Vector2f(0.8, 0.8), 256 , posY - 640);
     cambiarTexto(*font , 1 , Color::Blue , to_string(clockGlobal.getElapsedTime().asSeconds()) , Vector2f(0.8, 0.8), 640 , posY - 640);
     cambiarTexto(*font , 2 , Color::Blue , "0" , Vector2f(0.8, 0.8), 512 , posY - 600);
+
+    arma.push_back(0);//arma 1 
+    arma.push_back(0);// arma 2
 }
 
 void hud::cambiarTexto(const Font &f , int i, Color c, string s , Vector2f v, int posx , int posy){
@@ -113,4 +116,8 @@ void hud::setGodMode(){
 
 void hud::reiniciarTiempo(){
   clockGlobal.restart();
+}
+
+void hud::setArma(int pos, int mejora){
+  arma[pos] += mejora;
 }

@@ -151,11 +151,15 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionMeleeEnemigo();
    // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
-    if(Keyboard::isKeyPressed(Keyboard::Q)){
-      jugador->setArma(1);
+    if(Keyboard::isKeyPressed(Keyboard::Num1)){
+      if(Hud->getArma()[0] > 0){
+        jugador->setArma(1);
+      }
     }
-    if(Keyboard::isKeyPressed(Keyboard::W)){
-      jugador->setArma(2);
+    if(Keyboard::isKeyPressed(Keyboard::Num2)){
+      if(Hud->getArma()[1] > 0){
+        jugador->setArma(2);
+      }
     }
     
     int j = 0;
@@ -173,7 +177,10 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     destruirObjetos(objetos[j]);
                     break;
                 case 1:
-                    jugador->setArma(1);
+                     jugador->setArma(1);
+                     if(Hud->getArma()[0] == 0){
+                      Hud->setArma(0,1);
+                     }
                      destruirObjetos(objetos[j]);
                     break;
 
@@ -380,8 +387,12 @@ void Juego::colisionMeleeEnemigo(){
         if(enemies[i]==NULL) continue;
         if(enemies[i]->getCuerpo()==NULL) continue;
         if( enemies[i]->getCuerpo()->getGlobalBounds()->getIntersect(melee) ){
+          enemies[i]->restarVida(1);
+          
+          if(enemies[i]->muerto == true){
             matarEnemigo(enemies[i]);
             Hud->sumarPuntos(50);
+          }
         }
       }
     }
@@ -554,15 +565,15 @@ void Juego::matarJugador(){ //está nice
 
 
 void Juego::disparar(float deltaTime){ 
-  
+  hud * Hud = hud::instance();
   for(int i=0 ; i<maxBullets ; i++){
     if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 ){
-      if(jugador->getArma()==1){
+      if(jugador->getArma() == 1){
           bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
           jugador->setCooldownDisparo(1);
           break;
       }
-      if(jugador->getArma()==2){
+      if(jugador->getArma() == 2){
           bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
           jugador->setCooldownDisparo(0.2);
           break;
@@ -638,15 +649,22 @@ void Juego::colisionBulletEnemigo(){
       if(enemies[j]==NULL)      continue;
 
       if(enemies[j]->getCuerpo()->getGlobalBounds()->getIntersect( *bulletPlayer[i]->getHitbox() )){
+        delete bulletPlayer[i];
+        bulletPlayer[i]=NULL;
+        
+        if(jugador->getArma()-1 >= 0){
+          enemies[j]->restarVida(Hud->getArma()[jugador->getArma()-1]);
+        }
+        
+        if(enemies[j]->muerto == true){
           for (int index = j; index < numEmenigos; index++){
             enemies[index] = enemies[index+1];
           }
           enemies[numEmenigos] = NULL;
           numEmenigos--;
-          
-          delete bulletPlayer[i];
-          bulletPlayer[i]=NULL;
           Hud->sumarPuntos(50);
+        }
+
       }
     }
   }
@@ -707,7 +725,7 @@ void Juego::nextLevel(){
 void Juego::inicializarNiveles(){
   maxniveles = 6;
   niveles = new string[maxniveles];
-  niveles[0] = "Mundo3-4.tmx";
+  niveles[0] = "Mundo1-1.tmx";
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
