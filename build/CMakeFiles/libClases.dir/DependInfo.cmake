@@ -20,6 +20,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/magiic/Escritorio/RanJamp/Menu/menu.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Menu/menu_controles.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Menu/menu_inicial.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o"
+  "/home/magiic/Escritorio/RanJamp/Menu/menu_mundos.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o"
+  "/home/magiic/Escritorio/RanJamp/Menu/menu_nivel.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Menu/menu_pausa.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Menu/menu_vol.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Motor/Motor.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"

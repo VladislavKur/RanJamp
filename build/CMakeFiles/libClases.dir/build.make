@@ -657,9 +657,57 @@ CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides: CMakeFiles/libClases.di
 CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
 
 
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o: ../Menu/menu_mundos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o -c /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.cpp > CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.cpp -o CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
+
+
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o: ../Menu/menu_nivel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o -c /home/magiic/Escritorio/RanJamp/Menu/menu_nivel.cpp
+
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/magiic/Escritorio/RanJamp/Menu/menu_nivel.cpp > CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.i
+
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/magiic/Escritorio/RanJamp/Menu/menu_nivel.cpp -o CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.s
+
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.requires
+
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.provides: CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.provides
+
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.provides.build: CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
+
+
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Hud/hud.cpp.o: ../Hud/hud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libClases.dir/Hud/hud.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Hud/hud.cpp.o -c /home/magiic/Escritorio/RanJamp/Hud/hud.cpp
 
 CMakeFiles/libClases.dir/Hud/hud.cpp.i: cmake_force
@@ -683,7 +731,7 @@ CMakeFiles/libClases.dir/Hud/hud.cpp.o.provides.build: CMakeFiles/libClases.dir/
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Musica/musica.cpp.o: ../Musica/musica.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libClases.dir/Musica/musica.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Musica/musica.cpp.o -c /home/magiic/Escritorio/RanJamp/Musica/musica.cpp
 
 CMakeFiles/libClases.dir/Musica/musica.cpp.i: cmake_force
@@ -707,7 +755,7 @@ CMakeFiles/libClases.dir/Musica/musica.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o: ../Bloque/Bloque.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o -c /home/magiic/Escritorio/RanJamp/Bloque/Bloque.cpp
 
 CMakeFiles/libClases.dir/Bloque/Bloque.cpp.i: cmake_force
@@ -731,7 +779,7 @@ CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Textura/Textura.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Textura/Textura.cpp.o: ../Textura/Textura.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Textura/Textura.cpp.o -c /home/magiic/Escritorio/RanJamp/Textura/Textura.cpp
 
 CMakeFiles/libClases.dir/Textura/Textura.cpp.i: cmake_force
@@ -755,7 +803,7 @@ CMakeFiles/libClases.dir/Textura/Textura.cpp.o.provides.build: CMakeFiles/libCla
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o: ../Cuerpo/Cuerpo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o -c /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.cpp
 
 CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.i: cmake_force
@@ -779,7 +827,7 @@ CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.provides.build: CMakeFiles/libClase
 
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: CMakeFiles/libClases.dir/flags.make
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o: ../Rectangulo/Rectangulo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
 	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o -c /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.cpp
 
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.i: cmake_force
@@ -828,6 +876,8 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o" \
 "CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o" \
 "CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o" \
+"CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o" \
 "CMakeFiles/libClases.dir/Hud/hud.cpp.o" \
 "CMakeFiles/libClases.dir/Musica/musica.cpp.o" \
 "CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o" \
@@ -863,6 +913,8 @@ liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Hud/hud.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Musica/musica.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
@@ -871,7 +923,7 @@ liblibClases.a: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/magiic/Escritorio/RanJamp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -905,6 +957,8 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_inicial.cp
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Hud/hud.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Musica/musica.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.requires

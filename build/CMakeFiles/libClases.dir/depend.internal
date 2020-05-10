@@ -228,7 +228,70 @@ CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
  /home/magiic/Escritorio/RanJamp/Menu/menu_controles.h
  /home/magiic/Escritorio/RanJamp/Menu/menu_inicial.cpp
  /home/magiic/Escritorio/RanJamp/Menu/menu_inicial.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.h
  /home/magiic/Escritorio/RanJamp/Menu/menu_vol.h
+ /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+ /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+ /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
+ /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+ /home/magiic/Escritorio/RanJamp/Musica/musica.h
+ /home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+ /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
+ /home/magiic/Escritorio/RanJamp/Texto/texto.h
+ /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
+ /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+ /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
+ /home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+ /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/nube.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
+ /home/magiic/Escritorio/RanJamp/Juego/Estado.h
+ /home/magiic/Escritorio/RanJamp/Juego/Juego.h
+ /home/magiic/Escritorio/RanJamp/Juego/Manejador.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_controles.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_inicial.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.cpp
+ /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_nivel.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_vol.h
+ /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+ /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+ /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
+ /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+ /home/magiic/Escritorio/RanJamp/Musica/musica.h
+ /home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+ /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
+ /home/magiic/Escritorio/RanJamp/Texto/texto.h
+ /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
+ /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+ /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
+ /home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+ /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/nube.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
+ /home/magiic/Escritorio/RanJamp/Juego/Estado.h
+ /home/magiic/Escritorio/RanJamp/Juego/Juego.h
+ /home/magiic/Escritorio/RanJamp/Juego/Manejador.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu.h
+ /home/magiic/Escritorio/RanJamp/Menu/menu_nivel.cpp
+ /home/magiic/Escritorio/RanJamp/Menu/menu_nivel.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h

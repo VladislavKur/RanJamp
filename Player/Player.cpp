@@ -38,7 +38,7 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=25;
+    jumpHeight=50;
     arma=0;  
     vidas = 5; 
     velocidad=250;

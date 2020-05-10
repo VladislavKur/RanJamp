@@ -131,11 +131,11 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
     colisionPlayerMundo(deltaTime);
-    //colisionPlayerObstaculos(deltaTime);
-    //colisionBulletMundo();
-    //colisionBulletEnemigo();
-    //colisionBulletJugador();
-    //colisionMeleeEnemigo();
+    colisionPlayerObstaculos(deltaTime);
+    colisionBulletMundo();
+    colisionBulletEnemigo();
+    colisionBulletJugador();
+    colisionMeleeEnemigo();
    // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
     
@@ -310,7 +310,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
 
       }else{
         std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*6*deltaTime);
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*4*deltaTime);
       }
       if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
         jugador->setJumpSpeed(10);
