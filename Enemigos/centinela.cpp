@@ -10,6 +10,8 @@ Centinela::Centinela( float x, float y, int type)
     body->setSize(150,320);
     body->Origen(150/2, 320/2);
 
+    body->setSpriteAnimacion(3);
+
     tipo = type;
     modo  = 0;
     velocidad = 0.3;
@@ -32,6 +34,8 @@ void Centinela::update(Player* player, float deltaTime){
         switch(modo){
 
             case(0): //está quieto
+                body->setSpriteAnimacion(3);
+
                 if(local_diffabs < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
                     modo = 1;
                     if(tipo == 1)
@@ -58,6 +62,7 @@ void Centinela::update(Player* player, float deltaTime){
                 
             break;
             case(2):
+                
                 if(local_diffabs > distanciaDisparo){//si está lo suficientemente lejos, cambiamos
                     modo = 1;
                     if(tipo == 1)
@@ -65,7 +70,7 @@ void Centinela::update(Player* player, float deltaTime){
                     cambio = true;
                 } 
                 else{//DISPARA!!!! necesitamos el trabajo de vermivlad
-
+                    body->setSpriteAnimacion(0);
                     if(shootTime <= 0.0){
                         bool auxiliar;
 

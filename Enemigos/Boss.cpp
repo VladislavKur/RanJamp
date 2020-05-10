@@ -11,13 +11,12 @@ Boss::Boss( float x, float y)
     body->addAnimacion(0.1);
     
     modo  = 0;
-    vidas = 5;
+    vidas = 15;
     velocidad = 50;
     distanciaDisparo = 600; //dispara contra jugador
     distanciaAtaque = 200;   //le pega
 
     mano = new Rectangulo(60, 60, x-(x/9), y-(y/70));
-    cuerpoMano = new Cuerpo(x-(x/9), y-(y/70), 60, 60);
     
     haPegado = false;
 
@@ -65,11 +64,9 @@ void Boss::update(Player *player, float deltaTime){
                         float posy = body->getPosicion()[1];
                         
                         if((local_diffX/local_diffabsX) == -1){
-                            cuerpoMano->posicionamiento(posx-(posx/9), posy-(posy/70));
                             mano->posicionar(posx-(posx/9), posy-(posy/70));
                         }
                         else{
-                            cuerpoMano->posicionamiento(posx+(posx/14), posy-(posy/70));
                             mano->posicionar(posx+(posx/14), posy-(posy/70));
                         }
                         
@@ -159,5 +156,4 @@ void Boss::setPegado(bool p){
 
 void Boss::render( float porcentaje){
     body->render(porcentaje);
-    cuerpoMano->render();
 }

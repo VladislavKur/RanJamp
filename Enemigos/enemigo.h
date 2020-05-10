@@ -21,7 +21,7 @@ class Enemigo{
         bool comprobarColision(Cuerpo* cuerpo);
 
         int getVidas();
-        void setVidas(int v);
+        bool setVidas(int v);
         
     protected:
         Enemigo(float x, float y, int sizeWidth, int sizeHeight, 

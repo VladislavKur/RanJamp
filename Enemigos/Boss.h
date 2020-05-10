@@ -17,7 +17,7 @@ class Boss : public Enemigo{
         float shootTime;
         bool haPegado;
         Rectangulo * mano; //mano con la que golpea
-        Cuerpo* cuerpoMano;
+        
 
     public:
         //pasa a la clase padre su posicion en ambos ejes, junto con el tipo de cuerpo,

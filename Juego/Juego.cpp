@@ -655,16 +655,23 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 }
 
 void Juego::colisionBulletEnemigo(){//WIP fachada
+  bool morir = false;
   for(unsigned int i=0 ; i < maxBullets ; i++){
     for(int j=0 ; j<numEmenigos ; j++){
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
 
       if(enemies[j]->getCuerpo()->getGlobalBounds()->getIntersect( *bulletPlayer[i]->getHitbox() )){
-          for (int index = j; index < numEmenigos; index++)
-            enemies[index] = enemies[index+1];
-          enemies[numEmenigos] = NULL;
-          numEmenigos--;
+          for (int index = j; index < numEmenigos; index++){
+            morir = enemies[index]->setVidas(enemies[index]->getVidas() - 1);
+            if(morir){
+              enemies[index] = enemies[index+1];
+            }
+          }
+          if(morir){
+            enemies[numEmenigos] = NULL;
+            numEmenigos--;
+          }
 
           delete bulletPlayer[i];
           bulletPlayer[i]=NULL;
