@@ -685,7 +685,7 @@ void Juego::nextLevel(){
 void Juego::inicializarNiveles(){
   maxniveles = 6;
   niveles = new string[maxniveles];
-  niveles[0] = "Mundo1-1.tmx";
+  niveles[0] = "Mundo3-4.tmx";
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
