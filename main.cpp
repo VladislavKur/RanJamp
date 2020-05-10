@@ -72,7 +72,7 @@ int main() {
         break;
 
         case sf::Keyboard::N:
-          juego->nextLevel();
+          juego->nextLevel(-1);
         break;
 
           default:

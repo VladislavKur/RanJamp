@@ -51,6 +51,7 @@ void menu_inicial::update(float deltaTime){
         cooldown_mov = 0.5;
         switch(selectedItem){
             case 0:
+                
                man->cambiarEstado(juego);
               
             break;

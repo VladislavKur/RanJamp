@@ -619,12 +619,12 @@ void Juego::cargarMusica(){
 
 void Juego::comprobarPasarNivel(){
  if( mundo->getPuerta()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
-   nextLevel();
+   nextLevel(-1);
  }
 }
 
-void Juego::nextLevel(){
-    nivel++;
+void Juego::nextLevel(int n){
+    if(nivel == -1){nivel++;} else nivel = n;
     delete mundo;
     mundo = new Mundo();
     mundo->cargarmapa(niveles[nivel].c_str());
@@ -660,7 +660,7 @@ void Juego::nextLevel(){
 
 
 void Juego::inicializarNiveles(){
-  maxniveles = 5;
+
   niveles = new string[maxniveles];
   niveles[0] = "Mundo1-1.tmx";
   niveles[1] = "Mundo1-2.tmx";
@@ -668,6 +668,17 @@ void Juego::inicializarNiveles(){
   niveles[3] = "Mundo1-4.tmx";
   niveles[4] = "NivelHielo.tmx";
  
+}
+void Juego::nivelSeleccionado(string n){
+  int aux = -1;
+    for(int i = 0; i < maxniveles; i++){
+      if(niveles[i].compare(n) == 0){
+        std::cout << "SADSADASDSADSADAS"<< endl;
+        aux = i;
+        break;
+      }
+    }
+    nextLevel(aux);
 }
 
 void Juego::pausa(){
