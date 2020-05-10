@@ -5,6 +5,7 @@
 #include "../Enumerador/typeBody.h"
 #include "../Cuerpo/Cuerpo.h"
 #include "../Rectangulo/Rectangulo.h"
+#include "../Hud/hud.h"
 
 class Player{
 private:
@@ -21,6 +22,7 @@ private:
     int vidas;
     float cooldownSalto;
     float cooldownDisparo;
+    float cooldownShift;
 
     bool godMode;
     int vidasAnteriores;

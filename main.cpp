@@ -16,7 +16,7 @@ int main() {
   const float UPDATE_TICK_TIME = 15.0;
   Motor * m = Motor::instance();
   menu_inicial* _menu = menu_inicial::instance();
-  
+  hud * Hud = hud::instance(); 
 
     float elapsus;
     float delta;
@@ -56,16 +56,21 @@ int main() {
         switch (event.key.code) {
 
         case sf::Keyboard::Z:
-          juego->getJugador()->obtenerPU_SaltoDoble();
-          juego->getJugador()->obtenerPU_Slowhits();
-          juego->getJugador()->obtenerPU_Velocidad();
+          //juego->getJugador()->obtenerPU_SaltoDoble();
+          //juego->getJugador()->obtenerPU_Slowhits();
+          //juego->getJugador()->obtenerPU_Velocidad();
+          Hud->setDobleSalto(true);
+          Hud->setSlow(true);
+          Hud->setVelocidad(true);
+          Hud->setIVelocidad(350);
         break;
         case sf::Keyboard::X:
         //if ( tipoEstado == Juego ) ?
           juego->matarJugador();
         break;
         case sf::Keyboard::G:
-          juego->getJugador()->toggleGodMode();
+          //juego->getJugador()->toggleGodMode();
+          Hud->setGodMode();
         break;
         case sf::Keyboard::R:
           juego->getJugador()->reset();

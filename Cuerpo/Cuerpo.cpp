@@ -242,7 +242,9 @@ std::vector<float> Cuerpo::getSize(){
 
 void Cuerpo::update(float deltaTime){
     if(this != NULL){
-        animacion->update(deltaTime);
+        if(animacion != NULL){
+            animacion->update(deltaTime);
+        }
         if(class_move){
             class_previousX = class_positionX;
             class_previousY = class_positionY;

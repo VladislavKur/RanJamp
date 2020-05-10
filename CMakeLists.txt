@@ -23,7 +23,7 @@ add_subdirectory(Bloque)
 add_subdirectory(Textura)
 add_subdirectory(Cuerpo)
 add_subdirectory(Rectangulo)
-
+add_subdirectory(Tienda)
 
 #Opciones a pasar al compilador de C++
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -Wextra")

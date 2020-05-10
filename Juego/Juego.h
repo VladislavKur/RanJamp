@@ -35,7 +35,7 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
-            int maxniveles = 5;
+            int maxniveles = 6;
             //obstaculos 
             float timerObstaculos;
         protected:

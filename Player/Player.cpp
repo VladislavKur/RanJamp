@@ -38,19 +38,21 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=50;
-    arma=0;  
-    vidas = 5; 
-    velocidad=250;
+    jumpHeight=50; 
 
-    PU_saltoDoble=false;
-    PU_slowhits=false;
-    PU_velocidad=false;
-    godMode=false;
+    hud * Hud = hud::instance();
+    PU_saltoDoble= Hud->getDoblesalto();
+    PU_slowhits= Hud->getSlow();
+    PU_velocidad=Hud->getVelocidad();
+    velocidad = Hud->getIVelocidad();
+    vidas = Hud->getVidas();
+    godMode = Hud->getGodMode();
+    arma = 0;
 
     auxSaltos = true;
     cooldownSalto = 0;
     cooldownDisparo = 0;
+    cooldownShift = 0;
     body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
     body->setSize(100,100);
     body->addAnimacion(0.1);
@@ -68,9 +70,17 @@ Player::Player(int x, int y){
     melee = new Rectangulo(0,0,0,0);
 
     monedas = 0;
+
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
+    hud * Hud = hud::instance();
+    PU_saltoDoble= Hud->getDoblesalto();
+    PU_slowhits= Hud->getSlow();
+    PU_velocidad=Hud->getVelocidad();
+    velocidad = Hud->getIVelocidad();
+    vidas = Hud->getVidas();
+    godMode = Hud->getGodMode();
     
     updateHitbox(); //arreglar lo de update hitbox
     GolpeMelee(deltaTime);
@@ -102,6 +112,32 @@ void Player::update(float deltaTime , Mundo * mundo){
             cooldownSalto=15*deltaTime;
           }
       }
+
+      if((Keyboard::isKeyPressed(Keyboard::LShift) || Keyboard::isKeyPressed(Keyboard::RShift)) && cooldownShift<0){
+        cooldownShift=6;
+        
+        bool hayUnTrue=false;
+        for(unsigned int i=0 ; i< Hud->getArma().size(); i++){
+          if(Hud->getArma()[i] > 0){
+            hayUnTrue=true;
+          }
+        }
+        if(hayUnTrue && arma>0){
+          while( Hud->getArma()[arma-1] <= 0 ){
+            if( arma >= 3 ){
+              arma=0;
+            } else arma++;
+          }
+        }
+        cout<<"Arma: "<<arma<<endl;
+        cout<<"Armas y sus daños: ";
+        for(int i=0 ; i< Hud->getArma().size() ; i++){
+          cout<< " " << Hud->getArma()[i];
+        }
+        cout<<endl;
+        
+      }
+      cooldownShift -= deltaTime;
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
@@ -202,6 +238,7 @@ void Player::moveLeft(float deltaTime , Mundo * mundo){
     body->moverse(-velocidad*deltaTime,0);
   }
 }
+
 void Player::saltar(){
   
   if(saltos!=0){
@@ -284,14 +321,15 @@ void Player::reset(){
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=30;
-    arma=0;  
-    vidas = 5; 
-    velocidad=250;
-
-    PU_saltoDoble=false;
-    PU_slowhits=false;
-    PU_velocidad=false;
-    godMode=false;
+    
+    hud * Hud = hud::instance();
+    PU_saltoDoble= Hud->getDoblesalto();
+    PU_slowhits= Hud->getSlow();
+    PU_velocidad=Hud->getVelocidad();
+    velocidad = Hud->getIVelocidad();
+    vidas = Hud->getVidas();
+    godMode = Hud->getGodMode();
+    arma=0; 
 
     auxSaltos = true;
     cooldownSalto = 0;

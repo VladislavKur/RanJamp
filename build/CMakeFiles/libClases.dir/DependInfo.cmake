@@ -37,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Texto/texto.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Texto/texto.cpp.o"
   "/home/magiic/Escritorio/RanJamp/Textura/Textura.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+  "/home/magiic/Escritorio/RanJamp/Tienda/Tienda.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -58,6 +59,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Textura"
   "../Cuerpo"
   "../Rectangulo"
+  "../Tienda"
   )
 
 # Targets to which this target links.

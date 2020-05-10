@@ -36,6 +36,7 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -50,6 +51,7 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.cpp
  /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -65,6 +67,7 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.cpp
  /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -82,6 +85,7 @@ CMakeFiles/libClases.dir/Enemigos/nube.cpp.o
  /home/magiic/Escritorio/RanJamp/Enemigos/nube.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -97,6 +101,7 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.cpp
  /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -147,6 +152,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
  /home/magiic/Escritorio/RanJamp/Texto/texto.h
  /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+ /home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
 CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
  /home/magiic/Escritorio/RanJamp/Juego/Estado.h
  /home/magiic/Escritorio/RanJamp/Juego/Manejador.cpp
@@ -240,6 +246,7 @@ CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
  /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
  /home/magiic/Escritorio/RanJamp/Texto/texto.h
  /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+ /home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
 CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
@@ -273,6 +280,7 @@ CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
  /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
  /home/magiic/Escritorio/RanJamp/Texto/texto.h
  /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+ /home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
 CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
@@ -334,6 +342,7 @@ CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
  /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
  /home/magiic/Escritorio/RanJamp/Texto/texto.h
  /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+ /home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
 CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
  /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
  /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
@@ -404,6 +413,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
  /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -418,6 +428,7 @@ CMakeFiles/libClases.dir/Player/Player.cpp.o
  /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
  /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
  /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
  /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
@@ -437,3 +448,31 @@ CMakeFiles/libClases.dir/Textura/Textura.cpp.o
  /home/magiic/Escritorio/RanJamp/Motor/Motor.h
  /home/magiic/Escritorio/RanJamp/Textura/Textura.cpp
  /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
+ /home/magiic/Escritorio/RanJamp/Animacion/Animacion.h
+ /home/magiic/Escritorio/RanJamp/Bloque/Bloque.h
+ /home/magiic/Escritorio/RanJamp/Bullet/bullet.h
+ /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/centinela.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/enemigo.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/murcielago.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/nube.h
+ /home/magiic/Escritorio/RanJamp/Enemigos/pajaro.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBody.h
+ /home/magiic/Escritorio/RanJamp/Enumerador/typeBullet.h
+ /home/magiic/Escritorio/RanJamp/Hud/hud.h
+ /home/magiic/Escritorio/RanJamp/Juego/Estado.h
+ /home/magiic/Escritorio/RanJamp/Juego/Juego.h
+ /home/magiic/Escritorio/RanJamp/Juego/Manejador.h
+ /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+ /home/magiic/Escritorio/RanJamp/Mundo/Mundo.h
+ /home/magiic/Escritorio/RanJamp/Mundo/tinystr.h
+ /home/magiic/Escritorio/RanJamp/Mundo/tinyxml.h
+ /home/magiic/Escritorio/RanJamp/Musica/musica.h
+ /home/magiic/Escritorio/RanJamp/Objeto/Objeto.h
+ /home/magiic/Escritorio/RanJamp/Player/Player.h
+ /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
+ /home/magiic/Escritorio/RanJamp/Texto/texto.h
+ /home/magiic/Escritorio/RanJamp/Textura/Textura.h
+ /home/magiic/Escritorio/RanJamp/Tienda/Tienda.cpp
+ /home/magiic/Escritorio/RanJamp/Tienda/Tienda.h

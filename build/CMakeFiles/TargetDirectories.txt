@@ -34,3 +34,5 @@
 /home/magiic/Escritorio/RanJamp/build/Cuerpo/CMakeFiles/rebuild_cache.dir
 /home/magiic/Escritorio/RanJamp/build/Rectangulo/CMakeFiles/edit_cache.dir
 /home/magiic/Escritorio/RanJamp/build/Rectangulo/CMakeFiles/rebuild_cache.dir
+/home/magiic/Escritorio/RanJamp/build/Tienda/CMakeFiles/edit_cache.dir
+/home/magiic/Escritorio/RanJamp/build/Tienda/CMakeFiles/rebuild_cache.dir

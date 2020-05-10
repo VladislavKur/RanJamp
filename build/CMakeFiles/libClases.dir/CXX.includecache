@@ -277,6 +277,8 @@ menu_controles.h
 /home/magiic/Escritorio/RanJamp/Menu/menu_controles.h
 menu_vol.h
 /home/magiic/Escritorio/RanJamp/Menu/menu_vol.h
+../Tienda/Tienda.h
+/home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
 
 /home/magiic/Escritorio/RanJamp/Menu/menu_mundos.cpp
 menu_mundos.h
@@ -489,6 +491,8 @@ SFML/Graphics.hpp
 /home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
 ../Rectangulo/Rectangulo.h
 /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.h
+../Hud/hud.h
+/home/magiic/Escritorio/RanJamp/Hud/hud.h
 
 /home/magiic/Escritorio/RanJamp/Rectangulo/Rectangulo.cpp
 Rectangulo.h
@@ -525,4 +529,24 @@ SFML/System.hpp
 -
 ../Motor/Motor.h
 /home/magiic/Escritorio/RanJamp/Motor/Motor.h
+
+/home/magiic/Escritorio/RanJamp/Tienda/Tienda.cpp
+Tienda.h
+/home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
+
+/home/magiic/Escritorio/RanJamp/Tienda/Tienda.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Hud/hud.h
+/home/magiic/Escritorio/RanJamp/Hud/hud.h
+../Juego/Manejador.h
+/home/magiic/Escritorio/RanJamp/Juego/Manejador.h
+../Juego/Juego.h
+/home/magiic/Escritorio/RanJamp/Juego/Juego.h
+../Motor/Motor.h
+/home/magiic/Escritorio/RanJamp/Motor/Motor.h
+../Cuerpo/Cuerpo.h
+/home/magiic/Escritorio/RanJamp/Cuerpo/Cuerpo.h
 

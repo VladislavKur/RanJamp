@@ -14,7 +14,7 @@ menu_vol* menu_vol::instance(){
 }
 
 menu_vol::menu_vol( Font fuente, int max) : menu(fuente, max){
-t = new Textura("resources/Imagenes/MenuControles.png");
+t = new Textura("resources/Imagenes/MenuOpciones.png");
        b = new Bloque(t);
     
 }

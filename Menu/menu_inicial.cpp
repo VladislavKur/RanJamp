@@ -8,7 +8,7 @@ sf::Font* menu_inicial::fuente = new Font();
 menu_inicial* menu_inicial::instance(){
      if(p_instance == 0){
         fuente->loadFromFile("resources/fuentes/AnotherRound.otf");
-        p_instance = new menu_inicial(*fuente, 5);
+        p_instance = new menu_inicial(*fuente, 6);
 
     }
 
@@ -30,15 +30,19 @@ void menu_inicial::update(float deltaTime){
     menu_controles* menucont = menu_controles::instance();
     menu_vol* menuVol = menu_vol::instance();
     menu_mundos* mundos = menu_mundos::instance();
+    Tienda * tienda = Tienda::instance();
+    Motor * motor = Motor::instance();
 
     cambiarTexto(0,  "PLAY", juego->view.getCenter().x-40, juego->view.getCenter().y-125);
     cambiarTexto(1,  "SELECCIONAR NIVEL", juego->view.getCenter().x-40, juego->view.getCenter().y-75);
-    cambiarTexto(2, "CONTROLS", juego->view.getCenter().x-40, juego->view.getCenter().y-25);
-    cambiarTexto(3,  "OPTIONS", juego->view.getCenter().x-40, juego->view.getCenter().y +25);
-    cambiarTexto(4,  "EXIT", juego->view.getCenter().x-40, juego->view.getCenter().y+75);
+    cambiarTexto(2,  "TIENDA", juego->view.getCenter().x-40, juego->view.getCenter().y -25);
+    cambiarTexto(3, "CONTROLS", juego->view.getCenter().x-40, juego->view.getCenter().y+25);
+    cambiarTexto(4,  "OPTIONS", juego->view.getCenter().x-40, juego->view.getCenter().y +75);
+    cambiarTexto(5,  "EXIT", juego->view.getCenter().x-40, juego->view.getCenter().y+125);
 
-        b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
-        b->setTextureRect(0,0,1080,720);
+    b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
+    b->setTextureRect(0,0,1080,720);
+    
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
         moveUp();
         cooldown_mov = 0.25;
@@ -59,19 +63,22 @@ void menu_inicial::update(float deltaTime){
                 man->cambiarEstado(mundos);
                 break;
             case 2:
+                 man->cambiarEstado(tienda);
+            break;
+            case 3:
                 
                 man->cambiarEstado(menucont);
                 
             break;
 
-            case 3:
+            case 4:
                 man->cambiarEstado(menuVol);
                  
             break;
-            case 4:
-                Motor * motor = Motor::instance();
+            case 5:
                 motor->getVentana()->close();
             break;
+            
         }
     }
 }
