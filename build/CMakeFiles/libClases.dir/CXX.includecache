@@ -197,6 +197,8 @@ enemigo.h
 /home/vermia/RanJamp/Hud/hud.cpp
 hud.h
 /home/vermia/RanJamp/Hud/hud.h
+../Juego/Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
 
 /home/vermia/RanJamp/Hud/hud.h
 SFML/Graphics.hpp
@@ -215,6 +217,24 @@ Estado.h
 /home/vermia/RanJamp/Juego/Estado.h
 SFML/Graphics.hpp
 -
+
+/home/vermia/RanJamp/Juego/Final.cpp
+Final.h
+/home/vermia/RanJamp/Juego/Final.h
+Manejador.h
+/home/vermia/RanJamp/Juego/Manejador.h
+Juego.h
+/home/vermia/RanJamp/Juego/Juego.h
+math.h
+-
+
+/home/vermia/RanJamp/Juego/Final.h
+Estado.h
+/home/vermia/RanJamp/Juego/Estado.h
+../Cuerpo/Cuerpo.h
+/home/vermia/RanJamp/Cuerpo/Cuerpo.h
+../Texto/texto.h
+/home/vermia/RanJamp/Texto/texto.h
 
 /home/vermia/RanJamp/Juego/Juego.cpp
 Juego.h

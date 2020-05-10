@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vermia/RanJamp/Enemigos/pajaro.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
   "/home/vermia/RanJamp/Hud/hud.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Hud/hud.cpp.o"
   "/home/vermia/RanJamp/Juego/Estado.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Estado.cpp.o"
+  "/home/vermia/RanJamp/Juego/Final.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Final.cpp.o"
   "/home/vermia/RanJamp/Juego/Juego.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "/home/vermia/RanJamp/Juego/Manejador.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Manejador.cpp.o"
   "/home/vermia/RanJamp/Juego/Transicion.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Transicion.cpp.o"

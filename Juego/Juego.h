@@ -40,6 +40,7 @@
             int maxniveles = 6;
             //obstaculos 
             float timerObstaculos;
+            int transparenciaRoja;
         protected:
             Juego();
             ~Juego();
@@ -55,6 +56,7 @@
             void colisionBulletMundo();
             void colisionMeleeEnemigo();
             
+            void iniciarPantallaRoja();
             void cargarMusica();
             void crearObjetos();
             void destruirObjetos(Objeto*);

@@ -460,6 +460,33 @@ Juego/Estado.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Estado.cpp.s
 .PHONY : Juego/Estado.cpp.s
 
+Juego/Final.o: Juego/Final.cpp.o
+
+.PHONY : Juego/Final.o
+
+# target to build an object file
+Juego/Final.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Final.cpp.o
+.PHONY : Juego/Final.cpp.o
+
+Juego/Final.i: Juego/Final.cpp.i
+
+.PHONY : Juego/Final.i
+
+# target to preprocess a source file
+Juego/Final.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Final.cpp.i
+.PHONY : Juego/Final.cpp.i
+
+Juego/Final.s: Juego/Final.cpp.s
+
+.PHONY : Juego/Final.s
+
+# target to generate assembly for a file
+Juego/Final.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Final.cpp.s
+.PHONY : Juego/Final.cpp.s
+
 Juego/Juego.o: Juego/Juego.cpp.o
 
 .PHONY : Juego/Juego.o
@@ -1181,6 +1208,9 @@ help:
 	@echo "... Juego/Estado.o"
 	@echo "... Juego/Estado.i"
 	@echo "... Juego/Estado.s"
+	@echo "... Juego/Final.o"
+	@echo "... Juego/Final.i"
+	@echo "... Juego/Final.s"
 	@echo "... Juego/Juego.o"
 	@echo "... Juego/Juego.i"
 	@echo "... Juego/Juego.s"
