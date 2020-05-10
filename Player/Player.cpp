@@ -113,30 +113,16 @@ void Player::update(float deltaTime , Mundo * mundo){
           }
       }
 
-      if((Keyboard::isKeyPressed(Keyboard::LShift) || Keyboard::isKeyPressed(Keyboard::RShift)) && cooldownShift<0){
-        cooldownShift=6;
-        
-        bool hayUnTrue=false;
-        for(unsigned int i=0 ; i< Hud->getArma().size(); i++){
-          if(Hud->getArma()[i] > 0){
-            hayUnTrue=true;
-          }
-        }
-        if(hayUnTrue && arma>0){
-          while( Hud->getArma()[arma-1] <= 0 ){
-            if( arma >= 3 ){
-              arma=0;
-            } else arma++;
-          }
-        }
-        cout<<"Arma: "<<arma<<endl;
-        cout<<"Armas y sus daños: ";
-        for(int i=0 ; i< Hud->getArma().size() ; i++){
-          cout<< " " << Hud->getArma()[i];
-        }
-        cout<<endl;
-        
-      }
+     if(Keyboard::isKeyPressed(Keyboard::Num1) && cooldownShift<0){
+        cooldownShift=2;
+        if(Hud->getArma()[0] > 0)
+          arma=1;
+     }
+     if(Keyboard::isKeyPressed(Keyboard::Num2) && cooldownShift<0){
+        cooldownShift=2;
+        if(Hud->getArma()[1] > 0)
+          arma=2;
+     }
       cooldownShift -= deltaTime;
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi

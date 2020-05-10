@@ -63,6 +63,10 @@ int main() {
           Hud->setSlow(true);
           Hud->setVelocidad(true);
           Hud->setIVelocidad(350);
+          for(int i=0 ; i< Hud->getArma().size(); i++){
+              Hud->setArma(i, 2);
+          }
+
         break;
         case sf::Keyboard::X:
         //if ( tipoEstado == Juego ) ?
