@@ -21,5 +21,6 @@ class menu_inicial : public menu {
     private: 
         static sf::Font* fuente;
         static menu_inicial* p_instance;
+        bool noeslaprimeravezxd = false;
         
 };

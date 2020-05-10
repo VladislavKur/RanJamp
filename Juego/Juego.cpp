@@ -749,6 +749,7 @@ void Juego::pausa(){
   menu_pausa* menuPau = menu_pausa::instance();
   if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
   man->cambiarEstado(menuPau);
+  menuPau->resetSelectedItem();
   }
     
 }
