@@ -491,6 +491,8 @@ SFML/Graphics.hpp
 /home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
 ../Rectangulo/Rectangulo.h
 /home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+../Hud/hud.h
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
 
 /home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.cpp
 Rectangulo.h

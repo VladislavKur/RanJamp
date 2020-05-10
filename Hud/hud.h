@@ -12,7 +12,7 @@ class hud{
         static hud* instance(); 
         ~hud();
         // SE ACTUALIZAN LOS VALORES DEL HUD
-        void setMarcador(int posX , int posY , int vidasPengo,int monedas, vector<int> llaves);
+        void setMarcador(int posX , int posY );
        
         //CAMBIA LOS VALORES Y POSICION DEL ARRAY DE TEXTO 
         void cambiarTexto(const Font &font , int i, Color c, string s , Vector2f v, int posx , int posy);
@@ -25,14 +25,23 @@ class hud{
 
         int getMonedero(){return monedero;}
         void setMonedero(int x){monedero -=x;}
+        void sumarMonedas(){monedero++;}
         int getVidas(){return vidas;}
         void sumarVidas(){vidas++;}
+        bool restarVidas();
+        void restablecerVidas(){vidas = 5;}
+        void quitarVidas(){vidas = 0;}
         bool getDoblesalto(){return doblesalto;}
         void setDobleSalto(bool x){doblesalto = x;}
         bool getVelocidad(){return velocidad;}
         void setVelocidad(bool x){velocidad = x;}
+        int getIVelocidad(){return i_velocidad;}
+        void setIVelocidad(int x){i_velocidad = x;}
         bool getSlow(){return slow;}
         void setSlow(bool x){slow =x;}
+        bool getGodMode(){return godMode;}
+        void setGodMode();
+        void reiniciarTiempo();
     protected: 
         hud(int posPengo, int vidasPengo, int max);
         
@@ -45,8 +54,10 @@ class hud{
         Clock clockGlobal;
         int monedero = 10;
         int puntos = 0; 
-        int vidas = 0; 
+        int vidas = 5; 
         bool doblesalto = false;
         bool velocidad = false;
         bool slow = false; 
+        int i_velocidad = 250;
+        bool godMode = false;
 };

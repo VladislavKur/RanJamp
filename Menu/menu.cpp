@@ -46,8 +46,7 @@ void menu::moveUp(){
         texto[selectedItem].setColor(Color::White);
         selectedItem--;
         texto[selectedItem].setColor(Color::Red);
-    }
-    else if(selectedItem - 1 < 0){
+    }else if(selectedItem - 1 < 0){
         texto[selectedItem].setColor(Color::White);
         selectedItem = numOpciones-1;
         texto[selectedItem].setColor(Color::Red);

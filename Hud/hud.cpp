@@ -49,10 +49,10 @@ void hud::cambiarTexto(const Font &f , int i, Color c, string s , Vector2f v, in
 
 }
 
-void hud::setMarcador(int posX , int posY, int vidasPlayer, int monedas, vector<int> llaves){
+void hud::setMarcador(int posX , int posY){
   sprites[0]->posicionamiento(posX - 300 , posY - 400);
   sprites[1]->posicionamiento(posX - 384 , posY - 300);
-  sprites[1]->recorte(0, 32 *(vidasPlayer));
+  sprites[1]->recorte(0, 32 *(vidas));
   sprites[2]->posicionamiento(posX - 250 , posY - 300);
   sprites[3]->posicionamiento(posX - 220 , posY - 300);
   sprites[4]->posicionamiento(posX - 190, posY - 300);
@@ -60,16 +60,13 @@ void hud::setMarcador(int posX , int posY, int vidasPlayer, int monedas, vector<
   sprites[6]->posicionamiento(posX - 150 , posY - 300);
   sprites[7]->posicionamiento(posX - 450 , posY - 340);
   sprites[8]->posicionamiento(posX - 340 , posY - 340);
-  puntos += 50;
   texto[0].setPosition( posX - 300 , posY - 355);
   texto[0].setString(to_string(puntos));
   texto[1].setPosition( posX - 400 , posY - 355);
   texto[1].setString(to_string(int(clockGlobal.getElapsedTime().asSeconds())));
   texto[2].setPosition(posX - 150 , posY - 355);
-  texto[2].setString(to_string(monedas));
-  if(monedero < monedas){
-    monedero += monedas;
-  }
+  texto[2].setString(to_string(monedero));
+  
 }
 
 
@@ -91,4 +88,29 @@ hud::~hud(){
     delete font;
     font = nullptr;
   }
+}
+
+bool hud::restarVidas(){
+  bool devolver = false;
+  if(godMode == false){
+      vidas--;
+  }
+
+  if(vidas == 0 && godMode == false){
+    devolver = true; 
+  }
+  return devolver;
+}
+
+void hud::setGodMode(){
+  if(godMode){
+    godMode=false;
+  } else{
+    godMode=true;
+    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
+  }
+}
+
+void hud::reiniciarTiempo(){
+  clockGlobal.restart();
 }

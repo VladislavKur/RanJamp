@@ -5,6 +5,7 @@
 #include "../Enumerador/typeBody.h"
 #include "../Cuerpo/Cuerpo.h"
 #include "../Rectangulo/Rectangulo.h"
+#include "../Hud/hud.h"
 
 class Player{
 private:

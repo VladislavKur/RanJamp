@@ -14,7 +14,7 @@ Murcielago::Murcielago(float x, float y)
 }
 
 void Murcielago::update(Player* player, float delta){//WIP fachada
-
+    hud * Hud = hud::instance();
     float posJugadorX = player->getBody()->getPosicion()[0]; //WIP FACHADA
     float posJugadorY = player->getBody()->getPosicion()[1];
 
@@ -65,7 +65,8 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
     || coliArriba->getIntersect(*player->getColiAbajo())
     ){
         if(!haPegado)
-            player->setVidas(player->getVidas()-1);
+            //player->setVidas(player->getVidas()-1);
+            Hud->restarVidas();
         muerto=true;
         haPegado = true;
     }

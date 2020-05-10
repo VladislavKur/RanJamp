@@ -35,13 +35,14 @@ void menu_inicial::update(float deltaTime){
 
     cambiarTexto(0,  "PLAY", juego->view.getCenter().x-40, juego->view.getCenter().y-125);
     cambiarTexto(1,  "SELECCIONAR NIVEL", juego->view.getCenter().x-40, juego->view.getCenter().y-75);
-    cambiarTexto(2,  "TIENDA", juego->view.getCenter().x-40, juego->view.getCenter().y +25);
-    cambiarTexto(3, "CONTROLS", juego->view.getCenter().x-40, juego->view.getCenter().y-25);
-    cambiarTexto(4,  "OPTIONS", juego->view.getCenter().x-40, juego->view.getCenter().y +25);
-    cambiarTexto(5,  "EXIT", juego->view.getCenter().x-40, juego->view.getCenter().y+75);
+    cambiarTexto(2,  "TIENDA", juego->view.getCenter().x-40, juego->view.getCenter().y -25);
+    cambiarTexto(3, "CONTROLS", juego->view.getCenter().x-40, juego->view.getCenter().y+25);
+    cambiarTexto(4,  "OPTIONS", juego->view.getCenter().x-40, juego->view.getCenter().y +75);
+    cambiarTexto(5,  "EXIT", juego->view.getCenter().x-40, juego->view.getCenter().y+125);
 
-        b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
-        b->setTextureRect(0,0,1080,720);
+    b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
+    b->setTextureRect(0,0,1080,720);
+    
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
         moveUp();
         cooldown_mov = 0.25;

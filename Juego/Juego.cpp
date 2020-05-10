@@ -93,6 +93,10 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
+  hud * Hud = hud::instance();
+  if(Hud->getVidas() == 0){
+    matarJugador();
+  }
   //std::cout << jugador->getBody()->getPosicion()[0] << ", " << jugador->getBody()->getPosicion()[1]<< std::endl; 
   pausa();
   vector<int> dimensiones = mundo->cargarPosicionBordes();
@@ -148,7 +152,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
             switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
-                    jugador->obtenerPU_Velocidad();
+                    //jugador->obtenerPU_Velocidad();
+                    Hud->setVelocidad(true);
+                    Hud->setIVelocidad(350);
                     destruirObjetos(objetos[j]);
                     break;
                 case 1:
@@ -157,13 +163,15 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     break;
 
                 case 2:
-                   jugador->obtenerPU_SaltoDoble();
-                     destruirObjetos(objetos[j]);
+                    //jugador->obtenerPU_SaltoDoble();
+                    Hud->setDobleSalto(true);
+                    destruirObjetos(objetos[j]);
                     break;
 
                 case 3:
-                    jugador->obtenerPU_Velocidad();
-                     destruirObjetos(objetos[j]);
+                    //jugador->obtenerPU_Slowhits();
+                    Hud->setSlow(true);
+                    destruirObjetos(objetos[j]);
                     break;
                 case 4: 
                     destruirObjetos(objetos[j]);
@@ -185,7 +193,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
             switch (mundo->getMonedasLlaves()[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
                 case 0:
-                    jugador->sumarMonedas();
+                    // jugador->sumarMonedas();
+                    Hud->sumarMonedas();
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 case 1:
@@ -223,8 +232,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     //////////////////
 
     m->getVentana()->setView(view); //wIP fachada
-    hud * Hud = hud::instance();
-    Hud->setMarcador( view.getCenter().x , view.getCenter().y, jugador->getVidas(), jugador->getMonedas(), jugador->getLlaves());
+    Hud->setMarcador( view.getCenter().x , view.getCenter().y);
     for(int i = 0; i < numEmenigos; i++){
       if(enemies[i]==NULL) continue;
       enemies[i]->update(jugador , deltaTime);
@@ -277,7 +285,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
 
 void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta funcion debería estar dentro de player.cpp)
     
-
+    hud * Hud = hud::instance();
     Cuerpo ** objetos = mundo->getObjetos();//WIP FACHADA
     
     float posobjX;
@@ -294,8 +302,8 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
       } 
       
       if(pararse){
-        jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
-
+        //jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+        jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
         if(aux == false){
           jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5); //WIP FACHADA y explicar que hace esto detalladamente pls
           jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
@@ -309,7 +317,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setJumpSpeed(0);
 
       }else{
-        std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
+        //std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
         jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*4*deltaTime);
       }
       if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
@@ -320,7 +328,7 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
 
 void Juego::colisionPlayerObstaculos(float deltaTime){
     Cuerpo ** objetos = mundo->getObstaculos();
-    
+    hud * Hud = hud::instance();
 
     bool morir = false;
     timerObstaculos -= deltaTime;
@@ -329,12 +337,14 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
       if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
         if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){//pierde una vida
           if(jugador->getModoDios() == false){
-            morir = jugador->setVidas(jugador->getVidas()-1);
+            //morir = jugador->setVidas(jugador->getVidas()-1);
+            morir = Hud->restarVidas();
             if(morir == true){
               matarJugador();
             }
           }
-          jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+          //jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
+          jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
           jugador->saltar(); 
        
           timerObstaculos = 1;
@@ -349,12 +359,14 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
 
 void Juego::colisionMeleeEnemigo(){
     Rectangulo melee = jugador->getMelee();
+    hud * Hud = hud::instance();
     if(jugador->getAtacandoMelee() > 0){
       for(int i=0 ; i<numEmenigos; i++){
         if(enemies[i]==NULL) continue;
         if(enemies[i]->getCuerpo()==NULL) continue;
         if( enemies[i]->getCuerpo()->getGlobalBounds()->getIntersect(melee) ){
             matarEnemigo(enemies[i]);
+            Hud->sumarPuntos(50);
         }
       }
     }
@@ -414,7 +426,7 @@ void Juego::crearObjetos(){ //WIP FACHADA
   
  
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
-  cout<< "POSICION DE LOS OBJETOS = " << posicion.size() <<endl;
+  //cout<< "POSICION DE LOS OBJETOS = " << posicion.size() <<endl;
   
   numObjetos = posicion.size();
   objetos = new Objeto *[posicion.size()]; 
@@ -448,21 +460,17 @@ void Juego::crearEnemigos(){ //está nice
     float posx =  posicion[i][0];
     float posy =  posicion[i][1];
     if(posicion[i][2] == 1){
-        //cout << "he añadido murcielago " << posx << ","  << posy  << endl; //eliminar
         Murcielago * murcielago = new Murcielago(posx, posy);
         enemies[i] = (Enemigo *) murcielago;
     }else if(posicion[i][2] == 2){
-        //cout << "he añadido centinela" << endl; //eliminar
         Centinela * centinela = new Centinela(posx, posy,1);
         enemies[i] = (Enemigo *) centinela;
     }else if(posicion[i][2] == 3){
-        //cout << "he añadido un centinela que se mueve"<< endl; //eliminar
         Centinela* centinela = new Centinela(posx,posy,0);
         enemies[i] = (Enemigo *) centinela;
     }
     else if(posicion[i][2] == 4){
-        //cout << "he añadido reptante" << endl; //eliminar
-        Pajaro * pajaro = new Pajaro(posx, posy); // WIP el reptante está sin terminar LOL
+        Pajaro * pajaro = new Pajaro(posx, posy);
         enemies[i] = (Enemigo *) pajaro;
     }
 
@@ -471,6 +479,7 @@ void Juego::crearEnemigos(){ //está nice
 }
 
 void Juego::matarEnemigo(Enemigo* enem){ //está nice
+  hud * Hud = hud::instance();
   for (int i = 0; i < numEmenigos; i++){
     if(enemies[i] == enem){
       for(int j = i; j < numEmenigos; j++){
@@ -485,6 +494,7 @@ void Juego::matarEnemigo(Enemigo* enem){ //está nice
 }
 
 void Juego::matarJugador(){ //está nice
+  hud * Hud = hud::instance();
   nivel = 0;
   delete mundo;
   mundo = new Mundo();
@@ -497,6 +507,12 @@ void Juego::matarJugador(){ //está nice
   mundo->crearMonedasLlaves();
   vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
   jugador = new Player(posP[0], posP[1]);
+  Hud->setDobleSalto(false);
+  Hud->setVelocidad(false);
+  Hud->setIVelocidad(250);
+  Hud->setSlow(false);
+  Hud->restablecerVidas();
+  Hud->reiniciarTiempo();
   if(jugador->getBody()->getPosicion()[1]<0){
     jugador->getBody()->posicionamiento(posP[0], posP[1]);
   }
@@ -522,16 +538,17 @@ void Juego::matarJugador(){ //está nice
 }
 
 
-void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería estar dentro de jugador?)
-   //a lo mejor parte del código aquí y parte del código en jugador (sin fundamento, a debatir)
-        for(int i=0 ; i<maxBullets ; i++){
-          if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
-            bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
-            //cout<<jugador->getBody()->getPosicion()[1]<<endl;
-            jugador->setCooldownDisparo(10*deltaTime);
-            break;
-          }
-        }
+void Juego::disparar(float deltaTime){ 
+  
+  for(int i=0 ; i<maxBullets ; i++){
+    if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
+        bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
+  
+        jugador->setCooldownDisparo(10*deltaTime);
+        break;
+
+    }
+  }
     
 }
 
@@ -553,6 +570,7 @@ void Juego::colisionBulletMundo(){//WIP fachada
 }
 
 void Juego::colisionBulletJugador(){ //WIP fachada
+  hud * Hud = hud::instance();
   bool morir = false;
   for(unsigned int i = 0; i < maxBullets; i++){
 
@@ -560,8 +578,8 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
       if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletEnemies[i]->getBody()->getGlobalBounds())){
 
-       morir = jugador->setVidas(jugador->getVidas()-1);
-
+       //morir = jugador->setVidas(jugador->getVidas()-1);
+        morir = Hud->restarVidas();
         //std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletEnemies[i];
         bulletEnemies[i] = NULL;
@@ -575,8 +593,8 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
       if(jugador->getHitbox()->getIntersect(*bulletNube[i]->getHitbox())){
 
-       morir = jugador->setVidas(jugador->getVidas()-1);
-
+        //morir = jugador->setVidas(jugador->getVidas()-1);
+        morir = Hud->restarVidas();
         //std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletNube[i];
         bulletNube[i] = NULL;
@@ -590,20 +608,23 @@ void Juego::colisionBulletJugador(){ //WIP fachada
   
 }
 
-void Juego::colisionBulletEnemigo(){//WIP fachada
+void Juego::colisionBulletEnemigo(){
+  hud * Hud = hud::instance();
   for(unsigned int i=0 ; i < maxBullets ; i++){
     for(int j=0 ; j<numEmenigos ; j++){
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
 
       if(enemies[j]->getCuerpo()->getGlobalBounds()->getIntersect( *bulletPlayer[i]->getHitbox() )){
-          for (int index = j; index < numEmenigos; index++)
+          for (int index = j; index < numEmenigos; index++){
             enemies[index] = enemies[index+1];
+          }
           enemies[numEmenigos] = NULL;
           numEmenigos--;
-
+          
           delete bulletPlayer[i];
           bulletPlayer[i]=NULL;
+          Hud->sumarPuntos(50);
       }
     }
   }
@@ -623,6 +644,7 @@ void Juego::comprobarPasarNivel(){
 }
 
 void Juego::nextLevel(){
+    hud * Hud = hud::instance();
     nivel++;
     delete mundo;
     mundo = new Mundo();
@@ -636,10 +658,12 @@ void Juego::nextLevel(){
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
     jugador->getBody()->posicionamiento(posP[0], posP[1]);
     if(nivel % 4 == 0){
-      jugador->perderPU_Velocidad();
-      jugador->perderPU_SaltoDoble();
-      jugador->perderPU_Slowhits();
+        Hud->setDobleSalto(false);
+        Hud->setVelocidad(false);
+        Hud->setIVelocidad(250);
+        Hud->setSlow(false);
     }
+    Hud->reiniciarTiempo();
     crearObjetos();
     crearEnemigos();
     view.setSize(1024,720);

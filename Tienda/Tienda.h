@@ -51,4 +51,6 @@ class Tienda : public Estado{
         int maxTienda;
         int itemSeleccionado;
         float cooldown_mov;
+        Textura *t; 
+        Bloque * b;
 };

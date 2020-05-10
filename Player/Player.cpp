@@ -43,10 +43,13 @@ Player::Player(int x, int y){
     vidas = 5; 
     velocidad=250;
 
-    PU_saltoDoble=false;
-    PU_slowhits=false;
-    PU_velocidad=false;
-    godMode=false;
+    hud * Hud = hud::instance();
+    PU_saltoDoble= Hud->getDoblesalto();
+    PU_slowhits= Hud->getSlow();
+    PU_velocidad=Hud->getVelocidad();
+    velocidad = Hud->getIVelocidad();
+    vidas = Hud->getVidas();
+    godMode = Hud->getGodMode();
 
     auxSaltos = true;
     cooldownSalto = 0;
@@ -71,6 +74,13 @@ Player::Player(int x, int y){
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
+    hud * Hud = hud::instance();
+    PU_saltoDoble= Hud->getDoblesalto();
+    PU_slowhits= Hud->getSlow();
+    PU_velocidad=Hud->getVelocidad();
+    velocidad = Hud->getIVelocidad();
+    vidas = Hud->getVidas();
+    godMode = Hud->getGodMode();
     
     updateHitbox(); //arreglar lo de update hitbox
     GolpeMelee(deltaTime);
