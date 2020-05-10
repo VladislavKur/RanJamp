@@ -2,7 +2,7 @@
 
 
 Centinela::Centinela( float x, float y, int type) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.5){
+    : Enemigo(x, y, 192, 640, "Arqueros2.png", 0.5){
 
     shoot = false;
     shootTime = 0.0;
@@ -101,6 +101,7 @@ void Centinela::update(Player* player, float deltaTime){
         }
     }while(cambio); //si cambiamos de modo, volvemos a iterar en el bucle
 
+    body->update(deltaTime);
 };
 
 Bullet* Centinela::disparar(){

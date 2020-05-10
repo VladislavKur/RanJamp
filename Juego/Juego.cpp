@@ -35,10 +35,13 @@ Juego::Juego(){
   }
 
   for(int i = 0; i < maxBullets;i++){
-
       bulletNube[i] = NULL;
-
   }
+
+  for(int i = 0; i < maxBullets;i++){
+      bulletBoss[i] = NULL;
+  }
+
   std::vector<sf::String> s; 
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
@@ -65,6 +68,10 @@ Juego::~Juego(){
         if(bulletNube[i] != nullptr){
           delete bulletNube[i];
           bulletNube[i] = nullptr;
+        }
+        if(bulletBoss[i] != nullptr){
+          delete bulletBoss[i];
+          bulletBoss[i] = nullptr;
         }
       }
       if(so != nullptr){
@@ -127,6 +134,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
         else
           bulletNube[i]->update(deltaTime);//revisar
       }
+      if(bulletBoss[i] != NULL){
+        if(bulletBoss[i]->lifetime<=0){
+          delete bulletBoss[i];
+          bulletBoss[i] = NULL;
+        }
+        else
+          bulletBoss[i]->update(deltaTime);//revisar
+      }
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
     colisionPlayerMundo(deltaTime);
@@ -177,7 +192,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
 
     j = mundo->getNumMonedasLlaves() - 1 ;
-    cout << j << endl;
+    //cout << j << endl;
     while(mundo->getMonedasLlaves()[j] != nullptr && j >= 0){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
     
       if(mundo->getMonedasLlaves()[j]->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
@@ -235,7 +250,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       //esto del casteo está bien hecho, pero en una funcion aparte
       if(enemies[i] != nullptr){
         Centinela* casteadoCent = dynamic_cast<Centinela*>(enemies[i]);
-        Nube* casteadoNube = dynamic_cast<Nube*>(enemies[i]); 
+        Nube* casteadoNube = dynamic_cast<Nube*>(enemies[i]);
+        Boss* casteadoBoss = dynamic_cast<Boss*>(enemies[i]); 
       
         if(casteadoCent != nullptr){
 
@@ -259,13 +275,28 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
             for(int j = 0; j < maxBullets;j++){
 
               if(bulletNube[j] == NULL)
-                bulletNube[j] = casteadoCent->disparar();
+                bulletNube[j] = casteadoNube->disparar();
 
             }
 
           }
 
         }
+
+        if(casteadoBoss != nullptr){
+          if(!casteadoBoss->getPegado()){
+            if(jugador->getVidas() <= 0)
+              matarJugador();
+          }
+          
+          if(casteadoBoss->getShoot()){
+            for(int j = 0; j < maxBullets;j++){
+              if(bulletBoss[j] == NULL)
+                bulletBoss[j] = casteadoBoss->disparar();
+            }
+          }
+        }
+        
       }      
     }
     jugador->updateHitbox(); //dentro de update de jugador
@@ -371,11 +402,7 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
 
     
     
-    for(unsigned i = 0; i < maxBullets;i++){
-
-      
-      if(bulletNube[i] != nullptr){bulletNube[i]->render(porcentaje);} //interpolacion
-    }
+    
 
     jugador->render(porcentaje);
     
@@ -401,7 +428,15 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     mundo->render2();
     Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
-      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion
+      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion centinelas
+    }
+
+    for(unsigned i = 0; i < maxBullets;i++){      
+      if(bulletNube[i] != nullptr){bulletNube[i]->render(porcentaje);} //interpolacion nube
+    } 
+
+    for(unsigned i = 0; i < maxBullets;i++){ 
+      if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
 }
 
@@ -463,6 +498,16 @@ void Juego::crearEnemigos(){ //está nice
         Pajaro * pajaro = new Pajaro(posx, posy); // WIP el reptante está sin terminar LOL
         enemies[i] = (Enemigo *) pajaro;
     }
+    else if(posicion[i][2] == 5){
+        //cout << "he añadido reptante" << endl; //eliminar
+        Nube * nube = new Nube(posx, posy); // WIP el reptante está sin terminar LOL
+        enemies[i] = (Enemigo *) nube;
+    }
+    else if(posicion[i][2] == 6){
+        //cout << "he añadido reptante" << endl; //eliminar
+        Boss * boss = new Boss(posx, posy); // WIP el reptante está sin terminar LOL
+        enemies[i] = (Enemigo *) boss;
+    }
 
   }
   
@@ -516,6 +561,11 @@ void Juego::matarJugador(){ //está nice
       bulletNube[i] = NULL;
 
   }
+  for(int i = 0; i < maxBullets;i++){
+
+      bulletBoss[i] = NULL;
+
+  }
 
 }
 
@@ -525,7 +575,7 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
             bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
-            cout<<jugador->getBody()->getPosicion()[1]<<endl;
+            //cout<<jugador->getBody()->getPosicion()[1]<<endl;
             jugador->setCooldownDisparo(10*deltaTime);
             break;
           }
@@ -571,13 +621,29 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
     if(bulletNube[i] != NULL){
 
-      if(jugador->getHitbox()->getIntersect(*bulletNube[i]->getHitbox())){
+      if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletNube[i]->getBody()->getGlobalBounds())){
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
         std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletNube[i];
         bulletNube[i] = NULL;
+        if(morir == true){
+          matarJugador();
+        }
+      }
+    }
+
+    if(bulletBoss[i] != NULL){
+
+      //if(jugador->getHitbox()->getIntersect(*bulletBoss[i]->getHitbox())){
+      if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletBoss[i]->getBody()->getGlobalBounds())){
+        morir = jugador->setVidas(jugador->getVidas()-2);
+
+        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        delete bulletBoss[i];
+        bulletBoss[i] = NULL;
+        
         if(morir == true){
           matarJugador();
         }
@@ -652,6 +718,10 @@ void Juego::nextLevel(){
 
     for(int i = 0; i < maxBullets;i++){
         bulletNube[i] = NULL;
+    }
+
+    for(int i = 0; i < maxBullets;i++){
+        bulletBoss[i] = NULL;
     }
 }
 

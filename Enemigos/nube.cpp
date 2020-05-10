@@ -1,23 +1,25 @@
 #include "nube.h"
 
 Nube::Nube(float x, float y) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.25){
+    : Enemigo(x, y, 256, 256, "Nube.png", 0.25){
     
     distanciaAtaque = 1000;
     modo = 0;    
-    velocidad = 50;
+    velocidad = 100;
 
     shootTime = 0.0f;
 }
 
-void Nube::update(sf::RectangleShape player, float delta){
+void Nube::update(Player* player, float delta){
 
-    //float posJugador = player->getBody().getPosition().x;
-    float posJugador = player.getPosition().x;
+    float posJugador = player->getBody()->getPosicion()[0];
+    float posJugadorY = player->getBody()->getPosicion()[1];
 
     float local_diffX = posJugador - body->getPosicion()[0];
+    float local_diffY = posJugador - body->getPosicion()[1];
     
     float local_diffabs = abs(local_diffX);
+    float local_diffabsY = abs(local_diffY);
     
     //float velPlayer =  900.0/1000.0;
 
@@ -35,33 +37,34 @@ void Nube::update(sf::RectangleShape player, float delta){
                 modo = 2;            
             }
             else{
-                actualizarPosicion((local_diffX/local_diffabs)*velocidad*delta,0); 
+                body->moverse((local_diffX/local_diffabs)*velocidad*delta,0); 
             }
             
         break;
         case(2): //le sigo y disparo
-            actualizarPosicion((local_diffX/local_diffabs)*velocidad*delta,0); 
- 
-            if(shootTime <= 0.0){
-                bool auxiliar;
+            //body->moverse((local_diffX/local_diffabs)*velocidad*delta,0); 
 
-                if((local_diffX/local_diffabs) == 1){
-                    auxiliar = true;
+            if(local_diffabs <= 3 || local_diffabs >= -3){                
+                modo = 1;            
+            }
+
+            if(shootTime <= 0.0){
+                
+                if((local_diffY/local_diffabsY) == 1){
+                    direccion = true;
                 }
                 else{
-                    auxiliar = false;
+                    direccion = false;
                 }
-                
-                direccion = auxiliar;
-                
+                                
                 shoot = true;
-                shootTime = 3.0;
+                shootTime = 1.5;
                 
             }
             else{
                 shootTime -= delta;
             }
-
+            
         break;
 
     }
@@ -77,8 +80,8 @@ Bullet* Nube::disparar(){
         shoot = false;
 
         vector<float> pos = body->getPosicion();
-        //cout<<"balas "<<pos[0]<<pos[1]<<endl;
-        devolver = new Bullet(pos[0], pos[1], direccion, 2, 0);
+        
+        devolver = new Bullet(pos[0], pos[1], direccion, -1, 0);
     }
 
     return devolver;

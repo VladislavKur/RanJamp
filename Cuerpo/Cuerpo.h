@@ -43,6 +43,7 @@ class Cuerpo{
         //Hola 
         void Origen(float, float);
         void Scalar(float, float);
+        void rotar(float angle);
         void render(float porcentaje);
         void render();
         void moverse(float x, float y);
@@ -56,6 +57,7 @@ class Cuerpo{
         Rectangulo * getGlobalBounds();
         int getTipo();
         float getOriginY(){return body->getOrigin().y;};
+        int getPosicionX(){return animacion->getPosicionX();}
 };
 
 #endif

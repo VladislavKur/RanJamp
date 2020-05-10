@@ -7,6 +7,7 @@
 #include "../Enemigos/centinela.h"
 #include "../Enemigos/nube.h"
 #include "../Enemigos/pajaro.h"
+#include "../Enemigos/Boss.h"
 #include "../Bullet/bullet.h"
 #include "../Mundo/Mundo.h"
 #include "../Objeto/Objeto.h"
@@ -28,6 +29,7 @@
             Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies[maxBullets];
             Bullet* bulletNube[maxBullets];
+            Bullet* bulletBoss[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
             musica * so;

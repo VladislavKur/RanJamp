@@ -128,9 +128,19 @@ void Motor::recorte(sf::Shape* cuerpo,  int xi,int yi, int lengthX, int lengthY)
     sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
 
     if(casteadoRect != NULL)
-        casteadoRect->setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+        casteadoRect->setTextureRect(sf::IntRect(xi, yi, lengthX, lengthY));
     else if(casteadoCirc != NULL)
-        casteadoCirc->setTextureRect(sf::IntRect(xi,yi,lengthX,lengthY));
+        casteadoCirc->setTextureRect(sf::IntRect(xi, yi, lengthX, lengthY));
+
+}
+void Motor::recorteAnim(sf::Shape* cuerpo,  int xi,int yi, int lengthX, int lengthY){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(cuerpo);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(cuerpo);
+
+    if(casteadoRect != NULL)
+        casteadoRect->setTextureRect(sf::IntRect(xi * lengthX, yi * lengthY, lengthX, lengthY));
+    else if(casteadoCirc != NULL)
+        casteadoCirc->setTextureRect(sf::IntRect(xi * lengthX, yi * lengthY, lengthX, lengthY));
 
 }
 
@@ -215,6 +225,15 @@ void Motor::posicionar(sf::Sprite& entrada, float x, float y){
 
 }
 
+void Motor::rotate(sf::Shape* body, float angle){
+    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(body);
+    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(body);
+
+    if(casteadoRect != NULL)
+        casteadoRect->rotate(angle);
+    else if(casteadoCirc != NULL)
+        casteadoCirc->rotate(angle);
+}
 
 float Motor::getReloj(){
 
@@ -263,5 +282,3 @@ bool Motor::getOpen(){
     return(ventana->isOpen());
 
 }
-
-

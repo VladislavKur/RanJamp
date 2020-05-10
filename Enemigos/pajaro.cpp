@@ -1,7 +1,7 @@
 #include "pajaro.h"
 
 Pajaro::Pajaro(float x, float y) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.25){
+    : Enemigo(x, y, 64, 64, "Murcielagos_BLUE.png", 1){
 
     alturaActual = y;
     alturaMinRelativa = alturaMax + alturaActual;
@@ -50,7 +50,7 @@ void Pajaro::update(Player* player, float delta){
     //posX = posX - delta*velocidad*0.6;
     //posY = posY + direccion*delta*velocidad;
     
-    body->posicionamiento(-delta*velocidad*0.6, direccion*delta*velocidad);
+    body->moverse(-delta*velocidad*0.6, direccion*delta*velocidad);
 
     if(posY >= alturaMinRelativa){ //la parte más baja que puede bajar
         posY = alturaMinRelativa;
@@ -74,6 +74,7 @@ void Pajaro::update(Player* player, float delta){
         }
     }
     updateHitbox();
+    body->update(delta);
 };
 
 void Pajaro::render( float porcentaje){

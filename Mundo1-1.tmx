@@ -10531,7 +10531,7 @@
   <object id="27" x="1059" y="1220" width="190" height="56"/>
  </objectgroup>
  <objectgroup name="Capa de Enemigos">
-  <object id="15" type="2" x="1780" y="1071" width="78" height="80">
+  <object id="15" type="6" x="1780" y="1071" width="78" height="80">
    <ellipse/>
   </object>
  </objectgroup>
