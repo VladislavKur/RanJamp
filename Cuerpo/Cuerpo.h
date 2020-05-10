@@ -48,6 +48,7 @@ class Cuerpo{
         void moverse(float x, float y);
         void addAnimacion(float timeAnimacion);
         void setSpriteAnimacion(int entrada);
+        void setTimeAnimacion(float entrada);
         void setSize(float sizeX, float sizeY);
         bool colisiona(Cuerpo * entrada);
         void rotar(float angulo);
@@ -57,7 +58,8 @@ class Cuerpo{
         Rectangulo * getGlobalBounds();
         int getTipo();
         float getOriginY(){return body->getOrigin().y;};
-        int getPosicionX(){return animacion->getPosicionX();}
+        int getPosicionX(){return animacion->getPosicionX();};
+        float getTimeAnimacion(){return animacion->getTimeAnimation();};
 };
 
 #endif

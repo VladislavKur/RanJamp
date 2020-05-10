@@ -62,7 +62,7 @@ void Animacion::nextSprite(){
 }
 
 void Animacion::render(float porcentaje){
-    if(cambiado){
+    if(cambiado && tiempoDuracionMax > 0.0){
         int aux = tiempoAnterior - tiempoDiff*porcentaje;
 
         if(aux <= 0){
@@ -70,4 +70,14 @@ void Animacion::render(float porcentaje){
             nextSprite();
         }
     }
+}
+
+void Animacion::setTimeAnimacion(float entrada){
+
+    tiempoDuracionMax = entrada;
+    tiempoActual = tiempoDuracionMax;
+    tiempoAnterior = tiempoDuracionMax;
+
+    tiempoDiff = 0.0;
+
 }
