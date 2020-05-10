@@ -142,6 +142,12 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionMeleeEnemigo();
    // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
+    if(Keyboard::isKeyPressed(Keyboard::Q)){
+      jugador->setArma(1);
+    }
+    if(Keyboard::isKeyPressed(Keyboard::W)){
+      jugador->setArma(2);
+    }
     
     int j = 0;
     while(objetos[j] != nullptr && j < numObjetos){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
@@ -541,11 +547,18 @@ void Juego::matarJugador(){ //está nice
 void Juego::disparar(float deltaTime){ 
   
   for(int i=0 ; i<maxBullets ; i++){
-    if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
-        bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
-  
-        jugador->setCooldownDisparo(10*deltaTime);
-        break;
+    if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 ){
+      if(jugador->getArma()==1){
+          bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
+          jugador->setCooldownDisparo(1);
+          break;
+      }
+      if(jugador->getArma()==2){
+          bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
+          jugador->setCooldownDisparo(0.2);
+          break;
+      }
+       
 
     }
   }
