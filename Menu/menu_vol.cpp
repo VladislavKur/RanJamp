@@ -41,7 +41,7 @@ void menu_vol::update(float deltaTime){
         cooldown_mov = 0.25;
     }*/
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
-        cooldown_mov = 0.35;
+        cooldown_mov = 0.5;
         switch(selectedItem){
 
             case 0:

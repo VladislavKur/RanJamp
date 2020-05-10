@@ -20,6 +20,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o"
+  "/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o"
+  "/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"

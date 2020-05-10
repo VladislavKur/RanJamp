@@ -24,7 +24,15 @@ class hud{
         void render(); 
 
         int getMonedero(){return monedero;}
-        int setMonedero(int x){monedero -=x;}
+        void setMonedero(int x){monedero -=x;}
+        int getVidas(){return vidas;}
+        void sumarVidas(){vidas++;}
+        bool getDoblesalto(){return doblesalto;}
+        void setDobleSalto(bool x){doblesalto = x;}
+        bool getVelocidad(){return velocidad;}
+        void setVelocidad(bool x){velocidad = x;}
+        bool getSlow(){return slow;}
+        void setSlow(bool x){slow =x;}
     protected: 
         hud(int posPengo, int vidasPengo, int max);
         
@@ -35,6 +43,10 @@ class hud{
         Sprite * sPuntos;
         Cuerpo ** sprites;
         Clock clockGlobal;
-        int monedero = 5;
+        int monedero = 10;
         int puntos = 0; 
+        int vidas = 0; 
+        bool doblesalto = false;
+        bool velocidad = false;
+        bool slow = false; 
 };

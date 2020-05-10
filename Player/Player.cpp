@@ -38,7 +38,7 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=25;
+    jumpHeight=50;
     arma=0;  
     vidas = 5; 
     velocidad=250;
@@ -98,16 +98,19 @@ void Player::update(float deltaTime , Mundo * mundo){
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
         if(auxSaltos==true && saltos > 0){
             saltar();
+           
             cooldownSalto=15*deltaTime;
           }
       }
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
+          
           facing = true;
       }
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
           moveLeft(deltaTime, mundo);
+         
           facing = false;
       }
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl)){ //lo mismo que lo anterior WIP fachada
@@ -116,7 +119,10 @@ void Player::update(float deltaTime , Mundo * mundo){
         }
       }
     }
-      
+    //cout<<atacando_melee<<endl;
+
+  
+    
     body->moverse(0,jumpSpeed*deltaTime);
 }
 
@@ -146,6 +152,7 @@ void Player::render(float porcentaje){
 }
 
 void Player::moveRight(float deltaTime , Mundo * mundo){
+  
   bool puede = true;
   Cuerpo ** objetos = mundo->getObjetos();
   Cuerpo ** puertas = mundo->getMonedasLlaves();
@@ -164,11 +171,13 @@ void Player::moveRight(float deltaTime , Mundo * mundo){
   if(puede){
     body->Scalar(1.0f,1.0f);
     body->moverse(velocidad*deltaTime,0);
+
   
   }
 }
 
 void Player::moveLeft(float deltaTime , Mundo * mundo){
+  
   bool puede=true;
   Cuerpo ** objetos = mundo->getObjetos();
   Cuerpo ** puertas = mundo->getMonedasLlaves();
@@ -195,9 +204,12 @@ void Player::moveLeft(float deltaTime , Mundo * mundo){
 }
 
 void Player::saltar(){
+  
   if(saltos!=0){
+
         auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
+        
         saltos--;
       }
 }
@@ -301,6 +313,7 @@ void Player::setSize(float sizeX, float sizeY) {
 }
 
 bool Player::GolpeMelee(float deltaTime){
+
   
   vector<float> gp = body->getPosicion();
   Rectangulo gbb = *body->getGlobalBounds();

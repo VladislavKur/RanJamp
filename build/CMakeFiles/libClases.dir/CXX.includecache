@@ -263,6 +263,8 @@ menu_inicial.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
 ../Juego/Juego.h
 /home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+menu_mundos.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.h
 
 /home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
 SFML/Graphics.hpp
@@ -277,6 +279,40 @@ menu_vol.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
 ../Tienda/Tienda.h
 /home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.cpp
+menu_mundos.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.h
+menu_nivel.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.h
+menu_inicial.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+../Juego/Manejador.h
+/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.cpp
+menu_nivel.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.h
+
+/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
 
 /home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.cpp
 menu_pausa.h

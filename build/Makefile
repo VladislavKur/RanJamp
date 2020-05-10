@@ -568,6 +568,60 @@ Menu/menu_inicial.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
 .PHONY : Menu/menu_inicial.cpp.s
 
+Menu/menu_mundos.o: Menu/menu_mundos.cpp.o
+
+.PHONY : Menu/menu_mundos.o
+
+# target to build an object file
+Menu/menu_mundos.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
+.PHONY : Menu/menu_mundos.cpp.o
+
+Menu/menu_mundos.i: Menu/menu_mundos.cpp.i
+
+.PHONY : Menu/menu_mundos.i
+
+# target to preprocess a source file
+Menu/menu_mundos.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.i
+.PHONY : Menu/menu_mundos.cpp.i
+
+Menu/menu_mundos.s: Menu/menu_mundos.cpp.s
+
+.PHONY : Menu/menu_mundos.s
+
+# target to generate assembly for a file
+Menu/menu_mundos.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.s
+.PHONY : Menu/menu_mundos.cpp.s
+
+Menu/menu_nivel.o: Menu/menu_nivel.cpp.o
+
+.PHONY : Menu/menu_nivel.o
+
+# target to build an object file
+Menu/menu_nivel.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
+.PHONY : Menu/menu_nivel.cpp.o
+
+Menu/menu_nivel.i: Menu/menu_nivel.cpp.i
+
+.PHONY : Menu/menu_nivel.i
+
+# target to preprocess a source file
+Menu/menu_nivel.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.i
+.PHONY : Menu/menu_nivel.cpp.i
+
+Menu/menu_nivel.s: Menu/menu_nivel.cpp.s
+
+.PHONY : Menu/menu_nivel.s
+
+# target to generate assembly for a file
+Menu/menu_nivel.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.s
+.PHONY : Menu/menu_nivel.cpp.s
+
 Menu/menu_pausa.o: Menu/menu_pausa.cpp.o
 
 .PHONY : Menu/menu_pausa.o
@@ -1085,6 +1139,12 @@ help:
 	@echo "... Menu/menu_inicial.o"
 	@echo "... Menu/menu_inicial.i"
 	@echo "... Menu/menu_inicial.s"
+	@echo "... Menu/menu_mundos.o"
+	@echo "... Menu/menu_mundos.i"
+	@echo "... Menu/menu_mundos.s"
+	@echo "... Menu/menu_nivel.o"
+	@echo "... Menu/menu_nivel.i"
+	@echo "... Menu/menu_nivel.s"
 	@echo "... Menu/menu_pausa.o"
 	@echo "... Menu/menu_pausa.i"
 	@echo "... Menu/menu_pausa.s"

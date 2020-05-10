@@ -93,6 +93,7 @@ Juego* Juego::instance(){
 
 void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO 
   Motor * m = Motor::instance();
+  //std::cout << jugador->getBody()->getPosicion()[0] << ", " << jugador->getBody()->getPosicion()[1]<< std::endl; 
   pausa();
   vector<int> dimensiones = mundo->cargarPosicionBordes();
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){ //WIP FACHADA y LECTURA TECLADO
@@ -135,7 +136,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo();
     colisionBulletJugador();
     colisionMeleeEnemigo();
-    
+   // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
     
     int j = 0;
@@ -177,7 +178,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     }
 
     j = mundo->getNumMonedasLlaves() - 1 ;
-    cout << j << endl;
+    //cout << j << endl;
     while(mundo->getMonedasLlaves()[j] != nullptr && j >= 0){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
     
       if(mundo->getMonedasLlaves()[j]->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
@@ -308,7 +309,8 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
         jugador->setJumpSpeed(0);
 
       }else{
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*5*deltaTime);
+        std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
+        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*4*deltaTime);
       }
       if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
         jugador->setJumpSpeed(10);
@@ -323,6 +325,7 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
     bool morir = false;
     timerObstaculos -= deltaTime;
     for(int i=0 ; i<  mundo->getNumObstaculos(); i++){
+      if(objetos[i]!= nullptr)
       if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
         if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){//pierde una vida
           if(jugador->getModoDios() == false){
@@ -524,7 +527,7 @@ void Juego::disparar(float deltaTime){ //WIP FACHADA (¿a lo mejor debería esta
         for(int i=0 ; i<maxBullets ; i++){
           if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 && jugador->getArma()==1){
             bulletPlayer[i]=new Bullet( jugador->getBody()->getPosicion()[0] , jugador->getBody()->getPosicion()[1], jugador->getFacing() , 1 , 0);
-            cout<<jugador->getBody()->getPosicion()[1]<<endl;
+            //cout<<jugador->getBody()->getPosicion()[1]<<endl;
             jugador->setCooldownDisparo(10*deltaTime);
             break;
           }
@@ -559,7 +562,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
-        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        //std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletEnemies[i];
         bulletEnemies[i] = NULL;
         if(morir == true){
@@ -574,7 +577,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
        morir = jugador->setVidas(jugador->getVidas()-1);
 
-        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        //std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletNube[i];
         bulletNube[i] = NULL;
         if(morir == true){

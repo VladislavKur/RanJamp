@@ -5,7 +5,7 @@ Tienda* Tienda::p_instance = 0;
 
 Tienda* Tienda::instance(){
     if(p_instance == 0){
-        p_instance = new Tienda(9, 10);
+        p_instance = new Tienda(4, 5);
     }
     return(p_instance);
 }
@@ -14,22 +14,18 @@ Tienda::Tienda(int i, int max){
     numOpciones = max;
     maxTienda = i;
     itemSeleccionado = -1;
-    sprites = new Cuerpo *[9];
-    sprites[0] = new Cuerpo(50 , 0,32,32,"powerup1.png",1, 0,-1);
-    sprites[0]->recorte(25,25);
-    sprites[1] = new Cuerpo(50 , 100,160,32,"vidas.png",1, 0,-1);
-    sprites[1]->recorte(0,5*32);
-    sprites[2] = new Cuerpo(50 , 200,32,32,"saltos.png",1, 0,-1);
-    sprites[3] = new Cuerpo(50, 300,32,32,"velocidad.png",1, 0,-1);
-    sprites[4] = new Cuerpo(50, 400,32,32,"powerup3.png",1, 0,-1);
-    sprites[5] = new Cuerpo(50, 500,100,100,"Moneda.png",1, 0,-1);
-    sprites[5]->Scalar(0.2, 0.2);
-    sprites[6] = new Cuerpo(50 , 600,100,100,"Llave.png",1, 0,-1);
-    sprites[6]->Scalar(0.2, 0.2);
-    sprites[7] = new Cuerpo(50 , 700,100,100,"tiempo.png",1, 0,-1);
-    sprites[7]->Scalar(0.2, 0.2);
-    sprites[8] = new Cuerpo(50 , 800,100,100,"estrella.png",1, 0,-1);
-    sprites[8]->Scalar(0.2, 0.2);
+    sprites = new Cuerpo *[i];
+    sprites[0] = new Cuerpo(300 , 100,300,300,"ObjetosTienda.png",1, 0,2);
+    sprites[0]->Scalar(0.2, 0.2);
+    sprites[1] = new Cuerpo(300 , 200,300,300,"ObjetosTienda.png",1, 0,1);
+    sprites[1]->recorte(0,300);
+    sprites[1]->Scalar(0.2, 0.2);
+    sprites[2] = new Cuerpo(300 , 400,300,300,"ObjetosTienda.png",1, 0,1);
+    sprites[2]->recorte(0,600);
+    sprites[2]->Scalar(0.2, 0.2);
+    sprites[3] = new Cuerpo(300, 500,300,300,"ObjetosTienda.png",1, 0,3);
+    sprites[3]->recorte(0,900);
+    sprites[3]->Scalar(0.2, 0.2);
 
     font = new Font[1];
 
@@ -43,26 +39,33 @@ Tienda::Tienda(int i, int max){
     cambiarTexto(2, "P2" , 0 , 100);
     cambiarTexto(3, "P3" , 0 , 200);
     cambiarTexto(4, "P4" , 0 , 300);
-    cambiarTexto(5, "P5" , 0 , 400);
-    cambiarTexto(6, "P6" , 0 , 500);
-    cambiarTexto(7, "P7" , 0 , 600);
-    cambiarTexto(8, "P8" , 0 , 700);
-    cambiarTexto(9, "P9" , 0 , 800);
 }
 
 void Tienda::moveUp(){
     if(selectedItem - 1 >= 0 ){
         texto[selectedItem].setColor(Color::White);
+        if(selectedItem > 0){
+        sprites[selectedItem-1]->recorte(0,300*(selectedItem-1));
+        }
         selectedItem--;
         texto[selectedItem].setColor(Color::Red);
+        if(selectedItem > 0){
+        sprites[selectedItem-1]->recorte(300,300*(selectedItem-1));
+        }
     }
 }
 
 void Tienda::moveDown(){
     if(selectedItem + 1 < numOpciones ){
         texto[selectedItem].setColor(Color::White);
+        if(selectedItem > 0){
+        sprites[selectedItem-1]->recorte(0,300*(selectedItem-1));
+        }
         selectedItem++;
         texto[selectedItem].setColor(Color::Red);
+        if(selectedItem > 0){
+        sprites[selectedItem-1]->recorte(300,300*(selectedItem-1));
+        }
     }
 }
 
@@ -82,8 +85,15 @@ void Tienda::update(float deltaTime){
     hud * hud = hud::instance();
     Manejador * man = Manejador::instancia();
     Juego * juego = Juego::instance();
-
-    sf::Vector2i position = sf::Mouse::getPosition();
+    sprites[0]->posicionamiento(juego->view.getCenter().x-juego->view.getSize().x/3, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(1, "P1", juego->view.getCenter().x-juego->view.getSize().x/3-25, juego->view.getCenter().y-juego->view.getSize().y/4+25);
+    sprites[1]->posicionamiento(juego->view.getCenter().x-juego->view.getSize().x/3+100, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(2, "P2", juego->view.getCenter().x-juego->view.getSize().x/3+75, juego->view.getCenter().y-juego->view.getSize().y/4+25);
+    sprites[2]->posicionamiento(juego->view.getCenter().x-juego->view.getSize().x/3+200, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(3, "P3", juego->view.getCenter().x-juego->view.getSize().x/3+175, juego->view.getCenter().y-juego->view.getSize().y/4+25);
+    sprites[3]->posicionamiento(juego->view.getCenter().x-juego->view.getSize().x/3+300, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(4, "P4", juego->view.getCenter().x-juego->view.getSize().x/3+275, juego->view.getCenter().y-juego->view.getSize().y/4+25);
+    cambiarTexto(0, "BACK", juego->view.getCenter().x+juego->view.getSize().x/3+100, juego->view.getCenter().y+juego->view.getSize().y/4-100);
 
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
         moveUp();
@@ -98,8 +108,49 @@ void Tienda::update(float deltaTime){
         if(selectedItem == 0){
             man->back();
         }else{
-            if(hud->getMonedero() > sprites[selectedItem-1]->getTipo()){
-                cout<<"he comprado el item "<< selectedItem << endl;
+            if(hud->getMonedero() >= sprites[selectedItem-1]->getTipo()){
+                switch (selectedItem){
+                case 1:
+                    if(hud->getVidas() < 5){
+                        cout << "HE COMPRADO VIDA" <<endl;
+                        hud->sumarVidas();
+                        hud->setMonedero(sprites[selectedItem-1]->getTipo());
+                    }else{
+                        cout << "ya tengo todas mis vidas" <<endl;
+                    }
+                    break;
+                case 2:
+                    if(hud->getSlow() == false){
+                        cout << "HE COMPRADO SLOW" <<endl;
+                        hud->setSlow(true);
+                        hud->setMonedero(sprites[selectedItem-1]->getTipo());
+                    }else{
+                        cout << "ya tengo slow" <<endl;
+                    }
+                    break;
+                case 3:
+                    if(hud->getDoblesalto() == false){
+                        cout << "HE COMPRADO saltos" <<endl;
+                        hud->setDobleSalto(true);
+                        hud->setMonedero(sprites[selectedItem-1]->getTipo());
+                    }else{
+                        cout << "ya tengo saltos" <<endl;
+                    }
+                    break;
+                case 4:
+                    if(hud->getVelocidad() == false){
+                        cout <<"HE COMPRADO VELOCIDAD" <<endl;
+                        hud->setVelocidad(true);
+                        hud->setMonedero(sprites[selectedItem-1]->getTipo());
+                    }else{
+                        cout << "ya tengo velocidad"<<endl;
+                    }
+                    break;
+                default:
+                    break;
+                }
+            }else{
+                cout << "ya NO TENGO DINERO " << hud->getMonedero() <<endl;
             }
         }
     }
@@ -108,10 +159,10 @@ void Tienda::update(float deltaTime){
 void Tienda::render(float num){
   Motor * motor = Motor::instance();
  
-  for(int i = 0; i < 9; i++){
+  for(int i = 0; i < maxTienda; i++){
     sprites[i]->render();
   }
-  for(int i = 0; i < 10; i++){
+  for(int i = 0; i < numOpciones; i++){
     motor->dibujo(texto[i]);
   }
 }
