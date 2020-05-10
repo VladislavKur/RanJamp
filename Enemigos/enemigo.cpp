@@ -48,9 +48,9 @@ bool Enemigo::comprobarColision(Cuerpo* cuerpo){
 
 bool Enemigo::setVidas(int v){
     
-    vidas = v;
+    vida = v;
 
-    if(vidas <= 0)
+    if(vida <= 0)
         muerto = true;
     else
         muerto = false;
@@ -59,9 +59,16 @@ bool Enemigo::setVidas(int v){
 }
 
 int Enemigo::getVidas(){
-    return vidas;
+    return vida;
 }
 
 Cuerpo* Enemigo::getCuerpo(){
     return body;
+}
+
+void Enemigo::restarVida(int i){
+    vida -= i;
+    if(vida <= 0){
+        muerto = true;
+    }
 }

@@ -595,6 +595,60 @@ Menu/menu_inicial.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.s
 .PHONY : Menu/menu_inicial.cpp.s
 
+Menu/menu_mundos.o: Menu/menu_mundos.cpp.o
+
+.PHONY : Menu/menu_mundos.o
+
+# target to build an object file
+Menu/menu_mundos.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
+.PHONY : Menu/menu_mundos.cpp.o
+
+Menu/menu_mundos.i: Menu/menu_mundos.cpp.i
+
+.PHONY : Menu/menu_mundos.i
+
+# target to preprocess a source file
+Menu/menu_mundos.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.i
+.PHONY : Menu/menu_mundos.cpp.i
+
+Menu/menu_mundos.s: Menu/menu_mundos.cpp.s
+
+.PHONY : Menu/menu_mundos.s
+
+# target to generate assembly for a file
+Menu/menu_mundos.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.s
+.PHONY : Menu/menu_mundos.cpp.s
+
+Menu/menu_nivel.o: Menu/menu_nivel.cpp.o
+
+.PHONY : Menu/menu_nivel.o
+
+# target to build an object file
+Menu/menu_nivel.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
+.PHONY : Menu/menu_nivel.cpp.o
+
+Menu/menu_nivel.i: Menu/menu_nivel.cpp.i
+
+.PHONY : Menu/menu_nivel.i
+
+# target to preprocess a source file
+Menu/menu_nivel.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.i
+.PHONY : Menu/menu_nivel.cpp.i
+
+Menu/menu_nivel.s: Menu/menu_nivel.cpp.s
+
+.PHONY : Menu/menu_nivel.s
+
+# target to generate assembly for a file
+Menu/menu_nivel.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.s
+.PHONY : Menu/menu_nivel.cpp.s
+
 Menu/menu_pausa.o: Menu/menu_pausa.cpp.o
 
 .PHONY : Menu/menu_pausa.o
@@ -1000,6 +1054,33 @@ Textura/Textura.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.s
 .PHONY : Textura/Textura.cpp.s
 
+Tienda/Tienda.o: Tienda/Tienda.cpp.o
+
+.PHONY : Tienda/Tienda.o
+
+# target to build an object file
+Tienda/Tienda.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
+.PHONY : Tienda/Tienda.cpp.o
+
+Tienda/Tienda.i: Tienda/Tienda.cpp.i
+
+.PHONY : Tienda/Tienda.i
+
+# target to preprocess a source file
+Tienda/Tienda.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.i
+.PHONY : Tienda/Tienda.cpp.i
+
+Tienda/Tienda.s: Tienda/Tienda.cpp.s
+
+.PHONY : Tienda/Tienda.s
+
+# target to generate assembly for a file
+Tienda/Tienda.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.s
+.PHONY : Tienda/Tienda.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1088,6 +1169,12 @@ help:
 	@echo "... Menu/menu_inicial.o"
 	@echo "... Menu/menu_inicial.i"
 	@echo "... Menu/menu_inicial.s"
+	@echo "... Menu/menu_mundos.o"
+	@echo "... Menu/menu_mundos.i"
+	@echo "... Menu/menu_mundos.s"
+	@echo "... Menu/menu_nivel.o"
+	@echo "... Menu/menu_nivel.i"
+	@echo "... Menu/menu_nivel.s"
 	@echo "... Menu/menu_pausa.o"
 	@echo "... Menu/menu_pausa.i"
 	@echo "... Menu/menu_pausa.s"
@@ -1133,6 +1220,9 @@ help:
 	@echo "... Textura/Textura.o"
 	@echo "... Textura/Textura.i"
 	@echo "... Textura/Textura.s"
+	@echo "... Tienda/Tienda.o"
+	@echo "... Tienda/Tienda.i"
+	@echo "... Tienda/Tienda.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

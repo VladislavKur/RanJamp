@@ -50,6 +50,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/fv/Desktop/RanJamp/build/Textura/cmake_install.cmake")
   include("/home/fv/Desktop/RanJamp/build/Cuerpo/cmake_install.cmake")
   include("/home/fv/Desktop/RanJamp/build/Rectangulo/cmake_install.cmake")
+  include("/home/fv/Desktop/RanJamp/build/Tienda/cmake_install.cmake")
 
 endif()
 

@@ -8,6 +8,7 @@ Nube::Nube(float x, float y)
     velocidad = 100;
 
     shootTime = 0.0f;
+    vida = 3;
 }
 
 void Nube::update(Player* player, float delta){

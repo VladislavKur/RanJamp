@@ -21,6 +21,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fv/Desktop/RanJamp/Menu/menu.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu.cpp.o"
   "/home/fv/Desktop/RanJamp/Menu/menu_controles.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o"
   "/home/fv/Desktop/RanJamp/Menu/menu_inicial.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o"
+  "/home/fv/Desktop/RanJamp/Menu/menu_mundos.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o"
+  "/home/fv/Desktop/RanJamp/Menu/menu_nivel.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o"
   "/home/fv/Desktop/RanJamp/Menu/menu_pausa.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o"
   "/home/fv/Desktop/RanJamp/Menu/menu_vol.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o"
   "/home/fv/Desktop/RanJamp/Motor/Motor.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Motor/Motor.cpp.o"
@@ -36,6 +38,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
   "/home/fv/Desktop/RanJamp/Texto/texto.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Texto/texto.cpp.o"
   "/home/fv/Desktop/RanJamp/Textura/Textura.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+  "/home/fv/Desktop/RanJamp/Tienda/Tienda.cpp" "/home/fv/Desktop/RanJamp/build/CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -57,6 +60,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Textura"
   "../Cuerpo"
   "../Rectangulo"
+  "../Tienda"
   )
 
 # Targets to which this target links.

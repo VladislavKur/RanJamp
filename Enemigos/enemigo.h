@@ -23,6 +23,7 @@ class Enemigo{
         int getVidas();
         bool setVidas(int v);
         
+        void restarVida(int i);
     protected:
         Enemigo(float x, float y, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala);
@@ -32,12 +33,12 @@ class Enemigo{
         float velocidad;
         int modo;
         bool colision;
-        int vidas;
 
         Rectangulo * coliAbajo;
         Rectangulo * coliArriba;
         Rectangulo * coliIzquierda;
         Rectangulo * coliDerecha;
+        int vida;
        
 };
 

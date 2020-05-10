@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Textura"
   "../Cuerpo"
   "../Rectangulo"
+  "../Tienda"
   )
 
 # Targets to which this target links.

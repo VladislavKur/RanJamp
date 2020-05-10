@@ -36,6 +36,7 @@ CMakeFiles/libClases.dir/Enemigos/Boss.cpp.o
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -53,6 +54,7 @@ CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -67,6 +69,7 @@ CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp
  /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -82,6 +85,7 @@ CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o
  /home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp
  /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -99,6 +103,7 @@ CMakeFiles/libClases.dir/Enemigos/nube.cpp.o
  /home/fv/Desktop/RanJamp/Enemigos/nube.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -114,6 +119,7 @@ CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o
  /home/fv/Desktop/RanJamp/Enemigos/pajaro.cpp
  /home/fv/Desktop/RanJamp/Enemigos/pajaro.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -165,6 +171,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
  /home/fv/Desktop/RanJamp/Texto/texto.h
  /home/fv/Desktop/RanJamp/Textura/Textura.h
+ /home/fv/Desktop/RanJamp/Tienda/Tienda.h
 CMakeFiles/libClases.dir/Juego/Manejador.cpp.o
  /home/fv/Desktop/RanJamp/Juego/Estado.h
  /home/fv/Desktop/RanJamp/Juego/Manejador.cpp
@@ -249,7 +256,74 @@ CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
  /home/fv/Desktop/RanJamp/Menu/menu_controles.h
  /home/fv/Desktop/RanJamp/Menu/menu_inicial.cpp
  /home/fv/Desktop/RanJamp/Menu/menu_inicial.h
+ /home/fv/Desktop/RanJamp/Menu/menu_mundos.h
  /home/fv/Desktop/RanJamp/Menu/menu_vol.h
+ /home/fv/Desktop/RanJamp/Motor/Motor.h
+ /home/fv/Desktop/RanJamp/Mundo/Mundo.h
+ /home/fv/Desktop/RanJamp/Mundo/tinystr.h
+ /home/fv/Desktop/RanJamp/Mundo/tinyxml.h
+ /home/fv/Desktop/RanJamp/Musica/musica.h
+ /home/fv/Desktop/RanJamp/Objeto/Objeto.h
+ /home/fv/Desktop/RanJamp/Player/Player.h
+ /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
+ /home/fv/Desktop/RanJamp/Texto/texto.h
+ /home/fv/Desktop/RanJamp/Textura/Textura.h
+ /home/fv/Desktop/RanJamp/Tienda/Tienda.h
+CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
+ /home/fv/Desktop/RanJamp/Animacion/Animacion.h
+ /home/fv/Desktop/RanJamp/Bloque/Bloque.h
+ /home/fv/Desktop/RanJamp/Bullet/bullet.h
+ /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
+ /home/fv/Desktop/RanJamp/Enemigos/Boss.h
+ /home/fv/Desktop/RanJamp/Enemigos/centinela.h
+ /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+ /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
+ /home/fv/Desktop/RanJamp/Enemigos/nube.h
+ /home/fv/Desktop/RanJamp/Enemigos/pajaro.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
+ /home/fv/Desktop/RanJamp/Juego/Estado.h
+ /home/fv/Desktop/RanJamp/Juego/Juego.h
+ /home/fv/Desktop/RanJamp/Juego/Manejador.h
+ /home/fv/Desktop/RanJamp/Menu/menu.h
+ /home/fv/Desktop/RanJamp/Menu/menu_controles.h
+ /home/fv/Desktop/RanJamp/Menu/menu_inicial.h
+ /home/fv/Desktop/RanJamp/Menu/menu_mundos.cpp
+ /home/fv/Desktop/RanJamp/Menu/menu_mundos.h
+ /home/fv/Desktop/RanJamp/Menu/menu_nivel.h
+ /home/fv/Desktop/RanJamp/Menu/menu_vol.h
+ /home/fv/Desktop/RanJamp/Motor/Motor.h
+ /home/fv/Desktop/RanJamp/Mundo/Mundo.h
+ /home/fv/Desktop/RanJamp/Mundo/tinystr.h
+ /home/fv/Desktop/RanJamp/Mundo/tinyxml.h
+ /home/fv/Desktop/RanJamp/Musica/musica.h
+ /home/fv/Desktop/RanJamp/Objeto/Objeto.h
+ /home/fv/Desktop/RanJamp/Player/Player.h
+ /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
+ /home/fv/Desktop/RanJamp/Texto/texto.h
+ /home/fv/Desktop/RanJamp/Textura/Textura.h
+ /home/fv/Desktop/RanJamp/Tienda/Tienda.h
+CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
+ /home/fv/Desktop/RanJamp/Animacion/Animacion.h
+ /home/fv/Desktop/RanJamp/Bloque/Bloque.h
+ /home/fv/Desktop/RanJamp/Bullet/bullet.h
+ /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
+ /home/fv/Desktop/RanJamp/Enemigos/Boss.h
+ /home/fv/Desktop/RanJamp/Enemigos/centinela.h
+ /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+ /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
+ /home/fv/Desktop/RanJamp/Enemigos/nube.h
+ /home/fv/Desktop/RanJamp/Enemigos/pajaro.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
+ /home/fv/Desktop/RanJamp/Juego/Estado.h
+ /home/fv/Desktop/RanJamp/Juego/Juego.h
+ /home/fv/Desktop/RanJamp/Juego/Manejador.h
+ /home/fv/Desktop/RanJamp/Menu/menu.h
+ /home/fv/Desktop/RanJamp/Menu/menu_nivel.cpp
+ /home/fv/Desktop/RanJamp/Menu/menu_nivel.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -293,6 +367,7 @@ CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
  /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
  /home/fv/Desktop/RanJamp/Texto/texto.h
  /home/fv/Desktop/RanJamp/Textura/Textura.h
+ /home/fv/Desktop/RanJamp/Tienda/Tienda.h
 CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
  /home/fv/Desktop/RanJamp/Animacion/Animacion.h
  /home/fv/Desktop/RanJamp/Bloque/Bloque.h
@@ -364,6 +439,7 @@ CMakeFiles/libClases.dir/Objeto/Objeto.cpp.o
  /home/fv/Desktop/RanJamp/Bloque/Bloque.h
  /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -378,6 +454,7 @@ CMakeFiles/libClases.dir/Player/Player.cpp.o
  /home/fv/Desktop/RanJamp/Bloque/Bloque.h
  /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
  /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Mundo/Mundo.h
  /home/fv/Desktop/RanJamp/Mundo/tinystr.h
@@ -397,3 +474,32 @@ CMakeFiles/libClases.dir/Textura/Textura.cpp.o
  /home/fv/Desktop/RanJamp/Motor/Motor.h
  /home/fv/Desktop/RanJamp/Textura/Textura.cpp
  /home/fv/Desktop/RanJamp/Textura/Textura.h
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
+ /home/fv/Desktop/RanJamp/Animacion/Animacion.h
+ /home/fv/Desktop/RanJamp/Bloque/Bloque.h
+ /home/fv/Desktop/RanJamp/Bullet/bullet.h
+ /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
+ /home/fv/Desktop/RanJamp/Enemigos/Boss.h
+ /home/fv/Desktop/RanJamp/Enemigos/centinela.h
+ /home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+ /home/fv/Desktop/RanJamp/Enemigos/murcielago.h
+ /home/fv/Desktop/RanJamp/Enemigos/nube.h
+ /home/fv/Desktop/RanJamp/Enemigos/pajaro.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBody.h
+ /home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
+ /home/fv/Desktop/RanJamp/Hud/hud.h
+ /home/fv/Desktop/RanJamp/Juego/Estado.h
+ /home/fv/Desktop/RanJamp/Juego/Juego.h
+ /home/fv/Desktop/RanJamp/Juego/Manejador.h
+ /home/fv/Desktop/RanJamp/Motor/Motor.h
+ /home/fv/Desktop/RanJamp/Mundo/Mundo.h
+ /home/fv/Desktop/RanJamp/Mundo/tinystr.h
+ /home/fv/Desktop/RanJamp/Mundo/tinyxml.h
+ /home/fv/Desktop/RanJamp/Musica/musica.h
+ /home/fv/Desktop/RanJamp/Objeto/Objeto.h
+ /home/fv/Desktop/RanJamp/Player/Player.h
+ /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
+ /home/fv/Desktop/RanJamp/Texto/texto.h
+ /home/fv/Desktop/RanJamp/Textura/Textura.h
+ /home/fv/Desktop/RanJamp/Tienda/Tienda.cpp
+ /home/fv/Desktop/RanJamp/Tienda/Tienda.h

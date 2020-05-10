@@ -14,7 +14,7 @@ menu_vol* menu_vol::instance(){
 }
 
 menu_vol::menu_vol( Font fuente, int max) : menu(fuente, max){
-t = new Textura("resources/Imagenes/MenuControles.png");
+t = new Textura("resources/Imagenes/MenuOpciones.png");
        b = new Bloque(t);
     
 }
@@ -41,11 +41,10 @@ void menu_vol::update(float deltaTime){
         cooldown_mov = 0.25;
     }*/
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
-        cooldown_mov = 0.35;
+        cooldown_mov = 0.5;
         switch(selectedItem){
 
             case 0:
-               
                 man->back();
             break;
         }

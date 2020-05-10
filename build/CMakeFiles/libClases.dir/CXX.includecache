@@ -281,6 +281,8 @@ menu_inicial.h
 /home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 ../Juego/Juego.h
 /home/fv/Desktop/RanJamp/Juego/Juego.h
+menu_mundos.h
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.h
 
 /home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 SFML/Graphics.hpp
@@ -293,6 +295,42 @@ menu_controles.h
 /home/fv/Desktop/RanJamp/Menu/menu_controles.h
 menu_vol.h
 /home/fv/Desktop/RanJamp/Menu/menu_vol.h
+../Tienda/Tienda.h
+/home/fv/Desktop/RanJamp/Tienda/Tienda.h
+
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.cpp
+menu_mundos.h
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.h
+menu_nivel.h
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.h
+menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
+
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
+../Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
+
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.cpp
+menu_nivel.h
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.h
+
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.h
+SFML/Graphics.hpp
+-
+iostream
+-
+menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
 /home/fv/Desktop/RanJamp/Menu/menu_pausa.cpp
 menu_pausa.h
@@ -471,6 +509,8 @@ SFML/Graphics.hpp
 /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 ../Rectangulo/Rectangulo.h
 /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
+../Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 
 /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.cpp
 Rectangulo.h
@@ -507,4 +547,24 @@ SFML/System.hpp
 -
 ../Motor/Motor.h
 /home/fv/Desktop/RanJamp/Motor/Motor.h
+
+/home/fv/Desktop/RanJamp/Tienda/Tienda.cpp
+Tienda.h
+/home/fv/Desktop/RanJamp/Tienda/Tienda.h
+
+/home/fv/Desktop/RanJamp/Tienda/Tienda.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
+../Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
+../Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
+../Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 

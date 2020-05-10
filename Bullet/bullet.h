@@ -28,4 +28,6 @@ public:
     Rectangulo* getHitbox(){return hitbox;}
     Cuerpo* getBody(){return body;};
 
+    void setVelocidad(float p_velocidad){velocidad=p_velocidad;}
+
 };

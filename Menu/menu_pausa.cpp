@@ -15,7 +15,7 @@ menu_pausa* menu_pausa::instance(){
 }
 
 menu_pausa::menu_pausa( Font fuente, int max) : menu(fuente, max){
-    t = new Textura("resources/Imagenes/Menu.png");
+    t = new Textura("resources/Imagenes/MenuPausa.png");
     b = new Bloque(t);
 }
 
@@ -48,7 +48,7 @@ void menu_pausa::update(float deltaTime){
         cooldown_mov = 0.25;
     }
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
-        cooldown_mov = 0.35;
+        cooldown_mov = 0.5;
         switch(selectedItem){
             case 0:
                man->cambiarEstado(juego);

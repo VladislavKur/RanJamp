@@ -184,7 +184,7 @@ void Mundo::EliminarMonedasLLaves(Cuerpo * c){// hay que borrarlo y redimensiona
       for(int j = i; j < _numObjects3; j++){
         objetos3[j] = objetos3[j+1];        
       }
-      //delete objects3[_numObjects3-1];
+     // delete objects3[_numObjects3-1];
       objetos3[_numObjects3-1] = NULL;
       _numObjects3--;
     }
@@ -293,11 +293,12 @@ void Mundo::crearMonedasLlaves(){
         if(_tipo3 == 0){
           objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Moneda.png" , 0.2,1 , _tipo3);//PASAR POR PARAMETRO EL TIPO AL CUERPO
           objetos3[i]->addAnimacion(0.1);
-        }else if(_tipo3 > 0 && _tipo3 <= 4){
+        }else if(_tipo3 == 1 ){
           objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Llave.png" , 0.5, 0, _tipo3);
           objetos3[i]->addAnimacion(0.1);
-        }else if(_tipo3 > 4 && _tipo3 <= 8){
-          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"madera.png" , 0.5, 0, _tipo3);
+        }else if(_tipo3 == 2){
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"madera.png" , 1, 0, _tipo3);
+          objetos3[i]->recorte(25,25);
           objetos3[i]->addAnimacion(0.1);
         }
         if(objetos3[i] != nullptr ){

@@ -1,7 +1,7 @@
 #include "Boss.h"
 
 Boss::Boss( float x, float y) 
-    : Enemigo(x, y, 232, 134, "boss_todos10.png", 2.0){
+    : Enemigo(x, y, 232, 134, "boss.png", 2.0){
 
     shoot = false;
     shootTime = 0.0;
@@ -11,7 +11,7 @@ Boss::Boss( float x, float y)
     body->addAnimacion(0.1);
     
     modo  = 0;
-    vidas = 15;
+    vida = 15;
     velocidad = 50;
     distanciaDisparo = 600; //dispara contra jugador
     distanciaAtaque = 200;   //le pega
@@ -80,7 +80,7 @@ void Boss::update(Player *player, float deltaTime){
                         if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
                             haPegado = false;
                             player->setVidas(player->getVidas() - 2);
-                            player->getBody()->moverse((local_diffX/local_diffabsX)*80, 0+30);
+                            player->getBody()->moverse((local_diffX/local_diffabsX)*80, 0+30);//empuja al jugador
                         }
                     }                    
                 }
@@ -96,7 +96,7 @@ void Boss::update(Player *player, float deltaTime){
                     cambio = true;
                 } 
                 else{//DISPARA
-                    body->setSpriteAnimacion(3); //disparar
+                    body->setSpriteAnimacion(2); //disparar
 
                     if(shootTime <= 0.0){
                         bool auxiliar;

@@ -34,3 +34,5 @@
 /home/fv/Desktop/RanJamp/build/Cuerpo/CMakeFiles/rebuild_cache.dir
 /home/fv/Desktop/RanJamp/build/Rectangulo/CMakeFiles/edit_cache.dir
 /home/fv/Desktop/RanJamp/build/Rectangulo/CMakeFiles/rebuild_cache.dir
+/home/fv/Desktop/RanJamp/build/Tienda/CMakeFiles/edit_cache.dir
+/home/fv/Desktop/RanJamp/build/Tienda/CMakeFiles/rebuild_cache.dir

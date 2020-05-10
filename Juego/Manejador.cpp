@@ -31,7 +31,10 @@ void Manejador::update(float deltaTime){
     estado->update(deltaTime);
 }
 void Manejador::back(){
+    Estado * aux;
+    aux = estado;
     estado = anterior;
+    anterior = aux;
 }
 
 Estado * Manejador::getAnterior(){
