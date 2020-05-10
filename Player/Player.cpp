@@ -52,6 +52,7 @@ Player::Player(int x, int y){
     auxSaltos = true;
     cooldownSalto = 0;
     cooldownDisparo = 0;
+    cooldownShift = 0;
     body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
     body->setSize(100,100);
     body->addAnimacion(0.1);
@@ -69,6 +70,7 @@ Player::Player(int x, int y){
     melee = new Rectangulo(0,0,0,0);
 
     monedas = 0;
+
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
@@ -110,6 +112,32 @@ void Player::update(float deltaTime , Mundo * mundo){
             cooldownSalto=15*deltaTime;
           }
       }
+
+      if((Keyboard::isKeyPressed(Keyboard::LShift) || Keyboard::isKeyPressed(Keyboard::RShift)) && cooldownShift<0){
+        cooldownShift=6;
+        
+        bool hayUnTrue=false;
+        for(unsigned int i=0 ; i< Hud->getArma().size(); i++){
+          if(Hud->getArma()[i] > 0){
+            hayUnTrue=true;
+          }
+        }
+        if(hayUnTrue && arma>0){
+          while( Hud->getArma()[arma-1] <= 0 ){
+            if( arma >= 3 ){
+              arma=0;
+            } else arma++;
+          }
+        }
+        cout<<"Arma: "<<arma<<endl;
+        cout<<"Armas y sus daños: ";
+        for(int i=0 ; i< Hud->getArma().size() ; i++){
+          cout<< " " << Hud->getArma()[i];
+        }
+        cout<<endl;
+        
+      }
+      cooldownShift -= deltaTime;
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);

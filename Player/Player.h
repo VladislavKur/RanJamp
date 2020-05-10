@@ -22,6 +22,7 @@ private:
     int vidas;
     float cooldownSalto;
     float cooldownDisparo;
+    float cooldownShift;
 
     bool godMode;
     int vidasAnteriores;
