@@ -7,6 +7,7 @@
 #include "../Enemigos/centinela.h"
 #include "../Enemigos/nube.h"
 #include "../Enemigos/pajaro.h"
+#include "../Enemigos/Boss.h"
 #include "../Bullet/bullet.h"
 #include "../Mundo/Mundo.h"
 #include "../Objeto/Objeto.h"
@@ -28,6 +29,7 @@
             Bullet* bulletPlayer[maxBullets];
             Bullet* bulletEnemies[maxBullets];
             Bullet* bulletNube[maxBullets];
+            Bullet* bulletBoss[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
             musica * so;
@@ -35,7 +37,7 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
-            int maxniveles = 6;
+            int maxniveles = 12;
             //obstaculos 
             float timerObstaculos;
         protected:
@@ -72,7 +74,7 @@
             
             sf::View view;
 
-            void nextLevel(int );
+            void nextLevel(int i);
             void inicializarNiveles();
     };
 

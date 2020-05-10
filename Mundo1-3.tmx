@@ -10391,7 +10391,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="3530"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="3537"/>
@@ -10809,7 +10809,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="3530"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -11092,8 +11092,8 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="3530"/>
-   <tile gid="3530"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="3529"/>
    <tile gid="3530"/>
    <tile gid="3531"/>
@@ -11365,11 +11365,11 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="3530"/>
+   <tile gid="3530"/>
+   <tile gid="3530"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="3530"/>
-   <tile gid="3530"/>
-   <tile gid="3530"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -28031,14 +28031,12 @@
   <object id="59" x="1664" y="675" width="644.33" height="908.333"/>
   <object id="67" x="3202" y="1410" width="380" height="124"/>
   <object id="69" x="2812" y="644" width="252" height="374"/>
-  <object id="71" x="543.788" y="864" width="30.8788" height="30.8485"/>
-  <object id="72" x="638.667" y="927.545" width="65.3333" height="30"/>
   <object id="73" x="542.667" y="1088.3" width="129.727" height="30"/>
   <object id="74" x="200.121" y="1218.33" width="116" height="28"/>
   <object id="75" x="318.667" y="1314.67" width="129.333" height="27.7576"/>
   <object id="76" x="416" y="1410" width="125.333" height="26"/>
   <object id="77" x="383.515" y="1153.88" width="128" height="29.7879"/>
-  <object id="78" x="484" y="992" width="93.3333" height="28.4848"/>
+  <object id="78" x="417.515" y="993.939" width="93.3333" height="28.4848"/>
   <object id="79" x="261" y="740.424" width="120" height="34"/>
   <object id="80" x="450.879" y="635.364" width="126.455" height="36"/>
   <object id="82" x="1484" y="750" width="66" height="30"/>
@@ -28050,10 +28048,8 @@
   <object id="90" x="3328" y="636" width="1160" height="376"/>
   <object id="91" x="3204" y="1004" width="372" height="224"/>
   <object id="92" x="3068" y="644" width="128" height="172"/>
-  <object id="100" x="610.667" y="769.333" width="26.6667" height="28"/>
   <object id="101" x="322.667" y="926.667" width="90.6667" height="32"/>
   <object id="102" x="130.667" y="865.333" width="121.333" height="30.6667"/>
-  <object id="103" x="22.6667" y="773.333" width="72" height="34.6667"/>
   <object id="106" x="708" y="704" width="630.667" height="260"/>
  </objectgroup>
  <objectgroup name="Capa de Enemigos">
@@ -28095,7 +28091,7 @@
   <object id="27" x="110" y="1112" width="39.3939" height="51.5152"/>
  </objectgroup>
  <objectgroup name="Capa de PowerUps">
-  <object id="28" name="Slow" type="1" x="2483.64" y="572.61" width="42.4242" height="39.3939"/>
+  <object id="28" name="Slow" type="3" x="2483.64" y="572.61" width="42.4242" height="39.3939"/>
  </objectgroup>
  <objectgroup name="Capa de Puerta">
   <object id="29" x="4294.15" y="1388" width="109.091" height="109.091">
@@ -28127,10 +28123,10 @@
   <object id="114" type="0" x="1502" y="710" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="115" type="0" x="606" y="728" width="100" height="100">
+  <object id="115" type="0" x="248.424" y="649.212" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="116" type="0" x="540" y="820" width="100" height="100">
+  <object id="116" type="0" x="318.788" y="826.061" width="100" height="100">
    <ellipse/>
   </object>
  </objectgroup>

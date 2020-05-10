@@ -30,7 +30,7 @@ class Nube : public Enemigo{
         //Modo 1: si esta en el radio de ataque entonces se mueve hacia el hasta llegar a la misma altura
         //Modo 2: si estoy a su altura mas o menos entonces le sigo y ademas disparo verticalmente desde arriba hacia el jugador
         //void update(Player* player, float deltaTime);
-        void update(sf::RectangleShape player, float deltaTime);
+        void update(Player* player, float deltaTime);
         //Llama al render de Cuerpo donde se vuelve a posicionar y se dibuja
         void render( float porcentaje);   
         //Si la variable shoot es cierta entonces devuelve una bala segun la posicion del enemigo, la direccion

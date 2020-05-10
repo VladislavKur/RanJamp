@@ -1,5 +1,6 @@
 #include "Juego.h"
 #include "Manejador.h"
+#include "Transicion.h"
 #include "../Menu/menu_inicial.h"
 
 #include "../Menu/menu_pausa.h"
@@ -35,10 +36,13 @@ Juego::Juego(){
   }
 
   for(int i = 0; i < maxBullets;i++){
-
       bulletNube[i] = NULL;
-
   }
+
+  for(int i = 0; i < maxBullets;i++){
+      bulletBoss[i] = NULL;
+  }
+
   std::vector<sf::String> s; 
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
@@ -65,6 +69,10 @@ Juego::~Juego(){
         if(bulletNube[i] != nullptr){
           delete bulletNube[i];
           bulletNube[i] = nullptr;
+        }
+        if(bulletBoss[i] != nullptr){
+          delete bulletBoss[i];
+          bulletBoss[i] = nullptr;
         }
       }
       if(so != nullptr){
@@ -140,6 +148,14 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
         }
         else
           bulletNube[i]->update(deltaTime);//revisar
+      }
+      if(bulletBoss[i] != NULL){
+        if(bulletBoss[i]->lifetime<=0){
+          delete bulletBoss[i];
+          bulletBoss[i] = NULL;
+        }
+        else
+          bulletBoss[i]->update(deltaTime);//revisar
       }
     }
     //puede que en alguna de estas funciones deltaTime NO sea necesario
@@ -266,7 +282,8 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
       //esto del casteo está bien hecho, pero en una funcion aparte
       if(enemies[i] != nullptr){
         Centinela* casteadoCent = dynamic_cast<Centinela*>(enemies[i]);
-        Nube* casteadoNube = dynamic_cast<Nube*>(enemies[i]); 
+        Nube* casteadoNube = dynamic_cast<Nube*>(enemies[i]);
+        Boss* casteadoBoss = dynamic_cast<Boss*>(enemies[i]); 
       
         if(casteadoCent != nullptr){
 
@@ -290,13 +307,28 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
             for(int j = 0; j < maxBullets;j++){
 
               if(bulletNube[j] == NULL)
-                bulletNube[j] = casteadoCent->disparar();
+                bulletNube[j] = casteadoNube->disparar();
 
             }
 
           }
 
         }
+
+        if(casteadoBoss != nullptr){
+          if(!casteadoBoss->getPegado()){
+            if(jugador->getVidas() <= 0)
+              matarJugador();
+          }
+          
+          if(casteadoBoss->getShoot()){
+            for(int j = 0; j < maxBullets;j++){
+              if(bulletBoss[j] == NULL)
+                bulletBoss[j] = casteadoBoss->disparar();
+            }
+          }
+        }
+        
       }      
     }
     jugador->updateHitbox(); //dentro de update de jugador
@@ -412,11 +444,7 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
 
     
     
-    for(unsigned i = 0; i < maxBullets;i++){
-
-      
-      if(bulletNube[i] != nullptr){bulletNube[i]->render(porcentaje);} //interpolacion
-    }
+    
 
     jugador->render(porcentaje);
     
@@ -442,7 +470,15 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     mundo->render2();
     Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
-      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion
+      if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion centinelas
+    }
+
+    for(unsigned i = 0; i < maxBullets;i++){      
+      if(bulletNube[i] != nullptr){bulletNube[i]->render(porcentaje);} //interpolacion nube
+    } 
+
+    for(unsigned i = 0; i < maxBullets;i++){ 
+      if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
 }
 
@@ -498,6 +534,16 @@ void Juego::crearEnemigos(){ //está nice
     else if(posicion[i][2] == 4){
         Pajaro * pajaro = new Pajaro(posx, posy);
         enemies[i] = (Enemigo *) pajaro;
+    }
+    else if(posicion[i][2] == 5){
+        //cout << "he añadido reptante" << endl; //eliminar
+        Nube * nube = new Nube(posx, posy); // WIP el reptante está sin terminar LOL
+        enemies[i] = (Enemigo *) nube;
+    }
+    else if(posicion[i][2] == 6){
+        //cout << "he añadido reptante" << endl; //eliminar
+        Boss * boss = new Boss(posx, posy); // WIP el reptante está sin terminar LOL
+        enemies[i] = (Enemigo *) boss;
     }
 
   }
@@ -558,6 +604,11 @@ void Juego::matarJugador(){ //está nice
   for(int i = 0; i < maxBullets;i++){
 
       bulletNube[i] = NULL;
+
+  }
+  for(int i = 0; i < maxBullets;i++){
+
+      bulletBoss[i] = NULL;
 
   }
 
@@ -624,7 +675,7 @@ void Juego::colisionBulletJugador(){ //WIP fachada
 
     if(bulletNube[i] != NULL){
 
-      if(jugador->getHitbox()->getIntersect(*bulletNube[i]->getHitbox())){
+      if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletNube[i]->getBody()->getGlobalBounds())){
 
         //morir = jugador->setVidas(jugador->getVidas()-1);
         morir = Hud->restarVidas();
@@ -637,11 +688,28 @@ void Juego::colisionBulletJugador(){ //WIP fachada
       }
     }
 
+    if(bulletBoss[i] != NULL){
+
+      //if(jugador->getHitbox()->getIntersect(*bulletBoss[i]->getHitbox())){
+      if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletBoss[i]->getBody()->getGlobalBounds())){
+        morir = jugador->setVidas(jugador->getVidas()-2);
+
+        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
+        delete bulletBoss[i];
+        bulletBoss[i] = NULL;
+        
+        if(morir == true){
+          matarJugador();
+        }
+      }
+    }
+
   }
   
 }
 
-void Juego::colisionBulletEnemigo(){
+void Juego::colisionBulletEnemigo(){//WIP fachada
+  bool morir = false;
   hud * Hud = hud::instance();
   for(unsigned int i=0 ; i < maxBullets ; i++){
     for(int j=0 ; j<numEmenigos ; j++){
@@ -684,6 +752,8 @@ void Juego::comprobarPasarNivel(){
 }
 
 void Juego::nextLevel(int n){
+    Manejador* man = Manejador::instancia();
+    Transicion* trans = Transicion::instancia();
     if(n == -1){nivel++;} else nivel = n;
     delete mundo;
     hud * Hud = hud::instance();
@@ -719,6 +789,13 @@ void Juego::nextLevel(int n){
     for(int i = 0; i < maxBullets;i++){
         bulletNube[i] = NULL;
     }
+
+    
+    for(int i = 0; i < maxBullets;i++){
+        bulletBoss[i] = NULL;
+    }
+    man->cambiarEstado(trans);
+    trans->reset();
 }
 
 
@@ -729,8 +806,14 @@ void Juego::inicializarNiveles(){
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
-  niveles[4] = "Mundo3-1.tmx";
-  niveles[5] = "Mundo3-2.tmx";
+  niveles[4] = "Mundo2-1.tmx";
+  niveles[5] = "Mundo2-2.tmx";
+  niveles[6] = "Mundo2-3.tmx";
+  niveles[7] = "Mundo2-4.tmx";
+  niveles[8] = "Mundo3-1.tmx";
+  niveles[9] = "Mundo3-2.tmx";
+  niveles[10] = "Mundo3-3.tmx";
+  niveles[11] = "Mundo3-4.tmx";
 }
 void Juego::nivelSeleccionado(string n){
   int aux = -1;
@@ -742,6 +825,7 @@ void Juego::nivelSeleccionado(string n){
       }
     }
     nextLevel(aux);
+
 }
 
 void Juego::pausa(){

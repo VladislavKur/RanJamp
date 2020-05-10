@@ -48,14 +48,18 @@ class Cuerpo{
         void moverse(float x, float y);
         void addAnimacion(float timeAnimacion);
         void setSpriteAnimacion(int entrada);
+        void setTimeAnimacion(float entrada);
         void setSize(float sizeX, float sizeY);
         bool colisiona(Cuerpo * entrada);
+        void rotar(float angulo);
         void recorte(int x , int y);
         std::vector<float> getPosicion();
         std::vector<float>getSize();
         Rectangulo * getGlobalBounds();
         int getTipo();
         float getOriginY(){return body->getOrigin().y;};
+        int getPosicionX(){return animacion->getPosicionX();};
+        float getTimeAnimacion(){return animacion->getTimeAnimation();};
 };
 
 #endif

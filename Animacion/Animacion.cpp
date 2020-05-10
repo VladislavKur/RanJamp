@@ -21,6 +21,9 @@ Animacion::Animacion(sf::Shape* cuerpo, float timeAnimation, int spriteSizeX, in
     numeroSpriteX = 0;
     numeroSpriteY = 0;
 
+    posicionesX = textureSizeX/spriteSizeX;
+    posicionesY = textureSizeY/spriteSizeY;
+
     tiempoActual = tiempoDuracionMax;
     tiempoAnterior = tiempoDuracionMax;
     tiempoDiff = 0;
@@ -44,7 +47,7 @@ void Animacion::setSprite(int spriteNumber){
 
     if(numeroSpriteY < posicionesY){        
         numeroSpriteY = spriteNumber;
-        motor->recorte(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+        motor->recorteAnim(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
     }
     else
         numeroSpriteY = 0;
@@ -55,12 +58,11 @@ void Animacion::nextSprite(){
 
     if(numeroSpriteX == posicionesX)
         numeroSpriteX = 0;
-
-    motor->recorte(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+    motor->recorteAnim(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
 }
 
 void Animacion::render(float porcentaje){
-    if(cambiado){
+    if(cambiado && tiempoDuracionMax > 0.0){
         int aux = tiempoAnterior - tiempoDiff*porcentaje;
 
         if(aux <= 0){
@@ -68,4 +70,14 @@ void Animacion::render(float porcentaje){
             nextSprite();
         }
     }
+}
+
+void Animacion::setTimeAnimacion(float entrada){
+
+    tiempoDuracionMax = entrada;
+    tiempoActual = tiempoDuracionMax;
+    tiempoAnterior = tiempoDuracionMax;
+
+    tiempoDiff = 0.0;
+
 }

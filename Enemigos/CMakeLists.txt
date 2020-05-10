@@ -5,6 +5,7 @@ target_sources(libClases PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/pajaro.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/enemigo.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/nube.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Boss.cpp"
 )
 
 #Y donde se encuentran los .h

@@ -11,6 +11,16 @@ hud * hud::instance(){
 }
 
 hud::hud(int posY, int vidasPlayer, int max){ 
+    monedero = 10;
+    puntos = 0; 
+    vidas = 5; 
+     doblesalto = false;
+     velocidad = false;
+     slow = false; 
+    i_velocidad = 250;
+     godMode = false;
+
+
     sprites = new Cuerpo *[9];
     sprites[0] = new Cuerpo(100 , posY - 600,350,250,"madera.png",1, 0,-1);
     sprites[0]->recorte(25,25);

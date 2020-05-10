@@ -26,11 +26,14 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : b
         break;
     }
 
+    if(dir == -1){
+        body->rotar(90);
+    }
+
     if(facing){
         body->Scalar(-1,1);
     }
-
-    
+   
     
     body->addAnimacion(0.1);
 
@@ -39,7 +42,13 @@ Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : b
 void Bullet::update(float deltaTime){
     lifetime-=deltaTime;
 
-      body->moverse((facing ? 1 : -1)  * velocidad * deltaTime,0);
+    if(dir == -1){
+        body->moverse(0, (facing ? 1 : -1)  * velocidad * deltaTime);
+    }
+    else{
+        body->moverse((facing ? 1 : -1)  * velocidad * deltaTime,0);
+    }
+    
     //cout<<body->getPosicion()[0]<<"//////"<<body->getPosicion()[1]<<endl;
     updateHitbox();
     //cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;

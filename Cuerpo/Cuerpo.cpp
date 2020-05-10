@@ -137,6 +137,12 @@ Rectangulo * Cuerpo::getGlobalBounds(){
    return R;
 }
 
+void Cuerpo::setTimeAnimacion(float entrada){
+
+    animacion->setTimeAnimacion(entrada);
+
+}
+
 void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     
     class_previousX = class_positionX;
@@ -301,4 +307,8 @@ void Cuerpo::Scalar(float x, float y){
 
 void Cuerpo::setSize(float sizeX, float sizeY){
    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeX, sizeY)); 
+}
+
+void Cuerpo::rotar(float angulo){
+    body->rotate(angulo);
 }

@@ -53,9 +53,9 @@ Player::Player(int x, int y){
     cooldownSalto = 0;
     cooldownDisparo = 0;
     cooldownShift = 0;
-    body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
+    body = new Cuerpo(x,y,128,256,"Magos.png",1,RECTANGLE);
     body->setSize(100,100);
-    body->addAnimacion(0.1);
+    body->addAnimacion(0);
     body->Origen(100/2,100/2);
     facing = true;
     atacando_melee=0;
@@ -108,47 +108,51 @@ void Player::update(float deltaTime , Mundo * mundo){
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
         if(auxSaltos==true && saltos > 0){
             saltar();
-           
+            
+            body->setSpriteAnimacion(1);
+            body->setTimeAnimacion(0.2);
+
             cooldownSalto=15*deltaTime;
           }
       }
 
-      if((Keyboard::isKeyPressed(Keyboard::LShift) || Keyboard::isKeyPressed(Keyboard::RShift)) && cooldownShift<0){
-        cooldownShift=6;
-        
-        bool hayUnTrue=false;
-        for(unsigned int i=0 ; i< Hud->getArma().size(); i++){
-          if(Hud->getArma()[i] > 0){
-            hayUnTrue=true;
-          }
-        }
-        if(hayUnTrue && arma>0){
-          while( Hud->getArma()[arma-1] <= 0 ){
-            if( arma >= 3 ){
-              arma=0;
-            } else arma++;
-          }
-        }
-        cout<<"Arma: "<<arma<<endl;
-        cout<<"Armas y sus daños: ";
-        for(int i=0 ; i< Hud->getArma().size() ; i++){
-          cout<< " " << Hud->getArma()[i];
-        }
-        cout<<endl;
-        
-      }
+     if(Keyboard::isKeyPressed(Keyboard::Num1) && cooldownShift<0){
+        cooldownShift=2;
+        if(Hud->getArma()[0] > 0)
+          arma=1;
+     }
+     if(Keyboard::isKeyPressed(Keyboard::Num2) && cooldownShift<0){
+        cooldownShift=2;
+        if(Hud->getArma()[1] > 0)
+          arma=2;
+     }
       cooldownShift -= deltaTime;
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
-          
+
+          if(body->getTimeAnimacion() == 0.0 && jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+            body->setSpriteAnimacion(0);
+            body->setTimeAnimacion(0.2);
+          }
+
           facing = true;
       }
-      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
+      else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
           moveLeft(deltaTime, mundo);
-         
+          
+          if(body->getTimeAnimacion() == 0.0 && jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+            body->setSpriteAnimacion(0);
+            body->setTimeAnimacion(0.2);
+          }
+
           facing = false;
       }
+      else if(jumpSpeed >= 0.0 && body->getTimeAnimacion() != 0.0 && cooldownDisparo <= 0.0){
+        body->setSpriteAnimacion(0);
+        body->setTimeAnimacion(0);
+      }
+      
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl)){ //lo mismo que lo anterior WIP fachada
         if(atacando_melee < -5){
           atacando_melee=0.1;
@@ -160,6 +164,7 @@ void Player::update(float deltaTime , Mundo * mundo){
   
     
     body->moverse(0,jumpSpeed*deltaTime);
+    body->update(deltaTime);
 }
 
 void Player::sumarMonedas(){
@@ -267,6 +272,14 @@ void Player::setVelocidad(float vel){
   velocidad = vel;
 }
 
+void Player::setCooldownDisparo(float p_cooldown){
+  
+  cooldownDisparo=p_cooldown;
+
+  body->setSpriteAnimacion(3);
+  body->setTimeAnimacion(0.2);
+
+}
 
 void Player::updateHitbox(){
    float gpx = body->getPosicion()[0];
