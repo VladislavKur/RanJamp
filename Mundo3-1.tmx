@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="50" tilewidth="32" tileheight="32" nextobjectid="82">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="50" tilewidth="32" tileheight="32" nextobjectid="83">
  <tileset firstgid="1" name="fondo" tilewidth="32" tileheight="32" tilecount="3500">
   <image source="resources/Imagenes/FONDO3.png" width="2240" height="1600"/>
  </tileset>
@@ -21048,7 +21048,9 @@
  <objectgroup name="Capa de Player">
   <object id="27" x="179.545" y="1178.79" width="39.3939" height="51.5152"/>
  </objectgroup>
- <objectgroup name="Capa de PowerUps"/>
+ <objectgroup name="Capa de PowerUps">
+  <object id="82" type="3" x="1566.67" y="716.667" width="50" height="58.3333"/>
+ </objectgroup>
  <objectgroup name="Capa de Puerta">
   <object id="29" x="4290.91" y="1127.27" width="109.091" height="109.091">
    <ellipse/>
