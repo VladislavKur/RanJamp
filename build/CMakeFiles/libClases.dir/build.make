@@ -801,6 +801,30 @@ CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.provides: CMakeFiles/libCla
 CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.provides.build: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
 
 
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o: CMakeFiles/libClases.dir/flags.make
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o: ../Tienda/Tienda.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o -c "/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.cpp"
+
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libClases.dir/Tienda/Tienda.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.cpp" > CMakeFiles/libClases.dir/Tienda/Tienda.cpp.i
+
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libClases.dir/Tienda/Tienda.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.cpp" -o CMakeFiles/libClases.dir/Tienda/Tienda.cpp.s
+
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.requires:
+
+.PHONY : CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.requires
+
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.provides: CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.requires
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.provides.build
+.PHONY : CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.provides
+
+CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.provides.build: CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
+
+
 # Object files for target libClases
 libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Player/Player.cpp.o" \
@@ -833,7 +857,8 @@ libClases_OBJECTS = \
 "CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o" \
 "CMakeFiles/libClases.dir/Textura/Textura.cpp.o" \
 "CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o" \
-"CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
+"CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o" \
+"CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o"
 
 # External object files for target libClases
 libClases_EXTERNAL_OBJECTS =
@@ -869,9 +894,10 @@ liblibClases.a: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Textura/Textura.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o
+liblibClases.a: CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
 liblibClases.a: CMakeFiles/libClases.dir/build.make
 liblibClases.a: CMakeFiles/libClases.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX static library liblibClases.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX static library liblibClases.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libClases.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libClases.dir/link.txt --verbose=$(VERBOSE)
 
@@ -911,6 +937,7 @@ CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o.
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Textura/Textura.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o.requires
 CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o.requires
+CMakeFiles/libClases.dir/requires: CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o.requires
 
 .PHONY : CMakeFiles/libClases.dir/requires
 

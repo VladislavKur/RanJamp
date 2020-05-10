@@ -50,6 +50,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/andres/Escritorio/FV JUNTO/build/Textura/cmake_install.cmake")
   include("/home/andres/Escritorio/FV JUNTO/build/Cuerpo/cmake_install.cmake")
   include("/home/andres/Escritorio/FV JUNTO/build/Rectangulo/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Tienda/cmake_install.cmake")
 
 endif()
 

@@ -34,3 +34,5 @@
 /home/andres/Escritorio/FV JUNTO/build/Cuerpo/CMakeFiles/rebuild_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Rectangulo/CMakeFiles/edit_cache.dir
 /home/andres/Escritorio/FV JUNTO/build/Rectangulo/CMakeFiles/rebuild_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Tienda/CMakeFiles/edit_cache.dir
+/home/andres/Escritorio/FV JUNTO/build/Tienda/CMakeFiles/rebuild_cache.dir

@@ -435,7 +435,6 @@ void Juego::destruirObjetos(Objeto* enem){ //está nice
 
 }
 
-//CREARENEMIGOS FUNCIONE
 
 void Juego::crearEnemigos(){ //está nice
 
@@ -657,14 +656,14 @@ void Juego::nextLevel(){
 
 
 void Juego::inicializarNiveles(){
-  maxniveles = 5;
+  maxniveles = 6;
   niveles = new string[maxniveles];
   niveles[0] = "Mundo1-1.tmx";
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
-  niveles[4] = "NivelHielo.tmx";
- 
+  niveles[4] = "Mundo3-1.tmx";
+  niveles[5] = "Mundo3-2.tmx";
 }
 
 void Juego::pausa(){

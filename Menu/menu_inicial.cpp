@@ -6,7 +6,7 @@ sf::Font* menu_inicial::fuente = new Font();
 menu_inicial* menu_inicial::instance(){
      if(p_instance == 0){
         fuente->loadFromFile("resources/fuentes/AnotherRound.otf");
-        p_instance = new menu_inicial(*fuente, 4);
+        p_instance = new menu_inicial(*fuente, 5);
 
     }
 
@@ -27,11 +27,13 @@ void menu_inicial::update(float deltaTime){
     Juego* juego = Juego::instance();
     menu_controles* menucont = menu_controles::instance();
     menu_vol* menuVol = menu_vol::instance();
-
+    Tienda * tienda = Tienda::instance();
+    Motor * motor = Motor::instance();
     cambiarTexto(0,  "PLAY", juego->view.getCenter().x-40, juego->view.getCenter().y-125);
     cambiarTexto(1, "CONTROLS", juego->view.getCenter().x-40, juego->view.getCenter().y-75);
     cambiarTexto(2,  "OPTIONS", juego->view.getCenter().x-40, juego->view.getCenter().y -25);
     cambiarTexto(3,  "EXIT", juego->view.getCenter().x-40, juego->view.getCenter().y+25);
+    cambiarTexto(4,  "TIENDA", juego->view.getCenter().x-40, juego->view.getCenter().y +75);
 
         b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
         b->setTextureRect(0,0,1080,720);
@@ -62,8 +64,10 @@ void menu_inicial::update(float deltaTime){
                  
             break;
             case 3:
-                Motor * motor = Motor::instance();
                 motor->getVentana()->close();
+            break;
+            case 4:
+                 man->cambiarEstado(tienda);
             break;
         }
     }

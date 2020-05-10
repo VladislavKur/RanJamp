@@ -10558,6 +10558,6 @@
   <object id="43" type="1" x="1100" y="1112" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="46" type="5" x="1736" y="1400" width="84" height="120"/>
+  <object id="46" type="2" x="1736" y="1400" width="84" height="120"/>
  </objectgroup>
 </map>

@@ -193,6 +193,7 @@ void Player::moveLeft(float deltaTime , Mundo * mundo){
     body->moverse(-velocidad*deltaTime,0);
   }
 }
+
 void Player::saltar(){
   if(saltos!=0){
         auxSaltos= false;

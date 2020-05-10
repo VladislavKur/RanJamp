@@ -23,32 +23,18 @@ class hud{
         // RENDERIZA EL HUD 
         void render(); 
 
+        int getMonedero(){return monedero;}
+        int setMonedero(int x){monedero -=x;}
     protected: 
         hud(int posPengo, int vidasPengo, int max);
         
     private:
         static hud* p_instancia; 
-        //RectangleShape * r;
         Font * font; 
         Text * texto;
-        Sprite * sVidas;
-        Texture * tVidas; 
-        Sprite * sDobleSalto; 
-        Texture * tDobleSalto; 
-        Sprite * sVelocidad; 
-        Texture * tVelocidad; 
-        Sprite * sArma; 
-        Texture * tArma; 
-        Texture * tMonedas;
-        Sprite * sMonedas;
-        Texture * tLlaves;
-        Sprite * sLlaves;
-        Texture * tTiempo;
-        Sprite * sTiempo;
-        Texture * tPuntos;
         Sprite * sPuntos;
         Cuerpo ** sprites;
         Clock clockGlobal;
-
-        int puntos = 500; 
+        int monedero = 5;
+        int puntos = 0; 
 };

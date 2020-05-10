@@ -973,6 +973,33 @@ Textura/Textura.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Textura/Textura.cpp.s
 .PHONY : Textura/Textura.cpp.s
 
+Tienda/Tienda.o: Tienda/Tienda.cpp.o
+
+.PHONY : Tienda/Tienda.o
+
+# target to build an object file
+Tienda/Tienda.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
+.PHONY : Tienda/Tienda.cpp.o
+
+Tienda/Tienda.i: Tienda/Tienda.cpp.i
+
+.PHONY : Tienda/Tienda.i
+
+# target to preprocess a source file
+Tienda/Tienda.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.i
+.PHONY : Tienda/Tienda.cpp.i
+
+Tienda/Tienda.s: Tienda/Tienda.cpp.s
+
+.PHONY : Tienda/Tienda.s
+
+# target to generate assembly for a file
+Tienda/Tienda.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Tienda/Tienda.cpp.s
+.PHONY : Tienda/Tienda.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1103,6 +1130,9 @@ help:
 	@echo "... Textura/Textura.o"
 	@echo "... Textura/Textura.i"
 	@echo "... Textura/Textura.s"
+	@echo "... Tienda/Tienda.o"
+	@echo "... Tienda/Tienda.i"
+	@echo "... Tienda/Tienda.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

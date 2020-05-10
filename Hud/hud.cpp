@@ -67,6 +67,9 @@ void hud::setMarcador(int posX , int posY, int vidasPlayer, int monedas, vector<
   texto[1].setString(to_string(int(clockGlobal.getElapsedTime().asSeconds())));
   texto[2].setPosition(posX - 150 , posY - 355);
   texto[2].setString(to_string(monedas));
+  if(monedero < monedas){
+    monedero += monedas;
+  }
 }
 
 

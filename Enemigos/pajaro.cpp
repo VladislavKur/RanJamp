@@ -1,7 +1,7 @@
 #include "pajaro.h"
 
 Pajaro::Pajaro(float x, float y) 
-    : Enemigo(x, y, 192, 640, "Arqueros.png", 0.25){
+    : Enemigo(x, y, 64, 64, "Murcielagos_BLUE.png", 1){
 
     alturaActual = y;
     alturaMinRelativa = alturaMax + alturaActual;

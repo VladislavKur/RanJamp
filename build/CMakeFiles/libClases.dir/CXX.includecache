@@ -275,6 +275,8 @@ menu_controles.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
 menu_vol.h
 /home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+../Tienda/Tienda.h
+/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
 
 /home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.cpp
 menu_pausa.h
@@ -489,4 +491,24 @@ SFML/System.hpp
 -
 ../Motor/Motor.h
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+
+/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.cpp
+Tienda.h
+/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
+
+/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Hud/hud.h
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+../Juego/Manejador.h
+/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+../Juego/Juego.h
+/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+../Motor/Motor.h
+/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+../Cuerpo/Cuerpo.h
+/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
 

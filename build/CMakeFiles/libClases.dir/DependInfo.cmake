@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Rectangulo/Rectangulo.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Texto/texto.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Textura/Textura.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Textura/Textura.cpp.o"
+  "/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -56,6 +57,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Textura"
   "../Cuerpo"
   "../Rectangulo"
+  "../Tienda"
   )
 
 # Targets to which this target links.
