@@ -71,6 +71,7 @@ void menu_nivel::update(float deltaTime){
             break;
             case 2:
                 nivel += "3.tmx"; 
+                
                juego->nivelSeleccionado(nivel);
                 man->cambiarEstado(juego);
                 resetSelectedItem();
