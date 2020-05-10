@@ -53,7 +53,7 @@ Player::Player(int x, int y){
     cooldownSalto = 0;
     cooldownDisparo = 0;
     cooldownShift = 0;
-    body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
+    body = new Cuerpo(x,y,128,256,"Magos.png",1,RECTANGLE);
     body->setSize(100,100);
     body->addAnimacion(0.1);
     body->Origen(100/2,100/2);
@@ -146,6 +146,7 @@ void Player::update(float deltaTime , Mundo * mundo){
   
     
     body->moverse(0,jumpSpeed*deltaTime);
+    body->update(deltaTime);
 }
 
 void Player::sumarMonedas(){

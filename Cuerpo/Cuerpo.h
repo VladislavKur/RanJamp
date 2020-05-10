@@ -57,6 +57,7 @@ class Cuerpo{
         Rectangulo * getGlobalBounds();
         int getTipo();
         float getOriginY(){return body->getOrigin().y;};
+        int getPosicionX(){return animacion->getPosicionX();}
 };
 
 #endif

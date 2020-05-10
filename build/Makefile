@@ -244,6 +244,33 @@ Cuerpo/Cuerpo.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s
 .PHONY : Cuerpo/Cuerpo.cpp.s
 
+Enemigos/Boss.o: Enemigos/Boss.cpp.o
+
+.PHONY : Enemigos/Boss.o
+
+# target to build an object file
+Enemigos/Boss.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/Boss.cpp.o
+.PHONY : Enemigos/Boss.cpp.o
+
+Enemigos/Boss.i: Enemigos/Boss.cpp.i
+
+.PHONY : Enemigos/Boss.i
+
+# target to preprocess a source file
+Enemigos/Boss.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/Boss.cpp.i
+.PHONY : Enemigos/Boss.cpp.i
+
+Enemigos/Boss.s: Enemigos/Boss.cpp.s
+
+.PHONY : Enemigos/Boss.s
+
+# target to generate assembly for a file
+Enemigos/Boss.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/Boss.cpp.s
+.PHONY : Enemigos/Boss.cpp.s
+
 Enemigos/centinela.o: Enemigos/centinela.cpp.o
 
 .PHONY : Enemigos/centinela.o
@@ -1130,6 +1157,9 @@ help:
 	@echo "... Cuerpo/Cuerpo.o"
 	@echo "... Cuerpo/Cuerpo.i"
 	@echo "... Cuerpo/Cuerpo.s"
+	@echo "... Enemigos/Boss.o"
+	@echo "... Enemigos/Boss.i"
+	@echo "... Enemigos/Boss.s"
 	@echo "... Enemigos/centinela.o"
 	@echo "... Enemigos/centinela.i"
 	@echo "... Enemigos/centinela.s"

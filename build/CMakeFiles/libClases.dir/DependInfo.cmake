@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vermia/RanJamp/Bloque/Bloque.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Bloque/Bloque.cpp.o"
   "/home/vermia/RanJamp/Bullet/bullet.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Bullet/bullet.cpp.o"
   "/home/vermia/RanJamp/Cuerpo/Cuerpo.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o"
+  "/home/vermia/RanJamp/Enemigos/Boss.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/Boss.cpp.o"
   "/home/vermia/RanJamp/Enemigos/centinela.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o"
   "/home/vermia/RanJamp/Enemigos/enemigo.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/enemigo.cpp.o"
   "/home/vermia/RanJamp/Enemigos/murcielago.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Enemigos/murcielago.cpp.o"

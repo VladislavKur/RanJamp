@@ -26,6 +26,24 @@ CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.o
  /home/vermia/RanJamp/Enumerador/typeBody.h
  /home/vermia/RanJamp/Motor/Motor.h
  /home/vermia/RanJamp/Rectangulo/Rectangulo.h
+CMakeFiles/libClases.dir/Enemigos/Boss.cpp.o
+ /home/vermia/RanJamp/Animacion/Animacion.h
+ /home/vermia/RanJamp/Bloque/Bloque.h
+ /home/vermia/RanJamp/Bullet/bullet.h
+ /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.cpp
+ /home/vermia/RanJamp/Enemigos/Boss.h
+ /home/vermia/RanJamp/Enemigos/enemigo.h
+ /home/vermia/RanJamp/Enumerador/typeBody.h
+ /home/vermia/RanJamp/Enumerador/typeBullet.h
+ /home/vermia/RanJamp/Hud/hud.h
+ /home/vermia/RanJamp/Motor/Motor.h
+ /home/vermia/RanJamp/Mundo/Mundo.h
+ /home/vermia/RanJamp/Mundo/tinystr.h
+ /home/vermia/RanJamp/Mundo/tinyxml.h
+ /home/vermia/RanJamp/Player/Player.h
+ /home/vermia/RanJamp/Rectangulo/Rectangulo.h
+ /home/vermia/RanJamp/Textura/Textura.h
 CMakeFiles/libClases.dir/Enemigos/centinela.cpp.o
  /home/vermia/RanJamp/Animacion/Animacion.h
  /home/vermia/RanJamp/Bloque/Bloque.h
@@ -126,6 +144,7 @@ CMakeFiles/libClases.dir/Juego/Juego.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -167,6 +186,7 @@ CMakeFiles/libClases.dir/Juego/Transicion.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -193,6 +213,7 @@ CMakeFiles/libClases.dir/Menu/menu.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -221,6 +242,7 @@ CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -250,6 +272,7 @@ CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -283,6 +306,7 @@ CMakeFiles/libClases.dir/Menu/menu_mundos.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -317,6 +341,7 @@ CMakeFiles/libClases.dir/Menu/menu_nivel.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -346,6 +371,7 @@ CMakeFiles/libClases.dir/Menu/menu_pausa.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -379,6 +405,7 @@ CMakeFiles/libClases.dir/Menu/menu_vol.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h
@@ -484,6 +511,7 @@ CMakeFiles/libClases.dir/Tienda/Tienda.cpp.o
  /home/vermia/RanJamp/Bloque/Bloque.h
  /home/vermia/RanJamp/Bullet/bullet.h
  /home/vermia/RanJamp/Cuerpo/Cuerpo.h
+ /home/vermia/RanJamp/Enemigos/Boss.h
  /home/vermia/RanJamp/Enemigos/centinela.h
  /home/vermia/RanJamp/Enemigos/enemigo.h
  /home/vermia/RanJamp/Enemigos/murcielago.h

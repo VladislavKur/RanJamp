@@ -19,6 +19,10 @@ class Enemigo{
         bool muerto;
         Cuerpo* getCuerpo();
         bool comprobarColision(Cuerpo* cuerpo);
+
+        int getVidas();
+        bool setVidas(int v);
+        
         void restarVida(int i);
     protected:
         Enemigo(float x, float y, int sizeWidth, int sizeHeight, 
@@ -29,6 +33,7 @@ class Enemigo{
         float velocidad;
         int modo;
         bool colision;
+
         Rectangulo * coliAbajo;
         Rectangulo * coliArriba;
         Rectangulo * coliIzquierda;

@@ -31,6 +31,7 @@ class Animacion{
         void render(float porcentaje);
         void setSprite(int spriteNumber);
         int getAnimationNumbers(){return posicionesX;};
+        int getPosicionX(){return numeroSpriteX;}
 
 };
 
