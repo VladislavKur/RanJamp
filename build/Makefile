@@ -487,6 +487,33 @@ Juego/Manejador.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.s
 .PHONY : Juego/Manejador.cpp.s
 
+Juego/Transicion.o: Juego/Transicion.cpp.o
+
+.PHONY : Juego/Transicion.o
+
+# target to build an object file
+Juego/Transicion.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.o
+.PHONY : Juego/Transicion.cpp.o
+
+Juego/Transicion.i: Juego/Transicion.cpp.i
+
+.PHONY : Juego/Transicion.i
+
+# target to preprocess a source file
+Juego/Transicion.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.i
+.PHONY : Juego/Transicion.cpp.i
+
+Juego/Transicion.s: Juego/Transicion.cpp.s
+
+.PHONY : Juego/Transicion.s
+
+# target to generate assembly for a file
+Juego/Transicion.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.s
+.PHONY : Juego/Transicion.cpp.s
+
 Menu/menu.o: Menu/menu.cpp.o
 
 .PHONY : Menu/menu.o
@@ -1130,6 +1157,9 @@ help:
 	@echo "... Juego/Manejador.o"
 	@echo "... Juego/Manejador.i"
 	@echo "... Juego/Manejador.s"
+	@echo "... Juego/Transicion.o"
+	@echo "... Juego/Transicion.i"
+	@echo "... Juego/Transicion.s"
 	@echo "... Menu/menu.o"
 	@echo "... Menu/menu.i"
 	@echo "... Menu/menu.s"

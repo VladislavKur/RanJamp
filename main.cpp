@@ -5,6 +5,7 @@
 #include "Player/Player.h"
 #include "Menu/menu_inicial.h"
 #include "Menu/menu_controles.h"
+#include "Juego/Transicion.h"
 
 #include "Juego/Manejador.h"
 #define kVel 5
@@ -24,6 +25,7 @@ int main() {
   fuente.loadFromFile("resources/fuentes/AnotherRound.otf");
     //Crear singletons
     Juego* juego = Juego::instance();
+    Transicion* trans = Transicion::instancia();
 
     //menu
     
@@ -81,7 +83,7 @@ int main() {
         break;
 
         case sf::Keyboard::N:
-          juego->nextLevel();
+          juego->nextLevel(-1);
         break;
 
           default:

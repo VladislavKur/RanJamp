@@ -1,5 +1,6 @@
 #include "Juego.h"
 #include "Manejador.h"
+#include "Transicion.h"
 #include "../Menu/menu_inicial.h"
 
 #include "../Menu/menu_pausa.h"
@@ -679,14 +680,16 @@ void Juego::cargarMusica(){
 
 void Juego::comprobarPasarNivel(){
  if( mundo->getPuerta()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
-   nextLevel();
+   nextLevel(-1);
  }
 }
 
-void Juego::nextLevel(){
-    hud * Hud = hud::instance();
-    nivel++;
+void Juego::nextLevel(int n){
+    Manejador* man = Manejador::instancia();
+    Transicion* trans = Transicion::instancia();
+    if(n == -1){nivel++;} else nivel = n;
     delete mundo;
+    hud * Hud = hud::instance();
     mundo = new Mundo();
     mundo->cargarmapa(niveles[nivel].c_str());
     mundo->crearSprites();
@@ -719,11 +722,14 @@ void Juego::nextLevel(){
     for(int i = 0; i < maxBullets;i++){
         bulletNube[i] = NULL;
     }
+
+    man->cambiarEstado(trans);
+    trans->reset();
 }
 
 
 void Juego::inicializarNiveles(){
-  maxniveles = 6;
+  
   niveles = new string[maxniveles];
   niveles[0] = "Mundo1-1.tmx";
   niveles[1] = "Mundo1-2.tmx";
@@ -731,6 +737,18 @@ void Juego::inicializarNiveles(){
   niveles[3] = "Mundo1-4.tmx";
   niveles[4] = "Mundo3-1.tmx";
   niveles[5] = "Mundo3-2.tmx";
+}
+void Juego::nivelSeleccionado(string n){
+  int aux = -1;
+    for(int i = 0; i < maxniveles; i++){
+      if(niveles[i].compare(n) == 0){
+       
+        aux = i;
+        break;
+      }
+    }
+    nextLevel(aux);
+
 }
 
 void Juego::pausa(){

@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vermia/RanJamp/Juego/Estado.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Estado.cpp.o"
   "/home/vermia/RanJamp/Juego/Juego.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "/home/vermia/RanJamp/Juego/Manejador.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Manejador.cpp.o"
+  "/home/vermia/RanJamp/Juego/Transicion.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Juego/Transicion.cpp.o"
   "/home/vermia/RanJamp/Menu/menu.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu.cpp.o"
   "/home/vermia/RanJamp/Menu/menu_controles.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_controles.cpp.o"
   "/home/vermia/RanJamp/Menu/menu_inicial.cpp" "/home/vermia/RanJamp/build/CMakeFiles/libClases.dir/Menu/menu_inicial.cpp.o"

@@ -55,24 +55,29 @@ void menu_mundos::update(float deltaTime){
         moveUp();
         cooldown_mov = 0.25;
     }
-    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0 ){
         cooldown_mov = 0.5;
         switch(selectedItem){
 
             case 0:
+                nivel->seleccionarMundo("Mundo1-");
                 man->cambiarEstado(nivel);
             break;
             case 1:
+                nivel->seleccionarMundo("Mundo2-");
                 man->cambiarEstado(nivel);
             break;
             case 2:
+               nivel->seleccionarMundo("Mundo3-");
                man->cambiarEstado(nivel);
             break;
             case 3:
+                nivel->seleccionarMundo("Mundo4-");
                 man->cambiarEstado(nivel);
             break;
             case 4:
-               man->cambiarEstado(nivel);
+               juego->nivelSeleccionado("JefeFinal.tmx");
+               man->cambiarEstado(juego);
             break;
             case 5:
                 man->cambiarEstado(inicio);

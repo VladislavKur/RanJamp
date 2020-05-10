@@ -35,7 +35,7 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
-            int maxniveles;
+            int maxniveles = 6;
             //obstaculos 
             float timerObstaculos;
         protected:
@@ -66,12 +66,13 @@
             void comprobarPasarNivel();
 
             void pausa();
+            void nivelSeleccionado(std::string);
             
 
             
             sf::View view;
 
-            void nextLevel();
+            void nextLevel(int );
             void inicializarNiveles();
     };
 

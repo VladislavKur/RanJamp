@@ -50,6 +50,7 @@ class Cuerpo{
         void setSpriteAnimacion(int entrada);
         void setSize(float sizeX, float sizeY);
         bool colisiona(Cuerpo * entrada);
+        void rotar(float angulo);
         void recorte(int x , int y);
         std::vector<float> getPosicion();
         std::vector<float>getSize();
