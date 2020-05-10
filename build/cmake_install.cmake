@@ -1,4 +1,4 @@
-# Install script for directory: /home/vermia/RanJamp
+# Install script for directory: /home/andres/Escritorio/FV JUNTO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,23 +34,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vermia/RanJamp/build/Player/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Bullet/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Animacion/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Enemigos/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Mundo/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Motor/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Juego/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Objeto/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Texto/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Menu/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Hud/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Musica/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Bloque/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Textura/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Cuerpo/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Rectangulo/cmake_install.cmake")
-  include("/home/vermia/RanJamp/build/Tienda/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Player/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Bullet/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Animacion/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Enemigos/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Mundo/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Motor/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Juego/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Objeto/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Texto/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Menu/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Hud/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Musica/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Bloque/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Textura/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Cuerpo/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Rectangulo/cmake_install.cmake")
+  include("/home/andres/Escritorio/FV JUNTO/build/Tienda/cmake_install.cmake")
 
 endif()
 
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vermia/RanJamp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andres/Escritorio/FV JUNTO/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

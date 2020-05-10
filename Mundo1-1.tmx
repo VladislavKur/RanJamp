@@ -21044,13 +21044,8 @@
   <object id="38" x="3457.58" y="572.727" width="60.6061" height="30.303"/>
   <object id="51" x="4440" y="0" width="10" height="1600"/>
  </objectgroup>
-<<<<<<< HEAD
  <objectgroup name="Capa de Enemigos ">
   <object id="6" type="2" x="3517.33" y="1430.67" width="45.3333" height="46.6667">
-=======
- <objectgroup name="Capa de Enemigos">
-  <object id="15" type="6" x="1780" y="1071" width="78" height="80">
->>>>>>> 164e6958d74ea2e0152e93bfc586eca203fbad03
    <ellipse/>
   </object>
  </objectgroup>
