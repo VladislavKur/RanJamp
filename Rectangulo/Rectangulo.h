@@ -6,7 +6,7 @@ class Rectangulo{
     public:
     ~Rectangulo();
     Rectangulo( float , float,float , float);
-
+    void posicionar(float l, float f);
    
     sf::FloatRect getBody(){return body;};
     float getLeft(){return body.left;}
@@ -20,7 +20,7 @@ class Rectangulo{
     void setHeight(float h){body.height = h;}
 
     bool getIntersect(Rectangulo &);
-    
+
     private:
     sf::FloatRect body;
 

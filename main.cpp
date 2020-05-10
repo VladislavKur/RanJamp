@@ -5,6 +5,7 @@
 #include "Player/Player.h"
 #include "Menu/menu_inicial.h"
 #include "Menu/menu_controles.h"
+#include "Juego/Transicion.h"
 
 #include "Juego/Manejador.h"
 #define kVel 5
@@ -24,6 +25,7 @@ int main() {
   fuente.loadFromFile("resources/fuentes/AnotherRound.otf");
     //Crear singletons
     Juego* juego = Juego::instance();
+    Transicion* trans = Transicion::instancia();
 
     //menu
     
@@ -63,6 +65,10 @@ int main() {
           Hud->setSlow(true);
           Hud->setVelocidad(true);
           Hud->setIVelocidad(350);
+          for(int i=0 ; i< Hud->getArma().size(); i++){
+              Hud->setArma(i, 2);
+          }
+
         break;
         case sf::Keyboard::X:
         //if ( tipoEstado == Juego ) ?
@@ -77,7 +83,7 @@ int main() {
         break;
 
         case sf::Keyboard::N:
-          juego->nextLevel();
+          juego->nextLevel(-1);
         break;
 
           default:

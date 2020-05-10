@@ -52,7 +52,8 @@ Player::Player(int x, int y){
     auxSaltos = true;
     cooldownSalto = 0;
     cooldownDisparo = 0;
-    body = new Cuerpo(x,y,128,256,"mago.png",1,RECTANGLE);
+    cooldownShift = 0;
+    body = new Cuerpo(x,y,128,256,"Magos.png",1,RECTANGLE);
     body->setSize(100,100);
     body->addAnimacion(0.1);
     body->Origen(100/2,100/2);
@@ -69,6 +70,7 @@ Player::Player(int x, int y){
     melee = new Rectangulo(0,0,0,0);
 
     monedas = 0;
+
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
@@ -110,6 +112,18 @@ void Player::update(float deltaTime , Mundo * mundo){
             cooldownSalto=15*deltaTime;
           }
       }
+
+     if(Keyboard::isKeyPressed(Keyboard::Num1) && cooldownShift<0){
+        cooldownShift=2;
+        if(Hud->getArma()[0] > 0)
+          arma=1;
+     }
+     if(Keyboard::isKeyPressed(Keyboard::Num2) && cooldownShift<0){
+        cooldownShift=2;
+        if(Hud->getArma()[1] > 0)
+          arma=2;
+     }
+      cooldownShift -= deltaTime;
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
@@ -132,6 +146,7 @@ void Player::update(float deltaTime , Mundo * mundo){
   
     
     body->moverse(0,jumpSpeed*deltaTime);
+    body->update(deltaTime);
 }
 
 void Player::sumarMonedas(){

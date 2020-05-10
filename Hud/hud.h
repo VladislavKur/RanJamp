@@ -41,6 +41,7 @@ class hud{
         void setSlow(bool x){slow =x;}
         bool getGodMode(){return godMode;}
         void setGodMode();
+        int getPuntos(){return puntos;}
         void reiniciarTiempo();
         void setArma(int pos, int mejora);
         vector<int> getArma(){return arma;}
@@ -54,13 +55,13 @@ class hud{
         Sprite * sPuntos;
         Cuerpo ** sprites;
         Clock clockGlobal;
-        int monedero = 10;
-        int puntos = 0; 
-        int vidas = 5; 
-        bool doblesalto = false;
-        bool velocidad = false;
-        bool slow = false; 
-        int i_velocidad = 250;
-        bool godMode = false;
+        int monedero;
+        int puntos; 
+        int vidas; 
+        bool doblesalto;
+        bool velocidad;
+        bool slow; 
+        int i_velocidad;
+        bool godMode;
         vector<int> arma;
 };

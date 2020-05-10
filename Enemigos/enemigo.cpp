@@ -46,6 +46,22 @@ bool Enemigo::comprobarColision(Cuerpo* cuerpo){
     return dev;
 }
 
+bool Enemigo::setVidas(int v){
+    
+    vida = v;
+
+    if(vida <= 0)
+        muerto = true;
+    else
+        muerto = false;
+    
+    return muerto;
+}
+
+int Enemigo::getVidas(){
+    return vida;
+}
+
 Cuerpo* Enemigo::getCuerpo(){
     return body;
 }

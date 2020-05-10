@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/andres/Escritorio/FV JUNTO"
+CMAKE_SOURCE_DIR = /home/vermia/RanJamp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/andres/Escritorio/FV JUNTO/build"
+CMAKE_BINARY_DIR = /home/vermia/RanJamp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/RanJamp/build/CMakeFiles /home/vermia/RanJamp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vermia/RanJamp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -243,6 +243,33 @@ Cuerpo/Cuerpo.s: Cuerpo/Cuerpo.cpp.s
 Cuerpo/Cuerpo.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Cuerpo/Cuerpo.cpp.s
 .PHONY : Cuerpo/Cuerpo.cpp.s
+
+Enemigos/Boss.o: Enemigos/Boss.cpp.o
+
+.PHONY : Enemigos/Boss.o
+
+# target to build an object file
+Enemigos/Boss.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/Boss.cpp.o
+.PHONY : Enemigos/Boss.cpp.o
+
+Enemigos/Boss.i: Enemigos/Boss.cpp.i
+
+.PHONY : Enemigos/Boss.i
+
+# target to preprocess a source file
+Enemigos/Boss.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/Boss.cpp.i
+.PHONY : Enemigos/Boss.cpp.i
+
+Enemigos/Boss.s: Enemigos/Boss.cpp.s
+
+.PHONY : Enemigos/Boss.s
+
+# target to generate assembly for a file
+Enemigos/Boss.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Enemigos/Boss.cpp.s
+.PHONY : Enemigos/Boss.cpp.s
 
 Enemigos/centinela.o: Enemigos/centinela.cpp.o
 
@@ -486,6 +513,33 @@ Juego/Manejador.s: Juego/Manejador.cpp.s
 Juego/Manejador.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Manejador.cpp.s
 .PHONY : Juego/Manejador.cpp.s
+
+Juego/Transicion.o: Juego/Transicion.cpp.o
+
+.PHONY : Juego/Transicion.o
+
+# target to build an object file
+Juego/Transicion.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.o
+.PHONY : Juego/Transicion.cpp.o
+
+Juego/Transicion.i: Juego/Transicion.cpp.i
+
+.PHONY : Juego/Transicion.i
+
+# target to preprocess a source file
+Juego/Transicion.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.i
+.PHONY : Juego/Transicion.cpp.i
+
+Juego/Transicion.s: Juego/Transicion.cpp.s
+
+.PHONY : Juego/Transicion.s
+
+# target to generate assembly for a file
+Juego/Transicion.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.s
+.PHONY : Juego/Transicion.cpp.s
 
 Menu/menu.o: Menu/menu.cpp.o
 
@@ -1103,6 +1157,9 @@ help:
 	@echo "... Cuerpo/Cuerpo.o"
 	@echo "... Cuerpo/Cuerpo.i"
 	@echo "... Cuerpo/Cuerpo.s"
+	@echo "... Enemigos/Boss.o"
+	@echo "... Enemigos/Boss.i"
+	@echo "... Enemigos/Boss.s"
 	@echo "... Enemigos/centinela.o"
 	@echo "... Enemigos/centinela.i"
 	@echo "... Enemigos/centinela.s"
@@ -1130,6 +1187,9 @@ help:
 	@echo "... Juego/Manejador.o"
 	@echo "... Juego/Manejador.i"
 	@echo "... Juego/Manejador.s"
+	@echo "... Juego/Transicion.o"
+	@echo "... Juego/Transicion.i"
+	@echo "... Juego/Transicion.s"
 	@echo "... Menu/menu.o"
 	@echo "... Menu/menu.i"
 	@echo "... Menu/menu.s"

@@ -302,3 +302,7 @@ void Cuerpo::Scalar(float x, float y){
 void Cuerpo::setSize(float sizeX, float sizeY){
    motor->setTamanyoCuerpo(body, sf::Vector2f(sizeX, sizeY)); 
 }
+
+void Cuerpo::rotar(float angulo){
+    body->rotate(angulo);
+}

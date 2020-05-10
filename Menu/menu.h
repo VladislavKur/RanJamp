@@ -48,7 +48,7 @@ class menu : public Estado{
         int selectedItem; 
         Font font; 
         Text *texto;
-        float cooldown_mov;
+        float cooldown_mov = 0.5;
         Textura *t; 
         Bloque * b;
 };

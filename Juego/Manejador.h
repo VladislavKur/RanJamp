@@ -21,6 +21,7 @@ public:
     Estado * getAnterior();
     Estado * getEstado();
     void back();
+    
 
     
 };

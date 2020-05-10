@@ -6,14 +6,15 @@ sf::Font* menu_nivel::fuente = new Font();
 menu_nivel* menu_nivel::instance(){
      if(p_instance == 0){
         fuente->loadFromFile("resources/fuentes/AnotherRound.otf");
-        p_instance = new menu_nivel(*fuente, 6);
+        
+        p_instance = new menu_nivel(*fuente, 5);
 
     }
 
     return(p_instance);
 }
 
-menu_nivel::menu_nivel( Font fuente, int max) : menu(fuente, max){
+menu_nivel::menu_nivel( Font fuen, int max) : menu(fuen, max){
        t = new Textura("resources/Imagenes/MenuControles.png");
        b = new Bloque(t);
    
@@ -29,8 +30,7 @@ void menu_nivel::update(float deltaTime){
     cambiarTexto(1, "Nivel 2", juego->view.getCenter().x-50, juego->view.getCenter().y-juego->view.getSize().y/4);
     cambiarTexto(2, "Nivel 3", juego->view.getCenter().x+juego->view.getSize().x/3, juego->view.getCenter().y-juego->view.getSize().y/4);
     cambiarTexto(3, "Nivel 4", juego->view.getCenter().x-juego->view.getSize().x/5-50, juego->view.getCenter().y);
-    cambiarTexto(4, "Nivel 5", juego->view.getCenter().x+juego->view.getSize().x/5-50, juego->view.getCenter().y);
-    cambiarTexto(5, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
+    cambiarTexto(4, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
 
     b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
     b->setTextureRect(0,0,0,0);
@@ -52,24 +52,30 @@ void menu_nivel::update(float deltaTime){
         moveUp();
         cooldown_mov = 0.25;
     }*/
-    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0 ){
         cooldown_mov = 0.5;
         switch(selectedItem){
 
             case 0:
-                //man->back();
+                nivel += "1.tmx"; 
+                juego->nivelSeleccionado(nivel);
+                man->cambiarEstado(juego);
             break;
             case 1:
-                //man->back();
+                nivel += "2.tmx"; 
+                cout<< nivel<< endl;
+                juego->nivelSeleccionado(nivel);
+                man->cambiarEstado(juego);
             break;
             case 2:
-               // man->back();
+                nivel += "3.tmx"; 
+               juego->nivelSeleccionado(nivel);
+                man->cambiarEstado(juego);
             break;
             case 3:
-                //man->back();
-            break;
-            case 4:
-               // man->back();
+                nivel += "4.tmx"; 
+                juego->nivelSeleccionado(nivel);
+                man->cambiarEstado(juego);
             break;
             case 5:
                 man->back();
