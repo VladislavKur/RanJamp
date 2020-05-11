@@ -331,6 +331,8 @@ iostream
 /home/andres/Escritorio/RANJAMP/RanJamp/Textura/Textura.h
 ../Bloque/Bloque.h
 /home/andres/Escritorio/RANJAMP/RanJamp/Bloque/Bloque.h
+../Cuerpo/Cuerpo.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Cuerpo/Cuerpo.h
 
 /home/andres/Escritorio/RANJAMP/RanJamp/Menu/menu_controles.cpp
 menu_controles.h
