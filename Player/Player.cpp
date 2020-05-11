@@ -173,13 +173,16 @@ void Player::update(float deltaTime , Mundo * mundo){
 
           facing = false;
       }
-      else if(jumpSpeed >= 0.0 && body->getTimeAnimacion() != 0.0 && cooldownDisparo <= 0.0){
+      else if(jumpSpeed >= 0.0 && body->getTimeAnimacion() != 0.0 && cooldownDisparo <= 0.0 
+        && atacando_melee <= -5){
         body->setSpriteAnimacion(0);
         body->setTimeAnimacion(0);
       }
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl)){ //lo mismo que lo anterior WIP fachada
-        if(atacando_melee < -5){
+        if(atacando_melee <= -5){
+          body->setSpriteAnimacion(2);
+          body->setTimeAnimacion(0.2);
           juego->reproducirMusica(5);
           atacando_melee=0.1;
         }
