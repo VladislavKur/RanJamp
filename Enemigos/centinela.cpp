@@ -71,7 +71,7 @@ void Centinela::update(Player* player, float deltaTime){
                 } 
                 else{//DISPARA!!!! necesitamos el trabajo de vermivlad
                     body->setSpriteAnimacion(0);
-                    if(shootTime <= 0.0){
+                    if(shootTime <= 0.0 && body->getPosicionX() == 3){
                         bool auxiliar;
 
                         if((local_diffX/local_diffabs) == 1){
