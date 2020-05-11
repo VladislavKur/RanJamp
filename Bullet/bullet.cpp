@@ -1,13 +1,13 @@
 #include "bullet.h"
  
 
-Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : body(){ //WIP fachada
+Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : body(){
 
     
     
     
-    velocidad=600; //quiza lo mejor es ponerlo como constantes
-    lifetime=2;   //lo del comentario anterior
+    velocidad=600;
+    lifetime=2;
 
     facing=p_facing;
     
@@ -49,9 +49,7 @@ void Bullet::update(float deltaTime){
         body->moverse((facing ? 1 : -1)  * velocidad * deltaTime,0);
     }
     
-    //cout<<body->getPosicion()[0]<<"//////"<<body->getPosicion()[1]<<endl;
     updateHitbox();
-    //cout<<body->getPosicion()[0]<<"//////"<<hitbox->getLeft()<<endl;
     
 }
     

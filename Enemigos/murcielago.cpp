@@ -50,8 +50,6 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
                     float movimientoSuaveY = (local_diffY/local_diffabsY)*velocidad*delta;
                     
                     body->moverse(movimientoSuaveX,movimientoSuaveY);
-                    std::cout << "body murcielago: " << body->getPosicion()[0] 
-                        << "inicial: " << alturaInicial << "\n";
                 }
                 
             break;

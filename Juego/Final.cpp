@@ -6,7 +6,24 @@
 using namespace sf;
 
 Final::~Final(){
+    for(int i=0 ; i<numEstrellas ; i++){
+        delete estrellas[i];
+        estrellas[i]=NULL;
+    }
+    delete mago;
+    mago=NULL;
 
+    delete puntuacion;
+    puntuacion=NULL;
+
+    delete fuente;
+    fuente=NULL;
+
+    delete vista;
+    vista=NULL;
+
+    delete p_instancia;
+    p_instancia=NULL;
 }
 
 Final* Final::p_instancia = NULL;
@@ -89,7 +106,6 @@ void Final::update(float deltaTime){
         if(radio<=0){
             modRadio=true;
             vueltas++;
-            cout<<vueltas<<endl;
         } 
 
         if(modRadio){

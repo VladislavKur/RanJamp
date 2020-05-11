@@ -13,7 +13,6 @@ Tutorial::Tutorial() : menu(*font, 3){
     mundo->crearMonedasLlaves();
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
     jugador = new Player(posP[0], posP[1]);
-    cout<<posP[1]<<endl;
     crearObjetos();
     crearEnemigos();
     view.setSize(1080,720); 
@@ -184,7 +183,7 @@ void Tutorial::update(float deltaTime){
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 default:
-                    cout <<"Default" << endl;
+                    
                 break;
             } 
 
@@ -425,7 +424,6 @@ void Tutorial::colisionBulletEnemigo(){
 
 void Tutorial::terminar(){
     if( mundo->getPuerta()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
-        cout << "fuera"<<endl;
         Manejador* man = Manejador::instancia();
         man->back();
     }

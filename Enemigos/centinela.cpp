@@ -30,7 +30,18 @@ void Centinela::update(Player* player, float deltaTime){
     float local_diffabs = abs(local_diffX);
 
     bool cambio; //no nos cambiamos de modo por defecto
-     do{
+
+    if(local_diffX/local_diffabs == -1){
+
+        body->Scalar(0.5,0.5);
+
+    }
+    else{
+        body->Scalar(-0.5,0.5);    
+    }
+    
+
+    do{
         cambio = false;//no nos cambiamos de modo por defecto
         switch(modo){
 
@@ -70,7 +81,7 @@ void Centinela::update(Player* player, float deltaTime){
                         modo = 0;
                     cambio = true;
                 } 
-                else{//DISPARA!!!! necesitamos el trabajo de vermivlad
+                else{//DISPARA!!!! 
                     body->setSpriteAnimacion(0);
                     if(shootTime <= 0.0 && body->getPosicionX() == 3){
                         bool auxiliar;
@@ -97,7 +108,6 @@ void Centinela::update(Player* player, float deltaTime){
 
                     }
                     
-                    //juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
                     
 
                 }

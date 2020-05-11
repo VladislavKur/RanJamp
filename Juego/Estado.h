@@ -10,8 +10,10 @@ class Estado{
     public:
         Estado();
         ~Estado();
-    
+
+        //update base para cada estado
         virtual void update(float deltaTime);
+        //render base para cada estado
         virtual void render(float num);
 };
 

@@ -8,10 +8,6 @@ Player::~Player(){
       delete body;
       body = nullptr;
     }
-    if(hitbox != nullptr){
-      delete hitbox;
-      hitbox = nullptr;
-    }
 
     if(coliAbajo != NULL){
       delete coliAbajo;
@@ -32,12 +28,6 @@ Player::~Player(){
     
 }
 Player::Player(int x, int y){ 
-
-
-  /*Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
-            std::string fichero, float escala, typeBody tipoCuerpo){*/
-
-    hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=40; 
@@ -63,9 +53,7 @@ Player::Player(int x, int y){
     atacando_melee=0;
     caida = true;
     caidaTiempo = 0.0;
-    //body->texturizar(text);
-    
-    //body->setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada // ESTO HAY QUE PONERLO
+
     
     coliAbajo = new Rectangulo(0,0,0,0);
     coliArriba = new Rectangulo(0,0,0,0);
@@ -102,7 +90,7 @@ void Player::update(float deltaTime , Mundo * mundo){
     vidas = Hud->getVidas();
     godMode = Hud->getGodMode();
 
-    updateHitbox(); //arreglar lo de update hitbox
+    updateHitbox(); 
     GolpeMelee(deltaTime);
 
     if(body->getPosicion()[0]<0){
@@ -122,10 +110,8 @@ void Player::update(float deltaTime , Mundo * mundo){
 
     cooldownDisparo-=deltaTime;
 
-
-  //caer
     if(vidas!=0){
-      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ 
         if(auxSaltos==true && saltos > 0){
             saltar();
 
@@ -150,10 +136,9 @@ void Player::update(float deltaTime , Mundo * mundo){
      }
       cooldownShift -= deltaTime;
       
-      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
+      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ 
           moveRight(deltaTime , mundo);
-          //cout<<body->getTimeAnimacion()<<" / CAIDA: "<<jumpSpeed<< " / DISPARO: "<<cooldownDisparo<<endl;
-          if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+         if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
             body->setSpriteAnimacion(0);
           }
           if(body->getTimeAnimacion()<=0){
@@ -162,7 +147,7 @@ void Player::update(float deltaTime , Mundo * mundo){
 
           facing = true;
       }
-      else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
+      else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ 
           moveLeft(deltaTime, mundo);
           
           if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
@@ -189,7 +174,6 @@ void Player::update(float deltaTime , Mundo * mundo){
         }
       }
     }
-    //cout<<atacando_melee<<endl;
 
   
     if(caida){
@@ -269,9 +253,7 @@ void Player::moveLeft(float deltaTime , Mundo * mundo){
     }
   }
 
-  if(puede){
-    //body.setTextureRect(sf::IntRect(0 , 0 , 128, 256));
-    
+  if(puede){    
     body->Scalar(-1.0f,1.0f);
     body->moverse(-velocidad*deltaTime,0);
   }
@@ -283,7 +265,6 @@ void Player::saltar(){
 
         auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
-        std::cout << "El jumpspeed es: " <<jumpSpeed <<"\n";
         
         saltos--;
   }
@@ -359,7 +340,6 @@ void Player::toggleGodMode(){
     godMode=false;
   } else{
     godMode=true;
-    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
   }
 }
 
@@ -388,11 +368,7 @@ void Player::reset(){
 
 void Player::setSize(float sizeX, float sizeY) {
   body->setSize(sizeX, sizeY);
-  /*
-    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
-    
-    body.setTexture(text); //wip fachada
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/
+  
 }
 
 bool Player::GolpeMelee(float deltaTime){

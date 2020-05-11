@@ -30,12 +30,8 @@ int main() {
     Transicion* trans = Transicion::instancia();
 
     //menu
-    
-    
-
     Manejador* instancia = Manejador::instancia();
     instancia->cambiarEstado(_menu);
-
 
 
     while(m->getOpen()){
@@ -46,7 +42,6 @@ int main() {
       while(window->pollEvent(event)){
         switch (event.type)
         {
-        //Para poder cerrar la ventana se necesita:
         case sf::Event::EventType::Closed :
           window->close();
         break;
@@ -56,9 +51,6 @@ int main() {
         switch (event.key.code) {
 
         case sf::Keyboard::Z:
-          //juego->getJugador()->obtenerPU_SaltoDoble();
-          //juego->getJugador()->obtenerPU_Slowhits();
-          //juego->getJugador()->obtenerPU_Velocidad();
           Hud->setDobleSalto(true);
           Hud->setSlow(true);
           Hud->setVelocidad(true);
@@ -69,11 +61,9 @@ int main() {
 
         break;
         case sf::Keyboard::X:
-        //if ( tipoEstado == Juego ) ?
           juego->matarJugador();
         break;
         case sf::Keyboard::G:
-          //juego->getJugador()->toggleGodMode();
           Hud->setGodMode();
         break;
         case sf::Keyboard::R:
@@ -89,7 +79,7 @@ int main() {
             break;
           }
 
-        break; // de KeyPressed
+        break; 
         
         default:
           break;
