@@ -77,7 +77,8 @@ void Boss::update(Player *player, float deltaTime){
                         haPegado = true;
                     if(body->getPosicionX() == 7){
                         //if(body->colisiona(player->getBody()) && haPegado){
-                        if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
+                        if((player->getColiDerecha()->getIntersect(*mano) 
+                            || player->getColiIzquierda()->getIntersect(*mano))&& haPegado){
                             haPegado = false;
                             player->setVidas(player->getVidas() - 2);
                             player->getBody()->moverse((local_diffX/local_diffabsX)*80, 0+30);//empuja al jugador
