@@ -21140,10 +21140,10 @@
   <object id="94" type="0" x="4000" y="672" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="98" x="4064" y="224" width="100" height="100">
+  <object id="98" type="0" x="4064" y="224" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="101" x="4160" y="224" width="100" height="100">
+  <object id="101" type="0" x="4160" y="224" width="100" height="100">
    <ellipse/>
   </object>
   <object id="111" type="1" x="96" y="352" width="100" height="100">
