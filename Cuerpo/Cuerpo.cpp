@@ -163,7 +163,7 @@ void Cuerpo::moverse(float x_entrada,float y_entrada){
 
     class_move = true;
 
-    motor->mover(body, x_entrada, y_entrada);
+    motor->posicionar(body, class_previousX, class_previousY);
     //cout<<body->getPosition().x<<endl;
 }
 

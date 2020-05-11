@@ -194,16 +194,6 @@ void Motor::posicionar(sf::Shape* entrada, float x, float y){
 
 }
 
-void Motor::mover(sf::Shape* entrada, float x, float y){
-    sf::RectangleShape* casteadoRect = dynamic_cast<sf::RectangleShape*>(entrada);
-    sf::CircleShape* casteadoCirc = dynamic_cast<sf::CircleShape*>(entrada);
-
-    if(casteadoRect != NULL)
-        casteadoRect->move(x,y);
-    else if(casteadoCirc != NULL)
-        casteadoCirc->move(x,y);
-
-}
 
 
 void Motor::posicionar(sf::RectangleShape& entrada, float x, float y){
