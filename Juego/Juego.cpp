@@ -864,6 +864,9 @@ void Juego::pausa(){
   menu_pausa* menuPau = menu_pausa::instance();
   if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
   man->cambiarEstado(menuPau);
+  pausarMusica(0);
+  reproducirMusica(2);
+  ponerBucleMusica(2);
   menuPau->resetSelectedItem();
   }
     
