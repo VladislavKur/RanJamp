@@ -25,7 +25,7 @@ Boss::Boss( float x, float y)
 
 
 void Boss::update(Player *player, float deltaTime){
-
+    hud * Hud = hud::instance();
     float posJugadorX = player->getBody()->getPosicion()[0];
     float posJugadorY = player->getBody()->getPosicion()[1];
 
@@ -75,10 +75,12 @@ void Boss::update(Player *player, float deltaTime){
                     if(body->getPosicionX() != 7)
                         haPegado = true;
                     if(body->getPosicionX() == 7){
-                        //if(body->colisiona(player->getBody()) && haPegado){
-                        if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
+                        if(body->colisiona(player->getBody()) && haPegado){
+                        //if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
                             haPegado = false;
-                            player->setVidas(player->getVidas() - 2);
+                            // player->setVidas(player->getVidas() - 2);
+                            Hud->restarVidas();
+                            Hud->restarVidas();
                             player->getBody()->moverse((local_diffX/local_diffabsX)*80, 0+30);//empuja al jugador
                         }
                     }                    

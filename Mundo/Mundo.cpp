@@ -163,14 +163,13 @@ Cuerpo ** Mundo::getMonedasLlaves(){
    return objetos3;
 }
 
-void Mundo::EliminarMonedasLLaves(Cuerpo * c){// hay que borrarlo y redimensionar el array
+void Mundo::EliminarMonedasLLaves(Cuerpo * c){
  
   for (int i = 0; i < _numObjects3; i++){
     if(objetos3[i] == c){
       for(int j = i; j < _numObjects3; j++){
         objetos3[j] = objetos3[j+1];        
       }
-     // delete objects3[_numObjects3-1];
       objetos3[_numObjects3-1] = NULL;
       _numObjects3--;
     }
@@ -237,7 +236,7 @@ void Mundo::crearObstaculos(){
         objects2[i]->QueryIntAttribute("type", &_tipo2);
         objects2[i]->QueryIntAttribute("x", &_x2);
         objects2[i]->QueryIntAttribute("y", &_y2);
-        objetos2[i] = new Cuerpo(_x2,_y2, _widthObject2,_heightObject2, _tipo2);//PASAR POR PARAMETRO EL TIPO AL CUERPO
+        objetos2[i] = new Cuerpo(_x2,_y2, _widthObject2,_heightObject2, _tipo2);
         if(objetos2[i] != nullptr ){
          
         }
@@ -272,7 +271,7 @@ void Mundo::crearMonedasLlaves(){
         objects3[i]->QueryIntAttribute("x", &_x3);
         objects3[i]->QueryIntAttribute("y", &_y3);
         if(_tipo3 == 0){
-          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Moneda.png" , 0.2,1 , _tipo3);//PASAR POR PARAMETRO EL TIPO AL CUERPO
+          objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Moneda.png" , 0.2,1 , _tipo3);
           objetos3[i]->addAnimacion(0.1);
         }else if(_tipo3 == 1 ){
           objetos3[i] = new Cuerpo(_x3,_y3, _widthObject3,_heightObject3,"Llave.png" , 0.5, 0, _tipo3);
@@ -291,7 +290,7 @@ void Mundo::crearMonedasLlaves(){
 void Mundo::cargarObjectGroups(){
     TiXmlElement * objectgroup = map->FirstChildElement("objectgroup");
     int _numObjectgroups = 0;
-    while(objectgroup){ // vemos cuantos hay
+    while(objectgroup){ 
         objectgroup = objectgroup->NextSiblingElement("objectgroup");
         _numObjectgroups++;
     }
@@ -366,9 +365,6 @@ vector<float> Mundo::cargarPosicionPlayer_Puerta(int i){
       
     puerta = new Cuerpo(_posX,_posY, _widthP,_heightP);
     
-      /*float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
-            std::string fichero, float escala, typeBody tipoCuerpo*/
-      
     }
     return pos;
 }

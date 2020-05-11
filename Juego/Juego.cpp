@@ -687,11 +687,9 @@ void Juego::colisionBulletJugador(){
 
      
       if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletBoss[i]->getBody()->getGlobalBounds())){
-        morir = jugador->setVidas(jugador->getVidas()-2);
-
+        morir = Hud->restarVidas();
         delete bulletBoss[i];
         bulletBoss[i] = NULL;
-        
         if(morir == true){
           matarJugador();
         }

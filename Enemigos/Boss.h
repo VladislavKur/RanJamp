@@ -4,7 +4,7 @@
 #include "enemigo.h"
 #include "../Bullet/bullet.h"
 #include "../Rectangulo/Rectangulo.h"
-
+#include "../Hud/hud.h"
 #ifndef BOSS_H
 #define BOSS_H
 

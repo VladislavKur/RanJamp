@@ -22,33 +22,83 @@ class hud{
         
         // RENDERIZA EL HUD 
         void render(); 
+
+        //RENDERIZA LAS MONEDAS DE HUD
         void renderMonedas();
         
+        //DEVUELVE EL VALOR DE LAS MONEDAS DE JUGADOR
         int getMonedero(){return monedero;}
+
+        //RESTA EL VALOR DE MONEDERO PASADO POR PARAMETRO
         void setMonedero(int x){monedero -=x;}
+        
+        //SUMA UNA MONEDA AL MONEDERO
         void sumarMonedas(){monedero++;}
+        
+        //DEVUELVE LAS VIDAS DEL JUGADOR
         int getVidas(){return vidas;}
+        
+        //SUMAR UNO A VIDAS
         void sumarVidas(){vidas++;}
+
+        //RESTA UNO A VIDAS Y SI ESTA A CERO DEVUELVE FALSE
         bool restarVidas();
+
+        //VUELVE A  PONER LAS VIDAS DEL JUGADOR A 5
         void restablecerVidas(){vidas = 5;}
+        
+        //QUITA TODAS LA VIDAS DEL JUGADOR 
         void quitarVidas(){vidas = 0;}
+
+        //DEVULVE EL VALOR DE DOBLE SALTO
         bool getDoblesalto(){return doblesalto;}
+
+        //CAMBIA EL VALRO DEL DOBLE SALTO POR EL PASADO POR PARAMETRO
         void setDobleSalto(bool x){doblesalto = x;}
+
+        //DEVULVE LA VELOCIDAD
         bool getVelocidad(){return velocidad;}
+        
+        //CAMBIA EL VALOR DE LA VELOCIDAD POR EL PASADO POR PARAMETRO
         void setVelocidad(bool x){velocidad = x;}
+        
+        //DEVUELVE EL VALOR ENTERO DE LA VELOCIDAD 
         int getIVelocidad(){return i_velocidad;}
+
+        //CAMBIA EL VALOR DE LA VELOCIDAD POR EL PASADO POR PARAMETRO 
         void setIVelocidad(int x){i_velocidad = x;}
+
+        //DEVUELVE EL VALOR DE SLOW
         bool getSlow(){return slow;}
+
+        //CAMBIA EL VALOR DE SLOW POR QUE PASADO POR PARAMETRO
         void setSlow(bool x){slow =x;}
+
+        //DEVUELVE EL VALOR DE GODMODE 
         bool getGodMode(){return godMode;}
+        
+        //CAMBIA EL VALOR DE GODMODE Y LO PONE AL CONTRARIO DEL QUE ESTABA 
         void setGodMode();
+
+        //DEVUELVE EL VALOR DEL TIEMPO DEL JUEGO
         int getTiempo(){return clockGlobal.getElapsedTime().asSeconds();};
+        
+        //DEVUELVE EL VALOR DE LOS PUNTOS 
         int getPuntos(){return puntos;}
+
+        //REINICA EL TIEMPO A 0 
         void reiniciarTiempo();
+
+        //CAMBIA DE ARMA, MEJORANDOLO CON EL VALOR PASADO POR PARAMETRO
         void setArma(int pos, int mejora);
+
+        //DEVUELVE LAS ARMAS DEL JUGADOR
         vector<int> getArma(){return arma;}
+
     protected: 
-        hud(int posPengo, int vidasPengo, int max);
+
+        //CONTRUCTOR AL CUAL SE LE PASAN LA POSICION DEL JUGADOR  EN Y SUS VIDAS Y EL MAXIMO
+        hud(int pos, int vidasPengo, int max);
         
     private:
         static hud* p_instancia; 
