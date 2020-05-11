@@ -27,7 +27,6 @@ Juego::Juego(){
     view.setSize(1080,720); 
     //view.setCenter(1080/2,720/2);
     view.setCenter(view.getSize().x/2,view.getSize().y/2);
-    transparenciaRoja=1;
 
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
@@ -783,7 +782,7 @@ void Juego::nextLevel(int n){
       mundo->crearObstaculos();
       mundo->crearMonedasLlaves();
       vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
-      jugador->getBody()->posicionamiento(posP[0], posP[1]);
+      jugador->getBody()->posicionamiento(posP[0], posP[1]-200);
       if(nivel % 4 == 0){
           Hud->setDobleSalto(false);
           Hud->setVelocidad(false);
@@ -855,6 +854,7 @@ void Juego::nivelSeleccionado(string n){
         break;
       }
     }
+    
     nextLevel(aux);
 
 }
@@ -864,14 +864,14 @@ void Juego::pausa(){
   menu_pausa* menuPau = menu_pausa::instance();
   if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
   man->cambiarEstado(menuPau);
+  pausarMusica(0);
+  reproducirMusica(2);
+  ponerBucleMusica(2);
   menuPau->resetSelectedItem();
   }
     
 }
 
-void Juego::iniciarPantallaRoja(){
-  transparenciaRoja=128;
-}
 
 void Juego::setVolumen(int i, float x){
     so[i]->setVolumen(x);

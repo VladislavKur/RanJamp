@@ -14074,7 +14074,7 @@
   </object>
  </objectgroup>
  <objectgroup name="Capa de Player">
-  <object id="53" x="248" y="3924" width="68" height="68"/>
+  <object id="53" x="339.663" y="3890.67" width="68" height="68"/>
  </objectgroup>
  <objectgroup name="Capa de Powerups">
   <object id="8" name="doblesalto" type="2" x="839.394" y="4193.19" width="59.8452" height="41.6667"/>
@@ -14098,7 +14098,7 @@
   <object id="57" type="0" x="716.667" y="2962.12" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="58" type="1" x="986.364" y="377.269" width="100" height="100">
+  <object id="58" type="1" x="1019.7" y="327.27" width="100" height="100">
    <ellipse/>
   </object>
   <object id="60" type="2" x="1339.39" y="1103.03" width="66.6667" height="230.303"/>

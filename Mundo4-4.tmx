@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="50" tilewidth="32" tileheight="32" nextobjectid="211">
  <tileset firstgid="1" name="Fondo" tilewidth="32" tileheight="32" tilecount="5250">
-  <image source="../../Ranjamp v5/RanJamp-master/resources/Imagenes/MapaHieloFuego.png" width="3360" height="1600"/>
+  <image source="resources/Imagenes/MapaHieloFuego.png" width="3360" height="1600"/>
  </tileset>
  <tileset firstgid="5251" name="Objetos" tilewidth="32" tileheight="32" tilecount="160">
   <image source="resources/Imagenes/ObjetosMundo4.png" width="512" height="320"/>

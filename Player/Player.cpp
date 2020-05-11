@@ -128,8 +128,9 @@ void Player::update(float deltaTime , Mundo * mundo){
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
         if(auxSaltos==true && saltos > 0){
             saltar();
-           
+
             juego->reproducirMusica(4);
+            juego->setVolumen(4, 100);
             body->setSpriteAnimacion(1);
             body->setTimeAnimacion(0.2);
 

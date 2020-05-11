@@ -23,7 +23,6 @@ Final::Final(){
     Motor* motor = Motor::instance();
     fuente= new Font[1];
     puntuacion=new Text[3];
-    the_end = new Text[1];
     fuente->loadFromFile("resources/fuentes/AnotherRound.otf");
     graduaColor=0;
     modRadio=true;
