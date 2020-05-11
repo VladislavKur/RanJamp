@@ -13,7 +13,11 @@ class musica{
         void pausarMusica();
 
         // PONE EN BUCLE EL SONIDO
-        void ponerBucle(); 
+        void ponerBucle();
+
+        void setVolumen(float vol);
+
+        float getVolumen();
     private:
         sf::SoundBuffer soundBuffer;
         sf::Sound sound;

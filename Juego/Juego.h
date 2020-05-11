@@ -72,8 +72,11 @@
             void pausa();
             void nivelSeleccionado(std::string);
             
+            void setVolumen(float x);
+            float getVolumen();
+            void pausarMusica();
+            void reproducirMusica();
 
-            
             sf::View view;
 
             void nextLevel(int i);
