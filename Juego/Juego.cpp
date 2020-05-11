@@ -783,7 +783,7 @@ void Juego::nextLevel(int n){
       mundo->crearObstaculos();
       mundo->crearMonedasLlaves();
       vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
-      jugador->getBody()->posicionamiento(posP[0], posP[1]);
+      jugador->getBody()->posicionamiento(posP[0], posP[1]-200);
       if(nivel % 4 == 0){
           Hud->setDobleSalto(false);
           Hud->setVelocidad(false);
@@ -855,6 +855,7 @@ void Juego::nivelSeleccionado(string n){
         break;
       }
     }
+    
     nextLevel(aux);
 
 }
