@@ -7,6 +7,7 @@ musica::musica(sf::String x){
       std::cout<<"No se puede encontrar el audio" << std::endl;
     }
     sound.setBuffer(soundBuffer);
+    sound.setVolume(50);
 }
 
 void musica::reproducirMusica(){
@@ -19,4 +20,12 @@ void musica::pausarMusica(){
 
 void musica::ponerBucle(){
     sound.setLoop(true);
+}
+
+void musica::setVolumen(float x){
+    sound.setVolume(x);
+}
+
+float musica::getVolumen(){
+    return sound.getVolume();
 }

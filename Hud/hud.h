@@ -42,7 +42,7 @@ class hud{
         void setSlow(bool x){slow =x;}
         bool getGodMode(){return godMode;}
         void setGodMode();
-        int getTiempo(){clockGlobal.getElapsedTime().asSeconds();};
+        int getTiempo(){return clockGlobal.getElapsedTime().asSeconds();};
         int getPuntos(){return puntos;}
         void reiniciarTiempo();
         void setArma(int pos, int mejora);

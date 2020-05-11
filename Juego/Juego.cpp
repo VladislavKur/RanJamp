@@ -10,7 +10,7 @@ Juego* Juego::pinstance = 0;
 Juego::Juego(){
     nivel = 0;
     inicializarNiveles();
-    // cargarMusica();
+    cargarMusica();
     mundo = new Mundo();  
     mundo->cargarmapa(niveles[nivel].c_str());
     mundo->crearSprites();
@@ -744,7 +744,7 @@ void Juego::colisionBulletEnemigo(){//WIP fachada
 
 
 void Juego::cargarMusica(){
-    sf::String ss = "resources/Sonidos/si-veo2.ogg";
+    sf::String ss = "resources/Sonidos/musica1.ogg";
     so = new musica(ss);
     so->reproducirMusica();
 }
@@ -846,4 +846,20 @@ void Juego::pausa(){
 
 void Juego::iniciarPantallaRoja(){
   transparenciaRoja=128;
+}
+
+void Juego::setVolumen(float x){
+    so->setVolumen(x);
+}
+
+float Juego::getVolumen(){
+    return so->getVolumen();
+}
+
+void Juego::pausarMusica(){
+  so->pausarMusica();
+}
+
+void Juego::reproducirMusica(){
+  so->reproducirMusica();
 }
