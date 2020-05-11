@@ -481,14 +481,9 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     for(unsigned i = 0; i < maxBullets;i++){ 
       if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
-<<<<<<< HEAD
-
-
-=======
     portal->render();
     
    
->>>>>>> a2b97942ca49902297cf5e28ff627cdc411cdfd9
 }
 
 

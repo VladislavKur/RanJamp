@@ -11,6 +11,8 @@ Murcielago::Murcielago(float x, float y)
     
     haPegado = false;
     vida = 1;
+
+    alturaInicial = y;
 }
 
 void Murcielago::update(Player* player, float delta){//WIP fachada
@@ -27,7 +29,7 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
     
     do{
         cambio = false;//no nos cambiamos de modo por defecto
-        
+
         switch(modo){
             case(0): //está quieto
                 if(local_diffabsX < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
@@ -36,15 +38,19 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
                 }
             break;
             case(1)://diagonal
-                if(local_diffY <= altura){
+                if(local_diffY <= altura || body->getPosicion()[1] - alturaInicial >= 250.0){
                    modo = 2;
                    cambio = true;
+                   if(local_diffX/local_diffabsX == 1)
+                    body->Scalar(-1,1);
                 }
                 else{
                     float movimientoSuaveX = (local_diffX/local_diffabsX)*velocidad*delta;
                     float movimientoSuaveY = (local_diffY/local_diffabsY)*velocidad*delta;
                     
-                    body->moverse(movimientoSuaveX,movimientoSuaveY); 
+                    body->moverse(movimientoSuaveX,movimientoSuaveY);
+                    std::cout << "body murcielago: " << body->getPosicion()[0] 
+                        << "inicial: " << alturaInicial << "\n";
                 }
                 
             break;
