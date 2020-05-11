@@ -32,7 +32,7 @@
             Bullet* bulletBoss[maxBullets];
             static Juego* pinstance;
             int numEmenigos; 
-            musica * so;
+            musica ** so;
             int numObjetos;
             Mundo * mundo;
             int nivel;
@@ -43,6 +43,7 @@
             int transparenciaRoja;
             int angulo = 0;
             Cuerpo *portal;
+            std::string nivelactual;
         protected:
             Juego();
             ~Juego();
@@ -73,11 +74,14 @@
 
             void pausa();
             void nivelSeleccionado(std::string);
+            std::string nivelJuego(){return nivelactual;}
             
-            void setVolumen(float x);
-            float getVolumen();
-            void pausarMusica();
-            void reproducirMusica();
+            void setVolumen(int i ,float x);
+            float getVolumen(int i);
+            void pausarMusica(int i);
+            void reproducirMusica(int i);
+            void ponerBucleMusica(int i);
+            
 
             sf::View view;
 

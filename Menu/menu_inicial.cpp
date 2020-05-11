@@ -32,6 +32,8 @@ void menu_inicial::update(float deltaTime){
     menu_mundos* mundos = menu_mundos::instance();
     Tienda * tienda = Tienda::instance();
     Motor * motor = Motor::instance();
+    motor->getVentana()->setView(juego->view); //wIP fachada
+
     if(noeslaprimeravezxd){
         cambiarTexto(0,  "CONTINUAR PARTIDA", juego->view.getCenter().x-60, juego->view.getCenter().y-125);
         cambiarTexto(1,  "NUEVA PARTIDA", juego->view.getCenter().x-60, juego->view.getCenter().y-75);
@@ -65,12 +67,18 @@ void menu_inicial::update(float deltaTime){
         if(noeslaprimeravezxd){
             switch(selectedItem){
             case 0:
+               juego->pausarMusica(2);
+               juego->reproducirMusica(0);
+               juego->ponerBucleMusica(0);
                 noeslaprimeravezxd=true;
                man->cambiarEstado(juego);
                resetSelectedItem();
               
             break;
             case 1:
+                juego->pausarMusica(2);
+                juego->reproducirMusica(0);
+                juego->ponerBucleMusica(0);
                 juego->matarJugador();
                 man->cambiarEstado(juego);
                 resetSelectedItem();

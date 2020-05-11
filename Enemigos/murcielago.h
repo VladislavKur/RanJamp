@@ -11,6 +11,7 @@ class Murcielago : public Enemigo{
         int distanciaAtaque;
         int altura;
         int direccion = 0;
+        float alturaInicial;
         
     public:
         //pasa a la clase padre su posicion en ambos ejes, junto con el tipo de cuerpo,

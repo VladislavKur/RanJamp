@@ -19,25 +19,25 @@ Tienda::Tienda(int i, int max){
 
     sprites[0] = new Cuerpo(300 , 100,300,300,"ObjetosTienda.png",1, 0,2);
     sprites[0]->Scalar(0.2, 0.2);
-    sprites[1] = new Cuerpo(300 , 200,300,300,"ObjetosTienda.png",1, 0,1);
+    sprites[1] = new Cuerpo(300 , 200,300,300,"ObjetosTienda.png",1, 0,10);
     sprites[1]->recorte(0,300);
     sprites[1]->Scalar(0.2, 0.2);
-    sprites[2] = new Cuerpo(300 , 400,300,300,"ObjetosTienda.png",1, 0,1);
+    sprites[2] = new Cuerpo(300 , 400,300,300,"ObjetosTienda.png",1, 0,10);
     sprites[2]->recorte(0,600);
     sprites[2]->Scalar(0.2, 0.2);
-    sprites[3] = new Cuerpo(300, 500,300,300,"ObjetosTienda.png",1, 0,3);
+    sprites[3] = new Cuerpo(300, 500,300,300,"ObjetosTienda.png",1, 0,10);
     sprites[3]->recorte(0,900);
     sprites[3]->Scalar(0.2, 0.2);
-    sprites[4] = new Cuerpo(600, 100,300,300,"ObjetosTienda.png",1, 0,3);
+    sprites[4] = new Cuerpo(600, 100,300,300,"ObjetosTienda.png",1, 0,50);
     sprites[4]->recorte(0,1200);
     sprites[4]->Scalar(0.2, 0.2);
-    sprites[5] = new Cuerpo(600, 200,300,300,"ObjetosTienda.png",1, 0,3);
+    sprites[5] = new Cuerpo(600, 200,300,300,"ObjetosTienda.png",1, 0,5);
     sprites[5]->recorte(0,1500);
     sprites[5]->Scalar(0.2, 0.2);
-    sprites[6] = new Cuerpo(600, 300,300,300,"ObjetosTienda.png",1, 0,3);
+    sprites[6] = new Cuerpo(600, 300,300,300,"ObjetosTienda.png",1, 0,15);
     sprites[6]->recorte(0,1800);
     sprites[6]->Scalar(0.2, 0.2);
-    sprites[7] = new Cuerpo(600, 400,300,300,"ObjetosTienda.png",1, 0,3);
+    sprites[7] = new Cuerpo(600, 400,300,300,"ObjetosTienda.png",1, 0,30);
     sprites[7]->recorte(0,2100);
     sprites[7]->Scalar(0.2, 0.2);
 
@@ -251,6 +251,7 @@ void Tienda::update(float deltaTime){
                         avisoTexto =  "HAS COMPRADO UNA VIDA";
                         hud->sumarVidas();
                         hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(2);
                     }else{
                         avisoTexto =  "YA TIENES TODAS LAS VIDAS";
                     }
@@ -260,6 +261,7 @@ void Tienda::update(float deltaTime){
                        avisoTexto =  "HAS COMPRADO SLOW";
                         hud->setSlow(true);
                         hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(10);
                     }else{
                        avisoTexto =  "YA TIENES SLOW";
                     }
@@ -269,6 +271,7 @@ void Tienda::update(float deltaTime){
                         avisoTexto =  "HAS COMPRADO DOBLE SALTO";
                         hud->setDobleSalto(true);
                         hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(10);
                     }else{
                         avisoTexto =  "YA TIENES DOBLE SALTO";
                     }
@@ -279,38 +282,46 @@ void Tienda::update(float deltaTime){
                         hud->setVelocidad(true);
                         hud->setIVelocidad(350);
                         hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(10);
                     }else{
                        avisoTexto = "YA TIENES VELOCIDAD";
                     }
                     break;
-                case 4://arma1
+                case 4:
                     if(hud->getArma()[0] == 0){
                         avisoTexto =  "HAS COMPRADO ARMA 1";
                         hud->setArma(0,1);
+                        hud->setMonedero(sprites[selectedItem]->getTipo());
                     }else{
                        avisoTexto = "YA TIENES EL ARMA 1";
                     }
                     break;
-                case 5://arma2
+                case 5:
                     if(hud->getArma()[1] == 0){
-                       avisoTexto = "HAS COMPRADO EL ARMA 2";
+                        avisoTexto = "HAS COMPRADO EL ARMA 2";
                         hud->setArma(1,1);
+                        hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(30);
                     }else{
                         avisoTexto =  "YA TIENES ARMA 2";
                     }
                     break;
-                case 6://arma2
+                case 6:
                     if(hud->getArma()[1] > 0){
-                       avisoTexto =  "HAS COMPRADO MEJORA DEL ARMA 1";
+                        avisoTexto =  "HAS COMPRADO MEJORA DEL ARMA 1";
                         hud->setArma(0,1);
+                        hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(10);
                     }else{
                        avisoTexto = "NO TIENES ESTA ARMA";
                     }
                     break;
-                case 7://arma2
+                case 7:
                     if(hud->getArma()[1] > 0){
                         avisoTexto = "HAS COMPRADO MEJORA DEL ARMA 2";
                         hud->setArma(0,1);
+                        hud->setMonedero(sprites[selectedItem]->getTipo());
+                        sprites[selectedItem]->setTipo(30);
                     }else{
                        avisoTexto =  "NO TIENES ESTA ARMA";
                     }
