@@ -47,12 +47,12 @@ void menu_mundos::update(float deltaTime){
         moveDown();
         cooldown_mov = 0.25;
     }
-     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Down ) && cooldown_mov<0){
-        moveDown();
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Down ) && cooldown_mov<0 && selectedItem == 0){
+        moveDown();moveDown();moveDown();
         cooldown_mov = 0.25;
     }
-   if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
-        moveUp();
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0 && selectedItem == 3 ){
+        moveUp();moveUp();moveUp();
         cooldown_mov = 0.25;
     }
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0 ){
@@ -62,25 +62,31 @@ void menu_mundos::update(float deltaTime){
             case 0:
                 nivel->seleccionarMundo("Mundo1-");
                 man->cambiarEstado(nivel);
+                resetSelectedItem();
             break;
             case 1:
                 nivel->seleccionarMundo("Mundo2-");
                 man->cambiarEstado(nivel);
+                resetSelectedItem();
             break;
             case 2:
                nivel->seleccionarMundo("Mundo3-");
                man->cambiarEstado(nivel);
+               resetSelectedItem();
             break;
             case 3:
                 nivel->seleccionarMundo("Mundo4-");
                 man->cambiarEstado(nivel);
+                resetSelectedItem();
             break;
             case 4:
-               juego->nivelSeleccionado("JefeFinal.tmx");
+               juego->nivelSeleccionado("Mundo5.tmx");
                man->cambiarEstado(juego);
+               resetSelectedItem();
             break;
             case 5:
                 man->cambiarEstado(inicio);
+                resetSelectedItem();
             break;
         }
     }

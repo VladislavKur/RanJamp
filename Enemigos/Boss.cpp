@@ -16,7 +16,7 @@ Boss::Boss( float x, float y)
     distanciaDisparo = 600; //dispara contra jugador
     distanciaAtaque = 200;   //le pega
 
-    mano = new Rectangulo(60, 60, x-(x/9), y-(y/70));
+    /*mano = new Rectangulo(60, 60, x-(x/9), y-(y/70));*/
     
     haPegado = false;
 
@@ -63,19 +63,20 @@ void Boss::update(Player *player, float deltaTime){
                         float posx = body->getPosicion()[0];
                         float posy = body->getPosicion()[1];
                         
-                        if((local_diffX/local_diffabsX) == -1){
+                        /*if((local_diffX/local_diffabsX) == -1){
                             mano->posicionar(posx-(posx/9), posy-(posy/70));
                         }
                         else{
                             mano->posicionar(posx+(posx/14), posy-(posy/70));
-                        }
+                        }*/
                         
 
                     if(body->getPosicionX() != 7)
                         haPegado = true;
                     if(body->getPosicionX() == 7){
-                        //if(body->colisiona(player->getBody()) && haPegado){
-                        if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
+                        if(body->colisiona(player->getBody()) && haPegado){
+                        //if((player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)
+                        //    || player->getColiAbajo()->getIntersect(*mano) || player->getColiArriba()->getIntersect(*mano)) && haPegado){
                             haPegado = false;
                             player->setVidas(player->getVidas() - 2);
                             player->getBody()->moverse((local_diffX/local_diffabsX)*80, 0+30);//empuja al jugador

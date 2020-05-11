@@ -9,15 +9,13 @@ Tutorial::Tutorial() : menu(*font, 3){
     mundo->cargarObjectGroups();
     mundo->crearObjetos();
     mundo->cargarPosicionPlayer_Puerta(4);
-    mundo->crearObstaculos();// Obstaculos
-    mundo->crearMonedasLlaves();// Monedas y llaves
+    mundo->crearObstaculos();
+    mundo->crearMonedasLlaves();
     vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);
     jugador = new Player(posP[0], posP[1]);
-    cout<<posP[1]<<endl;
     crearObjetos();
     crearEnemigos();
     view.setSize(1080,720); 
-    //view.setCenter(1080/2,720/2);
     view.setCenter(view.getSize().x/2,view.getSize().y/2);
 
     for(int i = 0 ; i < maxBullets ; i++){
@@ -53,7 +51,6 @@ void Tutorial::update(float deltaTime){
     cambiarTexto(*font, 1, Color::White, mensaje, Vector2f(0.8, 0.8), posP[0]-150, posP[1]-150);
 
 
-    //Cambio de explicacion a saltar
     if((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) && estado == 'm'){
         estado  = 's';
         
@@ -61,7 +58,6 @@ void Tutorial::update(float deltaTime){
         mensaje = "Pulsa la tecla UP para saltar.";
     }
 
-    //Cambio de explicacion a recoger monedas
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && estado == 's'){
         estado  = 'b';
 
@@ -69,8 +65,8 @@ void Tutorial::update(float deltaTime){
         mensaje = "Para recoger una moneda pasa por encima";
     }
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) ){ //WIP FACHADA y LECTURA TECLADO
-        disparar(deltaTime);
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) ){ 
+        disparar();
     }
     
 
@@ -81,7 +77,7 @@ void Tutorial::update(float deltaTime){
                 bulletPlayer[i]=NULL;
             }
             else
-                bulletPlayer[i]->update(deltaTime);//revisar
+                bulletPlayer[i]->update(deltaTime);
         }
 
         if(bulletEnemies[i] != NULL){
@@ -97,16 +93,14 @@ void Tutorial::update(float deltaTime){
                 bulletEnemies[i] = NULL;
             }
             else
-                bulletEnemies[i]->update(deltaTime);//revisar
+                bulletEnemies[i]->update(deltaTime);
         }
      
     }
 
     colisionPlayerMundo(deltaTime);
-    //colisionPlayerObstaculos(deltaTime);
     colisionBulletMundo();
     colisionBulletEnemigo();
-    //colisionBulletJugador();
     colisionMeleeEnemigo();
 
     jugador->update(deltaTime , mundo);
@@ -123,25 +117,22 @@ void Tutorial::update(float deltaTime){
     }
     
     int j = 0;
-    while(objetos[j] != nullptr && j < numObjetos){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
+    while(objetos[j] != nullptr && j < numObjetos){
         vector<float> posP = jugador->getBody()->getPosicion();
         
-
-       //if( objetos[j]->getBody().getGlobalBounds().intersects(jugador->getBody().getGlobalBounds())) std::cout << objetos[j]->getTipo()<< std::endl;
         if( sf::Keyboard::isKeyPressed(sf::Keyboard::E) && 
             objetos[j]->getBody()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
             
 
-            switch (objetos[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
+            switch (objetos[j]->getTipo()){ 
                 case 0:
-                    //jugador->obtenerPU_Velocidad();
                     Hud->setVelocidad(true);
                     Hud->setIVelocidad(350);
                     destruirObjetos(objetos[j]);
                     break;
                 case 1:
                     if(estado == 'r'){
-                        estado = 'd';//disparar
+                        estado = 'd';
                         titulo = "DISPARAR";
                         mensaje = "Busca un enemigo y pulsa SPACE para disparar.";
                     }
@@ -153,13 +144,11 @@ void Tutorial::update(float deltaTime){
                     break;
 
                 case 2:
-                    //jugador->obtenerPU_SaltoDoble();
                     Hud->setDobleSalto(true);
                     destruirObjetos(objetos[j]);
                     break;
 
                 case 3:
-                    //jugador->obtenerPU_Slowhits();
                     Hud->setSlow(true);
                     destruirObjetos(objetos[j]);
                     break;
@@ -175,29 +164,25 @@ void Tutorial::update(float deltaTime){
     }
 
     j = mundo->getNumMonedasLlaves() - 1 ;
-    //cout << j << endl;
-    while(mundo->getMonedasLlaves()[j] != nullptr && j >= 0){ //WIP FACHADA y LECTURA TECLADO y FUNCION APARTE (probablemente rehacer entero)
-
+    while(mundo->getMonedasLlaves()[j] != nullptr && j >= 0){
       if(mundo->getMonedasLlaves()[j]->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
             if(estado == 'b'){
-                estado = 'r';//disparar
+                estado = 'r';
                 titulo = "RECOGER POWERUP";
-                mensaje = "Situate sobre el power up y pulsa la E para recogerlo";
+                mensaje = "Situate sobre el y pulsa la E para recogerlo";
             }
 
-            switch (mundo->getMonedasLlaves()[j]->getTipo()){ //este switch en una funcion aparte, pero está bien
+            switch (mundo->getMonedasLlaves()[j]->getTipo()){ 
                 case 0:
-                    // jugador->sumarMonedas();
                     Hud->sumarMonedas();
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 case 1:
                     jugador->cogerLlave(1);
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la llave
-                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);// esto es la puerta
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
+                    mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 default:
-                    cout <<"Default" << endl;
                 break;
             } 
 
@@ -208,8 +193,7 @@ void Tutorial::update(float deltaTime){
     float playerPosX = jugador->getBody()->getPosicion()[0];
     float playerPosY = jugador->getBody()->getPosicion()[1];
 
-    view.setCenter(playerPosX,playerPosY); //WIP fachada
-    ///////////////Esta zona es WIP fachada y funcion diferente
+    view.setCenter(playerPosX,playerPosY);
     if( playerPosX < view.getSize().x/2) {
         view.setCenter(view.getSize().x/2, playerPosY);
     }
@@ -222,19 +206,17 @@ void Tutorial::update(float deltaTime){
     if( playerPosY < view.getSize().y/2){
         view.setCenter(view.getCenter().x, view.getSize().y/2);
     }
-    //////////////////
-
-    m->getVentana()->setView(view); //wIP fachada
+  
+    m->getVentana()->setView(view); 
     Hud->setMarcador( view.getCenter().x , view.getCenter().y);
     
     if(enemigo!=NULL){
         enemigo->update(jugador , deltaTime);
-        enemigo->updateHitbox(); //dentro de update de enemigo
-        if(enemigo->muerto){ //dentro de update de enemigo
+        enemigo->updateHitbox(); 
+        if(enemigo->muerto){ 
             matarEnemigo();
         }
-   
-      //esto del casteo está bien hecho, pero en una funcion aparte
+
       if(enemigo != nullptr){
         Centinela* casteadoCent = dynamic_cast<Centinela*>(enemigo);      
         if(casteadoCent != nullptr){
@@ -252,47 +234,34 @@ void Tutorial::update(float deltaTime){
     terminar();
 }
 
-void Tutorial::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta funcion debería estar dentro de player.cpp)
+void Tutorial::colisionPlayerMundo(float deltaTime){
     hud * Hud = hud::instance();
-    Cuerpo ** objetos = mundo->getObjetos();//WIP FACHADA
-    
-    float posobjX;
-    float posobjY; //WIP FACHADA
+    Cuerpo ** objetos = mundo->getObjetos();
+  
+    float posobjY;
     bool pararse=false;
     bool aux = false;
-    float posantX; //WIP FACHADA
-    float posantY;
-    for(int i=0 ; i<  mundo->getNumObjetos(); i++){
-      if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){//WIP FACHADA
-        posobjX = objetos[i]->getPosicion()[0];
-        posobjY = objetos[i]->getPosicion()[1];
-        pararse=true;
-      } 
-      
-      if(pararse){
-        //jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
-        jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
-        if(aux == false){
-          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5); //WIP FACHADA y explicar que hace esto detalladamente pls
-          jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
-          aux = true;
-          posantX = jugador->getBody()->getPosicion()[0];
-          posantY = jugador->getBody()->getPosicion()[1]; //WIP FACHADA
-          
-        } else if(posantX != jugador->getBody()->getPosicion()[0] && posantY != jugador->getBody()->getPosicion()[1]){ //WIP FACHADA
-          aux = false;
-        }
-        jugador->setJumpSpeed(0);
 
-      }else{
-        //std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*4*deltaTime);
-      }
-      if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
-        jugador->setJumpSpeed(10);
-      }
+      for(int i=0 ; i<  mundo->getNumObjetos(); i++){
+        if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
+          posobjY = objetos[i]->getPosicion()[1];
+          jugador->suelo(
+            jugador->getBody()->getPosicion()[0],
+            posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5
+          );
+          pararse=true;
+          i = mundo->getNumObjetos(); 
+          jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
+        } 
+        
+        if(!pararse){
+
+          jugador->caer();
+          if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ 
+            jugador->setJumpSpeed(0);
+          }
+        }
     }
-    
 }
 
 
@@ -315,13 +284,13 @@ void Tutorial::colisionMeleeEnemigo(){
     
 }
 
-void Tutorial::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
+void Tutorial::render(float porcentaje){ 
  
     hud * Hud = hud::instance();
     mundo->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletPlayer[i]==NULL) continue;
-        bulletPlayer[i]->render(porcentaje); //interpolacion
+        bulletPlayer[i]->render(porcentaje); 
     }
 
     jugador->render(porcentaje);
@@ -345,7 +314,7 @@ void Tutorial::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de p
     mundo->render2();
     Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
-        if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion centinelas
+        if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} 
     }
 
     Motor * motor = Motor::instance();
@@ -358,10 +327,9 @@ void Tutorial::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de p
 }
 
 
-void Tutorial::crearObjetos(){ //WIP FACHADA
+void Tutorial::crearObjetos(){
 
   vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(3);
-  //cout<< "POSICION DE LOS OBJETOS = " << posicion.size() <<endl;
   
   numObjetos = posicion.size();
   objetos = new Objeto *[posicion.size()]; 
@@ -372,7 +340,7 @@ void Tutorial::crearObjetos(){ //WIP FACHADA
   }
 }
 
-void Tutorial::crearEnemigos(){ //está nice
+void Tutorial::crearEnemigos(){
 
     vector<vector<int>>  posicion= mundo->cargarPosicionEnemigos_PowerUps(1);
     float posx =  posicion[0][0];
@@ -383,7 +351,7 @@ void Tutorial::crearEnemigos(){ //está nice
     }  
 }
 
-void Tutorial::destruirObjetos(Objeto* enem){ //está nice
+void Tutorial::destruirObjetos(Objeto* enem){
  for (int i = 0; i < numObjetos; i++){
     if(objetos[i] == enem){
         for(int j = i; j < numObjetos; j++){
@@ -395,7 +363,7 @@ void Tutorial::destruirObjetos(Objeto* enem){ //está nice
   }
 }
 
-void Tutorial::matarEnemigo(){ //está nice
+void Tutorial::matarEnemigo(){ 
     enemigo = NULL;
     if(estado == 'd'){
         titulo = "PASAR AL SIGUIENTE NIVEL";
@@ -404,7 +372,7 @@ void Tutorial::matarEnemigo(){ //está nice
     }
 }
 
-void Tutorial::disparar(float deltaTime){ 
+void Tutorial::disparar(){ 
   
   for(int i=0 ; i<maxBullets ; i++){
     if(bulletPlayer[i]==NULL && jugador->getCooldownDisparo()<=0 ){
@@ -422,8 +390,8 @@ void Tutorial::disparar(float deltaTime){
   }
 }
 
-void Tutorial::colisionBulletMundo(){//WIP fachada
-    Cuerpo ** objetos = mundo->getObjetos(); // esto tiene que cambiar para que vaya la linea de abajo
+void Tutorial::colisionBulletMundo(){
+    Cuerpo ** objetos = mundo->getObjetos();
 
     for(unsigned int i=0 ; i<maxBullets ; i++){
         for(int j=0 ; j<mundo->getNumObjetos(); j++){
@@ -438,16 +406,14 @@ void Tutorial::colisionBulletMundo(){//WIP fachada
     }
 }
 
-void Tutorial::colisionBulletEnemigo(){//WIP fachada
-  bool morir = false;
+void Tutorial::colisionBulletEnemigo(){
   
     for(unsigned int i=0 ; i < maxBullets ; i++){
-            
+
         if(bulletPlayer[i] != NULL && enemigo != NULL){
             if(enemigo->getCuerpo()->getGlobalBounds()->getIntersect( *bulletPlayer[i]->getHitbox() )){
                 delete bulletPlayer[i];
                 bulletPlayer[i]=NULL;
-
                 matarEnemigo();
             }
         }
@@ -456,7 +422,6 @@ void Tutorial::colisionBulletEnemigo(){//WIP fachada
 
 void Tutorial::terminar(){
     if( mundo->getPuerta()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
-        cout << "fuera"<<endl;
         Manejador* man = Manejador::instancia();
         man->back();
     }
@@ -504,7 +469,6 @@ Tutorial::~Tutorial(){
           bulletEnemies[i] = nullptr;
         }
     }
-
     
     if(mundo != nullptr){
         delete mundo;

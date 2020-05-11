@@ -11,12 +11,14 @@ class Murcielago : public Enemigo{
         int distanciaAtaque;
         int altura;
         int direccion = 0;
+        float alturaInicial;
         
     public:
         //pasa a la clase padre su posicion en ambos ejes, junto con el tipo de cuerpo,
         //en este caso RectangleShape, el tamanyo del cuerpo, el fichero donde esta la textura
         //y el tamanyo de la escala. Ademas inicializa sus variables de caso a los valores predeterminados:
         //como la velocidad, altura de descenso, distancia de ataque y un bool para saber si ha colisionado con el jugador
+        //Ademas le asigna una sola vida
         Murcielago(float x, float y);
 
         //Calcula la diferencia en los ejes x e y entre la posicion del enemigo y del jugador, sin tener en cuenta

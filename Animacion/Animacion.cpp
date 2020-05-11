@@ -45,12 +45,16 @@ void Animacion::update(float deltaTime){
 
 void Animacion::setSprite(int spriteNumber){
 
-    if(numeroSpriteY < posicionesY){        
-        numeroSpriteY = spriteNumber;
-        motor->recorteAnim(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+    if(numeroSpriteY != spriteNumber){
+        if(numeroSpriteY < posicionesY){        
+            numeroSpriteY = spriteNumber;
+            numeroSpriteX = 0;
+            motor->recorteAnim(body, numeroSpriteX, numeroSpriteY, tamX, tamY);
+        }
+        else
+            numeroSpriteY = 0;
+
     }
-    else
-        numeroSpriteY = 0;
 }
 
 void Animacion::nextSprite(){
@@ -62,7 +66,7 @@ void Animacion::nextSprite(){
 }
 
 void Animacion::render(float porcentaje){
-    if(cambiado){
+    if(cambiado && tiempoDuracionMax > 0.0){
         int aux = tiempoAnterior - tiempoDiff*porcentaje;
 
         if(aux <= 0){
@@ -70,4 +74,14 @@ void Animacion::render(float porcentaje){
             nextSprite();
         }
     }
+}
+
+void Animacion::setTimeAnimacion(float entrada){
+
+    tiempoDuracionMax = entrada;
+    tiempoActual = tiempoDuracionMax;
+    tiempoAnterior = tiempoDuracionMax;
+
+    tiempoDiff = 0.0;
+
 }

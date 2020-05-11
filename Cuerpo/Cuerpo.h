@@ -18,7 +18,7 @@ class Cuerpo{
         Animacion* animacion;
         sf::Shape* body;
         Motor* motor;
-        Rectangulo* rectangulo;
+
         sf::Texture* class_textura;
         //basicas
         bool class_move;
@@ -56,7 +56,9 @@ class Cuerpo{
         void moverse(float x, float y);
         void addAnimacion(float timeAnimacion);
         void setSpriteAnimacion(int entrada);
+        void setTimeAnimacion(float entrada);
         void setSize(float sizeX, float sizeY);
+        void setTipo(int x){class_tipo+=x;}
         bool colisiona(Cuerpo * entrada);
         void rotar(float angulo);
         void recorte(int x , int y);
@@ -65,7 +67,9 @@ class Cuerpo{
         Rectangulo * getGlobalBounds();
         int getTipo();
         float getOriginY(){return body->getOrigin().y;};
-        int getPosicionX(){return animacion->getPosicionX();}
+        int getPosicionX(){return animacion->getPosicionX();};
+        float getTimeAnimacion(){return animacion->getTimeAnimation();};
+
 };
 
 #endif

@@ -18,7 +18,7 @@ class Pajaro : public Enemigo{
         bool haPegado;
 
     public:
-         //pasa a la clase padre su posicion en ambos ejes, junto con el tipo de cuerpo,
+        //pasa a la clase padre su posicion en ambos ejes, junto con el tipo de cuerpo,
         //en este caso RectangleShape, el tamanyo del cuerpo, el fichero donde esta la textura
         //y el tamanyo de la escala. Ademas inicializa sus variables de caso a los valores predeterminados:
         //la altura actual (de la cual parte), y la altura max y min relativa, en funcion su altura actual y la 

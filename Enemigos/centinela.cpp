@@ -17,6 +17,7 @@ Centinela::Centinela( float x, float y, int type)
     velocidad = 0.3;
     distanciaDisparo = 1000;
     distanciaAtaque = 200;
+    vida = 3;
 
 }
 
@@ -71,7 +72,7 @@ void Centinela::update(Player* player, float deltaTime){
                 } 
                 else{//DISPARA!!!! necesitamos el trabajo de vermivlad
                     body->setSpriteAnimacion(0);
-                    if(shootTime <= 0.0){
+                    if(shootTime <= 0.0 && body->getPosicionX() == 3){
                         bool auxiliar;
 
                         if((local_diffX/local_diffabs) == 1){

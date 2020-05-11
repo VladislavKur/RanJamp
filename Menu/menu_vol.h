@@ -16,9 +16,10 @@ class menu_vol : public menu {
         
 
     protected:
-        menu_vol(sf::Font fuente, int max);
+        menu_vol(sf::Font fuente, int max, int maxS, int aux);
     private: 
         static sf::Font* fuente;
         static menu_vol* p_instance;
+        bool pausa;
         
 };

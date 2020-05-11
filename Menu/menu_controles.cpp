@@ -45,6 +45,7 @@ void menu_controles::update(float deltaTime){
 
             case 0:
                 man->back();
+                resetSelectedItem();
             break;
         }
     }

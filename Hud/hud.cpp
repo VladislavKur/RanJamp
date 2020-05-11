@@ -1,4 +1,5 @@
 #include "hud.h"
+#include "../Juego/Juego.h"
 
 hud * hud::p_instancia = 0;// o null
 
@@ -14,11 +15,11 @@ hud::hud(int posY, int vidasPlayer, int max){
     monedero = 10;
     puntos = 0; 
     vidas = 5; 
-     doblesalto = false;
-     velocidad = false;
-     slow = false; 
+    doblesalto = false;
+    velocidad = false;
+    slow = false; 
     i_velocidad = 250;
-     godMode = false;
+    godMode = false;
 
 
     sprites = new Cuerpo *[9];
@@ -62,6 +63,7 @@ void hud::cambiarTexto(const Font &f , int i, Color c, string s , Vector2f v, in
 
 }
 
+
 void hud::setMarcador(int posX , int posY){
   sprites[0]->posicionamientoFijo(posX - 300 , posY - 400);
   sprites[1]->posicionamientoFijo(posX - 384 , posY - 300);
@@ -94,6 +96,16 @@ void hud::render(){
   }
 }
 
+void hud::renderMonedas(){
+  Motor * motor = Motor::instance();
+ 
+  sprites[5]->render();
+
+  motor->dibujo(texto[2]);
+  
+}
+
+
 hud::~hud(){
   delete[] sprites;
   delete[] texto;
@@ -104,9 +116,11 @@ hud::~hud(){
 }
 
 bool hud::restarVidas(){
+  Juego* juego = Juego::instance();
   bool devolver = false;
   if(godMode == false){
       vidas--;
+      juego->iniciarPantallaRoja();
   }
 
   if(vidas == 0 && godMode == false){

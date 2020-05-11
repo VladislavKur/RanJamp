@@ -8,6 +8,7 @@
 #include "../Motor/Motor.h"
 #include "../Textura/Textura.h"
 #include "../Bloque/Bloque.h"
+#include "../Cuerpo/Cuerpo.h"
 
 using namespace  sf;
 using namespace std;
@@ -39,7 +40,9 @@ class menu : public Estado{
         //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
         void cambiarTexto(int i,  String s, float posx , float posy); 
         
-        
+        void cambiarAux(int i,  String s, float posx , float posy);
+
+        void resetSelectedItem ();
         
     protected: 
     // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO
@@ -51,4 +54,8 @@ class menu : public Estado{
         float cooldown_mov = 0.5;
         Textura *t; 
         Bloque * b;
+        Cuerpo ** sprites;
+        int maxSprites = -1;
+        Text * aux;
+        int maxAux = -1;
 };

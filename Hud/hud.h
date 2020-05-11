@@ -22,7 +22,8 @@ class hud{
         
         // RENDERIZA EL HUD 
         void render(); 
-
+        void renderMonedas();
+        
         int getMonedero(){return monedero;}
         void setMonedero(int x){monedero -=x;}
         void sumarMonedas(){monedero++;}
@@ -41,6 +42,7 @@ class hud{
         void setSlow(bool x){slow =x;}
         bool getGodMode(){return godMode;}
         void setGodMode();
+        int getTiempo(){return clockGlobal.getElapsedTime().asSeconds();};
         int getPuntos(){return puntos;}
         void reiniciarTiempo();
         void setArma(int pos, int mejora);

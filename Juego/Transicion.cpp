@@ -51,6 +51,9 @@ void Transicion::update(float deltaTime){
     hud* Hud = hud::instance();
     Motor* motor = Motor::instance();
 
+    juego->pausarMusica(0);
+    juego->reproducirMusica(6);
+    juego->ponerBucleMusica(6);
     motor->getVentana()->setView(*vista);
     cambiarTexto(1, to_string(Hud->getPuntos()), 650,100);
 
@@ -59,10 +62,17 @@ void Transicion::update(float deltaTime){
     angulo += 4*deltaTime;
 
     portal->rotar(50*deltaTime);
+    if(radio<150){
+        mago->setSize(mago->getSize()[0]-1, mago->getSize()[1]-1);
+        mago->Origen(mago->getSize()[0]/2, mago->getSize()[1]/2);
+    }
 
     if(radio>=0){
         radio-=100*deltaTime;
     }else{
+        juego->pausarMusica(6);
+        juego->reproducirMusica(0);
+        juego->ponerBucleMusica(0);
         man->cambiarEstado(juego);
     }
     
@@ -80,6 +90,7 @@ void Transicion::render(float num){
 void Transicion::reset(){
     radio=400;
     angulo=0;
+    mago->setSize(100, 100);
 }
 
 void Transicion::cambiarTexto(int i , String s, float posx , float posy){

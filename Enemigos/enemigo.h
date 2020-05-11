@@ -37,7 +37,7 @@ class Enemigo{
         //para detectar las colisiones, inicialmente a 0. 
         Enemigo(float x, float y, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala);
-        //se llama al metodo del cuerpo para establecer su posicon fija
+        //se llama al metodo del cuerpo para establecer su posicion 
         void actualizarPosicion(float x, float y);
 
         Cuerpo* body;

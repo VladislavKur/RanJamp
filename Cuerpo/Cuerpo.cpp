@@ -35,9 +35,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
 
     motor->setScale(body, escala, escala);
     animacion=NULL;
-    rectangulo=NULL;
 
-    rectangulo = NULL;
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight){
@@ -56,9 +54,9 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->posicionar(body, x_entrada, y_entrada);
 
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
-    rectangulo = NULL;
+
     animacion=NULL;
-    rectangulo=NULL;
+
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight, int type){
@@ -79,7 +77,7 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
 
     animacion=NULL;
-    rectangulo = NULL;
+
     class_tipo = type;
 }
 
@@ -120,7 +118,7 @@ Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
     motor->setScale(body, escala, escala);
     
     animacion=NULL;
-    rectangulo = NULL;
+
     class_tipo = type;
 }
 
@@ -137,15 +135,10 @@ Rectangulo * Cuerpo::getGlobalBounds(){
    return R;
 }
 
-void Cuerpo::posicionamientoFijo(float x_entrada,float y_entrada){
-    
-    /*class_previousX = class_positionX;
-    class_previousY = class_positionY;*/
+void Cuerpo::setTimeAnimacion(float entrada){
 
-    class_positionX = x_entrada;
-    class_positionY = y_entrada;
+    animacion->setTimeAnimacion(entrada);
 
-    motor->posicionar(body, class_positionX, class_positionY);
 }
 
 void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
@@ -297,10 +290,6 @@ Cuerpo::~Cuerpo(){
         delete class_textura; 
         class_textura = NULL;
     }
-    if(rectangulo != NULL){
-        delete rectangulo;
-        rectangulo = NULL;
-    }
 }
 
 void Cuerpo::Origen(float x, float y){
@@ -316,4 +305,17 @@ void Cuerpo::setSize(float sizeX, float sizeY){
 
 void Cuerpo::rotar(float angulo){
     body->rotate(angulo);
+}
+
+
+
+void Cuerpo::posicionamientoFijo(float x_entrada,float y_entrada){
+    
+    /*class_previousX = class_positionX;
+    class_previousY = class_positionY;*/
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    motor->posicionar(body, class_positionX, class_positionY);
 }

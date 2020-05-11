@@ -197,6 +197,8 @@ enemigo.h
 /home/fv/Desktop/RanJamp/Hud/hud.cpp
 hud.h
 /home/fv/Desktop/RanJamp/Hud/hud.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
 /home/fv/Desktop/RanJamp/Hud/hud.h
 SFML/Graphics.hpp
@@ -216,6 +218,26 @@ Estado.h
 SFML/Graphics.hpp
 -
 
+/home/fv/Desktop/RanJamp/Juego/Final.cpp
+Final.h
+/home/fv/Desktop/RanJamp/Juego/Final.h
+Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
+Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
+../Menu/menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
+math.h
+-
+
+/home/fv/Desktop/RanJamp/Juego/Final.h
+Estado.h
+/home/fv/Desktop/RanJamp/Juego/Estado.h
+../Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
+../Texto/texto.h
+/home/fv/Desktop/RanJamp/Texto/texto.h
+
 /home/fv/Desktop/RanJamp/Juego/Juego.cpp
 Juego.h
 /home/fv/Desktop/RanJamp/Juego/Juego.h
@@ -223,6 +245,8 @@ Manejador.h
 /home/fv/Desktop/RanJamp/Juego/Manejador.h
 Transicion.h
 /home/fv/Desktop/RanJamp/Juego/Transicion.h
+Final.h
+/home/fv/Desktop/RanJamp/Juego/Final.h
 ../Menu/menu_inicial.h
 /home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 ../Menu/menu_pausa.h
@@ -341,6 +365,8 @@ iostream
 /home/fv/Desktop/RanJamp/Textura/Textura.h
 ../Bloque/Bloque.h
 /home/fv/Desktop/RanJamp/Bloque/Bloque.h
+../Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 
 /home/fv/Desktop/RanJamp/Menu/menu_controles.cpp
 menu_controles.h
@@ -577,6 +603,8 @@ SFML/Graphics.hpp
 /home/fv/Desktop/RanJamp/Player/Player.cpp
 Player.h
 /home/fv/Desktop/RanJamp/Player/Player.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
 /home/fv/Desktop/RanJamp/Player/Player.h
 SFML/Graphics.hpp
@@ -649,4 +677,6 @@ iostream
 /home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Cuerpo/Cuerpo.h
 /home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
+../Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 

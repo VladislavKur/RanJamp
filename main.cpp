@@ -6,6 +6,7 @@
 #include "Menu/menu_inicial.h"
 #include "Menu/menu_controles.h"
 #include "Juego/Transicion.h"
+#include "Juego/Final.h"
 
 #include "Juego/Manejador.h"
 #define kVel 5
@@ -17,6 +18,7 @@ int main() {
   const float UPDATE_TICK_TIME = 15.0;
   Motor * m = Motor::instance();
   menu_inicial* _menu = menu_inicial::instance();
+  Final* final = Final::instancia();
   hud * Hud = hud::instance(); 
 
     float elapsus;
