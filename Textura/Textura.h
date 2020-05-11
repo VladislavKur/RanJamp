@@ -12,7 +12,9 @@ using namespace std;
 class Textura{
     //friend class Bloque;
     public:
+        //creas un objeto textura donde se almacena una textura de smfl (fachada)
         Textura(){};
+        //constructor 2 que se le pasa el nombre de la textura directamente
         Textura(string entrada);
         ~Textura();
         Texture * getTexture();
