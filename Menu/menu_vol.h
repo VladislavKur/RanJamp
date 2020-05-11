@@ -3,6 +3,7 @@
 #include <iostream>
 
 
+
 #include "menu.h"
 #include "../Juego/Juego.h"
 
@@ -22,5 +23,6 @@ class menu_vol : public menu {
         static sf::Font* fuente;
         static menu_vol* p_instance;
         bool pausa;
+        
         
 };

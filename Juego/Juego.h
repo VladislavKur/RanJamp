@@ -43,6 +43,8 @@
             int angulo = 0; //angulo de movimiento rotatorio del portal
             Cuerpo *portal;
             std::string nivelactual; //el archivo
+
+        
         protected:
             Juego();
             ~Juego();
@@ -96,6 +98,8 @@
             void reproducirMusica(int i);
             //activar el bucle del canal i
             void ponerBucleMusica(int i);
+            void setMute(int i,bool);
+            bool getMute(int i);
 
 
             sf::View view;

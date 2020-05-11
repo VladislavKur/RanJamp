@@ -11,6 +11,7 @@ musica::musica(sf::String x){
 }
 
 void musica::reproducirMusica(){
+    
     sound.play();
 }
 
