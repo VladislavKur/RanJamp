@@ -21033,7 +21033,6 @@
   <object id="67" x="3875.76" y="742.424" width="245.455" height="45.4545"/>
   <object id="68" x="20" y="1280" width="168" height="36"/>
   <object id="74" x="220" y="864" width="32" height="156"/>
-  <object id="75" x="1184" y="1872"/>
   <object id="76" x="227" y="285" width="32" height="420"/>
   <object id="77" x="4006.06" y="290.909" width="487.879" height="51.5152"/>
   <object id="78" x="260.606" y="284.848" width="3481.82" height="57.5758"/>
@@ -21072,7 +21071,7 @@
   <object id="27" x="412.878" y="1233.34" width="39.3939" height="51.5152"/>
  </objectgroup>
  <objectgroup name="Capa de PowerUps">
-  <object id="70" x="48" y="940" width="56" height="56"/>
+  <object id="70" type="2" x="48" y="940" width="56" height="56"/>
  </objectgroup>
  <objectgroup name="Capa de Puerta">
   <object id="115" x="45.4545" y="1327.33" width="96.9697" height="100">

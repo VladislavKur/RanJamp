@@ -137,6 +137,12 @@ Rectangulo * Cuerpo::getGlobalBounds(){
    return R;
 }
 
+void Cuerpo::setTimeAnimacion(float entrada){
+
+    animacion->setTimeAnimacion(entrada);
+
+}
+
 void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     
     class_previousX = class_positionX;

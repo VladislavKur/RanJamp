@@ -39,7 +39,7 @@ class menu : public Estado{
         //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
         void cambiarTexto(int i,  String s, float posx , float posy); 
         
-        
+        void resetSelectedItem ();
         
     protected: 
     // CONTRUCTOR , PASANDOLE EL ALTO Y EL ANCHO

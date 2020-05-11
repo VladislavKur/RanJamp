@@ -37,7 +37,7 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
-            int maxniveles = 6;
+            int maxniveles = 12;
             //obstaculos 
             float timerObstaculos;
             int transparenciaRoja;
@@ -76,7 +76,7 @@
             
             sf::View view;
 
-            void nextLevel(int );
+            void nextLevel(int i);
             void inicializarNiveles();
     };
 

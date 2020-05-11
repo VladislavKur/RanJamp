@@ -798,6 +798,8 @@ void Juego::nextLevel(int n){
     for(int i = 0; i < maxBullets;i++){
         bulletBoss[i] = NULL;
     }
+
+    //cout<<Hud->getTiempo()<<endl;
     man->cambiarEstado(trans);
     trans->reset();
 }
@@ -810,8 +812,14 @@ void Juego::inicializarNiveles(){
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
-  niveles[4] = "Mundo3-1.tmx";
-  niveles[5] = "Mundo3-2.tmx";
+  niveles[4] = "Mundo2-1.tmx";
+  niveles[5] = "Mundo2-2.tmx";
+  niveles[6] = "Mundo2-3.tmx";
+  niveles[7] = "Mundo2-4.tmx";
+  niveles[8] = "Mundo3-1.tmx";
+  niveles[9] = "Mundo3-2.tmx";
+  niveles[10] = "Mundo3-3.tmx";
+  niveles[11] = "Mundo3-4.tmx";
 }
 void Juego::nivelSeleccionado(string n){
   int aux = -1;
@@ -831,6 +839,7 @@ void Juego::pausa(){
   menu_pausa* menuPau = menu_pausa::instance();
   if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
   man->cambiarEstado(menuPau);
+  menuPau->resetSelectedItem();
   }
     
 }
