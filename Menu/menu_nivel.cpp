@@ -47,7 +47,6 @@ void menu_nivel::update(float deltaTime){
 
    
     
-    cout<<"ESTE ES EL NIVEL = "<< nivel<<endl;
     if(nivel.compare("Mundo1-")){
         t->setTexture("resources/Imagenes/MenuBosque.png");
         b->setTextura(t);

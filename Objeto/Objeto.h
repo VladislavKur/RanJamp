@@ -7,7 +7,7 @@
 
 #ifndef OBJETO_H
 #define OBJETO_H
-
+//Objeto consiste en powerups y armas que se pueden recoger
 class Objeto
 {
 
@@ -15,22 +15,25 @@ class Objeto
         ~Objeto();//t --> tipo
         Objeto( float , float, int t);
 
+        //
         void render(float );
-        // void update(Player &otherBody);
+
+        //GET
         Cuerpo* getBody();
-
-
-        // void recogido();
-        int getTipo();
-        void setTipo(int t);
-        void destroirObjeto(Objeto *);
         Rectangulo* getHitbox(){return hitbox;}
+        int getTipo();
+        //SET
+        void setTipo(int t);
+        //Eliminar un objeto
+        void destroirObjeto(Objeto *);
+
+        
     private:
 
         Cuerpo* body;
-        Rectangulo* hitbox;
+        Rectangulo* hitbox; //rectangulo de colision
 
-        int tipo;
+        int tipo; //Los tipos son: 0 = powerup de velocdad, 1 = arma, 2 = powerup de doble salto, 3 = powerup de Slowhits(balas enemigas mas lentas)
 
 
 };

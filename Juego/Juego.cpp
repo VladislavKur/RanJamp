@@ -215,7 +215,6 @@ void Juego::update(float deltaTime){
                     destruirObjetos(objetos[j]);
                     break;
             default:
-                std:: cout <<"Default" << std::endl;
                 break;
             } 
 
@@ -239,7 +238,7 @@ void Juego::update(float deltaTime){
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 default:
-                    cout <<"Default" << endl;
+                    
                 break;
             } 
 
@@ -690,7 +689,6 @@ void Juego::colisionBulletJugador(){
       if(jugador->getBody()->getGlobalBounds()->getIntersect(*bulletBoss[i]->getBody()->getGlobalBounds())){
         morir = jugador->setVidas(jugador->getVidas()-2);
 
-        std::cout << "Vidas del jugador: " << jugador->getVidas() << "\n";
         delete bulletBoss[i];
         bulletBoss[i] = NULL;
         

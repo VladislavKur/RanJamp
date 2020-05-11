@@ -8,6 +8,7 @@
 
 #define maxBullets 256
 
+//Balas, tanto del jugador como de los enemigos. 
 class Bullet
 {
 private:
@@ -17,14 +18,16 @@ private:
     bool facing; //false=izquierda, true=derecha.
 
     float velocidad;
-    int dir;
+    int dir; //permite atacar verticalmente
 public:
     Bullet(float, float, bool, int, int);
     ~Bullet();
 
-    float lifetime; //Contador que destruye la bala cuando llega a 0
+    //Contador que destruye la bala cuando llega a 0
+    float lifetime; 
+    //update
     void update(float deltaTime);
-    
+    //render
     void render(float );
     //recoloca el rectangulo de colision de la bala
     void updateHitbox();

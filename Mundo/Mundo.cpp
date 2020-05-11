@@ -10,7 +10,6 @@ void Mundo::cargarmapa(const char * f){
   doc.LoadFile(f);
   map = new TiXmlElement("mapa");
   map = doc.FirstChildElement("map");
-  if (map == nullptr) cout << "sadsad" <<  endl;
   map->QueryIntAttribute("width", &_width);
   map->QueryIntAttribute("height", &_height);
   map->QueryIntAttribute("tilewidth", &_tileWidth);
@@ -23,8 +22,6 @@ void Mundo::cargarmapa(const char * f){
     tileset = tileset->NextSiblingElement("tileset");
   }
 
-  cout << endl;
-  cout <<"numtileset =  " <<_numTilesets<<endl;
 
   imagenes = new TiXmlElement *[_numTilesets]; 
   _imgwidth = new int[_numTilesets];
@@ -35,9 +32,7 @@ void Mundo::cargarmapa(const char * f){
   tileset = map->FirstChildElement("tileset");
   int num = 0;
   while(tileset){
-    cout << "entro en el primer while"<<endl;
     tileset->QueryIntAttribute("tilecount", &cambio[num]);
-    cout << " cambio " << cambio[num] << "  num " << num << endl;
     imagenes[num] =  tileset->FirstChildElement("image");
     tileset = tileset->NextSiblingElement("tileset");
     num++;
@@ -53,9 +48,7 @@ void Mundo::cargarmapa(const char * f){
 
   TiXmlElement *layer = map->FirstChildElement("layer");
   if(layer == NULL){
-      cout<<" ERRRORRRRR 2"<<endl;
   }else{
-      cout<<"tengo algo 2" << endl;
   }
   
   while(layer){
@@ -87,7 +80,6 @@ void Mundo::cargarmapa(const char * f){
 
   TiXmlElement * layer2;
   TiXmlElement * data;
-  cout<< "NUMERO DE CAPAS = " << _numLayers<< endl; 
   for(int l=0; l<_numLayers; l++){
     if( l == 0 ){
         layer2 = map->FirstChildElement("layer");
@@ -96,7 +88,6 @@ void Mundo::cargarmapa(const char * f){
         data = layer2->NextSiblingElement("layer")->FirstChildElement("data")->FirstChildElement("tile");
         layer2 = layer2->NextSiblingElement("layer");
         if(data != nullptr){
-          cout<< "NUIDNSUONSIDN" << endl;
         }
     }
     for(int y=0; y<_height; y++){
@@ -112,11 +103,9 @@ void Mundo::cargarmapa(const char * f){
 void Mundo::crearSprites(){
 
   for(int l=0; l<_numLayers; l++){
-    // cout << "layers sprites: " << l << endl;
     for(int y=0; y<_height; y++){
      
       for(int x=0; x<_width; x++){
-        // cout<<"X: " << x << "Y: " << y<<endl;
       int imagen = 0;
       bool pintada = false;
         for(int k = 0; k< _numTilesets && !pintada; k++){
@@ -129,9 +118,6 @@ void Mundo::crearSprites(){
           if(gid <=  cambio[k]){
            
             if(gid > cambio[k]){
-              cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
-              << y << ") :" << gid << " fuera del rango del tileset (" 
-              << _width*_height << ")" << endl;
             }else if(gid > 0){
               _tilemapSprite[l][y][x] = new Bloque(_tilesetTexture[k]);
               
@@ -200,20 +186,17 @@ void Mundo::crearObjetos(){
         object = object->NextSiblingElement("object");
         _numObjects++;
     }
-    cout<< "numObjects " << _numObjects<< endl;
     objects = new TiXmlElement * [_numObjects];
     objetos = new Cuerpo * [_numObjects];
     
     object = objectgroups[0]->FirstChildElement("object");
     
-    cout<<"object " << object->Attribute("id")<<endl;
     int num = 0; 
     while(object){
         objects[num] = object;
         object = object->NextSiblingElement("object");
         num++;
     }
-    cout<< "num" << num <<endl; 
     
     for(int i=0; i < _numObjects; i++){
         objects[i]->QueryIntAttribute("width", &_widthObject);
@@ -222,7 +205,6 @@ void Mundo::crearObjetos(){
         objects[i]->QueryIntAttribute("y", &_y);
         objetos[i] = new Cuerpo(_x,_y, _widthObject,_heightObject);
         if(objetos[i] != nullptr ){
-         cout<< "TENGOO ALGO" <<endl;
         }
     }
 }
@@ -248,7 +230,6 @@ void Mundo::crearObstaculos(){
         object = object->NextSiblingElement("object");
         num++;
     }
-    cout<< "num" << num <<endl; 
     
     for(int i=0; i < _numObjects2; i++){
         objects2[i]->QueryIntAttribute("width", &_widthObject2);
@@ -258,7 +239,7 @@ void Mundo::crearObstaculos(){
         objects2[i]->QueryIntAttribute("y", &_y2);
         objetos2[i] = new Cuerpo(_x2,_y2, _widthObject2,_heightObject2, _tipo2);//PASAR POR PARAMETRO EL TIPO AL CUERPO
         if(objetos2[i] != nullptr ){
-         cout<< "TENGOO ALGO" <<endl;
+         
         }
     }
 }

@@ -70,7 +70,6 @@ void Boss::update(Player *player, float deltaTime){
                             mano->posicionar(posx+(posx/14), posy-(posy/70));
                         }
                         
-                        cout<<posx<<endl;
 
 
                     if(body->getPosicionX() != 7)
