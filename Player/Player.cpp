@@ -274,7 +274,7 @@ void Player::saltar(){
 
         auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
-        //std::cout << "El jumpspeed es: " <<jumpSpeed <<"\n";
+        std::cout << "El jumpspeed es: " <<jumpSpeed <<"\n";
         
         saltos--;
   }

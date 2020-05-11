@@ -648,12 +648,23 @@ void Juego::colisionBulletMundo(){//WIP fachada
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
     for(int j=0 ; j<mundo->getNumObjetos(); j++){
-      if(bulletPlayer[i]==NULL) continue;
       if(objetos[j]==NULL) continue;
 
-      if(objetos[j]->getGlobalBounds()->getIntersect(*bulletPlayer[i]->getBody()->getGlobalBounds())){
+      if(bulletPlayer[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletPlayer[i]->getBody()->getGlobalBounds())){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
+      }
+      if(bulletEnemies[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletEnemies[i]->getBody()->getGlobalBounds())){
+        delete bulletEnemies[i];
+        bulletEnemies[i]=NULL;
+      }
+      if(bulletBoss[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletBoss[i]->getBody()->getGlobalBounds())){
+        delete bulletBoss[i];
+        bulletBoss[i]=NULL;
+      }
+      if(bulletNube[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletNube[i]->getBody()->getGlobalBounds())){
+        delete bulletNube[i];
+        bulletNube[i]=NULL;
       }
     }
   }
