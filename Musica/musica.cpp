@@ -2,9 +2,8 @@
 
 musica::musica(sf::String x){
    //musica 
-   std::cout << "estoy en cargar musica " << std::endl;
     if(!soundBuffer.loadFromFile(x)){
-      std::cout<<"No se puede encontrar el audio" << std::endl;
+      std::cout<< "No se puede encontrar el audio.\n";
     }
     sound.setBuffer(soundBuffer);
     sound.setVolume(50);

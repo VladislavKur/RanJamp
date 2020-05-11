@@ -164,7 +164,7 @@ void Cuerpo::moverse(float x_entrada,float y_entrada){
     class_move = true;
 
     motor->posicionar(body, class_previousX, class_previousY);
-    //cout<<body->getPosition().x<<endl;
+
 }
 
 vector<int> Cuerpo::texturizar(std::string entrada, int sizeWidth, int sizeHeight){
@@ -311,9 +311,6 @@ void Cuerpo::rotar(float angulo){
 
 void Cuerpo::posicionamientoFijo(float x_entrada,float y_entrada){
     
-    /*class_previousX = class_positionX;
-    class_previousY = class_positionY;*/
-
     class_positionX = x_entrada;
     class_positionY = y_entrada;
 

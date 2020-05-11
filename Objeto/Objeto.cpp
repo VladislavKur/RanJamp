@@ -58,16 +58,7 @@
         delete obj;
     }
 
-    //t --> tipo
-    // void Objeto::update(Player &otherBody){
-        
 
-    // }
-
-
-    // void Objeto::recogido(){
-
-    // }
 
     void Objeto::setTipo(int t){
         tipo = t;
