@@ -147,9 +147,11 @@ void Player::update(float deltaTime , Mundo * mundo){
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
-
-          if(body->getTimeAnimacion() == 0.0 && jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+          //cout<<body->getTimeAnimacion()<<" / CAIDA: "<<jumpSpeed<< " / DISPARO: "<<cooldownDisparo<<endl;
+          if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
             body->setSpriteAnimacion(0);
+          }
+          if(body->getTimeAnimacion()<=0){
             body->setTimeAnimacion(0.2);
           }
 
@@ -158,8 +160,10 @@ void Player::update(float deltaTime , Mundo * mundo){
       else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)){ //lo mismo que lo anterior WIP fachada
           moveLeft(deltaTime, mundo);
           
-          if(body->getTimeAnimacion() == 0.0 && jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+          if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
             body->setSpriteAnimacion(0);
+          }
+          if(body->getTimeAnimacion()<=0){
             body->setTimeAnimacion(0.2);
           }
 

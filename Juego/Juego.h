@@ -41,6 +41,8 @@
             //obstaculos 
             float timerObstaculos;
             int transparenciaRoja;
+            int angulo = 0;
+            Cuerpo *portal;
         protected:
             Juego();
             ~Juego();

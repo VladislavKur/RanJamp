@@ -208,15 +208,38 @@ void Tienda::update(float deltaTime){
     b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
     b->setTextureRect(0,0,1080,720);
 
-    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0 ){
+         if(selectedItem == 8){
         moveUp();
+        }else if(selectedItem >= 0 && selectedItem < 4){
+            moveUp();moveUp();moveUp();moveUp();moveUp();
+        }else if(selectedItem >= 4 && selectedItem < 7){
+            moveUp();moveUp();moveUp();moveUp();
+        }
         cooldown_mov = 0.25;
     }
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Down ) && cooldown_mov<0){
+        if(selectedItem == 8){
+        moveDown();
+        }else
+        if(selectedItem == 7){
+        moveDown();
+        }else if(selectedItem >= 0 && selectedItem < 4){
+            moveDown();moveDown();moveDown();moveDown();
+        }else if(selectedItem >= 4 && selectedItem < 7){
+            moveDown();moveDown();moveDown();moveDown();moveDown();
+        }
+        cooldown_mov = 0.25;
+    }
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Right ) && cooldown_mov<0 && selectedItem != 8){
         moveDown();
         cooldown_mov = 0.25;
     }
-    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0){
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Left ) && cooldown_mov<0 && selectedItem != 8){
+        moveUp();
+        cooldown_mov = 0.25;
+    }
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0 ){
         cooldown_mov = 0.35;
         if(selectedItem == numOpciones-1){
             man->back();
