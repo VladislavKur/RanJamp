@@ -76,8 +76,8 @@ void Boss::update(Player *player, float deltaTime){
                     if(body->getPosicionX() != 7)
                         haPegado = true;
                     if(body->getPosicionX() == 7){
-                        //if(body->colisiona(player->getBody()) && haPegado){
-                        if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
+                        if(body->colisiona(player->getBody()) && haPegado){
+                        //if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
                             haPegado = false;
                             // player->setVidas(player->getVidas() - 2);
                             Hud->restarVidas();
