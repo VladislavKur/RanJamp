@@ -36,11 +36,6 @@ int main() {
     Manejador* instancia = Manejador::instancia();
     instancia->cambiarEstado(_menu);
 
-    RectangleShape coliArV;
-    RectangleShape coliAbV;
-    RectangleShape coliIzV;
-    RectangleShape coliDcV;
-
 
     while(m->getOpen()){
 
