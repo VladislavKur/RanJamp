@@ -18,6 +18,7 @@ class Bloque{
         void setOrigin(float x, float y);
         void setPosition(float x , float y);
         void render();
+        void setTextura(Textura * t);
     private:
         sf::Sprite * s;
         Motor * motor;

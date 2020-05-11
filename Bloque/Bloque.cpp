@@ -29,3 +29,8 @@ Bloque::~Bloque(){
     s = NULL;
    }
 }
+
+
+void Bloque::setTextura(Textura * t){
+    motor->setTextura(s,t->getTexture());
+}
