@@ -1,4 +1,4 @@
-# Install script for directory: /home/fv/Desktop/RanJamp
+# Install script for directory: /home/magiic/Escritorio/RanJamp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,23 +34,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fv/Desktop/RanJamp/build/Player/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Bullet/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Animacion/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Enemigos/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Mundo/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Motor/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Juego/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Objeto/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Texto/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Menu/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Hud/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Musica/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Bloque/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Textura/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Cuerpo/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Rectangulo/cmake_install.cmake")
-  include("/home/fv/Desktop/RanJamp/build/Tienda/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Player/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Bullet/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Animacion/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Enemigos/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Mundo/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Motor/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Juego/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Objeto/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Texto/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Menu/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Hud/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Musica/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Bloque/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Textura/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Cuerpo/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Rectangulo/cmake_install.cmake")
+  include("/home/magiic/Escritorio/RanJamp/build/Tienda/cmake_install.cmake")
 
 endif()
 
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fv/Desktop/RanJamp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/magiic/Escritorio/RanJamp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -217,7 +217,7 @@ void Mundo::crearObstaculos(){
         object = object->NextSiblingElement("object");
         _numObjects2++;
     }
-    cout<< "numObjects " << _numObjects2 << endl;
+    
     objects2 = new TiXmlElement * [_numObjects2 ];
     objetos2 = new Cuerpo * [_numObjects2 ];
     
@@ -250,7 +250,7 @@ void Mundo::crearMonedasLlaves(){
         object = object->NextSiblingElement("object");
         _numObjects3++;
     }
-    cout<< "numObjects " << _numObjects3 << endl;
+    
     objects3 = new TiXmlElement * [_numObjects3 ];
     objetos3 = new Cuerpo * [_numObjects3 ];
     
@@ -262,7 +262,7 @@ void Mundo::crearMonedasLlaves(){
         object = object->NextSiblingElement("object");
         num++;
     }
-    cout<< "num" << num <<endl; 
+    
     
     for(int i=0; i < _numObjects3; i++){
         objects3[i]->QueryIntAttribute("width", &_widthObject3);
@@ -281,9 +281,7 @@ void Mundo::crearMonedasLlaves(){
           objetos3[i]->recorte(25,25);
           objetos3[i]->addAnimacion(0.1);
         }
-        if(objetos3[i] != nullptr ){
-         cout<< "TENGOO ALGO" <<endl;
-        }
+
     }
 }
 
@@ -383,9 +381,7 @@ void Mundo::render(){
           }
           if(gid <=  cambio[k]){
             if(gid > cambio[k]){
-              cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
-              << y << ") :" << gid << " fuera del rango del tileset (" 
-              << _width*_height << ")" << endl;
+             
             }else if(gid > 0){
               _tilemapSprite[l][y][x]->render(); 
               pintada = true;
@@ -415,9 +411,7 @@ void Mundo::render2(){
           }
           if(gid <=  cambio[k]){
             if(gid > cambio[k]){
-              cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
-              << y << ") :" << gid << " fuera del rango del tileset (" 
-              << _width*_height << ")" << endl;
+             
             }else if(gid > 0){
               _tilemapSprite[l][y][x]->render(); 
               pintada = true;

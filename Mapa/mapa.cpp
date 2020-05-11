@@ -31,7 +31,7 @@ void mapa::cargarmapa(const char * f){
     }
   }
   map = doc.FirstChildElement("map");
-  if (map == nullptr) cout << "sadsad" <<  endl;
+ 
   map->QueryIntAttribute("width", &_width);
   map->QueryIntAttribute("height", &_height);
   map->QueryIntAttribute("tilewidth", &_tileWidth);
@@ -44,8 +44,7 @@ void mapa::cargarmapa(const char * f){
     tileset = tileset->NextSiblingElement("tileset");
   }
 
-  cout << endl;
-  cout <<"numtileset =  " <<_numTilesets<<endl;
+
 
   imagenes = new TiXmlElement *[_numTilesets]; 
   _imgwidth = new int[_numTilesets];
@@ -56,9 +55,9 @@ void mapa::cargarmapa(const char * f){
   tileset = map->FirstChildElement("tileset");
   int num = 0;
   while(tileset){
-    cout << "entro en el primer while"<<endl;
+   
     tileset->QueryIntAttribute("tilecount", &cambio[num]);
-    cout << " cambio " << cambio[num] << "  num " << num << endl;
+   
     imagenes[num] =  tileset->FirstChildElement("image");
     tileset = tileset->NextSiblingElement("tileset");
     num++;
@@ -66,27 +65,15 @@ void mapa::cargarmapa(const char * f){
 
   for(int i = 0; i < _numTilesets; i++){
     const char *filename = imagenes[i]->Attribute("source");
-    if(filename == NULL){
-      cout<<" ERRRORRRRR file" << i<<endl;
-    }else{
-      cout<<"tengo algo file " << i << endl;
-    }
+ 
     imagenes[i]->QueryIntAttribute("width", &_imgwidth[i]);
     imagenes[i]->QueryIntAttribute("height", &_imgheight[i]);
 
-    if(!_tilesetTexture[i].loadFromFile(filename)){
-      cout<<"NO SE CARGA LA TEXTURA = " << i <<endl;
-    }else{
-      cout<< "TENGO TEXTURA = " << i <<endl;
-    }
+    
   }
 
   TiXmlElement *layer = map->FirstChildElement("layer");
-  if(layer == NULL){
-      cout<<" ERRRORRRRR 2"<<endl;
-  }else{
-      cout<<"tengo algo 2" << endl;
-  }
+
   
   while(layer){
     _numLayers++;
@@ -146,9 +133,7 @@ void mapa::crearSprites(){
           }
           if(gid <=  cambio[k]){
             if(gid > cambio[k]){
-              cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
-              << y << ") :" << gid << " fuera del rango del tileset (" 
-              << _width*_height << ")" << endl;
+             
             }else if(gid > 0){
               _tilemapSprite[l][y][x] = new Sprite(_tilesetTexture[k]);
               int Tcolumnas = _imgwidth[k] / _tileWidth; 
@@ -192,35 +177,33 @@ void mapa::crearObjetos(){
         object = object->NextSiblingElement("object");
         _numObjects++;
     }
-    cout<< "numObjects " << _numObjects<< endl;
+    
     objects = new TiXmlElement * [_numObjects];
     objetos = new RectangleShape * [_numObjects];
     
     object = objectgroups[0]->FirstChildElement("object");
     
-    cout<<"object " << object->Attribute("id")<<endl;
+    
     int num = 0; 
     while(object){
         objects[num] = object;
         object = object->NextSiblingElement("object");
         num++;
     }
-    cout<< "num" << num <<endl; 
+     
     
     for(int i=0; i < _numObjects; i++){
-        //cout << "OBJETO  ID = " << objects[i]->Attribute("id") << endl;
+        
         objects[i]->QueryIntAttribute("width", &_widthObject);
-        //cout << "width " << _widthObject<<endl;
+        
         objects[i]->QueryIntAttribute("height", &_heightObject);
-        //cout << "height " << _heightObject<<endl;
+        
         objects[i]->QueryIntAttribute("x", &_x);
-        //cout << "x " << _x<<endl;
+        
         objects[i]->QueryIntAttribute("y", &_y);
-        //cout << "y " << _y << endl;
+       
         objetos[i] = new RectangleShape(Vector2f(_widthObject, _heightObject));
-        if(objetos[i] != nullptr ){
-         cout<< "TENGOO ALGO" <<endl;
-        }
+       
         objetos[i]->setPosition(_x,_y);
         objetos[i]->setFillColor(Color(255, 0 , 0));
 
@@ -317,9 +300,7 @@ void mapa::render(){
           }
           if(gid <=  cambio[k]){
             if(gid > cambio[k]){
-              cout << "Error, gid at (l,x,y)= (" << l << "," << x << "," 
-              << y << ") :" << gid << " fuera del rango del tileset (" 
-              << _width*_height << ")" << endl;
+              
             }else if(gid > 0){
               motor->dibujo(*_tilemapSprite[l][y][x]);
               pintada = true;

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++1y -Wall -Wextra -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fv/Desktop/RanJamp/Player -I/home/fv/Desktop/RanJamp/Bullet -I/home/fv/Desktop/RanJamp/Animacion -I/home/fv/Desktop/RanJamp/Enemigos -I/home/fv/Desktop/RanJamp/Mundo -I/home/fv/Desktop/RanJamp/Motor -I/home/fv/Desktop/RanJamp/Juego -I/home/fv/Desktop/RanJamp/Objeto -I/home/fv/Desktop/RanJamp/Texto -I/home/fv/Desktop/RanJamp/Menu -I/home/fv/Desktop/RanJamp/Hud -I/home/fv/Desktop/RanJamp/Musica -I/home/fv/Desktop/RanJamp/Bloque -I/home/fv/Desktop/RanJamp/Textura -I/home/fv/Desktop/RanJamp/Cuerpo -I/home/fv/Desktop/RanJamp/Rectangulo -I/home/fv/Desktop/RanJamp/Tienda 
+CXX_INCLUDES = -I/home/magiic/Escritorio/RanJamp/Player -I/home/magiic/Escritorio/RanJamp/Bullet -I/home/magiic/Escritorio/RanJamp/Animacion -I/home/magiic/Escritorio/RanJamp/Enemigos -I/home/magiic/Escritorio/RanJamp/Mundo -I/home/magiic/Escritorio/RanJamp/Motor -I/home/magiic/Escritorio/RanJamp/Juego -I/home/magiic/Escritorio/RanJamp/Objeto -I/home/magiic/Escritorio/RanJamp/Texto -I/home/magiic/Escritorio/RanJamp/Menu -I/home/magiic/Escritorio/RanJamp/Hud -I/home/magiic/Escritorio/RanJamp/Musica -I/home/magiic/Escritorio/RanJamp/Bloque -I/home/magiic/Escritorio/RanJamp/Textura -I/home/magiic/Escritorio/RanJamp/Cuerpo -I/home/magiic/Escritorio/RanJamp/Rectangulo -I/home/magiic/Escritorio/RanJamp/Tienda 
 
