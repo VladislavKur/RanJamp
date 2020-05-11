@@ -120,7 +120,6 @@ bool hud::restarVidas(){
   bool devolver = false;
   if(godMode == false){
       vidas--;
-      juego->iniciarPantallaRoja();
   }
 
   if(vidas == 0 && godMode == false){
