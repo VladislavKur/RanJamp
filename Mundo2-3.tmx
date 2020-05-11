@@ -21074,7 +21074,7 @@
   <object id="82" x="78" y="1038" width="44" height="58"/>
  </objectgroup>
  <objectgroup name="Capa de PowerUps">
-  <object id="53" type="4" x="388.333" y="512" width="26.6667" height="24.8333"/>
+  <object id="53" type="3" x="388.333" y="512" width="26.6667" height="24.8333"/>
  </objectgroup>
  <objectgroup name="Capa de Puerta">
   <object id="52" x="616.667" y="1258" width="111.333" height="111.333">

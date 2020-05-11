@@ -80,7 +80,7 @@ void menu_mundos::update(float deltaTime){
                 resetSelectedItem();
             break;
             case 4:
-               juego->nivelSeleccionado("JefeFinal.tmx");
+               juego->nivelSeleccionado("Mundo5.tmx");
                man->cambiarEstado(juego);
                resetSelectedItem();
             break;
