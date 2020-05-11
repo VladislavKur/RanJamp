@@ -485,6 +485,7 @@ Mundo::~Mundo(){
     
     delete[] objetos;
     delete[] objetos2;
+    objetos2=NULL;
     delete[] objetos3;
 
     for(int i = 0; i < _numLayers; i++)

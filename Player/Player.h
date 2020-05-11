@@ -44,20 +44,31 @@ public:
     Player(int x, int y);
     //Player(sf::Texture* textura, sf::Vector2u cantidadImagenes, float SwitchTimeSprite);
     ~Player() ;
+    //Para controlar el doble salto
     bool auxSaltos;
+    //Rectangulo de colisiones encargado de dañar a los enemigos a corto alcance durante el golpe melee
     Rectangulo* melee;
-    float atacando_melee; //positivo = atacando
+
+    float atacando_melee; //positivo = atacando (es un timer)
 
     //FUNCIONALIDAD
     void render(float );
     void update(float deltaTime , Mundo * mundo);
+    //Se llama en update. Recoloca los rectángulos de colisión.
     void updateHitbox();
+    //Ser golpeado por un enemigo, un bloque de pinchos, un proyectil...
     void perderVida();
+    //Iniciar o detener el modo dios (inmortalidad)
     void toggleGodMode();
+    //Inicio del salto
     void saltar();
+    //Se llama en update. Actualiza la posicion del rectangulo de colision del golpe melee
     bool GolpeMelee(float deltaTime);
+    //El jugador vuelve a su posicion inicial como si hubiera comenzado de nuevo el nivel
     void reset();
+    //Coger una moneda
     void sumarMonedas();
+    //Coger la llave que abre la puerta "i"
     void cogerLlave(int i);
 
     //GET
@@ -80,6 +91,10 @@ public:
     int getMonedas(){return monedas;}
     Rectangulo getMelee(){return *melee;}
     vector<int> getLlaves(){return llaves;}
+    Rectangulo * getColiAbajo(){return coliAbajo;};
+    Rectangulo * getColiArriba(){return coliArriba;};
+    Rectangulo * getColiIzquierda(){return coliIzquierda;};
+    Rectangulo * getColiDerecha(){return coliDerecha;};
     //SET
     void obtenerPU_SaltoDoble();
     void obtenerPU_Velocidad();
@@ -100,16 +115,17 @@ public:
     bool setVidas(int);
     void setPosicion(float, float );
 
+    //Movimiento
     void moveRight(float deltaTime, Mundo * mundo);
     void moveLeft(float deltaTime, Mundo * mundo);
 
+    //Reasignar el tamaño del sprite
     void setSize(float sizeX, float sizeY);
 
+    //Movimiento vertical (gravedad)
     void caer();
+    //Tocar el suelo y dejar de caer
     void suelo(float posX, float posY);
 
-    Rectangulo * getColiAbajo(){return coliAbajo;};
-    Rectangulo * getColiArriba(){return coliArriba;};
-    Rectangulo * getColiIzquierda(){return coliIzquierda;};
-    Rectangulo * getColiDerecha(){return coliDerecha;};
+    
 };
