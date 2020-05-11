@@ -39,6 +39,20 @@ void menu::render(float num){
         motor->dibujo(texto[i]);
     }
     
+    if(maxSprites != -1){
+        for(int i = 0; i < maxSprites; i++){
+            if(sprites[i] != NULL){
+                sprites[i]->render();
+            }
+        }
+    }
+
+    if(maxAux != -1){
+        for(int i = 0; i < maxAux; i++){
+            motor->dibujo(aux[i]);
+        }
+    }
+
 }
 
 void menu::moveUp(){
@@ -84,3 +98,8 @@ void menu::resetSelectedItem(){
 }
 
 
+void menu::cambiarAux(int i , String s, float posx , float posy){
+    aux[i].setFont(font);
+    aux[i].setString(s);
+    aux[i].setPosition(posx , posy);
+}

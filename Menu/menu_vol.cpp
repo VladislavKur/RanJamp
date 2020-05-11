@@ -6,18 +6,24 @@ sf::Font* menu_vol::fuente = new Font();
 menu_vol* menu_vol::instance(){
      if(p_instance == 0){
         fuente->loadFromFile("resources/fuentes/AnotherRound.otf");
-        p_instance = new menu_vol(*fuente, 5);
+        p_instance = new menu_vol(*fuente, 4, 1, 2);
 
     }
 
     return(p_instance);
 }
 
-menu_vol::menu_vol( Font fuente, int max) : menu(fuente, max){
+menu_vol::menu_vol( Font fuente, int max, int maxS , int Aux) : menu(fuente, max){
     t = new Textura("resources/Imagenes/MenuOpciones.png");
     b = new Bloque(t);
     pausa = false;
-    
+    maxSprites = maxS;
+    maxAux = Aux;
+    sprites = new Cuerpo *[maxSprites];
+    sprites[0] = new Cuerpo(300 , 100,150,150,"Tick.png",1, 0,-1);
+    sprites[0]->Scalar(0.2,0.2);
+    aux = new Text[maxAux];
+
 }
 
 
@@ -26,12 +32,13 @@ void menu_vol::update(float deltaTime){
     cooldown_mov-=deltaTime;
     Manejador* man = Manejador::instancia();
     Juego* juego = Juego::instance();
-    
+
+    cambiarAux(0, "SONIDO:", juego->view.getCenter().x-100, juego->view.getCenter().y-100);
     cambiarTexto(0, "-", juego->view.getCenter().x-100, juego->view.getCenter().y);
-    cambiarTexto(1, to_string((int)juego->getVolumen()+1), juego->view.getCenter().x, juego->view.getCenter().y);
-    cambiarTexto(2, "+", juego->view.getCenter().x+100, juego->view.getCenter().y);
-    cambiarTexto(3, "Mute", juego->view.getCenter().x, juego->view.getCenter().y+100);
-    cambiarTexto(4, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-200);
+    cambiarAux(1, to_string((int)juego->getVolumen()+1), juego->view.getCenter().x, juego->view.getCenter().y);
+    cambiarTexto(1, "+", juego->view.getCenter().x+100, juego->view.getCenter().y);
+    cambiarTexto(2, "Mute", juego->view.getCenter().x, juego->view.getCenter().y+100);
+    cambiarTexto(3, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-200);
 
     b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
    
@@ -53,12 +60,12 @@ void menu_vol::update(float deltaTime){
                     juego->setVolumen(juego->getVolumen()-10);
                 }
             break;
-            case 2:
+            case 1:
                 if(juego->getVolumen() <= 90){
                     juego->setVolumen(juego->getVolumen()+10);
                 }
             break;
-            case 3:
+            case 2:
                 if(pausa == false){
                     juego->pausarMusica();
                     pausa = true;
@@ -67,10 +74,18 @@ void menu_vol::update(float deltaTime){
                     pausa = false;
                 }
             break;
-            case 4:
+            case 3:
                 man->back();
                 resetSelectedItem();
             break;
         }
     }
+
+    sprites[0]->posicionamiento(juego->view.getCenter().x-50, juego->view.getCenter().y+120);
+    if(pausa == true){
+        sprites[0]->recorte(150,0);
+    }else{
+        sprites[0]->recorte(0,0);
+    }
 }
+
