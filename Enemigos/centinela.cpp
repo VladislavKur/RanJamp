@@ -30,7 +30,18 @@ void Centinela::update(Player* player, float deltaTime){
     float local_diffabs = abs(local_diffX);
 
     bool cambio; //no nos cambiamos de modo por defecto
-     do{
+
+    if(local_diffX/local_diffabs == -1){
+
+        body->Scalar(0.5,0.5);
+
+    }
+    else{
+        body->Scalar(-0.5,0.5);    
+    }
+    
+
+    do{
         cambio = false;//no nos cambiamos de modo por defecto
         switch(modo){
 
