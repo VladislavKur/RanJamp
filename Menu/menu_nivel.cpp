@@ -55,21 +55,24 @@ void menu_nivel::update(float deltaTime){
         sprites[1]->recorte(0,300);
         sprites[2]->recorte(0,600);
         sprites[3]->recorte(0,900);
-    }else if(nivel.compare("Mundo2-")){
+    } 
+    if(nivel.compare("Mundo2-")){
         t->setTexture("resources/Imagenes/MenuAntartida.png");
         b->setTextura(t);
         sprites[0]->recorte(0,1200);
         sprites[1]->recorte(0,1500);
         sprites[2]->recorte(0,1800);
         sprites[3]->recorte(0,2100);
-    }else if(nivel.compare("Mundo3-")){
+    }
+    if(nivel.compare("Mundo3-")){
         t->setTexture("resources/Imagenes/MenuInfierno.png");
         b->setTextura(t);
         sprites[0]->recorte(0,2400);
         sprites[1]->recorte(0,2700);
         sprites[2]->recorte(0,3000);
         sprites[3]->recorte(0,3300);
-    }else if(nivel.compare("Mundo4-")){
+    }
+    if(nivel.compare("Mundo4-")){
         t->setTexture("resources/Imagenes/MenuApocalipsis.png");
         b->setTextura(t);
         sprites[0]->recorte(0,3500);
