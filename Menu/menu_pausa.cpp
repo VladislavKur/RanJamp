@@ -61,15 +61,24 @@ void menu_pausa::update(float deltaTime){
             break;
 
             case 1:
+                juego->pausarMusica(2);
+               juego->reproducirMusica(0);
+               juego->ponerBucleMusica(0);
                 man->cambiarEstado(menucont);
                 resetSelectedItem();
             break;
 
             case 2:
+                juego->pausarMusica(2);
+               juego->reproducirMusica(0);
+               juego->ponerBucleMusica(0);
                 man->cambiarEstado(menuVol);
                  resetSelectedItem();
             break;
             case 3:
+                juego->pausarMusica(2);
+               juego->reproducirMusica(0);
+               juego->ponerBucleMusica(0);
                 man->cambiarEstado(menuIni);
                 resetSelectedItem();
             break;
