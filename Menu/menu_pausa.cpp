@@ -15,8 +15,10 @@ menu_pausa* menu_pausa::instance(){
 }
 
 menu_pausa::menu_pausa( Font fuente, int max) : menu(fuente, max){
+    Juego* juego = Juego::instance();
     t = new Textura("resources/Imagenes/MenuPausa.png");
     b = new Bloque(t);
+    
 }
 
 
@@ -29,9 +31,7 @@ void menu_pausa::update(float deltaTime){
     menu_vol* menuVol = menu_vol::instance();
     menu_inicial* menuIni = menu_inicial::instance();
 
-    juego->pausarMusica(0);
-    juego->reproducirMusica(2);
-    juego->ponerBucleMusica(2);
+    
     cambiarTexto(0,  "REANUDAR", juego->view.getCenter().x-100, juego->view.getCenter().y-125);
     cambiarTexto(1,  "CONTROLS", juego->view.getCenter().x-100, juego->view.getCenter().y-75);
     cambiarTexto(2, "OPTIONS", juego->view.getCenter().x-100, juego->view.getCenter().y-25 );
