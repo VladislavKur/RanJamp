@@ -15,20 +15,38 @@ class Cuerpo{
 
     private:
         //variables objeto
-        Animacion* animacion;
-        sf::Shape* body;
-        Motor* motor;
 
+        //Animación asignada al cuerpo.
+        Animacion* animacion;
+        //Shape de SFML asignado al cuerpo.
+        sf::Shape* body;
+        //Dirección de memoria que apunta al motor gráfico.
+        Motor* motor;
+        //Textura asignada al cuerpo.
         sf::Texture* class_textura;
-        //basicas
+        
+        //Determina si el cuerpo se está moviendo o no.
         bool class_move;
+        //Determina la posición del cuerpo en la ventana.
         float class_positionX, class_positionY;
+        //Determina la escala del cuerpo.
         float class_escala;
+        //Determina la posición anterior del cuerpo.
+        //Esto nos sirve para calcular la interpolación.
         float class_previousX, class_previousY;
-        int class_width, class_height;
-        int class_widthTexture, class_heightTexture;
+        //Anchura del cuerpo.
+        int class_width;
+        //Altura del cuerpo.
+        int class_height;
+        //Anchura de la textura asignada al cuerpo.
+        int class_widthTexture;
+        //Altura de la textura asignada al cuerpo.
+        int class_heightTexture;
+        //Precio del objeto en la tienda.
         int class_tipo;
     public:
+        //Constructor del Cuerpo.
+        //x_entrada: 
         Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
             std::string fichero, float escala, typeBody tipoCuerpo); //cambiar tipo por enum (0: RS, 1:CS)
         Cuerpo(float x , float y, int sizeWidth , int sizeHeight);
