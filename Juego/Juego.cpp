@@ -468,9 +468,6 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       mundo->getMonedasLlaves()[j]->render(porcentaje);
       j++;
     }
-
-    mundo->render2();
-    Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion centinelas
     }
@@ -482,6 +479,10 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     for(unsigned i = 0; i < maxBullets;i++){ 
       if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
+    
+    mundo->render2();
+    Hud->render();
+   
 
    
 }
