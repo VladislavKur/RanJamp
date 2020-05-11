@@ -40,10 +40,12 @@
             break;
 
             case 4:
-
+                fichero="slow.png";
             break;
 
-            default:break;
+            default:
+                fichero="estrella.png";
+            break;
         }
         body = new Cuerpo(x,y,32,32,fichero,1,RECTANGLE);
         body->setSize(50,50);

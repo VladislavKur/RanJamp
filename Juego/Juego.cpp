@@ -28,7 +28,7 @@ Juego::Juego(){
     //view.setCenter(1080/2,720/2);
     view.setCenter(view.getSize().x/2,view.getSize().y/2);
     transparenciaRoja=1;
-    
+
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
   }
@@ -49,6 +49,11 @@ Juego::Juego(){
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
   pos.push_back(Vector2f(10 , 1500));
+
+  portal = new Cuerpo(mundo->getPuerta()->getPosicion()[0]+128/3, mundo->getPuerta()->getPosicion()[1]+128/3, 128, 128, "portal.png",1 , RECTANGLE );
+  portal->setSize(5*32,5*32);
+  portal->Origen(portal->getSize()[0]/2,portal->getSize()[1]/2);
+  portal->addAnimacion(0.1);
 }
 Juego::~Juego(){
       if(jugador != nullptr){
@@ -167,6 +172,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo();
     colisionBulletJugador();
     colisionMeleeEnemigo();
+    portal->posicionamiento(mundo->getPuerta()->getPosicion()[0]+128/3, mundo->getPuerta()->getPosicion()[1]+128/3);
+    portal->rotar(50*deltaTime);
+    
    // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
     if(Keyboard::isKeyPressed(Keyboard::Num1)){
@@ -214,6 +222,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     destruirObjetos(objetos[j]);
                     break;
                 case 4: 
+                    Hud->setSlow(true);
                     destruirObjetos(objetos[j]);
                     break;
             default:
@@ -343,44 +352,35 @@ void Juego::colisionPlayerMundo(float deltaTime){//WIP FACHADA (a lo mejor esta 
     
     hud * Hud = hud::instance();
     Cuerpo ** objetos = mundo->getObjetos();//WIP FACHADA
-    
-    float posobjX;
+  
     float posobjY; //WIP FACHADA
     bool pararse=false;
     bool aux = false;
-    float posantX; //WIP FACHADA
-    float posantY;
-    for(int i=0 ; i<  mundo->getNumObjetos(); i++){
-      if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){//WIP FACHADA
-        posobjX = objetos[i]->getPosicion()[0];
-        posobjY = objetos[i]->getPosicion()[1];
-        pararse=true;
-      } 
-      
-      if(pararse){
-        //jugador->setSaltos( jugador->getPU_SaltoDoble() ? 2 : 1);
-        jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
-        if(aux == false){
-          jugador->getBody()->posicionamiento(jugador->getBody()->getPosicion()[0],posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5); //WIP FACHADA y explicar que hace esto detalladamente pls
-          jugador->updateHitbox(); //updateHitbox debería llamarse dentro de jugador setPosicion
-          aux = true;
-          posantX = jugador->getBody()->getPosicion()[0];
-          posantY = jugador->getBody()->getPosicion()[1]; //WIP FACHADA
-          
-        } else if(posantX != jugador->getBody()->getPosicion()[0] && posantY != jugador->getBody()->getPosicion()[1]){ //WIP FACHADA
-          aux = false;
-        }
-        jugador->setJumpSpeed(0);
 
-      }else{
-        //std::cout<< jugador->getJumpSpeed() + 9.81f*6*deltaTime << std::endl;
-        jugador->setJumpSpeed( jugador->getJumpSpeed() + 9.81f*4*deltaTime);
-      }
-      if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
-        jugador->setJumpSpeed(10);
-      }
+      for(int i=0 ; i<  mundo->getNumObjetos(); i++){
+        if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){//WIP FACHADA
+          posobjY = objetos[i]->getPosicion()[1];
+          jugador->suelo(
+            jugador->getBody()->getPosicion()[0],
+            posobjY - jugador->getBody()->getOriginY() - jugador->getColiAbajo()->getHeight() + 5
+          );
+          pararse=true;
+          i = mundo->getNumObjetos(); //se sale del bucle
+          jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
+        } 
+        
+        if(!pararse){
+
+          jugador->caer();
+          if(jugador->getColiArriba()->getIntersect(*objetos[i]->getGlobalBounds())){ //WIP fachada
+            jugador->setJumpSpeed(0);
+          }
+        }
+
+      
     }
 }
+
 
 void Juego::colisionPlayerObstaculos(float deltaTime){
     Cuerpo ** objetos = mundo->getObstaculos();
@@ -435,7 +435,7 @@ void Juego::colisionMeleeEnemigo(){
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
     Motor* motor  = Motor::instance();
-   
+
 
     hud * Hud = hud::instance();
     mundo->render();
@@ -469,9 +469,6 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       mundo->getMonedasLlaves()[j]->render(porcentaje);
       j++;
     }
-
-    mundo->render2();
-    Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion centinelas
     }
@@ -483,8 +480,12 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     for(unsigned i = 0; i < maxBullets;i++){ 
       if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
-
+    mundo->render2();
+    Hud->render();
    
+
+    portal->render();
+    
 }
 
 
@@ -814,7 +815,9 @@ void Juego::nextLevel(int n){
     
 
     //cout<<Hud->getTiempo()<<endl;
-    
+    man->cambiarEstado(trans);
+    trans->reset();
+    jugador->caer();
 }
 
 

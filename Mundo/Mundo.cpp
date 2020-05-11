@@ -382,7 +382,12 @@ vector<float> Mundo::cargarPosicionPlayer_Puerta(int i){
         pos.push_back(_posY);
     }
     if(i == 4){
-      puerta = new Cuerpo(_posX,_posY, _widthP,_heightP);
+      
+    puerta = new Cuerpo(_posX,_posY, _widthP,_heightP);
+    
+      /*float x_entrada, float y_entrada, int sizeWidth, int sizeHeight, 
+            std::string fichero, float escala, typeBody tipoCuerpo*/
+      
     }
     return pos;
 }

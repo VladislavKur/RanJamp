@@ -28,6 +28,8 @@ private:
     int vidasAnteriores;
     Rectangulo * hitbox;
     bool facing;
+    bool caida;
+    float caidaTiempo;
 
     Rectangulo * coliAbajo;
     Rectangulo * coliArriba;
@@ -65,6 +67,7 @@ public:
     bool getPU_SaltoDoble(){return PU_saltoDoble;}; 
     bool getPU_Velocidad(){return PU_velocidad;}; 
     bool getPU_Slowhits(){return PU_slowhits;};
+    bool getCayendo(){return caida;};
     float getJumpSpeed(){return jumpSpeed;};
     Cuerpo * getBody(){return body;}
     Rectangulo * getHitbox(){return hitbox;}
@@ -101,6 +104,9 @@ public:
     void moveLeft(float deltaTime, Mundo * mundo);
 
     void setSize(float sizeX, float sizeY);
+
+    void caer();
+    void suelo(float posX, float posY);
 
     Rectangulo * getColiAbajo(){return coliAbajo;};
     Rectangulo * getColiArriba(){return coliArriba;};

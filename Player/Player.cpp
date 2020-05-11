@@ -38,7 +38,7 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=50; 
+    jumpHeight=40; 
 
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
@@ -59,6 +59,8 @@ Player::Player(int x, int y){
     body->Origen(100/2,100/2);
     facing = true;
     atacando_melee=0;
+    caida = true;
+    caidaTiempo = 0.0;
     //body->texturizar(text);
     
     //body->setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada // ESTO HAY QUE PONERLO
@@ -73,6 +75,21 @@ Player::Player(int x, int y){
 
 }
 
+void Player::caer(){
+
+  caida = true;
+  caidaTiempo = 0.0;
+
+}
+
+void Player::suelo(float posX, float posY){
+
+  body->posicionamiento(posX,posY);
+  caida  = false;
+  jumpSpeed = 0.0;
+
+}
+
 void Player::update(float deltaTime , Mundo * mundo){
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
@@ -81,7 +98,7 @@ void Player::update(float deltaTime , Mundo * mundo){
     velocidad = Hud->getIVelocidad();
     vidas = Hud->getVidas();
     godMode = Hud->getGodMode();
-    
+
     updateHitbox(); //arreglar lo de update hitbox
     GolpeMelee(deltaTime);
 
@@ -166,7 +183,10 @@ void Player::update(float deltaTime , Mundo * mundo){
     //cout<<atacando_melee<<endl;
 
   
-    
+    if(caida){
+      caidaTiempo += deltaTime;
+      jumpSpeed += 8.91f*100*caidaTiempo;
+    }
     body->moverse(0,jumpSpeed*deltaTime);
     body->update(deltaTime);
 }
@@ -254,9 +274,10 @@ void Player::saltar(){
 
         auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
+        //std::cout << "El jumpspeed es: " <<jumpSpeed <<"\n";
         
         saltos--;
-      }
+  }
 }
 
 
@@ -337,7 +358,6 @@ void Player::reset(){
   
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=30;
     
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
@@ -354,7 +374,7 @@ void Player::reset(){
 
     body->posicionamiento(100,1000);
     body->Origen(100/2,100/2);
-
+    caida = true;
 }
 
 void Player::setSize(float sizeX, float sizeY) {
