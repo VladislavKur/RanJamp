@@ -70,23 +70,13 @@ void Boss::update(Player *player, float deltaTime){
                             mano->posicionar(posx+(posx/14), posy-(posy/70));
                         }
                         
-<<<<<<< HEAD
-                 
-=======
->>>>>>> 9327cb369c65eb3bcc689ab962a4ffe6cc673392
 
 
                     if(body->getPosicionX() != 7)
                         haPegado = true;
                     if(body->getPosicionX() == 7){
-<<<<<<< HEAD
-
-                        if((player->getColiDerecha()->getIntersect(*mano) 
-                            || player->getColiIzquierda()->getIntersect(*mano))&& haPegado){
-=======
                         if(body->colisiona(player->getBody()) && haPegado){
                         //if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
->>>>>>> 9327cb369c65eb3bcc689ab962a4ffe6cc673392
                             haPegado = false;
 
                             Hud->restarVidas();
