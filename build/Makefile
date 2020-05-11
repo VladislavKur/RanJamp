@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/andres/Escritorio/FV JUNTO"
+CMAKE_SOURCE_DIR = /home/andres/Escritorio/RANJAMP/RanJamp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/andres/Escritorio/FV JUNTO/build"
+CMAKE_BINARY_DIR = /home/andres/Escritorio/RANJAMP/RanJamp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andres/Escritorio/RANJAMP/RanJamp/build/CMakeFiles /home/andres/Escritorio/RANJAMP/RanJamp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/andres/Escritorio/RANJAMP/RanJamp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
