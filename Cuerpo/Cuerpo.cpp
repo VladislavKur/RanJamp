@@ -137,6 +137,17 @@ Rectangulo * Cuerpo::getGlobalBounds(){
    return R;
 }
 
+void Cuerpo::posicionamientoFijo(float x_entrada,float y_entrada){
+    
+    /*class_previousX = class_positionX;
+    class_previousY = class_positionY;*/
+
+    class_positionX = x_entrada;
+    class_positionY = y_entrada;
+
+    motor->posicionar(body, class_positionX, class_positionY);
+}
+
 void Cuerpo::posicionamiento(float x_entrada,float y_entrada){
     
     class_previousX = class_positionX;

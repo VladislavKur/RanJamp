@@ -836,3 +836,4 @@ void Juego::pausa(){
   }
     
 }
+

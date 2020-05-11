@@ -36,27 +36,27 @@ SFML/Graphics.hpp
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.cpp
+/home/fv/Desktop/RanJamp/Animacion/Animacion.cpp
 Animacion.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.cpp
+/home/fv/Desktop/RanJamp/Bloque/Bloque.cpp
 Bloque.h
-/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+/home/fv/Desktop/RanJamp/Bloque/Bloque.h
 
-/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+/home/fv/Desktop/RanJamp/Bloque/Bloque.h
 SFML/Graphics.hpp
 -
 iostream
@@ -64,381 +64,413 @@ iostream
 SFML/System.hpp
 -
 ../Textura/Textura.h
-/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+/home/fv/Desktop/RanJamp/Textura/Textura.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.cpp
+/home/fv/Desktop/RanJamp/Bullet/bullet.cpp
 bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 SFML/Graphics.hpp
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Enumerador/typeBody.h
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 ../Enumerador/typeBullet.h
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBullet.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.cpp
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.cpp
 Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Animacion/Animacion.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 ../Enumerador/typeBody.h
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/Boss.cpp
+/home/fv/Desktop/RanJamp/Enemigos/Boss.cpp
 Boss.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/Boss.h
+/home/fv/Desktop/RanJamp/Enemigos/Boss.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/Boss.h
+/home/fv/Desktop/RanJamp/Enemigos/Boss.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.cpp
+/home/fv/Desktop/RanJamp/Enemigos/centinela.cpp
 centinela.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+/home/fv/Desktop/RanJamp/Enemigos/centinela.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+/home/fv/Desktop/RanJamp/Enemigos/centinela.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.cpp
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.cpp
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.cpp
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.cpp
 murcielago.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/nube.cpp
+/home/fv/Desktop/RanJamp/Enemigos/nube.cpp
 nube.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/nube.h
+/home/fv/Desktop/RanJamp/Enemigos/nube.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/nube.h
+/home/fv/Desktop/RanJamp/Enemigos/nube.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp
+/home/fv/Desktop/RanJamp/Enemigos/pajaro.cpp
 pajaro.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.h
+/home/fv/Desktop/RanJamp/Enemigos/pajaro.h
 
-/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.h
+/home/fv/Desktop/RanJamp/Enemigos/pajaro.h
 SFML/Graphics.hpp
 -
 iostream
 -
 enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBullet.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBullet.h
 
-/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp
+/home/fv/Desktop/RanJamp/Hud/hud.cpp
 hud.h
-/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 
-/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.cpp
+/home/fv/Desktop/RanJamp/Juego/Estado.cpp
 Estado.h
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.h
+/home/fv/Desktop/RanJamp/Juego/Estado.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.h
+/home/fv/Desktop/RanJamp/Juego/Estado.h
 SFML/Graphics.hpp
 -
 
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp
+/home/fv/Desktop/RanJamp/Juego/Juego.cpp
 Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 Transicion.h
-/home/andres/Escritorio/FV JUNTO/Juego/Transicion.h
+/home/fv/Desktop/RanJamp/Juego/Transicion.h
 ../Menu/menu_inicial.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 ../Menu/menu_pausa.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
+/home/fv/Desktop/RanJamp/Menu/menu_pausa.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 ../Enemigos/enemigo.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
 ../Enemigos/murcielago.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/murcielago.h
+/home/fv/Desktop/RanJamp/Enemigos/murcielago.h
 ../Enemigos/centinela.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/centinela.h
+/home/fv/Desktop/RanJamp/Enemigos/centinela.h
 ../Enemigos/nube.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/nube.h
+/home/fv/Desktop/RanJamp/Enemigos/nube.h
 ../Enemigos/pajaro.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.h
+/home/fv/Desktop/RanJamp/Enemigos/pajaro.h
 ../Enemigos/Boss.h
-/home/andres/Escritorio/FV JUNTO/Enemigos/Boss.h
+/home/fv/Desktop/RanJamp/Enemigos/Boss.h
 ../Bullet/bullet.h
-/home/andres/Escritorio/FV JUNTO/Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
 ../Mundo/Mundo.h
-/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+/home/fv/Desktop/RanJamp/Mundo/Mundo.h
 ../Objeto/Objeto.h
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 ../Texto/texto.h
-/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+/home/fv/Desktop/RanJamp/Texto/texto.h
 ../Musica/musica.h
-/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+/home/fv/Desktop/RanJamp/Musica/musica.h
 ../Hud/hud.h
-/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.cpp
+/home/fv/Desktop/RanJamp/Juego/Manejador.cpp
 Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 SFML/Graphics.hpp
 -
 Estado.h
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.h
+/home/fv/Desktop/RanJamp/Juego/Estado.h
 
-/home/andres/Escritorio/FV JUNTO/Juego/Transicion.cpp
+/home/fv/Desktop/RanJamp/Juego/Transicion.cpp
 Transicion.h
-/home/andres/Escritorio/FV JUNTO/Juego/Transicion.h
+/home/fv/Desktop/RanJamp/Juego/Transicion.h
 Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 math.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Juego/Transicion.h
+/home/fv/Desktop/RanJamp/Juego/Transicion.h
 Estado.h
-/home/andres/Escritorio/FV JUNTO/Juego/Estado.h
+/home/fv/Desktop/RanJamp/Juego/Estado.h
 Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Juego/Cuerpo.h
+/home/fv/Desktop/RanJamp/Juego/Cuerpo.h
 ../Texto/texto.h
-/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+/home/fv/Desktop/RanJamp/Texto/texto.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu.cpp
+/home/fv/Desktop/RanJamp/Menu/Tutorial.cpp
+Tutorial.h
+/home/fv/Desktop/RanJamp/Menu/Tutorial.h
+
+/home/fv/Desktop/RanJamp/Menu/Tutorial.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
+../Enemigos/enemigo.h
+/home/fv/Desktop/RanJamp/Enemigos/enemigo.h
+../Enemigos/centinela.h
+/home/fv/Desktop/RanJamp/Enemigos/centinela.h
+../Bullet/bullet.h
+/home/fv/Desktop/RanJamp/Bullet/bullet.h
+../Mundo/Mundo.h
+/home/fv/Desktop/RanJamp/Mundo/Mundo.h
+../Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
+../Texto/texto.h
+/home/fv/Desktop/RanJamp/Texto/texto.h
+../Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
-../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
+../Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.cpp
+menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
+../Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
+
+/home/fv/Desktop/RanJamp/Menu/menu.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Juego/Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Textura/Textura.h
-/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+/home/fv/Desktop/RanJamp/Textura/Textura.h
 ../Bloque/Bloque.h
-/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+/home/fv/Desktop/RanJamp/Bloque/Bloque.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.cpp
+/home/fv/Desktop/RanJamp/Menu/menu_controles.cpp
 menu_controles.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+/home/fv/Desktop/RanJamp/Menu/menu_controles.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+/home/fv/Desktop/RanJamp/Menu/menu_controles.h
 SFML/Graphics.hpp
 -
 iostream
 -
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.cpp
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.cpp
 menu_inicial.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 menu_mundos.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.h
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 SFML/Graphics.hpp
 -
 iostream
 -
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
 menu_controles.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+/home/fv/Desktop/RanJamp/Menu/menu_controles.h
 menu_vol.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+/home/fv/Desktop/RanJamp/Menu/menu_vol.h
 ../Tienda/Tienda.h
-/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
+/home/fv/Desktop/RanJamp/Tienda/Tienda.h
+Tutorial.h
+/home/fv/Desktop/RanJamp/Menu/Tutorial.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.cpp
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.cpp
 menu_mundos.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.h
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.h
 menu_nivel.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.h
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.h
 menu_inicial.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_mundos.h
+/home/fv/Desktop/RanJamp/Menu/menu_mundos.h
 SFML/Graphics.hpp
 -
 iostream
 -
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
 ../Juego/Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.cpp
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.cpp
 menu_nivel.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.h
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_nivel.h
+/home/fv/Desktop/RanJamp/Menu/menu_nivel.h
 SFML/Graphics.hpp
 -
 iostream
 -
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.cpp
+/home/fv/Desktop/RanJamp/Menu/menu_pausa.cpp
 menu_pausa.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
+/home/fv/Desktop/RanJamp/Menu/menu_pausa.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_pausa.h
+/home/fv/Desktop/RanJamp/Menu/menu_pausa.h
 SFML/Graphics.hpp
 -
 iostream
 -
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
 menu_controles.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_controles.h
+/home/fv/Desktop/RanJamp/Menu/menu_controles.h
 menu_vol.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+/home/fv/Desktop/RanJamp/Menu/menu_vol.h
 menu_inicial.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_inicial.h
+/home/fv/Desktop/RanJamp/Menu/menu_inicial.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.cpp
+/home/fv/Desktop/RanJamp/Menu/menu_vol.cpp
 menu_vol.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+/home/fv/Desktop/RanJamp/Menu/menu_vol.h
 
-/home/andres/Escritorio/FV JUNTO/Menu/menu_vol.h
+/home/fv/Desktop/RanJamp/Menu/menu_vol.h
 SFML/Graphics.hpp
 -
 iostream
 -
 menu.h
-/home/andres/Escritorio/FV JUNTO/Menu/menu.h
+/home/fv/Desktop/RanJamp/Menu/menu.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.cpp
+/home/fv/Desktop/RanJamp/Motor/Motor.cpp
 Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 SFML/Graphics.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Motor/Timer.cpp
+/home/fv/Desktop/RanJamp/Motor/Timer.cpp
 Timer.h
-/home/andres/Escritorio/FV JUNTO/Motor/Timer.h
+/home/fv/Desktop/RanJamp/Motor/Timer.h
 
-/home/andres/Escritorio/FV JUNTO/Motor/Timer.h
+/home/fv/Desktop/RanJamp/Motor/Timer.h
 SFML/Graphics.hpp
 -
 
-/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.cpp
+/home/fv/Desktop/RanJamp/Mundo/Mundo.cpp
 Mundo.h
-/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+/home/fv/Desktop/RanJamp/Mundo/Mundo.h
 
-/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+/home/fv/Desktop/RanJamp/Mundo/Mundo.h
 SFML/Graphics.hpp
 -
 iostream
@@ -446,27 +478,27 @@ iostream
 SFML/System.hpp
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+/home/fv/Desktop/RanJamp/Mundo/tinyxml.h
 ../Textura/Textura.h
-/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+/home/fv/Desktop/RanJamp/Textura/Textura.h
 ../Bloque/Bloque.h
-/home/andres/Escritorio/FV JUNTO/Bloque/Bloque.h
+/home/fv/Desktop/RanJamp/Bloque/Bloque.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.cpp
+/home/fv/Desktop/RanJamp/Mundo/tinystr.cpp
 tinystr.h
-/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+/home/fv/Desktop/RanJamp/Mundo/tinystr.h
 
-/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+/home/fv/Desktop/RanJamp/Mundo/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.cpp
+/home/fv/Desktop/RanJamp/Mundo/tinyxml.cpp
 ctype.h
 -
 sstream
@@ -474,9 +506,9 @@ sstream
 iostream
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+/home/fv/Desktop/RanJamp/Mundo/tinyxml.h
 
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+/home/fv/Desktop/RanJamp/Mundo/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -494,87 +526,87 @@ iostream
 sstream
 -
 tinystr.h
-/home/andres/Escritorio/FV JUNTO/Mundo/tinystr.h
+/home/fv/Desktop/RanJamp/Mundo/tinystr.h
 
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlerror.cpp
+/home/fv/Desktop/RanJamp/Mundo/tinyxmlerror.cpp
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+/home/fv/Desktop/RanJamp/Mundo/tinyxml.h
 
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxmlparser.cpp
+/home/fv/Desktop/RanJamp/Mundo/tinyxmlparser.cpp
 ctype.h
 -
 stddef.h
 -
 tinyxml.h
-/home/andres/Escritorio/FV JUNTO/Mundo/tinyxml.h
+/home/fv/Desktop/RanJamp/Mundo/tinyxml.h
 windows.h
 -
 
-/home/andres/Escritorio/FV JUNTO/Musica/musica.cpp
+/home/fv/Desktop/RanJamp/Musica/musica.cpp
 musica.h
-/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+/home/fv/Desktop/RanJamp/Musica/musica.h
 
-/home/andres/Escritorio/FV JUNTO/Musica/musica.h
+/home/fv/Desktop/RanJamp/Musica/musica.h
 SFML/Audio.hpp
 -
 iostream
 -
 
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.cpp
+/home/fv/Desktop/RanJamp/Objeto/Objeto.cpp
 Objeto.h
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 iostream
 -
 Objeto.h
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 
-/home/andres/Escritorio/FV JUNTO/Objeto/Objeto.h
+/home/fv/Desktop/RanJamp/Objeto/Objeto.h
 SFML/Graphics.hpp
 -
 ../Player/Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 ../Enumerador/typeBody.h
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 
-/home/andres/Escritorio/FV JUNTO/Player/Player.cpp
+/home/fv/Desktop/RanJamp/Player/Player.cpp
 Player.h
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 
-/home/andres/Escritorio/FV JUNTO/Player/Player.h
+/home/fv/Desktop/RanJamp/Player/Player.h
 SFML/Graphics.hpp
 -
 ../Animacion/Animacion.h
-/home/andres/Escritorio/FV JUNTO/Animacion/Animacion.h
+/home/fv/Desktop/RanJamp/Animacion/Animacion.h
 ../Mundo/Mundo.h
-/home/andres/Escritorio/FV JUNTO/Mundo/Mundo.h
+/home/fv/Desktop/RanJamp/Mundo/Mundo.h
 ../Enumerador/typeBody.h
-/home/andres/Escritorio/FV JUNTO/Enumerador/typeBody.h
+/home/fv/Desktop/RanJamp/Enumerador/typeBody.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 ../Rectangulo/Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 ../Hud/hud.h
-/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.cpp
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.cpp
 Rectangulo.h
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 
-/home/andres/Escritorio/FV JUNTO/Rectangulo/Rectangulo.h
+/home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
 SFML/Graphics.hpp
 -
 
-/home/andres/Escritorio/FV JUNTO/Texto/texto.cpp
+/home/fv/Desktop/RanJamp/Texto/texto.cpp
 texto.h
-/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+/home/fv/Desktop/RanJamp/Texto/texto.h
 
-/home/andres/Escritorio/FV JUNTO/Texto/texto.h
+/home/fv/Desktop/RanJamp/Texto/texto.h
 SFML/System.hpp
 -
 SFML/Graphics.hpp
@@ -582,13 +614,13 @@ SFML/Graphics.hpp
 iostream
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Textura/Textura.cpp
+/home/fv/Desktop/RanJamp/Textura/Textura.cpp
 Textura.h
-/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+/home/fv/Desktop/RanJamp/Textura/Textura.h
 
-/home/andres/Escritorio/FV JUNTO/Textura/Textura.h
+/home/fv/Desktop/RanJamp/Textura/Textura.h
 SFML/Graphics.hpp
 -
 iostream
@@ -596,25 +628,25 @@ iostream
 SFML/System.hpp
 -
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 
-/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.cpp
+/home/fv/Desktop/RanJamp/Tienda/Tienda.cpp
 Tienda.h
-/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
+/home/fv/Desktop/RanJamp/Tienda/Tienda.h
 
-/home/andres/Escritorio/FV JUNTO/Tienda/Tienda.h
+/home/fv/Desktop/RanJamp/Tienda/Tienda.h
 SFML/Graphics.hpp
 -
 iostream
 -
 ../Hud/hud.h
-/home/andres/Escritorio/FV JUNTO/Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 ../Juego/Manejador.h
-/home/andres/Escritorio/FV JUNTO/Juego/Manejador.h
+/home/fv/Desktop/RanJamp/Juego/Manejador.h
 ../Juego/Juego.h
-/home/andres/Escritorio/FV JUNTO/Juego/Juego.h
+/home/fv/Desktop/RanJamp/Juego/Juego.h
 ../Motor/Motor.h
-/home/andres/Escritorio/FV JUNTO/Motor/Motor.h
+/home/fv/Desktop/RanJamp/Motor/Motor.h
 ../Cuerpo/Cuerpo.h
-/home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+/home/fv/Desktop/RanJamp/Cuerpo/Cuerpo.h
 

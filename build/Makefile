@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/andres/Escritorio/FV JUNTO"
+CMAKE_SOURCE_DIR = /home/fv/Desktop/RanJamp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/andres/Escritorio/FV JUNTO/build"
+CMAKE_BINARY_DIR = /home/fv/Desktop/RanJamp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fv/Desktop/RanJamp/build/CMakeFiles /home/fv/Desktop/RanJamp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fv/Desktop/RanJamp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -540,6 +540,33 @@ Juego/Transicion.s: Juego/Transicion.cpp.s
 Juego/Transicion.cpp.s:
 	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Juego/Transicion.cpp.s
 .PHONY : Juego/Transicion.cpp.s
+
+Menu/Tutorial.o: Menu/Tutorial.cpp.o
+
+.PHONY : Menu/Tutorial.o
+
+# target to build an object file
+Menu/Tutorial.cpp.o:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/Tutorial.cpp.o
+.PHONY : Menu/Tutorial.cpp.o
+
+Menu/Tutorial.i: Menu/Tutorial.cpp.i
+
+.PHONY : Menu/Tutorial.i
+
+# target to preprocess a source file
+Menu/Tutorial.cpp.i:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/Tutorial.cpp.i
+.PHONY : Menu/Tutorial.cpp.i
+
+Menu/Tutorial.s: Menu/Tutorial.cpp.s
+
+.PHONY : Menu/Tutorial.s
+
+# target to generate assembly for a file
+Menu/Tutorial.cpp.s:
+	$(MAKE) -f CMakeFiles/libClases.dir/build.make CMakeFiles/libClases.dir/Menu/Tutorial.cpp.s
+.PHONY : Menu/Tutorial.cpp.s
 
 Menu/menu.o: Menu/menu.cpp.o
 
@@ -1190,6 +1217,9 @@ help:
 	@echo "... Juego/Transicion.o"
 	@echo "... Juego/Transicion.i"
 	@echo "... Juego/Transicion.s"
+	@echo "... Menu/Tutorial.o"
+	@echo "... Menu/Tutorial.i"
+	@echo "... Menu/Tutorial.s"
 	@echo "... Menu/menu.o"
 	@echo "... Menu/menu.i"
 	@echo "... Menu/menu.s"
