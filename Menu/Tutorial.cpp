@@ -183,6 +183,7 @@ void Tutorial::update(float deltaTime){
                     mundo->EliminarMonedasLLaves(mundo->getMonedasLlaves()[j]);
                     break;
                 default:
+                    
                 break;
             } 
 

@@ -21018,7 +21018,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="Capa de Colisiones" visible="0">
+ <objectgroup name="Capa de Colisiones">
   <object id="1" x="0" y="4416" width="1600" height="64"/>
   <object id="3" x="0" y="0" width="64" height="4448"/>
   <object id="6" x="0" y="0" width="1600" height="64"/>
@@ -21050,7 +21050,7 @@
   <object id="96" x="1025.5" y="1570.25" width="529.5" height="61.25"/>
   <object id="97" x="62" y="1569.5" width="800.25" height="62"/>
  </objectgroup>
- <objectgroup name="Capa de Enemigos" visible="0">
+ <objectgroup name="Capa de Enemigos">
   <object id="25" type="2" x="1398" y="948.667" width="90" height="75">
    <ellipse/>
   </object>
@@ -21103,22 +21103,22 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Player" visible="0">
-  <object id="35" x="704" y="4160" width="128" height="160"/>
+ <objectgroup name="Capa de Player">
+  <object id="35" x="779" y="3983.34" width="71" height="86.6667"/>
  </objectgroup>
- <objectgroup name="Capa de PowerUps" visible="0">
+ <objectgroup name="Capa de PowerUps">
   <object id="100" type="3" x="1218.67" y="4094.67" width="28" height="30"/>
  </objectgroup>
- <objectgroup name="Capa de Puerta" visible="0">
+ <objectgroup name="Capa de Puerta">
   <object id="36" x="608" y="512" width="125" height="125">
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Bordes" visible="0">
+ <objectgroup name="Capa de Bordes">
   <object id="58" x="0" y="0" width="32" height="4480"/>
   <object id="59" x="1568" y="0" width="32" height="4480"/>
  </objectgroup>
- <objectgroup name="Capa de Obstaculos" visible="0">
+ <objectgroup name="Capa de Obstaculos">
   <object id="39" type="2" x="64" y="4356" width="1472" height="60"/>
   <object id="41" type="1" x="64" y="832" width="64" height="160"/>
   <object id="42" type="1" x="1472" y="864" width="64" height="160"/>
@@ -21127,59 +21127,59 @@
   <object id="47" type="1" x="64" y="1633.5" width="64" height="350.5"/>
   <object id="48" type="1" x="1472" y="1632" width="64" height="352"/>
  </objectgroup>
- <objectgroup name="Capa de Monedas-Llaves" visible="0">
-  <object id="49" x="704" y="960" width="100" height="100">
+ <objectgroup name="Capa de Monedas-Llaves">
+  <object id="49" type="0" x="704" y="960" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="50" x="736" y="1440" width="100" height="100">
+  <object id="50" type="0" x="736" y="1440" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="51" x="704" y="1920" width="100" height="100">
+  <object id="51" type="0" x="704" y="1920" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="52" x="1312" y="1888" width="100" height="100">
+  <object id="52" type="0" x="1312" y="1888" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="53" x="1300" y="1469.33" width="100" height="100">
+  <object id="53" type="0" x="1300" y="1469.33" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="54" x="1312" y="928" width="100" height="100">
+  <object id="54" type="0" x="1312" y="928" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="55" x="224" y="896" width="100" height="100">
+  <object id="55" type="0" x="224" y="896" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="56" x="190" y="1467.33" width="100" height="100">
+  <object id="56" type="0" x="190" y="1467.33" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="57" x="160" y="1888" width="100" height="100">
+  <object id="57" type="0" x="160" y="1888" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="73" x="512" y="1216" width="100" height="100">
+  <object id="73" type="0" x="512" y="1216" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="74" x="1024" y="800" width="100" height="100">
+  <object id="74" type="0" x="1024" y="800" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="75" x="896" y="1696" width="100" height="100">
+  <object id="75" type="0" x="896" y="1696" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="77" x="1310" y="2648.67" width="100" height="100">
+  <object id="77" type="0" x="1310" y="2648.67" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="78" x="128" y="3136" width="100" height="100">
+  <object id="78" type="0" x="128" y="3136" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="79" x="1344" y="3136" width="100" height="100">
+  <object id="79" type="0" x="1344" y="3136" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="80" x="1310" y="3578" width="100" height="100">
+  <object id="80" type="0" x="1310" y="3578" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="81" x="158" y="3578" width="100" height="100">
+  <object id="81" type="0" x="158" y="3578" width="100" height="100">
    <ellipse/>
   </object>
-  <object id="82" x="256" y="4026" width="100" height="100">
+  <object id="82" type="0" x="256" y="4026" width="100" height="100">
    <ellipse/>
   </object>
  </objectgroup>

@@ -8,10 +8,6 @@ Player::~Player(){
       delete body;
       body = nullptr;
     }
-    if(hitbox != nullptr){
-      delete hitbox;
-      hitbox = nullptr;
-    }
 
     if(coliAbajo != NULL){
       delete coliAbajo;
@@ -37,7 +33,6 @@ Player::Player(int x, int y){
   /*Cuerpo(float x_entrada, float y_entrada, int sizeHeight, int sizeWidth, 
             std::string fichero, float escala, typeBody tipoCuerpo){*/
 
-    hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=40; 
@@ -128,8 +123,9 @@ void Player::update(float deltaTime , Mundo * mundo){
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
         if(auxSaltos==true && saltos > 0){
             saltar();
-           
+
             juego->reproducirMusica(4);
+            juego->setVolumen(4, 100);
             body->setSpriteAnimacion(1);
             body->setTimeAnimacion(0.2);
 
@@ -151,8 +147,7 @@ void Player::update(float deltaTime , Mundo * mundo){
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
-          //cout<<body->getTimeAnimacion()<<" / CAIDA: "<<jumpSpeed<< " / DISPARO: "<<cooldownDisparo<<endl;
-          if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+         if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
             body->setSpriteAnimacion(0);
           }
           if(body->getTimeAnimacion()<=0){
@@ -173,19 +168,21 @@ void Player::update(float deltaTime , Mundo * mundo){
 
           facing = false;
       }
-      else if(jumpSpeed >= 0.0 && body->getTimeAnimacion() != 0.0 && cooldownDisparo <= 0.0){
+      else if(jumpSpeed >= 0.0 && body->getTimeAnimacion() != 0.0 && cooldownDisparo <= 0.0 
+        && atacando_melee <= -5){
         body->setSpriteAnimacion(0);
         body->setTimeAnimacion(0);
       }
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl)){ //lo mismo que lo anterior WIP fachada
-        if(atacando_melee < -5){
+        if(atacando_melee <= -5){
+          body->setSpriteAnimacion(2);
+          body->setTimeAnimacion(0.2);
           juego->reproducirMusica(5);
           atacando_melee=0.1;
         }
       }
     }
-    //cout<<atacando_melee<<endl;
 
   
     if(caida){
@@ -279,7 +276,6 @@ void Player::saltar(){
 
         auxSaltos= false;
         jumpSpeed = -sqrtf(6.0f * 981.0f * jumpHeight);
-        std::cout << "El jumpspeed es: " <<jumpSpeed <<"\n";
         
         saltos--;
   }
@@ -355,7 +351,6 @@ void Player::toggleGodMode(){
     godMode=false;
   } else{
     godMode=true;
-    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
   }
 }
 
@@ -384,11 +379,7 @@ void Player::reset(){
 
 void Player::setSize(float sizeX, float sizeY) {
   body->setSize(sizeX, sizeY);
-  /*
-    if(!text->loadFromFile("resources/Imagenes/mago.png")) cout << "sadasds"; //hacer un handle del error mejor
-    
-    body.setTexture(text); //wip fachada
-    body.setTextureRect(sf::IntRect(0 , 0 , 128, 256)); //wip fachada*/
+  
 }
 
 bool Player::GolpeMelee(float deltaTime){

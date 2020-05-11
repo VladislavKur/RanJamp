@@ -16,6 +16,7 @@ class Textura{
         Textura(string entrada);
         ~Textura();
         Texture * getTexture();
+        void setTexture(string entrada);
     protected:
         
     private:

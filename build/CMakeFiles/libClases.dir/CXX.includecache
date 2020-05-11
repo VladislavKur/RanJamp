@@ -119,6 +119,8 @@ enemigo.h
 /home/fv/Desktop/RanJamp/Bullet/bullet.h
 ../Rectangulo/Rectangulo.h
 /home/fv/Desktop/RanJamp/Rectangulo/Rectangulo.h
+../Hud/hud.h
+/home/fv/Desktop/RanJamp/Hud/hud.h
 
 /home/fv/Desktop/RanJamp/Enemigos/centinela.cpp
 centinela.h

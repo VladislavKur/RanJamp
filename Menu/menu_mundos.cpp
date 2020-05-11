@@ -28,10 +28,10 @@ void menu_mundos::update(float deltaTime){
     Juego* juego = Juego::instance();
     menu_nivel* nivel = menu_nivel::instance();
     menu_inicial* inicio = menu_inicial::instance();
-    cambiarTexto(0, "Mundo 1", juego->view.getCenter().x-juego->view.getSize().x/3-100, juego->view.getCenter().y-juego->view.getSize().y/4);
-    cambiarTexto(1, "Mundo 2", juego->view.getCenter().x-50, juego->view.getCenter().y-juego->view.getSize().y/4);
-    cambiarTexto(2, "Mundo 3", juego->view.getCenter().x+juego->view.getSize().x/3, juego->view.getCenter().y-juego->view.getSize().y/4);
-    cambiarTexto(3, "Mundo 4", juego->view.getCenter().x-juego->view.getSize().x/5-50, juego->view.getCenter().y);
+    cambiarTexto(0, "EL BOSQUE", juego->view.getCenter().x-juego->view.getSize().x/3-100, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(1, "LA ANTARTIDA", juego->view.getCenter().x-50, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(2, "EL INFIERNO", juego->view.getCenter().x+juego->view.getSize().x/3, juego->view.getCenter().y-juego->view.getSize().y/4);
+    cambiarTexto(3, "APOCALIPSIS", juego->view.getCenter().x-juego->view.getSize().x/5-50, juego->view.getCenter().y);
     cambiarTexto(4, "Jefe Final", juego->view.getCenter().x+juego->view.getSize().x/5-50, juego->view.getCenter().y);
     cambiarTexto(5, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
 

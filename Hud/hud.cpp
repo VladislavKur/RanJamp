@@ -120,7 +120,6 @@ bool hud::restarVidas(){
   bool devolver = false;
   if(godMode == false){
       vidas--;
-      juego->iniciarPantallaRoja();
   }
 
   if(vidas == 0 && godMode == false){
@@ -134,7 +133,6 @@ void hud::setGodMode(){
     godMode=false;
   } else{
     godMode=true;
-    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
   }
 }
 
