@@ -35,9 +35,7 @@ Cuerpo::Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
 
     motor->setScale(body, escala, escala);
     animacion=NULL;
-    rectangulo=NULL;
 
-    rectangulo = NULL;
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight){
@@ -56,9 +54,9 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->posicionar(body, x_entrada, y_entrada);
 
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
-    rectangulo = NULL;
+
     animacion=NULL;
-    rectangulo=NULL;
+
 }
 
 Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight, int type){
@@ -79,7 +77,7 @@ Cuerpo::Cuerpo(float x_entrada , float y_entrada, int sizeWidth , int sizeHeight
     motor->setTamanyoCuerpo(body, sf::Vector2f(sizeWidth, sizeHeight));
 
     animacion=NULL;
-    rectangulo = NULL;
+
     class_tipo = type;
 }
 
@@ -120,7 +118,7 @@ Cuerpo:: Cuerpo(float x_entrada, float y_entrada, int sizeWidth, int sizeHeight,
     motor->setScale(body, escala, escala);
     
     animacion=NULL;
-    rectangulo = NULL;
+
     class_tipo = type;
 }
 
@@ -291,10 +289,6 @@ Cuerpo::~Cuerpo(){
     if(class_textura != NULL){
         delete class_textura; 
         class_textura = NULL;
-    }
-    if(rectangulo != NULL){
-        delete rectangulo;
-        rectangulo = NULL;
     }
 }
 
