@@ -18,7 +18,7 @@ class Cuerpo{
         Animacion* animacion;
         sf::Shape* body;
         Motor* motor;
-        Rectangulo* rectangulo;
+
         sf::Texture* class_textura;
         //basicas
         bool class_move;

@@ -32,7 +32,8 @@ void Murcielago::update(Player* player, float delta){//WIP fachada
 
         switch(modo){
             case(0): //está quieto
-                if(local_diffabsX < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
+                if(local_diffabsX < distanciaAtaque 
+                    && local_diffabsY < distanciaAtaque){//si está lo suficientemente cerca, cambiamos
                     modo = 1;
                     cambio = true;
                 }
