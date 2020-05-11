@@ -48,6 +48,11 @@ Juego::Juego(){
   s.push_back("SALTA");
   std::vector<Vector2f> pos;
   pos.push_back(Vector2f(10 , 1500));
+
+  portal = new Cuerpo(mundo->getPuerta()->getPosicion()[0]+128/3, mundo->getPuerta()->getPosicion()[1]+128/3, 128, 128, "portal.png",1 , RECTANGLE );
+  portal->setSize(5*32,5*32);
+  portal->Origen(portal->getSize()[0]/2,portal->getSize()[1]/2);
+  portal->addAnimacion(0.1);
 }
 Juego::~Juego(){
       if(jugador != nullptr){
@@ -166,6 +171,9 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
     colisionBulletEnemigo();
     colisionBulletJugador();
     colisionMeleeEnemigo();
+    portal->posicionamiento(mundo->getPuerta()->getPosicion()[0]+128/3, mundo->getPuerta()->getPosicion()[1]+128/3);
+    portal->rotar(50*deltaTime);
+    
    // std::cout << deltaTime << std::endl;
     jugador->update(deltaTime , mundo); //revisar
     if(Keyboard::isKeyPressed(Keyboard::Num1)){
@@ -434,7 +442,7 @@ void Juego::colisionMeleeEnemigo(){
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
     Motor* motor  = Motor::instance();
-   
+
 
     hud * Hud = hud::instance();
     mundo->render();
@@ -482,7 +490,8 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     for(unsigned i = 0; i < maxBullets;i++){ 
       if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
-
+    portal->render();
+    
    
 }
 
