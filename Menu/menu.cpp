@@ -92,7 +92,7 @@ void menu::cambiarTexto(int i , String s, float posx , float posy){
 
 void menu::resetSelectedItem(){
     for(int i = 0; i < numOpciones; i++)
-    texto[selectedItem].setColor(Color::White);
+    texto[i].setColor(Color::White);
     selectedItem = 0;
     texto[selectedItem].setColor(Color::Red);
 }

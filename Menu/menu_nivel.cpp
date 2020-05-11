@@ -44,14 +44,14 @@ void menu_nivel::update(float deltaTime){
         moveDown();
         cooldown_mov = 0.25;
     }
-    /* if( sf::Keyboard::isKeyPressed( sf::Keyboard::Down ) && cooldown_mov<0){
-        moveDown();
+    if( sf::Keyboard::isKeyPressed( sf::Keyboard::Down ) && cooldown_mov<0 && selectedItem == 0){
+        moveDown();moveDown();moveDown();
         cooldown_mov = 0.25;
     }
-   if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0){
-        moveUp();
+   if( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && cooldown_mov<0 && selectedItem == 3 ){
+        moveUp();moveUp();moveUp();
         cooldown_mov = 0.25;
-    }*/
+    }
     if( sf::Keyboard::isKeyPressed( sf::Keyboard::Return )&& cooldown_mov<0 ){
         cooldown_mov = 0.5;
         switch(selectedItem){
@@ -64,7 +64,6 @@ void menu_nivel::update(float deltaTime){
             break;
             case 1:
                 nivel += "2.tmx"; 
-                cout<< nivel<< endl;
                 juego->nivelSeleccionado(nivel);
                 man->cambiarEstado(juego);
                 resetSelectedItem();
@@ -82,7 +81,7 @@ void menu_nivel::update(float deltaTime){
                 man->cambiarEstado(juego);
                 resetSelectedItem();
             break;
-            case 5:
+            case 4:
                 man->back();
                 resetSelectedItem();
             break;

@@ -720,7 +720,7 @@ void Juego::colisionBulletEnemigo(){//WIP fachada
       if(bulletPlayer[i]==NULL) continue;
       if(enemies[j]==NULL)      continue;
 
-      if(enemies[j]->getCuerpo()->getGlobalBounds()->getIntersect( *bulletPlayer[i]->getHitbox() )){
+      if(enemies[j]->getCuerpo()->getGlobalBounds()->getIntersect( *bulletPlayer[i]->getBody()->getGlobalBounds() )){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
         
