@@ -1,5 +1,6 @@
 #include "menu_vol.h"
 
+
 menu_vol* menu_vol::p_instance = 0;
 sf::Font* menu_vol::fuente = new Font();
 
@@ -32,6 +33,7 @@ void menu_vol::update(float deltaTime){
     cooldown_mov-=deltaTime;
     Manejador* man = Manejador::instancia();
     Juego* juego = Juego::instance();
+    //musica  musicas;
 
     cambiarAux(0, "SONIDO:", juego->view.getCenter().x-100, juego->view.getCenter().y-100);
     cambiarTexto(0, "-", juego->view.getCenter().x-100, juego->view.getCenter().y);
@@ -68,9 +70,32 @@ void menu_vol::update(float deltaTime){
             case 2:
                 if(pausa == false){
                     juego->pausarMusica(0);
+                    juego->pausarMusica(1);
+                    juego->pausarMusica(2);
+                    juego->pausarMusica(3);
+                    juego->pausarMusica(4);
+                    juego->pausarMusica(5);
+                    juego->pausarMusica(6);
+
+                    juego->setMute(0,true);
+                    juego->setMute(1,true);
+                    juego->setMute(2,true);
+                    juego->setMute(3,true);
+                    juego->setMute(4,true);
+                    juego->setMute(5,true);
+                    juego->setMute(6,true);
+
                     pausa = true;
                 }else{
+                    juego->setMute(0,false);
+                    juego->setMute(1,false);
+                    juego->setMute(2,false);
+                    juego->setMute(3,false);
+                    juego->setMute(4,false);
+                    juego->setMute(5,false);
+                    juego->setMute(6,false);
                     juego->reproducirMusica(0);
+                    
                     pausa = false;
                 }
             break;

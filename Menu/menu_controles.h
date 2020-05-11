@@ -1,10 +1,10 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
-//ANDRES : ESTE CODIGO ES PRACTICAMENTE IGUAL AL DE MI PENGO ASI QUE SI LO UTILIZAIS CAMBIARLOOO!!!!!!
+
 
 #include "menu.h"
-//#include "menu_inicial.h"
+
 #include "../Juego/Juego.h"
 class menu_controles : public menu {
     public:
@@ -14,6 +14,7 @@ class menu_controles : public menu {
     protected:
         // Imagen con los controles y creo un bloque que contendra la imagen para poder moverla luego sin smfl
         menu_controles(sf::Font fuente, int max);
+        ~menu_controles(); 
     private: 
         static sf::Font* fuente;
         static menu_controles* p_instance;

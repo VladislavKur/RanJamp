@@ -753,6 +753,12 @@ void Juego::cargarMusica(){
   so[0]->reproducirMusica();
 }
 
+void Juego::setMute(int i,bool x){
+  so[i]->setMute(x);
+}
+bool Juego::getMute(int i){
+  so[i]->getMute();
+}
 void Juego::comprobarPasarNivel(){
  if( mundo->getPuerta()->getGlobalBounds()->getIntersect(*jugador->getBody()->getGlobalBounds())){
    nextLevel(-1);
@@ -882,6 +888,7 @@ void Juego::pausarMusica(int i){
 }
 
 void Juego::reproducirMusica(int i){
+  if(!getMute(i))
   so[i]->reproducirMusica();
 }
 

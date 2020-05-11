@@ -10,6 +10,7 @@
 #include "../Bloque/Bloque.h"
 #include "../Cuerpo/Cuerpo.h"
 
+
 using namespace  sf;
 using namespace std;
 
@@ -58,4 +59,5 @@ class menu : public Estado{
         int maxSprites = -1;
         Text * aux;
         int maxAux = -1;
+        
 };

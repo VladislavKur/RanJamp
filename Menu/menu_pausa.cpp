@@ -15,7 +15,7 @@ menu_pausa* menu_pausa::instance(){
 }
 
 menu_pausa::menu_pausa( Font fuente, int max) : menu(fuente, max){
-    Juego* juego = Juego::instance();
+   
     t = new Textura("resources/Imagenes/MenuPausa.png");
     b = new Bloque(t);
     
