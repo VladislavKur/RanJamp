@@ -375,25 +375,27 @@ void Juego::colisionPlayerObstaculos(float deltaTime){
     bool morir = false;
     timerObstaculos -= deltaTime;
     for(int i=0 ; i<  mundo->getNumObstaculos(); i++){
-      if(objetos[i]!= nullptr)
-      if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
-        if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){
-          if(jugador->getModoDios() == false){
-            morir = Hud->restarVidas();
-            if(morir == true){
+      if(jugador!=NULL && objetos!=nullptr && objetos[i]!= nullptr){
+        if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
+          if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){
+            if(jugador->getModoDios() == false){
+              morir = Hud->restarVidas();
+              if(morir == true){
+                matarJugador();
+              }
+            }
+            jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
+            jugador->saltar(); 
+        
+            timerObstaculos = 1;
+          }else if(objetos[i]->getTipo() == 2){
+            if(jugador->getModoDios() == false){
               matarJugador();
             }
           }
-          jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
-          jugador->saltar(); 
-       
-          timerObstaculos = 1;
-        }else if(objetos[i]->getTipo() == 2){
-          if(jugador->getModoDios() == false){
-            matarJugador();
-          }
-        }
-      } 
+        } 
+      }
+      
     }
 }
 

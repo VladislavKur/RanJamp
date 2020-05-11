@@ -9,9 +9,9 @@ class Final : public Estado
 private:
     Final();
     static Final* p_instancia;
-    int graduaColor;
-    bool dandoVueltas;
-    bool modRadio;
+    int graduaColor; //para el flash que pone la pantalla blanca
+    bool dandoVueltas; //si estamos en el estado de dando vueltas o ya se ha terminado
+    bool modRadio; 
     float angulos[numEstrellas];
     float radio;
     Cuerpo *estrellas[numEstrellas];

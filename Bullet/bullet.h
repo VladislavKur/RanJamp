@@ -13,7 +13,9 @@ class Bullet
 private:
     Cuerpo * body;
     Rectangulo* hitbox;
-    bool facing;
+
+    bool facing; //false=izquierda, true=derecha.
+
     float velocidad;
     int dir;
 public:
@@ -22,12 +24,14 @@ public:
 
     float lifetime; //Contador que destruye la bala cuando llega a 0
     void update(float deltaTime);
-    void updateHitbox();
+    
     void render(float );
-
+    //recoloca el rectangulo de colision de la bala
+    void updateHitbox();
+    //GET
     Rectangulo* getHitbox(){return hitbox;}
     Cuerpo* getBody(){return body;};
-
+    //SET
     void setVelocidad(float p_velocidad){velocidad=p_velocidad;}
 
 };
