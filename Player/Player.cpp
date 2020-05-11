@@ -130,7 +130,7 @@ void Player::update(float deltaTime , Mundo * mundo){
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ //esto no va asi
           moveRight(deltaTime , mundo);
-          cout<<body->getTimeAnimacion()<<" / CAIDA: "<<jumpSpeed<< " / DISPARO: "<<cooldownDisparo<<endl;
+          //cout<<body->getTimeAnimacion()<<" / CAIDA: "<<jumpSpeed<< " / DISPARO: "<<cooldownDisparo<<endl;
           if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
             body->setSpriteAnimacion(0);
           }
