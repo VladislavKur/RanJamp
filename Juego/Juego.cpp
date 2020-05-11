@@ -558,6 +558,7 @@ void Juego::matarEnemigo(Enemigo* enem){
 
 void Juego::matarJugador(){ //está nice
   hud * Hud = hud::instance();
+  nivelactual = niveles[nivel].c_str();
   nivel = 0;
   delete mundo;
   mundo = new Mundo();
