@@ -1,6 +1,7 @@
 #include "Juego.h"
 #include "Manejador.h"
 #include "Transicion.h"
+#include "Final.h"
 #include "../Menu/menu_inicial.h"
 
 #include "../Menu/menu_pausa.h"
@@ -221,6 +222,7 @@ void Juego::update(float deltaTime){ //wip // UPDATE FUNCIONANDO
                     destruirObjetos(objetos[j]);
                     break;
                 case 4: 
+                    Hud->setSlow(true);
                     destruirObjetos(objetos[j]);
                     break;
             default:
@@ -467,9 +469,6 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
       mundo->getMonedasLlaves()[j]->render(porcentaje);
       j++;
     }
-
-    mundo->render2();
-    Hud->render();
     for(unsigned i = 0; i < maxBullets;i++){
       if(bulletEnemies[i] != nullptr){bulletEnemies[i]->render(porcentaje);} //interpolacion centinelas
     }
@@ -481,9 +480,18 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     for(unsigned i = 0; i < maxBullets;i++){ 
       if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
+<<<<<<< HEAD
     portal->render();
     
    
+=======
+    mundo->render2();
+    Hud->render();
+   
+
+    portal->render();
+    
+>>>>>>> 6628cc39bc1e98fb15a027677849a2d1970e62a9
 }
 
 
@@ -646,12 +654,23 @@ void Juego::colisionBulletMundo(){//WIP fachada
 
   for(unsigned int i=0 ; i<maxBullets ; i++){
     for(int j=0 ; j<mundo->getNumObjetos(); j++){
-      if(bulletPlayer[i]==NULL) continue;
       if(objetos[j]==NULL) continue;
 
-      if(objetos[j]->getGlobalBounds()->getIntersect(*bulletPlayer[i]->getBody()->getGlobalBounds())){
+      if(bulletPlayer[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletPlayer[i]->getBody()->getGlobalBounds())){
         delete bulletPlayer[i];
         bulletPlayer[i]=NULL;
+      }
+      if(bulletEnemies[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletEnemies[i]->getBody()->getGlobalBounds())){
+        delete bulletEnemies[i];
+        bulletEnemies[i]=NULL;
+      }
+      if(bulletBoss[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletBoss[i]->getBody()->getGlobalBounds())){
+        delete bulletBoss[i];
+        bulletBoss[i]=NULL;
+      }
+      if(bulletNube[i]!=NULL && objetos[j]->getGlobalBounds()->getIntersect(*bulletNube[i]->getBody()->getGlobalBounds())){
+        delete bulletNube[i];
+        bulletNube[i]=NULL;
       }
     }
   }
@@ -758,50 +777,60 @@ void Juego::comprobarPasarNivel(){
 void Juego::nextLevel(int n){
     Manejador* man = Manejador::instancia();
     Transicion* trans = Transicion::instancia();
+    Final* final = Final::instancia();
+
     if(n == -1){nivel++;} else nivel = n;
-    delete mundo;
-    hud * Hud = hud::instance();
-    mundo = new Mundo();
-    mundo->cargarmapa(niveles[nivel].c_str());
-    mundo->crearSprites();
-    mundo->cargarObjectGroups();
-    mundo->crearObjetos();
-    mundo->cargarPosicionPlayer_Puerta(4);//Puerta
-    mundo->crearObstaculos();
-    mundo->crearMonedasLlaves();
-    vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
-    jugador->getBody()->posicionamiento(posP[0], posP[1]);
-    if(nivel % 4 == 0){
-        Hud->setDobleSalto(false);
-        Hud->setVelocidad(false);
-        Hud->setIVelocidad(250);
-        Hud->setSlow(false);
-    }
-    Hud->reiniciarTiempo();
-    crearObjetos();
-    crearEnemigos();
-    view.setSize(1024,720);
+
+    if(nivel < maxniveles){
+      delete mundo;
+      hud * Hud = hud::instance();
+      mundo = new Mundo();
+      mundo->cargarmapa(niveles[nivel].c_str());
+      mundo->crearSprites();
+      mundo->cargarObjectGroups();
+      mundo->crearObjetos();
+      mundo->cargarPosicionPlayer_Puerta(4);//Puerta
+      mundo->crearObstaculos();
+      mundo->crearMonedasLlaves();
+      vector<float> posP = mundo->cargarPosicionPlayer_Puerta(2);//Player
+      jugador->getBody()->posicionamiento(posP[0], posP[1]);
+      if(nivel % 4 == 0){
+          Hud->setDobleSalto(false);
+          Hud->setVelocidad(false);
+          Hud->setIVelocidad(250);
+          Hud->setSlow(false);
+      }
+      Hud->reiniciarTiempo();
+      crearObjetos();
+      crearEnemigos();
+      view.setSize(1024,720);
+        
+      for(int i = 0 ; i < maxBullets ; i++){
+          bulletPlayer[i]=NULL;
+      }
+
+      for(int i = 0; i < maxBullets;i++){
+          bulletEnemies[i] = NULL;
+      }
+
+      for(int i = 0; i < maxBullets;i++){
+          bulletNube[i] = NULL;
+      }
+
       
-    for(int i = 0 ; i < maxBullets ; i++){
-        bulletPlayer[i]=NULL;
-    }
+      for(int i = 0; i < maxBullets;i++){
+          bulletBoss[i] = NULL;
+      }
 
-    for(int i = 0; i < maxBullets;i++){
-        bulletEnemies[i] = NULL;
+      trans->reset();
+      man->cambiarEstado(trans);
     }
-
-    for(int i = 0; i < maxBullets;i++){
-        bulletNube[i] = NULL;
+    else{
+      final->reset();
+      man->cambiarEstado(final);
     }
-
     
-    for(int i = 0; i < maxBullets;i++){
-        bulletBoss[i] = NULL;
-    }
 
-    //cout<<Hud->getTiempo()<<endl;
-    man->cambiarEstado(trans);
-    trans->reset();
     jugador->caer();
 }
 

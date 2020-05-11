@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="50" tilewidth="32" tileheight="32" nextobjectid="98">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="140" height="50" tilewidth="32" tileheight="32" nextobjectid="120">
  <tileset firstgid="1" name="Hielo1" tilewidth="32" tileheight="32" tilecount="1750">
   <image source="resources/Imagenes/HieloFinal.png" width="1120" height="1600"/>
  </tileset>
@@ -7560,10 +7560,6 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="1763"/>
-   <tile gid="1764"/>
-   <tile gid="1765"/>
-   <tile gid="1766"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -7700,10 +7696,6 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="1769"/>
-   <tile gid="1770"/>
-   <tile gid="1771"/>
-   <tile gid="1772"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -7840,10 +7832,6 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="1775"/>
-   <tile gid="1776"/>
-   <tile gid="1777"/>
-   <tile gid="1778"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -7980,10 +7968,22 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="1781"/>
-   <tile gid="1782"/>
-   <tile gid="1783"/>
-   <tile gid="1784"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -21065,6 +21065,15 @@
   <object id="94" type="2" x="3978.79" y="184.848" width="54.5455" height="51.5152">
    <ellipse/>
   </object>
+  <object id="98" type="5" x="433.333" y="193.333" width="193.333" height="93.3333">
+   <ellipse/>
+  </object>
+  <object id="99" type="5" x="3953.33" y="466.667" width="226.667" height="146.667">
+   <ellipse/>
+  </object>
+  <object id="100" type="4" x="2300" y="480" width="80" height="80">
+   <ellipse/>
+  </object>
  </objectgroup>
  <objectgroup name="Capa de Player">
   <object id="97" x="72" y="1049.33" width="65.3333" height="76"/>
@@ -21090,5 +21099,63 @@
   <object id="87" type="2" x="1351.67" y="724.205" width="336" height="43.7955"/>
   <object id="88" type="1" x="3233.5" y="1095" width="317.5" height="56.5"/>
  </objectgroup>
- <objectgroup name="Capa de Items"/>
+ <objectgroup name="Capa de Items">
+  <object id="101" type="0" x="613.333" y="473.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="102" type="0" x="733.333" y="473.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="103" type="0" x="1120" y="253.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="104" type="0" x="1293.33" y="260" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="105" type="0" x="1433.33" y="253.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="106" type="0" x="1826.67" y="220" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="107" type="0" x="1993.33" y="213.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="108" type="0" x="2140" y="220" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="109" type="0" x="2293.33" y="213.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="110" type="0" x="2760" y="246.667" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="111" type="0" x="2893.33" y="253.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="112" type="0" x="3046.67" y="240" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="113" type="0" x="3213.33" y="240" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="114" type="0" x="3426.67" y="606.667" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="115" type="0" x="2926.67" y="613.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="116" type="0" x="2286.67" y="580" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="117" type="0" x="1553.33" y="553.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="118" type="0" x="1426.67" y="553.333" width="100" height="100">
+   <ellipse/>
+  </object>
+  <object id="119" type="0" x="1306.67" y="557.667" width="100" height="100">
+   <ellipse/>
+  </object>
+ </objectgroup>
 </map>
