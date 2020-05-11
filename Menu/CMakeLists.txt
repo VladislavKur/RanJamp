@@ -6,6 +6,7 @@ target_sources(libClases PRIVATE
      "${CMAKE_CURRENT_SOURCE_DIR}/menu_pausa.cpp"
      "${CMAKE_CURRENT_SOURCE_DIR}/menu_mundos.cpp"
      "${CMAKE_CURRENT_SOURCE_DIR}/menu_nivel.cpp"
+     "${CMAKE_CURRENT_SOURCE_DIR}/Tutorial.cpp"
 )
 
 #Y donde se encuentran los .h
