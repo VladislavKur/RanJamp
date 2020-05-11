@@ -38,7 +38,7 @@ Player::Player(int x, int y){
     hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=10; 
+    jumpHeight=40; 
 
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
@@ -185,7 +185,7 @@ void Player::update(float deltaTime , Mundo * mundo){
   
     if(caida){
       caidaTiempo += deltaTime;
-      jumpSpeed += 4.91f*40*caidaTiempo;
+      jumpSpeed += 8.91f*100*caidaTiempo;
     }
     body->moverse(0,jumpSpeed*deltaTime);
     body->update(deltaTime);
@@ -358,7 +358,6 @@ void Player::reset(){
   
     saltos = 1;
     jumpSpeed=0;
-    jumpHeight=30;
     
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
