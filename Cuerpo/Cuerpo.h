@@ -61,6 +61,8 @@ class Cuerpo{
         float getOriginY(){return body->getOrigin().y;};
         int getPosicionX(){return animacion->getPosicionX();};
         float getTimeAnimacion(){return animacion->getTimeAnimation();};
+
+        void posicionamientoFijo(float x_entrada,float y_entrada);
 };
 
 #endif
