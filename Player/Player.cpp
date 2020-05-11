@@ -1,5 +1,7 @@
 
 #include "Player.h"
+#include "../Juego/Juego.h"
+
 
 Player::~Player(){
     if(body != nullptr){
@@ -91,6 +93,7 @@ void Player::suelo(float posX, float posY){
 }
 
 void Player::update(float deltaTime , Mundo * mundo){
+    Juego * juego = Juego::instance();
     hud * Hud = hud::instance();
     PU_saltoDoble= Hud->getDoblesalto();
     PU_slowhits= Hud->getSlow();
@@ -125,7 +128,8 @@ void Player::update(float deltaTime , Mundo * mundo){
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)){ //quitar esto de aqui
         if(auxSaltos==true && saltos > 0){
             saltar();
-            
+           
+            juego->reproducirMusica(4);
             body->setSpriteAnimacion(1);
             body->setTimeAnimacion(0.2);
 
@@ -176,6 +180,7 @@ void Player::update(float deltaTime , Mundo * mundo){
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LControl) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RControl)){ //lo mismo que lo anterior WIP fachada
         if(atacando_melee < -5){
+          juego->reproducirMusica(5);
           atacando_melee=0.1;
         }
       }

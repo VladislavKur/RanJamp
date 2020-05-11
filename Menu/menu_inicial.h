@@ -7,6 +7,7 @@
 #include "menu_controles.h"
 #include "menu_vol.h"
 #include "../Tienda/Tienda.h"
+#include "Tutorial.h"
 class menu_inicial : public menu {
     public:
 

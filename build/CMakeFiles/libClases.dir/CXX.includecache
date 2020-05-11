@@ -316,6 +316,36 @@ Cuerpo.h
 ../Texto/texto.h
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Texto/texto.h
 
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/Tutorial.cpp
+Tutorial.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/Tutorial.h
+
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/Tutorial.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Player/Player.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Player/Player.h
+../Enemigos/enemigo.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Enemigos/enemigo.h
+../Enemigos/centinela.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Enemigos/centinela.h
+../Bullet/bullet.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Bullet/bullet.h
+../Mundo/Mundo.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Mundo/Mundo.h
+../Objeto/Objeto.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Objeto/Objeto.h
+../Texto/texto.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Texto/texto.h
+../Hud/hud.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Hud/hud.h
+menu.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/menu.h
+../Rectangulo/Rectangulo.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Rectangulo/Rectangulo.h
+
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/menu.cpp
 menu.h
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/menu.h
@@ -373,6 +403,8 @@ menu_vol.h
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/menu_vol.h
 ../Tienda/Tienda.h
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Tienda/Tienda.h
+Tutorial.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/Tutorial.h
 
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Menu/menu_mundos.cpp
 menu_mundos.h
@@ -571,6 +603,8 @@ SFML/Graphics.hpp
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Player/Player.cpp
 Player.h
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Player/Player.h
+../Juego/Juego.h
+/home/alu/Escritorio/RanjumpV7/Ranjamp/Juego/Juego.h
 
 /home/alu/Escritorio/RanjumpV7/Ranjamp/Player/Player.h
 SFML/Graphics.hpp

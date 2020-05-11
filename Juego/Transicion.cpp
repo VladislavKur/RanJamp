@@ -51,6 +51,9 @@ void Transicion::update(float deltaTime){
     hud* Hud = hud::instance();
     Motor* motor = Motor::instance();
 
+    juego->pausarMusica(0);
+    juego->reproducirMusica(6);
+    juego->ponerBucleMusica(6);
     motor->getVentana()->setView(*vista);
     cambiarTexto(1, to_string(Hud->getPuntos()), 650,100);
 
@@ -67,6 +70,9 @@ void Transicion::update(float deltaTime){
     if(radio>=0){
         radio-=100*deltaTime;
     }else{
+        juego->pausarMusica(6);
+        juego->reproducirMusica(0);
+        juego->ponerBucleMusica(0);
         man->cambiarEstado(juego);
     }
     
