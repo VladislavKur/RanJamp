@@ -52,21 +52,22 @@ void menu_pausa::update(float deltaTime){
         switch(selectedItem){
             case 0:
                man->cambiarEstado(juego);
-              
+               resetSelectedItem();
             break;
 
             case 1:
                 
                 man->cambiarEstado(menucont);
-                
+                resetSelectedItem();
             break;
 
             case 2:
                 man->cambiarEstado(menuVol);
-                 
+                 resetSelectedItem();
             break;
             case 3:
                 man->cambiarEstado(menuIni);
+                resetSelectedItem();
             break;
         }
     }

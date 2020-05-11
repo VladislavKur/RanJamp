@@ -90,7 +90,7 @@ public:
     
     void setSaltos(int);
     void avanzarCooldownDisparo(float deltaTime){cooldownDisparo-=deltaTime;};
-    void setCooldownDisparo(float p_cooldown){cooldownDisparo=p_cooldown;}
+    void setCooldownDisparo(float p_cooldown);
 
     void setVelocidad(float);
     void setArma(int);

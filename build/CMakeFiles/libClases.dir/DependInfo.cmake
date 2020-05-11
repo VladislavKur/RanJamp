@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/andres/Escritorio/FV JUNTO/Enemigos/pajaro.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Enemigos/pajaro.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Hud/hud.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Hud/hud.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Juego/Estado.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Estado.cpp.o"
+  "/home/andres/Escritorio/FV JUNTO/Juego/Final.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Final.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Juego/Juego.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Juego.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Juego/Manejador.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Manejador.cpp.o"
   "/home/andres/Escritorio/FV JUNTO/Juego/Transicion.cpp" "/home/andres/Escritorio/FV JUNTO/build/CMakeFiles/libClases.dir/Juego/Transicion.cpp.o"

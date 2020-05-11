@@ -60,25 +60,31 @@ void menu_nivel::update(float deltaTime){
                 nivel += "1.tmx"; 
                 juego->nivelSeleccionado(nivel);
                 man->cambiarEstado(juego);
+                resetSelectedItem();
             break;
             case 1:
                 nivel += "2.tmx"; 
                 cout<< nivel<< endl;
                 juego->nivelSeleccionado(nivel);
                 man->cambiarEstado(juego);
+                resetSelectedItem();
             break;
             case 2:
                 nivel += "3.tmx"; 
+                
                juego->nivelSeleccionado(nivel);
                 man->cambiarEstado(juego);
+                resetSelectedItem();
             break;
             case 3:
                 nivel += "4.tmx"; 
                 juego->nivelSeleccionado(nivel);
                 man->cambiarEstado(juego);
+                resetSelectedItem();
             break;
             case 5:
                 man->back();
+                resetSelectedItem();
             break;
         }
     }

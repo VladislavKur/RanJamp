@@ -1,4 +1,5 @@
 #include "hud.h"
+#include "../Juego/Juego.h"
 
 hud * hud::p_instancia = 0;// o null
 
@@ -113,9 +114,11 @@ hud::~hud(){
 }
 
 bool hud::restarVidas(){
+  Juego* juego = Juego::instance();
   bool devolver = false;
   if(godMode == false){
       vidas--;
+      juego->iniciarPantallaRoja();
   }
 
   if(vidas == 0 && godMode == false){

@@ -26,6 +26,7 @@ Juego::Juego(){
     view.setSize(1080,720); 
     //view.setCenter(1080/2,720/2);
     view.setCenter(view.getSize().x/2,view.getSize().y/2);
+    transparenciaRoja=1;
     
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
@@ -432,7 +433,8 @@ void Juego::colisionMeleeEnemigo(){
 }
 
 void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de player?)
-
+    Motor* motor  = Motor::instance();
+   
 
     hud * Hud = hud::instance();
     mundo->render();
@@ -480,6 +482,8 @@ void Juego::render(float porcentaje){ //WIP INTERPOLACION (¿y el render de play
     for(unsigned i = 0; i < maxBullets;i++){ 
       if(bulletBoss[i] != nullptr){bulletBoss[i]->render(porcentaje);} //interpolacion boss
     }
+
+   
 }
 
 
@@ -794,6 +798,8 @@ void Juego::nextLevel(int n){
     for(int i = 0; i < maxBullets;i++){
         bulletBoss[i] = NULL;
     }
+
+    //cout<<Hud->getTiempo()<<endl;
     man->cambiarEstado(trans);
     trans->reset();
 }
@@ -833,6 +839,11 @@ void Juego::pausa(){
   menu_pausa* menuPau = menu_pausa::instance();
   if( sf::Keyboard::isKeyPressed( sf::Keyboard::P )){
   man->cambiarEstado(menuPau);
+  menuPau->resetSelectedItem();
   }
     
+}
+
+void Juego::iniciarPantallaRoja(){
+  transparenciaRoja=128;
 }

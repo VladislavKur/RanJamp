@@ -29,9 +29,11 @@ class Animacion{
         ~Animacion();
         void update(float deltaTime);
         void render(float porcentaje);
+        void setTimeAnimacion(float entrada);
         void setSprite(int spriteNumber);
         int getAnimationNumbers(){return posicionesX;};
-        int getPosicionX(){return numeroSpriteX;}
+        int getPosicionX(){return numeroSpriteX;};
+        float getTimeAnimation(){return tiempoDuracionMax;}
 
 };
 
