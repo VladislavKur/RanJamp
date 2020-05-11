@@ -36,6 +36,24 @@ SFML/Graphics.hpp
 iostream
 -
 
+../Tienda/Tienda.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Hud/hud.h
+../Hud/hud.h
+../Juego/Manejador.h
+../Juego/Manejador.h
+../Juego/Juego.h
+../Juego/Juego.h
+../Motor/Motor.h
+../Motor/Motor.h
+../Cuerpo/Cuerpo.h
+../Cuerpo/Cuerpo.h
+../Hud/hud.h
+../Hud/hud.h
+
 /home/vermia/RanJamp/Animacion/Animacion.cpp
 Animacion.h
 /home/vermia/RanJamp/Animacion/Animacion.h
@@ -316,6 +334,36 @@ Cuerpo.h
 ../Texto/texto.h
 /home/vermia/RanJamp/Texto/texto.h
 
+/home/vermia/RanJamp/Menu/Tutorial.cpp
+Tutorial.h
+/home/vermia/RanJamp/Menu/Tutorial.h
+
+/home/vermia/RanJamp/Menu/Tutorial.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Player/Player.h
+/home/vermia/RanJamp/Player/Player.h
+../Enemigos/enemigo.h
+/home/vermia/RanJamp/Enemigos/enemigo.h
+../Enemigos/centinela.h
+/home/vermia/RanJamp/Enemigos/centinela.h
+../Bullet/bullet.h
+/home/vermia/RanJamp/Bullet/bullet.h
+../Mundo/Mundo.h
+/home/vermia/RanJamp/Mundo/Mundo.h
+../Objeto/Objeto.h
+/home/vermia/RanJamp/Objeto/Objeto.h
+../Texto/texto.h
+/home/vermia/RanJamp/Texto/texto.h
+../Hud/hud.h
+/home/vermia/RanJamp/Hud/hud.h
+menu.h
+/home/vermia/RanJamp/Menu/menu.h
+../Rectangulo/Rectangulo.h
+/home/vermia/RanJamp/Rectangulo/Rectangulo.h
+
 /home/vermia/RanJamp/Menu/menu.cpp
 menu.h
 /home/vermia/RanJamp/Menu/menu.h
@@ -372,7 +420,13 @@ menu_controles.h
 menu_vol.h
 /home/vermia/RanJamp/Menu/menu_vol.h
 ../Tienda/Tienda.h
+<<<<<<< HEAD
 /home/vermia/RanJamp/Tienda/Tienda.h
+=======
+/home/andres/Escritorio/RANJAMP/RanJamp/Tienda/Tienda.h
+Tutorial.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Menu/Tutorial.h
+>>>>>>> 9e16a40461778ff7486a52cc73020dba3733d0a5
 
 /home/vermia/RanJamp/Menu/menu_mundos.cpp
 menu_mundos.h
