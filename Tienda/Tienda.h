@@ -8,7 +8,7 @@
 #include "../Juego/Juego.h"
 #include "../Motor/Motor.h"
 #include "../Cuerpo/Cuerpo.h"
-
+#include "../Hud/hud.h"
 using namespace  sf;
 using namespace std;
 
@@ -35,6 +35,9 @@ class Tienda : public Estado{
         //CAMBIA EL COLOR, TEXTO, Y POSICION DEL TEXTO[i] 
         void cambiarTexto(int i,  String s, float posx , float posy); 
     
+        void cambiarAviso(int i,  String s, float posx , float posy); 
+        
+        void cambiarPrecios(int i,  String s, float posx , float posy); 
     protected:
         Tienda(int i, int max); 
         // DESTRUCTOR
@@ -46,11 +49,17 @@ class Tienda : public Estado{
         static Tienda* p_instance;
         int selectedItem = 0; 
         Cuerpo ** sprites;
+        Cuerpo ** monedas;
         Font * font; 
         Text * texto;
+        Text * precios;
+        Text * aviso;
         int maxTienda;
         int itemSeleccionado;
-        float cooldown_mov;
+        float cooldown_mov = 0.5;
         Textura *t; 
         Bloque * b;
+        int contador;
+        float timer = 0;
+        String avisoTexto = "";
 };

@@ -22,7 +22,8 @@ class hud{
         
         // RENDERIZA EL HUD 
         void render(); 
-
+        void renderMonedas();
+        
         int getMonedero(){return monedero;}
         void setMonedero(int x){monedero -=x;}
         void sumarMonedas(){monedero++;}

@@ -14,11 +14,11 @@ hud::hud(int posY, int vidasPlayer, int max){
     monedero = 10;
     puntos = 0; 
     vidas = 5; 
-     doblesalto = false;
-     velocidad = false;
-     slow = false; 
+    doblesalto = false;
+    velocidad = false;
+    slow = false; 
     i_velocidad = 250;
-     godMode = false;
+    godMode = false;
 
 
     sprites = new Cuerpo *[9];
@@ -78,8 +78,7 @@ void hud::setMarcador(int posX , int posY){
   texto[1].setPosition( posX - 400 , posY - 355);
   texto[1].setString(to_string(int(clockGlobal.getElapsedTime().asSeconds())));
   texto[2].setPosition(posX - 150 , posY - 355);
-  texto[2].setString(to_string(monedero));
-  
+  texto[2].setString(to_string(monedero)); 
 }
 
 
@@ -93,6 +92,16 @@ void hud::render(){
     motor->dibujo(texto[i]);
   }
 }
+
+void hud::renderMonedas(){
+  Motor * motor = Motor::instance();
+ 
+  sprites[5]->render();
+
+  motor->dibujo(texto[2]);
+  
+}
+
 
 hud::~hud(){
   delete[] sprites;

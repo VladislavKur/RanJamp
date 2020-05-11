@@ -617,4 +617,6 @@ iostream
 /home/andres/Escritorio/FV JUNTO/Motor/Motor.h
 ../Cuerpo/Cuerpo.h
 /home/andres/Escritorio/FV JUNTO/Cuerpo/Cuerpo.h
+../Hud/hud.h
+/home/andres/Escritorio/FV JUNTO/Hud/hud.h
 
