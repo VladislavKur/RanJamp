@@ -94,5 +94,4 @@ bool Nube::getShoot(){
 
 void Nube::render(float porcentaje){
     body->render(porcentaje);
-    //cout<<body->getPosicion()[0]<<" "<<body->getPosicion()[1]<<endl;
 }

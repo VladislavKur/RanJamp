@@ -13,8 +13,11 @@ using namespace std;
 
 class Mundo{
     public:
-        Mundo(); //Constructor
-        ~Mundo(); //Destructor para liberar memoria
+        //Constructor
+        Mundo();
+
+        //Destructor para liberar memoria
+        ~Mundo();
 
         //Método que carga el mapa creado con tiled del nivel que corresponda
         void cargarmapa(const char * f );
@@ -41,23 +44,31 @@ class Mundo{
         //Renderiza todos los sprites
         void render();
         
-
+        //Renderiza la ultima capa de los srites del mapa 
         void render2();
 
+        //Crea objetos de la Clase Cuerpo con los obstaculos que hay en el juego asignadoles su textura, posicion,
+        //tipo, tipo 1 para obstaculo que no mata y tipo 2 para el que te mata 
         void crearObstaculos();
 
+        //crear las monedas, llaves y puertas del juego, asignadoles un CUERPO
         void crearMonedasLlaves();
 
+        //Devuelve los obstaculos del juego
         Cuerpo ** getObstaculos();
 
+        //Devuelve los cuerpos de las llaves , monedas y puertas
         Cuerpo ** getMonedasLlaves();
 
+        //Devuelve la cantidad de obstaculos que hay en ese nivel 
         int getNumObstaculos();
         
+        //Devuelve la cantidad de llaves , monedas y puertas que hay en el nivel
         int getNumMonedasLlaves();
         
-        
+        //Elimina del array de Cuerpos de objetos3 el Cuerpo pasado por parametro 
         void EliminarMonedasLLaves(Cuerpo * c);
+
         //Devuelve un puntero a los rectangleShapes de los objetos del mapa
         Cuerpo ** getObjetos();
 

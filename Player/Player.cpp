@@ -8,10 +8,6 @@ Player::~Player(){
       delete body;
       body = nullptr;
     }
-    if(hitbox != nullptr){
-      delete hitbox;
-      hitbox = nullptr;
-    }
 
     if(coliAbajo != NULL){
       delete coliAbajo;
@@ -32,8 +28,6 @@ Player::~Player(){
     
 }
 Player::Player(int x, int y){ 
-
-    hitbox = new Rectangulo(100,100, x, y);
     saltos = 1;
     jumpSpeed=0;
     jumpHeight=40; 
@@ -144,8 +138,7 @@ void Player::update(float deltaTime , Mundo * mundo){
       
       if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)){ 
           moveRight(deltaTime , mundo);
-          
-          if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
+         if(jumpSpeed >= 0.0 && cooldownDisparo <= 0.0){
             body->setSpriteAnimacion(0);
           }
           if(body->getTimeAnimacion()<=0){
@@ -181,7 +174,6 @@ void Player::update(float deltaTime , Mundo * mundo){
         }
       }
     }
-
 
   
     if(caida){
@@ -348,7 +340,6 @@ void Player::toggleGodMode(){
     godMode=false;
   } else{
     godMode=true;
-    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
   }
 }
 
@@ -377,7 +368,7 @@ void Player::reset(){
 
 void Player::setSize(float sizeX, float sizeY) {
   body->setSize(sizeX, sizeY);
-
+  
 }
 
 bool Player::GolpeMelee(float deltaTime){

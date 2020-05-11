@@ -133,7 +133,6 @@ void hud::setGodMode(){
     godMode=false;
   } else{
     godMode=true;
-    cout<<"MODO DIOS ACTIVADO !!!!!!!!!!!!!!!!"<<endl;
   }
 }
 

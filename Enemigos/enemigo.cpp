@@ -71,5 +71,5 @@ void Enemigo::restarVida(int i){
     if(vida <= 0){
         muerto = true;
     }
-    cout<<vida<<endl;
+    
 }

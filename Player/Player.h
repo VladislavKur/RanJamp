@@ -7,37 +7,40 @@
 #include "../Rectangulo/Rectangulo.h"
 #include "../Hud/hud.h"
 
+//Player es el personaje del jugador
 class Player{
 private:
     sf::Vector2u textura;
     Cuerpo* body;
     
-    float velocidad;
-    int saltos;
-    int arma;
+    float velocidad; //velocidad de movimiento
+    int saltos; //cantidad de saltos que aun se pueden realizar
+    int arma; //arma equipada
     bool PU_saltoDoble; bool PU_velocidad; bool PU_slowhits; // Powerups, se pueden hacer un array mas adelante
-    float jumpSpeed;
+    float jumpSpeed; //velocidad vertical
     float jumpHeight; //Constante (en principio)
     Animacion animacion;
-    int vidas;
-    float cooldownSalto;
-    float cooldownDisparo;
-    float cooldownShift;
+    int vidas; //cantidad de vidas del jugador
+    float cooldownSalto;  //tiempo entre saltos
+    float cooldownDisparo; //tiempo entre disparos
+    float cooldownShift;  //tiempo entre cambios de arma
 
-    bool godMode;
-    int vidasAnteriores;
-    Rectangulo * hitbox;
-    bool facing;
+    bool godMode; //modo inmortal
+    int vidasAnteriores; //guardamos esto para cuando reseteemos el nivel, saber cuantas tenia al iniciarlo
+    bool facing; //false: mirando hacia la izquierda, true derecha
+
+    //administracion de la gravedad
     bool caida;
     float caidaTiempo;
 
+    //Rectangulos de colision. Abajo: Pies, para detener caidas. Izda, dcha para evitar moverse dentro de una plataforma. Arriba para darse de cabeza contra una.
     Rectangulo * coliAbajo;
     Rectangulo * coliArriba;
     Rectangulo * coliIzquierda;
     Rectangulo * coliDerecha;
     
     vector<int> llaves;
-    int monedas;
+    int monedas; //cantidad de monedas acumuladas
 public:
     //CANON
     Player(){};
@@ -81,7 +84,6 @@ public:
     bool getCayendo(){return caida;};
     float getJumpSpeed(){return jumpSpeed;};
     Cuerpo * getBody(){return body;}
-    Rectangulo * getHitbox(){return hitbox;}
     int getVidas(){return vidas;}
     float getCooldownSalto(){return cooldownSalto;};
     float getCooldownDisparo(){return cooldownDisparo;}
@@ -96,26 +98,38 @@ public:
     Rectangulo * getColiIzquierda(){return coliIzquierda;};
     Rectangulo * getColiDerecha(){return coliDerecha;};
     //SET
+
+    //otorgar powerups al jugador
     void obtenerPU_SaltoDoble();
     void obtenerPU_Velocidad();
     void obtenerPU_Slowhits();
 
+    //quitar powerups al jugador
     void perderPU_SaltoDoble(){PU_saltoDoble=false;}
     void perderPU_Velocidad(){PU_velocidad=false;}
     void perderPU_Slowhits(){PU_slowhits=false;}
 
+    //cambiar la velocidad momentanea vertical. Util, por ejemplo, para detener al jugador.
     void setJumpSpeed(float);
     
+    //para resetear los saltos del jugador cuando este toca el suelo
     void setSaltos(int);
+    //avanzar temporizadores
     void avanzarCooldownDisparo(float deltaTime){cooldownDisparo-=deltaTime;};
+    //colocar el temporizador en un punto maximo, cuando llegue a 0 terminara, por tanto esto indica el tiempo.
     void setCooldownDisparo(float p_cooldown);
 
+    //SET
+    //cambiar de velocidad. Util, por ejemplo, para el powerup de velocidad.
     void setVelocidad(float);
+    //cambiar de arma
     void setArma(int);
+    //hacer que el jugador tenga una cierta cantidad de vidas
     bool setVidas(int);
+    //Teletransportar al jugador a un lugar determinado
     void setPosicion(float, float );
 
-    //Movimiento
+    //Movimiento del jugador
     void moveRight(float deltaTime, Mundo * mundo);
     void moveLeft(float deltaTime, Mundo * mundo);
 

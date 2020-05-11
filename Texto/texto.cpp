@@ -4,11 +4,11 @@
 texto::texto(int  i , std::vector<sf::String> t , std::vector<sf::Vector2f> posiciones){
     cantidad = i;
     text = new sf::Text[i];
+    
     for(int j = 0; j < i; j++){
 
         text[j].setColor(sf::Color::White);
         text[j].setString(t[j]);
-
         text[j].setScale(5,5);
         text[j].setPosition(posiciones[j]);
     }

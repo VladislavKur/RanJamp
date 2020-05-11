@@ -164,7 +164,10 @@ void Cuerpo::moverse(float x_entrada,float y_entrada){
     class_move = true;
 
     motor->posicionar(body, class_previousX, class_previousY);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9327cb369c65eb3bcc689ab962a4ffe6cc673392
 }
 
 vector<int> Cuerpo::texturizar(std::string entrada, int sizeWidth, int sizeHeight){
