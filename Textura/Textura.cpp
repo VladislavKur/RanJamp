@@ -19,3 +19,7 @@ Texture * Textura::getTexture(){
     return t;
 }
 
+
+void Textura::setTexture(string entrada){
+    motor->cargarSprite(*t, entrada, true);
+}

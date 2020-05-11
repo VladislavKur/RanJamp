@@ -27,7 +27,6 @@ Juego::Juego(){
     view.setSize(1080,720); 
     //view.setCenter(1080/2,720/2);
     view.setCenter(view.getSize().x/2,view.getSize().y/2);
-    transparenciaRoja=1;
 
   for(int i = 0 ; i < maxBullets ; i++){
        bulletPlayer[i]=NULL;
@@ -873,9 +872,6 @@ void Juego::pausa(){
     
 }
 
-void Juego::iniciarPantallaRoja(){
-  transparenciaRoja=128;
-}
 
 void Juego::setVolumen(int i, float x){
     so[i]->setVolumen(x);

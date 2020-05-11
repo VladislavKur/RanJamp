@@ -3,7 +3,7 @@
 #ifndef ESTADO_H
 #define ESTADO_H
 
-
+//Patron State. Clase base para los estados.
 class Estado{
     protected:
     

@@ -16,7 +16,7 @@ class menu_nivel : public menu {
         void seleccionarMundo(std::string mundo){ nivel = mundo;}
 
     protected:
-        menu_nivel(sf::Font fuente, int max );
+        menu_nivel(sf::Font fuente, int max, int maxS);
     private: 
         static sf::Font* fuente;
         static menu_nivel* p_instance;

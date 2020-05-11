@@ -21018,7 +21018,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="Capa de Colisiones">
+ <objectgroup name="Capa de Colisiones" visible="0">
   <object id="1" x="0" y="1475.76" width="4491.67" height="128.249"/>
   <object id="2" x="8.33333" y="-9.09091" width="4483.33" height="75.7576"/>
   <object id="3" x="-8.33333" y="58.3333" width="70.3333" height="1516.67"/>
@@ -21082,7 +21082,7 @@
   <object id="134" x="3072" y="1152" width="30" height="30"/>
   <object id="136" x="3072" y="1342" width="30" height="30"/>
  </objectgroup>
- <objectgroup name="Capa de Enemigos">
+ <objectgroup name="Capa de Enemigos" visible="0">
   <object id="52" type="2" x="2378.79" y="1133.33" width="69.697" height="66.6667">
    <ellipse/>
   </object>
@@ -21112,25 +21112,25 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Player">
+ <objectgroup name="Capa de Player" visible="0">
   <object id="27" x="165.545" y="1390.79" width="39.3939" height="51.5152"/>
  </objectgroup>
- <objectgroup name="Capa de PowerUps">
+ <objectgroup name="Capa de PowerUps" visible="0">
   <object id="147" type="1" x="176" y="1006" width="32" height="38"/>
   <object id="148" type="2" x="262" y="1400" width="34" height="34"/>
   <object id="149" type="0" x="334" y="814" width="42" height="42"/>
   <object id="150" type="3" x="274" y="1202" width="34" height="36"/>
  </objectgroup>
- <objectgroup name="Capa de Puerta">
+ <objectgroup name="Capa de Puerta" visible="0">
   <object id="29" x="70.91" y="107.27" width="109.091" height="109.091">
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup name="Capa de Bordes">
+ <objectgroup name="Capa de Bordes" visible="0">
   <object id="31" x="0" y="0" width="24.2424" height="1600"/>
   <object id="33" x="4480" y="0" width="24.2424" height="1600"/>
  </objectgroup>
- <objectgroup name="Capa de Obstaculos">
+ <objectgroup name="Capa de Obstaculos" visible="0">
   <object id="151" type="2" x="1596" y="310" width="258" height="44"/>
   <object id="152" type="2" x="1760" y="966" width="156" height="32"/>
   <object id="153" type="2" x="2020" y="964" width="156" height="40"/>
@@ -21138,7 +21138,7 @@
   <object id="165" type="2" x="548" y="1440" width="212" height="58"/>
   <object id="166" type="2" x="3430" y="1454" width="984" height="54"/>
  </objectgroup>
- <objectgroup name="Capa de Monedas">
+ <objectgroup name="Capa de Monedas" visible="0">
   <object id="154" type="1" x="2358" y="244" width="100" height="100">
    <ellipse/>
   </object>
