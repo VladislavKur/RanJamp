@@ -6,7 +6,7 @@ texto::texto(int  i , std::vector<sf::String> t , std::vector<sf::Vector2f> posi
     text = new sf::Text[i];
     
     for(int j = 0; j < i; j++){
-        //text[j].setFont(font);
+
         text[j].setColor(sf::Color::White);
         text[j].setString(t[j]);
         text[j].setScale(5,5);
@@ -18,8 +18,6 @@ void texto::render(){
     Motor * motor = Motor::instance();
     for(int j = 0; j < cantidad; j++){
         motor->dibujo(text[j]);
-        if(text[j].getString().isEmpty()){
-        }
     }
 }
 

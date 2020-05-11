@@ -81,7 +81,7 @@ void Centinela::update(Player* player, float deltaTime){
                         modo = 0;
                     cambio = true;
                 } 
-                else{//DISPARA!!!! necesitamos el trabajo de vermivlad
+                else{//DISPARA!!!! 
                     body->setSpriteAnimacion(0);
                     if(shootTime <= 0.0 && body->getPosicionX() == 3){
                         bool auxiliar;
@@ -108,7 +108,6 @@ void Centinela::update(Player* player, float deltaTime){
 
                     }
                     
-                    //juego->dispararEnemigo(deltaTime,posX,posY,auxiliar);
                     
 
                 }

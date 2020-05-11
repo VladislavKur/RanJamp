@@ -1,13 +1,13 @@
 #include "bullet.h"
  
 
-Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : body(){ //WIP fachada
+Bullet::Bullet(float p_x, float p_y, bool p_facing , int i, int cod_textura) : body(){
 
     
     
     
-    velocidad=600; //quiza lo mejor es ponerlo como constantes
-    lifetime=2;   //lo del comentario anterior
+    velocidad=600;
+    lifetime=2;
 
     facing=p_facing;
     

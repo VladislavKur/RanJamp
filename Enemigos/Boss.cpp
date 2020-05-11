@@ -77,7 +77,6 @@ void Boss::update(Player *player, float deltaTime){
                         if(body->colisiona(player->getBody()) && haPegado){
                         //if(player->getColiDerecha()->getIntersect(*mano) || player->getColiIzquierda()->getIntersect(*mano)){
                             haPegado = false;
-                            
                             Hud->restarVidas();
                             Hud->restarVidas();
                             player->getBody()->moverse((local_diffX/local_diffabsX)*80, 0+30);//empuja al jugador
@@ -96,7 +95,7 @@ void Boss::update(Player *player, float deltaTime){
                     cambio = true;
                 } 
                 else{//DISPARA
-                    body->setSpriteAnimacion(2); //disparar
+                    body->setSpriteAnimacion(2); //animación de disparar
 
                     if(shootTime <= 0.0){
                         bool auxiliar;
