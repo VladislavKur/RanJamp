@@ -814,9 +814,6 @@ void Juego::nextLevel(int n){
     }
     
 
-    //cout<<Hud->getTiempo()<<endl;
-    man->cambiarEstado(trans);
-    trans->reset();
     jugador->caer();
 }
 
