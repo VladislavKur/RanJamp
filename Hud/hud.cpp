@@ -63,23 +63,25 @@ void hud::cambiarTexto(const Font &f , int i, Color c, string s , Vector2f v, in
 
 }
 
+
 void hud::setMarcador(int posX , int posY){
-  sprites[0]->posicionamiento(posX - 300 , posY - 400);
-  sprites[1]->posicionamiento(posX - 384 , posY - 300);
+  sprites[0]->posicionamientoFijo(posX - 300 , posY - 400);
+  sprites[1]->posicionamientoFijo(posX - 384 , posY - 300);
   sprites[1]->recorte(0, 32 *(vidas));
-  sprites[2]->posicionamiento(posX - 250 , posY - 300);
-  sprites[3]->posicionamiento(posX - 220 , posY - 300);
-  sprites[4]->posicionamiento(posX - 190, posY - 300);
-  sprites[5]->posicionamiento(posX - 200 , posY - 340);
-  sprites[6]->posicionamiento(posX - 150 , posY - 300);
-  sprites[7]->posicionamiento(posX - 450 , posY - 340);
-  sprites[8]->posicionamiento(posX - 340 , posY - 340);
+  sprites[2]->posicionamientoFijo(posX - 250 , posY - 300);
+  sprites[3]->posicionamientoFijo(posX - 220 , posY - 300);
+  sprites[4]->posicionamientoFijo(posX - 190, posY - 300);
+  sprites[5]->posicionamientoFijo(posX - 200 , posY - 340);
+  sprites[6]->posicionamientoFijo(posX - 150 , posY - 300);
+  sprites[7]->posicionamientoFijo(posX - 450 , posY - 340);
+  sprites[8]->posicionamientoFijo(posX - 340 , posY - 340);
   texto[0].setPosition( posX - 300 , posY - 355);
   texto[0].setString(to_string(puntos));
   texto[1].setPosition( posX - 400 , posY - 355);
   texto[1].setString(to_string(int(clockGlobal.getElapsedTime().asSeconds())));
   texto[2].setPosition(posX - 150 , posY - 355);
-  texto[2].setString(to_string(monedero)); 
+  texto[2].setString(to_string(monedero));
+  
 }
 
 

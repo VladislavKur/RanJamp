@@ -316,6 +316,36 @@ Cuerpo.h
 ../Texto/texto.h
 /home/andres/Escritorio/RANJAMP/RanJamp/Texto/texto.h
 
+/home/andres/Escritorio/RANJAMP/RanJamp/Menu/Tutorial.cpp
+Tutorial.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Menu/Tutorial.h
+
+/home/andres/Escritorio/RANJAMP/RanJamp/Menu/Tutorial.h
+SFML/Graphics.hpp
+-
+iostream
+-
+../Player/Player.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Player/Player.h
+../Enemigos/enemigo.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Enemigos/enemigo.h
+../Enemigos/centinela.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Enemigos/centinela.h
+../Bullet/bullet.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Bullet/bullet.h
+../Mundo/Mundo.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Mundo/Mundo.h
+../Objeto/Objeto.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Objeto/Objeto.h
+../Texto/texto.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Texto/texto.h
+../Hud/hud.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Hud/hud.h
+menu.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Menu/menu.h
+../Rectangulo/Rectangulo.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Rectangulo/Rectangulo.h
+
 /home/andres/Escritorio/RANJAMP/RanJamp/Menu/menu.cpp
 menu.h
 /home/andres/Escritorio/RANJAMP/RanJamp/Menu/menu.h
@@ -373,6 +403,8 @@ menu_vol.h
 /home/andres/Escritorio/RANJAMP/RanJamp/Menu/menu_vol.h
 ../Tienda/Tienda.h
 /home/andres/Escritorio/RANJAMP/RanJamp/Tienda/Tienda.h
+Tutorial.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Menu/Tutorial.h
 
 /home/andres/Escritorio/RANJAMP/RanJamp/Menu/menu_mundos.cpp
 menu_mundos.h

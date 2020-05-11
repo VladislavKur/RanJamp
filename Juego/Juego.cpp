@@ -369,31 +369,35 @@ void Juego::colisionPlayerMundo(float deltaTime){
 
 
 void Juego::colisionPlayerObstaculos(float deltaTime){
-    Cuerpo ** objetos = mundo->getObstaculos();
+    Cuerpo ** obstaculos = mundo->getObstaculos();
     hud * Hud = hud::instance();
 
     bool morir = false;
+    bool salir = false;
     timerObstaculos -= deltaTime;
-    for(int i=0 ; i<  mundo->getNumObstaculos(); i++){
-      if(objetos[i]!= nullptr)
-      if(jugador->getColiAbajo()->getIntersect(*objetos[i]->getGlobalBounds())){
-        if(objetos[i]->getTipo() == 1 && timerObstaculos <= 0){
-          if(jugador->getModoDios() == false){
-            morir = Hud->restarVidas();
-            if(morir == true){
+    for(int i=0 ; i<  mundo->getNumObstaculos() && !salir; i++){
+      if(obstaculos[i]!= nullptr){
+        if(jugador->getColiAbajo()->getIntersect(*obstaculos[i]->getGlobalBounds())){
+          if(obstaculos[i]->getTipo() == 1 && timerObstaculos <= 0){
+            if(jugador->getModoDios() == false){
+              morir = Hud->restarVidas();
+              if(morir == true){
+                matarJugador();
+                salir = true;
+              }
+            }
+            jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
+            jugador->saltar(); 
+        
+            timerObstaculos = 1;
+          }else if(obstaculos[i]->getTipo() == 2){
+            if(jugador->getModoDios() == false){
               matarJugador();
+              salir = true;
             }
           }
-          jugador->setSaltos( Hud->getDoblesalto() ? 2 : 1);
-          jugador->saltar(); 
-       
-          timerObstaculos = 1;
-        }else if(objetos[i]->getTipo() == 2){
-          if(jugador->getModoDios() == false){
-            matarJugador();
-          }
-        }
-      } 
+        } 
+      }
     }
 }
 
@@ -823,7 +827,7 @@ void Juego::nextLevel(int n){
 void Juego::inicializarNiveles(){
   
   niveles = new string[maxniveles];
-  niveles[0] = "Mundo5.tmx";
+  niveles[0] = "Mundo1-1.tmx";
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";
@@ -835,6 +839,11 @@ void Juego::inicializarNiveles(){
   niveles[9] = "Mundo3-2.tmx";
   niveles[10] = "Mundo3-3.tmx";
   niveles[11] = "Mundo3-4.tmx";
+  niveles[12] = "Mundo4-1.tmx";
+  niveles[13] = "Mundo4-2.tmx";
+  niveles[14] = "Mundo4-3.tmx";
+  niveles[15] = "Mundo4-4.tmx";
+  niveles[16] = "Mundo5.tmx";
 }
 void Juego::nivelSeleccionado(string n){
   int aux = -1;

@@ -37,7 +37,7 @@
             Mundo * mundo;
             int nivel;
             string * niveles;
-            int maxniveles = 12;
+            int maxniveles = 17;
             //obstaculos 
             float timerObstaculos;
             int transparenciaRoja;
@@ -79,7 +79,7 @@
             void pausarMusica(int i);
             void reproducirMusica(int i);
             void ponerBucleMusica(int i);
-            
+
 
             sf::View view;
 
