@@ -21,7 +21,32 @@
  
         tipo = t;
         hitbox = new Rectangulo(50,50,x,y);
-        body = new Cuerpo(x,y,50,50,"powerup1.png",1,RECTANGLE);
+        string fichero;
+        switch(tipo){
+            case 0:
+                fichero = "velocidad.png";
+            break;
+
+            case 1:
+                fichero="powerup1.png";
+            break;
+                
+            case 2:
+                fichero="saltos.png";
+            break;
+
+            case 3:
+                fichero="slow.png";
+            break;
+
+            case 4:
+
+            break;
+
+            default:break;
+        }
+        body = new Cuerpo(x,y,32,32,fichero,1,RECTANGLE);
+        body->setSize(50,50);
         body->addAnimacion(0.1);
             
         
