@@ -51,7 +51,7 @@ Juego::Juego(){
   pos.push_back(Vector2f(10 , 1500));
 
   portal = new Cuerpo(mundo->getPuerta()->getPosicion()[0]+128/3, mundo->getPuerta()->getPosicion()[1]+128/3, 128, 128, "portal.png",1 , RECTANGLE );
-  portal->setSize(5*32,5*32);
+  portal->setSize(4*32,4*32);
   portal->Origen(portal->getSize()[0]/2,portal->getSize()[1]/2);
   portal->addAnimacion(0.1);
 }
@@ -821,7 +821,7 @@ void Juego::nextLevel(int n){
 void Juego::inicializarNiveles(){
   
   niveles = new string[maxniveles];
-  niveles[0] = "Mundo1-1.tmx";
+  niveles[0] = "Mundo5.tmx";
   niveles[1] = "Mundo1-2.tmx";
   niveles[2] = "Mundo1-3.tmx";
   niveles[3] = "Mundo1-4.tmx";

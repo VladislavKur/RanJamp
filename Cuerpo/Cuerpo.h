@@ -50,6 +50,7 @@ class Cuerpo{
         void setSpriteAnimacion(int entrada);
         void setTimeAnimacion(float entrada);
         void setSize(float sizeX, float sizeY);
+        void setTipo(int x){class_tipo+=x;}
         bool colisiona(Cuerpo * entrada);
         void rotar(float angulo);
         void recorte(int x , int y);
