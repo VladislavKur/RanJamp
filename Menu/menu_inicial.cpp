@@ -67,12 +67,18 @@ void menu_inicial::update(float deltaTime){
         if(noeslaprimeravezxd){
             switch(selectedItem){
             case 0:
+               juego->pausarMusica(2);
+               juego->reproducirMusica(0);
+               juego->ponerBucleMusica(0);
                 noeslaprimeravezxd=true;
                man->cambiarEstado(juego);
                resetSelectedItem();
               
             break;
             case 1:
+                juego->pausarMusica(2);
+                juego->reproducirMusica(0);
+                juego->ponerBucleMusica(0);
                 juego->matarJugador();
                 man->cambiarEstado(juego);
                 resetSelectedItem();

@@ -571,6 +571,8 @@ SFML/Graphics.hpp
 /home/andres/Escritorio/RANJAMP/RanJamp/Player/Player.cpp
 Player.h
 /home/andres/Escritorio/RANJAMP/RanJamp/Player/Player.h
+../Juego/Juego.h
+/home/andres/Escritorio/RANJAMP/RanJamp/Juego/Juego.h
 
 /home/andres/Escritorio/RANJAMP/RanJamp/Player/Player.h
 SFML/Graphics.hpp
