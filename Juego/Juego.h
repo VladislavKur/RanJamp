@@ -43,6 +43,7 @@
             int transparenciaRoja;
             int angulo = 0;
             Cuerpo *portal;
+            std::string nivelactual;
         protected:
             Juego();
             ~Juego();
@@ -73,6 +74,7 @@
 
             void pausa();
             void nivelSeleccionado(std::string);
+            std::string nivelJuego(){return nivelactual;}
             
             void setVolumen(int i ,float x);
             float getVolumen(int i);

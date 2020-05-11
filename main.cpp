@@ -81,7 +81,8 @@ int main() {
           Hud->setGodMode();
         break;
         case sf::Keyboard::R:
-          juego->getJugador()->reset();
+          juego->matarJugador();
+          juego->nivelSeleccionado(juego->nivelJuego());
         break;
 
         case sf::Keyboard::N:

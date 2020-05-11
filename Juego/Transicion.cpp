@@ -51,9 +51,7 @@ void Transicion::update(float deltaTime){
     hud* Hud = hud::instance();
     Motor* motor = Motor::instance();
 
-    juego->pausarMusica(0);
-    juego->reproducirMusica(6);
-    juego->ponerBucleMusica(6);
+    
     motor->getVentana()->setView(*vista);
     cambiarTexto(1, to_string(Hud->getPuntos()), 650,100);
 
@@ -88,6 +86,10 @@ void Transicion::render(float num){
 }
 
 void Transicion::reset(){
+    Juego* juego = Juego::instance();
+    juego->pausarMusica(0);
+    juego->reproducirMusica(6);
+    juego->ponerBucleMusica(6);
     radio=400;
     angulo=0;
     mago->setSize(100, 100);

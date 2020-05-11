@@ -48,11 +48,11 @@ void menu_inicial::update(float deltaTime){
     else{
         cambiarTexto(0,  "PLAY", juego->view.getCenter().x-60, juego->view.getCenter().y-125);
         cambiarTexto(1,  "SELECCIONAR NIVEL", juego->view.getCenter().x-60, juego->view.getCenter().y-75);
-        cambiarTexto(2, "TUTORIAL", juego->view.getCenter().x-60, juego->view.getCenter().y+25);
-        cambiarTexto(3,  "TIENDA", juego->view.getCenter().x-60, juego->view.getCenter().y +75);
-        cambiarTexto(4, "CONTROLS", juego->view.getCenter().x-60, juego->view.getCenter().y+125);
-        cambiarTexto(5,  "OPTIONS", juego->view.getCenter().x-60, juego->view.getCenter().y +175);
-        cambiarTexto(6,  "EXIT", juego->view.getCenter().x-60, juego->view.getCenter().y+225);
+        cambiarTexto(2, "TUTORIAL", juego->view.getCenter().x-60, juego->view.getCenter().y-25);
+        cambiarTexto(3,  "TIENDA", juego->view.getCenter().x-60, juego->view.getCenter().y +25);
+        cambiarTexto(4, "CONTROLS", juego->view.getCenter().x-60, juego->view.getCenter().y+75);
+        cambiarTexto(5,  "OPTIONS", juego->view.getCenter().x-60, juego->view.getCenter().y +125);
+        cambiarTexto(6,  "EXIT", juego->view.getCenter().x-60, juego->view.getCenter().y+175);
     }
     b->setPosition(juego->view.getCenter().x-juego->view.getSize().x/2, juego->view.getCenter().y-juego->view.getSize().y/2);
     b->setTextureRect(0,0,1080,720);
