@@ -22,22 +22,22 @@ hud::hud(int posY, int vidasPlayer, int max){
     godMode = false;
 
 
-    sprites = new Cuerpo *[9];
+    sprites = new Cuerpo *[10];
     sprites[0] = new Cuerpo(100 , posY - 600,350,250,"madera.png",1, 0,-1);
     sprites[0]->recorte(25,25);
     sprites[1] = new Cuerpo(128 , posY - 600,160,32,"vidas.png",1, 0,-1);
     sprites[1]->recorte(0,5*32);
-    sprites[2] = new Cuerpo(638 , posY - 600,32,32,"saltos.png",1, 0,-1);
-    sprites[3] = new Cuerpo(672, posY - 600,32,32,"velocidad.png",1, 0,-1);
-    sprites[4] = new Cuerpo(704, posY - 600,32,32,"powerup3.png",1, 0,-1);
+    sprites[2] = new Cuerpo(638 , posY - 600,32,32,"powerUpsHud.png",1, 0,-1);
+    sprites[3] = new Cuerpo(672, posY - 600,32,32,"powerUpsHud.png",1, 0,-1);
+    sprites[4] = new Cuerpo(704, posY - 600,32,32,"powerUpsHud.png",1, 0,-1);
     sprites[5] = new Cuerpo(704, posY - 520,100,100,"Moneda.png",1, 0,-1);
     sprites[5]->Scalar(0.2, 0.2);
-    sprites[6] = new Cuerpo(128 , posY - 600,100,100,"Llave.png",1, 0,-1);
-    sprites[6]->Scalar(0.2, 0.2);
+    sprites[6] = new Cuerpo(128 , posY - 600,32,32,"powerUpsHud.png",1, 0,-1);
     sprites[7] = new Cuerpo(128 , posY - 600,100,100,"tiempo.png",1, 0,-1);
     sprites[7]->Scalar(0.2, 0.2);
     sprites[8] = new Cuerpo(128 , posY - 600,100,100,"estrella.png",1, 0,-1);
     sprites[8]->Scalar(0.2, 0.2);
+    sprites[9] = new Cuerpo(128, posY- 600,32,32, "powerUpsHud.png", 1, 0 , -1);
     font = new Font[1];
 
     texto = new Text[max];
@@ -68,13 +68,39 @@ void hud::setMarcador(int posX , int posY){
   sprites[0]->posicionamientoFijo(posX - 300 , posY - 400);
   sprites[1]->posicionamientoFijo(posX - 384 , posY - 300);
   sprites[1]->recorte(0, 32 *(vidas));
-  sprites[2]->posicionamientoFijo(posX - 250 , posY - 300);
-  sprites[3]->posicionamientoFijo(posX - 220 , posY - 300);
-  sprites[4]->posicionamientoFijo(posX - 190, posY - 300);
+  sprites[2]->posicionamientoFijo(posX - 285 , posY - 300);
+  if(doblesalto == true){
+    sprites[2]->recorte(32,0);
+  }else{
+    sprites[2]->recorte(0,0);
+  }
+  sprites[3]->posicionamientoFijo(posX - 253 , posY - 300);
+  if(velocidad == true){
+    sprites[3]->recorte(32,32);
+  }else{
+    sprites[3]->recorte(0,32);
+  }
+  sprites[4]->posicionamientoFijo(posX - 221, posY - 300);
+  if(slow == true){
+    sprites[4]->recorte(32,64);
+  }else{
+    sprites[4]->recorte(0,64);
+  }
   sprites[5]->posicionamientoFijo(posX - 200 , posY - 340);
-  sprites[6]->posicionamientoFijo(posX - 150 , posY - 300);
+  sprites[6]->posicionamientoFijo(posX - 189 , posY - 300);
+  if(arma[0] != 0){
+    sprites[6]->recorte(32,96);
+  }else{
+    sprites[6]->recorte(0,96);
+  }
   sprites[7]->posicionamientoFijo(posX - 450 , posY - 340);
   sprites[8]->posicionamientoFijo(posX - 340 , posY - 340);
+  sprites[9]->posicionamientoFijo(posX - 157 , posY - 300);
+  if(arma[1] != 0){
+    sprites[9]->recorte(32,128);
+  }else{
+    sprites[9]->recorte(0,128);
+  }
   texto[0].setPosition( posX - 300 , posY - 355);
   texto[0].setString(to_string(puntos));
   texto[1].setPosition( posX - 400 , posY - 355);
@@ -88,7 +114,7 @@ void hud::setMarcador(int posX , int posY){
 void hud::render(){
   Motor * motor = Motor::instance();
  
-  for(int i = 0; i < 9; i++){
+  for(int i = 0; i < 10; i++){
     sprites[i]->render();
   }
   for(int i = 0; i < 3; i++){

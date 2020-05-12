@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/magiic/Escritorio/RanJamp/main.cpp" "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/ranJamp.dir/main.cpp.o"
+  "/home/andres/Escritorio/RANJAMP/RanJamp/main.cpp" "/home/andres/Escritorio/RANJAMP/RanJamp/build/CMakeFiles/ranJamp.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -31,7 +31,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/magiic/Escritorio/RanJamp/build/CMakeFiles/libClases.dir/DependInfo.cmake"
+  "/home/andres/Escritorio/RANJAMP/RanJamp/build/CMakeFiles/libClases.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

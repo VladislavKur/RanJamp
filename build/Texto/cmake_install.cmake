@@ -1,4 +1,4 @@
-# Install script for directory: /home/magiic/Escritorio/RanJamp/Texto
+# Install script for directory: /home/andres/Escritorio/RANJAMP/RanJamp/Texto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -45,33 +45,30 @@ void menu_nivel::update(float deltaTime){
     cambiarTexto(3, "Nivel 4", juego->view.getCenter().x-juego->view.getSize().x/5-50, juego->view.getCenter().y);
     cambiarTexto(4, "BACK", juego->view.getCenter().x+juego->view.getSize().x/2-300, juego->view.getCenter().y+juego->view.getSize().y/2-100);
 
-   
+   cout<< nivel <<endl;
     
-    if(nivel.compare("Mundo1-")){
+    if(nivel.compare("Mundo1-") == 0){
         t->setTexture("resources/Imagenes/MenuBosque.png");
         b->setTextura(t);
         sprites[0]->recorte(0,0);
         sprites[1]->recorte(0,300);
         sprites[2]->recorte(0,600);
         sprites[3]->recorte(0,900);
-    } 
-    if(nivel.compare("Mundo2-")){
+    }else if(nivel.compare("Mundo2-") == 0){
         t->setTexture("resources/Imagenes/MenuAntartida.png");
         b->setTextura(t);
         sprites[0]->recorte(0,1200);
         sprites[1]->recorte(0,1500);
         sprites[2]->recorte(0,1800);
         sprites[3]->recorte(0,2100);
-    }
-    if(nivel.compare("Mundo3-")){
+    }else if(nivel.compare("Mundo3-") == 0){
         t->setTexture("resources/Imagenes/MenuInfierno.png");
         b->setTextura(t);
         sprites[0]->recorte(0,2400);
         sprites[1]->recorte(0,2700);
         sprites[2]->recorte(0,3000);
         sprites[3]->recorte(0,3300);
-    }
-    if(nivel.compare("Mundo4-")){
+    }else if(nivel.compare("Mundo4-") == 0){
         t->setTexture("resources/Imagenes/MenuApocalipsis.png");
         b->setTextura(t);
         sprites[0]->recorte(0,3500);
